@@ -1499,3 +1499,55 @@ Failed to generate G-code from DXF.
 2026-08-01 12:54 - INFO - Purge command sent directly to Blackpill via USB.
 2026-08-01 12:54 - ERROR - Could not find or connect to Blackpill via USB! Make sure it is plugged in.
 2026-08-01 12:54 - INFO - Fill command sent directly to Blackpill via USB.
+2026-08-01 14:24 - INFO - ==================================================
+2026-08-01 14:24 - INFO - New session START at 2026-08-01 14:24
+2026-08-01 14:24 - INFO - ==================================================
+2026-08-01 14:24 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-01 14:24 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-01 14:24 - INFO - Loaded draw_z from config: Z=44.9, draw_z_UP=22.45
+2026-08-01 14:24 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-01 14:24 - INFO - Updated profile.json: layer_height=0.4, layer_height_0=0.4
+2026-08-01 14:24 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-01 14:24 - INFO - INI file initialized
+2026-08-01 14:24 - INFO - UI load successful
+2026-08-01 14:24 - INFO - Com : com, Port : ['COM1', 'COM15', 'COM22'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-01 14:24 - INFO - Do you want to auto connect to COM15 @ 115200
+2026-08-01 14:24 - INFO - Auto Connect dialog button : Ok
+2026-08-01 14:24 - INFO - Serial communication autostarted
+2026-08-01 14:25 - INFO - Com : black_com, Port : ['COM1', 'COM15', 'COM22'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-01 14:25 - CRITICAL - Serial communication started
+2026-08-01 14:25 - INFO - Sent FILL to Blackpill
+2026-08-01 14:25 - INFO - Fill command sent directly to Blackpill via USB.
+2026-08-01 14:25 - INFO - Sent FILL to Blackpill
+2026-08-01 14:25 - INFO - Stop Fill command sent directly to Blackpill via USB.
+2026-08-01 14:25 - INFO - Sent PURGE to Blackpill
+2026-08-01 14:25 - INFO - Purge command sent directly to Blackpill via USB.
+2026-08-01 14:25 - INFO - Sent PURGE to Blackpill
+2026-08-01 14:25 - INFO - Stop Purge command sent directly to Blackpill via USB.
+2026-08-01 14:33 - INFO - Serial communication stopped
+2026-08-01 14:33 - INFO - COM connection close successfully
+2026-08-01 14:33 - INFO - Main window close successfully
+2026-08-01 14:33 - INFO - ==================================================
+2026-08-01 14:33 - INFO - New session close at 2026-08-01 14:33
+2026-08-01 14:33 - INFO - ==================================================
+2026-08-01 14:33 - INFO - ==================================================
+2026-08-01 14:33 - INFO - New session START at 2026-08-01 14:33
+2026-08-01 14:33 - INFO - ==================================================
+2026-08-01 14:33 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-01 14:33 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-01 14:33 - INFO - Loaded draw_z from config: Z=44.9, draw_z_UP=22.45
+2026-08-01 14:33 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-01 14:33 - INFO - Updated profile.json: layer_height=0.4, layer_height_0=0.4
+2026-08-01 14:33 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-01 14:33 - INFO - INI file initialized
+2026-08-01 14:33 - INFO - UI load successful
+2026-08-01 14:33 - INFO - Com : com, Port : ['COM1', 'COM15', 'COM22'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-01 14:33 - INFO - Do you want to auto connect to COM15 @ 115200
+2026-08-01 14:33 - INFO - Auto Connect dialog button : Ok
+2026-08-01 14:33 - INFO - Serial communication autostarted
+2026-08-01 14:35 - INFO - Serial communication stopped
+2026-08-01 14:35 - INFO - COM connection close successfully
+2026-08-01 14:35 - INFO - Main window close successfully
+2026-08-01 14:35 - INFO - ==================================================
+2026-08-01 14:35 - INFO - New session close at 2026-08-01 14:35
+2026-08-01 14:35 - INFO - ==================================================

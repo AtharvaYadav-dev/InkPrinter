@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'interfaceAjhHRa.ui'
+## Form generated from reading UI file 'interfaceaxRnUS.ui'
 ##
-## Created by: Qt User Interface Compiler version 6.8.2
+## Created by: Qt User Interface Compiler version 6.11.1
 ##
 ## WARNING! All changes made in this file will be lost when recompiling UI file!
 ################################################################################
@@ -2805,12 +2805,61 @@ class Ui_MainWindow(object):
 
         self.widget_11 = QWidget(self.progFrame)
         self.widget_11.setObjectName(u"widget_11")
-        self.horizontalLayout_26 = QHBoxLayout(self.widget_11)
-        self.horizontalLayout_26.setSpacing(9)
-        self.horizontalLayout_26.setObjectName(u"horizontalLayout_26")
-        self.horizontalSpacer_5 = QSpacerItem(366, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
+        self.horizontalLayout_49 = QHBoxLayout(self.widget_11)
+        self.horizontalLayout_49.setObjectName(u"horizontalLayout_49")
+        self.stepsFrame_2 = QFrame(self.widget_11)
+        self.stepsFrame_2.setObjectName(u"stepsFrame_2")
+        self.stepsFrame_2.setFrameShape(QFrame.Shape.StyledPanel)
+        self.stepsFrame_2.setFrameShadow(QFrame.Shadow.Raised)
+        self.verticalLayout_64 = QVBoxLayout(self.stepsFrame_2)
+        self.verticalLayout_64.setObjectName(u"verticalLayout_64")
+        self.verticalLayout_64.setContentsMargins(-1, 4, -1, -1)
+        self.label_15 = QLabel(self.stepsFrame_2)
+        self.label_15.setObjectName(u"label_15")
+        self.label_15.setMinimumSize(QSize(0, 15))
+        self.label_15.setFont(font5)
+        self.label_15.setAlignment(Qt.AlignmentFlag.AlignCenter)
 
-        self.horizontalLayout_26.addItem(self.horizontalSpacer_5)
+        self.verticalLayout_64.addWidget(self.label_15, 0, Qt.AlignmentFlag.AlignTop)
+
+        self.frame_13 = QFrame(self.stepsFrame_2)
+        self.frame_13.setObjectName(u"frame_13")
+        sizePolicy6.setHeightForWidth(self.frame_13.sizePolicy().hasHeightForWidth())
+        self.frame_13.setSizePolicy(sizePolicy6)
+        self.frame_13.setMinimumSize(QSize(0, 35))
+        self.frame_13.setFrameShape(QFrame.Shape.StyledPanel)
+        self.frame_13.setFrameShadow(QFrame.Shadow.Raised)
+        self.horizontalLayout_48 = QHBoxLayout(self.frame_13)
+        self.horizontalLayout_48.setObjectName(u"horizontalLayout_48")
+        self.travel10_RadioButton_3 = QRadioButton(self.frame_13)
+        self.travel10_RadioButton_3.setObjectName(u"travel10_RadioButton_3")
+        self.travel10_RadioButton_3.setFont(font2)
+
+        self.horizontalLayout_48.addWidget(self.travel10_RadioButton_3)
+
+        self.travel5_RadioButton = QRadioButton(self.frame_13)
+        self.travel5_RadioButton.setObjectName(u"travel5_RadioButton")
+        self.travel5_RadioButton.setFont(font2)
+
+        self.horizontalLayout_48.addWidget(self.travel5_RadioButton)
+
+        self.travel1_RadioButton_3 = QRadioButton(self.frame_13)
+        self.travel1_RadioButton_3.setObjectName(u"travel1_RadioButton_3")
+        self.travel1_RadioButton_3.setFont(font2)
+
+        self.horizontalLayout_48.addWidget(self.travel1_RadioButton_3)
+
+        self.travel01_RadioButton = QRadioButton(self.frame_13)
+        self.travel01_RadioButton.setObjectName(u"travel01_RadioButton")
+        self.travel01_RadioButton.setFont(font2)
+
+        self.horizontalLayout_48.addWidget(self.travel01_RadioButton)
+
+
+        self.verticalLayout_64.addWidget(self.frame_13)
+
+
+        self.horizontalLayout_49.addWidget(self.stepsFrame_2)
 
         self.pgmsavePushButton = QPushButton(self.widget_11)
         self.pgmsavePushButton.setObjectName(u"pgmsavePushButton")
@@ -2839,10 +2888,8 @@ class Ui_MainWindow(object):
 "	background-color: rgb(172, 172, 172);\n"
 "}")
 
-        self.horizontalLayout_26.addWidget(self.pgmsavePushButton)
+        self.horizontalLayout_49.addWidget(self.pgmsavePushButton)
 
-        self.horizontalLayout_26.setStretch(0, 5)
-        self.horizontalLayout_26.setStretch(1, 2)
 
         self.verticalLayout_28.addWidget(self.widget_11)
 
@@ -4173,7 +4220,7 @@ class Ui_MainWindow(object):
 
         self.centerMenuPages.setCurrentIndex(4)
         self.infoSubPages.setCurrentIndex(1)
-        self.mainPages.setCurrentIndex(5)
+        self.mainPages.setCurrentIndex(2)
         self.stackedWidget.setCurrentIndex(1)
 
 
@@ -4318,6 +4365,11 @@ class Ui_MainWindow(object):
         self.pgmfeedPushButton.setText(QCoreApplication.translate("MainWindow", u"SET", None))
         self.pgmfillPushButton.setText(QCoreApplication.translate("MainWindow", u"FILL", None))
         self.pgmpurgePushButton.setText(QCoreApplication.translate("MainWindow", u"PURGE", None))
+        self.label_15.setText(QCoreApplication.translate("MainWindow", u"Steps", None))
+        self.travel10_RadioButton_3.setText(QCoreApplication.translate("MainWindow", u"10 mm", None))
+        self.travel5_RadioButton.setText(QCoreApplication.translate("MainWindow", u"5 mm", None))
+        self.travel1_RadioButton_3.setText(QCoreApplication.translate("MainWindow", u"1 mm", None))
+        self.travel01_RadioButton.setText(QCoreApplication.translate("MainWindow", u"0.1 mm", None))
         self.pgmsavePushButton.setText(QCoreApplication.translate("MainWindow", u"SAVE", None))
         self.page3Label.setText(QCoreApplication.translate("MainWindow", u"PRINT", None))
         self.label_11.setText(QCoreApplication.translate("MainWindow", u"Image Plot", None))

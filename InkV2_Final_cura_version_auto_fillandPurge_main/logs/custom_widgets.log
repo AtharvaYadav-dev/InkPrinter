@@ -1751,3 +1751,61 @@ Failed to generate G-code from DXF.
 2026-08-01 12:54:14,729 - INFO - Purge command sent directly to Blackpill via USB.
 2026-08-01 12:54:25,396 - ERROR - Could not find or connect to Blackpill via USB! Make sure it is plugged in.
 2026-08-01 12:54:25,397 - INFO - Fill command sent directly to Blackpill via USB.
+2026-08-01 14:24:50,797 - INFO - No OpenGL_accelerate module loaded: No module named 'OpenGL_accelerate'
+2026-08-01 14:24:52,725 - DEBUG - searching for blender in: C:\Program Files\Python314\;C:\Program Files\Python314\Lib\site-packages\PySide6;E:\Manashree\Github\Git\usr\bin;C:\WINDOWS\system32;E:\Manashree\Github\Git\cmd;c:\Users\SPPL01\.vscode\extensions\ms-python.debugpy-2026.6.0-win32-x64\bundled\scripts\noConfigScripts;C:\WINDOWS\System32\Wbem;c:\Users\SPPL01\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;C:\Users\SPPL01\AppData\Local\Programs\Python\Python313\Scripts\;c:\Users\SPPL01\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\copilotCli;C:\Users\SPPL01\AppData\Local\Programs\Antigravity IDE\bin;C:\Users\SPPL01\AppData\Local\GitHubDesktop\bin;C:\Users\SPPL01\AppData\Local\Microsoft\WindowsApps;C:\Users\SPPL01\AppData\Local\Programs\Python\Python313\;C:\Program Files\Python314\Scripts\;C:\Program Files\GTK2-Runtime Win64\bin;C:\Users\SPPL01\AppData\Local\Programs\Microsoft VS Code\bin;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS;C:\WINDOWS\System32\OpenSSH\;E:\Manashree\Github\Git\mingw64\bin
+2026-08-01 14:24:52,745 - DEBUG - falling back to hashlib hashing: `pip install xxhash`for 50x faster cache checks
+2026-08-01 14:24:54,818 - INFO - ==================================================
+2026-08-01 14:24:54,819 - INFO - New session START at 2026-08-01 14:24
+2026-08-01 14:24:54,819 - INFO - ==================================================
+2026-08-01 14:24:54,820 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-01 14:24:54,821 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-01 14:24:54,821 - INFO - Loaded draw_z from config: Z=44.9, draw_z_UP=22.45
+2026-08-01 14:24:54,821 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-01 14:24:54,822 - INFO - Updated profile.json: layer_height=0.4, layer_height_0=0.4
+2026-08-01 14:24:54,823 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-01 14:24:54,823 - INFO - INI file initialized
+2026-08-01 14:24:54,830 - INFO - UI load successful
+2026-08-01 14:24:55,600 - INFO - Com : com, Port : ['COM1', 'COM15', 'COM22'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-01 14:24:57,975 - INFO - Do you want to auto connect to COM15 @ 115200
+2026-08-01 14:24:57,981 - INFO - Auto Connect dialog button : Ok
+2026-08-01 14:24:57,981 - INFO - Serial communication autostarted
+2026-08-01 14:25:01,601 - INFO - Com : black_com, Port : ['COM1', 'COM15', 'COM22'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-01 14:25:05,184 - CRITICAL - Serial communication started
+2026-08-01 14:25:28,822 - INFO - Sent FILL to Blackpill
+2026-08-01 14:25:28,822 - INFO - Fill command sent directly to Blackpill via USB.
+2026-08-01 14:25:33,860 - INFO - Sent FILL to Blackpill
+2026-08-01 14:25:33,860 - INFO - Stop Fill command sent directly to Blackpill via USB.
+2026-08-01 14:25:38,214 - INFO - Sent PURGE to Blackpill
+2026-08-01 14:25:38,214 - INFO - Purge command sent directly to Blackpill via USB.
+2026-08-01 14:25:46,973 - INFO - Sent PURGE to Blackpill
+2026-08-01 14:25:46,973 - INFO - Stop Purge command sent directly to Blackpill via USB.
+2026-08-01 14:33:07,946 - INFO - Serial communication stopped
+2026-08-01 14:33:07,946 - INFO - COM connection close successfully
+2026-08-01 14:33:07,947 - INFO - Main window close successfully
+2026-08-01 14:33:07,947 - INFO - ==================================================
+2026-08-01 14:33:07,947 - INFO - New session close at 2026-08-01 14:33
+2026-08-01 14:33:07,947 - INFO - ==================================================
+2026-08-01 14:33:14,259 - INFO - No OpenGL_accelerate module loaded: No module named 'OpenGL_accelerate'
+2026-08-01 14:33:15,191 - DEBUG - searching for blender in: E:\Manashree\Github\Git\usr\bin;E:\Manashree\Github\Git\cmd;C:\Program Files\GTK2-Runtime Win64\bin;C:\WINDOWS;C:\Program Files\Python314\;c:\Users\SPPL01\.vscode\extensions\ms-python.debugpy-2026.6.0-win32-x64\bundled\scripts\noConfigScripts;C:\Program Files\Python314\Lib\site-packages\PySide6;C:\WINDOWS\system32;c:\Users\SPPL01\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;C:\Program Files\Python314\Scripts\;C:\Users\SPPL01\AppData\Local\Programs\Python\Python313\Scripts\;C:\Users\SPPL01\AppData\Local\Programs\Microsoft VS Code\bin;C:\WINDOWS\System32\OpenSSH\;E:\Manashree\Github\Git\mingw64\bin;c:\Users\SPPL01\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\copilotCli;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Users\SPPL01\AppData\Local\Programs\Python\Python313\;C:\Users\SPPL01\AppData\Local\Microsoft\WindowsApps;C:\Users\SPPL01\AppData\Local\GitHubDesktop\bin;C:\WINDOWS\System32\Wbem;C:\Users\SPPL01\AppData\Local\Programs\Antigravity IDE\bin
+2026-08-01 14:33:15,203 - DEBUG - falling back to hashlib hashing: `pip install xxhash`for 50x faster cache checks
+2026-08-01 14:33:16,185 - INFO - ==================================================
+2026-08-01 14:33:16,185 - INFO - New session START at 2026-08-01 14:33
+2026-08-01 14:33:16,185 - INFO - ==================================================
+2026-08-01 14:33:16,186 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-01 14:33:16,186 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-01 14:33:16,186 - INFO - Loaded draw_z from config: Z=44.9, draw_z_UP=22.45
+2026-08-01 14:33:16,186 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-01 14:33:16,187 - INFO - Updated profile.json: layer_height=0.4, layer_height_0=0.4
+2026-08-01 14:33:16,187 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-01 14:33:16,187 - INFO - INI file initialized
+2026-08-01 14:33:16,192 - INFO - UI load successful
+2026-08-01 14:33:16,562 - INFO - Com : com, Port : ['COM1', 'COM15', 'COM22'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-01 14:33:18,574 - INFO - Do you want to auto connect to COM15 @ 115200
+2026-08-01 14:33:18,578 - INFO - Auto Connect dialog button : Ok
+2026-08-01 14:33:18,578 - INFO - Serial communication autostarted
+2026-08-01 14:35:16,340 - INFO - Serial communication stopped
+2026-08-01 14:35:16,342 - INFO - COM connection close successfully
+2026-08-01 14:35:16,343 - INFO - Main window close successfully
+2026-08-01 14:35:16,343 - INFO - ==================================================
+2026-08-01 14:35:16,343 - INFO - New session close at 2026-08-01 14:35
+2026-08-01 14:35:16,343 - INFO - ==================================================
