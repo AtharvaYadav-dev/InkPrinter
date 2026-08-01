@@ -5453,22 +5453,119 @@ QPushButton:disabled {
                        </item>
                        <item>
                         <widget class="QWidget" name="widget_11" native="true">
-                         <layout class="QHBoxLayout" name="horizontalLayout_26" stretch="5,2">
-                          <property name="spacing">
-                           <number>9</number>
-                          </property>
+                         <layout class="QHBoxLayout" name="horizontalLayout_49">
                           <item>
-                           <spacer name="horizontalSpacer_5">
-                            <property name="orientation">
-                             <enum>Qt::Orientation::Horizontal</enum>
+                           <widget class="QFrame" name="stepsFrame_2">
+                            <property name="frameShape">
+                             <enum>QFrame::Shape::StyledPanel</enum>
                             </property>
-                            <property name="sizeHint" stdset="0">
-                             <size>
-                              <width>366</width>
-                              <height>20</height>
-                             </size>
+                            <property name="frameShadow">
+                             <enum>QFrame::Shadow::Raised</enum>
                             </property>
-                           </spacer>
+                            <layout class="QVBoxLayout" name="verticalLayout_64">
+                             <property name="topMargin">
+                              <number>4</number>
+                             </property>
+                             <item alignment="Qt::AlignmentFlag::AlignTop">
+                              <widget class="QLabel" name="label_15">
+                               <property name="minimumSize">
+                                <size>
+                                 <width>0</width>
+                                 <height>15</height>
+                                </size>
+                               </property>
+                               <property name="font">
+                                <font>
+                                 <pointsize>12</pointsize>
+                                 <bold>true</bold>
+                                </font>
+                               </property>
+                               <property name="text">
+                                <string>Steps</string>
+                               </property>
+                               <property name="alignment">
+                                <set>Qt::AlignmentFlag::AlignCenter</set>
+                               </property>
+                              </widget>
+                             </item>
+                             <item>
+                              <widget class="QFrame" name="frame_13">
+                               <property name="sizePolicy">
+                                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                                 <horstretch>0</horstretch>
+                                 <verstretch>0</verstretch>
+                                </sizepolicy>
+                               </property>
+                               <property name="minimumSize">
+                                <size>
+                                 <width>0</width>
+                                 <height>35</height>
+                                </size>
+                               </property>
+                               <property name="frameShape">
+                                <enum>QFrame::Shape::StyledPanel</enum>
+                               </property>
+                               <property name="frameShadow">
+                                <enum>QFrame::Shadow::Raised</enum>
+                               </property>
+                               <layout class="QHBoxLayout" name="horizontalLayout_48">
+                                <item>
+                                 <widget class="QRadioButton" name="travel10_RadioButton_3">
+                                  <property name="font">
+                                   <font>
+                                    <pointsize>14</pointsize>
+                                    <bold>true</bold>
+                                   </font>
+                                  </property>
+                                  <property name="text">
+                                   <string>10 mm</string>
+                                  </property>
+                                 </widget>
+                                </item>
+                                <item>
+                                 <widget class="QRadioButton" name="travel5_RadioButton">
+                                  <property name="font">
+                                   <font>
+                                    <pointsize>14</pointsize>
+                                    <bold>true</bold>
+                                   </font>
+                                  </property>
+                                  <property name="text">
+                                   <string>5 mm</string>
+                                  </property>
+                                 </widget>
+                                </item>
+                                <item>
+                                 <widget class="QRadioButton" name="travel1_RadioButton_3">
+                                  <property name="font">
+                                   <font>
+                                    <pointsize>14</pointsize>
+                                    <bold>true</bold>
+                                   </font>
+                                  </property>
+                                  <property name="text">
+                                   <string>1 mm</string>
+                                  </property>
+                                 </widget>
+                                </item>
+                                <item>
+                                 <widget class="QRadioButton" name="travel01_RadioButton">
+                                  <property name="font">
+                                   <font>
+                                    <pointsize>14</pointsize>
+                                    <bold>true</bold>
+                                   </font>
+                                  </property>
+                                  <property name="text">
+                                   <string>0.1 mm</string>
+                                  </property>
+                                 </widget>
+                                </item>
+                               </layout>
+                              </widget>
+                             </item>
+                            </layout>
+                           </widget>
                           </item>
                           <item>
                            <widget class="QPushButton" name="pgmsavePushButton">
