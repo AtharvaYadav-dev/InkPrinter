@@ -1433,3 +1433,69 @@ Failed to generate G-code from DXF.
 2026-08-01 11:55 - INFO - ==================================================
 2026-08-01 11:55 - INFO - New session close at 2026-08-01 11:55
 2026-08-01 11:55 - INFO - ==================================================
+2026-08-01 12:19 - INFO - ==================================================
+2026-08-01 12:19 - INFO - New session START at 2026-08-01 12:19
+2026-08-01 12:19 - INFO - ==================================================
+2026-08-01 12:19 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-01 12:19 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-01 12:19 - INFO - Loaded draw_z from config: Z=44.9, draw_z_UP=22.45
+2026-08-01 12:19 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-01 12:19 - INFO - Updated profile.json: layer_height=0.4, layer_height_0=0.4
+2026-08-01 12:19 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-01 12:19 - INFO - INI file initialized
+2026-08-01 12:19 - INFO - UI load successful
+2026-08-01 12:19 - INFO - Com : com, Port : ['COM1', 'COM15', 'COM22'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-01 12:19 - INFO - Do you want to auto connect to COM15 @ 115200
+2026-08-01 12:19 - INFO - Auto Connect dialog button : Ok
+2026-08-01 12:19 - INFO - Serial communication autostarted
+2026-08-01 12:25 - INFO - Serial communication stopped
+2026-08-01 12:25 - INFO - COM connection close successfully
+2026-08-01 12:25 - INFO - Main window close successfully
+2026-08-01 12:25 - INFO - ==================================================
+2026-08-01 12:25 - INFO - New session close at 2026-08-01 12:25
+2026-08-01 12:25 - INFO - ==================================================
+2026-08-01 12:27 - INFO - ==================================================
+2026-08-01 12:27 - INFO - New session START at 2026-08-01 12:27
+2026-08-01 12:27 - INFO - ==================================================
+2026-08-01 12:27 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-01 12:27 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-01 12:27 - INFO - Loaded draw_z from config: Z=44.9, draw_z_UP=22.45
+2026-08-01 12:27 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-01 12:27 - INFO - Updated profile.json: layer_height=0.4, layer_height_0=0.4
+2026-08-01 12:27 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-01 12:27 - INFO - INI file initialized
+2026-08-01 12:27 - INFO - UI load successful
+2026-08-01 12:27 - INFO - Com : com, Port : ['COM1', 'COM15', 'COM22'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-01 12:27 - INFO - Do you want to auto connect to COM15 @ 115200
+2026-08-01 12:27 - INFO - Auto Connect dialog button : Ok
+2026-08-01 12:27 - INFO - Serial communication autostarted
+2026-08-01 12:27 - INFO - Com : black_com, Port : ['COM1', 'COM15', 'COM22'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-01 12:28 - CRITICAL - Serial communication started
+2026-08-01 12:28 - CRITICAL - Serial communication started
+2026-08-01 12:28 - INFO - Serial communication stopped
+2026-08-01 12:28 - INFO - COM connection close successfully
+2026-08-01 12:28 - INFO - Main window close successfully
+2026-08-01 12:28 - INFO - ==================================================
+2026-08-01 12:28 - INFO - New session close at 2026-08-01 12:28
+2026-08-01 12:28 - INFO - ==================================================
+2026-08-01 12:50 - INFO - ==================================================
+2026-08-01 12:50 - INFO - New session START at 2026-08-01 12:50
+2026-08-01 12:50 - INFO - ==================================================
+2026-08-01 12:50 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-01 12:50 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-01 12:50 - INFO - Loaded draw_z from config: Z=44.9, draw_z_UP=22.45
+2026-08-01 12:50 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-01 12:50 - INFO - Updated profile.json: layer_height=0.4, layer_height_0=0.4
+2026-08-01 12:50 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-01 12:50 - INFO - INI file initialized
+2026-08-01 12:50 - INFO - UI load successful
+2026-08-01 12:50 - INFO - Com : com, Port : ['COM1', 'COM15', 'COM22'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-01 12:53 - INFO - Do you want to auto connect to COM15 @ 115200
+2026-08-01 12:53 - INFO - Auto Connect dialog button : Ok
+2026-08-01 12:53 - INFO - Serial communication autostarted
+2026-08-01 12:53 - INFO - Com : black_com, Port : ['COM1', 'COM15', 'COM22'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-01 12:54 - CRITICAL - Serial communication started
+2026-08-01 12:54 - INFO - Fill command sent directly to Blackpill via USB.
+2026-08-01 12:54 - INFO - Purge command sent directly to Blackpill via USB.
+2026-08-01 12:54 - ERROR - Could not find or connect to Blackpill via USB! Make sure it is plugged in.
+2026-08-01 12:54 - INFO - Fill command sent directly to Blackpill via USB.

@@ -1676,3 +1676,78 @@ Failed to generate G-code from DXF.
 2026-08-01 11:55:57,050 - INFO - ==================================================
 2026-08-01 11:55:57,051 - INFO - New session close at 2026-08-01 11:55
 2026-08-01 11:55:57,051 - INFO - ==================================================
+2026-08-01 12:19:17,872 - INFO - No OpenGL_accelerate module loaded: No module named 'OpenGL_accelerate'
+2026-08-01 12:19:27,250 - DEBUG - searching for blender in: c:\Users\SPPL01\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;C:\Users\SPPL01\AppData\Local\Microsoft\WindowsApps;c:\Users\SPPL01\.vscode\extensions\ms-python.debugpy-2026.6.0-win32-x64\bundled\scripts\noConfigScripts;C:\Users\SPPL01\AppData\Local\Programs\Antigravity IDE\bin;C:\Users\SPPL01\AppData\Local\Programs\Python\Python313\;C:\WINDOWS\System32\Wbem;C:\WINDOWS\system32;E:\Manashree\Github\Git\usr\bin;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Python314\;C:\Users\SPPL01\AppData\Local\Programs\Python\Python313\Scripts\;E:\Manashree\Github\Git\mingw64\bin;C:\Users\SPPL01\AppData\Local\GitHubDesktop\bin;C:\Program Files\Python314\Scripts\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\GTK2-Runtime Win64\bin;c:\Users\SPPL01\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\copilotCli;C:\Program Files\Python314\Lib\site-packages\PySide6;E:\Manashree\Github\Git\cmd;C:\Users\SPPL01\AppData\Local\Programs\Microsoft VS Code\bin;C:\WINDOWS
+2026-08-01 12:19:27,267 - DEBUG - falling back to hashlib hashing: `pip install xxhash`for 50x faster cache checks
+2026-08-01 12:19:34,774 - INFO - ==================================================
+2026-08-01 12:19:34,774 - INFO - New session START at 2026-08-01 12:19
+2026-08-01 12:19:34,774 - INFO - ==================================================
+2026-08-01 12:19:34,776 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-01 12:19:34,776 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-01 12:19:34,776 - INFO - Loaded draw_z from config: Z=44.9, draw_z_UP=22.45
+2026-08-01 12:19:34,776 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-01 12:19:34,779 - INFO - Updated profile.json: layer_height=0.4, layer_height_0=0.4
+2026-08-01 12:19:34,779 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-01 12:19:34,779 - INFO - INI file initialized
+2026-08-01 12:19:34,787 - INFO - UI load successful
+2026-08-01 12:19:35,448 - INFO - Com : com, Port : ['COM1', 'COM15', 'COM22'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-01 12:19:39,074 - INFO - Do you want to auto connect to COM15 @ 115200
+2026-08-01 12:19:39,078 - INFO - Auto Connect dialog button : Ok
+2026-08-01 12:19:39,079 - INFO - Serial communication autostarted
+2026-08-01 12:25:10,638 - INFO - Serial communication stopped
+2026-08-01 12:25:10,639 - INFO - COM connection close successfully
+2026-08-01 12:25:10,640 - INFO - Main window close successfully
+2026-08-01 12:25:10,640 - INFO - ==================================================
+2026-08-01 12:25:10,640 - INFO - New session close at 2026-08-01 12:25
+2026-08-01 12:25:10,640 - INFO - ==================================================
+2026-08-01 12:27:43,334 - INFO - No OpenGL_accelerate module loaded: No module named 'OpenGL_accelerate'
+2026-08-01 12:27:44,566 - DEBUG - searching for blender in: C:\WINDOWS\system32;c:\Users\SPPL01\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;C:\Program Files\Python314\;E:\Manashree\Github\Git\mingw64\bin;c:\Users\SPPL01\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\copilotCli;E:\Manashree\Github\Git\usr\bin;C:\Users\SPPL01\AppData\Local\Programs\Microsoft VS Code\bin;E:\Manashree\Github\Git\cmd;c:\Users\SPPL01\.vscode\extensions\ms-python.debugpy-2026.6.0-win32-x64\bundled\scripts\noConfigScripts;C:\Users\SPPL01\AppData\Local\Microsoft\WindowsApps;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS;C:\Users\SPPL01\AppData\Local\Programs\Python\Python313\Scripts\;C:\Program Files\GTK2-Runtime Win64\bin;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Python314\Lib\site-packages\PySide6;C:\Program Files\Python314\Scripts\;C:\WINDOWS\System32\Wbem;C:\Users\SPPL01\AppData\Local\Programs\Python\Python313\;C:\Users\SPPL01\AppData\Local\GitHubDesktop\bin;C:\Users\SPPL01\AppData\Local\Programs\Antigravity IDE\bin
+2026-08-01 12:27:44,583 - DEBUG - falling back to hashlib hashing: `pip install xxhash`for 50x faster cache checks
+2026-08-01 12:27:45,835 - INFO - ==================================================
+2026-08-01 12:27:45,835 - INFO - New session START at 2026-08-01 12:27
+2026-08-01 12:27:45,835 - INFO - ==================================================
+2026-08-01 12:27:45,836 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-01 12:27:45,836 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-01 12:27:45,836 - INFO - Loaded draw_z from config: Z=44.9, draw_z_UP=22.45
+2026-08-01 12:27:45,836 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-01 12:27:45,837 - INFO - Updated profile.json: layer_height=0.4, layer_height_0=0.4
+2026-08-01 12:27:45,837 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-01 12:27:45,838 - INFO - INI file initialized
+2026-08-01 12:27:45,843 - INFO - UI load successful
+2026-08-01 12:27:46,281 - INFO - Com : com, Port : ['COM1', 'COM15', 'COM22'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-01 12:27:47,746 - INFO - Do you want to auto connect to COM15 @ 115200
+2026-08-01 12:27:47,750 - INFO - Auto Connect dialog button : Ok
+2026-08-01 12:27:47,750 - INFO - Serial communication autostarted
+2026-08-01 12:27:56,064 - INFO - Com : black_com, Port : ['COM1', 'COM15', 'COM22'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-01 12:28:05,856 - CRITICAL - Serial communication started
+2026-08-01 12:28:13,412 - CRITICAL - Serial communication started
+2026-08-01 12:28:33,071 - INFO - Serial communication stopped
+2026-08-01 12:28:33,073 - INFO - COM connection close successfully
+2026-08-01 12:28:33,073 - INFO - Main window close successfully
+2026-08-01 12:28:33,074 - INFO - ==================================================
+2026-08-01 12:28:33,074 - INFO - New session close at 2026-08-01 12:28
+2026-08-01 12:28:33,074 - INFO - ==================================================
+2026-08-01 12:49:59,045 - INFO - No OpenGL_accelerate module loaded: No module named 'OpenGL_accelerate'
+2026-08-01 12:50:00,515 - DEBUG - searching for blender in: C:\WINDOWS;E:\Manashree\Github\Git\usr\bin;C:\Users\SPPL01\AppData\Local\Programs\Antigravity IDE\bin;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;c:\Users\SPPL01\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;C:\Users\SPPL01\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\SPPL01\AppData\Local\Programs\Python\Python313\;C:\Program Files\GTK2-Runtime Win64\bin;C:\WINDOWS\System32\Wbem;c:\Users\SPPL01\.vscode\extensions\ms-python.debugpy-2026.6.0-win32-x64\bundled\scripts\noConfigScripts;C:\WINDOWS\System32\OpenSSH\;C:\Users\SPPL01\AppData\Local\Programs\Python\Python313\Scripts\;C:\Program Files\Python314\Scripts\;C:\WINDOWS\system32;E:\Manashree\Github\Git\mingw64\bin;C:\Program Files\Python314\Lib\site-packages\PySide6;C:\Program Files\Python314\;E:\Manashree\Github\Git\cmd;C:\Users\SPPL01\AppData\Local\GitHubDesktop\bin;c:\Users\SPPL01\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\copilotCli;C:\Users\SPPL01\AppData\Local\Microsoft\WindowsApps
+2026-08-01 12:50:00,530 - DEBUG - falling back to hashlib hashing: `pip install xxhash`for 50x faster cache checks
+2026-08-01 12:50:02,176 - INFO - ==================================================
+2026-08-01 12:50:02,176 - INFO - New session START at 2026-08-01 12:50
+2026-08-01 12:50:02,176 - INFO - ==================================================
+2026-08-01 12:50:02,178 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-01 12:50:02,178 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-01 12:50:02,179 - INFO - Loaded draw_z from config: Z=44.9, draw_z_UP=22.45
+2026-08-01 12:50:02,179 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-01 12:50:02,180 - INFO - Updated profile.json: layer_height=0.4, layer_height_0=0.4
+2026-08-01 12:50:02,181 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-01 12:50:02,181 - INFO - INI file initialized
+2026-08-01 12:50:02,191 - INFO - UI load successful
+2026-08-01 12:50:02,708 - INFO - Com : com, Port : ['COM1', 'COM15', 'COM22'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-01 12:53:21,126 - INFO - Do you want to auto connect to COM15 @ 115200
+2026-08-01 12:53:21,131 - INFO - Auto Connect dialog button : Ok
+2026-08-01 12:53:21,132 - INFO - Serial communication autostarted
+2026-08-01 12:53:31,943 - INFO - Com : black_com, Port : ['COM1', 'COM15', 'COM22'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-01 12:54:07,414 - CRITICAL - Serial communication started
+2026-08-01 12:54:10,758 - INFO - Fill command sent directly to Blackpill via USB.
+2026-08-01 12:54:14,729 - INFO - Purge command sent directly to Blackpill via USB.
+2026-08-01 12:54:25,396 - ERROR - Could not find or connect to Blackpill via USB! Make sure it is plugged in.
+2026-08-01 12:54:25,397 - INFO - Fill command sent directly to Blackpill via USB.

@@ -2012,3 +2012,21 @@ All Cura installations verified successfully.
 [2026-08-01 11:55:35] [OK] Found Cura installations:
 [2026-08-01 11:55:35]      - C:\Program Files\UltiMaker Cura 5.13.0
 [2026-08-01 11:55:35]      - C:\Program Files\UltiMaker Cura 5.9.1
+[2026-08-01 12:19:34] [OK] Found Cura installations:
+[2026-08-01 12:19:34]      - C:\Program Files\UltiMaker Cura 5.13.0
+[2026-08-01 12:19:34]      - C:\Program Files\UltiMaker Cura 5.9.1
+[2026-08-01 12:19:34] [OK] Found Cura installations:
+[2026-08-01 12:19:34]      - C:\Program Files\UltiMaker Cura 5.13.0
+[2026-08-01 12:19:34]      - C:\Program Files\UltiMaker Cura 5.9.1
+[2026-08-01 12:27:45] [OK] Found Cura installations:
+[2026-08-01 12:27:45]      - C:\Program Files\UltiMaker Cura 5.13.0
+[2026-08-01 12:27:45]      - C:\Program Files\UltiMaker Cura 5.9.1
+[2026-08-01 12:27:45] [OK] Found Cura installations:
+[2026-08-01 12:27:45]      - C:\Program Files\UltiMaker Cura 5.13.0
+[2026-08-01 12:27:45]      - C:\Program Files\UltiMaker Cura 5.9.1
+[2026-08-01 12:50:02] [OK] Found Cura installations:
+[2026-08-01 12:50:02]      - C:\Program Files\UltiMaker Cura 5.13.0
+[2026-08-01 12:50:02]      - C:\Program Files\UltiMaker Cura 5.9.1
+[2026-08-01 12:50:02] [OK] Found Cura installations:
+[2026-08-01 12:50:02]      - C:\Program Files\UltiMaker Cura 5.13.0
+[2026-08-01 12:50:02]      - C:\Program Files\UltiMaker Cura 5.9.1
