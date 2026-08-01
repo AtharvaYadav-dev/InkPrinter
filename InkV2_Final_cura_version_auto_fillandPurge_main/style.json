@@ -134,7 +134,8 @@
 							"comPushButton": "comPage",
 							"settingsPushButton": "settingsPage",
 							"infoPushButton": "infoPage",
-							"profilePushButton": "profilePage"
+							"profilePushButton": "profilePage",
+							"blackcomPushButton": "blackcomPage"
 						}
 					]
 				}
@@ -177,7 +178,8 @@
 			"Buttons": [
 				"comPushButton",
 				"settingsPushButton",
-				"infoPushButton"
+				"infoPushButton",
+				"blackcomPushButton"
 			],
 			"Style":[{
 				"Active": "background-color: rgb(167, 198, 229);",

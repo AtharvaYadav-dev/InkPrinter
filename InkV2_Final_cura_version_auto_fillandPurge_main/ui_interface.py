@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'interfacekLqiek.ui'
+## Form generated from reading UI file 'interfaceAjhHRa.ui'
 ##
-## Created by: Qt User Interface Compiler version 6.11.1
+## Created by: Qt User Interface Compiler version 6.8.2
 ##
 ## WARNING! All changes made in this file will be lost when recompiling UI file!
 ################################################################################
@@ -4241,7 +4241,7 @@ class Ui_MainWindow(object):
         self.userLabel.setText(QCoreApplication.translate("MainWindow", u"Profile", None))
         self.passwordLabel.setText(QCoreApplication.translate("MainWindow", u"Password", None))
         self.profilesetPushButton.setText(QCoreApplication.translate("MainWindow", u"SET", None))
-        self.comLabel_2.setText(QCoreApplication.translate("MainWindow", u"DFFTTGGH", None))
+        self.comLabel_2.setText(QCoreApplication.translate("MainWindow", u"Com2", None))
         self.portLabel_2.setText(QCoreApplication.translate("MainWindow", u"Port", None))
         self.baudLabel_2.setText(QCoreApplication.translate("MainWindow", u"Baud", None))
         self.blackconnectPushButton.setText(QCoreApplication.translate("MainWindow", u"Connect", None))
