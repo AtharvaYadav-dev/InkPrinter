@@ -213,6 +213,7 @@ class MainWindow(QMainWindow):
         
         # Module and Class instances
         self.sercom = SerialCom()
+        self.blackpill_sercom = SerialCom()
         self.fh = FileHandler()
         self.conf = ConfigHandler()
         self.cb = CallbackHandler()
@@ -314,6 +315,26 @@ class MainWindow(QMainWindow):
         
         self.com = DictAsClass(self.com_dict)
 
+        # black com widget
+        self.blackComCombo1 = self.findChild(QComboBox, "blackportComboBox")
+        self.blackComCombo2 = self.findChild(QComboBox, "blackbaudComboBox")
+        self.blackComBtn1 = self.findChild(QPushButton, "blackconnectPushButton")
+        self.blackComBtn2 = self.findChild(QPushButton, "blackrefreshPushButton")
+        
+        self.black_com_dict = {self.blackComCombo1.objectName() : "port",
+                               self.blackComCombo2.objectName() : "baud",
+                               self.blackComBtn1.objectName() : "connect",
+                               self.blackComBtn2.objectName() : "refresh",
+                               "port" : self.blackComCombo1,
+                               "baud" : self.blackComCombo2,
+                               "connect" : self.blackComBtn1,
+                               "refresh" : self.blackComBtn2,
+                               "conf" : "black_com",
+                               "object" : "blackpill_sercom"
+                               }
+        
+        self.black_com = DictAsClass(self.black_com_dict)
+
         # left menu widgets
         self.leftMenuBtn1 = self.findChild(QPushButton, "homePushButton")
         self.leftMenuBtn2 = self.findChild(QPushButton, "laserPushButton")
@@ -342,17 +363,20 @@ class MainWindow(QMainWindow):
         self.centerMenuBtn3 = self.findChild(QPushButton, "infoPushButton")
         self.centerMenuBtn4 = self.findChild(QPushButton, "closeCenterMenuPushButton")
         self.centerMenuBtn5 = self.findChild(QPushButton, "profilePushButton")
+        self.centerMenuBtn6 = self.findChild(QPushButton, "blackcomPushButton")
         
         self.centerMenuWidget_dict = {self.centerMenuBtn1.objectName() : "com",
                                       self.centerMenuBtn2.objectName() : "settings",
                                       self.centerMenuBtn3.objectName() : "info",
                                       self.centerMenuBtn4.objectName() : "close",
                                       self.centerMenuBtn5.objectName() : "profile",
+                                      self.centerMenuBtn6.objectName() : "blackcom",
                                       "com" : self.centerMenuBtn1,
                                       "settings" : self.centerMenuBtn2,
                                       "info" : self.centerMenuBtn3,
                                       "close" : self.centerMenuBtn4,
-                                      "profile" : self.centerMenuBtn5
+                                      "profile" : self.centerMenuBtn5,
+                                      "blackcom" : self.centerMenuBtn6
                                       }
         
         self.centerMenuWidget = DictAsClass(self.centerMenuWidget_dict)
@@ -670,6 +694,7 @@ class MainWindow(QMainWindow):
         self.centerMenuBtn2.clicked.connect(lambda: self.centerMenuAction(self.centerMenuBtn2))
         self.centerMenuBtn3.clicked.connect(lambda: self.centerMenuAction(self.centerMenuBtn3))
         self.centerMenuBtn5.clicked.connect(lambda: self.centerMenuAction(self.centerMenuBtn5))
+        self.centerMenuBtn6.clicked.connect(lambda: self.centerMenuAction(self.centerMenuBtn6))
         
         # close centerMenuContainer
         self.centerMenuBtn4.clicked.connect(lambda: self.centerMenuAction(self.centerMenuBtn4))
@@ -687,6 +712,8 @@ class MainWindow(QMainWindow):
         # serial COM
         self.comBtn1.clicked.connect(lambda: self.comAction(self.com, widget=self.comBtn1))
         self.comBtn2.clicked.connect(lambda: self.comAction(self.com, widget=self.comBtn2))
+        self.blackComBtn1.clicked.connect(lambda: self.comAction(self.black_com, widget=self.blackComBtn1))
+        self.blackComBtn2.clicked.connect(lambda: self.comAction(self.black_com, widget=self.blackComBtn2))
 
         # jog travel radio buttons
         self.jogRadioBtn1.clicked.connect(lambda : self.jogAction(self.jogRadioBtn1))
