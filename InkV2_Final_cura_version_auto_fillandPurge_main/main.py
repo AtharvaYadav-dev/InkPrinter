@@ -1429,8 +1429,8 @@ class MainWindow(QMainWindow):
             if action in combtn_dict:
                            
                 connect_btn_text, refresh_btn_status = combtn_dict.get(action)
-                self.wm.operate(self.com.connect, "set", connect_btn_text)
-                self.wm.operate(self.com.refresh, "enable", refresh_btn_status)
+                self.wm.operate(com.connect, "set", connect_btn_text)
+                self.wm.operate(com.refresh, "enable", refresh_btn_status)
                 self.util.debugPrint(f"connect btn : {connect_btn_text} | refresh btn : {refresh_btn_status}")
         
     def jogAction(self, widget):        
