@@ -2058,7 +2058,7 @@ QPushButton:disabled {
                  </font>
                 </property>
                 <property name="text">
-                 <string>DFFTTGGH</string>
+                 <string>Com2</string>
                 </property>
                 <property name="alignment">
                  <set>Qt::AlignmentFlag::AlignCenter</set>
@@ -2703,7 +2703,7 @@ QPushButton:disabled {
                 </size>
                </property>
                <property name="currentIndex">
-                <number>5</number>
+                <number>2</number>
                </property>
                <widget class="QWidget" name="jogPage">
                 <layout class="QVBoxLayout" name="verticalLayout_15">

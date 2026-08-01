@@ -667,6 +667,7 @@ class MainWindow(QMainWindow):
 
         # initialize callbacks used in the UI
         self.sercom.configCallbacks(responseCallback = self.updateData, exceptionCallback = self.updateException)
+        self.blackpill_sercom.configCallbacks(exceptionCallback = self.updateException)
         self.gcode.attachCallback(self.cb)
         self.cb.register(self.gcode.gcode_dict.get("home"), self.goHome)
         self.cb.register(self.gcode.gcode_dict.get("get-pos"), self.updateAxisPos)
@@ -1869,25 +1870,14 @@ class MainWindow(QMainWindow):
         self.logger.info(f"Step size changed to {self.current_step}")
 
     def _send_to_blackpill(self, cmd):
-                if not hasattr(self, 'blackpill_sercom'):
-                        self.blackpill_sercom = SerialCom()
-                        
-                if not self.blackpill_sercom.is_connected:
-                        import serial.tools.list_ports
-                        for port in serial.tools.list_ports.comports():
-                                if port.vid == 0x0483 and port.pid == 0x5740:
-                                        self.blackpill_sercom.port = port.device
-                                        self.blackpill_sercom.baudrate = "115200"
-                                        self.blackpill_sercom.connect()
-                                        if self.blackpill_sercom.is_connected:
-                                                self.logger.info(f"Auto-connected to Blackpill on {port.device}")
-                                        break
-                                        
-                if self.blackpill_sercom.is_connected:
-                        self.blackpill_sercom.send(cmd + "\n")
-                else:
-                        self.logger.error("Could not find or connect to Blackpill via USB! Make sure it is plugged in.")
-                        self.util.debugPrint("Blackpill not found on USB.")
+        if hasattr(self, 'blackpill_sercom') and self.blackpill_sercom.is_connected:
+            self.blackpill_sercom.send(cmd + "\n")
+            self.logger.info(f"Sent {cmd} to Blackpill")
+        else:
+            msg = "Blackpill is not connected. Please connect via the Black COM page."
+            self.logger.error(msg)
+            self.util.debugPrint(msg)
+            self.showCustomPopup("Connection Error", msg)
 
     def _handle_fill(self):
                 if not hasattr(self, 'fill_state'):
