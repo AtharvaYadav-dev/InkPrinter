@@ -530,6 +530,10 @@ class MainWindow(QMainWindow):
         self.pgmBtn4 = self.findChild(QPushButton, "pgmsavePushButton")
         self.pgmBtn5 = self.findChild(QPushButton, "pgmfillPushButton")
         self.pgmBtn6 = self.findChild(QPushButton, "pgmpurgePushButton")
+        self.travel01_RadioButton = self.findChild(QRadioButton, "travel01_RadioButton")
+        self.travel1_RadioButton_3 = self.findChild(QRadioButton, "travel1_RadioButton_3")
+        self.travel5_RadioButton = self.findChild(QRadioButton, "travel5_RadioButton")
+        self.travel10_RadioButton_3 = self.findChild(QRadioButton, "travel10_RadioButton_3")
         
         
         self.programWidget_dict = {self.pgmBtn1.objectName() : "file",
@@ -1879,41 +1883,52 @@ class MainWindow(QMainWindow):
             self.util.debugPrint(msg)
             self.showCustomPopup("Connection Error", msg)
 
-    def _handle_fill(self):
-                if not hasattr(self, 'fill_state'):
-                        self.fill_state = False
-                        self.purge_state = False
+    def _get_travel_distance(self):
+        if hasattr(self, 'travel01_RadioButton') and self.travel01_RadioButton.isChecked(): return "0.1"
+        if hasattr(self, 'travel1_RadioButton_3') and self.travel1_RadioButton_3.isChecked(): return "1.0"
+        if hasattr(self, 'travel5_RadioButton') and self.travel5_RadioButton.isChecked(): return "5.0"
+        if hasattr(self, 'travel10_RadioButton_3') and self.travel10_RadioButton_3.isChecked(): return "10.0"
+        return "0.0"
 
-                if not self.fill_state:
-                        self._send_to_blackpill("FILL")
-                        self.fill_state = True
-                        self.purge_state = False
-                        self.programWidget.fill.setText("Stop Fill")
-                        self.programWidget.purge.setText("Purge")
-                        self.logger.info("Fill command sent directly to Blackpill via USB.")
-                else:
-                        self._send_to_blackpill("FILL")
-                        self.fill_state = False
-                        self.programWidget.fill.setText("Fill")
-                        self.logger.info("Stop Fill command sent directly to Blackpill via USB.")
+    def _handle_fill(self):
+        if not hasattr(self, 'fill_state'):
+            self.fill_state = False
+            self.purge_state = False
+
+        if not self.fill_state:
+            dist = self._get_travel_distance()
+            cmd = f"FILL {dist}" if dist != "0.0" else "FILL"
+            self._send_to_blackpill(cmd)
+            self.fill_state = True
+            self.purge_state = False
+            self.programWidget.fill.setText("Stop Fill")
+            self.programWidget.purge.setText("Purge")
+            self.logger.info(f"Fill command ({cmd}) sent to Blackpill.")
+        else:
+            self._send_to_blackpill("STOP")
+            self.fill_state = False
+            self.programWidget.fill.setText("Fill")
+            self.logger.info("Stop Fill command sent to Blackpill.")
 
     def _handle_purge(self):
-                if not hasattr(self, 'fill_state'):
-                        self.fill_state = False
-                        self.purge_state = False
+        if not hasattr(self, 'fill_state'):
+            self.fill_state = False
+            self.purge_state = False
 
-                if not self.purge_state:
-                        self._send_to_blackpill("PURGE")
-                        self.purge_state = True
-                        self.fill_state = False
-                        self.programWidget.purge.setText("Stop Purge")
-                        self.programWidget.fill.setText("Fill")
-                        self.logger.info("Purge command sent directly to Blackpill via USB.")
-                else:
-                        self._send_to_blackpill("PURGE")
-                        self.purge_state = False
-                        self.programWidget.purge.setText("Purge")
-                        self.logger.info("Stop Purge command sent directly to Blackpill via USB.")
+        if not self.purge_state:
+            dist = self._get_travel_distance()
+            cmd = f"PURGE {dist}" if dist != "0.0" else "PURGE"
+            self._send_to_blackpill(cmd)
+            self.purge_state = True
+            self.fill_state = False
+            self.programWidget.purge.setText("Stop Purge")
+            self.programWidget.fill.setText("Fill")
+            self.logger.info(f"Purge command ({cmd}) sent to Blackpill.")
+        else:
+            self._send_to_blackpill("STOP")
+            self.purge_state = False
+            self.programWidget.purge.setText("Purge")
+            self.logger.info("Stop Purge command sent to Blackpill.")
                         
     # -------------------------------
     # 4) Save: apply Z height, draw_z, offsets, feed; bounds; preview

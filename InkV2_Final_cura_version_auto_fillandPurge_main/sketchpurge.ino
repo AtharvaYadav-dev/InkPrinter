@@ -11,8 +11,10 @@
  *********************************************************************/
 #define STEP_PIN    PB10
 #define DIR_PIN     PB2
-
 #define LED_PIN     PC13
+
+// Adjust this value according to your stepper driver microstepping and motor
+#define STEPS_PER_MM 100 
 
 /*********************************************************************
  * Hardware Timer
@@ -24,10 +26,10 @@ HardwareTimer StepTimer(TIM2);
  *********************************************************************/
 volatile bool motorRunning = false;
 volatile bool stepState = false;
-
 volatile uint32_t pulseCount = 0;
+volatile uint32_t targetPulses = 0;
 
-bool direction = true;      // true = CW, false = CCW
+bool direction = true;      // true = CW (FILL), false = CCW (PURGE)
 
 /*********************************************************************
  * Timer Interrupt
@@ -37,16 +39,23 @@ void StepTimerISR()
     if(!motorRunning)
         return;
 
+    if (targetPulses > 0 && pulseCount >= targetPulses) {
+        motorRunning = false;
+        targetPulses = 0;
+        GPIOB->BSRR = GPIO_BSRR_BR10; // Ensure step pin is LOW
+        return;
+    }
+
     if(stepState)
     {
         GPIOB->BSRR = GPIO_BSRR_BR10;
         stepState = false;
+        pulseCount++;
     }
     else
     {
         GPIOB->BSRR = GPIO_BSRR_BS10;
         stepState = true;
-        pulseCount++;
     }
 }
 
@@ -75,32 +84,46 @@ void setup()
  * Helper for Processing Serial Commands
  *********************************************************************/
 void processCommand(String cmd) {
-    if (cmd.indexOf("FILL") != -1) {
-        if (motorRunning && direction == true) {
-            motorRunning = false;
-            stepState = false;
-            GPIOB->BSRR = GPIO_BSRR_BR10;
-        } else {
-            direction = true;
-            digitalWrite(DIR_PIN, HIGH);
-            pulseCount = 0;
-            stepState = false;
-            GPIOB->BSRR = GPIO_BSRR_BR10;
-            motorRunning = true;
+    cmd.trim();
+    if (cmd == "STOP") {
+        motorRunning = false;
+        targetPulses = 0;
+        GPIOB->BSRR = GPIO_BSRR_BR10;
+        return;
+    }
+
+    if (cmd.startsWith("FILL")) {
+        float distance = 0.0;
+        if (cmd.length() > 5) {
+            distance = cmd.substring(5).toFloat();
         }
-    } else if (cmd.indexOf("PURGE") != -1) {
-        if (motorRunning && direction == false) {
-            motorRunning = false;
-            stepState = false;
-            GPIOB->BSRR = GPIO_BSRR_BR10;
+        direction = true;
+        digitalWrite(DIR_PIN, HIGH);
+        pulseCount = 0;
+        stepState = false;
+        GPIOB->BSRR = GPIO_BSRR_BR10;
+        if (distance > 0.0) {
+            targetPulses = (uint32_t)(distance * STEPS_PER_MM);
         } else {
-            direction = false;
-            digitalWrite(DIR_PIN, LOW);
-            pulseCount = 0;
-            stepState = false;
-            GPIOB->BSRR = GPIO_BSRR_BR10;
-            motorRunning = true;
+            targetPulses = 0; // Continuous
         }
+        motorRunning = true;
+    } else if (cmd.startsWith("PURGE")) {
+        float distance = 0.0;
+        if (cmd.length() > 6) {
+            distance = cmd.substring(6).toFloat();
+        }
+        direction = false;
+        digitalWrite(DIR_PIN, LOW);
+        pulseCount = 0;
+        stepState = false;
+        GPIOB->BSRR = GPIO_BSRR_BR10;
+        if (distance > 0.0) {
+            targetPulses = (uint32_t)(distance * STEPS_PER_MM);
+        } else {
+            targetPulses = 0; // Continuous
+        }
+        motorRunning = true;
     }
 }
 
