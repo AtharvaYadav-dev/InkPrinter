@@ -1,0 +1,1678 @@
+2026-07-27 12:47:22,530 - DEBUG - OpenGL_accelerate module loaded
+2026-07-27 12:47:22,659 - DEBUG - Using accelerated ArrayDatatype
+2026-07-27 12:47:33,120 - DEBUG - searching for blender in: C:\WINDOWS\System32\OpenSSH\;C:\Users\EXPRESS\AppData\Local\Programs\Antigravity\bin;C:\Program Files\Arduino CLI\;C:\WINDOWS\System32\Wbem;C:\Users\EXPRESS\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Python314\;C:\Users\EXPRESS\AppData\Local\Programs\Antigravity IDE\bin;C:\Users\EXPRESS\AppData\Roaming\Python\Python313\Scripts;C:\Users\EXPRESS\AppData\Local\GitHubDesktop\bin;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Gtk-Runtime\bin;C:\Program Files\Python314\Scripts\;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\nodejs\;C:\Users\EXPRESS\AppData\Roaming\npm;C:\Program Files\ffmpeg-2025-07-17-git-bc8d06d541-essentials_build\bin;c:\Users\EXPRESS\.antigravity-ide\extensions\ms-python.debugpy-2026.6.0-win32-x64\bundled\scripts\noConfigScripts;C:\Program Files\Python314\Lib\site-packages\PySide6;C:\Users\EXPRESS\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\Git\cmd
+2026-07-27 12:47:33,171 - DEBUG - falling back to hashlib hashing: `pip install xxhash`for 50x faster cache checks
+2026-07-27 12:47:37,925 - INFO - ==================================================
+2026-07-27 12:47:37,926 - INFO - New session START at 2026-07-27 12:47
+2026-07-27 12:47:37,926 - INFO - ==================================================
+2026-07-27 12:47:37,936 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-07-27 12:47:37,936 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-07-27 12:47:37,936 - INFO - Loaded draw_z from config: Z=5.0
+2026-07-27 12:47:37,936 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4
+2026-07-27 12:47:37,945 - INFO - Updated profile.json: layer_height=0.4, layer_height_0=0.4
+2026-07-27 12:47:37,945 - INFO - INI file initialized
+2026-07-27 12:47:37,953 - INFO - UI load successful
+2026-07-27 12:47:39,854 - INFO - Com : com, Port : ['COM1', 'COM9', 'COM10'], Baud : ['9600', '57600', '115200', '250000']
+2026-07-27 12:47:49,011 - INFO - Do you want to auto connect to COM9 @ 115200
+2026-07-27 12:47:49,011 - INFO - Auto Connect dialog button : Cancel
+2026-07-27 12:48:01,387 - INFO - File selected: D:/TeamDev/Ink/InkV2_Final_stl_with_logs/ide2.svg
+2026-07-27 12:48:01,389 - INFO - Converting SVG -> G-code directly: D:\TeamDev\Ink\InkV2_Final_stl_with_logs\ide2.svg
+2026-07-27 12:48:01,543 - DEBUG - Exporting 12320 faces as STL
+2026-07-27 12:48:02,696 - INFO - G-code created: D:\TeamDev\Ink\InkV2_Final_stl_with_logs\ide2.gcode
+2026-07-27 12:48:02,696 - INFO - G-code ready from SVG: D:\TeamDev\Ink\InkV2_Final_stl_with_logs\ide2.gcode
+2026-07-27 12:48:02,707 - INFO - Raw G-code parsed (1176 lines).
+2026-07-27 12:48:05,010 - INFO - Feedrate: 500.0 mm/min
+2026-07-27 12:48:05,782 - INFO - Normalization shift: X=-176.884, Y=-61.833
+2026-07-27 12:48:05,782 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-07-27 12:48:05,782 - INFO - Final applied shift: X=-176.884, Y=-61.833
+2026-07-27 12:50:11,887 - INFO - Serial communication stopped
+2026-07-27 12:50:11,887 - INFO - COM connection close successfully
+2026-07-27 12:50:11,887 - INFO - Main window close successfully
+2026-07-27 12:50:11,887 - INFO - ==================================================
+2026-07-27 12:50:11,887 - INFO - New session close at 2026-07-27 12:50
+2026-07-27 12:50:11,887 - INFO - ==================================================
+2026-07-27 13:23:21,750 - DEBUG - OpenGL_accelerate module loaded
+2026-07-27 13:23:21,763 - DEBUG - Using accelerated ArrayDatatype
+2026-07-27 13:23:22,738 - DEBUG - searching for blender in: C:\Users\EXPRESS\AppData\Roaming\npm;C:\Users\EXPRESS\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Python314\Lib\site-packages\PySide6;C:\WINDOWS\System32\OpenSSH\;C:\Users\EXPRESS\AppData\Local\Programs\Antigravity\bin;C:\Users\EXPRESS\AppData\Local\Programs\Antigravity IDE\bin;c:\Users\EXPRESS\.antigravity-ide\extensions\ms-python.debugpy-2026.6.0-win32-x64\bundled\scripts\noConfigScripts;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Python314\;C:\Program Files\Python314\Scripts\;C:\Users\EXPRESS\AppData\Roaming\Python\Python313\Scripts;C:\WINDOWS;C:\Program Files\ffmpeg-2025-07-17-git-bc8d06d541-essentials_build\bin;C:\Program Files\nodejs\;C:\Users\EXPRESS\AppData\Local\GitHubDesktop\bin;C:\WINDOWS\System32\Wbem;C:\Program Files\Git\cmd;C:\WINDOWS\system32;C:\Program Files\Arduino CLI\;C:\Program Files\Gtk-Runtime\bin;C:\Users\EXPRESS\AppData\Local\Programs\Microsoft VS Code\bin
+2026-07-27 13:23:22,749 - DEBUG - falling back to hashlib hashing: `pip install xxhash`for 50x faster cache checks
+2026-07-27 13:24:22,847 - DEBUG - OpenGL_accelerate module loaded
+2026-07-27 13:24:22,859 - DEBUG - Using accelerated ArrayDatatype
+2026-07-27 13:24:23,791 - DEBUG - searching for blender in: C:\Users\EXPRESS\AppData\Local\Programs\Antigravity IDE\bin;C:\Users\EXPRESS\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Git\cmd;C:\WINDOWS;C:\Users\EXPRESS\AppData\Roaming\Python\Python313\Scripts;C:\WINDOWS\system32;C:\Users\EXPRESS\AppData\Roaming\npm;C:\Users\EXPRESS\AppData\Local\Programs\Antigravity\bin;C:\WINDOWS\System32\Wbem;C:\Users\EXPRESS\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\Python314\Lib\site-packages\PySide6;C:\Program Files\Arduino CLI\;C:\Users\EXPRESS\AppData\Local\GitHubDesktop\bin;C:\Program Files\Python314\;C:\Program Files\Gtk-Runtime\bin;c:\Users\EXPRESS\.antigravity-ide\extensions\ms-python.debugpy-2026.6.0-win32-x64\bundled\scripts\noConfigScripts;C:\Program Files\ffmpeg-2025-07-17-git-bc8d06d541-essentials_build\bin;C:\Program Files\Python314\Scripts\;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\
+2026-07-27 13:24:23,801 - DEBUG - falling back to hashlib hashing: `pip install xxhash`for 50x faster cache checks
+2026-07-27 13:24:24,883 - INFO - ==================================================
+2026-07-27 13:24:24,883 - INFO - New session START at 2026-07-27 13:24
+2026-07-27 13:24:24,883 - INFO - ==================================================
+2026-07-27 13:24:24,884 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-07-27 13:24:24,884 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-07-27 13:24:24,884 - INFO - Loaded draw_z from config: Z=5.0
+2026-07-27 13:24:24,884 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4
+2026-07-27 13:24:24,885 - INFO - Updated profile.json: layer_height=0.4, layer_height_0=0.4
+2026-07-27 13:24:24,886 - INFO - INI file initialized
+2026-07-27 13:24:24,890 - INFO - UI load successful
+2026-07-27 13:24:25,231 - INFO - Com : com, Port : ['COM1', 'COM9', 'COM10'], Baud : ['9600', '57600', '115200', '250000']
+2026-07-27 13:24:26,922 - INFO - Do you want to auto connect to COM9 @ 115200
+2026-07-27 13:24:26,922 - INFO - Auto Connect dialog button : Cancel
+2026-07-27 13:25:38,384 - INFO - File selected: D:/TeamDev/Ink/InkV2_Final_stl_with_logs/Bmp files/sensor-2.bmp
+2026-07-27 13:25:38,385 - INFO - Converting BMP -> G-code directly: D:\TeamDev\Ink\InkV2_Final_stl_with_logs\Bmp files\sensor-2.bmp
+2026-07-27 13:25:38,385 - DEBUG - Importing BmpImagePlugin
+2026-07-27 13:25:38,648 - INFO - G-code created: D:\TeamDev\Ink\InkV2_Final_stl_with_logs\Bmp files\sensor-2.gcode
+2026-07-27 13:25:38,648 - INFO - G-code ready from BMP: D:\TeamDev\Ink\InkV2_Final_stl_with_logs\Bmp files\sensor-2.gcode
+2026-07-27 13:25:38,666 - INFO - Raw G-code parsed (43846 lines).
+2026-07-27 13:25:41,930 - INFO - Feedrate: 500.0 mm/min
+2026-07-27 13:25:44,172 - INFO - Normalization shift: X=-0.200, Y=-0.200
+2026-07-27 13:25:44,172 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-07-27 13:25:44,172 - INFO - Final applied shift: X=-0.200, Y=-0.200
+2026-07-27 13:25:44,172 - ERROR - Out of Bed Range: Drawing exceeds bed area!
+
+X: 0.00 \u2192 88.80 (Bed: 0.0 \u2192 50.0)
+Y: 0.00 \u2192 75.10 (Bed: 0.0 \u2192 50.0)
+
+Please re-adjust the offsets.
+2026-07-27 13:25:52,336 - INFO - File selected: D:/TeamDev/Ink/InkV2_Final_stl_with_logs/Bmp files/sensors-1.bmp
+2026-07-27 13:25:52,337 - INFO - Converting BMP -> G-code directly: D:\TeamDev\Ink\InkV2_Final_stl_with_logs\Bmp files\sensors-1.bmp
+2026-07-27 13:25:52,590 - INFO - G-code created: D:\TeamDev\Ink\InkV2_Final_stl_with_logs\Bmp files\sensors-1.gcode
+2026-07-27 13:25:52,590 - INFO - G-code ready from BMP: D:\TeamDev\Ink\InkV2_Final_stl_with_logs\Bmp files\sensors-1.gcode
+2026-07-27 13:25:52,604 - INFO - Raw G-code parsed (19466 lines).
+2026-07-27 13:25:53,741 - INFO - Feedrate: 500.0 mm/min
+2026-07-27 13:25:54,666 - INFO - Normalization shift: X=-2.600, Y=-2.100
+2026-07-27 13:25:54,666 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-07-27 13:25:54,666 - INFO - Final applied shift: X=-2.600, Y=-2.100
+2026-07-27 13:25:54,666 - ERROR - Out of Bed Range: Drawing exceeds bed area!
+
+X: 0.00 \u2192 85.70 (Bed: 0.0 \u2192 50.0)
+Y: 0.00 \u2192 93.90 (Bed: 0.0 \u2192 50.0)
+
+Please re-adjust the offsets.
+2026-07-27 13:26:05,106 - INFO - File selected: D:/TeamDev/Ink/InkV2_Final_stl_with_logs/Bmp files/Images/sample_640×426.bmp
+2026-07-27 13:26:05,107 - INFO - Converting BMP -> G-code directly: D:\TeamDev\Ink\InkV2_Final_stl_with_logs\Bmp files\Images\sample_640×426.bmp
+2026-07-27 13:26:05,222 - INFO - G-code created: D:\TeamDev\Ink\InkV2_Final_stl_with_logs\Bmp files\Images\sample_640×426.gcode
+2026-07-27 13:26:05,222 - INFO - G-code ready from BMP: D:\TeamDev\Ink\InkV2_Final_stl_with_logs\Bmp files\Images\sample_640×426.gcode
+2026-07-27 13:26:05,241 - INFO - Raw G-code parsed (49636 lines).
+2026-07-27 13:26:07,322 - INFO - Feedrate: 500.0 mm/min
+2026-07-27 13:26:08,252 - INFO - Normalization shift: X=-0.000, Y=-0.000
+2026-07-27 13:26:08,252 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-07-27 13:26:08,252 - INFO - Final applied shift: X=0.000, Y=0.000
+2026-07-27 13:26:08,253 - ERROR - Out of Bed Range: Drawing exceeds bed area!
+
+X: 0.00 \u2192 63.90 (Bed: 0.0 \u2192 50.0)
+Y: 0.00 \u2192 42.50 (Bed: 0.0 \u2192 50.0)
+
+Please re-adjust the offsets.
+2026-07-27 13:26:34,441 - INFO - File selected: D:/TeamDev/Ink/InkV2_Final_stl_with_logs/Bmp files/sensors-1.bmp
+2026-07-27 13:26:34,441 - INFO - Converting BMP -> G-code directly: D:\TeamDev\Ink\InkV2_Final_stl_with_logs\Bmp files\sensors-1.bmp
+2026-07-27 13:26:34,779 - INFO - G-code created: D:\TeamDev\Ink\InkV2_Final_stl_with_logs\Bmp files\sensors-1.gcode
+2026-07-27 13:26:34,779 - INFO - G-code ready from BMP: D:\TeamDev\Ink\InkV2_Final_stl_with_logs\Bmp files\sensors-1.gcode
+2026-07-27 13:26:34,792 - INFO - Raw G-code parsed (19466 lines).
+2026-07-27 13:26:37,335 - INFO - Feedrate: 500.0 mm/min
+2026-07-27 13:26:38,177 - INFO - Normalization shift: X=-2.600, Y=-2.100
+2026-07-27 13:26:38,177 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-07-27 13:26:38,177 - INFO - Final applied shift: X=-2.600, Y=-2.100
+2026-07-27 13:26:38,177 - ERROR - Out of Bed Range: Drawing exceeds bed area!
+
+X: 0.00 \u2192 85.70 (Bed: 0.0 \u2192 50.0)
+Y: 0.00 \u2192 93.90 (Bed: 0.0 \u2192 50.0)
+
+Please re-adjust the offsets.
+2026-07-27 13:26:43,809 - INFO - Serial communication stopped
+2026-07-27 13:26:43,809 - INFO - COM connection close successfully
+2026-07-27 13:26:43,809 - INFO - Main window close successfully
+2026-07-27 13:26:43,809 - INFO - ==================================================
+2026-07-27 13:26:43,809 - INFO - New session close at 2026-07-27 13:26
+2026-07-27 13:26:43,809 - INFO - ==================================================
+2026-07-27 13:30:15,751 - DEBUG - OpenGL_accelerate module loaded
+2026-07-27 13:30:15,768 - DEBUG - Using accelerated ArrayDatatype
+2026-07-27 13:30:17,012 - DEBUG - searching for blender in: C:\Users\EXPRESS\AppData\Local\Microsoft\WindowsApps;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Python314\Lib\site-packages\PySide6;C:\Users\EXPRESS\AppData\Roaming\Python\Python313\Scripts;C:\WINDOWS\System32\Wbem;c:\Users\EXPRESS\.antigravity-ide\extensions\ms-python.debugpy-2026.6.0-win32-x64\bundled\scripts\noConfigScripts;C:\Users\EXPRESS\AppData\Local\GitHubDesktop\bin;C:\Program Files\Gtk-Runtime\bin;C:\Program Files\ffmpeg-2025-07-17-git-bc8d06d541-essentials_build\bin;C:\Users\EXPRESS\AppData\Local\Programs\Microsoft VS Code\bin;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\system32;C:\WINDOWS;C:\Users\EXPRESS\AppData\Roaming\npm;C:\Program Files\nodejs\;C:\Program Files\Python314\Scripts\;C:\Program Files\Python314\;C:\Users\EXPRESS\AppData\Local\Programs\Antigravity IDE\bin;C:\Program Files\Git\cmd;C:\Users\EXPRESS\AppData\Local\Programs\Antigravity\bin;C:\Program Files\Arduino CLI\
+2026-07-27 13:30:17,027 - DEBUG - falling back to hashlib hashing: `pip install xxhash`for 50x faster cache checks
+2026-07-27 13:30:18,520 - INFO - ==================================================
+2026-07-27 13:30:18,520 - INFO - New session START at 2026-07-27 13:30
+2026-07-27 13:30:18,521 - INFO - ==================================================
+2026-07-27 13:30:18,521 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-07-27 13:30:18,521 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-07-27 13:30:18,521 - INFO - Loaded draw_z from config: Z=5.0
+2026-07-27 13:30:18,522 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4
+2026-07-27 13:30:18,523 - INFO - Updated profile.json: layer_height=0.4, layer_height_0=0.4
+2026-07-27 13:30:18,523 - INFO - INI file initialized
+2026-07-27 13:30:18,528 - INFO - UI load successful
+2026-07-27 13:30:19,887 - INFO - Com : com, Port : ['COM1', 'COM9', 'COM10'], Baud : ['9600', '57600', '115200', '250000']
+2026-07-27 13:30:21,459 - INFO - Do you want to auto connect to COM9 @ 115200
+2026-07-27 13:30:21,459 - INFO - Auto Connect dialog button : Cancel
+2026-07-27 13:30:25,894 - INFO - File selected: D:/TeamDev/Ink/InkV2_Final_stl_with_logs/test_50x50.bmp
+2026-07-27 13:30:25,894 - INFO - Converting BMP -> G-code directly: D:\TeamDev\Ink\InkV2_Final_stl_with_logs\test_50x50.bmp
+2026-07-27 13:30:25,895 - DEBUG - Importing BmpImagePlugin
+2026-07-27 13:30:26,000 - INFO - G-code created: D:\TeamDev\Ink\InkV2_Final_stl_with_logs\test_50x50.gcode
+2026-07-27 13:30:26,001 - INFO - G-code ready from BMP: D:\TeamDev\Ink\InkV2_Final_stl_with_logs\test_50x50.gcode
+2026-07-27 13:30:26,021 - INFO - Raw G-code parsed (6 lines).
+2026-07-27 13:30:27,732 - INFO - Feedrate: 500.0 mm/min
+2026-07-27 13:30:28,717 - INFO - Normalization shift: X=-0.000, Y=-0.000
+2026-07-27 13:30:28,717 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-07-27 13:30:28,717 - INFO - Final applied shift: X=0.000, Y=0.000
+2026-07-27 13:33:22,025 - DEBUG - OpenGL_accelerate module loaded
+2026-07-27 13:33:22,037 - DEBUG - Using accelerated ArrayDatatype
+2026-07-27 13:33:22,813 - DEBUG - searching for blender in: c:\Users\EXPRESS\.antigravity-ide\extensions\ms-python.debugpy-2026.6.0-win32-x64\bundled\scripts\noConfigScripts;C:\Users\EXPRESS\AppData\Local\Programs\Antigravity IDE\bin;C:\Users\EXPRESS\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\Git\cmd;C:\Program Files\Gtk-Runtime\bin;C:\Program Files\Arduino CLI\;C:\Users\EXPRESS\AppData\Roaming\npm;C:\Users\EXPRESS\AppData\Local\GitHubDesktop\bin;C:\WINDOWS\system32;C:\WINDOWS\System32\OpenSSH\;C:\WINDOWS\System32\Wbem;C:\Users\EXPRESS\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Python314\Lib\site-packages\PySide6;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Users\EXPRESS\AppData\Local\Programs\Antigravity\bin;C:\WINDOWS;C:\Program Files\ffmpeg-2025-07-17-git-bc8d06d541-essentials_build\bin;C:\Program Files\nodejs\;C:\Program Files\Python314\Scripts\;C:\Program Files\Python314\;C:\Users\EXPRESS\AppData\Roaming\Python\Python313\Scripts
+2026-07-27 13:33:22,822 - DEBUG - falling back to hashlib hashing: `pip install xxhash`for 50x faster cache checks
+2026-07-27 13:33:23,612 - INFO - ==================================================
+2026-07-27 13:33:23,628 - INFO - New session START at 2026-07-27 13:33
+2026-07-27 13:33:23,628 - INFO - ==================================================
+2026-07-27 13:33:23,629 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-07-27 13:33:23,629 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-07-27 13:33:23,629 - INFO - Loaded draw_z from config: Z=5.0
+2026-07-27 13:33:23,630 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4
+2026-07-27 13:33:23,634 - INFO - Updated profile.json: layer_height=0.4, layer_height_0=0.4
+2026-07-27 13:33:23,634 - INFO - INI file initialized
+2026-07-27 13:33:23,641 - INFO - UI load successful
+2026-07-27 13:33:23,932 - INFO - Com : com, Port : ['COM1', 'COM9', 'COM10'], Baud : ['9600', '57600', '115200', '250000']
+2026-07-27 13:33:25,343 - INFO - Do you want to auto connect to COM9 @ 115200
+2026-07-27 13:33:25,343 - INFO - Auto Connect dialog button : Cancel
+2026-07-27 13:33:31,351 - INFO - File selected: D:/TeamDev/Ink/InkV2_Final_stl_with_logs/test_50x50.bmp
+2026-07-27 13:33:31,352 - INFO - Converting BMP -> G-code directly: D:\TeamDev\Ink\InkV2_Final_stl_with_logs\test_50x50.bmp
+2026-07-27 13:33:31,352 - DEBUG - Importing BmpImagePlugin
+2026-07-27 13:33:31,465 - INFO - G-code created: D:\TeamDev\Ink\InkV2_Final_stl_with_logs\test_50x50.gcode
+2026-07-27 13:33:31,465 - INFO - G-code ready from BMP: D:\TeamDev\Ink\InkV2_Final_stl_with_logs\test_50x50.gcode
+2026-07-27 13:33:31,494 - INFO - Raw G-code parsed (7811 lines).
+2026-07-27 13:33:32,433 - INFO - Feedrate: 500.0 mm/min
+2026-07-27 13:33:33,335 - INFO - Normalization shift: X=-4.900, Y=-4.900
+2026-07-27 13:33:33,335 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-07-27 13:33:33,335 - INFO - Final applied shift: X=-4.900, Y=-4.900
+2026-07-27 13:33:59,795 - INFO - Serial communication stopped
+2026-07-27 13:33:59,795 - INFO - COM connection close successfully
+2026-07-27 13:33:59,795 - INFO - Main window close successfully
+2026-07-27 13:33:59,795 - INFO - ==================================================
+2026-07-27 13:33:59,795 - INFO - New session close at 2026-07-27 13:33
+2026-07-27 13:33:59,795 - INFO - ==================================================
+2026-07-27 13:36:01,572 - DEBUG - OpenGL_accelerate module loaded
+2026-07-27 13:36:01,582 - DEBUG - Using accelerated ArrayDatatype
+2026-07-27 13:36:02,341 - DEBUG - searching for blender in: C:\WINDOWS\System32\Wbem;C:\Users\EXPRESS\AppData\Local\GitHubDesktop\bin;C:\Program Files\Python314\Scripts\;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\ffmpeg-2025-07-17-git-bc8d06d541-essentials_build\bin;c:\Users\EXPRESS\.antigravity-ide\extensions\ms-python.debugpy-2026.6.0-win32-x64\bundled\scripts\noConfigScripts;C:\Users\EXPRESS\AppData\Local\Microsoft\WindowsApps;C:\Users\EXPRESS\AppData\Roaming\Python\Python313\Scripts;C:\WINDOWS\system32;C:\Program Files\Git\cmd;C:\Users\EXPRESS\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\EXPRESS\AppData\Roaming\npm;C:\WINDOWS;C:\WINDOWS\System32\OpenSSH\;C:\Users\EXPRESS\AppData\Local\Programs\Antigravity\bin;C:\Program Files\Gtk-Runtime\bin;C:\Program Files\nodejs\;C:\Program Files\Arduino CLI\;C:\Program Files\Python314\;C:\Users\EXPRESS\AppData\Local\Programs\Antigravity IDE\bin;C:\Program Files\Python314\Lib\site-packages\PySide6
+2026-07-27 13:36:02,350 - DEBUG - falling back to hashlib hashing: `pip install xxhash`for 50x faster cache checks
+2026-07-27 13:36:03,268 - INFO - ==================================================
+2026-07-27 13:36:03,269 - INFO - New session START at 2026-07-27 13:36
+2026-07-27 13:36:03,269 - INFO - ==================================================
+2026-07-27 13:36:03,269 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-07-27 13:36:03,269 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-07-27 13:36:03,269 - INFO - Loaded draw_z from config: Z=5.0
+2026-07-27 13:36:03,270 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4
+2026-07-27 13:36:03,271 - INFO - Updated profile.json: layer_height=0.4, layer_height_0=0.4
+2026-07-27 13:36:03,272 - INFO - INI file initialized
+2026-07-27 13:36:03,275 - INFO - UI load successful
+2026-07-27 13:36:03,560 - INFO - Com : com, Port : ['COM1', 'COM9', 'COM10'], Baud : ['9600', '57600', '115200', '250000']
+2026-07-27 13:36:05,136 - INFO - Do you want to auto connect to COM9 @ 115200
+2026-07-27 13:36:05,136 - INFO - Auto Connect dialog button : Cancel
+2026-07-27 13:36:11,600 - INFO - File selected: D:/TeamDev/Ink/InkV2_Final_stl_with_logs/test_50x50.bmp
+2026-07-27 13:36:11,600 - INFO - Converting BMP -> G-code directly: D:\TeamDev\Ink\InkV2_Final_stl_with_logs\test_50x50.bmp
+2026-07-27 13:36:11,601 - DEBUG - Importing BmpImagePlugin
+2026-07-27 13:36:11,675 - INFO - G-code created: D:\TeamDev\Ink\InkV2_Final_stl_with_logs\test_50x50.gcode
+2026-07-27 13:36:11,710 - INFO - G-code ready from BMP: D:\TeamDev\Ink\InkV2_Final_stl_with_logs\test_50x50.gcode
+2026-07-27 13:36:11,713 - INFO - Raw G-code parsed (7811 lines).
+2026-07-27 13:36:12,826 - INFO - Feedrate: 500.0 mm/min
+2026-07-27 13:36:13,698 - INFO - Normalization shift: X=-4.900, Y=-4.900
+2026-07-27 13:36:13,698 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-07-27 13:36:13,698 - INFO - Final applied shift: X=-4.900, Y=-4.900
+2026-07-27 13:36:52,367 - INFO - Serial communication stopped
+2026-07-27 13:36:52,367 - INFO - COM connection close successfully
+2026-07-27 13:36:52,367 - INFO - Main window close successfully
+2026-07-27 13:36:52,367 - INFO - ==================================================
+2026-07-27 13:36:52,367 - INFO - New session close at 2026-07-27 13:36
+2026-07-27 13:36:52,367 - INFO - ==================================================
+2026-07-27 15:45:36,545 - DEBUG - OpenGL_accelerate module loaded
+2026-07-27 15:45:36,563 - DEBUG - Using accelerated ArrayDatatype
+2026-07-27 15:45:37,752 - DEBUG - searching for blender in: C:\WINDOWS\System32\Wbem;C:\Program Files\Git\cmd;C:\Users\EXPRESS\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Arduino CLI\;C:\Users\EXPRESS\AppData\Roaming\Python\Python313\Scripts;C:\Program Files\Python314\Scripts\;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Python314\;c:\Users\EXPRESS\.antigravity-ide\extensions\ms-python.debugpy-2026.6.0-win32-x64\bundled\scripts\noConfigScripts;C:\Users\EXPRESS\AppData\Local\GitHubDesktop\bin;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\ffmpeg-2025-07-17-git-bc8d06d541-essentials_build\bin;C:\Users\EXPRESS\AppData\Local\Programs\Antigravity\bin;C:\Users\EXPRESS\AppData\Roaming\npm;C:\Program Files\nodejs\;C:\WINDOWS;C:\Program Files\Python314\Lib\site-packages\PySide6;C:\Program Files\Gtk-Runtime\bin;C:\Users\EXPRESS\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\EXPRESS\AppData\Local\Programs\Antigravity IDE\bin;C:\WINDOWS\system32
+2026-07-27 15:45:37,768 - DEBUG - falling back to hashlib hashing: `pip install xxhash`for 50x faster cache checks
+2026-07-27 15:45:39,254 - INFO - ==================================================
+2026-07-27 15:45:39,254 - INFO - New session START at 2026-07-27 15:45
+2026-07-27 15:45:39,254 - INFO - ==================================================
+2026-07-27 15:45:39,255 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-07-27 15:45:39,255 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-07-27 15:45:39,255 - INFO - Loaded draw_z from config: Z=5.0
+2026-07-27 15:45:39,255 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-07-27 15:45:39,257 - INFO - Updated profile.json: layer_height=0.4, layer_height_0=0.4
+2026-07-27 15:45:39,257 - INFO - INI file initialized
+2026-07-27 15:45:39,263 - INFO - UI load successful
+2026-07-27 15:45:40,645 - INFO - Com : com, Port : ['COM1', 'COM9', 'COM10'], Baud : ['9600', '57600', '115200', '250000']
+2026-07-27 15:45:58,202 - INFO - Do you want to auto connect to COM9 @ 115200
+2026-07-27 15:45:58,202 - INFO - Auto Connect dialog button : Cancel
+2026-07-27 15:46:20,813 - INFO - File selected: D:/TeamDev/Ink/InkV2_Final_stl_with_logs/test_50x50.bmp
+2026-07-27 15:46:20,814 - INFO - Converting BMP -> G-code directly: D:\TeamDev\Ink\InkV2_Final_stl_with_logs\test_50x50.bmp
+2026-07-27 15:46:20,815 - DEBUG - Importing BmpImagePlugin
+2026-07-27 15:46:20,900 - INFO - G-code created: D:\TeamDev\Ink\InkV2_Final_stl_with_logs\test_50x50.gcode
+2026-07-27 15:46:20,900 - INFO - G-code ready from BMP: D:\TeamDev\Ink\InkV2_Final_stl_with_logs\test_50x50.gcode
+2026-07-27 15:46:20,919 - INFO - Raw G-code parsed (7811 lines).
+2026-07-27 15:46:22,211 - INFO - Feedrate: 500.0 mm/min
+2026-07-27 15:46:23,162 - INFO - Normalization shift: X=-19.600, Y=-19.600
+2026-07-27 15:46:23,162 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-07-27 15:46:23,163 - INFO - Final applied shift: X=-19.600, Y=-19.600
+2026-07-27 15:46:23,163 - ERROR - Out of Bed Range: Drawing exceeds bed area!
+
+X: 0.00 \u2192 160.80 (Bed: 0.0 \u2192 50.0)
+Y: 0.00 \u2192 160.80 (Bed: 0.0 \u2192 50.0)
+
+Please re-adjust the offsets.
+2026-07-27 15:46:44,398 - INFO - Serial communication stopped
+2026-07-27 15:46:44,398 - INFO - COM connection close successfully
+2026-07-27 15:46:44,398 - INFO - Main window close successfully
+2026-07-27 15:46:44,398 - INFO - ==================================================
+2026-07-27 15:46:44,398 - INFO - New session close at 2026-07-27 15:46
+2026-07-27 15:46:44,399 - INFO - ==================================================
+2026-07-27 15:48:14,480 - DEBUG - OpenGL_accelerate module loaded
+2026-07-27 15:48:14,492 - DEBUG - Using accelerated ArrayDatatype
+2026-07-27 15:48:15,248 - DEBUG - searching for blender in: C:\Users\EXPRESS\AppData\Local\Programs\Antigravity\bin;C:\Program Files\nodejs\;C:\Program Files\Arduino CLI\;C:\WINDOWS;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Users\EXPRESS\AppData\Local\Programs\Antigravity IDE\bin;C:\Program Files\Gtk-Runtime\bin;c:\Users\EXPRESS\.antigravity-ide\extensions\ms-python.debugpy-2026.6.0-win32-x64\bundled\scripts\noConfigScripts;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\ffmpeg-2025-07-17-git-bc8d06d541-essentials_build\bin;C:\Users\EXPRESS\AppData\Local\GitHubDesktop\bin;C:\Users\EXPRESS\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Python314\;C:\Users\EXPRESS\AppData\Roaming\Python\Python313\Scripts;C:\Program Files\Python314\Lib\site-packages\PySide6;C:\WINDOWS\System32\Wbem;C:\WINDOWS\system32;C:\Program Files\Python314\Scripts\;C:\Users\EXPRESS\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\EXPRESS\AppData\Roaming\npm;C:\Program Files\Git\cmd
+2026-07-27 15:48:15,257 - DEBUG - falling back to hashlib hashing: `pip install xxhash`for 50x faster cache checks
+2026-07-27 15:48:16,051 - INFO - ==================================================
+2026-07-27 15:48:16,052 - INFO - New session START at 2026-07-27 15:48
+2026-07-27 15:48:16,052 - INFO - ==================================================
+2026-07-27 15:48:16,053 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-07-27 15:48:16,053 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-07-27 15:48:16,053 - INFO - Loaded draw_z from config: Z=5.0
+2026-07-27 15:48:16,053 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-07-27 15:48:16,056 - INFO - Updated profile.json: layer_height=0.4, layer_height_0=0.4
+2026-07-27 15:48:16,056 - INFO - INI file initialized
+2026-07-27 15:48:16,060 - INFO - UI load successful
+2026-07-27 15:48:16,313 - INFO - Com : com, Port : ['COM1', 'COM9', 'COM10'], Baud : ['9600', '57600', '115200', '250000']
+2026-07-27 15:48:17,874 - INFO - Do you want to auto connect to COM9 @ 115200
+2026-07-27 15:48:17,875 - INFO - Auto Connect dialog button : Cancel
+2026-07-27 15:48:29,614 - INFO - File selected: D:/TeamDev/Ink/InkV2_Final_stl_with_logs/test_50x50.bmp
+2026-07-27 15:48:29,615 - INFO - Converting BMP -> G-code directly: D:\TeamDev\Ink\InkV2_Final_stl_with_logs\test_50x50.bmp
+2026-07-27 15:48:29,615 - DEBUG - Importing BmpImagePlugin
+2026-07-27 15:48:29,625 - INFO - G-code created: D:\TeamDev\Ink\InkV2_Final_stl_with_logs\test_50x50.gcode
+2026-07-27 15:48:29,625 - INFO - G-code ready from BMP: D:\TeamDev\Ink\InkV2_Final_stl_with_logs\test_50x50.gcode
+2026-07-27 15:48:29,642 - INFO - Raw G-code parsed (1921 lines).
+2026-07-27 15:48:30,772 - INFO - Feedrate: 500.0 mm/min
+2026-07-27 15:48:31,542 - INFO - Normalization shift: X=-4.400, Y=-4.800
+2026-07-27 15:48:31,558 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-07-27 15:48:31,558 - INFO - Final applied shift: X=-4.400, Y=-4.800
+2026-07-27 15:49:29,162 - INFO - Serial communication stopped
+2026-07-27 15:49:29,163 - INFO - COM connection close successfully
+2026-07-27 15:49:29,163 - INFO - Main window close successfully
+2026-07-27 15:49:29,163 - INFO - ==================================================
+2026-07-27 15:49:29,163 - INFO - New session close at 2026-07-27 15:49
+2026-07-27 15:49:29,163 - INFO - ==================================================
+2026-07-27 15:51:28,328 - DEBUG - OpenGL_accelerate module loaded
+2026-07-27 15:51:28,340 - DEBUG - Using accelerated ArrayDatatype
+2026-07-27 15:51:29,141 - DEBUG - searching for blender in: C:\Users\EXPRESS\AppData\Roaming\npm;C:\Program Files\Gtk-Runtime\bin;C:\Program Files\ffmpeg-2025-07-17-git-bc8d06d541-essentials_build\bin;C:\Program Files\Git\cmd;C:\WINDOWS;C:\Program Files\nodejs\;C:\WINDOWS\system32;C:\Program Files\Python314\Scripts\;C:\WINDOWS\System32\Wbem;C:\Users\EXPRESS\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\EXPRESS\AppData\Local\Programs\Antigravity\bin;C:\Program Files\Python314\Lib\site-packages\PySide6;C:\Program Files\Python314\;C:\Users\EXPRESS\AppData\Local\Microsoft\WindowsApps;C:\Users\EXPRESS\AppData\Roaming\Python\Python313\Scripts;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Users\EXPRESS\AppData\Local\Programs\Antigravity IDE\bin;c:\Users\EXPRESS\.antigravity-ide\extensions\ms-python.debugpy-2026.6.0-win32-x64\bundled\scripts\noConfigScripts;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Arduino CLI\;C:\Users\EXPRESS\AppData\Local\GitHubDesktop\bin
+2026-07-27 15:51:29,150 - DEBUG - falling back to hashlib hashing: `pip install xxhash`for 50x faster cache checks
+2026-07-27 15:51:29,988 - INFO - ==================================================
+2026-07-27 15:51:29,988 - INFO - New session START at 2026-07-27 15:51
+2026-07-27 15:51:29,988 - INFO - ==================================================
+2026-07-27 15:51:29,989 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-07-27 15:51:29,989 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-07-27 15:51:29,989 - INFO - Loaded draw_z from config: Z=5.0
+2026-07-27 15:51:29,989 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-07-27 15:51:29,991 - INFO - Updated profile.json: layer_height=0.4, layer_height_0=0.4
+2026-07-27 15:51:29,991 - INFO - INI file initialized
+2026-07-27 15:51:29,995 - INFO - UI load successful
+2026-07-27 15:51:30,274 - INFO - Com : com, Port : ['COM1', 'COM9', 'COM10'], Baud : ['9600', '57600', '115200', '250000']
+2026-07-27 15:51:31,869 - INFO - Do you want to auto connect to COM9 @ 115200
+2026-07-27 15:51:31,869 - INFO - Auto Connect dialog button : Cancel
+2026-07-27 16:02:25,779 - DEBUG - OpenGL_accelerate module loaded
+2026-07-27 16:02:25,792 - DEBUG - Using accelerated ArrayDatatype
+2026-07-27 16:02:26,651 - DEBUG - searching for blender in: C:\Program Files\Python314\Scripts\;c:\Users\EXPRESS\.antigravity-ide\extensions\ms-python.debugpy-2026.6.0-win32-x64\bundled\scripts\noConfigScripts;C:\Program Files\nodejs\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Arduino CLI\;C:\WINDOWS\system32;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Git\cmd;C:\Users\EXPRESS\AppData\Roaming\Python\Python313\Scripts;C:\Program Files\Python314\Lib\site-packages\PySide6;C:\WINDOWS\System32\Wbem;C:\Users\EXPRESS\AppData\Local\GitHubDesktop\bin;C:\Program Files\ffmpeg-2025-07-17-git-bc8d06d541-essentials_build\bin;C:\Users\EXPRESS\AppData\Local\Microsoft\WindowsApps;C:\Users\EXPRESS\AppData\Local\Programs\Microsoft VS Code\bin;C:\WINDOWS;C:\Program Files\Gtk-Runtime\bin;C:\Users\EXPRESS\AppData\Roaming\npm;C:\Program Files\Python314\;C:\Users\EXPRESS\AppData\Local\Programs\Antigravity IDE\bin;C:\Users\EXPRESS\AppData\Local\Programs\Antigravity\bin
+2026-07-27 16:02:26,660 - DEBUG - falling back to hashlib hashing: `pip install xxhash`for 50x faster cache checks
+2026-07-27 16:02:27,529 - INFO - ==================================================
+2026-07-27 16:02:27,530 - INFO - New session START at 2026-07-27 16:02
+2026-07-27 16:02:27,530 - INFO - ==================================================
+2026-07-27 16:02:27,530 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-07-27 16:02:27,530 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-07-27 16:02:27,530 - INFO - Loaded draw_z from config: Z=5.0
+2026-07-27 16:02:27,531 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-07-27 16:02:27,532 - INFO - Updated profile.json: layer_height=0.4, layer_height_0=0.4
+2026-07-27 16:02:27,532 - INFO - INI file initialized
+2026-07-27 16:02:27,537 - INFO - UI load successful
+2026-07-27 16:02:27,830 - INFO - Com : com, Port : ['COM1', 'COM9', 'COM10'], Baud : ['9600', '57600', '115200', '250000']
+2026-07-27 16:02:35,264 - INFO - Do you want to auto connect to COM9 @ 115200
+2026-07-27 16:02:35,265 - INFO - Auto Connect dialog button : Cancel
+2026-07-27 16:02:55,501 - INFO - UV turned ON manually.
+2026-07-27 16:02:58,354 - INFO - UV turned OFF manually.
+2026-07-27 16:03:14,887 - INFO - Serial communication stopped
+2026-07-27 16:03:14,888 - INFO - COM connection close successfully
+2026-07-27 16:03:14,888 - INFO - Main window close successfully
+2026-07-27 16:03:14,888 - INFO - ==================================================
+2026-07-27 16:03:14,888 - INFO - New session close at 2026-07-27 16:03
+2026-07-27 16:03:14,888 - INFO - ==================================================
+2026-07-27 16:10:55,120 - DEBUG - OpenGL_accelerate module loaded
+2026-07-27 16:10:55,139 - DEBUG - Using accelerated ArrayDatatype
+2026-07-27 16:10:56,427 - DEBUG - searching for blender in: C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Python314\Lib\site-packages\PySide6;C:\Users\EXPRESS\AppData\Local\Programs\Microsoft VS Code\bin;c:\Users\EXPRESS\.antigravity-ide\extensions\ms-python.debugpy-2026.6.0-win32-x64\bundled\scripts\noConfigScripts;C:\Users\EXPRESS\AppData\Roaming\Python\Python313\Scripts;C:\Program Files\Python314\Scripts\;C:\Program Files\Python314\;C:\Program Files\nodejs\;C:\WINDOWS\system32;C:\WINDOWS\System32\Wbem;C:\Users\EXPRESS\AppData\Local\Microsoft\WindowsApps;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Users\EXPRESS\AppData\Local\Programs\Antigravity\bin;C:\Users\EXPRESS\AppData\Local\Programs\Antigravity IDE\bin;C:\WINDOWS;C:\Users\EXPRESS\AppData\Roaming\npm;C:\Users\EXPRESS\AppData\Local\GitHubDesktop\bin;C:\Program Files\Gtk-Runtime\bin;C:\Program Files\Arduino CLI\;C:\Program Files\ffmpeg-2025-07-17-git-bc8d06d541-essentials_build\bin
+2026-07-27 16:10:56,444 - DEBUG - falling back to hashlib hashing: `pip install xxhash`for 50x faster cache checks
+2026-07-27 16:10:58,193 - INFO - ==================================================
+2026-07-27 16:10:58,194 - INFO - New session START at 2026-07-27 16:10
+2026-07-27 16:10:58,194 - INFO - ==================================================
+2026-07-27 16:10:58,194 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-07-27 16:10:58,194 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-07-27 16:10:58,194 - INFO - Loaded draw_z from config: Z=5.0
+2026-07-27 16:10:58,195 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-07-27 16:10:58,199 - INFO - Updated profile.json: layer_height=0.4, layer_height_0=0.4
+2026-07-27 16:10:58,200 - INFO - INI file initialized
+2026-07-27 16:10:58,208 - INFO - UI load successful
+2026-07-27 16:11:00,001 - INFO - Com : com, Port : ['COM1', 'COM9', 'COM10'], Baud : ['9600', '57600', '115200', '250000']
+2026-07-27 16:11:01,286 - INFO - Do you want to auto connect to COM9 @ 115200
+2026-07-27 16:11:01,287 - INFO - Auto Connect dialog button : Cancel
+2026-07-27 16:11:06,442 - INFO - File selected: D:/TeamDev/Ink/InkV2_Final_stl_with_logs/ide2.svg
+2026-07-27 16:11:06,443 - INFO - Converting SVG -> G-code directly: D:\TeamDev\Ink\InkV2_Final_stl_with_logs\ide2.svg
+2026-07-27 16:11:06,575 - DEBUG - Exporting 12320 faces as STL
+2026-07-27 16:11:07,687 - INFO - G-code created: D:\TeamDev\Ink\InkV2_Final_stl_with_logs\ide2.gcode
+2026-07-27 16:11:07,687 - INFO - G-code ready from SVG: D:\TeamDev\Ink\InkV2_Final_stl_with_logs\ide2.gcode
+2026-07-27 16:11:07,698 - INFO - Raw G-code parsed (1176 lines).
+2026-07-27 16:11:08,710 - INFO - Feedrate: 500.0 mm/min
+2026-07-27 16:11:09,685 - INFO - Normalization shift: X=-176.884, Y=-61.833
+2026-07-27 16:11:09,685 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-07-27 16:11:09,685 - INFO - Final applied shift: X=-176.884, Y=-61.833
+2026-07-27 16:16:55,053 - DEBUG - OpenGL_accelerate module loaded
+2026-07-27 16:16:55,065 - DEBUG - Using accelerated ArrayDatatype
+2026-07-27 16:16:55,890 - DEBUG - searching for blender in: C:\Users\EXPRESS\AppData\Local\Programs\Antigravity\bin;C:\Program Files\Gtk-Runtime\bin;c:\Users\EXPRESS\.antigravity-ide\extensions\ms-python.debugpy-2026.6.0-win32-x64\bundled\scripts\noConfigScripts;C:\Program Files\Python314\Scripts\;C:\WINDOWS\system32;C:\Program Files\Python314\;C:\Program Files\Git\cmd;C:\Users\EXPRESS\AppData\Local\Microsoft\WindowsApps;C:\WINDOWS\System32\OpenSSH\;C:\Users\EXPRESS\AppData\Roaming\npm;C:\Program Files\ffmpeg-2025-07-17-git-bc8d06d541-essentials_build\bin;C:\Program Files\Python314\Lib\site-packages\PySide6;C:\Users\EXPRESS\AppData\Local\Programs\Antigravity IDE\bin;C:\WINDOWS\System32\Wbem;C:\WINDOWS;C:\Users\EXPRESS\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\nodejs\;C:\Users\EXPRESS\AppData\Local\GitHubDesktop\bin;C:\Users\EXPRESS\AppData\Roaming\Python\Python313\Scripts;C:\Program Files\Arduino CLI\;C:\WINDOWS\System32\WindowsPowerShell\v1.0\
+2026-07-27 16:16:55,899 - DEBUG - falling back to hashlib hashing: `pip install xxhash`for 50x faster cache checks
+2026-07-27 16:16:56,972 - INFO - ==================================================
+2026-07-27 16:16:56,972 - INFO - New session START at 2026-07-27 16:16
+2026-07-27 16:16:56,972 - INFO - ==================================================
+2026-07-27 16:16:56,973 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-07-27 16:16:56,974 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-07-27 16:16:56,974 - INFO - Loaded draw_z from config: Z=5.0
+2026-07-27 16:16:56,974 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-07-27 16:16:56,976 - INFO - Updated profile.json: layer_height=0.4, layer_height_0=0.4
+2026-07-27 16:16:56,977 - INFO - UV Exposure Time loaded: 30000 ms
+2026-07-27 16:16:56,977 - INFO - INI file initialized
+2026-07-27 16:16:56,983 - INFO - UI load successful
+2026-07-27 16:16:57,299 - INFO - Com : com, Port : ['COM1', 'COM9', 'COM10'], Baud : ['9600', '57600', '115200', '250000']
+2026-07-27 16:16:58,726 - INFO - Do you want to auto connect to COM9 @ 115200
+2026-07-27 16:16:58,727 - INFO - Auto Connect dialog button : Cancel
+2026-07-27 16:17:05,183 - INFO - UV turned ON manually.
+2026-07-27 16:17:09,754 - INFO - UV turned OFF manually.
+2026-07-27 16:17:17,069 - INFO - File selected: D:/TeamDev/Ink/InkV2_Final_stl_with_logs/ide2.svg
+2026-07-27 16:17:17,070 - INFO - Converting SVG -> G-code directly: D:\TeamDev\Ink\InkV2_Final_stl_with_logs\ide2.svg
+2026-07-27 16:17:17,210 - DEBUG - Exporting 12320 faces as STL
+2026-07-27 16:17:17,881 - INFO - G-code created: D:\TeamDev\Ink\InkV2_Final_stl_with_logs\ide2.gcode
+2026-07-27 16:17:17,881 - INFO - G-code ready from SVG: D:\TeamDev\Ink\InkV2_Final_stl_with_logs\ide2.gcode
+2026-07-27 16:17:17,894 - INFO - Raw G-code parsed (1176 lines).
+2026-07-27 16:17:19,188 - INFO - Feedrate: 500.0 mm/min
+2026-07-27 16:17:19,901 - INFO - Normalization shift: X=-176.884, Y=-61.833
+2026-07-27 16:17:19,901 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-07-27 16:17:19,901 - INFO - Final applied shift: X=-176.884, Y=-61.833
+2026-07-27 16:17:21,026 - INFO - Print Status : RUN
+2026-07-27 16:17:34,162 - INFO - Serial communication stopped
+2026-07-27 16:17:34,163 - INFO - COM connection close successfully
+2026-07-27 16:17:34,163 - INFO - Main window close successfully
+2026-07-27 16:17:34,163 - INFO - ==================================================
+2026-07-27 16:17:34,163 - INFO - New session close at 2026-07-27 16:17
+2026-07-27 16:17:34,163 - INFO - ==================================================
+2026-07-27 16:18:27,393 - DEBUG - OpenGL_accelerate module loaded
+2026-07-27 16:18:27,406 - DEBUG - Using accelerated ArrayDatatype
+2026-07-27 16:18:28,252 - DEBUG - searching for blender in: C:\WINDOWS\system32;C:\Users\EXPRESS\AppData\Local\GitHubDesktop\bin;C:\Users\EXPRESS\AppData\Roaming\npm;C:\Program Files\ffmpeg-2025-07-17-git-bc8d06d541-essentials_build\bin;C:\Users\EXPRESS\AppData\Local\Programs\Antigravity\bin;C:\Users\EXPRESS\AppData\Local\Programs\Antigravity IDE\bin;C:\Program Files\Python314\Lib\site-packages\PySide6;c:\Users\EXPRESS\.antigravity-ide\extensions\ms-python.debugpy-2026.6.0-win32-x64\bundled\scripts\noConfigScripts;C:\WINDOWS;C:\Program Files\Arduino CLI\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files\Python314\;C:\Users\EXPRESS\AppData\Roaming\Python\Python313\Scripts;C:\WINDOWS\System32\OpenSSH\;C:\Users\EXPRESS\AppData\Local\Microsoft\WindowsApps;C:\WINDOWS\System32\Wbem;C:\Program Files\Gtk-Runtime\bin;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Users\EXPRESS\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\Python314\Scripts\
+2026-07-27 16:18:28,261 - DEBUG - falling back to hashlib hashing: `pip install xxhash`for 50x faster cache checks
+2026-07-27 16:18:29,208 - INFO - ==================================================
+2026-07-27 16:18:29,208 - INFO - New session START at 2026-07-27 16:18
+2026-07-27 16:18:29,208 - INFO - ==================================================
+2026-07-27 16:18:29,209 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-07-27 16:18:29,209 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-07-27 16:18:29,209 - INFO - Loaded draw_z from config: Z=5.0
+2026-07-27 16:18:29,209 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-07-27 16:18:29,211 - INFO - Updated profile.json: layer_height=0.4, layer_height_0=0.4
+2026-07-27 16:18:29,212 - INFO - UV Exposure Time loaded: 30000 ms
+2026-07-27 16:18:29,212 - INFO - INI file initialized
+2026-07-27 16:18:29,216 - INFO - UI load successful
+2026-07-27 16:18:29,508 - INFO - Com : com, Port : ['COM1', 'COM9', 'COM10'], Baud : ['9600', '57600', '115200', '250000']
+2026-07-27 16:18:30,768 - INFO - Do you want to auto connect to COM9 @ 115200
+2026-07-27 16:18:30,769 - INFO - Auto Connect dialog button : Cancel
+2026-07-27 16:18:46,157 - INFO - File selected: D:/EXPRESS/Downloads/2x2.dxf
+2026-07-27 16:18:46,158 - INFO - Converting DXF -> G-code directly: D:\EXPRESS\Downloads\2x2.dxf
+2026-07-27 16:18:46,210 - DEBUG - Exporting 344 faces as STL
+2026-07-27 16:18:46,275 - INFO - G-code created: D:\EXPRESS\Downloads\2x2.gcode
+2026-07-27 16:18:46,275 - INFO - G-code ready from DXF: D:\EXPRESS\Downloads\2x2.gcode
+2026-07-27 16:18:46,285 - INFO - Raw G-code parsed (66 lines).
+2026-07-27 16:18:47,869 - INFO - Feedrate: 500.0 mm/min
+2026-07-27 16:18:48,920 - INFO - Normalization shift: X=-175.001, Y=-60.000
+2026-07-27 16:18:48,920 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-07-27 16:18:48,920 - INFO - Final applied shift: X=-175.001, Y=-60.000
+2026-07-27 16:20:17,490 - INFO - File selected: D:/TeamDev/Ink/InkV2_Final_stl_with_logs/Bmp files/test_50x50.bmp
+2026-07-27 16:20:17,490 - INFO - Converting BMP -> G-code directly: D:\TeamDev\Ink\InkV2_Final_stl_with_logs\Bmp files\test_50x50.bmp
+2026-07-27 16:20:17,491 - DEBUG - Importing BmpImagePlugin
+2026-07-27 16:20:17,511 - INFO - G-code created: D:\TeamDev\Ink\InkV2_Final_stl_with_logs\Bmp files\test_50x50.gcode
+2026-07-27 16:20:17,512 - INFO - G-code ready from BMP: D:\TeamDev\Ink\InkV2_Final_stl_with_logs\Bmp files\test_50x50.gcode
+2026-07-27 16:20:17,531 - INFO - Raw G-code parsed (1921 lines).
+2026-07-27 16:20:18,677 - INFO - Feedrate: 500.0 mm/min
+2026-07-27 16:20:19,617 - INFO - Normalization shift: X=-4.400, Y=-4.800
+2026-07-27 16:20:19,618 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-07-27 16:20:19,618 - INFO - Final applied shift: X=-4.400, Y=-4.800
+2026-07-27 16:30:51,289 - DEBUG - OpenGL_accelerate module loaded
+2026-07-27 16:30:51,302 - DEBUG - Using accelerated ArrayDatatype
+2026-07-27 16:30:52,178 - DEBUG - searching for blender in: C:\WINDOWS\System32\Wbem;C:\Users\EXPRESS\AppData\Roaming\npm;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Python314\;C:\Program Files\ffmpeg-2025-07-17-git-bc8d06d541-essentials_build\bin;C:\Users\EXPRESS\AppData\Local\GitHubDesktop\bin;C:\Users\EXPRESS\AppData\Roaming\Python\Python313\Scripts;C:\Users\EXPRESS\AppData\Local\Programs\Antigravity\bin;C:\Program Files\Python314\Scripts\;C:\Program Files\Python314\Lib\site-packages\PySide6;c:\Users\EXPRESS\.antigravity-ide\extensions\ms-python.debugpy-2026.6.0-win32-x64\bundled\scripts\noConfigScripts;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS;C:\Program Files\nodejs\;C:\Users\EXPRESS\AppData\Local\Programs\Antigravity IDE\bin;C:\Users\EXPRESS\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\EXPRESS\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Arduino CLI\;C:\Program Files\Gtk-Runtime\bin;C:\WINDOWS\system32;C:\Program Files\Git\cmd
+2026-07-27 16:30:52,188 - DEBUG - falling back to hashlib hashing: `pip install xxhash`for 50x faster cache checks
+2026-07-27 16:30:53,157 - INFO - ==================================================
+2026-07-27 16:30:53,158 - INFO - New session START at 2026-07-27 16:30
+2026-07-27 16:30:53,158 - INFO - ==================================================
+2026-07-27 16:30:53,159 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-07-27 16:30:53,159 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-07-27 16:30:53,159 - INFO - Loaded draw_z from config: Z=5.0
+2026-07-27 16:30:53,159 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-07-27 16:30:53,162 - INFO - Updated profile.json: layer_height=0.4, layer_height_0=0.4
+2026-07-27 16:30:53,163 - INFO - UV Exposure Time loaded: 30000 ms
+2026-07-27 16:30:53,163 - INFO - INI file initialized
+2026-07-27 16:30:53,167 - INFO - UI load successful
+2026-07-27 16:30:53,484 - INFO - Com : com, Port : ['COM1', 'COM9', 'COM10'], Baud : ['9600', '57600', '115200', '250000']
+2026-07-27 16:31:03,019 - INFO - Do you want to auto connect to COM9 @ 115200
+2026-07-27 16:31:03,020 - INFO - Auto Connect dialog button : Cancel
+2026-07-27 16:31:16,143 - INFO - File selected: D:/TeamDev/Ink/InkV2_Final_stl_with_logs/Bmp files/test_50x50.gcode
+2026-07-27 16:31:16,144 - INFO - Raw G-code parsed (1921 lines).
+2026-07-27 16:31:19,044 - INFO - File selected: D:/TeamDev/Ink/InkV2_Final_stl_with_logs/Bmp files/test_50x50.bmp
+2026-07-27 16:31:19,045 - INFO - Converting BMP -> G-code directly: D:\TeamDev\Ink\InkV2_Final_stl_with_logs\Bmp files\test_50x50.bmp
+2026-07-27 16:31:19,046 - DEBUG - Importing BmpImagePlugin
+2026-07-27 16:31:19,058 - INFO - G-code created: D:\TeamDev\Ink\InkV2_Final_stl_with_logs\Bmp files\test_50x50.gcode
+2026-07-27 16:31:19,059 - INFO - G-code ready from BMP: D:\TeamDev\Ink\InkV2_Final_stl_with_logs\Bmp files\test_50x50.gcode
+2026-07-27 16:31:19,076 - INFO - Raw G-code parsed (1923 lines).
+2026-07-27 16:31:20,353 - INFO - Feedrate: 500.0 mm/min
+2026-07-27 16:31:21,425 - INFO - Normalization shift: X=-4.400, Y=-4.800
+2026-07-27 16:31:21,425 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-07-27 16:31:21,425 - INFO - Final applied shift: X=-4.400, Y=-4.800
+2026-07-27 17:26:15,943 - DEBUG - OpenGL_accelerate module loaded
+2026-07-27 17:26:15,960 - DEBUG - Using accelerated ArrayDatatype
+2026-07-27 17:26:17,174 - DEBUG - searching for blender in: C:\Program Files\Python314\;C:\WINDOWS\system32;C:\Users\EXPRESS\AppData\Local\Programs\Antigravity IDE\bin;c:\Users\EXPRESS\.antigravity-ide\extensions\ms-python.debugpy-2026.6.0-win32-x64\bundled\scripts\noConfigScripts;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Users\EXPRESS\AppData\Local\GitHubDesktop\bin;C:\Users\EXPRESS\AppData\Local\Programs\Antigravity\bin;C:\Program Files\Python314\Scripts\;C:\Program Files\Gtk-Runtime\bin;C:\Users\EXPRESS\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\Git\cmd;C:\WINDOWS\System32\Wbem;C:\Program Files\Python314\Lib\site-packages\PySide6;C:\Program Files\Arduino CLI\;C:\WINDOWS;C:\Users\EXPRESS\AppData\Local\Microsoft\WindowsApps;C:\Program Files\ffmpeg-2025-07-17-git-bc8d06d541-essentials_build\bin;C:\Users\EXPRESS\AppData\Roaming\Python\Python313\Scripts;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Users\EXPRESS\AppData\Roaming\npm
+2026-07-27 17:26:17,190 - DEBUG - falling back to hashlib hashing: `pip install xxhash`for 50x faster cache checks
+2026-07-27 17:26:18,737 - INFO - ==================================================
+2026-07-27 17:26:18,738 - INFO - New session START at 2026-07-27 17:26
+2026-07-27 17:26:18,738 - INFO - ==================================================
+2026-07-27 17:26:18,739 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-07-27 17:26:18,739 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-07-27 17:26:18,739 - INFO - Loaded draw_z from config: Z=5.0
+2026-07-27 17:26:18,739 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-07-27 17:26:18,740 - INFO - Updated profile.json: layer_height=0.4, layer_height_0=0.4
+2026-07-27 17:26:18,740 - INFO - UV Exposure Time loaded: 30000 ms
+2026-07-27 17:26:18,740 - INFO - INI file initialized
+2026-07-27 17:26:18,746 - INFO - UI load successful
+2026-07-27 17:26:20,192 - INFO - Com : com, Port : ['COM1', 'COM9', 'COM10'], Baud : ['9600', '57600', '115200', '250000']
+2026-07-27 17:26:21,901 - INFO - Do you want to auto connect to COM9 @ 115200
+2026-07-27 17:26:21,902 - INFO - Auto Connect dialog button : Cancel
+2026-07-27 17:26:34,888 - INFO - File selected: D:/TeamDev/Ink/InkV2_Final_stl_with_logs/test_50x50.bmp
+2026-07-27 17:26:34,888 - INFO - Converting BMP -> G-code directly: D:\TeamDev\Ink\InkV2_Final_stl_with_logs\test_50x50.bmp
+2026-07-27 17:26:34,889 - DEBUG - Importing BmpImagePlugin
+2026-07-27 17:26:34,925 - DEBUG - Exporting 476 faces as STL
+2026-07-27 17:26:35,492 - INFO - G-code created: D:\TeamDev\Ink\InkV2_Final_stl_with_logs\test_50x50.gcode
+2026-07-27 17:26:35,492 - INFO - G-code ready from BMP: D:\TeamDev\Ink\InkV2_Final_stl_with_logs\test_50x50.gcode
+2026-07-27 17:26:35,501 - INFO - Raw G-code parsed (126 lines).
+2026-07-27 17:26:37,549 - INFO - Feedrate: 500.0 mm/min
+2026-07-27 17:26:38,501 - INFO - Normalization shift: X=-178.980, Y=-63.980
+2026-07-27 17:26:38,501 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-07-27 17:26:38,501 - INFO - Final applied shift: X=-178.980, Y=-63.980
+2026-07-27 17:27:19,679 - INFO - File selected: D:/TeamDev/Ink/InkV2_Final_stl_with_logs/Bmp files/test_50x50.bmp
+2026-07-27 17:27:19,680 - INFO - Converting BMP -> G-code directly: D:\TeamDev\Ink\InkV2_Final_stl_with_logs\Bmp files\test_50x50.bmp
+2026-07-27 17:27:19,703 - DEBUG - Exporting 6108 faces as STL
+2026-07-27 17:27:19,769 - INFO - G-code created: D:\TeamDev\Ink\InkV2_Final_stl_with_logs\Bmp files\test_50x50.gcode
+2026-07-27 17:27:19,770 - INFO - G-code ready from BMP: D:\TeamDev\Ink\InkV2_Final_stl_with_logs\Bmp files\test_50x50.gcode
+2026-07-27 17:27:19,779 - INFO - Raw G-code parsed (340 lines).
+2026-07-27 17:27:22,360 - INFO - Feedrate: 500.0 mm/min
+2026-07-27 17:27:23,546 - INFO - Normalization shift: X=-179.485, Y=-64.780
+2026-07-27 17:27:23,546 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-07-27 17:27:23,546 - INFO - Final applied shift: X=-179.485, Y=-64.780
+2026-07-27 17:31:14,791 - DEBUG - OpenGL_accelerate module loaded
+2026-07-27 17:31:14,802 - DEBUG - Using accelerated ArrayDatatype
+2026-07-27 17:31:15,561 - DEBUG - searching for blender in: C:\Users\EXPRESS\AppData\Roaming\npm;C:\Users\EXPRESS\AppData\Local\Programs\Antigravity\bin;C:\Program Files\nodejs\;c:\Users\EXPRESS\.antigravity-ide\extensions\ms-python.debugpy-2026.6.0-win32-x64\bundled\scripts\noConfigScripts;C:\Program Files\Gtk-Runtime\bin;C:\WINDOWS;C:\Users\EXPRESS\AppData\Local\GitHubDesktop\bin;C:\Program Files\Python314\;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\ffmpeg-2025-07-17-git-bc8d06d541-essentials_build\bin;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Python314\Lib\site-packages\PySide6;C:\Users\EXPRESS\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\Python314\Scripts\;C:\Program Files\Git\cmd;C:\WINDOWS\system32;C:\Program Files\Arduino CLI\;C:\Users\EXPRESS\AppData\Local\Microsoft\WindowsApps;C:\Users\EXPRESS\AppData\Local\Programs\Antigravity IDE\bin;C:\Users\EXPRESS\AppData\Roaming\Python\Python313\Scripts
+2026-07-27 17:31:15,570 - DEBUG - falling back to hashlib hashing: `pip install xxhash`for 50x faster cache checks
+2026-07-27 17:31:16,474 - INFO - ==================================================
+2026-07-27 17:31:16,474 - INFO - New session START at 2026-07-27 17:31
+2026-07-27 17:31:16,474 - INFO - ==================================================
+2026-07-27 17:31:16,474 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-07-27 17:31:16,475 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-07-27 17:31:16,475 - INFO - Loaded draw_z from config: Z=5.0
+2026-07-27 17:31:16,475 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-07-27 17:31:16,477 - INFO - Updated profile.json: layer_height=0.4, layer_height_0=0.4
+2026-07-27 17:31:16,477 - INFO - UV Exposure Time loaded: 30000 ms
+2026-07-27 17:31:16,478 - INFO - INI file initialized
+2026-07-27 17:31:16,481 - INFO - UI load successful
+2026-07-27 17:31:16,752 - INFO - Com : com, Port : ['COM1', 'COM9', 'COM10'], Baud : ['9600', '57600', '115200', '250000']
+2026-07-27 17:31:39,985 - INFO - Do you want to auto connect to COM9 @ 115200
+2026-07-27 17:31:39,985 - INFO - Auto Connect dialog button : Cancel
+2026-07-27 17:31:45,832 - INFO - File selected: D:/TeamDev/Ink/InkV2_Final_stl_with_logs/Bmp files/test_50x50.bmp
+2026-07-27 17:31:45,832 - INFO - Converting BMP -> G-code directly: D:\TeamDev\Ink\InkV2_Final_stl_with_logs\Bmp files\test_50x50.bmp
+2026-07-27 17:31:45,929 - DEBUG - Exporting 132 faces as STL
+2026-07-27 17:31:45,973 - INFO - G-code created: D:\TeamDev\Ink\InkV2_Final_stl_with_logs\Bmp files\test_50x50.gcode
+2026-07-27 17:31:45,973 - INFO - G-code ready from BMP: D:\TeamDev\Ink\InkV2_Final_stl_with_logs\Bmp files\test_50x50.gcode
+2026-07-27 17:31:45,982 - INFO - Raw G-code parsed (138 lines).
+2026-07-27 17:31:51,279 - INFO - Feedrate: 500.0 mm/min
+2026-07-27 17:31:52,581 - INFO - Normalization shift: X=-179.586, Y=-64.980
+2026-07-27 17:31:52,581 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-07-27 17:31:52,581 - INFO - Final applied shift: X=-179.586, Y=-64.980
+2026-07-27 17:34:35,791 - DEBUG - OpenGL_accelerate module loaded
+2026-07-27 17:34:35,802 - DEBUG - Using accelerated ArrayDatatype
+2026-07-27 17:34:36,550 - DEBUG - searching for blender in: C:\Program Files\Python314\;C:\Users\EXPRESS\AppData\Roaming\npm;c:\Users\EXPRESS\.antigravity-ide\extensions\ms-python.debugpy-2026.6.0-win32-x64\bundled\scripts\noConfigScripts;C:\Program Files\Python314\Lib\site-packages\PySide6;C:\Program Files\Gtk-Runtime\bin;C:\Program Files\ffmpeg-2025-07-17-git-bc8d06d541-essentials_build\bin;C:\WINDOWS\System32\OpenSSH\;C:\Users\EXPRESS\AppData\Local\GitHubDesktop\bin;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS;C:\Users\EXPRESS\AppData\Local\Programs\Antigravity\bin;C:\Program Files\nodejs\;C:\Users\EXPRESS\AppData\Local\Microsoft\WindowsApps;C:\WINDOWS\system32;C:\Users\EXPRESS\AppData\Roaming\Python\Python313\Scripts;C:\WINDOWS\System32\Wbem;C:\Program Files\Python314\Scripts\;C:\Users\EXPRESS\AppData\Local\Programs\Antigravity IDE\bin;C:\Users\EXPRESS\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\Arduino CLI\;C:\Program Files\Git\cmd
+2026-07-27 17:34:36,559 - DEBUG - falling back to hashlib hashing: `pip install xxhash`for 50x faster cache checks
+2026-07-27 17:34:37,367 - INFO - ==================================================
+2026-07-27 17:34:37,367 - INFO - New session START at 2026-07-27 17:34
+2026-07-27 17:34:37,368 - INFO - ==================================================
+2026-07-27 17:34:37,368 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-07-27 17:34:37,369 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-07-27 17:34:37,369 - INFO - Loaded draw_z from config: Z=5.0
+2026-07-27 17:34:37,369 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-07-27 17:34:37,371 - INFO - Updated profile.json: layer_height=0.4, layer_height_0=0.4
+2026-07-27 17:34:37,371 - INFO - UV Exposure Time loaded: 30000 ms
+2026-07-27 17:34:37,371 - INFO - INI file initialized
+2026-07-27 17:34:37,375 - INFO - UI load successful
+2026-07-27 17:34:37,636 - INFO - Com : com, Port : ['COM1', 'COM9', 'COM10'], Baud : ['9600', '57600', '115200', '250000']
+2026-07-27 17:34:39,097 - INFO - Do you want to auto connect to COM9 @ 115200
+2026-07-27 17:34:39,097 - INFO - Auto Connect dialog button : Cancel
+2026-07-27 17:34:45,846 - INFO - File selected: D:/TeamDev/Ink/InkV2_Final_stl_with_logs/Bmp files/sensors-1.bmp
+2026-07-27 17:34:45,847 - INFO - Converting BMP -> G-code directly: D:\TeamDev\Ink\InkV2_Final_stl_with_logs\Bmp files\sensors-1.bmp
+2026-07-27 17:34:45,886 - ERROR - BMP conversion failed:
+Failed to generate G-code from BMP.
+2026-07-27 17:35:08,911 - INFO - File selected: D:/TeamDev/Ink/InkV2_Final_stl_with_logs/Bmp files/sensor-5.bmp
+2026-07-27 17:35:08,913 - INFO - Converting BMP -> G-code directly: D:\TeamDev\Ink\InkV2_Final_stl_with_logs\Bmp files\sensor-5.bmp
+2026-07-27 17:35:08,982 - DEBUG - Exporting 200 faces as STL
+2026-07-27 17:35:09,040 - INFO - G-code created: D:\TeamDev\Ink\InkV2_Final_stl_with_logs\Bmp files\sensor-5.gcode
+2026-07-27 17:35:09,041 - INFO - G-code ready from BMP: D:\TeamDev\Ink\InkV2_Final_stl_with_logs\Bmp files\sensor-5.gcode
+2026-07-27 17:35:09,051 - INFO - Raw G-code parsed (396 lines).
+2026-07-27 17:35:11,046 - INFO - Feedrate: 500.0 mm/min
+2026-07-27 17:35:11,898 - INFO - Normalization shift: X=-221.580, Y=-94.180
+2026-07-27 17:35:11,898 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-07-27 17:35:11,898 - INFO - Final applied shift: X=-221.580, Y=-94.180
+2026-07-27 17:35:11,898 - ERROR - Out of Bed Range: Drawing exceeds bed area!
+
+X: 0.00 \u2192 184.44 (Bed: 0.0 \u2192 50.0)
+Y: 0.00 \u2192 138.84 (Bed: 0.0 \u2192 50.0)
+
+Please re-adjust the offsets.
+2026-07-27 17:35:19,593 - INFO - File selected: D:/TeamDev/Ink/InkV2_Final_stl_with_logs/Bmp files/sensor-2.bmp
+2026-07-27 17:35:19,593 - INFO - Converting BMP -> G-code directly: D:\TeamDev\Ink\InkV2_Final_stl_with_logs\Bmp files\sensor-2.bmp
+2026-07-27 17:35:19,714 - DEBUG - Exporting 252 faces as STL
+2026-07-27 17:35:19,773 - INFO - G-code created: D:\TeamDev\Ink\InkV2_Final_stl_with_logs\Bmp files\sensor-2.gcode
+2026-07-27 17:35:19,773 - INFO - G-code ready from BMP: D:\TeamDev\Ink\InkV2_Final_stl_with_logs\Bmp files\sensor-2.gcode
+2026-07-27 17:35:19,783 - INFO - Raw G-code parsed (83 lines).
+2026-07-27 17:35:20,994 - INFO - Feedrate: 500.0 mm/min
+2026-07-27 17:35:21,790 - INFO - Normalization shift: X=-400.283, Y=-172.600
+2026-07-27 17:35:21,790 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-07-27 17:35:21,790 - INFO - Final applied shift: X=-400.283, Y=-172.600
+2026-07-27 17:35:21,790 - ERROR - Out of Bed Range: Drawing exceeds bed area!
+
+X: 0.00 \u2192 89.78 (Bed: 0.0 \u2192 50.0)
+Y: 0.00 \u2192 51.86 (Bed: 0.0 \u2192 50.0)
+
+Please re-adjust the offsets.
+2026-07-27 17:35:32,825 - INFO - File selected: D:/TeamDev/Ink/InkV2_Final_stl_with_logs/Bmp files/sensors-1.bmp
+2026-07-27 17:35:32,825 - INFO - Converting BMP -> G-code directly: D:\TeamDev\Ink\InkV2_Final_stl_with_logs\Bmp files\sensors-1.bmp
+2026-07-27 17:35:32,826 - ERROR - BMP conversion failed:
+Failed to generate G-code from BMP.
+2026-07-27 17:36:00,492 - INFO - File selected: D:/TeamDev/Ink/InkV2_Final_stl_with_logs/Bmp files/sensors-1.bmp
+2026-07-27 17:36:00,493 - INFO - Converting BMP -> G-code directly: D:\TeamDev\Ink\InkV2_Final_stl_with_logs\Bmp files\sensors-1.bmp
+2026-07-27 17:36:00,493 - ERROR - BMP conversion failed:
+Failed to generate G-code from BMP.
+2026-07-27 17:36:02,931 - INFO - Feedrate: 500.0 mm/min
+2026-07-27 17:36:21,041 - INFO - File selected: D:/TeamDev/Ink/InkV2_Final_stl_with_logs/Bmp files/sensors-1.bmp
+2026-07-27 17:36:21,041 - INFO - Converting BMP -> G-code directly: D:\TeamDev\Ink\InkV2_Final_stl_with_logs\Bmp files\sensors-1.bmp
+2026-07-27 17:36:21,042 - ERROR - BMP conversion failed:
+Failed to generate G-code from BMP.
+2026-07-27 17:36:34,462 - INFO - Serial communication stopped
+2026-07-27 17:36:34,463 - INFO - COM connection close successfully
+2026-07-27 17:36:34,463 - INFO - Main window close successfully
+2026-07-27 17:36:34,463 - INFO - ==================================================
+2026-07-27 17:36:34,463 - INFO - New session close at 2026-07-27 17:36
+2026-07-27 17:36:34,463 - INFO - ==================================================
+2026-07-27 17:36:42,681 - DEBUG - OpenGL_accelerate module loaded
+2026-07-27 17:36:42,694 - DEBUG - Using accelerated ArrayDatatype
+2026-07-27 17:36:43,494 - DEBUG - searching for blender in: C:\Program Files\ffmpeg-2025-07-17-git-bc8d06d541-essentials_build\bin;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;c:\Users\EXPRESS\.antigravity-ide\extensions\ms-python.debugpy-2026.6.0-win32-x64\bundled\scripts\noConfigScripts;C:\Program Files\Gtk-Runtime\bin;C:\Users\EXPRESS\AppData\Local\Programs\Antigravity\bin;C:\Program Files\Python314\Lib\site-packages\PySide6;C:\WINDOWS;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Users\EXPRESS\AppData\Roaming\npm;C:\Users\EXPRESS\AppData\Local\GitHubDesktop\bin;C:\Users\EXPRESS\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\EXPRESS\AppData\Local\Programs\Antigravity IDE\bin;C:\WINDOWS\System32\OpenSSH\;C:\Users\EXPRESS\AppData\Roaming\Python\Python313\Scripts;C:\Users\EXPRESS\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Arduino CLI\;C:\WINDOWS\System32\Wbem;C:\Program Files\Python314\Scripts\;C:\WINDOWS\system32;C:\Program Files\Python314\
+2026-07-27 17:36:43,503 - DEBUG - falling back to hashlib hashing: `pip install xxhash`for 50x faster cache checks
+2026-07-27 17:36:44,307 - INFO - ==================================================
+2026-07-27 17:36:44,307 - INFO - New session START at 2026-07-27 17:36
+2026-07-27 17:36:44,307 - INFO - ==================================================
+2026-07-27 17:36:44,309 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-07-27 17:36:44,309 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-07-27 17:36:44,309 - INFO - Loaded draw_z from config: Z=5.0
+2026-07-27 17:36:44,309 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-07-27 17:36:44,312 - INFO - Updated profile.json: layer_height=0.4, layer_height_0=0.4
+2026-07-27 17:36:44,312 - INFO - UV Exposure Time loaded: 30000 ms
+2026-07-27 17:36:44,312 - INFO - INI file initialized
+2026-07-27 17:36:44,316 - INFO - UI load successful
+2026-07-27 17:36:44,664 - INFO - Com : com, Port : ['COM1', 'COM9', 'COM10'], Baud : ['9600', '57600', '115200', '250000']
+2026-07-27 17:36:48,627 - INFO - Do you want to auto connect to COM9 @ 115200
+2026-07-27 17:36:48,627 - INFO - Auto Connect dialog button : Cancel
+2026-07-27 17:39:54,921 - DEBUG - OpenGL_accelerate module loaded
+2026-07-27 17:39:54,932 - DEBUG - Using accelerated ArrayDatatype
+2026-07-27 17:39:55,686 - DEBUG - searching for blender in: C:\Program Files\Gtk-Runtime\bin;C:\Program Files\nodejs\;C:\Users\EXPRESS\AppData\Local\Microsoft\WindowsApps;C:\Users\EXPRESS\AppData\Local\GitHubDesktop\bin;C:\Users\EXPRESS\AppData\Local\Programs\Antigravity IDE\bin;C:\Program Files\Python314\Scripts\;C:\WINDOWS\System32\OpenSSH\;C:\WINDOWS\System32\Wbem;C:\WINDOWS\system32;C:\Users\EXPRESS\AppData\Local\Programs\Antigravity\bin;C:\Program Files\Git\cmd;C:\Program Files\Arduino CLI\;c:\Users\EXPRESS\.antigravity-ide\extensions\ms-python.debugpy-2026.6.0-win32-x64\bundled\scripts\noConfigScripts;C:\Program Files\ffmpeg-2025-07-17-git-bc8d06d541-essentials_build\bin;C:\Users\EXPRESS\AppData\Roaming\npm;C:\Users\EXPRESS\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\Python314\;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Python314\Lib\site-packages\PySide6;C:\Users\EXPRESS\AppData\Roaming\Python\Python313\Scripts;C:\WINDOWS
+2026-07-27 17:39:55,695 - DEBUG - falling back to hashlib hashing: `pip install xxhash`for 50x faster cache checks
+2026-07-27 17:39:56,518 - INFO - ==================================================
+2026-07-27 17:39:56,518 - INFO - New session START at 2026-07-27 17:39
+2026-07-27 17:39:56,518 - INFO - ==================================================
+2026-07-27 17:39:56,519 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-07-27 17:39:56,519 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-07-27 17:39:56,519 - INFO - Loaded draw_z from config: Z=5.0
+2026-07-27 17:39:56,519 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-07-27 17:39:56,522 - INFO - Updated profile.json: layer_height=0.4, layer_height_0=0.4
+2026-07-27 17:39:56,522 - INFO - UV Exposure Time loaded: 30000 ms
+2026-07-27 17:39:56,522 - INFO - INI file initialized
+2026-07-27 17:39:56,527 - INFO - UI load successful
+2026-07-27 17:39:56,823 - INFO - Com : com, Port : ['COM1', 'COM9', 'COM10'], Baud : ['9600', '57600', '115200', '250000']
+2026-07-27 17:39:58,533 - INFO - Do you want to auto connect to COM9 @ 115200
+2026-07-27 17:39:58,533 - INFO - Auto Connect dialog button : Cancel
+2026-07-27 17:40:03,845 - INFO - File selected: D:/TeamDev/Ink/InkV2_Final_stl_with_logs/Bmp files/sensors-1.bmp
+2026-07-27 17:40:03,845 - INFO - Converting BMP -> G-code directly: D:\TeamDev\Ink\InkV2_Final_stl_with_logs\Bmp files\sensors-1.bmp
+2026-07-27 17:40:03,887 - DEBUG - Importing BmpImagePlugin
+2026-07-27 17:40:03,929 - DEBUG - Exporting 316 faces as STL
+2026-07-27 17:40:04,048 - INFO - G-code created: D:\TeamDev\Ink\InkV2_Final_stl_with_logs\Bmp files\sensors-1.gcode
+2026-07-27 17:40:04,048 - INFO - G-code ready from BMP: D:\TeamDev\Ink\InkV2_Final_stl_with_logs\Bmp files\sensors-1.gcode
+2026-07-27 17:40:04,057 - INFO - Raw G-code parsed (1070 lines).
+2026-07-27 17:40:05,589 - INFO - Feedrate: 500.0 mm/min
+2026-07-27 17:40:06,277 - INFO - Normalization shift: X=-236.780, Y=-68.580
+2026-07-27 17:40:06,277 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-07-27 17:40:06,277 - INFO - Final applied shift: X=-236.780, Y=-68.580
+2026-07-27 17:40:06,277 - ERROR - Out of Bed Range: Drawing exceeds bed area!
+
+X: 0.00 \u2192 270.84 (Bed: 0.0 \u2192 50.0)
+Y: 0.00 \u2192 285.24 (Bed: 0.0 \u2192 50.0)
+
+Please re-adjust the offsets.
+2026-07-27 17:40:19,220 - INFO - File selected: D:/TeamDev/Ink/InkV2_Final_stl_with_logs/Bmp files/test_50x50.bmp
+2026-07-27 17:40:19,222 - INFO - Converting BMP -> G-code directly: D:\TeamDev\Ink\InkV2_Final_stl_with_logs\Bmp files\test_50x50.bmp
+2026-07-27 17:40:19,229 - DEBUG - Exporting 132 faces as STL
+2026-07-27 17:40:19,286 - INFO - G-code created: D:\TeamDev\Ink\InkV2_Final_stl_with_logs\Bmp files\test_50x50.gcode
+2026-07-27 17:40:19,287 - INFO - G-code ready from BMP: D:\TeamDev\Ink\InkV2_Final_stl_with_logs\Bmp files\test_50x50.gcode
+2026-07-27 17:40:19,298 - INFO - Raw G-code parsed (138 lines).
+2026-07-27 17:40:20,988 - INFO - Feedrate: 500.0 mm/min
+2026-07-27 17:40:22,006 - INFO - Normalization shift: X=-179.586, Y=-64.980
+2026-07-27 17:40:22,007 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-07-27 17:40:22,007 - INFO - Final applied shift: X=-179.586, Y=-64.980
+2026-07-27 17:52:10,785 - DEBUG - OpenGL_accelerate module loaded
+2026-07-27 17:52:10,796 - DEBUG - Using accelerated ArrayDatatype
+2026-07-27 17:52:11,581 - DEBUG - searching for blender in: C:\Program Files\Python314\;C:\Program Files\Git\cmd;c:\Users\EXPRESS\.antigravity-ide\extensions\ms-python.debugpy-2026.6.0-win32-x64\bundled\scripts\noConfigScripts;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Users\EXPRESS\AppData\Local\GitHubDesktop\bin;C:\WINDOWS;C:\Users\EXPRESS\AppData\Local\Programs\Antigravity IDE\bin;C:\Users\EXPRESS\AppData\Local\Programs\Antigravity\bin;C:\Users\EXPRESS\AppData\Local\Programs\Microsoft VS Code\bin;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Gtk-Runtime\bin;C:\Program Files\Python314\Scripts\;C:\Program Files\ffmpeg-2025-07-17-git-bc8d06d541-essentials_build\bin;C:\Users\EXPRESS\AppData\Roaming\Python\Python313\Scripts;C:\WINDOWS\system32;C:\Users\EXPRESS\AppData\Local\Microsoft\WindowsApps;C:\Program Files\nodejs\;C:\Program Files\Python314\Lib\site-packages\PySide6;C:\WINDOWS\System32\Wbem;C:\Program Files\Arduino CLI\;C:\Users\EXPRESS\AppData\Roaming\npm
+2026-07-27 17:52:11,590 - DEBUG - falling back to hashlib hashing: `pip install xxhash`for 50x faster cache checks
+2026-07-27 17:52:12,530 - INFO - ==================================================
+2026-07-27 17:52:12,530 - INFO - New session START at 2026-07-27 17:52
+2026-07-27 17:52:12,530 - INFO - ==================================================
+2026-07-27 17:52:12,531 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-07-27 17:52:12,531 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-07-27 17:52:12,531 - INFO - Loaded draw_z from config: Z=5.0
+2026-07-27 17:52:12,531 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-07-27 17:52:12,532 - INFO - Updated profile.json: layer_height=0.4, layer_height_0=0.4
+2026-07-27 17:52:12,533 - INFO - UV Exposure Time loaded: 30000 ms
+2026-07-27 17:52:12,533 - INFO - INI file initialized
+2026-07-27 17:52:12,537 - INFO - UI load successful
+2026-07-27 17:52:12,789 - INFO - Com : com, Port : ['COM1', 'COM9', 'COM10'], Baud : ['9600', '57600', '115200', '250000']
+2026-07-27 17:52:16,336 - INFO - Do you want to auto connect to COM9 @ 115200
+2026-07-27 17:52:16,336 - INFO - Auto Connect dialog button : Cancel
+2026-07-27 17:52:31,435 - INFO - Serial communication stopped
+2026-07-27 17:52:31,435 - INFO - COM connection close successfully
+2026-07-27 17:52:31,435 - INFO - Main window close successfully
+2026-07-27 17:52:31,435 - INFO - ==================================================
+2026-07-27 17:52:31,435 - INFO - New session close at 2026-07-27 17:52
+2026-07-27 17:52:31,435 - INFO - ==================================================
+2026-07-27 17:52:54,379 - DEBUG - OpenGL_accelerate module loaded
+2026-07-27 17:52:54,389 - DEBUG - Using accelerated ArrayDatatype
+2026-07-27 17:52:55,174 - DEBUG - searching for blender in: C:\Program Files\Python314\Scripts\;C:\Program Files\Arduino CLI\;C:\Program Files\Git\cmd;C:\Users\EXPRESS\AppData\Local\Programs\Antigravity IDE\bin;C:\WINDOWS\system32;C:\Users\EXPRESS\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\EXPRESS\AppData\Local\Programs\Antigravity\bin;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\ffmpeg-2025-07-17-git-bc8d06d541-essentials_build\bin;c:\Users\EXPRESS\.antigravity-ide\extensions\ms-python.debugpy-2026.6.0-win32-x64\bundled\scripts\noConfigScripts;C:\WINDOWS;C:\Program Files\nodejs\;C:\Users\EXPRESS\AppData\Local\GitHubDesktop\bin;C:\Program Files\Gtk-Runtime\bin;C:\Program Files\Python314\;C:\Users\EXPRESS\AppData\Roaming\npm;C:\WINDOWS\System32\OpenSSH\;C:\Users\EXPRESS\AppData\Roaming\Python\Python313\Scripts;C:\Program Files\Python314\Lib\site-packages\PySide6;C:\Users\EXPRESS\AppData\Local\Microsoft\WindowsApps
+2026-07-27 17:52:55,184 - DEBUG - falling back to hashlib hashing: `pip install xxhash`for 50x faster cache checks
+2026-07-27 17:52:56,089 - INFO - ==================================================
+2026-07-27 17:52:56,089 - INFO - New session START at 2026-07-27 17:52
+2026-07-27 17:52:56,089 - INFO - ==================================================
+2026-07-27 17:52:56,090 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-07-27 17:52:56,090 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-07-27 17:52:56,090 - INFO - Loaded draw_z from config: Z=5.0
+2026-07-27 17:52:56,090 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-07-27 17:52:56,093 - INFO - Updated profile.json: layer_height=0.4, layer_height_0=0.4
+2026-07-27 17:52:56,093 - INFO - UV Exposure Time loaded: 30000 ms
+2026-07-27 17:52:56,093 - INFO - INI file initialized
+2026-07-27 17:52:56,097 - INFO - UI load successful
+2026-07-27 17:52:56,416 - INFO - Com : com, Port : ['COM1', 'COM9', 'COM10'], Baud : ['9600', '57600', '115200', '250000']
+2026-07-27 17:52:58,478 - INFO - Do you want to auto connect to COM9 @ 115200
+2026-07-27 17:52:58,478 - INFO - Auto Connect dialog button : Cancel
+2026-07-27 17:53:23,342 - INFO - File selected: D:/TeamDev/Ink/InkV2_Final_stl_with_logs/ide2.svg
+2026-07-27 17:53:23,343 - INFO - Converting SVG -> G-code directly: D:\TeamDev\Ink\InkV2_Final_stl_with_logs\ide2.svg
+2026-07-27 17:53:23,441 - DEBUG - Exporting 12320 faces as STL
+2026-07-27 17:53:23,541 - INFO - G-code created: D:\TeamDev\Ink\InkV2_Final_stl_with_logs\ide2.gcode
+2026-07-27 17:53:23,541 - INFO - G-code ready from SVG: D:\TeamDev\Ink\InkV2_Final_stl_with_logs\ide2.gcode
+2026-07-27 17:53:23,549 - INFO - Raw G-code parsed (1176 lines).
+2026-07-27 17:53:24,421 - INFO - Feedrate: 500.0 mm/min
+2026-07-27 17:53:25,309 - INFO - Normalization shift: X=-176.884, Y=-61.833
+2026-07-27 17:53:25,309 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-07-27 17:53:25,309 - INFO - Final applied shift: X=-176.884, Y=-61.833
+2026-07-27 17:53:58,705 - INFO - Serial communication stopped
+2026-07-27 17:53:58,706 - INFO - COM connection close successfully
+2026-07-27 17:53:58,706 - INFO - Main window close successfully
+2026-07-27 17:53:58,706 - INFO - ==================================================
+2026-07-27 17:53:58,706 - INFO - New session close at 2026-07-27 17:53
+2026-07-27 17:53:58,706 - INFO - ==================================================
+2026-07-28 11:54:46,676 - DEBUG - OpenGL_accelerate module loaded
+2026-07-28 11:54:46,837 - DEBUG - Using accelerated ArrayDatatype
+2026-07-28 11:54:56,423 - DEBUG - searching for blender in: C:\Users\EXPRESS\AppData\Local\Programs\Microsoft VS Code\bin;C:\WINDOWS\System32\Wbem;C:\Program Files\Python314\Lib\site-packages\PySide6;C:\Users\EXPRESS\AppData\Local\Programs\Antigravity IDE\bin;C:\Users\EXPRESS\AppData\Local\Microsoft\WindowsApps;C:\WINDOWS;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\ffmpeg-2025-07-17-git-bc8d06d541-essentials_build\bin;C:\Program Files\Gtk-Runtime\bin;C:\Program Files\Python314\Scripts\;C:\WINDOWS\system32;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Users\EXPRESS\AppData\Roaming\npm;C:\Users\EXPRESS\AppData\Local\Programs\Antigravity\bin;C:\Users\EXPRESS\AppData\Local\GitHubDesktop\bin;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Arduino CLI\;C:\Users\EXPRESS\AppData\Roaming\Python\Python313\Scripts;C:\Program Files\Python314\
+2026-07-28 11:54:56,475 - DEBUG - falling back to hashlib hashing: `pip install xxhash`for 50x faster cache checks
+2026-07-28 11:55:04,313 - INFO - ==================================================
+2026-07-28 11:55:04,313 - INFO - New session START at 2026-07-28 11:55
+2026-07-28 11:55:04,313 - INFO - ==================================================
+2026-07-28 11:55:04,321 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-07-28 11:55:04,321 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-07-28 11:55:04,321 - INFO - Loaded draw_z from config: Z=5.0
+2026-07-28 11:55:04,321 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-07-28 11:55:04,331 - INFO - Updated profile.json: layer_height=0.4, layer_height_0=0.4
+2026-07-28 11:55:04,331 - INFO - UV Exposure Time loaded: 30000 ms
+2026-07-28 11:55:04,331 - INFO - INI file initialized
+2026-07-28 11:55:04,336 - INFO - UI load successful
+2026-07-28 11:55:05,656 - INFO - Com : com, Port : ['COM1', 'COM9', 'COM10'], Baud : ['9600', '57600', '115200', '250000']
+2026-07-28 11:56:23,692 - INFO - Do you want to auto connect to COM9 @ 115200
+2026-07-28 11:56:23,692 - INFO - Auto Connect dialog button : Cancel
+2026-07-28 11:56:30,465 - INFO - File selected: D:/TeamDev/Ink/InkV2_Final_cura_version/test3.dxf
+2026-07-28 11:56:30,465 - INFO - Converting DXF -> G-code directly: D:\TeamDev\Ink\InkV2_Final_cura_version\test3.dxf
+2026-07-28 11:56:30,493 - INFO - creating ACAD_COLOR dictionary
+2026-07-28 11:56:30,493 - INFO - creating ACAD_LAYOUT dictionary
+2026-07-28 11:56:30,493 - INFO - creating ACAD_MATERIAL dictionary
+2026-07-28 11:56:30,493 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2026-07-28 11:56:30,493 - INFO - creating ACAD_MLINESTYLE dictionary
+2026-07-28 11:56:30,494 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2026-07-28 11:56:30,494 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2026-07-28 11:56:30,494 - INFO - creating ACAD_SCALELIST dictionary
+2026-07-28 11:56:30,494 - INFO - creating ACAD_TABLESTYLE dictionary
+2026-07-28 11:56:30,494 - INFO - creating ACAD_VISUALSTYLE dictionary
+2026-07-28 11:56:30,632 - DEBUG - Exporting 14900 faces as STL
+2026-07-28 11:56:31,566 - INFO - G-code created: D:\TeamDev\Ink\InkV2_Final_cura_version\test3.gcode
+2026-07-28 11:56:31,566 - INFO - G-code ready from DXF: D:\TeamDev\Ink\InkV2_Final_cura_version\test3.gcode
+2026-07-28 11:56:31,576 - INFO - Raw G-code parsed (263 lines).
+2026-07-28 11:56:36,003 - INFO - Feedrate: 500.0 mm/min
+2026-07-28 11:56:36,940 - INFO - Normalization shift: X=-182.211, Y=-13.348
+2026-07-28 11:56:36,940 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-07-28 11:56:36,940 - INFO - Final applied shift: X=-182.211, Y=-13.348
+2026-07-28 12:06:55,723 - INFO - Serial communication stopped
+2026-07-28 12:06:55,724 - INFO - COM connection close successfully
+2026-07-28 12:06:55,724 - INFO - Main window close successfully
+2026-07-28 12:06:55,724 - INFO - ==================================================
+2026-07-28 12:06:55,724 - INFO - New session close at 2026-07-28 12:06
+2026-07-28 12:06:55,724 - INFO - ==================================================
+2026-07-28 16:07:47,608 - DEBUG - OpenGL_accelerate module loaded
+2026-07-28 16:07:47,625 - DEBUG - Using accelerated ArrayDatatype
+2026-07-28 16:07:49,010 - DEBUG - searching for blender in: C:\Users\EXPRESS\AppData\Local\Programs\Antigravity IDE\bin;C:\Program Files\Python314\Scripts\;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Python314\;C:\Program Files\nodejs\;C:\Program Files\Arduino CLI\;C:\WINDOWS\System32\Wbem;C:\Program Files\Gtk-Runtime\bin;C:\WINDOWS;C:\Users\EXPRESS\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\EXPRESS\AppData\Local\GitHubDesktop\bin;C:\Program Files\Git\cmd;C:\Users\EXPRESS\AppData\Local\Microsoft\WindowsApps;C:\WINDOWS\System32\OpenSSH\;C:\WINDOWS\system32;C:\Users\EXPRESS\AppData\Local\Programs\Antigravity\bin;C:\Users\EXPRESS\AppData\Roaming\npm;C:\Users\EXPRESS\AppData\Roaming\Python\Python313\Scripts;C:\Program Files\Python314\Lib\site-packages\PySide6;C:\Program Files\ffmpeg-2025-07-17-git-bc8d06d541-essentials_build\bin
+2026-07-28 16:07:49,027 - DEBUG - falling back to hashlib hashing: `pip install xxhash`for 50x faster cache checks
+2026-07-28 16:07:51,058 - INFO - ==================================================
+2026-07-28 16:07:51,058 - INFO - New session START at 2026-07-28 16:07
+2026-07-28 16:07:51,058 - INFO - ==================================================
+2026-07-28 16:07:51,061 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-07-28 16:07:51,061 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-07-28 16:07:51,061 - INFO - Loaded draw_z from config: Z=5.0
+2026-07-28 16:07:51,061 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-07-28 16:07:51,064 - INFO - Updated profile.json: layer_height=0.4, layer_height_0=0.4
+2026-07-28 16:07:51,065 - INFO - UV Exposure Time loaded: 30000 ms
+2026-07-28 16:07:51,065 - INFO - INI file initialized
+2026-07-28 16:07:51,073 - INFO - UI load successful
+2026-07-28 16:07:53,160 - INFO - Com : com, Port : ['COM1', 'COM9', 'COM10'], Baud : ['9600', '57600', '115200', '250000']
+2026-07-28 16:07:54,946 - INFO - Do you want to auto connect to COM9 @ 115200
+2026-07-28 16:07:54,946 - INFO - Auto Connect dialog button : Cancel
+2026-07-28 16:07:59,786 - INFO - Com : com, Port : ['COM1', 'COM9', 'COM10'], Baud : ['9600', '57600', '115200', '250000']
+2026-07-28 16:08:08,410 - INFO - Serial communication stopped
+2026-07-28 16:08:08,410 - INFO - COM connection close successfully
+2026-07-28 16:08:08,410 - INFO - Main window close successfully
+2026-07-28 16:08:08,410 - INFO - ==================================================
+2026-07-28 16:08:08,410 - INFO - New session close at 2026-07-28 16:08
+2026-07-28 16:08:08,410 - INFO - ==================================================
+2026-07-28 16:09:08,524 - DEBUG - OpenGL_accelerate module loaded
+2026-07-28 16:09:08,537 - DEBUG - Using accelerated ArrayDatatype
+2026-07-28 16:09:09,555 - DEBUG - searching for blender in: C:\WINDOWS\system32;C:\Program Files\Python314\Scripts\;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Git\cmd;C:\WINDOWS\System32\Wbem;C:\Users\EXPRESS\AppData\Roaming\Python\Python313\Scripts;C:\Program Files\Python314\;C:\Users\EXPRESS\AppData\Roaming\npm;C:\Users\EXPRESS\AppData\Local\Microsoft\WindowsApps;C:\Program Files\nodejs\;C:\Program Files\Python314\Lib\site-packages\PySide6;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\ffmpeg-2025-07-17-git-bc8d06d541-essentials_build\bin;C:\Program Files\Gtk-Runtime\bin;C:\Users\EXPRESS\AppData\Local\GitHubDesktop\bin;C:\Users\EXPRESS\AppData\Local\Programs\Antigravity IDE\bin;C:\WINDOWS;C:\Users\EXPRESS\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\EXPRESS\AppData\Local\Programs\Antigravity\bin;C:\Program Files\Arduino CLI\
+2026-07-28 16:09:09,565 - DEBUG - falling back to hashlib hashing: `pip install xxhash`for 50x faster cache checks
+2026-07-28 16:09:10,905 - INFO - ==================================================
+2026-07-28 16:09:10,906 - INFO - New session START at 2026-07-28 16:09
+2026-07-28 16:09:10,906 - INFO - ==================================================
+2026-07-28 16:09:10,906 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-07-28 16:09:10,906 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-07-28 16:09:10,907 - INFO - Loaded draw_z from config: Z=5.0
+2026-07-28 16:09:10,907 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-07-28 16:09:10,910 - INFO - Updated profile.json: layer_height=0.4, layer_height_0=0.4
+2026-07-28 16:09:10,910 - INFO - UV Exposure Time loaded: 30000 ms
+2026-07-28 16:09:10,910 - INFO - INI file initialized
+2026-07-28 16:09:10,916 - INFO - UI load successful
+2026-07-28 16:09:11,397 - INFO - Com : com, Port : ['COM1', 'COM9', 'COM10'], Baud : ['9600', '57600', '115200', '250000']
+2026-07-28 16:09:13,892 - INFO - Do you want to auto connect to COM9 @ 115200
+2026-07-28 16:09:13,892 - INFO - Auto Connect dialog button : Cancel
+2026-07-28 16:09:17,061 - INFO - Serial communication stopped
+2026-07-28 16:09:17,062 - INFO - COM connection close successfully
+2026-07-28 16:09:17,062 - INFO - Main window close successfully
+2026-07-28 16:09:17,062 - INFO - ==================================================
+2026-07-28 16:09:17,062 - INFO - New session close at 2026-07-28 16:09
+2026-07-28 16:09:17,062 - INFO - ==================================================
+2026-07-30 12:54:45,564 - DEBUG - OpenGL_accelerate module loaded
+2026-07-30 12:54:45,585 - DEBUG - Using accelerated ArrayDatatype
+2026-07-30 12:54:53,688 - DEBUG - searching for blender in: C:\Users\EXPRESS\AppData\Roaming\Python\Python313\Scripts;C:\Users\EXPRESS\AppData\Local\GitHubDesktop\bin;C:\Program Files\Python314\Lib\site-packages\PySide6;C:\Users\EXPRESS\AppData\Local\Microsoft\WindowsApps;C:\Program Files\nodejs\;C:\Program Files\ffmpeg-2025-07-17-git-bc8d06d541-essentials_build\bin;C:\Users\EXPRESS\AppData\Local\Programs\Antigravity\bin;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Gtk-Runtime\bin;C:\WINDOWS;C:\Program Files\Python314\;C:\Users\EXPRESS\AppData\Local\Programs\Antigravity IDE\bin;C:\Program Files\Python314\Scripts\;C:\WINDOWS\system32;C:\Program Files\Arduino CLI\;C:\Users\EXPRESS\AppData\Roaming\npm;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Git\cmd;c:\Users\EXPRESS\.antigravity-ide\extensions\ms-python.debugpy-2026.6.0-win32-x64\bundled\scripts\noConfigScripts;C:\WINDOWS\System32\Wbem;C:\Users\EXPRESS\AppData\Local\Programs\Microsoft VS Code\bin
+2026-07-30 12:54:53,747 - DEBUG - falling back to hashlib hashing: `pip install xxhash`for 50x faster cache checks
+2026-07-30 12:55:00,442 - INFO - ==================================================
+2026-07-30 12:55:00,443 - INFO - New session START at 2026-07-30 12:55
+2026-07-30 12:55:00,443 - INFO - ==================================================
+2026-07-30 12:55:00,455 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-07-30 12:55:00,455 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-07-30 12:55:00,455 - INFO - Loaded draw_z from config: Z=5.0
+2026-07-30 12:55:00,455 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-07-30 12:55:00,465 - INFO - Updated profile.json: layer_height=0.4, layer_height_0=0.4
+2026-07-30 12:55:00,467 - INFO - UV Exposure Time loaded: 30000 ms
+2026-07-30 12:55:00,468 - INFO - INI file initialized
+2026-07-30 12:55:00,478 - INFO - UI load successful
+2026-07-30 12:55:01,871 - INFO - Com : com, Port : ['COM1', 'COM9', 'COM10'], Baud : ['9600', '57600', '115200', '250000']
+2026-07-30 12:55:14,281 - INFO - Do you want to auto connect to COM9 @ 115200
+2026-07-30 12:55:14,281 - INFO - Auto Connect dialog button : Cancel
+2026-07-30 12:57:23,326 - INFO - Com : com, Port : ['COM1', 'COM9', 'COM10'], Baud : ['9600', '57600', '115200', '250000']
+2026-07-30 12:57:28,765 - INFO - Serial communication stopped
+2026-07-30 12:57:28,765 - INFO - COM connection close successfully
+2026-07-30 12:57:28,765 - INFO - Main window close successfully
+2026-07-30 12:57:28,766 - INFO - ==================================================
+2026-07-30 12:57:28,766 - INFO - New session close at 2026-07-30 12:57
+2026-07-30 12:57:28,766 - INFO - ==================================================
+2026-07-30 14:36:29,523 - DEBUG - OpenGL_accelerate module loaded
+2026-07-30 14:36:29,657 - DEBUG - Using accelerated ArrayDatatype
+2026-07-30 14:36:39,980 - DEBUG - searching for blender in: C:\Users\EXPRESS\AppData\Local\Programs\Antigravity IDE\bin;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\system32;C:\Program Files\Python314\;C:\Users\EXPRESS\AppData\Local\GitHubDesktop\bin;C:\Users\EXPRESS\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\EXPRESS\AppData\Roaming\npm;C:\Program Files\Git\cmd;C:\Users\EXPRESS\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Gtk-Runtime\bin;C:\Program Files\Arduino CLI\;c:\Users\EXPRESS\.antigravity-ide\extensions\ms-python.debugpy-2026.6.0-win32-x64\bundled\scripts\noConfigScripts;C:\Program Files\ffmpeg-2025-07-17-git-bc8d06d541-essentials_build\bin;C:\WINDOWS;C:\WINDOWS\System32\OpenSSH\;C:\Users\EXPRESS\AppData\Roaming\Python\Python313\Scripts;C:\Program Files\Python314\Lib\site-packages\PySide6;C:\Program Files\Python314\Scripts\;C:\WINDOWS\System32\Wbem;C:\Users\EXPRESS\AppData\Local\Programs\Antigravity\bin;C:\Program Files\nodejs\
+2026-07-30 14:36:40,028 - DEBUG - falling back to hashlib hashing: `pip install xxhash`for 50x faster cache checks
+2026-07-30 14:36:48,128 - DEBUG - OpenGL_accelerate module loaded
+2026-07-30 14:36:48,144 - DEBUG - Using accelerated ArrayDatatype
+2026-07-30 14:36:49,092 - DEBUG - searching for blender in: C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Python314\Scripts\;C:\Program Files\Gtk-Runtime\bin;C:\Program Files\ffmpeg-2025-07-17-git-bc8d06d541-essentials_build\bin;C:\Users\EXPRESS\AppData\Roaming\npm;C:\Program Files\Python314\Lib\site-packages\PySide6;C:\WINDOWS;C:\Program Files\Python314\;C:\Users\EXPRESS\AppData\Local\Programs\Antigravity\bin;C:\Program Files\Arduino CLI\;C:\WINDOWS\System32\OpenSSH\;C:\Users\EXPRESS\AppData\Roaming\Python\Python313\Scripts;C:\Users\EXPRESS\AppData\Local\Microsoft\WindowsApps;C:\WINDOWS\system32;c:\Users\EXPRESS\.antigravity-ide\extensions\ms-python.debugpy-2026.6.0-win32-x64\bundled\scripts\noConfigScripts;C:\Program Files\Git\cmd;C:\Users\EXPRESS\AppData\Local\Programs\Antigravity IDE\bin;C:\Users\EXPRESS\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\nodejs\;C:\WINDOWS\System32\Wbem;C:\Users\EXPRESS\AppData\Local\GitHubDesktop\bin
+2026-07-30 14:36:49,101 - DEBUG - falling back to hashlib hashing: `pip install xxhash`for 50x faster cache checks
+2026-07-30 14:36:54,996 - INFO - ==================================================
+2026-07-30 14:36:54,996 - INFO - New session START at 2026-07-30 14:36
+2026-07-30 14:36:54,997 - INFO - ==================================================
+2026-07-30 14:36:54,997 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-07-30 14:36:54,998 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-07-30 14:36:54,998 - INFO - Loaded draw_z from config: Z=5.0, draw_z_UP=2.5
+2026-07-30 14:36:54,998 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-07-30 14:36:55,006 - INFO - Updated profile.json: layer_height=0.4, layer_height_0=0.4
+2026-07-30 14:36:55,007 - INFO - UV Exposure Time loaded: 30000 ms
+2026-07-30 14:36:55,007 - INFO - INI file initialized
+2026-07-30 14:36:55,013 - INFO - UI load successful
+2026-07-30 14:36:56,430 - INFO - Com : com, Port : ['COM1', 'COM22', 'COM9', 'COM10'], Baud : ['9600', '57600', '115200', '250000']
+2026-07-30 14:36:58,527 - INFO - Do you want to auto connect to COM9 @ 115200
+2026-07-30 14:36:58,527 - INFO - Auto Connect dialog button : Cancel
+2026-07-30 14:37:00,583 - INFO - Com : com, Port : ['COM1', 'COM22', 'COM9', 'COM10'], Baud : ['9600', '57600', '115200', '250000']
+2026-07-30 14:37:03,871 - CRITICAL - Serial communication started
+2026-07-30 14:38:13,545 - INFO - Serial communication stopped
+2026-07-30 14:38:13,546 - INFO - COM connection close successfully
+2026-07-30 14:38:13,546 - INFO - Main window close successfully
+2026-07-30 14:38:13,546 - INFO - ==================================================
+2026-07-30 14:38:13,546 - INFO - New session close at 2026-07-30 14:38
+2026-07-30 14:38:13,546 - INFO - ==================================================
+2026-07-30 14:40:19,801 - DEBUG - OpenGL_accelerate module loaded
+2026-07-30 14:40:19,812 - DEBUG - Using accelerated ArrayDatatype
+2026-07-30 14:40:20,590 - DEBUG - searching for blender in: C:\Users\EXPRESS\AppData\Roaming\Python\Python313\Scripts;C:\Program Files\Python314\Lib\site-packages\PySide6;C:\Users\EXPRESS\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Python314\Scripts\;C:\Users\EXPRESS\AppData\Roaming\npm;C:\Program Files\Git\cmd;C:\Users\EXPRESS\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\ffmpeg-2025-07-17-git-bc8d06d541-essentials_build\bin;c:\Users\EXPRESS\.antigravity-ide\extensions\ms-python.debugpy-2026.6.0-win32-x64\bundled\scripts\noConfigScripts;C:\Users\EXPRESS\AppData\Local\Programs\Antigravity\bin;C:\Program Files\Gtk-Runtime\bin;C:\Users\EXPRESS\AppData\Local\Programs\Antigravity IDE\bin;C:\Program Files\Python314\;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Arduino CLI\;C:\Users\EXPRESS\AppData\Local\GitHubDesktop\bin;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\nodejs\;C:\WINDOWS;C:\WINDOWS\system32
+2026-07-30 14:40:20,599 - DEBUG - falling back to hashlib hashing: `pip install xxhash`for 50x faster cache checks
+2026-07-30 14:40:21,465 - INFO - ==================================================
+2026-07-30 14:40:21,465 - INFO - New session START at 2026-07-30 14:40
+2026-07-30 14:40:21,465 - INFO - ==================================================
+2026-07-30 14:40:21,466 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-07-30 14:40:21,466 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-07-30 14:40:21,467 - INFO - Loaded draw_z from config: Z=10.0, draw_z_UP=5.0
+2026-07-30 14:40:21,467 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-07-30 14:40:21,470 - INFO - Updated profile.json: layer_height=0.4, layer_height_0=0.4
+2026-07-30 14:40:21,470 - INFO - UV Exposure Time loaded: 30000 ms
+2026-07-30 14:40:21,470 - INFO - INI file initialized
+2026-07-30 14:40:21,474 - INFO - UI load successful
+2026-07-30 14:40:21,834 - INFO - Com : com, Port : ['COM1', 'COM22', 'COM9', 'COM10'], Baud : ['9600', '57600', '115200', '250000']
+2026-07-30 14:40:23,234 - INFO - Do you want to auto connect to COM22 @ 115200
+2026-07-30 14:40:23,240 - INFO - Auto Connect dialog button : Ok
+2026-07-30 14:40:23,241 - INFO - Serial communication autostarted
+2026-07-30 14:41:05,691 - CRITICAL - Laser 1 : has offset, Xoffset = 0.0, Yoffset = 0.0
+2026-07-30 14:41:51,351 - INFO - File selected: D:/TeamDev/Ink/InkV2_Final_cura_version/Test_files/ide2.gcode
+2026-07-30 14:41:51,352 - INFO - Raw G-code parsed (1176 lines).
+2026-07-30 14:41:53,915 - INFO - File selected: D:/TeamDev/Ink/InkV2_Final_cura_version/Test_files/ide2.svg
+2026-07-30 14:41:53,916 - INFO - Converting SVG -> G-code directly: D:\TeamDev\Ink\InkV2_Final_cura_version\Test_files\ide2.svg
+2026-07-30 14:41:54,038 - DEBUG - Exporting 12320 faces as STL
+2026-07-30 14:41:55,118 - INFO - G-code created: D:\TeamDev\Ink\InkV2_Final_cura_version\Test_files\ide2.gcode
+2026-07-30 14:41:55,119 - INFO - G-code ready from SVG: D:\TeamDev\Ink\InkV2_Final_cura_version\Test_files\ide2.gcode
+2026-07-30 14:41:55,129 - INFO - Raw G-code parsed (1176 lines).
+2026-07-30 14:41:55,145 - INFO - Feedrate: 500.0 mm/min
+2026-07-30 14:41:55,910 - INFO - Normalization shift: X=-176.884, Y=-61.833
+2026-07-30 14:41:55,910 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=10.000
+2026-07-30 14:41:55,910 - INFO - Final applied shift: X=-176.884, Y=-61.833
+2026-07-30 14:47:04,133 - DEBUG - OpenGL_accelerate module loaded
+2026-07-30 14:47:04,151 - DEBUG - Using accelerated ArrayDatatype
+2026-07-30 14:47:05,399 - DEBUG - searching for blender in: C:\Program Files\Arduino CLI\;C:\Program Files\Python314\Scripts\;C:\Users\EXPRESS\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\EXPRESS\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Git\cmd;C:\Program Files\Gtk-Runtime\bin;C:\Users\EXPRESS\AppData\Local\Programs\Antigravity IDE\bin;c:\Users\EXPRESS\.antigravity-ide\extensions\ms-python.debugpy-2026.6.0-win32-x64\bundled\scripts\noConfigScripts;C:\Users\EXPRESS\AppData\Local\Programs\Antigravity\bin;C:\Program Files\Python314\Lib\site-packages\PySide6;C:\Users\EXPRESS\AppData\Roaming\Python\Python313\Scripts;C:\Users\EXPRESS\AppData\Roaming\npm;C:\Program Files\nodejs\;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\ffmpeg-2025-07-17-git-bc8d06d541-essentials_build\bin;C:\WINDOWS;C:\WINDOWS\System32\OpenSSH\;C:\WINDOWS\system32;C:\Users\EXPRESS\AppData\Local\GitHubDesktop\bin;C:\Program Files\Python314\
+2026-07-30 14:47:05,420 - DEBUG - falling back to hashlib hashing: `pip install xxhash`for 50x faster cache checks
+2026-07-30 14:47:06,961 - INFO - ==================================================
+2026-07-30 14:47:06,961 - INFO - New session START at 2026-07-30 14:47
+2026-07-30 14:47:06,961 - INFO - ==================================================
+2026-07-30 14:47:06,962 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-07-30 14:47:06,962 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-07-30 14:47:06,962 - INFO - Loaded draw_z from config: Z=10.0, draw_z_UP=5.0
+2026-07-30 14:47:06,962 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-07-30 14:47:06,964 - INFO - Updated profile.json: layer_height=0.4, layer_height_0=0.4
+2026-07-30 14:47:06,965 - INFO - UV Exposure Time loaded: 30000 ms
+2026-07-30 14:47:06,965 - INFO - INI file initialized
+2026-07-30 14:47:06,969 - INFO - UI load successful
+2026-07-30 14:47:07,570 - INFO - Com : com, Port : ['COM1', 'COM22', 'COM9', 'COM10'], Baud : ['9600', '57600', '115200', '250000']
+2026-07-30 14:47:09,036 - INFO - Do you want to auto connect to COM22 @ 115200
+2026-07-30 14:47:09,039 - INFO - Auto Connect dialog button : Ok
+2026-07-30 14:47:09,039 - INFO - Serial communication autostarted
+2026-07-30 14:47:16,256 - INFO - File selected: D:/TeamDev/Ink/InkV2_Final_cura_version/Test_files/ide2.svg
+2026-07-30 14:47:16,257 - INFO - Converting SVG -> G-code directly: D:\TeamDev\Ink\InkV2_Final_cura_version\Test_files\ide2.svg
+2026-07-30 14:47:16,371 - DEBUG - Exporting 12320 faces as STL
+2026-07-30 14:47:17,130 - INFO - G-code created: D:\TeamDev\Ink\InkV2_Final_cura_version\Test_files\ide2.gcode
+2026-07-30 14:47:17,131 - INFO - G-code ready from SVG: D:\TeamDev\Ink\InkV2_Final_cura_version\Test_files\ide2.gcode
+2026-07-30 14:47:17,145 - INFO - Raw G-code parsed (1176 lines).
+2026-07-30 14:47:18,380 - INFO - Feedrate: 500.0 mm/min
+2026-07-30 14:47:19,449 - INFO - Normalization shift: X=-176.884, Y=-61.833
+2026-07-30 14:47:19,450 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=10.000
+2026-07-30 14:47:19,450 - INFO - Final applied shift: X=-176.884, Y=-61.833
+2026-07-30 16:54:03,866 - INFO - No OpenGL_accelerate module loaded: No module named 'OpenGL_accelerate'
+2026-07-30 16:54:04,912 - DEBUG - searching for blender in: C:\WINDOWS\System32\Wbem;C:\Users\SPPL01\AppData\Local\Microsoft\WindowsApps;C:\WINDOWS\system32;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Python314\Lib\site-packages\PySide6;C:\WINDOWS\System32\OpenSSH\;E:\Manashree\Github\Git\cmd;C:\Users\SPPL01\AppData\Local\Programs\Microsoft VS Code\bin;E:\Manashree\Github\Git\mingw64\bin;C:\Program Files\GTK2-Runtime Win64\bin;C:\Users\SPPL01\AppData\Local\Programs\Python\Python313\;c:\Users\SPPL01\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\copilotCli;C:\Users\SPPL01\AppData\Local\Programs\Antigravity IDE\bin;E:\Manashree\Github\Git\usr\bin;C:\Program Files\Python314\;c:\Users\SPPL01\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;C:\Users\SPPL01\AppData\Local\Programs\Python\Python313\Scripts\;C:\WINDOWS;C:\Users\SPPL01\AppData\Local\GitHubDesktop\bin;c:\Users\SPPL01\.vscode\extensions\ms-python.debugpy-2026.6.0-win32-x64\bundled\scripts\noConfigScripts;C:\Program Files\Python314\Scripts\
+2026-07-30 16:54:04,924 - DEBUG - falling back to hashlib hashing: `pip install xxhash`for 50x faster cache checks
+2026-07-30 16:54:06,182 - INFO - ==================================================
+2026-07-30 16:54:06,183 - INFO - New session START at 2026-07-30 16:54
+2026-07-30 16:54:06,183 - INFO - ==================================================
+2026-07-30 16:54:06,184 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-07-30 16:54:06,184 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-07-30 16:54:06,184 - INFO - Loaded draw_z from config: Z=10.0, draw_z_UP=5.0
+2026-07-30 16:54:06,184 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-07-30 16:54:06,185 - INFO - Updated profile.json: layer_height=0.4, layer_height_0=0.4
+2026-07-30 16:54:06,186 - INFO - UV Exposure Time loaded: 30000 ms
+2026-07-30 16:54:06,186 - INFO - INI file initialized
+2026-07-30 16:54:06,191 - INFO - UI load successful
+2026-07-30 16:54:06,593 - INFO - Com : com, Port : ['COM1', 'COM15'], Baud : ['9600', '57600', '115200', '250000']
+2026-07-30 16:54:27,710 - INFO - Serial communication stopped
+2026-07-30 16:54:27,711 - INFO - COM connection close successfully
+2026-07-30 16:54:27,711 - INFO - Main window close successfully
+2026-07-30 16:54:27,711 - INFO - ==================================================
+2026-07-30 16:54:27,711 - INFO - New session close at 2026-07-30 16:54
+2026-07-30 16:54:27,712 - INFO - ==================================================
+2026-07-30 16:54:32,381 - INFO - No OpenGL_accelerate module loaded: No module named 'OpenGL_accelerate'
+2026-07-30 16:54:33,338 - DEBUG - searching for blender in: C:\Users\SPPL01\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\SPPL01\AppData\Local\GitHubDesktop\bin;C:\WINDOWS\System32\Wbem;c:\Users\SPPL01\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\copilotCli;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Users\SPPL01\AppData\Local\Microsoft\WindowsApps;C:\Users\SPPL01\AppData\Local\Programs\Python\Python313\Scripts\;C:\Users\SPPL01\AppData\Local\Programs\Python\Python313\;C:\Program Files\GTK2-Runtime Win64\bin;C:\Program Files\Python314\Scripts\;C:\Program Files\Python314\;C:\WINDOWS\System32\OpenSSH\;E:\Manashree\Github\Git\cmd;C:\WINDOWS;C:\Program Files\Python314\Lib\site-packages\PySide6;c:\Users\SPPL01\.vscode\extensions\ms-python.debugpy-2026.6.0-win32-x64\bundled\scripts\noConfigScripts;c:\Users\SPPL01\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;C:\WINDOWS\system32;C:\Users\SPPL01\AppData\Local\Programs\Antigravity IDE\bin;E:\Manashree\Github\Git\usr\bin;E:\Manashree\Github\Git\mingw64\bin
+2026-07-30 16:54:33,350 - DEBUG - falling back to hashlib hashing: `pip install xxhash`for 50x faster cache checks
+2026-07-30 16:54:34,334 - INFO - ==================================================
+2026-07-30 16:54:34,334 - INFO - New session START at 2026-07-30 16:54
+2026-07-30 16:54:34,334 - INFO - ==================================================
+2026-07-30 16:54:34,335 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-07-30 16:54:34,335 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-07-30 16:54:34,335 - INFO - Loaded draw_z from config: Z=10.0, draw_z_UP=5.0
+2026-07-30 16:54:34,335 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-07-30 16:54:34,338 - INFO - Updated profile.json: layer_height=0.4, layer_height_0=0.4
+2026-07-30 16:54:34,338 - INFO - UV Exposure Time loaded: 30000 ms
+2026-07-30 16:54:34,338 - INFO - INI file initialized
+2026-07-30 16:54:34,343 - INFO - UI load successful
+2026-07-30 16:54:34,673 - INFO - Com : com, Port : ['COM1', 'COM15'], Baud : ['9600', '57600', '115200', '250000']
+2026-07-30 16:54:42,124 - CRITICAL - Serial communication started
+2026-07-30 16:58:35,073 - INFO - Fill command sent via M118 to Blackpill.
+2026-07-30 16:58:39,711 - INFO - Stop Fill command sent via M118 to Blackpill.
+2026-07-30 16:58:43,599 - INFO - Purge command sent via M118 to Blackpill.
+2026-07-30 16:58:47,752 - INFO - Stop Purge command sent via M118 to Blackpill.
+2026-07-30 16:59:14,779 - INFO - Fill command sent via M118 to Blackpill.
+2026-07-30 16:59:19,084 - INFO - Stop Fill command sent via M118 to Blackpill.
+2026-07-30 17:11:20,384 - INFO - File selected: E:/Manashree/3DP/Ink/InkV2_Final_cura_version_auto_fillandPurge/InkV2_Final_cura_version_auto_fillandPurge/Test_files/ide2.svg
+2026-07-30 17:11:20,385 - INFO - Converting SVG -> G-code directly: E:\Manashree\3DP\Ink\InkV2_Final_cura_version_auto_fillandPurge\InkV2_Final_cura_version_auto_fillandPurge\Test_files\ide2.svg
+2026-07-30 17:11:20,481 - DEBUG - Exporting 12320 faces as STL
+2026-07-30 17:11:20,606 - INFO - G-code created: E:\Manashree\3DP\Ink\InkV2_Final_cura_version_auto_fillandPurge\InkV2_Final_cura_version_auto_fillandPurge\Test_files\ide2.gcode
+2026-07-30 17:11:20,606 - INFO - G-code ready from SVG: E:\Manashree\3DP\Ink\InkV2_Final_cura_version_auto_fillandPurge\InkV2_Final_cura_version_auto_fillandPurge\Test_files\ide2.gcode
+2026-07-30 17:11:20,622 - INFO - Raw G-code parsed (1175 lines).
+2026-07-30 17:11:27,710 - INFO - Feedrate: 1500.0 mm/min
+2026-07-30 17:11:28,518 - INFO - Normalization shift: X=-249.385, Y=-76.833
+2026-07-30 17:11:28,518 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=38.100
+2026-07-30 17:11:28,518 - INFO - Final applied shift: X=-249.385, Y=-76.833
+2026-07-30 17:11:57,180 - INFO - Print Status : RUN
+2026-07-30 17:13:07,911 - INFO - Print Status : ABORT
+2026-07-30 17:14:38,848 - INFO - File selected: E:/Manashree/3DP/Ink/InkV2_Final_cura_version_auto_fillandPurge/InkV2_Final_cura_version_auto_fillandPurge/Test_files/ide2.svg
+2026-07-30 17:14:38,849 - INFO - Converting SVG -> G-code directly: E:\Manashree\3DP\Ink\InkV2_Final_cura_version_auto_fillandPurge\InkV2_Final_cura_version_auto_fillandPurge\Test_files\ide2.svg
+2026-07-30 17:14:38,953 - DEBUG - Exporting 12320 faces as STL
+2026-07-30 17:14:39,070 - INFO - G-code created: E:\Manashree\3DP\Ink\InkV2_Final_cura_version_auto_fillandPurge\InkV2_Final_cura_version_auto_fillandPurge\Test_files\ide2.gcode
+2026-07-30 17:14:39,070 - INFO - G-code ready from SVG: E:\Manashree\3DP\Ink\InkV2_Final_cura_version_auto_fillandPurge\InkV2_Final_cura_version_auto_fillandPurge\Test_files\ide2.gcode
+2026-07-30 17:14:39,083 - INFO - Raw G-code parsed (1175 lines).
+2026-07-30 17:14:39,552 - INFO - Feedrate: 1500.0 mm/min
+2026-07-30 17:14:40,444 - INFO - Normalization shift: X=-249.385, Y=-76.833
+2026-07-30 17:14:40,444 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=38.100
+2026-07-30 17:14:40,444 - INFO - Final applied shift: X=-249.385, Y=-76.833
+2026-07-30 17:15:32,812 - INFO - Print Status : RUN
+2026-07-30 17:16:58,140 - INFO - Print Status : ABORT
+2026-07-30 17:26:49,103 - INFO - File selected: E:/Manashree/3DP/Ink/InkV2_Final_cura_version_auto_fillandPurge/InkV2_Final_cura_version_auto_fillandPurge/Test_files/ide2.svg
+2026-07-30 17:26:49,105 - INFO - Converting SVG -> G-code directly: E:\Manashree\3DP\Ink\InkV2_Final_cura_version_auto_fillandPurge\InkV2_Final_cura_version_auto_fillandPurge\Test_files\ide2.svg
+2026-07-30 17:26:49,225 - DEBUG - Exporting 12320 faces as STL
+2026-07-30 17:26:49,343 - INFO - G-code created: E:\Manashree\3DP\Ink\InkV2_Final_cura_version_auto_fillandPurge\InkV2_Final_cura_version_auto_fillandPurge\Test_files\ide2.gcode
+2026-07-30 17:26:49,343 - INFO - G-code ready from SVG: E:\Manashree\3DP\Ink\InkV2_Final_cura_version_auto_fillandPurge\InkV2_Final_cura_version_auto_fillandPurge\Test_files\ide2.gcode
+2026-07-30 17:26:49,354 - INFO - Raw G-code parsed (1175 lines).
+2026-07-30 17:26:49,981 - INFO - Feedrate: 1500.0 mm/min
+2026-07-30 17:26:50,819 - INFO - Normalization shift: X=-249.385, Y=-76.833
+2026-07-30 17:26:50,819 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=38.100
+2026-07-30 17:26:50,819 - INFO - Final applied shift: X=-249.385, Y=-76.833
+2026-07-30 17:27:08,225 - INFO - Print Status : RUN
+2026-07-30 17:28:30,665 - INFO - Print Status : ABORT
+2026-07-30 17:29:09,303 - INFO - File selected: E:/Manashree/3DP/Ink/InkV2_Final_cura_version_auto_fillandPurge/InkV2_Final_cura_version_auto_fillandPurge/Test_files/ide2.svg
+2026-07-30 17:29:09,304 - INFO - Converting SVG -> G-code directly: E:\Manashree\3DP\Ink\InkV2_Final_cura_version_auto_fillandPurge\InkV2_Final_cura_version_auto_fillandPurge\Test_files\ide2.svg
+2026-07-30 17:29:09,391 - DEBUG - Exporting 12320 faces as STL
+2026-07-30 17:29:09,515 - INFO - G-code created: E:\Manashree\3DP\Ink\InkV2_Final_cura_version_auto_fillandPurge\InkV2_Final_cura_version_auto_fillandPurge\Test_files\ide2.gcode
+2026-07-30 17:29:09,516 - INFO - G-code ready from SVG: E:\Manashree\3DP\Ink\InkV2_Final_cura_version_auto_fillandPurge\InkV2_Final_cura_version_auto_fillandPurge\Test_files\ide2.gcode
+2026-07-30 17:29:09,528 - INFO - Raw G-code parsed (1175 lines).
+2026-07-30 17:29:10,204 - INFO - Feedrate: 1500.0 mm/min
+2026-07-30 17:29:10,977 - INFO - Normalization shift: X=-249.385, Y=-76.833
+2026-07-30 17:29:10,977 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=38.100
+2026-07-30 17:29:10,977 - INFO - Final applied shift: X=-249.385, Y=-76.833
+2026-07-30 17:30:17,527 - INFO - Print Status : RUN
+2026-07-30 17:31:41,272 - INFO - Print Status : ABORT
+2026-07-30 17:34:05,512 - INFO - File selected: E:/Manashree/3DP/Ink/InkV2_Final_cura_version_auto_fillandPurge/InkV2_Final_cura_version_auto_fillandPurge/Test_files/ide2.svg
+2026-07-30 17:34:05,513 - INFO - Converting SVG -> G-code directly: E:\Manashree\3DP\Ink\InkV2_Final_cura_version_auto_fillandPurge\InkV2_Final_cura_version_auto_fillandPurge\Test_files\ide2.svg
+2026-07-30 17:34:05,621 - DEBUG - Exporting 12320 faces as STL
+2026-07-30 17:34:05,744 - INFO - G-code created: E:\Manashree\3DP\Ink\InkV2_Final_cura_version_auto_fillandPurge\InkV2_Final_cura_version_auto_fillandPurge\Test_files\ide2.gcode
+2026-07-30 17:34:05,744 - INFO - G-code ready from SVG: E:\Manashree\3DP\Ink\InkV2_Final_cura_version_auto_fillandPurge\InkV2_Final_cura_version_auto_fillandPurge\Test_files\ide2.gcode
+2026-07-30 17:34:05,757 - INFO - Raw G-code parsed (1175 lines).
+2026-07-30 17:34:06,299 - INFO - Feedrate: 1500.0 mm/min
+2026-07-30 17:34:07,173 - INFO - Normalization shift: X=-249.385, Y=-76.833
+2026-07-30 17:34:07,174 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=38.600
+2026-07-30 17:34:07,174 - INFO - Final applied shift: X=-249.385, Y=-76.833
+2026-07-30 17:34:09,145 - INFO - Print Status : RUN
+2026-07-30 17:34:26,438 - INFO - Print Status : ABORT
+2026-07-30 17:35:03,461 - INFO - File selected: E:/Manashree/3DP/Ink/InkV2_Final_cura_version_auto_fillandPurge/InkV2_Final_cura_version_auto_fillandPurge/Test_files/ide2.svg
+2026-07-30 17:35:03,463 - INFO - Converting SVG -> G-code directly: E:\Manashree\3DP\Ink\InkV2_Final_cura_version_auto_fillandPurge\InkV2_Final_cura_version_auto_fillandPurge\Test_files\ide2.svg
+2026-07-30 17:35:03,549 - DEBUG - Exporting 12320 faces as STL
+2026-07-30 17:35:03,671 - INFO - G-code created: E:\Manashree\3DP\Ink\InkV2_Final_cura_version_auto_fillandPurge\InkV2_Final_cura_version_auto_fillandPurge\Test_files\ide2.gcode
+2026-07-30 17:35:03,671 - INFO - G-code ready from SVG: E:\Manashree\3DP\Ink\InkV2_Final_cura_version_auto_fillandPurge\InkV2_Final_cura_version_auto_fillandPurge\Test_files\ide2.gcode
+2026-07-30 17:35:03,682 - INFO - Raw G-code parsed (1175 lines).
+2026-07-30 17:35:04,541 - INFO - Feedrate: 1500.0 mm/min
+2026-07-30 17:35:05,482 - INFO - Normalization shift: X=-249.385, Y=-76.833
+2026-07-30 17:35:05,482 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=38.600
+2026-07-30 17:35:05,482 - INFO - Final applied shift: X=-249.385, Y=-76.833
+2026-07-30 17:35:08,086 - INFO - Print Status : RUN
+2026-07-30 17:36:12,194 - INFO - Print Status : ABORT
+2026-07-30 17:37:12,373 - INFO - File selected: E:/Manashree/3DP/Ink/InkV2_Final_cura_version_auto_fillandPurge/InkV2_Final_cura_version_auto_fillandPurge/Test_files/ide2.svg
+2026-07-30 17:37:12,373 - INFO - Converting SVG -> G-code directly: E:\Manashree\3DP\Ink\InkV2_Final_cura_version_auto_fillandPurge\InkV2_Final_cura_version_auto_fillandPurge\Test_files\ide2.svg
+2026-07-30 17:37:12,458 - DEBUG - Exporting 12320 faces as STL
+2026-07-30 17:37:12,584 - INFO - G-code created: E:\Manashree\3DP\Ink\InkV2_Final_cura_version_auto_fillandPurge\InkV2_Final_cura_version_auto_fillandPurge\Test_files\ide2.gcode
+2026-07-30 17:37:12,584 - INFO - G-code ready from SVG: E:\Manashree\3DP\Ink\InkV2_Final_cura_version_auto_fillandPurge\InkV2_Final_cura_version_auto_fillandPurge\Test_files\ide2.gcode
+2026-07-30 17:37:12,595 - INFO - Raw G-code parsed (1175 lines).
+2026-07-30 17:37:13,987 - INFO - Feedrate: 1500.0 mm/min
+2026-07-30 17:37:14,859 - INFO - Normalization shift: X=-249.385, Y=-76.833
+2026-07-30 17:37:14,859 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=38.600
+2026-07-30 17:37:14,859 - INFO - Final applied shift: X=-249.385, Y=-76.833
+2026-07-30 17:37:16,729 - INFO - Print Status : RUN
+2026-07-30 17:37:23,781 - INFO - Print Status : PAUSE
+2026-07-30 17:37:27,302 - INFO - Print Status : ABORT
+2026-07-30 17:38:15,740 - INFO - File selected: E:/Manashree/3DP/Ink/InkV2_Final_cura_version_auto_fillandPurge/InkV2_Final_cura_version_auto_fillandPurge/Test_files/ide2.svg
+2026-07-30 17:38:15,740 - INFO - Converting SVG -> G-code directly: E:\Manashree\3DP\Ink\InkV2_Final_cura_version_auto_fillandPurge\InkV2_Final_cura_version_auto_fillandPurge\Test_files\ide2.svg
+2026-07-30 17:38:15,829 - DEBUG - Exporting 12320 faces as STL
+2026-07-30 17:38:15,944 - INFO - G-code created: E:\Manashree\3DP\Ink\InkV2_Final_cura_version_auto_fillandPurge\InkV2_Final_cura_version_auto_fillandPurge\Test_files\ide2.gcode
+2026-07-30 17:38:15,944 - INFO - G-code ready from SVG: E:\Manashree\3DP\Ink\InkV2_Final_cura_version_auto_fillandPurge\InkV2_Final_cura_version_auto_fillandPurge\Test_files\ide2.gcode
+2026-07-30 17:38:15,956 - INFO - Raw G-code parsed (1175 lines).
+2026-07-30 17:38:16,799 - INFO - Feedrate: 1500.0 mm/min
+2026-07-30 17:38:17,990 - INFO - Normalization shift: X=-249.385, Y=-76.833
+2026-07-30 17:38:17,990 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=38.600
+2026-07-30 17:38:17,990 - INFO - Final applied shift: X=-249.385, Y=-76.833
+2026-07-30 17:39:49,814 - INFO - Print Status : RUN
+2026-07-30 17:40:46,050 - INFO - Print Status : ABORT
+2026-07-30 17:53:04,905 - INFO - File selected: E:/Manashree/3DP/Ink/InkV2_Final_cura_version_auto_fillandPurge/InkV2_Final_cura_version_auto_fillandPurge/Test_files/ide2.svg
+2026-07-30 17:53:04,906 - INFO - Converting SVG -> G-code directly: E:\Manashree\3DP\Ink\InkV2_Final_cura_version_auto_fillandPurge\InkV2_Final_cura_version_auto_fillandPurge\Test_files\ide2.svg
+2026-07-30 17:53:04,996 - DEBUG - Exporting 12320 faces as STL
+2026-07-30 17:53:05,113 - INFO - G-code created: E:\Manashree\3DP\Ink\InkV2_Final_cura_version_auto_fillandPurge\InkV2_Final_cura_version_auto_fillandPurge\Test_files\ide2.gcode
+2026-07-30 17:53:05,113 - INFO - G-code ready from SVG: E:\Manashree\3DP\Ink\InkV2_Final_cura_version_auto_fillandPurge\InkV2_Final_cura_version_auto_fillandPurge\Test_files\ide2.gcode
+2026-07-30 17:53:05,125 - INFO - Raw G-code parsed (1175 lines).
+2026-07-30 17:53:06,320 - INFO - Feedrate: 1500.0 mm/min
+2026-07-30 17:53:07,226 - INFO - Normalization shift: X=-249.385, Y=-76.833
+2026-07-30 17:53:07,226 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=38.600
+2026-07-30 17:53:07,226 - INFO - Final applied shift: X=-249.385, Y=-76.833
+2026-07-30 17:53:14,001 - INFO - Print Status : RUN
+2026-07-30 17:54:14,224 - INFO - Print Status : ABORT
+2026-07-30 17:56:32,300 - INFO - File selected: E:/Manashree/3DP/Ink/InkV2_Final_cura_version_auto_fillandPurge/InkV2_Final_cura_version_auto_fillandPurge/Test_files/ide2.svg
+2026-07-30 17:56:32,301 - INFO - Converting SVG -> G-code directly: E:\Manashree\3DP\Ink\InkV2_Final_cura_version_auto_fillandPurge\InkV2_Final_cura_version_auto_fillandPurge\Test_files\ide2.svg
+2026-07-30 17:56:32,388 - DEBUG - Exporting 12320 faces as STL
+2026-07-30 17:56:32,507 - INFO - G-code created: E:\Manashree\3DP\Ink\InkV2_Final_cura_version_auto_fillandPurge\InkV2_Final_cura_version_auto_fillandPurge\Test_files\ide2.gcode
+2026-07-30 17:56:32,507 - INFO - G-code ready from SVG: E:\Manashree\3DP\Ink\InkV2_Final_cura_version_auto_fillandPurge\InkV2_Final_cura_version_auto_fillandPurge\Test_files\ide2.gcode
+2026-07-30 17:56:32,519 - INFO - Raw G-code parsed (1175 lines).
+2026-07-30 17:56:36,747 - INFO - Feedrate: 2000.0 mm/min
+2026-07-30 17:56:37,585 - INFO - Normalization shift: X=-249.385, Y=-76.833
+2026-07-30 17:56:37,585 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=40.300
+2026-07-30 17:56:37,585 - INFO - Final applied shift: X=-249.385, Y=-76.833
+2026-07-30 17:56:51,204 - INFO - Print Status : RUN
+2026-07-30 17:58:13,144 - INFO - Print Status : ABORT
+2026-07-30 18:00:50,365 - INFO - File selected: E:/Manashree/3DP/Ink/InkV2_Final_cura_version_auto_fillandPurge/InkV2_Final_cura_version_auto_fillandPurge/Test_files/ide2.svg
+2026-07-30 18:00:50,366 - INFO - Converting SVG -> G-code directly: E:\Manashree\3DP\Ink\InkV2_Final_cura_version_auto_fillandPurge\InkV2_Final_cura_version_auto_fillandPurge\Test_files\ide2.svg
+2026-07-30 18:00:50,449 - DEBUG - Exporting 12320 faces as STL
+2026-07-30 18:00:50,574 - INFO - G-code created: E:\Manashree\3DP\Ink\InkV2_Final_cura_version_auto_fillandPurge\InkV2_Final_cura_version_auto_fillandPurge\Test_files\ide2.gcode
+2026-07-30 18:00:50,574 - INFO - G-code ready from SVG: E:\Manashree\3DP\Ink\InkV2_Final_cura_version_auto_fillandPurge\InkV2_Final_cura_version_auto_fillandPurge\Test_files\ide2.gcode
+2026-07-30 18:00:50,586 - INFO - Raw G-code parsed (1175 lines).
+2026-07-30 18:00:51,168 - INFO - Feedrate: 2000.0 mm/min
+2026-07-30 18:00:52,090 - INFO - Normalization shift: X=-249.385, Y=-76.833
+2026-07-30 18:00:52,090 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=40.300
+2026-07-30 18:00:52,091 - INFO - Final applied shift: X=-249.385, Y=-76.833
+2026-07-30 18:00:52,977 - INFO - Print Status : RUN
+2026-07-31 10:38:38,633 - INFO - No OpenGL_accelerate module loaded: No module named 'OpenGL_accelerate'
+2026-07-31 10:38:40,512 - DEBUG - searching for blender in: C:\Program Files\Python314\Lib\site-packages\PySide6;c:\Users\SPPL01\.vscode\extensions\ms-python.debugpy-2026.6.0-win32-x64\bundled\scripts\noConfigScripts;C:\Users\SPPL01\AppData\Local\Programs\Antigravity IDE\bin;C:\Program Files\Python314\Scripts\;C:\WINDOWS\system32;E:\Manashree\Github\Git\cmd;C:\Users\SPPL01\AppData\Local\Microsoft\WindowsApps;C:\Users\SPPL01\AppData\Local\GitHubDesktop\bin;E:\Manashree\Github\Git\usr\bin;C:\Users\SPPL01\AppData\Local\Programs\Python\Python313\Scripts\;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Users\SPPL01\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\SPPL01\AppData\Local\Programs\Python\Python313\;C:\Program Files\GTK2-Runtime Win64\bin;c:\Users\SPPL01\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\copilotCli;C:\WINDOWS\System32\Wbem;c:\Users\SPPL01\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;E:\Manashree\Github\Git\mingw64\bin;C:\Program Files\Python314\;C:\WINDOWS;C:\WINDOWS\System32\OpenSSH\
+2026-07-31 10:38:40,528 - DEBUG - falling back to hashlib hashing: `pip install xxhash`for 50x faster cache checks
+2026-07-31 10:38:42,360 - INFO - ==================================================
+2026-07-31 10:38:42,360 - INFO - New session START at 2026-07-31 10:38
+2026-07-31 10:38:42,360 - INFO - ==================================================
+2026-07-31 10:38:42,361 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-07-31 10:38:42,361 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-07-31 10:38:42,361 - INFO - Loaded draw_z from config: Z=40.3, draw_z_UP=20.15
+2026-07-31 10:38:42,361 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-07-31 10:38:42,364 - INFO - Updated profile.json: layer_height=0.4, layer_height_0=0.4
+2026-07-31 10:38:42,365 - INFO - UV Exposure Time loaded: 30000 ms
+2026-07-31 10:38:42,365 - INFO - INI file initialized
+2026-07-31 10:38:42,370 - INFO - UI load successful
+2026-07-31 10:38:42,954 - INFO - Com : com, Port : ['COM1', 'COM15'], Baud : ['9600', '57600', '115200', '250000']
+2026-07-31 10:38:51,734 - INFO - Do you want to auto connect to COM15 @ 115200
+2026-07-31 10:38:51,739 - INFO - Auto Connect dialog button : Ok
+2026-07-31 10:38:51,740 - INFO - Serial communication autostarted
+2026-07-31 10:39:36,879 - INFO - Fill command sent via M118 to Blackpill.
+2026-07-31 10:39:40,449 - INFO - Stop Fill command sent via M118 to Blackpill.
+2026-07-31 10:39:42,268 - INFO - Purge command sent via M118 to Blackpill.
+2026-07-31 10:39:44,737 - INFO - Stop Purge command sent via M118 to Blackpill.
+2026-07-31 10:40:21,991 - INFO - Fill command sent via M118 to Blackpill.
+2026-07-31 10:40:22,976 - INFO - Stop Fill command sent via M118 to Blackpill.
+2026-07-31 10:40:25,211 - INFO - Purge command sent via M118 to Blackpill.
+2026-07-31 10:40:26,579 - INFO - Stop Purge command sent via M118 to Blackpill.
+2026-07-31 10:40:33,536 - INFO - Fill command sent via M118 to Blackpill.
+2026-07-31 10:40:34,454 - INFO - Purge command sent via M118 to Blackpill.
+2026-07-31 10:40:35,705 - INFO - Fill command sent via M118 to Blackpill.
+2026-07-31 10:40:36,188 - INFO - Stop Fill command sent via M118 to Blackpill.
+2026-07-31 10:40:40,218 - INFO - Serial communication stopped
+2026-07-31 10:40:40,218 - INFO - COM connection close successfully
+2026-07-31 10:40:40,218 - INFO - Main window close successfully
+2026-07-31 10:40:40,219 - INFO - ==================================================
+2026-07-31 10:40:40,219 - INFO - New session close at 2026-07-31 10:40
+2026-07-31 10:40:40,219 - INFO - ==================================================
+2026-07-31 10:51:31,322 - INFO - No OpenGL_accelerate module loaded: No module named 'OpenGL_accelerate'
+2026-07-31 10:51:45,022 - DEBUG - searching for blender in: C:\Users\SPPL01\AppData\Local\Microsoft\WindowsApps;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Users\SPPL01\AppData\Local\Programs\Microsoft VS Code\bin;C:\WINDOWS\System32\OpenSSH\;C:\Users\SPPL01\AppData\Local\Programs\Python\Python313\Scripts\;c:\Users\SPPL01\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;C:\WINDOWS\system32;C:\Program Files\Python314\;E:\Manashree\Github\Git\usr\bin;C:\Program Files\GTK2-Runtime Win64\bin;C:\Program Files\Python314\Scripts\;C:\Users\SPPL01\AppData\Local\Programs\Python\Python313\;c:\Users\SPPL01\.vscode\extensions\ms-python.debugpy-2026.6.0-win32-x64\bundled\scripts\noConfigScripts;C:\Program Files\Python314\Lib\site-packages\PySide6;E:\Manashree\Github\Git\cmd;C:\Users\SPPL01\AppData\Local\Programs\Antigravity IDE\bin;c:\Users\SPPL01\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\copilotCli;C:\WINDOWS\System32\Wbem;E:\Manashree\Github\Git\mingw64\bin;C:\WINDOWS;C:\Users\SPPL01\AppData\Local\GitHubDesktop\bin
+2026-07-31 10:51:45,052 - DEBUG - falling back to hashlib hashing: `pip install xxhash`for 50x faster cache checks
+2026-07-31 10:51:54,272 - INFO - ==================================================
+2026-07-31 10:51:54,272 - INFO - New session START at 2026-07-31 10:51
+2026-07-31 10:51:54,272 - INFO - ==================================================
+2026-07-31 10:51:54,285 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-07-31 10:51:54,285 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-07-31 10:51:54,285 - INFO - Loaded draw_z from config: Z=40.3, draw_z_UP=20.15
+2026-07-31 10:51:54,285 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-07-31 10:51:54,295 - INFO - Updated profile.json: layer_height=0.4, layer_height_0=0.4
+2026-07-31 10:51:54,295 - INFO - UV Exposure Time loaded: 30000 ms
+2026-07-31 10:51:54,295 - INFO - INI file initialized
+2026-07-31 10:51:54,301 - INFO - UI load successful
+2026-07-31 10:51:54,660 - INFO - Com : com, Port : ['COM1', 'COM15'], Baud : ['9600', '57600', '115200', '250000']
+2026-07-31 10:51:58,385 - INFO - Do you want to auto connect to COM15 @ 115200
+2026-07-31 10:51:58,390 - INFO - Auto Connect dialog button : Ok
+2026-07-31 10:51:58,390 - INFO - Serial communication autostarted
+2026-07-31 10:52:00,622 - INFO - Fill command sent via M118 to Blackpill.
+2026-07-31 10:52:06,894 - INFO - Purge command sent via M118 to Blackpill.
+2026-07-31 10:52:25,029 - INFO - Fill command sent via M118 to Blackpill.
+2026-07-31 10:52:26,063 - INFO - Purge command sent via M118 to Blackpill.
+2026-07-31 11:05:36,209 - INFO - Serial communication stopped
+2026-07-31 11:05:36,210 - INFO - COM connection close successfully
+2026-07-31 11:05:36,210 - INFO - Main window close successfully
+2026-07-31 11:05:36,210 - INFO - ==================================================
+2026-07-31 11:05:36,210 - INFO - New session close at 2026-07-31 11:05
+2026-07-31 11:05:36,210 - INFO - ==================================================
+2026-07-31 11:05:39,976 - INFO - No OpenGL_accelerate module loaded: No module named 'OpenGL_accelerate'
+2026-07-31 11:05:40,954 - DEBUG - searching for blender in: C:\WINDOWS\System32\OpenSSH\;C:\Users\SPPL01\AppData\Local\Programs\Python\Python313\Scripts\;E:\Manashree\Github\Git\cmd;C:\Users\SPPL01\AppData\Local\Programs\Python\Python313\;c:\Users\SPPL01\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\copilotCli;C:\Users\SPPL01\AppData\Local\Programs\Antigravity IDE\bin;E:\Manashree\Github\Git\mingw64\bin;C:\Users\SPPL01\AppData\Local\GitHubDesktop\bin;C:\Program Files\GTK2-Runtime Win64\bin;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\system32;C:\Users\SPPL01\AppData\Local\Microsoft\WindowsApps;c:\Users\SPPL01\.vscode\extensions\ms-python.debugpy-2026.6.0-win32-x64\bundled\scripts\noConfigScripts;c:\Users\SPPL01\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;C:\Program Files\Python314\Lib\site-packages\PySide6;C:\Program Files\Python314\;C:\Program Files\Python314\Scripts\;C:\WINDOWS;C:\Users\SPPL01\AppData\Local\Programs\Microsoft VS Code\bin;C:\WINDOWS\System32\Wbem;E:\Manashree\Github\Git\usr\bin
+2026-07-31 11:05:40,965 - DEBUG - falling back to hashlib hashing: `pip install xxhash`for 50x faster cache checks
+2026-07-31 11:05:41,961 - INFO - ==================================================
+2026-07-31 11:05:41,962 - INFO - New session START at 2026-07-31 11:05
+2026-07-31 11:05:41,962 - INFO - ==================================================
+2026-07-31 11:05:41,962 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-07-31 11:05:41,962 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-07-31 11:05:41,963 - INFO - Loaded draw_z from config: Z=40.3, draw_z_UP=20.15
+2026-07-31 11:05:41,963 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-07-31 11:05:41,974 - INFO - Updated profile.json: layer_height=0.4, layer_height_0=0.4
+2026-07-31 11:05:41,974 - INFO - UV Exposure Time loaded: 30000 ms
+2026-07-31 11:05:41,974 - INFO - INI file initialized
+2026-07-31 11:05:41,980 - INFO - UI load successful
+2026-07-31 11:05:42,347 - INFO - Com : com, Port : ['COM1', 'COM15'], Baud : ['9600', '57600', '115200', '250000']
+2026-07-31 11:05:44,310 - INFO - Do you want to auto connect to COM15 @ 115200
+2026-07-31 11:05:44,314 - INFO - Auto Connect dialog button : Ok
+2026-07-31 11:05:44,314 - INFO - Serial communication autostarted
+2026-07-31 11:06:03,045 - INFO - Fill command sent via M118 to Blackpill.
+2026-07-31 11:06:17,977 - INFO - Stop Fill command sent via M118 to Blackpill.
+2026-07-31 11:06:21,247 - INFO - Purge command sent via M118 to Blackpill.
+2026-07-31 11:06:24,933 - INFO - Stop Purge command sent via M118 to Blackpill.
+2026-07-31 11:06:26,402 - INFO - Purge command sent via M118 to Blackpill.
+2026-07-31 11:06:34,326 - INFO - Stop Purge command sent via M118 to Blackpill.
+2026-07-31 11:07:14,066 - INFO - Fill command sent via M118 to Blackpill.
+2026-07-31 11:07:17,370 - INFO - Stop Fill command sent via M118 to Blackpill.
+2026-07-31 11:07:19,388 - INFO - Purge command sent via M118 to Blackpill.
+2026-07-31 11:07:23,609 - INFO - Stop Purge command sent via M118 to Blackpill.
+2026-07-31 11:08:06,906 - INFO - Serial communication stopped
+2026-07-31 11:08:06,908 - INFO - COM connection close successfully
+2026-07-31 11:08:06,908 - INFO - Main window close successfully
+2026-07-31 11:08:06,908 - INFO - ==================================================
+2026-07-31 11:08:06,908 - INFO - New session close at 2026-07-31 11:08
+2026-07-31 11:08:06,908 - INFO - ==================================================
+2026-07-31 11:08:09,769 - INFO - No OpenGL_accelerate module loaded: No module named 'OpenGL_accelerate'
+2026-07-31 11:08:10,719 - DEBUG - searching for blender in: C:\Users\SPPL01\AppData\Local\Programs\Python\Python313\;E:\Manashree\Github\Git\usr\bin;c:\Users\SPPL01\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\copilotCli;c:\Users\SPPL01\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;E:\Manashree\Github\Git\cmd;C:\Program Files\Python314\Lib\site-packages\PySide6;C:\Users\SPPL01\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\Python314\;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\Users\SPPL01\AppData\Local\GitHubDesktop\bin;C:\WINDOWS\System32\OpenSSH\;E:\Manashree\Github\Git\mingw64\bin;C:\WINDOWS\system32;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Users\SPPL01\AppData\Local\Programs\Python\Python313\Scripts\;C:\Program Files\Python314\Scripts\;C:\Users\SPPL01\AppData\Local\Microsoft\WindowsApps;c:\Users\SPPL01\.vscode\extensions\ms-python.debugpy-2026.6.0-win32-x64\bundled\scripts\noConfigScripts;C:\Users\SPPL01\AppData\Local\Programs\Antigravity IDE\bin;C:\Program Files\GTK2-Runtime Win64\bin
+2026-07-31 11:08:10,731 - DEBUG - falling back to hashlib hashing: `pip install xxhash`for 50x faster cache checks
+2026-07-31 11:08:11,705 - INFO - ==================================================
+2026-07-31 11:08:11,705 - INFO - New session START at 2026-07-31 11:08
+2026-07-31 11:08:11,705 - INFO - ==================================================
+2026-07-31 11:08:11,706 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-07-31 11:08:11,706 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-07-31 11:08:11,707 - INFO - Loaded draw_z from config: Z=40.3, draw_z_UP=20.15
+2026-07-31 11:08:11,707 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-07-31 11:08:11,709 - INFO - Updated profile.json: layer_height=0.4, layer_height_0=0.4
+2026-07-31 11:08:11,709 - INFO - UV Exposure Time loaded: 30000 ms
+2026-07-31 11:08:11,709 - INFO - INI file initialized
+2026-07-31 11:08:11,715 - INFO - UI load successful
+2026-07-31 11:08:12,030 - INFO - Com : com, Port : ['COM1', 'COM15'], Baud : ['9600', '57600', '115200', '250000']
+2026-07-31 11:08:14,059 - INFO - Do you want to auto connect to COM15 @ 115200
+2026-07-31 11:08:14,063 - INFO - Auto Connect dialog button : Ok
+2026-07-31 11:08:14,063 - INFO - Serial communication autostarted
+2026-07-31 11:09:18,107 - INFO - Fill command sent via M118 to Blackpill.
+2026-07-31 11:09:41,397 - INFO - Stop Fill command sent via M118 to Blackpill.
+2026-07-31 11:09:48,871 - INFO - Fill command sent via M118 to Blackpill.
+2026-07-31 11:09:57,012 - INFO - Stop Fill command sent via M118 to Blackpill.
+2026-07-31 11:10:03,419 - INFO - Fill command sent via M118 to Blackpill.
+2026-07-31 11:10:08,724 - INFO - Stop Fill command sent via M118 to Blackpill.
+2026-07-31 11:10:20,269 - INFO - Fill command sent via M118 to Blackpill.
+2026-07-31 11:10:25,474 - INFO - Stop Fill command sent via M118 to Blackpill.
+2026-07-31 11:14:46,068 - INFO - Fill command sent via M118 to Blackpill.
+2026-07-31 11:14:50,122 - INFO - Stop Fill command sent via M118 to Blackpill.
+2026-07-31 11:14:51,373 - INFO - Purge command sent via M118 to Blackpill.
+2026-07-31 11:14:53,742 - INFO - Stop Purge command sent via M118 to Blackpill.
+2026-07-31 11:14:55,010 - INFO - Fill command sent via M118 to Blackpill.
+2026-07-31 11:14:57,579 - INFO - Stop Fill command sent via M118 to Blackpill.
+2026-07-31 11:14:58,997 - INFO - Purge command sent via M118 to Blackpill.
+2026-07-31 11:15:01,499 - INFO - Stop Purge command sent via M118 to Blackpill.
+2026-07-31 11:15:05,537 - INFO - Serial communication stopped
+2026-07-31 11:15:05,539 - INFO - COM connection close successfully
+2026-07-31 11:15:05,539 - INFO - Main window close successfully
+2026-07-31 11:15:05,540 - INFO - ==================================================
+2026-07-31 11:15:05,540 - INFO - New session close at 2026-07-31 11:15
+2026-07-31 11:15:05,540 - INFO - ==================================================
+2026-07-31 11:15:28,769 - INFO - No OpenGL_accelerate module loaded: No module named 'OpenGL_accelerate'
+2026-07-31 11:15:29,723 - DEBUG - searching for blender in: E:\Manashree\Github\Git\cmd;C:\WINDOWS;C:\Program Files\Python314\Lib\site-packages\PySide6;C:\Program Files\Python314\Scripts\;C:\Users\SPPL01\AppData\Local\GitHubDesktop\bin;C:\WINDOWS\System32\Wbem;C:\Users\SPPL01\AppData\Local\Programs\Python\Python313\;C:\Program Files\GTK2-Runtime Win64\bin;E:\Manashree\Github\Git\usr\bin;C:\Users\SPPL01\AppData\Local\Microsoft\WindowsApps;C:\Users\SPPL01\AppData\Local\Programs\Antigravity IDE\bin;c:\Users\SPPL01\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\copilotCli;C:\Users\SPPL01\AppData\Local\Programs\Microsoft VS Code\bin;c:\Users\SPPL01\.vscode\extensions\ms-python.debugpy-2026.6.0-win32-x64\bundled\scripts\noConfigScripts;C:\Users\SPPL01\AppData\Local\Programs\Python\Python313\Scripts\;E:\Manashree\Github\Git\mingw64\bin;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;c:\Users\SPPL01\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;C:\Program Files\Python314\;C:\WINDOWS\system32;C:\WINDOWS\System32\OpenSSH\
+2026-07-31 11:15:29,735 - DEBUG - falling back to hashlib hashing: `pip install xxhash`for 50x faster cache checks
+2026-07-31 11:15:30,729 - INFO - ==================================================
+2026-07-31 11:15:30,729 - INFO - New session START at 2026-07-31 11:15
+2026-07-31 11:15:30,729 - INFO - ==================================================
+2026-07-31 11:15:30,730 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-07-31 11:15:30,730 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-07-31 11:15:30,730 - INFO - Loaded draw_z from config: Z=40.3, draw_z_UP=20.15
+2026-07-31 11:15:30,731 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-07-31 11:15:30,733 - INFO - Updated profile.json: layer_height=0.4, layer_height_0=0.4
+2026-07-31 11:15:30,734 - INFO - UV Exposure Time loaded: 30000 ms
+2026-07-31 11:15:30,734 - INFO - INI file initialized
+2026-07-31 11:15:30,740 - INFO - UI load successful
+2026-07-31 11:15:31,068 - INFO - Com : com, Port : ['COM1', 'COM15'], Baud : ['9600', '57600', '115200', '250000']
+2026-07-31 11:15:35,917 - INFO - Do you want to auto connect to COM15 @ 115200
+2026-07-31 11:15:35,922 - INFO - Auto Connect dialog button : Ok
+2026-07-31 11:15:35,922 - INFO - Serial communication autostarted
+2026-07-31 11:15:43,091 - INFO - Fill command sent via M118 to Blackpill.
+2026-07-31 11:16:25,600 - INFO - Stop Fill command sent via M118 to Blackpill.
+2026-07-31 11:16:26,451 - INFO - Purge command sent via M118 to Blackpill.
+2026-07-31 11:16:29,053 - INFO - Stop Purge command sent via M118 to Blackpill.
+2026-07-31 11:25:01,465 - INFO - Fill command sent via M118 to Blackpill.
+2026-07-31 11:25:05,903 - INFO - Stop Fill command sent via M118 to Blackpill.
+2026-07-31 11:25:07,204 - INFO - Purge command sent via M118 to Blackpill.
+2026-07-31 11:25:08,956 - INFO - Stop Purge command sent via M118 to Blackpill.
+2026-07-31 11:25:10,224 - INFO - Fill command sent via M118 to Blackpill.
+2026-07-31 11:25:12,426 - INFO - Stop Fill command sent via M118 to Blackpill.
+2026-07-31 11:25:14,128 - INFO - Purge command sent via M118 to Blackpill.
+2026-07-31 11:25:15,595 - INFO - Stop Purge command sent via M118 to Blackpill.
+2026-07-31 11:25:20,150 - INFO - Fill command sent via M118 to Blackpill.
+2026-07-31 11:25:22,803 - INFO - Stop Fill command sent via M118 to Blackpill.
+2026-07-31 11:25:23,871 - INFO - Purge command sent via M118 to Blackpill.
+2026-07-31 11:25:24,822 - INFO - Stop Purge command sent via M118 to Blackpill.
+2026-07-31 11:30:24,987 - INFO - Fill command sent via M118 to Blackpill.
+2026-07-31 11:30:26,890 - INFO - Stop Fill command sent via M118 to Blackpill.
+2026-07-31 11:30:27,874 - INFO - Fill command sent via M118 to Blackpill.
+2026-07-31 11:30:30,476 - INFO - Stop Fill command sent via M118 to Blackpill.
+2026-07-31 11:30:31,177 - INFO - Purge command sent via M118 to Blackpill.
+2026-07-31 11:30:32,795 - INFO - Stop Purge command sent via M118 to Blackpill.
+2026-07-31 11:30:33,530 - INFO - Purge command sent via M118 to Blackpill.
+2026-07-31 11:30:35,415 - INFO - Stop Purge command sent via M118 to Blackpill.
+2026-07-31 11:30:36,899 - INFO - Purge command sent via M118 to Blackpill.
+2026-07-31 11:30:39,118 - INFO - Stop Purge command sent via M118 to Blackpill.
+2026-07-31 11:30:41,605 - INFO - Fill command sent via M118 to Blackpill.
+2026-07-31 11:30:42,489 - INFO - Stop Fill command sent via M118 to Blackpill.
+2026-07-31 11:30:43,973 - INFO - Fill command sent via M118 to Blackpill.
+2026-07-31 11:30:44,975 - INFO - Stop Fill command sent via M118 to Blackpill.
+2026-07-31 11:30:46,910 - INFO - Fill command sent via M118 to Blackpill.
+2026-07-31 11:30:49,612 - INFO - Purge command sent via M118 to Blackpill.
+2026-07-31 11:30:50,096 - INFO - Stop Purge command sent via M118 to Blackpill.
+2026-07-31 11:30:51,147 - INFO - Fill command sent via M118 to Blackpill.
+2026-07-31 11:30:51,631 - INFO - Stop Fill command sent via M118 to Blackpill.
+2026-07-31 11:50:53,173 - INFO - File selected: E:/Manashree/3DP/Ink/InkV2_Final_cura_version_auto_fillandPurge/InkV2_Final_cura_version_auto_fillandPurge_main/Test_files/test3.dxf
+2026-07-31 11:50:53,174 - INFO - Converting DXF -> G-code directly: E:\Manashree\3DP\Ink\InkV2_Final_cura_version_auto_fillandPurge\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\test3.dxf
+2026-07-31 11:50:53,205 - INFO - creating ACAD_COLOR dictionary
+2026-07-31 11:50:53,205 - INFO - creating ACAD_LAYOUT dictionary
+2026-07-31 11:50:53,205 - INFO - creating ACAD_MATERIAL dictionary
+2026-07-31 11:50:53,205 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2026-07-31 11:50:53,205 - INFO - creating ACAD_MLINESTYLE dictionary
+2026-07-31 11:50:53,205 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2026-07-31 11:50:53,205 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2026-07-31 11:50:53,206 - INFO - creating ACAD_SCALELIST dictionary
+2026-07-31 11:50:53,206 - INFO - creating ACAD_TABLESTYLE dictionary
+2026-07-31 11:50:53,206 - INFO - creating ACAD_VISUALSTYLE dictionary
+2026-07-31 11:50:53,434 - DEBUG - Exporting 14900 faces as STL
+2026-07-31 11:50:53,810 - INFO - G-code created: E:\Manashree\3DP\Ink\InkV2_Final_cura_version_auto_fillandPurge\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\test3.gcode
+2026-07-31 11:50:53,810 - INFO - G-code ready from DXF: E:\Manashree\3DP\Ink\InkV2_Final_cura_version_auto_fillandPurge\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\test3.gcode
+2026-07-31 11:50:53,820 - INFO - Raw G-code parsed (263 lines).
+2026-07-31 11:50:55,178 - INFO - Feedrate: 500.0 mm/min
+2026-07-31 11:50:55,948 - INFO - Normalization shift: X=-254.710, Y=-28.350
+2026-07-31 11:50:55,948 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=43.300
+2026-07-31 11:50:55,948 - INFO - Final applied shift: X=-254.710, Y=-28.350
+2026-07-31 11:51:46,764 - INFO - Print Status : RUN
+2026-07-31 12:01:47,620 - INFO - File selected: E:/Manashree/3DP/Ink/InkV2_Final_cura_version_auto_fillandPurge/InkV2_Final_cura_version_auto_fillandPurge_main/Test_files/ide2.svg
+2026-07-31 12:01:47,621 - INFO - Converting SVG -> G-code directly: E:\Manashree\3DP\Ink\InkV2_Final_cura_version_auto_fillandPurge\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\ide2.svg
+2026-07-31 12:01:47,714 - DEBUG - Exporting 12320 faces as STL
+2026-07-31 12:01:47,833 - INFO - G-code created: E:\Manashree\3DP\Ink\InkV2_Final_cura_version_auto_fillandPurge\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\ide2.gcode
+2026-07-31 12:01:47,833 - INFO - G-code ready from SVG: E:\Manashree\3DP\Ink\InkV2_Final_cura_version_auto_fillandPurge\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\ide2.gcode
+2026-07-31 12:01:47,845 - INFO - Raw G-code parsed (1175 lines).
+2026-07-31 12:01:51,133 - INFO - Feedrate: 1500.0 mm/min
+2026-07-31 12:01:52,539 - INFO - Normalization shift: X=-249.385, Y=-76.833
+2026-07-31 12:01:52,539 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=43.300
+2026-07-31 12:01:52,539 - INFO - Final applied shift: X=-249.385, Y=-76.833
+2026-07-31 12:01:55,276 - INFO - Print Status : RUN
+2026-07-31 12:32:57,819 - INFO - Fill command sent via M118 to Blackpill.
+2026-07-31 12:55:06,759 - INFO - Serial communication stopped
+2026-07-31 12:55:06,759 - INFO - COM connection close successfully
+2026-07-31 12:55:06,760 - INFO - Main window close successfully
+2026-07-31 12:55:06,760 - INFO - ==================================================
+2026-07-31 12:55:06,760 - INFO - New session close at 2026-07-31 12:55
+2026-07-31 12:55:06,760 - INFO - ==================================================
+2026-07-31 12:55:19,016 - INFO - No OpenGL_accelerate module loaded: No module named 'OpenGL_accelerate'
+2026-07-31 12:55:30,017 - DEBUG - searching for blender in: C:\Program Files\Python314\Lib\site-packages\PySide6;C:\Users\SPPL01\AppData\Local\GitHubDesktop\bin;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Users\SPPL01\AppData\Local\Programs\Python\Python313\;C:\Users\SPPL01\AppData\Local\Programs\Microsoft VS Code\bin;c:\Users\SPPL01\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;C:\Program Files\Python314\;E:\Manashree\Github\Git\usr\bin;C:\Users\SPPL01\AppData\Local\Programs\Python\Python313\Scripts\;C:\Users\SPPL01\AppData\Local\Programs\Antigravity IDE\bin;C:\Program Files\Python314\Scripts\;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\OpenSSH\;E:\Manashree\Github\Git\mingw64\bin;C:\WINDOWS;C:\Program Files\GTK2-Runtime Win64\bin;c:\Users\SPPL01\.vscode\extensions\ms-python.debugpy-2026.6.0-win32-x64\bundled\scripts\noConfigScripts;C:\WINDOWS\system32;E:\Manashree\Github\Git\cmd;C:\Users\SPPL01\AppData\Local\Microsoft\WindowsApps;c:\Users\SPPL01\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\copilotCli
+2026-07-31 12:55:30,042 - DEBUG - falling back to hashlib hashing: `pip install xxhash`for 50x faster cache checks
+2026-07-31 12:55:37,510 - INFO - ==================================================
+2026-07-31 12:55:37,510 - INFO - New session START at 2026-07-31 12:55
+2026-07-31 12:55:37,511 - INFO - ==================================================
+2026-07-31 12:55:37,513 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-07-31 12:55:37,513 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-07-31 12:55:37,513 - INFO - Loaded draw_z from config: Z=43.3, draw_z_UP=21.65
+2026-07-31 12:55:37,513 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-07-31 12:55:37,515 - INFO - Updated profile.json: layer_height=0.4, layer_height_0=0.4
+2026-07-31 12:55:37,515 - INFO - UV Exposure Time loaded: 30000 ms
+2026-07-31 12:55:37,515 - INFO - INI file initialized
+2026-07-31 12:55:37,521 - INFO - UI load successful
+2026-07-31 12:55:37,950 - INFO - Com : com, Port : ['COM1', 'COM15'], Baud : ['9600', '57600', '115200', '250000']
+2026-07-31 12:55:40,095 - INFO - Do you want to auto connect to COM15 @ 115200
+2026-07-31 12:55:40,100 - INFO - Auto Connect dialog button : Ok
+2026-07-31 12:55:40,100 - INFO - Serial communication autostarted
+2026-07-31 12:55:48,421 - INFO - Fill command sent via M118 to Blackpill.
+2026-07-31 12:56:08,975 - INFO - Stop Fill command sent via M118 to Blackpill.
+2026-07-31 12:56:09,792 - INFO - Purge command sent via M118 to Blackpill.
+2026-07-31 12:56:18,051 - INFO - Stop Purge command sent via M118 to Blackpill.
+2026-07-31 12:56:18,951 - INFO - Fill command sent via M118 to Blackpill.
+2026-07-31 12:56:30,724 - INFO - File selected: E:/Manashree/3DP/Ink/InkV2_Final_cura_version_auto_fillandPurge/InkV2_Final_cura_version_auto_fillandPurge_main/Test_files/testbox.svg
+2026-07-31 12:56:30,726 - INFO - Converting SVG -> G-code directly: E:\Manashree\3DP\Ink\InkV2_Final_cura_version_auto_fillandPurge\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\testbox.svg
+2026-07-31 12:56:30,980 - DEBUG - Exporting 69792 faces as STL
+2026-07-31 12:56:32,015 - INFO - G-code created: E:\Manashree\3DP\Ink\InkV2_Final_cura_version_auto_fillandPurge\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\testbox.gcode
+2026-07-31 12:56:32,015 - INFO - G-code ready from SVG: E:\Manashree\3DP\Ink\InkV2_Final_cura_version_auto_fillandPurge\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\testbox.gcode
+2026-07-31 12:56:32,026 - INFO - Raw G-code parsed (412 lines).
+2026-07-31 12:56:36,251 - INFO - Feedrate: 1500.0 mm/min
+2026-07-31 12:56:37,338 - INFO - Normalization shift: X=-247.680, Y=-75.180
+2026-07-31 12:56:37,338 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=43.300
+2026-07-31 12:56:37,338 - INFO - Final applied shift: X=-247.680, Y=-75.180
+2026-07-31 12:56:37,338 - ERROR - Out of Bed Range: Drawing exceeds bed area!
+
+X: 0.00 \u2192 52.56 (Bed: 0.0 \u2192 50.0)
+Y: 0.00 \u2192 52.56 (Bed: 0.0 \u2192 50.0)
+
+Please re-adjust the offsets.
+2026-07-31 12:56:55,878 - INFO - File selected: E:/Manashree/3DP/Ink/InkV2_Final_cura_version_auto_fillandPurge/InkV2_Final_cura_version_auto_fillandPurge_main/Test_files/testbox.svg
+2026-07-31 12:56:55,879 - INFO - Converting SVG -> G-code directly: E:\Manashree\3DP\Ink\InkV2_Final_cura_version_auto_fillandPurge\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\testbox.svg
+2026-07-31 12:56:56,117 - DEBUG - Exporting 69792 faces as STL
+2026-07-31 12:56:56,995 - INFO - G-code created: E:\Manashree\3DP\Ink\InkV2_Final_cura_version_auto_fillandPurge\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\testbox.gcode
+2026-07-31 12:56:56,995 - INFO - G-code ready from SVG: E:\Manashree\3DP\Ink\InkV2_Final_cura_version_auto_fillandPurge\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\testbox.gcode
+2026-07-31 12:56:57,006 - INFO - Raw G-code parsed (412 lines).
+2026-07-31 12:56:57,822 - INFO - Feedrate: 1500.0 mm/min
+2026-07-31 12:56:59,425 - INFO - Normalization shift: X=-247.680, Y=-75.180
+2026-07-31 12:56:59,426 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=43.300
+2026-07-31 12:56:59,426 - INFO - Final applied shift: X=-247.680, Y=-75.180
+2026-07-31 12:56:59,426 - ERROR - Out of Bed Range: Drawing exceeds bed area!
+
+X: 0.00 \u2192 52.56 (Bed: 0.0 \u2192 50.0)
+Y: 0.00 \u2192 52.56 (Bed: 0.0 \u2192 50.0)
+
+Please re-adjust the offsets.
+2026-07-31 12:59:21,314 - INFO - File selected: E:/Manashree/3DP/Ink/InkV2_Final_cura_version_auto_fillandPurge/InkV2_Final_cura_version_auto_fillandPurge_main/Test_files/testbox2.svg
+2026-07-31 12:59:21,315 - INFO - Converting SVG -> G-code directly: E:\Manashree\3DP\Ink\InkV2_Final_cura_version_auto_fillandPurge\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\testbox2.svg
+2026-07-31 12:59:21,537 - DEBUG - Exporting 69792 faces as STL
+2026-07-31 12:59:22,260 - INFO - G-code created: E:\Manashree\3DP\Ink\InkV2_Final_cura_version_auto_fillandPurge\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\testbox2.gcode
+2026-07-31 12:59:22,260 - INFO - G-code ready from SVG: E:\Manashree\3DP\Ink\InkV2_Final_cura_version_auto_fillandPurge\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\testbox2.gcode
+2026-07-31 12:59:22,271 - INFO - Raw G-code parsed (316 lines).
+2026-07-31 12:59:22,384 - INFO - Feedrate: 1500.0 mm/min
+2026-07-31 12:59:23,218 - INFO - Normalization shift: X=-247.680, Y=-75.180
+2026-07-31 12:59:23,219 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=43.300
+2026-07-31 12:59:23,219 - INFO - Final applied shift: X=-247.680, Y=-75.180
+2026-07-31 13:00:30,538 - INFO - File selected: E:/Manashree/3DP/Ink/InkV2_Final_cura_version_auto_fillandPurge/InkV2_Final_cura_version_auto_fillandPurge_main/Test_files/test3.dxf
+2026-07-31 13:00:30,539 - INFO - Converting DXF -> G-code directly: E:\Manashree\3DP\Ink\InkV2_Final_cura_version_auto_fillandPurge\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\test3.dxf
+2026-07-31 13:00:30,570 - INFO - creating ACAD_COLOR dictionary
+2026-07-31 13:00:30,570 - INFO - creating ACAD_LAYOUT dictionary
+2026-07-31 13:00:30,570 - INFO - creating ACAD_MATERIAL dictionary
+2026-07-31 13:00:30,570 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2026-07-31 13:00:30,570 - INFO - creating ACAD_MLINESTYLE dictionary
+2026-07-31 13:00:30,570 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2026-07-31 13:00:30,570 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2026-07-31 13:00:30,570 - INFO - creating ACAD_SCALELIST dictionary
+2026-07-31 13:00:30,570 - INFO - creating ACAD_TABLESTYLE dictionary
+2026-07-31 13:00:30,570 - INFO - creating ACAD_VISUALSTYLE dictionary
+2026-07-31 13:00:30,684 - DEBUG - Exporting 14900 faces as STL
+2026-07-31 13:00:30,786 - INFO - G-code created: E:\Manashree\3DP\Ink\InkV2_Final_cura_version_auto_fillandPurge\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\test3.gcode
+2026-07-31 13:00:30,786 - INFO - G-code ready from DXF: E:\Manashree\3DP\Ink\InkV2_Final_cura_version_auto_fillandPurge\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\test3.gcode
+2026-07-31 13:00:30,797 - INFO - Raw G-code parsed (263 lines).
+2026-07-31 13:00:31,919 - INFO - Feedrate: 1500.0 mm/min
+2026-07-31 13:00:32,656 - INFO - Normalization shift: X=-254.710, Y=-28.350
+2026-07-31 13:00:32,656 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=43.300
+2026-07-31 13:00:32,656 - INFO - Final applied shift: X=-254.710, Y=-28.350
+2026-07-31 13:04:31,059 - INFO - File selected: E:/Manashree/3DP/Ink/InkV2_Final_cura_version_auto_fillandPurge/InkV2_Final_cura_version_auto_fillandPurge_main/Test_files/testbox3.dxf
+2026-07-31 13:04:31,060 - INFO - Converting DXF -> G-code directly: E:\Manashree\3DP\Ink\InkV2_Final_cura_version_auto_fillandPurge\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\testbox3.dxf
+2026-07-31 13:04:31,202 - INFO - creating ACAD_COLOR dictionary
+2026-07-31 13:04:31,202 - INFO - creating ACAD_MLEADERSTYLE dictionary
+2026-07-31 13:04:31,202 - INFO - creating ACAD_PLOTSETTINGS dictionary
+2026-07-31 13:04:31,202 - INFO - creating ACAD_PLOTSTYLENAME dictionary
+2026-07-31 13:04:31,202 - INFO - creating ACAD_SCALELIST dictionary
+2026-07-31 13:04:31,202 - INFO - creating ACAD_TABLESTYLE dictionary
+2026-07-31 13:04:31,202 - INFO - creating ACAD_VISUALSTYLE dictionary
+2026-07-31 13:04:31,203 - ERROR - DXF conversion failed:
+Failed to generate G-code from DXF.
+2026-07-31 13:04:33,761 - INFO - Feedrate: 1500.0 mm/min
+2026-07-31 13:04:37,448 - INFO - Feedrate: 1500.0 mm/min
+2026-07-31 13:05:00,296 - INFO - File selected: E:/Manashree/3DP/Ink/InkV2_Final_cura_version_auto_fillandPurge/InkV2_Final_cura_version_auto_fillandPurge_main/Test_files/ide2.svg
+2026-07-31 13:05:00,297 - INFO - Converting SVG -> G-code directly: E:\Manashree\3DP\Ink\InkV2_Final_cura_version_auto_fillandPurge\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\ide2.svg
+2026-07-31 13:05:00,376 - DEBUG - Exporting 12320 faces as STL
+2026-07-31 13:05:00,501 - INFO - G-code created: E:\Manashree\3DP\Ink\InkV2_Final_cura_version_auto_fillandPurge\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\ide2.gcode
+2026-07-31 13:05:00,501 - INFO - G-code ready from SVG: E:\Manashree\3DP\Ink\InkV2_Final_cura_version_auto_fillandPurge\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\ide2.gcode
+2026-07-31 13:05:00,512 - INFO - Raw G-code parsed (1175 lines).
+2026-07-31 13:05:01,655 - INFO - Feedrate: 1500.0 mm/min
+2026-07-31 13:05:08,245 - INFO - Feedrate: 2000.0 mm/min
+2026-07-31 13:05:08,970 - INFO - Normalization shift: X=-249.385, Y=-76.833
+2026-07-31 13:05:08,970 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=43.300
+2026-07-31 13:05:08,970 - INFO - Final applied shift: X=-249.385, Y=-76.833
+2026-07-31 13:13:38,097 - INFO - Print Status : RUN
+2026-07-31 13:29:10,837 - INFO - Print Status : ABORT
+2026-07-31 13:31:46,521 - INFO - Serial communication stopped
+2026-07-31 13:31:46,522 - INFO - COM connection close successfully
+2026-07-31 13:31:46,523 - INFO - Main window close successfully
+2026-07-31 13:31:46,523 - INFO - ==================================================
+2026-07-31 13:31:46,524 - INFO - New session close at 2026-07-31 13:31
+2026-07-31 13:31:46,524 - INFO - ==================================================
+2026-07-31 15:02:42,996 - INFO - No OpenGL_accelerate module loaded: No module named 'OpenGL_accelerate'
+2026-07-31 15:02:44,005 - DEBUG - searching for blender in: C:\Users\SPPL01\AppData\Local\Programs\Microsoft VS Code\bin;E:\Manashree\Github\Git\mingw64\bin;C:\WINDOWS;E:\Manashree\Github\Git\cmd;C:\Users\SPPL01\AppData\Local\Programs\Python\Python313\Scripts\;C:\Program Files\Python314\Scripts\;C:\WINDOWS\system32;C:\Users\SPPL01\AppData\Local\GitHubDesktop\bin;c:\Users\SPPL01\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\copilotCli;C:\Users\SPPL01\AppData\Local\Programs\Python\Python313\;C:\Program Files\Python314\Lib\site-packages\PySide6;C:\Users\SPPL01\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Python314\;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\GTK2-Runtime Win64\bin;c:\Users\SPPL01\.vscode\extensions\ms-python.debugpy-2026.6.0-win32-x64\bundled\scripts\noConfigScripts;c:\Users\SPPL01\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;C:\Users\SPPL01\AppData\Local\Programs\Antigravity IDE\bin;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\OpenSSH\;E:\Manashree\Github\Git\usr\bin
+2026-07-31 15:02:44,017 - DEBUG - falling back to hashlib hashing: `pip install xxhash`for 50x faster cache checks
+2026-07-31 15:02:45,017 - INFO - ==================================================
+2026-07-31 15:02:45,017 - INFO - New session START at 2026-07-31 15:02
+2026-07-31 15:02:45,017 - INFO - ==================================================
+2026-07-31 15:02:45,018 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-07-31 15:02:45,018 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-07-31 15:02:45,018 - INFO - Loaded draw_z from config: Z=43.3, draw_z_UP=21.65
+2026-07-31 15:02:45,018 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-07-31 15:02:45,019 - INFO - Updated profile.json: layer_height=0.4, layer_height_0=0.4
+2026-07-31 15:02:45,019 - INFO - UV Exposure Time loaded: 30000 ms
+2026-07-31 15:02:45,020 - INFO - INI file initialized
+2026-07-31 15:02:45,024 - INFO - UI load successful
+2026-07-31 15:02:45,419 - INFO - Com : com, Port : ['COM1', 'COM15', 'COM22'], Baud : ['9600', '57600', '115200', '250000']
+2026-07-31 15:02:48,714 - INFO - Do you want to auto connect to COM15 @ 115200
+2026-07-31 15:02:48,718 - INFO - Auto Connect dialog button : Ok
+2026-07-31 15:02:48,718 - INFO - Serial communication autostarted
+2026-07-31 15:05:51,935 - INFO - Serial communication stopped
+2026-07-31 15:05:54,368 - CRITICAL - Serial communication started
+2026-07-31 15:05:57,210 - INFO - Auto-connected to Blackpill on COM15
+2026-07-31 15:05:57,211 - INFO - Fill command sent directly to Blackpill via USB.
+2026-07-31 15:05:59,254 - INFO - Purge command sent directly to Blackpill via USB.
+2026-07-31 15:06:04,463 - INFO - Serial communication stopped
+2026-07-31 15:17:25,122 - INFO - Serial communication stopped
+2026-07-31 15:17:25,123 - INFO - COM connection close successfully
+2026-07-31 15:17:25,123 - INFO - Main window close successfully
+2026-07-31 15:17:25,123 - INFO - ==================================================
+2026-07-31 15:17:25,123 - INFO - New session close at 2026-07-31 15:17
+2026-07-31 15:17:25,123 - INFO - ==================================================
+2026-07-31 15:17:28,970 - INFO - No OpenGL_accelerate module loaded: No module named 'OpenGL_accelerate'
+2026-07-31 15:17:29,928 - DEBUG - searching for blender in: c:\Users\SPPL01\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;E:\Manashree\Github\Git\mingw64\bin;c:\Users\SPPL01\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\copilotCli;C:\Users\SPPL01\AppData\Local\Programs\Antigravity IDE\bin;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Python314\Scripts\;C:\WINDOWS;E:\Manashree\Github\Git\cmd;C:\Users\SPPL01\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\GTK2-Runtime Win64\bin;C:\Users\SPPL01\AppData\Local\GitHubDesktop\bin;E:\Manashree\Github\Git\usr\bin;C:\WINDOWS\system32;C:\Program Files\Python314\;C:\Program Files\Python314\Lib\site-packages\PySide6;c:\Users\SPPL01\.vscode\extensions\ms-python.debugpy-2026.6.0-win32-x64\bundled\scripts\noConfigScripts;C:\Users\SPPL01\AppData\Local\Programs\Python\Python313\;C:\Users\SPPL01\AppData\Local\Microsoft\WindowsApps;C:\Users\SPPL01\AppData\Local\Programs\Python\Python313\Scripts\;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\OpenSSH\
+2026-07-31 15:17:29,939 - DEBUG - falling back to hashlib hashing: `pip install xxhash`for 50x faster cache checks
+2026-07-31 15:17:30,995 - INFO - ==================================================
+2026-07-31 15:17:30,995 - INFO - New session START at 2026-07-31 15:17
+2026-07-31 15:17:30,996 - INFO - ==================================================
+2026-07-31 15:17:30,996 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-07-31 15:17:30,997 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-07-31 15:17:30,997 - INFO - Loaded draw_z from config: Z=43.3, draw_z_UP=21.65
+2026-07-31 15:17:30,997 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-07-31 15:17:30,999 - INFO - Updated profile.json: layer_height=0.4, layer_height_0=0.4
+2026-07-31 15:17:30,999 - INFO - UV Exposure Time loaded: 30000 ms
+2026-07-31 15:17:30,999 - INFO - INI file initialized
+2026-07-31 15:17:31,005 - INFO - UI load successful
+2026-07-31 15:17:31,350 - INFO - Com : com, Port : ['COM1', 'COM15', 'COM22'], Baud : ['9600', '57600', '115200', '250000']
+2026-07-31 15:17:50,330 - INFO - Do you want to auto connect to COM22 @ 115200
+2026-07-31 15:17:50,334 - INFO - Auto Connect dialog button : Ok
+2026-07-31 15:17:50,334 - INFO - Serial communication autostarted
+2026-07-31 15:18:02,412 - INFO - Serial communication stopped
+2026-07-31 15:18:02,995 - CRITICAL - Serial communication started
+2026-07-31 15:18:17,060 - INFO - Serial communication stopped
+2026-07-31 15:18:17,062 - INFO - COM connection close successfully
+2026-07-31 15:18:17,062 - INFO - Main window close successfully
+2026-07-31 15:18:17,063 - INFO - ==================================================
+2026-07-31 15:18:17,063 - INFO - New session close at 2026-07-31 15:18
+2026-07-31 15:18:17,063 - INFO - ==================================================
+2026-07-31 15:25:28,666 - INFO - No OpenGL_accelerate module loaded: No module named 'OpenGL_accelerate'
+2026-07-31 15:25:29,634 - DEBUG - searching for blender in: c:\Users\SPPL01\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;C:\Users\SPPL01\AppData\Local\Programs\Antigravity IDE\bin;C:\Users\SPPL01\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\SPPL01\AppData\Local\GitHubDesktop\bin;C:\Program Files\Python314\Scripts\;E:\Manashree\Github\Git\cmd;C:\Users\SPPL01\AppData\Local\Microsoft\WindowsApps;E:\Manashree\Github\Git\usr\bin;c:\Users\SPPL01\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\copilotCli;C:\Program Files\Python314\Lib\site-packages\PySide6;C:\Program Files\GTK2-Runtime Win64\bin;C:\Users\SPPL01\AppData\Local\Programs\Python\Python313\Scripts\;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;E:\Manashree\Github\Git\mingw64\bin;C:\WINDOWS\System32\Wbem;C:\Users\SPPL01\AppData\Local\Programs\Python\Python313\;c:\Users\SPPL01\.vscode\extensions\ms-python.debugpy-2026.6.0-win32-x64\bundled\scripts\noConfigScripts;C:\Program Files\Python314\;C:\WINDOWS\system32;C:\WINDOWS
+2026-07-31 15:25:29,645 - DEBUG - falling back to hashlib hashing: `pip install xxhash`for 50x faster cache checks
+2026-07-31 15:25:30,633 - INFO - ==================================================
+2026-07-31 15:25:30,633 - INFO - New session START at 2026-07-31 15:25
+2026-07-31 15:25:30,633 - INFO - ==================================================
+2026-07-31 15:25:30,634 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-07-31 15:25:30,634 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-07-31 15:25:30,634 - INFO - Loaded draw_z from config: Z=43.3, draw_z_UP=21.65
+2026-07-31 15:25:30,634 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-07-31 15:25:30,635 - INFO - Updated profile.json: layer_height=0.4, layer_height_0=0.4
+2026-07-31 15:25:30,636 - INFO - UV Exposure Time loaded: 30000 ms
+2026-07-31 15:25:30,636 - INFO - INI file initialized
+2026-07-31 15:25:30,641 - INFO - UI load successful
+2026-07-31 15:25:30,979 - INFO - Com : com, Port : ['COM1', 'COM15', 'COM22'], Baud : ['9600', '57600', '115200', '250000']
+2026-07-31 15:25:33,225 - INFO - Do you want to auto connect to COM15 @ 115200
+2026-07-31 15:25:33,229 - INFO - Auto Connect dialog button : Ok
+2026-07-31 15:25:33,229 - INFO - Serial communication autostarted
+2026-07-31 15:26:56,320 - INFO - File selected: E:/Manashree/3DP/Ink/InkV2_Final_cura_version_auto_fillandPurge/InkV2_Final_cura_version_auto_fillandPurge_main/Test_files/ide2.svg
+2026-07-31 15:26:56,321 - INFO - Converting SVG -> G-code directly: E:\Manashree\3DP\Ink\InkV2_Final_cura_version_auto_fillandPurge\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\ide2.svg
+2026-07-31 15:26:56,411 - DEBUG - Exporting 12320 faces as STL
+2026-07-31 15:26:56,531 - INFO - G-code created: E:\Manashree\3DP\Ink\InkV2_Final_cura_version_auto_fillandPurge\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\ide2.gcode
+2026-07-31 15:26:56,531 - INFO - G-code ready from SVG: E:\Manashree\3DP\Ink\InkV2_Final_cura_version_auto_fillandPurge\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\ide2.gcode
+2026-07-31 15:26:56,544 - INFO - Raw G-code parsed (1175 lines).
+2026-07-31 15:27:02,598 - INFO - Feedrate: 1500.0 mm/min
+2026-07-31 15:27:05,389 - INFO - Normalization shift: X=-249.385, Y=-76.833
+2026-07-31 15:27:05,390 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=43.300
+2026-07-31 15:27:05,390 - INFO - Final applied shift: X=-249.385, Y=-76.833
+2026-07-31 15:27:11,413 - INFO - Print Status : RUN
+2026-07-31 15:30:53,678 - INFO - Print Status : PAUSE
+2026-07-31 15:30:59,752 - INFO - Print Status : ABORT
+2026-07-31 15:37:43,465 - INFO - File selected: E:/Manashree/3DP/Ink/InkV2_Final_cura_version_auto_fillandPurge/InkV2_Final_cura_version_auto_fillandPurge_main/Test_files/test_50x50.bmp
+2026-07-31 15:37:43,466 - INFO - Converting BMP -> G-code directly: E:\Manashree\3DP\Ink\InkV2_Final_cura_version_auto_fillandPurge\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\test_50x50.bmp
+2026-07-31 15:37:43,812 - DEBUG - Importing BmpImagePlugin
+2026-07-31 15:37:43,846 - DEBUG - Exporting 12 faces as STL
+2026-07-31 15:37:43,904 - INFO - G-code created: E:\Manashree\3DP\Ink\InkV2_Final_cura_version_auto_fillandPurge\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\test_50x50.gcode
+2026-07-31 15:37:43,904 - INFO - G-code ready from BMP: E:\Manashree\3DP\Ink\InkV2_Final_cura_version_auto_fillandPurge\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\test_50x50.gcode
+2026-07-31 15:37:43,914 - INFO - Raw G-code parsed (120 lines).
+2026-07-31 15:37:47,094 - INFO - File selected: E:/Manashree/3DP/Ink/InkV2_Final_cura_version_auto_fillandPurge/InkV2_Final_cura_version_auto_fillandPurge_main/Test_files/ide2.svg
+2026-07-31 15:37:47,095 - INFO - Converting SVG -> G-code directly: E:\Manashree\3DP\Ink\InkV2_Final_cura_version_auto_fillandPurge\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\ide2.svg
+2026-07-31 15:37:47,173 - DEBUG - Exporting 12320 faces as STL
+2026-07-31 15:37:47,288 - INFO - G-code created: E:\Manashree\3DP\Ink\InkV2_Final_cura_version_auto_fillandPurge\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\ide2.gcode
+2026-07-31 15:37:47,288 - INFO - G-code ready from SVG: E:\Manashree\3DP\Ink\InkV2_Final_cura_version_auto_fillandPurge\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\ide2.gcode
+2026-07-31 15:37:47,299 - INFO - Raw G-code parsed (1175 lines).
+2026-07-31 15:37:47,758 - INFO - Feedrate: 1500.0 mm/min
+2026-07-31 15:37:50,367 - INFO - Normalization shift: X=-249.385, Y=-76.833
+2026-07-31 15:37:50,368 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=43.300
+2026-07-31 15:37:50,368 - INFO - Final applied shift: X=-249.385, Y=-76.833
+2026-07-31 15:38:02,366 - INFO - Print Status : RUN
+2026-07-31 15:39:25,507 - INFO - Print Status : ABORT
+2026-07-31 15:44:42,043 - INFO - File selected: E:/Manashree/3DP/Ink/InkV2_Final_cura_version_auto_fillandPurge/InkV2_Final_cura_version_auto_fillandPurge_main/Test_files/ide2.svg
+2026-07-31 15:44:42,043 - INFO - Converting SVG -> G-code directly: E:\Manashree\3DP\Ink\InkV2_Final_cura_version_auto_fillandPurge\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\ide2.svg
+2026-07-31 15:44:42,126 - DEBUG - Exporting 12320 faces as STL
+2026-07-31 15:44:42,239 - INFO - G-code created: E:\Manashree\3DP\Ink\InkV2_Final_cura_version_auto_fillandPurge\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\ide2.gcode
+2026-07-31 15:44:42,239 - INFO - G-code ready from SVG: E:\Manashree\3DP\Ink\InkV2_Final_cura_version_auto_fillandPurge\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\ide2.gcode
+2026-07-31 15:44:42,250 - INFO - Raw G-code parsed (1175 lines).
+2026-07-31 15:44:42,889 - INFO - Feedrate: 1500.0 mm/min
+2026-07-31 15:44:43,896 - INFO - Normalization shift: X=-249.385, Y=-76.833
+2026-07-31 15:44:43,896 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=42.900
+2026-07-31 15:44:43,897 - INFO - Final applied shift: X=-249.385, Y=-76.833
+2026-07-31 15:44:45,364 - INFO - Print Status : RUN
+2026-07-31 16:34:46,473 - INFO - Print Status : ABORT
+2026-07-31 16:39:40,817 - INFO - File selected: E:/Manashree/3DP/Ink/InkV2_Final_cura_version_auto_fillandPurge/InkV2_Final_cura_version_auto_fillandPurge_main/Test_files/ide2.svg
+2026-07-31 16:39:40,817 - INFO - Converting SVG -> G-code directly: E:\Manashree\3DP\Ink\InkV2_Final_cura_version_auto_fillandPurge\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\ide2.svg
+2026-07-31 16:39:40,901 - DEBUG - Exporting 12320 faces as STL
+2026-07-31 16:39:41,147 - INFO - G-code created: E:\Manashree\3DP\Ink\InkV2_Final_cura_version_auto_fillandPurge\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\ide2.gcode
+2026-07-31 16:39:41,147 - INFO - G-code ready from SVG: E:\Manashree\3DP\Ink\InkV2_Final_cura_version_auto_fillandPurge\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\ide2.gcode
+2026-07-31 16:39:41,158 - INFO - Raw G-code parsed (1175 lines).
+2026-07-31 16:39:41,515 - INFO - Feedrate: 1500.0 mm/min
+2026-07-31 16:39:42,105 - INFO - Normalization shift: X=-249.385, Y=-76.833
+2026-07-31 16:39:42,105 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=38.200
+2026-07-31 16:39:42,105 - INFO - Final applied shift: X=-249.385, Y=-76.833
+2026-07-31 16:39:44,227 - INFO - Print Status : RUN
+2026-07-31 16:55:49,705 - INFO - Print Status : ABORT
+2026-07-31 17:05:56,700 - INFO - File selected: E:/Manashree/3DP/Ink/InkV2_Final_cura_version_auto_fillandPurge/InkV2_Final_cura_version_auto_fillandPurge_main/Test_files/ide2.svg
+2026-07-31 17:05:56,701 - INFO - Converting SVG -> G-code directly: E:\Manashree\3DP\Ink\InkV2_Final_cura_version_auto_fillandPurge\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\ide2.svg
+2026-07-31 17:05:56,782 - DEBUG - Exporting 12320 faces as STL
+2026-07-31 17:05:56,900 - INFO - G-code created: E:\Manashree\3DP\Ink\InkV2_Final_cura_version_auto_fillandPurge\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\ide2.gcode
+2026-07-31 17:05:56,900 - INFO - G-code ready from SVG: E:\Manashree\3DP\Ink\InkV2_Final_cura_version_auto_fillandPurge\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\ide2.gcode
+2026-07-31 17:05:56,910 - INFO - Raw G-code parsed (1175 lines).
+2026-07-31 17:05:57,377 - INFO - Feedrate: 1500.0 mm/min
+2026-07-31 17:05:58,034 - INFO - Normalization shift: X=-249.385, Y=-76.833
+2026-07-31 17:05:58,035 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=42.900
+2026-07-31 17:05:58,035 - INFO - Final applied shift: X=-249.385, Y=-76.833
+2026-07-31 17:05:59,019 - INFO - Print Status : RUN
+2026-07-31 17:23:46,382 - INFO - Print Status : RESUME
+2026-07-31 17:23:57,357 - INFO - Print Status : PAUSE
+2026-07-31 17:25:51,372 - INFO - Print Status : ABORT
+2026-07-31 17:26:38,117 - INFO - Close event ignored.
+2026-07-31 17:30:14,471 - INFO - File selected: E:/Manashree/3DP/Ink/InkV2_Final_cura_version_auto_fillandPurge/InkV2_Final_cura_version_auto_fillandPurge_main/Test_files/ide2.svg
+2026-07-31 17:30:14,472 - INFO - Converting SVG -> G-code directly: E:\Manashree\3DP\Ink\InkV2_Final_cura_version_auto_fillandPurge\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\ide2.svg
+2026-07-31 17:30:14,586 - DEBUG - Exporting 12320 faces as STL
+2026-07-31 17:30:14,706 - INFO - G-code created: E:\Manashree\3DP\Ink\InkV2_Final_cura_version_auto_fillandPurge\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\ide2.gcode
+2026-07-31 17:30:14,706 - INFO - G-code ready from SVG: E:\Manashree\3DP\Ink\InkV2_Final_cura_version_auto_fillandPurge\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\ide2.gcode
+2026-07-31 17:30:14,720 - INFO - Raw G-code parsed (1175 lines).
+2026-07-31 17:30:15,384 - INFO - Feedrate: 1500.0 mm/min
+2026-07-31 17:30:16,357 - INFO - Normalization shift: X=-249.385, Y=-76.833
+2026-07-31 17:30:16,358 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=42.900
+2026-07-31 17:30:16,358 - INFO - Final applied shift: X=-249.385, Y=-76.833
+2026-07-31 17:30:51,612 - INFO - Print Status : RUN
+2026-07-31 17:31:53,268 - INFO - Print Status : ABORT
+2026-07-31 17:34:36,776 - INFO - File selected: E:/Manashree/3DP/Ink/InkV2_Final_cura_version_auto_fillandPurge/InkV2_Final_cura_version_auto_fillandPurge_main/Test_files/ide2.svg
+2026-07-31 17:34:36,776 - INFO - Converting SVG -> G-code directly: E:\Manashree\3DP\Ink\InkV2_Final_cura_version_auto_fillandPurge\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\ide2.svg
+2026-07-31 17:34:36,879 - DEBUG - Exporting 12320 faces as STL
+2026-07-31 17:34:36,996 - INFO - G-code created: E:\Manashree\3DP\Ink\InkV2_Final_cura_version_auto_fillandPurge\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\ide2.gcode
+2026-07-31 17:34:36,996 - INFO - G-code ready from SVG: E:\Manashree\3DP\Ink\InkV2_Final_cura_version_auto_fillandPurge\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\ide2.gcode
+2026-07-31 17:34:37,006 - INFO - Raw G-code parsed (1175 lines).
+2026-07-31 17:34:41,099 - INFO - Feedrate: 2000.0 mm/min
+2026-07-31 17:34:42,055 - INFO - Normalization shift: X=-249.385, Y=-76.833
+2026-07-31 17:34:42,055 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=44.700
+2026-07-31 17:34:42,055 - INFO - Final applied shift: X=-249.385, Y=-76.833
+2026-07-31 17:34:43,525 - INFO - Print Status : RUN
+2026-07-31 17:37:06,096 - INFO - Print Status : ABORT
+2026-07-31 17:41:10,566 - INFO - File selected: E:/Manashree/3DP/Ink/InkV2_Final_cura_version_auto_fillandPurge/InkV2_Final_cura_version_auto_fillandPurge_main/Test_files/ide2.svg
+2026-07-31 17:41:10,567 - INFO - Converting SVG -> G-code directly: E:\Manashree\3DP\Ink\InkV2_Final_cura_version_auto_fillandPurge\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\ide2.svg
+2026-07-31 17:41:10,650 - DEBUG - Exporting 12320 faces as STL
+2026-07-31 17:41:10,767 - INFO - G-code created: E:\Manashree\3DP\Ink\InkV2_Final_cura_version_auto_fillandPurge\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\ide2.gcode
+2026-07-31 17:41:10,767 - INFO - G-code ready from SVG: E:\Manashree\3DP\Ink\InkV2_Final_cura_version_auto_fillandPurge\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\ide2.gcode
+2026-07-31 17:41:10,778 - INFO - Raw G-code parsed (1175 lines).
+2026-07-31 17:41:11,336 - INFO - Feedrate: 2000.0 mm/min
+2026-07-31 17:41:12,227 - INFO - Normalization shift: X=-249.385, Y=-76.833
+2026-07-31 17:41:12,227 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=44.700
+2026-07-31 17:41:12,227 - INFO - Final applied shift: X=-249.385, Y=-76.833
+2026-07-31 17:41:13,648 - INFO - Print Status : RUN
+2026-07-31 17:43:08,671 - INFO - Print Status : ABORT
+2026-07-31 17:46:40,367 - INFO - File selected: E:/Manashree/3DP/Ink/InkV2_Final_cura_version_auto_fillandPurge/InkV2_Final_cura_version_auto_fillandPurge_main/Test_files/ide2.svg
+2026-07-31 17:46:40,368 - INFO - Converting SVG -> G-code directly: E:\Manashree\3DP\Ink\InkV2_Final_cura_version_auto_fillandPurge\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\ide2.svg
+2026-07-31 17:46:40,448 - DEBUG - Exporting 12320 faces as STL
+2026-07-31 17:46:40,562 - INFO - G-code created: E:\Manashree\3DP\Ink\InkV2_Final_cura_version_auto_fillandPurge\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\ide2.gcode
+2026-07-31 17:46:40,562 - INFO - G-code ready from SVG: E:\Manashree\3DP\Ink\InkV2_Final_cura_version_auto_fillandPurge\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\ide2.gcode
+2026-07-31 17:46:40,573 - INFO - Raw G-code parsed (1175 lines).
+2026-07-31 17:46:41,249 - INFO - Feedrate: 2000.0 mm/min
+2026-07-31 17:46:41,927 - INFO - Normalization shift: X=-249.385, Y=-76.833
+2026-07-31 17:46:41,927 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=44.900
+2026-07-31 17:46:41,927 - INFO - Final applied shift: X=-249.385, Y=-76.833
+2026-07-31 17:46:43,509 - INFO - Print Status : RUN
+2026-07-31 17:47:49,301 - INFO - Print Status : ABORT
+2026-07-31 17:48:47,176 - INFO - Close event ignored.
+2026-07-31 17:48:48,844 - INFO - Close event ignored.
+2026-07-31 17:48:50,345 - INFO - Close event ignored.
+2026-07-31 17:48:50,596 - INFO - Close event ignored.
+2026-07-31 17:48:50,762 - INFO - Close event ignored.
+2026-07-31 17:48:51,763 - INFO - Close event ignored.
+2026-07-31 17:48:51,964 - INFO - Close event ignored.
+2026-07-31 17:48:52,197 - INFO - Close event ignored.
+2026-07-31 17:48:55,585 - INFO - Close event ignored.
+2026-08-01 11:55:32,122 - INFO - No OpenGL_accelerate module loaded: No module named 'OpenGL_accelerate'
+2026-08-01 11:55:33,562 - DEBUG - searching for blender in: C:\Users\SPPL01\AppData\Local\Programs\Python\Python313\;C:\Program Files\GTK2-Runtime Win64\bin;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Python314\Scripts\;C:\Users\SPPL01\AppData\Local\Programs\Python\Python313\Scripts\;E:\Manashree\Github\Git\mingw64\bin;C:\Users\SPPL01\AppData\Local\Microsoft\WindowsApps;c:\Users\SPPL01\.vscode\extensions\ms-python.debugpy-2026.6.0-win32-x64\bundled\scripts\noConfigScripts;C:\WINDOWS;c:\Users\SPPL01\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\copilotCli;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Python314\;E:\Manashree\Github\Git\usr\bin;C:\Users\SPPL01\AppData\Local\Programs\Microsoft VS Code\bin;E:\Manashree\Github\Git\cmd;C:\Users\SPPL01\AppData\Local\Programs\Antigravity IDE\bin;C:\WINDOWS\system32;C:\WINDOWS\System32\Wbem;C:\Users\SPPL01\AppData\Local\GitHubDesktop\bin;C:\Program Files\Python314\Lib\site-packages\PySide6;c:\Users\SPPL01\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand
+2026-08-01 11:55:33,577 - DEBUG - falling back to hashlib hashing: `pip install xxhash`for 50x faster cache checks
+2026-08-01 11:55:35,054 - INFO - ==================================================
+2026-08-01 11:55:35,054 - INFO - New session START at 2026-08-01 11:55
+2026-08-01 11:55:35,054 - INFO - ==================================================
+2026-08-01 11:55:35,056 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-01 11:55:35,056 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-01 11:55:35,056 - INFO - Loaded draw_z from config: Z=44.9, draw_z_UP=22.45
+2026-08-01 11:55:35,056 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-01 11:55:35,057 - INFO - Updated profile.json: layer_height=0.4, layer_height_0=0.4
+2026-08-01 11:55:35,058 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-01 11:55:35,058 - INFO - INI file initialized
+2026-08-01 11:55:35,064 - INFO - UI load successful
+2026-08-01 11:55:35,443 - INFO - Com : com, Port : ['COM1', 'COM15', 'COM22'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-01 11:55:36,919 - INFO - Do you want to auto connect to COM15 @ 115200
+2026-08-01 11:55:36,925 - INFO - Auto Connect dialog button : Ok
+2026-08-01 11:55:36,925 - INFO - Serial communication autostarted
+2026-08-01 11:55:57,050 - INFO - Serial communication stopped
+2026-08-01 11:55:57,050 - INFO - COM connection close successfully
+2026-08-01 11:55:57,050 - INFO - Main window close successfully
+2026-08-01 11:55:57,050 - INFO - ==================================================
+2026-08-01 11:55:57,051 - INFO - New session close at 2026-08-01 11:55
+2026-08-01 11:55:57,051 - INFO - ==================================================

@@ -1,0 +1,25 @@
+{
+    "version": 2,
+    "name": "Custom Machine",
+    "inherits": "fdmprinter",
+    "metadata": {
+        "type": "machine"
+    },
+    "overrides": {
+        "machine_name": {
+            "default_value": "Custom 3D Printer"
+        },
+        "machine_width": {
+            "default_value": 220
+        },
+        "machine_depth": {
+            "default_value": 220
+        },
+        "machine_height": {
+            "default_value": 250
+        },
+        "machine_extruder_count": {
+            "default_value": 1
+        }
+    }
+}
