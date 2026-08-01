@@ -290793,3 +290793,118 @@ action : Disconnect
 Serial communication stopped
 status : True
 connect btn : Connect | refresh btn : True
+
+==================================================
+Session Started: 2026-08-01 14:45:38
+==================================================
+C:\Program Files\Python314\Lib\site-packages\Custom_Widgets\JSonStyles\__init__.py:842: RuntimeWarning: libpyside: Failed to disconnect (None) from signal "clicked()".
+  button.clicked.disconnect()
+[2026-08-01 14:45:38] [OK] Found Cura installations:
+[2026-08-01 14:45:38]      - C:\Program Files\UltiMaker Cura 5.13.0
+[2026-08-01 14:45:38]      - C:\Program Files\UltiMaker Cura 5.9.1
+[2026-08-01 14:45:38] [OK] Found Cura installations:
+[2026-08-01 14:45:38]      - C:\Program Files\UltiMaker Cura 5.13.0
+[2026-08-01 14:45:38]      - C:\Program Files\UltiMaker Cura 5.9.1
+Cura version selected for Slicing: 5.9.1
+[Config] profile.json already exists.
+index : 0
+arg : 0
+index : 0
+arg : 0
+UI is loaded
+xindex : 0
+yindex : 0
+feed : 1000
+laser handler : {}
+Com : com, Port : ['COM1', 'COM15', 'COM22'], Baud : ['9600', '57600', '115200', '250000']
+action : Auto
+OK clicked
+Serial communication autostarted
+status : True
+connect btn : Disconnect | refresh btn : False
+index : 2
+pgm : pgmfillPushButton
+Blackpill is not connected. Please connect via the Black COM page.
+index : 0
+action : Connect
+port : 
+baud : 
+Error : Invalid Input > Kindly select both COM port and baud rate.
+action : Connect
+port : 
+baud : 
+Error : Invalid Input > Kindly select both COM port and baud rate.
+status : False
+status : False
+index : 1
+index : 2
+Application is closing
+action : Disconnect
+Serial communication stopped
+status : True
+connect btn : Connect | refresh btn : True
+
+==================================================
+Session Started: 2026-08-01 14:46:46
+==================================================
+C:\Program Files\Python314\Lib\site-packages\Custom_Widgets\JSonStyles\__init__.py:842: RuntimeWarning: libpyside: Failed to disconnect (None) from signal "clicked()".
+  button.clicked.disconnect()
+[2026-08-01 14:46:46] [OK] Found Cura installations:
+[2026-08-01 14:46:46]      - C:\Program Files\UltiMaker Cura 5.13.0
+[2026-08-01 14:46:46]      - C:\Program Files\UltiMaker Cura 5.9.1
+[2026-08-01 14:46:46] [OK] Found Cura installations:
+[2026-08-01 14:46:46]      - C:\Program Files\UltiMaker Cura 5.13.0
+[2026-08-01 14:46:46]      - C:\Program Files\UltiMaker Cura 5.9.1
+Cura version selected for Slicing: 5.9.1
+[Config] profile.json already exists.
+index : 0
+arg : 0
+index : 0
+arg : 0
+UI is loaded
+xindex : 0
+yindex : 0
+feed : 1000
+laser handler : {}
+Com : com, Port : ['COM1', 'COM15', 'COM22'], Baud : ['9600', '57600', '115200', '250000']
+action : Auto
+OK clicked
+Serial communication autostarted
+status : True
+connect btn : Disconnect | refresh btn : False
+action : Disconnect
+Serial communication stopped
+status : True
+connect btn : Connect | refresh btn : True
+action : Connect
+port : COM15
+baud : 115200
+Serial communication started
+status : True
+connect btn : Disconnect | refresh btn : False
+action : Refresh
+Com : black_com, Port : ['COM1', 'COM15', 'COM22'], Baud : ['9600', '57600', '115200', '250000']
+action : Connect
+port : COM22
+baud : 115200
+Serial communication started
+status : True
+connect btn : Disconnect | refresh btn : False
+index : 2
+pgm : pgmfillPushButton
+pgm : pgmfillPushButton
+pgm : pgmpurgePushButton
+pgm : pgmpurgePushButton
+pgm : pgmpurgePushButton
+pgm : pgmpurgePushButton
+pgm : pgmfillPushButton
+pgm : pgmfillPushButton
+pgm : pgmfillPushButton
+pgm : pgmfillPushButton
+pgm : pgmpurgePushButton
+pgm : pgmpurgePushButton
+Application is closing
+action : Disconnect
+Serial communication stopped
+status : True
+connect btn : Connect | refresh btn : True

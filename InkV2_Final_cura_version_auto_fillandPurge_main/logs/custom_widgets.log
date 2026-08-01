@@ -1809,3 +1809,83 @@ Failed to generate G-code from DXF.
 2026-08-01 14:35:16,343 - INFO - ==================================================
 2026-08-01 14:35:16,343 - INFO - New session close at 2026-08-01 14:35
 2026-08-01 14:35:16,343 - INFO - ==================================================
+2026-08-01 14:45:36,457 - INFO - No OpenGL_accelerate module loaded: No module named 'OpenGL_accelerate'
+2026-08-01 14:45:37,445 - DEBUG - searching for blender in: E:\Manashree\Github\Git\mingw64\bin;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\OpenSSH\;c:\Users\SPPL01\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;c:\Users\SPPL01\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\copilotCli;C:\Program Files\Python314\;C:\Users\SPPL01\AppData\Local\Programs\Python\Python313\;C:\WINDOWS;C:\Program Files\GTK2-Runtime Win64\bin;C:\Users\SPPL01\AppData\Local\GitHubDesktop\bin;E:\Manashree\Github\Git\cmd;C:\WINDOWS\system32;C:\Users\SPPL01\AppData\Local\Microsoft\WindowsApps;C:\Users\SPPL01\AppData\Local\Programs\Antigravity IDE\bin;E:\Manashree\Github\Git\usr\bin;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Python314\Lib\site-packages\PySide6;C:\Users\SPPL01\AppData\Local\Programs\Microsoft VS Code\bin;c:\Users\SPPL01\.vscode\extensions\ms-python.debugpy-2026.6.0-win32-x64\bundled\scripts\noConfigScripts;C:\Users\SPPL01\AppData\Local\Programs\Python\Python313\Scripts\;C:\Program Files\Python314\Scripts\
+2026-08-01 14:45:37,456 - DEBUG - falling back to hashlib hashing: `pip install xxhash`for 50x faster cache checks
+2026-08-01 14:45:38,467 - INFO - ==================================================
+2026-08-01 14:45:38,467 - INFO - New session START at 2026-08-01 14:45
+2026-08-01 14:45:38,467 - INFO - ==================================================
+2026-08-01 14:45:38,468 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-01 14:45:38,468 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-01 14:45:38,468 - INFO - Loaded draw_z from config: Z=44.9, draw_z_UP=22.45
+2026-08-01 14:45:38,468 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-01 14:45:38,469 - INFO - Updated profile.json: layer_height=0.4, layer_height_0=0.4
+2026-08-01 14:45:38,469 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-01 14:45:38,470 - INFO - INI file initialized
+2026-08-01 14:45:38,475 - INFO - UI load successful
+2026-08-01 14:45:38,887 - INFO - Com : com, Port : ['COM1', 'COM15', 'COM22'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-01 14:45:40,865 - INFO - Do you want to auto connect to COM15 @ 115200
+2026-08-01 14:45:40,868 - INFO - Auto Connect dialog button : Ok
+2026-08-01 14:45:40,869 - INFO - Serial communication autostarted
+2026-08-01 14:46:06,040 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-01 14:46:08,125 - INFO - Fill command sent directly to Blackpill via USB.
+2026-08-01 14:46:21,296 - ERROR - Error : Invalid Input > Kindly select both COM port and baud rate.
+2026-08-01 14:46:21,477 - ERROR - Error : Invalid Input > Kindly select both COM port and baud rate.
+2026-08-01 14:46:41,318 - INFO - Serial communication stopped
+2026-08-01 14:46:41,319 - INFO - COM connection close successfully
+2026-08-01 14:46:41,320 - INFO - Main window close successfully
+2026-08-01 14:46:41,320 - INFO - ==================================================
+2026-08-01 14:46:41,320 - INFO - New session close at 2026-08-01 14:46
+2026-08-01 14:46:41,321 - INFO - ==================================================
+2026-08-01 14:46:44,857 - INFO - No OpenGL_accelerate module loaded: No module named 'OpenGL_accelerate'
+2026-08-01 14:46:45,840 - DEBUG - searching for blender in: C:\Program Files\Python314\Scripts\;C:\Users\SPPL01\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\Python314\Lib\site-packages\PySide6;E:\Manashree\Github\Git\cmd;c:\Users\SPPL01\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\copilotCli;E:\Manashree\Github\Git\usr\bin;C:\Users\SPPL01\AppData\Local\Programs\Python\Python313\;c:\Users\SPPL01\.vscode\extensions\ms-python.debugpy-2026.6.0-win32-x64\bundled\scripts\noConfigScripts;C:\Users\SPPL01\AppData\Local\Microsoft\WindowsApps;C:\Users\SPPL01\AppData\Local\Programs\Python\Python313\Scripts\;C:\Users\SPPL01\AppData\Local\GitHubDesktop\bin;C:\Users\SPPL01\AppData\Local\Programs\Antigravity IDE\bin;C:\WINDOWS\System32\Wbem;C:\Program Files\Python314\;C:\WINDOWS;c:\Users\SPPL01\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;C:\WINDOWS\system32;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\GTK2-Runtime Win64\bin;E:\Manashree\Github\Git\mingw64\bin
+2026-08-01 14:46:45,851 - DEBUG - falling back to hashlib hashing: `pip install xxhash`for 50x faster cache checks
+2026-08-01 14:46:46,818 - INFO - ==================================================
+2026-08-01 14:46:46,818 - INFO - New session START at 2026-08-01 14:46
+2026-08-01 14:46:46,818 - INFO - ==================================================
+2026-08-01 14:46:46,819 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-01 14:46:46,820 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-01 14:46:46,820 - INFO - Loaded draw_z from config: Z=44.9, draw_z_UP=22.45
+2026-08-01 14:46:46,820 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-01 14:46:46,822 - INFO - Updated profile.json: layer_height=0.4, layer_height_0=0.4
+2026-08-01 14:46:46,823 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-01 14:46:46,823 - INFO - INI file initialized
+2026-08-01 14:46:46,828 - INFO - UI load successful
+2026-08-01 14:46:47,188 - INFO - Com : com, Port : ['COM1', 'COM15', 'COM22'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-01 14:46:48,465 - INFO - Do you want to auto connect to COM15 @ 115200
+2026-08-01 14:46:48,469 - INFO - Auto Connect dialog button : Ok
+2026-08-01 14:46:48,469 - INFO - Serial communication autostarted
+2026-08-01 14:46:55,505 - INFO - Serial communication stopped
+2026-08-01 14:47:00,614 - CRITICAL - Serial communication started
+2026-08-01 14:47:08,211 - INFO - Com : black_com, Port : ['COM1', 'COM15', 'COM22'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-01 14:47:11,693 - CRITICAL - Serial communication started
+2026-08-01 14:47:17,928 - INFO - Sent FILL to Blackpill
+2026-08-01 14:47:17,928 - INFO - Fill command sent directly to Blackpill via USB.
+2026-08-01 14:47:21,348 - INFO - Sent FILL to Blackpill
+2026-08-01 14:47:21,348 - INFO - Stop Fill command sent directly to Blackpill via USB.
+2026-08-01 14:47:23,667 - INFO - Sent PURGE to Blackpill
+2026-08-01 14:47:23,667 - INFO - Purge command sent directly to Blackpill via USB.
+2026-08-01 14:47:33,110 - INFO - Sent PURGE to Blackpill
+2026-08-01 14:47:33,110 - INFO - Stop Purge command sent directly to Blackpill via USB.
+2026-08-01 14:47:33,594 - INFO - Sent PURGE to Blackpill
+2026-08-01 14:47:33,594 - INFO - Purge command sent directly to Blackpill via USB.
+2026-08-01 14:48:06,393 - INFO - Sent PURGE to Blackpill
+2026-08-01 14:48:06,393 - INFO - Stop Purge command sent directly to Blackpill via USB.
+2026-08-01 14:48:32,670 - INFO - Sent FILL to Blackpill
+2026-08-01 14:48:32,670 - INFO - Fill command sent directly to Blackpill via USB.
+2026-08-01 14:48:53,874 - INFO - Sent FILL to Blackpill
+2026-08-01 14:48:53,874 - INFO - Stop Fill command sent directly to Blackpill via USB.
+2026-08-01 14:49:25,372 - INFO - Sent FILL to Blackpill
+2026-08-01 14:49:25,372 - INFO - Fill command sent directly to Blackpill via USB.
+2026-08-01 14:49:37,167 - INFO - Sent FILL to Blackpill
+2026-08-01 14:49:37,167 - INFO - Stop Fill command sent directly to Blackpill via USB.
+2026-08-01 14:50:37,544 - INFO - Sent PURGE to Blackpill
+2026-08-01 14:50:37,544 - INFO - Purge command sent directly to Blackpill via USB.
+2026-08-01 14:50:48,004 - INFO - Sent PURGE to Blackpill
+2026-08-01 14:50:48,005 - INFO - Stop Purge command sent directly to Blackpill via USB.
+2026-08-01 14:52:58,953 - INFO - Serial communication stopped
+2026-08-01 14:52:58,954 - INFO - COM connection close successfully
+2026-08-01 14:52:58,955 - INFO - Main window close successfully
+2026-08-01 14:52:58,955 - INFO - ==================================================
+2026-08-01 14:52:58,955 - INFO - New session close at 2026-08-01 14:52
+2026-08-01 14:52:58,955 - INFO - ==================================================
