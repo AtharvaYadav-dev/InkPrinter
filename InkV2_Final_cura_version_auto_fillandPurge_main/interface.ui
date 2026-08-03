@@ -5437,7 +5437,7 @@ QComboBox QAbstractItemView {
                          <property name="frameShadow">
                           <enum>QFrame::Shadow::Raised</enum>
                          </property>
-                         <layout class="QHBoxLayout" name="horizontalLayout_51">
+                         <layout class="QHBoxLayout" name="horizontalLayout_51" stretch="0,5">
                           <item>
                            <widget class="QLabel" name="label_26">
                             <property name="maximumSize">
@@ -5463,21 +5463,30 @@ QComboBox QAbstractItemView {
                            </widget>
                           </item>
                           <item>
-                           <widget class="QLineEdit" name="needleguageLineEdit">
+                           <widget class="QComboBox" name="needleguageComboBox">
                             <property name="minimumSize">
                              <size>
                               <width>0</width>
                               <height>40</height>
                              </size>
                             </property>
+                            <property name="maximumSize">
+                             <size>
+                              <width>16777215</width>
+                              <height>60</height>
+                             </size>
+                            </property>
                             <property name="styleSheet">
-                             <string notr="true">QLineEdit {
-    border: 2px solid #102a83;
-    border-radius: 6px;       /* Optional: for rounded corners */
-    padding: 4px;             /* Optional: inner spacing */
-    color: #102a83;           /* Text color inside the line edit */
+                             <string notr="true">QComboBox {
+	background-color: rgb(144, 170, 197);
+    border: 2px solid rgb(16, 42, 131);
 }
-</string>
+
+QComboBox QAbstractItemView {
+	background-color: rgb(144, 170, 197);
+	selection-background-color: #A0D0F0;
+	color: rgb(16, 42, 131);
+}</string>
                             </property>
                            </widget>
                           </item>

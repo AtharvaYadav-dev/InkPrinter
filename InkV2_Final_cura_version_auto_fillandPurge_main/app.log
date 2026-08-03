@@ -3090,3 +3090,45 @@ Failed to generate G-code from DXF.
 2026-08-03 13:05 - INFO - ==================================================
 2026-08-03 13:05 - INFO - New session close at 2026-08-03 13:05
 2026-08-03 13:05 - INFO - ==================================================
+2026-08-03 13:07 - INFO - ==================================================
+2026-08-03 13:07 - INFO - New session START at 2026-08-03 13:07
+2026-08-03 13:07 - INFO - ==================================================
+2026-08-03 13:07 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-03 13:07 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-03 13:07 - INFO - Loaded draw_z from config: Z=43.2, draw_z_UP=21.55
+2026-08-03 13:07 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-03 13:07 - INFO - Updated profile.json: layer_height=0.4, layer_height_0=0.4
+2026-08-03 13:07 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-03 13:07 - INFO - INI file initialized
+2026-08-03 13:07 - INFO - UI load successful
+2026-08-03 13:07 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-03 13:24 - INFO - ==================================================
+2026-08-03 13:24 - INFO - New session START at 2026-08-03 13:24
+2026-08-03 13:24 - INFO - ==================================================
+2026-08-03 13:24 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-03 13:24 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-03 13:24 - INFO - Loaded draw_z from config: Z=43.2, draw_z_UP=21.55
+2026-08-03 13:24 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-03 13:24 - INFO - Updated profile.json: layer_height=0.4, layer_height_0=0.4
+2026-08-03 13:24 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-03 13:24 - INFO - INI file initialized
+2026-08-03 13:24 - INFO - UI load successful
+2026-08-03 13:24 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-03 13:25 - INFO - ==================================================
+2026-08-03 13:25 - INFO - New session START at 2026-08-03 13:25
+2026-08-03 13:25 - INFO - ==================================================
+2026-08-03 13:25 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-03 13:25 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-03 13:25 - INFO - Loaded draw_z from config: Z=43.2, draw_z_UP=21.55
+2026-08-03 13:25 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-03 13:25 - INFO - Updated profile.json: layer_height=0.4, layer_height_0=0.4
+2026-08-03 13:25 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-03 13:25 - INFO - INI file initialized
+2026-08-03 13:25 - INFO - UI load successful
+2026-08-03 13:25 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-03 13:25 - INFO - Serial communication stopped
+2026-08-03 13:25 - INFO - COM connection close successfully
+2026-08-03 13:25 - INFO - Main window close successfully
+2026-08-03 13:25 - INFO - ==================================================
+2026-08-03 13:25 - INFO - New session close at 2026-08-03 13:25
+2026-08-03 13:25 - INFO - ==================================================

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'interfaceqEpOhE.ui'
+## Form generated from reading UI file 'interfacedlxyWy.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.8.1
 ##
@@ -2798,19 +2798,24 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_51.addWidget(self.label_26)
 
-        self.needleguageLineEdit = QLineEdit(self.frame_3)
-        self.needleguageLineEdit.setObjectName(u"needleguageLineEdit")
-        self.needleguageLineEdit.setMinimumSize(QSize(0, 40))
-        self.needleguageLineEdit.setStyleSheet(u"QLineEdit {\n"
-"    border: 2px solid #102a83;\n"
-"    border-radius: 6px;       /* Optional: for rounded corners */\n"
-"    padding: 4px;             /* Optional: inner spacing */\n"
-"    color: #102a83;           /* Text color inside the line edit */\n"
+        self.needleguageComboBox = QComboBox(self.frame_3)
+        self.needleguageComboBox.setObjectName(u"needleguageComboBox")
+        self.needleguageComboBox.setMinimumSize(QSize(0, 40))
+        self.needleguageComboBox.setMaximumSize(QSize(16777215, 60))
+        self.needleguageComboBox.setStyleSheet(u"QComboBox {\n"
+"	background-color: rgb(144, 170, 197);\n"
+"    border: 2px solid rgb(16, 42, 131);\n"
 "}\n"
-"")
+"\n"
+"QComboBox QAbstractItemView {\n"
+"	background-color: rgb(144, 170, 197);\n"
+"	selection-background-color: #A0D0F0;\n"
+"	color: rgb(16, 42, 131);\n"
+"}")
 
-        self.horizontalLayout_51.addWidget(self.needleguageLineEdit)
+        self.horizontalLayout_51.addWidget(self.needleguageComboBox)
 
+        self.horizontalLayout_51.setStretch(1, 5)
 
         self.verticalLayout_28.addWidget(self.frame_3)
 

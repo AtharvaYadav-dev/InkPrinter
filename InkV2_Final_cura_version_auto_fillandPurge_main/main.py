@@ -531,7 +531,7 @@ class MainWindow(QMainWindow):
         self.pgmLine2 = self.findChild(QLineEdit, "pgmfeedLineEdit")
         self.pgmComboBox = self.findChild(QComboBox, "pgmlaserComboBox")
         self.viscositylevComboBox = self.findChild(QComboBox, "viscositylevComboBox")
-        self.needleguageLineEdit = self.findChild(QLineEdit, "needleguageLineEdit")
+        self.needleguageComboBox = self.findChild(QComboBox, "needleguageComboBox")
         self.pgmBtn1 = self.findChild(QPushButton, "pgmfilePushButton")
         self.pgmBtn3 = self.findChild(QPushButton, "pgmfeedPushButton")
         self.pgmBtn4 = self.findChild(QPushButton, "pgmsavePushButton")
@@ -556,12 +556,12 @@ class MainWindow(QMainWindow):
                                    "fill" : self.pgmBtn5,
                                    "purge" : self.pgmBtn6,
                                    self.viscositylevComboBox.objectName() : "viscosity",
-                                   self.needleguageLineEdit.objectName() : "needle",
+                                   self.needleguageComboBox.objectName() : "needle",
                                    "infile" : self.pgmText,
                                    "infeed" : self.pgmLine2,
                                    "inlaser" : self.pgmComboBox,
                                    "inviscosity" : self.viscositylevComboBox,
-                                   "inneedle" : self.needleguageLineEdit
+                                   "inneedle" : self.needleguageComboBox
                                    }
         
         self.programWidget = DictAsClass(self.programWidget_dict)
@@ -778,7 +778,7 @@ class MainWindow(QMainWindow):
         self.pgmBtn5.clicked.connect(lambda: self.programAction(self.pgmBtn5))
         self.pgmBtn6.clicked.connect(lambda: self.programAction(self.pgmBtn6))
         self.viscositylevComboBox.currentTextChanged.connect(lambda: self.programAction(self.viscositylevComboBox))
-        self.needleguageLineEdit.textChanged.connect(lambda: self.programAction(self.needleguageLineEdit))
+        self.needleguageComboBox.currentTextChanged.connect(lambda: self.programAction(self.needleguageComboBox))
         
         # print widgets
         self.printBtn1.clicked.connect(lambda: self.printAction(self.printBtn1))

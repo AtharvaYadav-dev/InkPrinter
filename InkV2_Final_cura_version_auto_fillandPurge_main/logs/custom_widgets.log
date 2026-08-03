@@ -3419,3 +3419,57 @@ Failed to generate G-code from DXF.
 2026-08-03 13:05:37,688 - INFO - ==================================================
 2026-08-03 13:05:37,688 - INFO - New session close at 2026-08-03 13:05
 2026-08-03 13:05:37,689 - INFO - ==================================================
+2026-08-03 13:07:39,846 - DEBUG - OpenGL_accelerate module loaded
+2026-08-03 13:07:39,861 - DEBUG - Using accelerated ArrayDatatype
+2026-08-03 13:07:40,913 - DEBUG - searching for blender in: C:\ProgramData\chocolatey\bin;C:\Program Files\Python313\Lib\site-packages\PySide6;C:\Program Files (x86)\Python313-32\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Python313\Scripts\;C:\Program Files\Git\cmd;C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\bin\Hostx64\x64;C:\WINDOWS\System32\Wbem;C:\Program Files\Git\usr\bin;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;c:\Users\exp\.antigravity-ide\extensions\ms-python.debugpy-2026.6.0-win32-x64\bundled\scripts\noConfigScripts;C:\Users\exp\AppData\Roaming\npm;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Git\mingw64\bin;C:\Users\exp\AppData\Local\Programs\Antigravity IDE\bin;C:\Program Files\IDM Computer Solutions\UltraEdit;C:\Program Files\nodejs\;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Users\exp\AppData\Local\Microsoft\WindowsApps;C:\Program Files\GTK3-Runtime Win64\bin;C:\WINDOWS;C:\Users\exp\AppData\Local\GitHubDesktop\bin;C:\Program Files\WinMerge;C:\Program Files (x86)\Python313-32\Scripts\;C:\Users\exp\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\dotnet\;C:\WINDOWS\system32;C:\Users\exp\.dotnet\tools;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files\Python313\
+2026-08-03 13:07:40,926 - DEBUG - falling back to hashlib hashing: `pip install xxhash`for 50x faster cache checks
+2026-08-03 13:07:42,017 - INFO - ==================================================
+2026-08-03 13:07:42,017 - INFO - New session START at 2026-08-03 13:07
+2026-08-03 13:07:42,017 - INFO - ==================================================
+2026-08-03 13:07:42,018 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-03 13:07:42,018 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-03 13:07:42,019 - INFO - Loaded draw_z from config: Z=43.2, draw_z_UP=21.55
+2026-08-03 13:07:42,019 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-03 13:07:42,020 - INFO - Updated profile.json: layer_height=0.4, layer_height_0=0.4
+2026-08-03 13:07:42,020 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-03 13:07:42,021 - INFO - INI file initialized
+2026-08-03 13:07:42,027 - INFO - UI load successful
+2026-08-03 13:07:42,371 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-03 13:24:27,754 - DEBUG - OpenGL_accelerate module loaded
+2026-08-03 13:24:27,779 - DEBUG - Using accelerated ArrayDatatype
+2026-08-03 13:24:29,390 - DEBUG - searching for blender in: C:\ProgramData\chocolatey\bin;C:\Users\exp\AppData\Local\Programs\Antigravity IDE\bin;C:\Program Files (x86)\Python313-32\Scripts\;C:\Program Files\Python313\Scripts\;C:\Program Files\IDM Computer Solutions\UltraEdit;C:\Program Files\nodejs\;C:\Users\exp\AppData\Roaming\npm;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\Git\usr\bin;C:\WINDOWS\System32\OpenSSH\;C:\Users\exp\AppData\Local\Microsoft\WindowsApps;C:\WINDOWS\System32\Wbem;C:\Program Files\Git\mingw64\bin;C:\Users\exp\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\Git\cmd;C:\Users\exp\AppData\Local\GitHubDesktop\bin;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\bin\Hostx64\x64;C:\Program Files\WinMerge;C:\Program Files\Python313\;c:\Users\exp\.antigravity-ide\extensions\ms-python.debugpy-2026.6.0-win32-x64\bundled\scripts\noConfigScripts;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\dotnet\;C:\Program Files\Python313\Lib\site-packages\PySide6;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Users\exp\.dotnet\tools;C:\Program Files (x86)\Python313-32\;C:\Program Files\GTK3-Runtime Win64\bin
+2026-08-03 13:24:29,408 - DEBUG - falling back to hashlib hashing: `pip install xxhash`for 50x faster cache checks
+2026-08-03 13:24:31,105 - INFO - ==================================================
+2026-08-03 13:24:31,105 - INFO - New session START at 2026-08-03 13:24
+2026-08-03 13:24:31,105 - INFO - ==================================================
+2026-08-03 13:24:31,108 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-03 13:24:31,108 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-03 13:24:31,108 - INFO - Loaded draw_z from config: Z=43.2, draw_z_UP=21.55
+2026-08-03 13:24:31,108 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-03 13:24:31,119 - INFO - Updated profile.json: layer_height=0.4, layer_height_0=0.4
+2026-08-03 13:24:31,120 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-03 13:24:31,120 - INFO - INI file initialized
+2026-08-03 13:24:31,134 - INFO - UI load successful
+2026-08-03 13:24:31,871 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-03 13:25:13,993 - DEBUG - OpenGL_accelerate module loaded
+2026-08-03 13:25:14,009 - DEBUG - Using accelerated ArrayDatatype
+2026-08-03 13:25:15,171 - DEBUG - searching for blender in: C:\Program Files\Git\usr\bin;C:\WINDOWS\System32\Wbem;C:\Program Files\Git\mingw64\bin;C:\ProgramData\chocolatey\bin;c:\Users\exp\.antigravity-ide\extensions\ms-python.debugpy-2026.6.0-win32-x64\bundled\scripts\noConfigScripts;C:\Users\exp\AppData\Local\GitHubDesktop\bin;C:\Program Files\dotnet\;C:\Program Files\Python313\Scripts\;C:\Program Files\Python313\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Users\exp\.dotnet\tools;C:\Users\exp\AppData\Local\Programs\Antigravity IDE\bin;C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\bin\Hostx64\x64;C:\Program Files (x86)\Python313-32\;C:\Program Files\GTK3-Runtime Win64\bin;C:\WINDOWS\system32;C:\Program Files\WinMerge;C:\Program Files\IDM Computer Solutions\UltraEdit;C:\Program Files\nodejs\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Python313\Lib\site-packages\PySide6;C:\Program Files (x86)\Python313-32\Scripts\;C:\Program Files\Git\cmd;C:\Users\exp\AppData\Local\Programs\Microsoft VS Code\bin;C:\WINDOWS\System32\OpenSSH\;C:\Users\exp\AppData\Local\Microsoft\WindowsApps;C:\Users\exp\AppData\Roaming\npm;C:\WINDOWS;C:\WINDOWS\System32\WindowsPowerShell\v1.0\
+2026-08-03 13:25:15,190 - DEBUG - falling back to hashlib hashing: `pip install xxhash`for 50x faster cache checks
+2026-08-03 13:25:16,470 - INFO - ==================================================
+2026-08-03 13:25:16,471 - INFO - New session START at 2026-08-03 13:25
+2026-08-03 13:25:16,471 - INFO - ==================================================
+2026-08-03 13:25:16,472 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-03 13:25:16,472 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-03 13:25:16,472 - INFO - Loaded draw_z from config: Z=43.2, draw_z_UP=21.55
+2026-08-03 13:25:16,472 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-03 13:25:16,475 - INFO - Updated profile.json: layer_height=0.4, layer_height_0=0.4
+2026-08-03 13:25:16,475 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-03 13:25:16,475 - INFO - INI file initialized
+2026-08-03 13:25:16,480 - INFO - UI load successful
+2026-08-03 13:25:16,867 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-03 13:25:36,411 - INFO - Serial communication stopped
+2026-08-03 13:25:36,411 - INFO - COM connection close successfully
+2026-08-03 13:25:36,412 - INFO - Main window close successfully
+2026-08-03 13:25:36,412 - INFO - ==================================================
+2026-08-03 13:25:36,412 - INFO - New session close at 2026-08-03 13:25
+2026-08-03 13:25:36,412 - INFO - ==================================================
