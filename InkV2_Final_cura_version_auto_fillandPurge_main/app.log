@@ -1625,3 +1625,1349 @@ Failed to generate G-code from DXF.
 2026-08-01 14:52 - INFO - ==================================================
 2026-08-01 14:52 - INFO - New session close at 2026-08-01 14:52
 2026-08-01 14:52 - INFO - ==================================================
+2026-08-01 14:56 - INFO - ==================================================
+2026-08-01 14:56 - INFO - New session START at 2026-08-01 14:56
+2026-08-01 14:56 - INFO - ==================================================
+2026-08-01 14:56 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-01 14:56 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-01 14:56 - INFO - Loaded draw_z from config: Z=44.9, draw_z_UP=22.45
+2026-08-01 14:56 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-01 14:56 - INFO - Updated profile.json: layer_height=0.4, layer_height_0=0.4
+2026-08-01 14:56 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-01 14:56 - INFO - INI file initialized
+2026-08-01 14:56 - INFO - UI load successful
+2026-08-01 14:56 - INFO - Com : com, Port : ['COM1', 'COM15', 'COM22'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-01 14:56 - INFO - Do you want to auto connect to COM15 @ 115200
+2026-08-01 14:56 - INFO - Auto Connect dialog button : Ok
+2026-08-01 14:56 - INFO - Serial communication autostarted
+2026-08-01 14:56 - INFO - Com : black_com, Port : ['COM1', 'COM15', 'COM22'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-01 14:56 - CRITICAL - Serial communication started
+2026-08-01 14:57 - INFO - Sent FILL 0.1 to Blackpill
+2026-08-01 14:57 - INFO - Fill command (FILL 0.1) sent to Blackpill.
+2026-08-01 14:57 - INFO - Sent STOP to Blackpill
+2026-08-01 14:57 - INFO - Stop Fill command sent to Blackpill.
+2026-08-01 14:57 - INFO - Sent FILL 0.1 to Blackpill
+2026-08-01 14:57 - INFO - Fill command (FILL 0.1) sent to Blackpill.
+2026-08-01 14:57 - INFO - Sent STOP to Blackpill
+2026-08-01 14:57 - INFO - Stop Fill command sent to Blackpill.
+2026-08-01 14:57 - INFO - Sent FILL 1.0 to Blackpill
+2026-08-01 14:57 - INFO - Fill command (FILL 1.0) sent to Blackpill.
+2026-08-01 14:57 - INFO - Sent STOP to Blackpill
+2026-08-01 14:57 - INFO - Stop Fill command sent to Blackpill.
+2026-08-01 14:57 - INFO - Sent FILL 1.0 to Blackpill
+2026-08-01 14:57 - INFO - Fill command (FILL 1.0) sent to Blackpill.
+2026-08-01 14:57 - INFO - Sent STOP to Blackpill
+2026-08-01 14:57 - INFO - Stop Fill command sent to Blackpill.
+2026-08-01 14:57 - INFO - Sent FILL 1.0 to Blackpill
+2026-08-01 14:57 - INFO - Fill command (FILL 1.0) sent to Blackpill.
+2026-08-01 14:57 - INFO - Sent STOP to Blackpill
+2026-08-01 14:57 - INFO - Stop Fill command sent to Blackpill.
+2026-08-01 14:57 - INFO - Sent FILL 1.0 to Blackpill
+2026-08-01 14:57 - INFO - Fill command (FILL 1.0) sent to Blackpill.
+2026-08-01 14:57 - INFO - Sent STOP to Blackpill
+2026-08-01 14:57 - INFO - Stop Fill command sent to Blackpill.
+2026-08-01 14:57 - INFO - Sent FILL 1.0 to Blackpill
+2026-08-01 14:57 - INFO - Fill command (FILL 1.0) sent to Blackpill.
+2026-08-01 14:57 - INFO - Sent STOP to Blackpill
+2026-08-01 14:57 - INFO - Stop Fill command sent to Blackpill.
+2026-08-01 14:57 - INFO - Sent FILL 1.0 to Blackpill
+2026-08-01 14:57 - INFO - Fill command (FILL 1.0) sent to Blackpill.
+2026-08-01 14:57 - INFO - Sent STOP to Blackpill
+2026-08-01 14:57 - INFO - Stop Fill command sent to Blackpill.
+2026-08-01 14:57 - INFO - Sent FILL 5.0 to Blackpill
+2026-08-01 14:57 - INFO - Fill command (FILL 5.0) sent to Blackpill.
+2026-08-01 14:57 - INFO - Sent STOP to Blackpill
+2026-08-01 14:57 - INFO - Stop Fill command sent to Blackpill.
+2026-08-01 14:57 - INFO - Sent FILL 5.0 to Blackpill
+2026-08-01 14:57 - INFO - Fill command (FILL 5.0) sent to Blackpill.
+2026-08-01 14:57 - INFO - Sent STOP to Blackpill
+2026-08-01 14:57 - INFO - Stop Fill command sent to Blackpill.
+2026-08-01 14:57 - INFO - Sent FILL 5.0 to Blackpill
+2026-08-01 14:57 - INFO - Fill command (FILL 5.0) sent to Blackpill.
+2026-08-01 14:57 - INFO - Sent STOP to Blackpill
+2026-08-01 14:57 - INFO - Stop Fill command sent to Blackpill.
+2026-08-01 14:57 - INFO - Sent FILL 5.0 to Blackpill
+2026-08-01 14:57 - INFO - Fill command (FILL 5.0) sent to Blackpill.
+2026-08-01 14:57 - INFO - Sent STOP to Blackpill
+2026-08-01 14:57 - INFO - Stop Fill command sent to Blackpill.
+2026-08-01 14:57 - INFO - Sent FILL 10.0 to Blackpill
+2026-08-01 14:57 - INFO - Fill command (FILL 10.0) sent to Blackpill.
+2026-08-01 14:57 - INFO - Sent STOP to Blackpill
+2026-08-01 14:57 - INFO - Stop Fill command sent to Blackpill.
+2026-08-01 14:57 - INFO - Sent FILL 10.0 to Blackpill
+2026-08-01 14:57 - INFO - Fill command (FILL 10.0) sent to Blackpill.
+2026-08-01 14:57 - INFO - Sent STOP to Blackpill
+2026-08-01 14:57 - INFO - Stop Fill command sent to Blackpill.
+2026-08-01 14:57 - INFO - Sent FILL 10.0 to Blackpill
+2026-08-01 14:57 - INFO - Fill command (FILL 10.0) sent to Blackpill.
+2026-08-01 14:57 - INFO - Sent STOP to Blackpill
+2026-08-01 14:57 - INFO - Stop Fill command sent to Blackpill.
+2026-08-01 14:57 - INFO - Sent FILL 10.0 to Blackpill
+2026-08-01 14:57 - INFO - Fill command (FILL 10.0) sent to Blackpill.
+2026-08-01 14:57 - INFO - Sent STOP to Blackpill
+2026-08-01 14:57 - INFO - Stop Fill command sent to Blackpill.
+2026-08-01 14:57 - INFO - Sent FILL 10.0 to Blackpill
+2026-08-01 14:57 - INFO - Fill command (FILL 10.0) sent to Blackpill.
+2026-08-01 14:57 - INFO - Sent STOP to Blackpill
+2026-08-01 14:57 - INFO - Stop Fill command sent to Blackpill.
+2026-08-01 14:57 - INFO - Sent FILL 10.0 to Blackpill
+2026-08-01 14:57 - INFO - Fill command (FILL 10.0) sent to Blackpill.
+2026-08-01 14:57 - INFO - Sent STOP to Blackpill
+2026-08-01 14:57 - INFO - Stop Fill command sent to Blackpill.
+2026-08-01 14:57 - INFO - Sent FILL 10.0 to Blackpill
+2026-08-01 14:57 - INFO - Fill command (FILL 10.0) sent to Blackpill.
+2026-08-01 14:57 - INFO - Sent STOP to Blackpill
+2026-08-01 14:57 - INFO - Stop Fill command sent to Blackpill.
+2026-08-01 14:57 - INFO - Sent FILL 10.0 to Blackpill
+2026-08-01 14:57 - INFO - Fill command (FILL 10.0) sent to Blackpill.
+2026-08-01 14:57 - INFO - Sent STOP to Blackpill
+2026-08-01 14:57 - INFO - Stop Fill command sent to Blackpill.
+2026-08-01 14:57 - INFO - Sent FILL 10.0 to Blackpill
+2026-08-01 14:57 - INFO - Fill command (FILL 10.0) sent to Blackpill.
+2026-08-01 14:57 - INFO - Sent STOP to Blackpill
+2026-08-01 14:57 - INFO - Stop Fill command sent to Blackpill.
+2026-08-01 14:57 - INFO - Sent FILL 10.0 to Blackpill
+2026-08-01 14:57 - INFO - Fill command (FILL 10.0) sent to Blackpill.
+2026-08-01 14:57 - INFO - Sent STOP to Blackpill
+2026-08-01 14:57 - INFO - Stop Fill command sent to Blackpill.
+2026-08-01 14:57 - INFO - Sent FILL 10.0 to Blackpill
+2026-08-01 14:57 - INFO - Fill command (FILL 10.0) sent to Blackpill.
+2026-08-01 14:57 - INFO - Sent STOP to Blackpill
+2026-08-01 14:57 - INFO - Stop Fill command sent to Blackpill.
+2026-08-01 14:57 - INFO - Sent FILL 10.0 to Blackpill
+2026-08-01 14:57 - INFO - Fill command (FILL 10.0) sent to Blackpill.
+2026-08-01 14:57 - INFO - Sent STOP to Blackpill
+2026-08-01 14:57 - INFO - Stop Fill command sent to Blackpill.
+2026-08-01 14:58 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-01 14:58 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent STOP to Blackpill
+2026-08-01 14:59 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-01 14:59 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent STOP to Blackpill
+2026-08-01 14:59 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-01 14:59 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent STOP to Blackpill
+2026-08-01 14:59 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-01 14:59 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent STOP to Blackpill
+2026-08-01 14:59 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-01 14:59 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent STOP to Blackpill
+2026-08-01 14:59 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-01 14:59 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent STOP to Blackpill
+2026-08-01 14:59 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-01 14:59 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent STOP to Blackpill
+2026-08-01 14:59 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-01 14:59 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent STOP to Blackpill
+2026-08-01 14:59 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-01 14:59 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent STOP to Blackpill
+2026-08-01 14:59 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-01 14:59 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent STOP to Blackpill
+2026-08-01 14:59 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-01 14:59 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent STOP to Blackpill
+2026-08-01 14:59 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-01 14:59 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent STOP to Blackpill
+2026-08-01 14:59 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-01 14:59 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent STOP to Blackpill
+2026-08-01 14:59 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-01 14:59 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent STOP to Blackpill
+2026-08-01 14:59 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-01 14:59 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent STOP to Blackpill
+2026-08-01 14:59 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-01 14:59 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent STOP to Blackpill
+2026-08-01 14:59 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-01 14:59 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent STOP to Blackpill
+2026-08-01 14:59 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-01 14:59 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent STOP to Blackpill
+2026-08-01 14:59 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-01 14:59 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent STOP to Blackpill
+2026-08-01 14:59 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-01 14:59 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent STOP to Blackpill
+2026-08-01 14:59 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-01 14:59 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent STOP to Blackpill
+2026-08-01 14:59 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-01 14:59 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent STOP to Blackpill
+2026-08-01 14:59 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-01 14:59 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent STOP to Blackpill
+2026-08-01 14:59 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-01 14:59 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent STOP to Blackpill
+2026-08-01 14:59 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-01 14:59 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent STOP to Blackpill
+2026-08-01 14:59 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-01 14:59 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent STOP to Blackpill
+2026-08-01 14:59 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-01 14:59 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent STOP to Blackpill
+2026-08-01 14:59 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-01 14:59 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent STOP to Blackpill
+2026-08-01 14:59 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-01 14:59 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent STOP to Blackpill
+2026-08-01 14:59 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-01 14:59 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent STOP to Blackpill
+2026-08-01 14:59 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-01 14:59 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent STOP to Blackpill
+2026-08-01 14:59 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-01 14:59 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent STOP to Blackpill
+2026-08-01 14:59 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-01 14:59 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent STOP to Blackpill
+2026-08-01 14:59 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-01 14:59 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent STOP to Blackpill
+2026-08-01 14:59 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-01 14:59 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent STOP to Blackpill
+2026-08-01 14:59 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-01 14:59 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent STOP to Blackpill
+2026-08-01 14:59 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-01 14:59 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent STOP to Blackpill
+2026-08-01 14:59 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-01 14:59 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent STOP to Blackpill
+2026-08-01 14:59 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-01 14:59 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent STOP to Blackpill
+2026-08-01 14:59 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-01 14:59 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent STOP to Blackpill
+2026-08-01 14:59 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-01 14:59 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent STOP to Blackpill
+2026-08-01 14:59 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-01 14:59 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent STOP to Blackpill
+2026-08-01 14:59 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-01 14:59 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent STOP to Blackpill
+2026-08-01 14:59 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-01 14:59 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent STOP to Blackpill
+2026-08-01 14:59 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-01 14:59 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent STOP to Blackpill
+2026-08-01 14:59 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-01 14:59 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent STOP to Blackpill
+2026-08-01 14:59 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-01 14:59 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent STOP to Blackpill
+2026-08-01 14:59 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-01 14:59 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent STOP to Blackpill
+2026-08-01 14:59 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-01 14:59 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent STOP to Blackpill
+2026-08-01 14:59 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-01 14:59 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent STOP to Blackpill
+2026-08-01 14:59 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-01 14:59 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent STOP to Blackpill
+2026-08-01 14:59 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-01 14:59 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent STOP to Blackpill
+2026-08-01 14:59 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-01 14:59 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent STOP to Blackpill
+2026-08-01 14:59 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-01 14:59 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent STOP to Blackpill
+2026-08-01 14:59 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-01 14:59 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent STOP to Blackpill
+2026-08-01 14:59 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 14:59 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-01 14:59 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-01 15:00 - INFO - Sent STOP to Blackpill
+2026-08-01 15:00 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 15:01 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-01 15:01 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-01 15:01 - INFO - Sent STOP to Blackpill
+2026-08-01 15:01 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 15:01 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-01 15:01 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-01 15:01 - INFO - Sent STOP to Blackpill
+2026-08-01 15:01 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 15:01 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-01 15:01 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-01 15:01 - INFO - Sent STOP to Blackpill
+2026-08-01 15:01 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 15:01 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-01 15:01 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-01 15:01 - INFO - Sent STOP to Blackpill
+2026-08-01 15:01 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 15:01 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-01 15:01 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-01 15:01 - INFO - Sent STOP to Blackpill
+2026-08-01 15:01 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 15:01 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-01 15:01 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-01 15:01 - INFO - Sent STOP to Blackpill
+2026-08-01 15:01 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 15:01 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-01 15:01 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-01 15:01 - INFO - Sent STOP to Blackpill
+2026-08-01 15:01 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 15:01 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-01 15:01 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-01 15:01 - INFO - Sent STOP to Blackpill
+2026-08-01 15:01 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 15:01 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-01 15:01 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-01 15:01 - INFO - Sent STOP to Blackpill
+2026-08-01 15:01 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 15:01 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-01 15:01 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-01 15:01 - INFO - Sent STOP to Blackpill
+2026-08-01 15:01 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 15:01 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-01 15:01 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-01 15:01 - INFO - Sent STOP to Blackpill
+2026-08-01 15:01 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 15:01 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-01 15:01 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-01 15:01 - INFO - Sent STOP to Blackpill
+2026-08-01 15:01 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 15:01 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-01 15:01 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-01 15:01 - INFO - Sent STOP to Blackpill
+2026-08-01 15:01 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 15:01 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-01 15:01 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-01 15:01 - INFO - Sent STOP to Blackpill
+2026-08-01 15:01 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 15:01 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-01 15:01 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-01 15:01 - INFO - Sent STOP to Blackpill
+2026-08-01 15:01 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 15:01 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-01 15:01 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-01 15:01 - INFO - Sent STOP to Blackpill
+2026-08-01 15:01 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 15:01 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-01 15:01 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-01 15:01 - INFO - Sent STOP to Blackpill
+2026-08-01 15:01 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 15:01 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-01 15:01 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-01 15:01 - INFO - Sent STOP to Blackpill
+2026-08-01 15:01 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 15:01 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-01 15:01 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-01 15:01 - INFO - Sent STOP to Blackpill
+2026-08-01 15:01 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 15:01 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-01 15:01 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-01 15:01 - INFO - Sent STOP to Blackpill
+2026-08-01 15:01 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 15:01 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-01 15:01 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-01 15:01 - INFO - Sent STOP to Blackpill
+2026-08-01 15:01 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 15:01 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-01 15:01 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-01 15:01 - INFO - Sent STOP to Blackpill
+2026-08-01 15:01 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 15:01 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-01 15:01 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-01 15:01 - INFO - Sent STOP to Blackpill
+2026-08-01 15:01 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 15:01 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-01 15:01 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-01 15:01 - INFO - Sent STOP to Blackpill
+2026-08-01 15:01 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 15:01 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-01 15:01 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-01 15:01 - INFO - Sent STOP to Blackpill
+2026-08-01 15:01 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 15:01 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-01 15:01 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-01 15:01 - INFO - Sent STOP to Blackpill
+2026-08-01 15:01 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 15:01 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-01 15:01 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-01 15:01 - INFO - Sent STOP to Blackpill
+2026-08-01 15:01 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 15:01 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-01 15:01 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-01 15:01 - INFO - Sent STOP to Blackpill
+2026-08-01 15:01 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 15:01 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-01 15:01 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-01 15:01 - INFO - Sent STOP to Blackpill
+2026-08-01 15:01 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 15:01 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-01 15:01 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-01 15:01 - INFO - Sent STOP to Blackpill
+2026-08-01 15:01 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 15:01 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-01 15:01 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-01 15:01 - INFO - Sent STOP to Blackpill
+2026-08-01 15:01 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 15:01 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-01 15:01 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-01 15:01 - INFO - Sent STOP to Blackpill
+2026-08-01 15:01 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 15:01 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-01 15:01 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-01 15:01 - INFO - Sent STOP to Blackpill
+2026-08-01 15:01 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 15:01 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-01 15:01 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-01 15:01 - INFO - Sent STOP to Blackpill
+2026-08-01 15:01 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 15:02 - INFO - Sent FILL 10.0 to Blackpill
+2026-08-01 15:02 - INFO - Fill command (FILL 10.0) sent to Blackpill.
+2026-08-01 15:02 - INFO - Sent STOP to Blackpill
+2026-08-01 15:02 - INFO - Stop Fill command sent to Blackpill.
+2026-08-01 15:02 - INFO - Sent FILL 10.0 to Blackpill
+2026-08-01 15:02 - INFO - Fill command (FILL 10.0) sent to Blackpill.
+2026-08-01 15:02 - INFO - Sent STOP to Blackpill
+2026-08-01 15:02 - INFO - Stop Fill command sent to Blackpill.
+2026-08-01 15:02 - INFO - Sent FILL 10.0 to Blackpill
+2026-08-01 15:02 - INFO - Fill command (FILL 10.0) sent to Blackpill.
+2026-08-01 15:02 - INFO - Sent STOP to Blackpill
+2026-08-01 15:02 - INFO - Stop Fill command sent to Blackpill.
+2026-08-01 15:02 - INFO - Sent FILL 10.0 to Blackpill
+2026-08-01 15:02 - INFO - Fill command (FILL 10.0) sent to Blackpill.
+2026-08-01 15:02 - INFO - Sent STOP to Blackpill
+2026-08-01 15:02 - INFO - Stop Fill command sent to Blackpill.
+2026-08-01 15:02 - INFO - Sent FILL 10.0 to Blackpill
+2026-08-01 15:02 - INFO - Fill command (FILL 10.0) sent to Blackpill.
+2026-08-01 15:02 - INFO - Sent STOP to Blackpill
+2026-08-01 15:02 - INFO - Stop Fill command sent to Blackpill.
+2026-08-01 15:02 - INFO - Sent FILL 10.0 to Blackpill
+2026-08-01 15:02 - INFO - Fill command (FILL 10.0) sent to Blackpill.
+2026-08-01 15:02 - INFO - Sent STOP to Blackpill
+2026-08-01 15:02 - INFO - Stop Fill command sent to Blackpill.
+2026-08-01 15:02 - INFO - Sent FILL 10.0 to Blackpill
+2026-08-01 15:02 - INFO - Fill command (FILL 10.0) sent to Blackpill.
+2026-08-01 15:02 - INFO - Sent STOP to Blackpill
+2026-08-01 15:02 - INFO - Stop Fill command sent to Blackpill.
+2026-08-01 15:02 - INFO - Sent FILL 10.0 to Blackpill
+2026-08-01 15:02 - INFO - Fill command (FILL 10.0) sent to Blackpill.
+2026-08-01 15:02 - INFO - Sent STOP to Blackpill
+2026-08-01 15:02 - INFO - Stop Fill command sent to Blackpill.
+2026-08-01 15:02 - INFO - Sent FILL 10.0 to Blackpill
+2026-08-01 15:02 - INFO - Fill command (FILL 10.0) sent to Blackpill.
+2026-08-01 15:02 - INFO - Sent STOP to Blackpill
+2026-08-01 15:02 - INFO - Stop Fill command sent to Blackpill.
+2026-08-01 15:02 - INFO - Sent FILL 10.0 to Blackpill
+2026-08-01 15:02 - INFO - Fill command (FILL 10.0) sent to Blackpill.
+2026-08-01 15:02 - INFO - Sent STOP to Blackpill
+2026-08-01 15:02 - INFO - Stop Fill command sent to Blackpill.
+2026-08-01 15:02 - INFO - Sent FILL 10.0 to Blackpill
+2026-08-01 15:02 - INFO - Fill command (FILL 10.0) sent to Blackpill.
+2026-08-01 15:02 - INFO - Sent STOP to Blackpill
+2026-08-01 15:02 - INFO - Stop Fill command sent to Blackpill.
+2026-08-01 15:02 - INFO - Sent FILL 10.0 to Blackpill
+2026-08-01 15:02 - INFO - Fill command (FILL 10.0) sent to Blackpill.
+2026-08-01 15:02 - INFO - Sent STOP to Blackpill
+2026-08-01 15:02 - INFO - Stop Fill command sent to Blackpill.
+2026-08-01 15:02 - INFO - Sent FILL 10.0 to Blackpill
+2026-08-01 15:02 - INFO - Fill command (FILL 10.0) sent to Blackpill.
+2026-08-01 15:02 - INFO - Sent STOP to Blackpill
+2026-08-01 15:02 - INFO - Stop Fill command sent to Blackpill.
+2026-08-01 15:02 - INFO - Sent FILL 10.0 to Blackpill
+2026-08-01 15:02 - INFO - Fill command (FILL 10.0) sent to Blackpill.
+2026-08-01 15:02 - INFO - Sent STOP to Blackpill
+2026-08-01 15:02 - INFO - Stop Fill command sent to Blackpill.
+2026-08-01 15:02 - INFO - Sent FILL 10.0 to Blackpill
+2026-08-01 15:02 - INFO - Fill command (FILL 10.0) sent to Blackpill.
+2026-08-01 15:02 - INFO - Sent STOP to Blackpill
+2026-08-01 15:02 - INFO - Stop Fill command sent to Blackpill.
+2026-08-01 15:02 - INFO - Sent FILL 10.0 to Blackpill
+2026-08-01 15:02 - INFO - Fill command (FILL 10.0) sent to Blackpill.
+2026-08-01 15:02 - INFO - Sent STOP to Blackpill
+2026-08-01 15:02 - INFO - Stop Fill command sent to Blackpill.
+2026-08-01 15:03 - INFO - Sent FILL 10.0 to Blackpill
+2026-08-01 15:03 - INFO - Fill command (FILL 10.0) sent to Blackpill.
+2026-08-01 15:07 - INFO - Serial communication stopped
+2026-08-01 15:07 - INFO - Do you want to auto connect to COM15 @ 115200
+2026-08-01 15:07 - INFO - Auto Connect dialog button : Ok
+2026-08-01 15:07 - INFO - Serial communication autostarted
+2026-08-01 15:07 - INFO - Serial communication stopped
+2026-08-01 15:07 - CRITICAL - Serial communication started
+2026-08-01 15:07 - INFO - Sent STOP to Blackpill
+2026-08-01 15:07 - INFO - Stop Fill command sent to Blackpill.
+2026-08-01 15:08 - INFO - Serial communication stopped
+2026-08-01 15:08 - INFO - Serial communication stopped
+2026-08-01 15:08 - INFO - COM connection close successfully
+2026-08-01 15:08 - INFO - Main window close successfully
+2026-08-01 15:08 - INFO - ==================================================
+2026-08-01 15:08 - INFO - New session close at 2026-08-01 15:08
+2026-08-01 15:08 - INFO - ==================================================
+2026-08-01 15:08 - INFO - ==================================================
+2026-08-01 15:08 - INFO - New session START at 2026-08-01 15:08
+2026-08-01 15:08 - INFO - ==================================================
+2026-08-01 15:08 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-01 15:08 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-01 15:08 - INFO - Loaded draw_z from config: Z=44.9, draw_z_UP=22.45
+2026-08-01 15:08 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-01 15:08 - INFO - Updated profile.json: layer_height=0.4, layer_height_0=0.4
+2026-08-01 15:08 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-01 15:08 - INFO - INI file initialized
+2026-08-01 15:08 - INFO - UI load successful
+2026-08-01 15:08 - INFO - Com : com, Port : ['COM1', 'COM15', 'COM22'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-01 15:08 - INFO - Do you want to auto connect to COM15 @ 115200
+2026-08-01 15:08 - INFO - Auto Connect dialog button : Ok
+2026-08-01 15:08 - INFO - Serial communication autostarted
+2026-08-01 15:08 - INFO - Com : black_com, Port : ['COM1', 'COM15', 'COM22'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-01 15:08 - CRITICAL - Serial communication started
+2026-08-01 15:08 - INFO - Sent FILL 10.0 to Blackpill
+2026-08-01 15:08 - INFO - Fill command (FILL 10.0) sent to Blackpill.
+2026-08-01 15:09 - INFO - Sent STOP to Blackpill
+2026-08-01 15:09 - INFO - Stop Fill command sent to Blackpill.
+2026-08-01 15:09 - INFO - Sent FILL 1.0 to Blackpill
+2026-08-01 15:09 - INFO - Fill command (FILL 1.0) sent to Blackpill.
+2026-08-01 15:09 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-01 15:09 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-01 15:10 - INFO - Sent STOP to Blackpill
+2026-08-01 15:10 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 15:10 - INFO - Sent PURGE 1.0 to Blackpill
+2026-08-01 15:10 - INFO - Purge command (PURGE 1.0) sent to Blackpill.
+2026-08-01 15:10 - INFO - Sent STOP to Blackpill
+2026-08-01 15:10 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 15:10 - INFO - Sent PURGE 1.0 to Blackpill
+2026-08-01 15:10 - INFO - Purge command (PURGE 1.0) sent to Blackpill.
+2026-08-01 15:10 - INFO - Sent STOP to Blackpill
+2026-08-01 15:10 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 15:10 - INFO - Sent PURGE 1.0 to Blackpill
+2026-08-01 15:10 - INFO - Purge command (PURGE 1.0) sent to Blackpill.
+2026-08-01 15:10 - INFO - Sent STOP to Blackpill
+2026-08-01 15:10 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 15:10 - INFO - Sent PURGE 0.1 to Blackpill
+2026-08-01 15:10 - INFO - Purge command (PURGE 0.1) sent to Blackpill.
+2026-08-01 15:10 - INFO - Sent STOP to Blackpill
+2026-08-01 15:10 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 15:10 - INFO - Sent PURGE 0.1 to Blackpill
+2026-08-01 15:10 - INFO - Purge command (PURGE 0.1) sent to Blackpill.
+2026-08-01 15:10 - INFO - Sent STOP to Blackpill
+2026-08-01 15:10 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 15:10 - INFO - Sent PURGE 0.1 to Blackpill
+2026-08-01 15:10 - INFO - Purge command (PURGE 0.1) sent to Blackpill.
+2026-08-01 15:10 - INFO - Sent STOP to Blackpill
+2026-08-01 15:10 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 15:10 - INFO - Sent PURGE 0.1 to Blackpill
+2026-08-01 15:10 - INFO - Purge command (PURGE 0.1) sent to Blackpill.
+2026-08-01 15:10 - INFO - Sent STOP to Blackpill
+2026-08-01 15:10 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 15:10 - INFO - Sent FILL 1.0 to Blackpill
+2026-08-01 15:10 - INFO - Fill command (FILL 1.0) sent to Blackpill.
+2026-08-01 15:13 - INFO - Sent STOP to Blackpill
+2026-08-01 15:13 - INFO - Stop Fill command sent to Blackpill.
+2026-08-01 15:13 - INFO - Sent FILL 1.0 to Blackpill
+2026-08-01 15:13 - INFO - Fill command (FILL 1.0) sent to Blackpill.
+2026-08-01 15:14 - INFO - Serial communication stopped
+2026-08-01 15:14 - INFO - Do you want to auto connect to COM15 @ 115200
+2026-08-01 15:14 - INFO - Auto Connect dialog button : Ok
+2026-08-01 15:14 - INFO - Serial communication autostarted
+2026-08-01 15:15 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-01 15:15 - INFO - Purge command (PURGE 1.0) sent to Blackpill.
+2026-08-01 15:15 - INFO - Serial communication stopped
+2026-08-01 15:15 - CRITICAL - Serial communication started
+2026-08-01 15:15 - INFO - Sent FILL 1.0 to Blackpill
+2026-08-01 15:15 - INFO - Fill command (FILL 1.0) sent to Blackpill.
+2026-08-01 15:16 - INFO - Sent STOP to Blackpill
+2026-08-01 15:16 - INFO - Stop Fill command sent to Blackpill.
+2026-08-01 15:16 - INFO - Sent FILL 1.0 to Blackpill
+2026-08-01 15:16 - INFO - Fill command (FILL 1.0) sent to Blackpill.
+2026-08-01 15:16 - INFO - Sent STOP to Blackpill
+2026-08-01 15:16 - INFO - Stop Fill command sent to Blackpill.
+2026-08-01 15:17 - INFO - Sent FILL 1.0 to Blackpill
+2026-08-01 15:17 - INFO - Fill command (FILL 1.0) sent to Blackpill.
+2026-08-01 15:17 - INFO - Sent STOP to Blackpill
+2026-08-01 15:17 - INFO - Stop Fill command sent to Blackpill.
+2026-08-01 15:18 - INFO - Serial communication stopped
+2026-08-01 15:18 - INFO - Do you want to auto connect to COM15 @ 115200
+2026-08-01 15:18 - INFO - Auto Connect dialog button : Ok
+2026-08-01 15:18 - INFO - Serial communication autostarted
+2026-08-01 15:19 - INFO - Serial communication stopped
+2026-08-01 15:19 - INFO - Com : black_com, Port : ['COM1', 'COM15', 'COM22'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-01 15:19 - CRITICAL - Serial communication started
+2026-08-01 15:19 - INFO - Sent FILL 1.0 to Blackpill
+2026-08-01 15:19 - INFO - Fill command (FILL 1.0) sent to Blackpill.
+2026-08-01 15:19 - INFO - Sent STOP to Blackpill
+2026-08-01 15:19 - INFO - Stop Fill command sent to Blackpill.
+2026-08-01 15:19 - INFO - Sent FILL 5.0 to Blackpill
+2026-08-01 15:19 - INFO - Fill command (FILL 5.0) sent to Blackpill.
+2026-08-01 15:20 - INFO - Sent STOP to Blackpill
+2026-08-01 15:20 - INFO - Stop Fill command sent to Blackpill.
+2026-08-01 15:20 - INFO - Sent PURGE 5.0 to Blackpill
+2026-08-01 15:20 - INFO - Purge command (PURGE 5.0) sent to Blackpill.
+2026-08-01 15:22 - INFO - Sent STOP to Blackpill
+2026-08-01 15:22 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 15:22 - INFO - Sent PURGE 1.0 to Blackpill
+2026-08-01 15:22 - INFO - Purge command (PURGE 1.0) sent to Blackpill.
+2026-08-01 15:22 - INFO - Sent STOP to Blackpill
+2026-08-01 15:22 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 15:22 - INFO - Sent PURGE 1.0 to Blackpill
+2026-08-01 15:22 - INFO - Purge command (PURGE 1.0) sent to Blackpill.
+2026-08-01 15:22 - INFO - Sent STOP to Blackpill
+2026-08-01 15:22 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 15:22 - INFO - Sent PURGE 1.0 to Blackpill
+2026-08-01 15:22 - INFO - Purge command (PURGE 1.0) sent to Blackpill.
+2026-08-01 15:22 - INFO - Sent STOP to Blackpill
+2026-08-01 15:22 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 15:23 - INFO - Sent FILL 10.0 to Blackpill
+2026-08-01 15:23 - INFO - Fill command (FILL 10.0) sent to Blackpill.
+2026-08-01 15:23 - INFO - Sent STOP to Blackpill
+2026-08-01 15:23 - INFO - Stop Fill command sent to Blackpill.
+2026-08-01 15:25 - INFO - Serial communication stopped
+2026-08-01 15:25 - INFO - Do you want to auto connect to COM15 @ 115200
+2026-08-01 15:25 - INFO - Auto Connect dialog button : Ok
+2026-08-01 15:25 - INFO - Serial communication autostarted
+2026-08-01 15:25 - INFO - Serial communication stopped
+2026-08-01 15:26 - CRITICAL - Serial communication started
+2026-08-01 15:26 - INFO - Sent PURGE 1.0 to Blackpill
+2026-08-01 15:26 - INFO - Purge command (PURGE 1.0) sent to Blackpill.
+2026-08-01 15:27 - INFO - Serial communication stopped
+2026-08-01 15:28 - INFO - Do you want to auto connect to COM15 @ 115200
+2026-08-01 15:28 - INFO - Auto Connect dialog button : Ok
+2026-08-01 15:28 - INFO - Serial communication autostarted
+2026-08-01 15:28 - INFO - Serial communication stopped
+2026-08-01 15:28 - CRITICAL - Serial communication started
+2026-08-01 15:28 - INFO - Serial communication stopped
+2026-08-01 15:28 - CRITICAL - Serial communication started
+2026-08-01 15:28 - INFO - Serial communication stopped
+2026-08-01 15:28 - CRITICAL - Serial communication started
+2026-08-01 15:28 - INFO - Serial communication stopped
+2026-08-01 15:28 - CRITICAL - Serial communication started
+2026-08-01 15:28 - INFO - Sent STOP to Blackpill
+2026-08-01 15:28 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 15:28 - INFO - Sent PURGE 1.0 to Blackpill
+2026-08-01 15:28 - INFO - Purge command (PURGE 1.0) sent to Blackpill.
+2026-08-01 15:29 - INFO - Sent STOP to Blackpill
+2026-08-01 15:29 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 15:29 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-01 15:29 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-01 15:30 - INFO - Serial communication stopped
+2026-08-01 15:31 - INFO - Do you want to auto connect to COM15 @ 115200
+2026-08-01 15:31 - INFO - Auto Connect dialog button : Ok
+2026-08-01 15:31 - INFO - Serial communication autostarted
+2026-08-01 15:31 - INFO - Serial communication stopped
+2026-08-01 15:31 - CRITICAL - Serial communication started
+2026-08-01 15:31 - INFO - Sent STOP to Blackpill
+2026-08-01 15:31 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 15:31 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-01 15:31 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-01 15:32 - INFO - Sent STOP to Blackpill
+2026-08-01 15:32 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 15:32 - INFO - Sent FILL 5.0 to Blackpill
+2026-08-01 15:32 - INFO - Fill command (FILL 5.0) sent to Blackpill.
+2026-08-01 15:32 - INFO - Sent STOP to Blackpill
+2026-08-01 15:32 - INFO - Stop Fill command sent to Blackpill.
+2026-08-01 15:32 - INFO - Sent FILL 10.0 to Blackpill
+2026-08-01 15:32 - INFO - Fill command (FILL 10.0) sent to Blackpill.
+2026-08-01 15:32 - INFO - Sent STOP to Blackpill
+2026-08-01 15:32 - INFO - Stop Fill command sent to Blackpill.
+2026-08-01 15:32 - INFO - Sent FILL 10.0 to Blackpill
+2026-08-01 15:32 - INFO - Fill command (FILL 10.0) sent to Blackpill.
+2026-08-01 15:32 - INFO - Sent STOP to Blackpill
+2026-08-01 15:32 - INFO - Stop Fill command sent to Blackpill.
+2026-08-01 15:32 - INFO - Sent PURGE 5.0 to Blackpill
+2026-08-01 15:32 - INFO - Purge command (PURGE 5.0) sent to Blackpill.
+2026-08-01 15:33 - INFO - File selected: E:/Atharva/InkPrinter/InkV2_Final_cura_version_auto_fillandPurge_main/Test_files/ide2.svg
+2026-08-01 15:33 - INFO - Converting SVG -> G-code directly: E:\Atharva\InkPrinter\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\ide2.svg
+2026-08-01 15:33 - INFO - G-code created: E:\Atharva\InkPrinter\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\ide2.gcode
+2026-08-01 15:33 - INFO - G-code ready from SVG: E:\Atharva\InkPrinter\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\ide2.gcode
+2026-08-01 15:33 - INFO - Raw G-code parsed (1175 lines).
+2026-08-01 15:38 - CRITICAL - Laser 1 : has offset, Xoffset = 0.0, Yoffset = 0.0
+2026-08-01 15:39 - INFO - Sent STOP to Blackpill
+2026-08-01 15:39 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 15:39 - INFO - Sent PURGE 1.0 to Blackpill
+2026-08-01 15:39 - INFO - Purge command (PURGE 1.0) sent to Blackpill.
+2026-08-01 15:39 - INFO - Sent STOP to Blackpill
+2026-08-01 15:39 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 15:39 - INFO - Sent PURGE 1.0 to Blackpill
+2026-08-01 15:39 - INFO - Purge command (PURGE 1.0) sent to Blackpill.
+2026-08-01 15:39 - INFO - Sent STOP to Blackpill
+2026-08-01 15:39 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 15:39 - INFO - Sent PURGE 1.0 to Blackpill
+2026-08-01 15:39 - INFO - Purge command (PURGE 1.0) sent to Blackpill.
+2026-08-01 15:39 - INFO - Sent STOP to Blackpill
+2026-08-01 15:39 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 15:39 - INFO - Sent PURGE 1.0 to Blackpill
+2026-08-01 15:39 - INFO - Purge command (PURGE 1.0) sent to Blackpill.
+2026-08-01 15:39 - INFO - Sent STOP to Blackpill
+2026-08-01 15:39 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 15:39 - INFO - Sent PURGE 1.0 to Blackpill
+2026-08-01 15:39 - INFO - Purge command (PURGE 1.0) sent to Blackpill.
+2026-08-01 15:39 - INFO - Sent STOP to Blackpill
+2026-08-01 15:39 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 15:39 - INFO - Sent PURGE 5.0 to Blackpill
+2026-08-01 15:39 - INFO - Purge command (PURGE 5.0) sent to Blackpill.
+2026-08-01 15:39 - INFO - Sent STOP to Blackpill
+2026-08-01 15:39 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 15:39 - INFO - Sent PURGE 5.0 to Blackpill
+2026-08-01 15:39 - INFO - Purge command (PURGE 5.0) sent to Blackpill.
+2026-08-01 15:39 - INFO - Sent STOP to Blackpill
+2026-08-01 15:39 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 15:39 - INFO - Sent PURGE 5.0 to Blackpill
+2026-08-01 15:39 - INFO - Purge command (PURGE 5.0) sent to Blackpill.
+2026-08-01 15:39 - INFO - Sent STOP to Blackpill
+2026-08-01 15:39 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 15:39 - INFO - Sent PURGE 5.0 to Blackpill
+2026-08-01 15:39 - INFO - Purge command (PURGE 5.0) sent to Blackpill.
+2026-08-01 15:39 - INFO - Sent STOP to Blackpill
+2026-08-01 15:39 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 15:39 - INFO - Sent PURGE 5.0 to Blackpill
+2026-08-01 15:39 - INFO - Purge command (PURGE 5.0) sent to Blackpill.
+2026-08-01 15:39 - INFO - Sent STOP to Blackpill
+2026-08-01 15:39 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 15:39 - INFO - Sent PURGE 5.0 to Blackpill
+2026-08-01 15:39 - INFO - Purge command (PURGE 5.0) sent to Blackpill.
+2026-08-01 15:39 - INFO - Sent STOP to Blackpill
+2026-08-01 15:39 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 15:39 - INFO - Sent PURGE 5.0 to Blackpill
+2026-08-01 15:39 - INFO - Purge command (PURGE 5.0) sent to Blackpill.
+2026-08-01 15:39 - INFO - Sent STOP to Blackpill
+2026-08-01 15:39 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 15:39 - INFO - Sent PURGE 5.0 to Blackpill
+2026-08-01 15:39 - INFO - Purge command (PURGE 5.0) sent to Blackpill.
+2026-08-01 15:39 - INFO - Sent STOP to Blackpill
+2026-08-01 15:39 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 15:39 - INFO - Sent PURGE 5.0 to Blackpill
+2026-08-01 15:39 - INFO - Purge command (PURGE 5.0) sent to Blackpill.
+2026-08-01 15:40 - INFO - Sent STOP to Blackpill
+2026-08-01 15:40 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 15:41 - INFO - Sent FILL 10.0 to Blackpill
+2026-08-01 15:41 - INFO - Fill command (FILL 10.0) sent to Blackpill.
+2026-08-01 15:43 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-01 15:43 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-01 15:43 - INFO - Sent STOP to Blackpill
+2026-08-01 15:43 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 15:43 - INFO - Sent PURGE 1.0 to Blackpill
+2026-08-01 15:43 - INFO - Purge command (PURGE 1.0) sent to Blackpill.
+2026-08-01 15:43 - INFO - Sent STOP to Blackpill
+2026-08-01 15:43 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 15:43 - INFO - Sent PURGE 1.0 to Blackpill
+2026-08-01 15:43 - INFO - Purge command (PURGE 1.0) sent to Blackpill.
+2026-08-01 15:43 - INFO - Sent STOP to Blackpill
+2026-08-01 15:43 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 15:43 - INFO - Sent PURGE 1.0 to Blackpill
+2026-08-01 15:43 - INFO - Purge command (PURGE 1.0) sent to Blackpill.
+2026-08-01 15:43 - INFO - Sent STOP to Blackpill
+2026-08-01 15:43 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 15:43 - INFO - Sent PURGE 1.0 to Blackpill
+2026-08-01 15:43 - INFO - Purge command (PURGE 1.0) sent to Blackpill.
+2026-08-01 15:43 - INFO - Sent STOP to Blackpill
+2026-08-01 15:43 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 15:43 - INFO - Sent PURGE 1.0 to Blackpill
+2026-08-01 15:43 - INFO - Purge command (PURGE 1.0) sent to Blackpill.
+2026-08-01 15:43 - INFO - Sent STOP to Blackpill
+2026-08-01 15:43 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 15:43 - INFO - Sent PURGE 1.0 to Blackpill
+2026-08-01 15:43 - INFO - Purge command (PURGE 1.0) sent to Blackpill.
+2026-08-01 15:43 - INFO - Sent STOP to Blackpill
+2026-08-01 15:43 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 15:43 - INFO - Sent PURGE 1.0 to Blackpill
+2026-08-01 15:43 - INFO - Purge command (PURGE 1.0) sent to Blackpill.
+2026-08-01 15:43 - INFO - Sent STOP to Blackpill
+2026-08-01 15:43 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 15:43 - INFO - Sent PURGE 1.0 to Blackpill
+2026-08-01 15:43 - INFO - Purge command (PURGE 1.0) sent to Blackpill.
+2026-08-01 15:43 - INFO - Sent STOP to Blackpill
+2026-08-01 15:43 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 15:43 - INFO - Sent PURGE 1.0 to Blackpill
+2026-08-01 15:43 - INFO - Purge command (PURGE 1.0) sent to Blackpill.
+2026-08-01 15:43 - INFO - Sent STOP to Blackpill
+2026-08-01 15:43 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 15:43 - INFO - Sent PURGE 1.0 to Blackpill
+2026-08-01 15:43 - INFO - Purge command (PURGE 1.0) sent to Blackpill.
+2026-08-01 15:43 - INFO - Sent STOP to Blackpill
+2026-08-01 15:43 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 15:43 - INFO - Sent PURGE 1.0 to Blackpill
+2026-08-01 15:43 - INFO - Purge command (PURGE 1.0) sent to Blackpill.
+2026-08-01 15:43 - INFO - Sent STOP to Blackpill
+2026-08-01 15:43 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 15:43 - INFO - Sent PURGE 1.0 to Blackpill
+2026-08-01 15:43 - INFO - Purge command (PURGE 1.0) sent to Blackpill.
+2026-08-01 15:43 - INFO - Sent STOP to Blackpill
+2026-08-01 15:43 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 15:43 - INFO - Sent PURGE 1.0 to Blackpill
+2026-08-01 15:43 - INFO - Purge command (PURGE 1.0) sent to Blackpill.
+2026-08-01 15:43 - INFO - Sent STOP to Blackpill
+2026-08-01 15:43 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 15:43 - INFO - Sent PURGE 1.0 to Blackpill
+2026-08-01 15:43 - INFO - Purge command (PURGE 1.0) sent to Blackpill.
+2026-08-01 15:43 - INFO - Sent STOP to Blackpill
+2026-08-01 15:43 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 15:43 - INFO - Sent PURGE 1.0 to Blackpill
+2026-08-01 15:43 - INFO - Purge command (PURGE 1.0) sent to Blackpill.
+2026-08-01 15:43 - INFO - Sent STOP to Blackpill
+2026-08-01 15:43 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 15:43 - INFO - Sent PURGE 1.0 to Blackpill
+2026-08-01 15:43 - INFO - Purge command (PURGE 1.0) sent to Blackpill.
+2026-08-01 15:43 - INFO - Sent STOP to Blackpill
+2026-08-01 15:43 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 15:43 - INFO - Sent PURGE 1.0 to Blackpill
+2026-08-01 15:43 - INFO - Purge command (PURGE 1.0) sent to Blackpill.
+2026-08-01 15:43 - INFO - Sent STOP to Blackpill
+2026-08-01 15:43 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 15:43 - INFO - Sent PURGE 1.0 to Blackpill
+2026-08-01 15:43 - INFO - Purge command (PURGE 1.0) sent to Blackpill.
+2026-08-01 15:43 - INFO - Sent STOP to Blackpill
+2026-08-01 15:43 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 15:43 - INFO - Sent PURGE 1.0 to Blackpill
+2026-08-01 15:43 - INFO - Purge command (PURGE 1.0) sent to Blackpill.
+2026-08-01 15:43 - INFO - Sent STOP to Blackpill
+2026-08-01 15:43 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 15:43 - INFO - Sent PURGE 1.0 to Blackpill
+2026-08-01 15:43 - INFO - Purge command (PURGE 1.0) sent to Blackpill.
+2026-08-01 15:43 - INFO - Sent STOP to Blackpill
+2026-08-01 15:43 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 15:43 - INFO - Sent PURGE 1.0 to Blackpill
+2026-08-01 15:43 - INFO - Purge command (PURGE 1.0) sent to Blackpill.
+2026-08-01 15:43 - INFO - Sent STOP to Blackpill
+2026-08-01 15:43 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 15:43 - INFO - Sent PURGE 1.0 to Blackpill
+2026-08-01 15:43 - INFO - Purge command (PURGE 1.0) sent to Blackpill.
+2026-08-01 15:43 - INFO - Sent STOP to Blackpill
+2026-08-01 15:43 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 15:43 - INFO - Sent PURGE 1.0 to Blackpill
+2026-08-01 15:43 - INFO - Purge command (PURGE 1.0) sent to Blackpill.
+2026-08-01 15:43 - INFO - Sent STOP to Blackpill
+2026-08-01 15:43 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 15:44 - INFO - Sent FILL 10.0 to Blackpill
+2026-08-01 15:44 - INFO - Fill command (FILL 10.0) sent to Blackpill.
+2026-08-01 15:44 - INFO - Sent STOP to Blackpill
+2026-08-01 15:44 - INFO - Stop Fill command sent to Blackpill.
+2026-08-01 15:44 - INFO - Sent FILL 10.0 to Blackpill
+2026-08-01 15:44 - INFO - Fill command (FILL 10.0) sent to Blackpill.
+2026-08-01 15:44 - INFO - Sent STOP to Blackpill
+2026-08-01 15:44 - INFO - Stop Fill command sent to Blackpill.
+2026-08-01 15:44 - INFO - Sent FILL 10.0 to Blackpill
+2026-08-01 15:44 - INFO - Fill command (FILL 10.0) sent to Blackpill.
+2026-08-01 15:44 - INFO - Sent STOP to Blackpill
+2026-08-01 15:44 - INFO - Stop Fill command sent to Blackpill.
+2026-08-01 15:44 - INFO - Sent FILL 10.0 to Blackpill
+2026-08-01 15:44 - INFO - Fill command (FILL 10.0) sent to Blackpill.
+2026-08-01 15:45 - INFO - Sent STOP to Blackpill
+2026-08-01 15:45 - INFO - Stop Fill command sent to Blackpill.
+2026-08-01 15:45 - INFO - Sent FILL 10.0 to Blackpill
+2026-08-01 15:45 - INFO - Fill command (FILL 10.0) sent to Blackpill.
+2026-08-01 15:45 - INFO - Sent STOP to Blackpill
+2026-08-01 15:45 - INFO - Stop Fill command sent to Blackpill.
+2026-08-01 15:45 - INFO - Sent FILL 10.0 to Blackpill
+2026-08-01 15:45 - INFO - Fill command (FILL 10.0) sent to Blackpill.
+2026-08-01 15:45 - INFO - Sent STOP to Blackpill
+2026-08-01 15:45 - INFO - Stop Fill command sent to Blackpill.
+2026-08-01 15:45 - INFO - Sent FILL 10.0 to Blackpill
+2026-08-01 15:45 - INFO - Fill command (FILL 10.0) sent to Blackpill.
+2026-08-01 15:46 - INFO - Sent STOP to Blackpill
+2026-08-01 15:46 - INFO - Stop Fill command sent to Blackpill.
+2026-08-01 15:46 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-01 15:46 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-01 15:48 - INFO - Feedrate: 500.0 mm/min
+2026-08-01 15:48 - INFO - Feedrate: 1500.0 mm/min
+2026-08-01 15:48 - INFO - Normalization shift: X=-249.385, Y=-76.833
+2026-08-01 15:48 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=45.100
+2026-08-01 15:48 - INFO - Final applied shift: X=-249.385, Y=-76.833
+2026-08-01 15:48 - INFO - Print Status : RUN
+2026-08-01 15:50 - INFO - Print Status : PAUSE
+2026-08-01 15:50 - INFO - Print Status : ABORT
+2026-08-01 15:50 - INFO - File selected: E:/Atharva/InkPrinter/InkV2_Final_cura_version_auto_fillandPurge_main/Test_files/ide2.svg
+2026-08-01 15:50 - INFO - Converting SVG -> G-code directly: E:\Atharva\InkPrinter\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\ide2.svg
+2026-08-01 15:50 - INFO - G-code created: E:\Atharva\InkPrinter\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\ide2.gcode
+2026-08-01 15:50 - INFO - G-code ready from SVG: E:\Atharva\InkPrinter\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\ide2.gcode
+2026-08-01 15:50 - INFO - Raw G-code parsed (1175 lines).
+2026-08-01 15:50 - INFO - Feedrate: 1500.0 mm/min
+2026-08-01 15:50 - INFO - Normalization shift: X=-249.385, Y=-76.833
+2026-08-01 15:50 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=45.100
+2026-08-01 15:50 - INFO - Final applied shift: X=-249.385, Y=-76.833
+2026-08-01 15:55 - INFO - Sent STOP to Blackpill
+2026-08-01 15:55 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 15:55 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-01 15:55 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-01 15:56 - INFO - Sent FILL 0.1 to Blackpill
+2026-08-01 15:56 - INFO - Fill command (FILL 0.1) sent to Blackpill.
+2026-08-01 15:56 - INFO - Sent STOP to Blackpill
+2026-08-01 15:56 - INFO - Stop Fill command sent to Blackpill.
+2026-08-01 15:56 - INFO - Sent FILL 0.1 to Blackpill
+2026-08-01 15:56 - INFO - Fill command (FILL 0.1) sent to Blackpill.
+2026-08-01 15:56 - INFO - Sent STOP to Blackpill
+2026-08-01 15:56 - INFO - Stop Fill command sent to Blackpill.
+2026-08-01 15:56 - INFO - Sent PURGE 0.1 to Blackpill
+2026-08-01 15:56 - INFO - Purge command (PURGE 0.1) sent to Blackpill.
+2026-08-01 15:56 - INFO - Sent STOP to Blackpill
+2026-08-01 15:56 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 15:56 - INFO - Sent PURGE 0.1 to Blackpill
+2026-08-01 15:56 - INFO - Purge command (PURGE 0.1) sent to Blackpill.
+2026-08-01 15:56 - INFO - Sent STOP to Blackpill
+2026-08-01 15:56 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 15:56 - INFO - Sent PURGE 0.1 to Blackpill
+2026-08-01 15:56 - INFO - Purge command (PURGE 0.1) sent to Blackpill.
+2026-08-01 15:56 - INFO - Sent STOP to Blackpill
+2026-08-01 15:56 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 15:56 - INFO - Sent PURGE 0.1 to Blackpill
+2026-08-01 15:56 - INFO - Purge command (PURGE 0.1) sent to Blackpill.
+2026-08-01 15:56 - INFO - Sent STOP to Blackpill
+2026-08-01 15:56 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 15:56 - INFO - File selected: E:/Atharva/InkPrinter/InkV2_Final_cura_version_auto_fillandPurge_main/Test_files/ide2.gcode
+2026-08-01 15:56 - INFO - Raw G-code parsed (1175 lines).
+2026-08-01 15:56 - INFO - File selected: E:/Atharva/InkPrinter/InkV2_Final_cura_version_auto_fillandPurge_main/Test_files/ide2.svg
+2026-08-01 15:56 - INFO - Converting SVG -> G-code directly: E:\Atharva\InkPrinter\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\ide2.svg
+2026-08-01 15:56 - INFO - G-code created: E:\Atharva\InkPrinter\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\ide2.gcode
+2026-08-01 15:56 - INFO - G-code ready from SVG: E:\Atharva\InkPrinter\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\ide2.gcode
+2026-08-01 15:56 - INFO - Raw G-code parsed (1175 lines).
+2026-08-01 15:56 - INFO - Feedrate: 1500.0 mm/min
+2026-08-01 15:57 - INFO - Normalization shift: X=-249.385, Y=-76.833
+2026-08-01 15:57 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=44.900
+2026-08-01 15:57 - INFO - Final applied shift: X=-249.385, Y=-76.833
+2026-08-01 15:57 - INFO - Print Status : RUN
+2026-08-01 15:58 - INFO - Print Status : ABORT
+2026-08-01 16:03 - INFO - File selected: E:/Atharva/InkPrinter/InkV2_Final_cura_version_auto_fillandPurge_main/Test_files/ide2.svg
+2026-08-01 16:03 - INFO - Converting SVG -> G-code directly: E:\Atharva\InkPrinter\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\ide2.svg
+2026-08-01 16:03 - INFO - G-code created: E:\Atharva\InkPrinter\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\ide2.gcode
+2026-08-01 16:03 - INFO - G-code ready from SVG: E:\Atharva\InkPrinter\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\ide2.gcode
+2026-08-01 16:03 - INFO - Raw G-code parsed (1175 lines).
+2026-08-01 16:03 - INFO - Feedrate: 1500.0 mm/min
+2026-08-01 16:03 - INFO - Normalization shift: X=-249.385, Y=-76.833
+2026-08-01 16:03 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=43.000
+2026-08-01 16:03 - INFO - Final applied shift: X=-249.385, Y=-76.833
+2026-08-01 16:03 - INFO - Sent PURGE 0.1 to Blackpill
+2026-08-01 16:03 - INFO - Purge command (PURGE 0.1) sent to Blackpill.
+2026-08-01 16:03 - INFO - Sent STOP to Blackpill
+2026-08-01 16:03 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 16:03 - INFO - Sent PURGE 0.1 to Blackpill
+2026-08-01 16:03 - INFO - Purge command (PURGE 0.1) sent to Blackpill.
+2026-08-01 16:03 - INFO - Sent STOP to Blackpill
+2026-08-01 16:03 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 16:03 - INFO - Sent PURGE 0.1 to Blackpill
+2026-08-01 16:03 - INFO - Purge command (PURGE 0.1) sent to Blackpill.
+2026-08-01 16:04 - INFO - Print Status : RUN
+2026-08-01 16:06 - INFO - Print Status : ABORT
+2026-08-01 16:13 - INFO - Sent STOP to Blackpill
+2026-08-01 16:13 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 16:13 - INFO - Sent PURGE 0.1 to Blackpill
+2026-08-01 16:13 - INFO - Purge command (PURGE 0.1) sent to Blackpill.
+2026-08-01 16:13 - INFO - Sent STOP to Blackpill
+2026-08-01 16:13 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 16:13 - INFO - Sent PURGE 0.1 to Blackpill
+2026-08-01 16:13 - INFO - Purge command (PURGE 0.1) sent to Blackpill.
+2026-08-01 16:13 - INFO - Sent STOP to Blackpill
+2026-08-01 16:13 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 16:13 - INFO - Sent PURGE 0.1 to Blackpill
+2026-08-01 16:13 - INFO - Purge command (PURGE 0.1) sent to Blackpill.
+2026-08-01 16:13 - INFO - Sent STOP to Blackpill
+2026-08-01 16:13 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 16:13 - INFO - Sent PURGE 0.1 to Blackpill
+2026-08-01 16:13 - INFO - Purge command (PURGE 0.1) sent to Blackpill.
+2026-08-01 16:13 - INFO - Sent STOP to Blackpill
+2026-08-01 16:13 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 16:13 - INFO - Sent PURGE 0.1 to Blackpill
+2026-08-01 16:13 - INFO - Purge command (PURGE 0.1) sent to Blackpill.
+2026-08-01 16:13 - INFO - Sent STOP to Blackpill
+2026-08-01 16:13 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 16:13 - INFO - Sent PURGE 0.1 to Blackpill
+2026-08-01 16:13 - INFO - Purge command (PURGE 0.1) sent to Blackpill.
+2026-08-01 16:13 - INFO - Sent STOP to Blackpill
+2026-08-01 16:13 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 16:13 - INFO - Sent PURGE 0.1 to Blackpill
+2026-08-01 16:13 - INFO - Purge command (PURGE 0.1) sent to Blackpill.
+2026-08-01 16:13 - INFO - Sent STOP to Blackpill
+2026-08-01 16:13 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 16:13 - INFO - Sent PURGE 0.1 to Blackpill
+2026-08-01 16:13 - INFO - Purge command (PURGE 0.1) sent to Blackpill.
+2026-08-01 16:13 - INFO - Sent STOP to Blackpill
+2026-08-01 16:13 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 16:13 - INFO - Sent PURGE 0.1 to Blackpill
+2026-08-01 16:13 - INFO - Purge command (PURGE 0.1) sent to Blackpill.
+2026-08-01 16:13 - INFO - Sent STOP to Blackpill
+2026-08-01 16:13 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 16:13 - INFO - Sent PURGE 0.1 to Blackpill
+2026-08-01 16:13 - INFO - Purge command (PURGE 0.1) sent to Blackpill.
+2026-08-01 16:13 - INFO - Sent STOP to Blackpill
+2026-08-01 16:13 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 16:13 - INFO - Sent PURGE 0.1 to Blackpill
+2026-08-01 16:13 - INFO - Purge command (PURGE 0.1) sent to Blackpill.
+2026-08-01 16:13 - INFO - Sent STOP to Blackpill
+2026-08-01 16:13 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 16:13 - INFO - Sent PURGE 0.1 to Blackpill
+2026-08-01 16:13 - INFO - Purge command (PURGE 0.1) sent to Blackpill.
+2026-08-01 16:13 - INFO - Sent STOP to Blackpill
+2026-08-01 16:13 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 16:13 - INFO - Sent PURGE 0.1 to Blackpill
+2026-08-01 16:13 - INFO - Purge command (PURGE 0.1) sent to Blackpill.
+2026-08-01 16:13 - INFO - Sent STOP to Blackpill
+2026-08-01 16:13 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 16:13 - INFO - Sent PURGE 0.1 to Blackpill
+2026-08-01 16:13 - INFO - Purge command (PURGE 0.1) sent to Blackpill.
+2026-08-01 16:13 - INFO - Sent STOP to Blackpill
+2026-08-01 16:13 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 16:13 - INFO - Sent PURGE 0.1 to Blackpill
+2026-08-01 16:13 - INFO - Purge command (PURGE 0.1) sent to Blackpill.
+2026-08-01 16:13 - INFO - Sent STOP to Blackpill
+2026-08-01 16:13 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 16:13 - INFO - Sent PURGE 0.1 to Blackpill
+2026-08-01 16:13 - INFO - Purge command (PURGE 0.1) sent to Blackpill.
+2026-08-01 16:13 - INFO - Sent STOP to Blackpill
+2026-08-01 16:13 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 16:13 - INFO - Sent PURGE 0.1 to Blackpill
+2026-08-01 16:13 - INFO - Purge command (PURGE 0.1) sent to Blackpill.
+2026-08-01 16:13 - INFO - Sent STOP to Blackpill
+2026-08-01 16:13 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 16:13 - INFO - Sent PURGE 0.1 to Blackpill
+2026-08-01 16:13 - INFO - Purge command (PURGE 0.1) sent to Blackpill.
+2026-08-01 16:13 - INFO - Sent STOP to Blackpill
+2026-08-01 16:13 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 16:13 - INFO - Sent PURGE 0.1 to Blackpill
+2026-08-01 16:13 - INFO - Purge command (PURGE 0.1) sent to Blackpill.
+2026-08-01 16:13 - INFO - Sent STOP to Blackpill
+2026-08-01 16:13 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 16:13 - INFO - Sent PURGE 0.1 to Blackpill
+2026-08-01 16:13 - INFO - Purge command (PURGE 0.1) sent to Blackpill.
+2026-08-01 16:14 - INFO - Sent STOP to Blackpill
+2026-08-01 16:14 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 16:14 - INFO - Sent PURGE 0.1 to Blackpill
+2026-08-01 16:14 - INFO - Purge command (PURGE 0.1) sent to Blackpill.
+2026-08-01 16:14 - INFO - Sent STOP to Blackpill
+2026-08-01 16:14 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 16:14 - INFO - Sent PURGE 0.1 to Blackpill
+2026-08-01 16:14 - INFO - Purge command (PURGE 0.1) sent to Blackpill.
+2026-08-01 16:14 - INFO - Sent STOP to Blackpill
+2026-08-01 16:14 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 16:14 - INFO - Sent PURGE 5.0 to Blackpill
+2026-08-01 16:14 - INFO - Purge command (PURGE 5.0) sent to Blackpill.
+2026-08-01 16:15 - INFO - Sent STOP to Blackpill
+2026-08-01 16:15 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 16:15 - INFO - Sent PURGE 5.0 to Blackpill
+2026-08-01 16:15 - INFO - Purge command (PURGE 5.0) sent to Blackpill.
+2026-08-01 16:16 - INFO - Sent STOP to Blackpill
+2026-08-01 16:16 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 16:16 - INFO - Sent FILL 10.0 to Blackpill
+2026-08-01 16:16 - INFO - Fill command (FILL 10.0) sent to Blackpill.
+2026-08-01 16:16 - INFO - Sent STOP to Blackpill
+2026-08-01 16:16 - INFO - Stop Fill command sent to Blackpill.
+2026-08-01 16:16 - INFO - Sent FILL 10.0 to Blackpill
+2026-08-01 16:16 - INFO - Fill command (FILL 10.0) sent to Blackpill.
+2026-08-01 16:16 - INFO - Sent STOP to Blackpill
+2026-08-01 16:16 - INFO - Stop Fill command sent to Blackpill.
+2026-08-01 16:16 - INFO - Sent FILL 10.0 to Blackpill
+2026-08-01 16:16 - INFO - Fill command (FILL 10.0) sent to Blackpill.
+2026-08-01 16:17 - INFO - Sent STOP to Blackpill
+2026-08-01 16:17 - INFO - Stop Fill command sent to Blackpill.
+2026-08-01 16:17 - INFO - Sent FILL 10.0 to Blackpill
+2026-08-01 16:17 - INFO - Fill command (FILL 10.0) sent to Blackpill.
+2026-08-01 16:22 - INFO - File selected: E:/Atharva/InkPrinter/InkV2_Final_cura_version_auto_fillandPurge_main/Test_files/ide2.svg
+2026-08-01 16:22 - INFO - Converting SVG -> G-code directly: E:\Atharva\InkPrinter\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\ide2.svg
+2026-08-01 16:22 - INFO - G-code created: E:\Atharva\InkPrinter\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\ide2.gcode
+2026-08-01 16:22 - INFO - G-code ready from SVG: E:\Atharva\InkPrinter\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\ide2.gcode
+2026-08-01 16:22 - INFO - Raw G-code parsed (1175 lines).
+2026-08-01 16:22 - INFO - Feedrate: 1500.0 mm/min
+2026-08-01 16:22 - INFO - Normalization shift: X=-249.385, Y=-76.833
+2026-08-01 16:22 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=42.500
+2026-08-01 16:22 - INFO - Final applied shift: X=-249.385, Y=-76.833
+2026-08-01 16:22 - INFO - Print Status : RUN
+2026-08-01 16:24 - INFO - Print Status : ABORT
+2026-08-01 16:25 - INFO - File selected: E:/Atharva/InkPrinter/InkV2_Final_cura_version_auto_fillandPurge_main/Test_files/ide2.svg
+2026-08-01 16:25 - INFO - Converting SVG -> G-code directly: E:\Atharva\InkPrinter\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\ide2.svg
+2026-08-01 16:25 - INFO - G-code created: E:\Atharva\InkPrinter\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\ide2.gcode
+2026-08-01 16:25 - INFO - G-code ready from SVG: E:\Atharva\InkPrinter\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\ide2.gcode
+2026-08-01 16:25 - INFO - Raw G-code parsed (1175 lines).
+2026-08-01 16:25 - INFO - Feedrate: 1500.0 mm/min
+2026-08-01 16:28 - INFO - Feedrate: 1500.0 mm/min
+2026-08-01 16:31 - INFO - Sent PURGE 0.1 to Blackpill
+2026-08-01 16:31 - INFO - Purge command (PURGE 0.1) sent to Blackpill.
+2026-08-01 16:31 - INFO - Sent STOP to Blackpill
+2026-08-01 16:31 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 16:32 - INFO - Feedrate: 1500.0 mm/min
+2026-08-01 16:32 - INFO - File selected: E:/Atharva/InkPrinter/InkV2_Final_cura_version_auto_fillandPurge_main/Test_files/ide2.svg
+2026-08-01 16:32 - INFO - Converting SVG -> G-code directly: E:\Atharva\InkPrinter\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\ide2.svg
+2026-08-01 16:32 - INFO - G-code created: E:\Atharva\InkPrinter\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\ide2.gcode
+2026-08-01 16:32 - INFO - G-code ready from SVG: E:\Atharva\InkPrinter\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\ide2.gcode
+2026-08-01 16:32 - INFO - Raw G-code parsed (1175 lines).
+2026-08-01 16:32 - INFO - Feedrate: 1500.0 mm/min
+2026-08-01 16:32 - INFO - Normalization shift: X=-249.385, Y=-76.833
+2026-08-01 16:32 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=42.900
+2026-08-01 16:32 - INFO - Final applied shift: X=-249.385, Y=-76.833
+2026-08-01 16:33 - INFO - Print Status : RUN
+2026-08-01 16:34 - INFO - Print Status : ABORT
+2026-08-01 16:36 - INFO - File selected: E:/Atharva/InkPrinter/InkV2_Final_cura_version_auto_fillandPurge_main/Test_files/ide2.svg
+2026-08-01 16:36 - INFO - Converting SVG -> G-code directly: E:\Atharva\InkPrinter\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\ide2.svg
+2026-08-01 16:36 - INFO - G-code created: E:\Atharva\InkPrinter\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\ide2.gcode
+2026-08-01 16:36 - INFO - G-code ready from SVG: E:\Atharva\InkPrinter\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\ide2.gcode
+2026-08-01 16:36 - INFO - Raw G-code parsed (1175 lines).
+2026-08-01 16:36 - INFO - Feedrate: 1500.0 mm/min
+2026-08-01 16:36 - INFO - Normalization shift: X=-249.385, Y=-76.833
+2026-08-01 16:36 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=43.200
+2026-08-01 16:36 - INFO - Final applied shift: X=-249.385, Y=-76.833
+2026-08-01 16:36 - INFO - Print Status : RUN
+2026-08-01 16:38 - INFO - Print Status : ABORT
+2026-08-01 16:42 - INFO - File selected: E:/Atharva/InkPrinter/InkV2_Final_cura_version_auto_fillandPurge_main/Test_files/ide2.svg
+2026-08-01 16:42 - INFO - Converting SVG -> G-code directly: E:\Atharva\InkPrinter\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\ide2.svg
+2026-08-01 16:42 - INFO - G-code created: E:\Atharva\InkPrinter\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\ide2.gcode
+2026-08-01 16:42 - INFO - G-code ready from SVG: E:\Atharva\InkPrinter\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\ide2.gcode
+2026-08-01 16:42 - INFO - Raw G-code parsed (1175 lines).
+2026-08-01 16:42 - INFO - Feedrate: 1500.0 mm/min
+2026-08-01 16:42 - INFO - Normalization shift: X=-249.385, Y=-76.833
+2026-08-01 16:42 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=43.100
+2026-08-01 16:42 - INFO - Final applied shift: X=-249.385, Y=-76.833
+2026-08-01 16:42 - INFO - Print Status : RUN
+2026-08-01 16:43 - INFO - Print Status : ABORT
+2026-08-01 16:44 - INFO - Sent PURGE 0.1 to Blackpill
+2026-08-01 16:44 - INFO - Purge command (PURGE 0.1) sent to Blackpill.
+2026-08-01 16:44 - INFO - Sent STOP to Blackpill
+2026-08-01 16:44 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 16:44 - INFO - Sent PURGE 0.1 to Blackpill
+2026-08-01 16:44 - INFO - Purge command (PURGE 0.1) sent to Blackpill.
+2026-08-01 16:44 - INFO - Sent STOP to Blackpill
+2026-08-01 16:44 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 16:44 - INFO - Sent PURGE 0.1 to Blackpill
+2026-08-01 16:44 - INFO - Purge command (PURGE 0.1) sent to Blackpill.
+2026-08-01 16:44 - INFO - Sent STOP to Blackpill
+2026-08-01 16:44 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 16:44 - INFO - Sent PURGE 0.1 to Blackpill
+2026-08-01 16:44 - INFO - Purge command (PURGE 0.1) sent to Blackpill.
+2026-08-01 16:44 - INFO - Sent STOP to Blackpill
+2026-08-01 16:44 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 16:44 - INFO - Sent PURGE 0.1 to Blackpill
+2026-08-01 16:44 - INFO - Purge command (PURGE 0.1) sent to Blackpill.
+2026-08-01 16:44 - INFO - Sent STOP to Blackpill
+2026-08-01 16:44 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 16:44 - INFO - Sent PURGE 0.1 to Blackpill
+2026-08-01 16:44 - INFO - Purge command (PURGE 0.1) sent to Blackpill.
+2026-08-01 16:44 - INFO - Sent STOP to Blackpill
+2026-08-01 16:44 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 16:44 - INFO - Sent PURGE 0.1 to Blackpill
+2026-08-01 16:44 - INFO - Purge command (PURGE 0.1) sent to Blackpill.
+2026-08-01 16:44 - INFO - Sent STOP to Blackpill
+2026-08-01 16:44 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 16:44 - INFO - Sent PURGE 0.1 to Blackpill
+2026-08-01 16:44 - INFO - Purge command (PURGE 0.1) sent to Blackpill.
+2026-08-01 16:44 - INFO - Sent STOP to Blackpill
+2026-08-01 16:44 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 16:44 - INFO - Sent PURGE 0.1 to Blackpill
+2026-08-01 16:44 - INFO - Purge command (PURGE 0.1) sent to Blackpill.
+2026-08-01 16:44 - INFO - Sent STOP to Blackpill
+2026-08-01 16:44 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 16:44 - INFO - Sent PURGE 0.1 to Blackpill
+2026-08-01 16:44 - INFO - Purge command (PURGE 0.1) sent to Blackpill.
+2026-08-01 16:44 - INFO - Sent STOP to Blackpill
+2026-08-01 16:44 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 16:44 - INFO - Sent PURGE 0.1 to Blackpill
+2026-08-01 16:44 - INFO - Purge command (PURGE 0.1) sent to Blackpill.
+2026-08-01 16:45 - INFO - File selected: E:/Atharva/InkPrinter/InkV2_Final_cura_version_auto_fillandPurge_main/Test_files/ide2.svg
+2026-08-01 16:45 - INFO - Converting SVG -> G-code directly: E:\Atharva\InkPrinter\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\ide2.svg
+2026-08-01 16:45 - INFO - G-code created: E:\Atharva\InkPrinter\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\ide2.gcode
+2026-08-01 16:45 - INFO - G-code ready from SVG: E:\Atharva\InkPrinter\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\ide2.gcode
+2026-08-01 16:45 - INFO - Raw G-code parsed (1175 lines).
+2026-08-01 16:45 - INFO - Feedrate: 1500.0 mm/min
+2026-08-01 16:45 - INFO - Normalization shift: X=-249.385, Y=-76.833
+2026-08-01 16:45 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=43.100
+2026-08-01 16:45 - INFO - Final applied shift: X=-249.385, Y=-76.833
+2026-08-01 16:45 - INFO - Print Status : RUN
+2026-08-01 17:20 - INFO - Sent STOP to Blackpill
+2026-08-01 17:20 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 17:20 - INFO - Sent PURGE 0.1 to Blackpill
+2026-08-01 17:20 - INFO - Purge command (PURGE 0.1) sent to Blackpill.
+2026-08-01 17:20 - INFO - Sent STOP to Blackpill
+2026-08-01 17:20 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 17:20 - INFO - Sent PURGE 0.1 to Blackpill
+2026-08-01 17:20 - INFO - Purge command (PURGE 0.1) sent to Blackpill.
+2026-08-01 17:20 - INFO - Sent STOP to Blackpill
+2026-08-01 17:20 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 17:20 - INFO - Sent PURGE 0.1 to Blackpill
+2026-08-01 17:20 - INFO - Purge command (PURGE 0.1) sent to Blackpill.
+2026-08-01 17:21 - INFO - Sent STOP to Blackpill
+2026-08-01 17:21 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 17:21 - INFO - Print Status : ABORT
+2026-08-01 17:22 - INFO - Serial communication stopped
+2026-08-01 17:22 - INFO - COM connection close successfully
+2026-08-01 17:22 - INFO - Main window close successfully
+2026-08-01 17:22 - INFO - ==================================================
+2026-08-01 17:22 - INFO - New session close at 2026-08-01 17:22
+2026-08-01 17:22 - INFO - ==================================================
+2026-08-01 17:22 - INFO - ==================================================
+2026-08-01 17:22 - INFO - New session START at 2026-08-01 17:22
+2026-08-01 17:22 - INFO - ==================================================
+2026-08-01 17:22 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-01 17:22 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-01 17:22 - INFO - Loaded draw_z from config: Z=43.2, draw_z_UP=21.55
+2026-08-01 17:22 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-01 17:22 - INFO - Updated profile.json: layer_height=0.4, layer_height_0=0.4
+2026-08-01 17:22 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-01 17:22 - INFO - INI file initialized
+2026-08-01 17:22 - INFO - UI load successful
+2026-08-01 17:22 - INFO - Com : com, Port : ['COM1', 'COM15', 'COM22'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-01 17:23 - INFO - Do you want to auto connect to COM15 @ 115200
+2026-08-01 17:23 - INFO - Auto Connect dialog button : Ok
+2026-08-01 17:23 - INFO - Serial communication autostarted
+2026-08-01 17:23 - INFO - Com : black_com, Port : ['COM1', 'COM15', 'COM22'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-01 17:23 - CRITICAL - Serial communication started
+2026-08-01 17:23 - INFO - File selected: E:/Atharva/InkPrinter/InkV2_Final_cura_version_auto_fillandPurge_main/Test_files/ide2.svg
+2026-08-01 17:23 - INFO - Converting SVG -> G-code directly: E:\Atharva\InkPrinter\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\ide2.svg
+2026-08-01 17:23 - INFO - G-code created: E:\Atharva\InkPrinter\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\ide2.gcode
+2026-08-01 17:23 - INFO - G-code ready from SVG: E:\Atharva\InkPrinter\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\ide2.gcode
+2026-08-01 17:23 - INFO - Raw G-code parsed (1175 lines).
+2026-08-01 17:23 - INFO - Feedrate: 500.0 mm/min
+2026-08-01 17:24 - INFO - Feedrate: 1500.0 mm/min
+2026-08-01 17:24 - INFO - Normalization shift: X=-249.385, Y=-76.833
+2026-08-01 17:24 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=43.200
+2026-08-01 17:24 - INFO - Final applied shift: X=-249.385, Y=-76.833
+2026-08-01 17:25 - INFO - Sent PURGE 0.1 to Blackpill
+2026-08-01 17:25 - INFO - Purge command (PURGE 0.1) sent to Blackpill.
+2026-08-01 17:25 - INFO - Sent STOP to Blackpill
+2026-08-01 17:25 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 17:25 - INFO - Sent PURGE 0.1 to Blackpill
+2026-08-01 17:25 - INFO - Purge command (PURGE 0.1) sent to Blackpill.
+2026-08-01 17:25 - INFO - Sent STOP to Blackpill
+2026-08-01 17:25 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 17:25 - INFO - Sent PURGE 0.1 to Blackpill
+2026-08-01 17:25 - INFO - Purge command (PURGE 0.1) sent to Blackpill.
+2026-08-01 17:26 - INFO - Sent STOP to Blackpill
+2026-08-01 17:26 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 17:26 - INFO - Sent PURGE 0.1 to Blackpill
+2026-08-01 17:26 - INFO - Purge command (PURGE 0.1) sent to Blackpill.
+2026-08-01 17:26 - INFO - Sent STOP to Blackpill
+2026-08-01 17:26 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 17:26 - INFO - Sent PURGE 0.1 to Blackpill
+2026-08-01 17:26 - INFO - Purge command (PURGE 0.1) sent to Blackpill.
+2026-08-01 17:26 - INFO - Sent STOP to Blackpill
+2026-08-01 17:26 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 17:26 - INFO - Sent PURGE 5.0 to Blackpill
+2026-08-01 17:26 - INFO - Purge command (PURGE 5.0) sent to Blackpill.
+2026-08-01 17:26 - INFO - Sent STOP to Blackpill
+2026-08-01 17:26 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 17:26 - INFO - Sent PURGE 5.0 to Blackpill
+2026-08-01 17:26 - INFO - Purge command (PURGE 5.0) sent to Blackpill.
+2026-08-01 17:26 - INFO - Sent STOP to Blackpill
+2026-08-01 17:26 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 17:26 - INFO - Sent PURGE 5.0 to Blackpill
+2026-08-01 17:26 - INFO - Purge command (PURGE 5.0) sent to Blackpill.
+2026-08-01 17:26 - INFO - Sent STOP to Blackpill
+2026-08-01 17:26 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 17:26 - INFO - Sent PURGE 5.0 to Blackpill
+2026-08-01 17:26 - INFO - Purge command (PURGE 5.0) sent to Blackpill.
+2026-08-01 17:26 - INFO - Sent STOP to Blackpill
+2026-08-01 17:26 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 17:26 - INFO - Sent PURGE 5.0 to Blackpill
+2026-08-01 17:26 - INFO - Purge command (PURGE 5.0) sent to Blackpill.
+2026-08-01 17:26 - INFO - Sent STOP to Blackpill
+2026-08-01 17:26 - INFO - Stop Purge command sent to Blackpill.
+2026-08-01 17:29 - INFO - Print Status : RUN
+2026-08-01 17:57 - INFO - Print Status : ABORT
+2026-08-01 17:58 - INFO - Serial communication stopped
+2026-08-01 17:58 - INFO - COM connection close successfully
+2026-08-01 17:58 - INFO - Main window close successfully
+2026-08-01 17:58 - INFO - ==================================================
+2026-08-01 17:58 - INFO - New session close at 2026-08-01 17:58
+2026-08-01 17:58 - INFO - ==================================================
+2026-08-03 10:17 - INFO - ==================================================
+2026-08-03 10:17 - INFO - New session START at 2026-08-03 10:17
+2026-08-03 10:17 - INFO - ==================================================
+2026-08-03 10:17 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-03 10:17 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-03 10:17 - INFO - Loaded draw_z from config: Z=43.2, draw_z_UP=21.55
+2026-08-03 10:17 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-03 10:17 - INFO - Updated profile.json: layer_height=0.4, layer_height_0=0.4
+2026-08-03 10:17 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-03 10:17 - INFO - INI file initialized
+2026-08-03 10:17 - INFO - UI load successful
+2026-08-03 10:17 - INFO - Com : com, Port : ['COM1', 'COM15', 'COM22'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-03 10:17 - INFO - Do you want to auto connect to COM15 @ 115200
+2026-08-03 10:17 - INFO - Auto Connect dialog button : Ok
+2026-08-03 10:17 - INFO - Serial communication autostarted
+2026-08-03 10:17 - INFO - Com : black_com, Port : ['COM1', 'COM15', 'COM22'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-03 10:17 - CRITICAL - Serial communication started
+2026-08-03 10:19 - INFO - Sent FILL 1.0 to Blackpill
+2026-08-03 10:19 - INFO - Fill command (FILL 1.0) sent to Blackpill.
+2026-08-03 10:19 - INFO - Sent STOP to Blackpill
+2026-08-03 10:19 - INFO - Stop Fill command sent to Blackpill.
+2026-08-03 10:19 - INFO - Sent FILL 1.0 to Blackpill
+2026-08-03 10:19 - INFO - Fill command (FILL 1.0) sent to Blackpill.
+2026-08-03 10:19 - INFO - Sent STOP to Blackpill
+2026-08-03 10:19 - INFO - Stop Fill command sent to Blackpill.
+2026-08-03 10:19 - INFO - Sent FILL 5.0 to Blackpill
+2026-08-03 10:19 - INFO - Fill command (FILL 5.0) sent to Blackpill.
+2026-08-03 10:19 - INFO - Sent PURGE 5.0 to Blackpill
+2026-08-03 10:19 - INFO - Purge command (PURGE 5.0) sent to Blackpill.
+2026-08-03 10:19 - INFO - Sent STOP to Blackpill
+2026-08-03 10:19 - INFO - Stop Purge command sent to Blackpill.
+2026-08-03 10:19 - INFO - Sent PURGE 5.0 to Blackpill
+2026-08-03 10:19 - INFO - Purge command (PURGE 5.0) sent to Blackpill.
+2026-08-03 10:19 - INFO - Sent STOP to Blackpill
+2026-08-03 10:19 - INFO - Stop Purge command sent to Blackpill.
