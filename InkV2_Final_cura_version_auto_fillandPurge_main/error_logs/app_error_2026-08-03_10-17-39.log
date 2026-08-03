@@ -1,1 +1,23 @@
 2026-08-03 10:17:58 - CRITICAL - util.py:203 - Serial communication started
+2026-08-03 12:09:15 - ERROR - util.py:200 - DXF conversion failed:
+Failed to generate G-code from DXF.
+2026-08-03 12:09:22 - ERROR - util.py:200 - DXF conversion failed:
+Failed to generate G-code from DXF.
+2026-08-03 12:10:31 - ERROR - util.py:200 - Out of Bed Range: Drawing exceeds bed area!
+
+X: 0.00 → 70.00 (Bed: 0.0 → 50.0)
+Y: 0.00 → 49.81 (Bed: 0.0 → 50.0)
+
+Please re-adjust the offsets.
+2026-08-03 12:10:40 - ERROR - util.py:200 - Out of Bed Range: Drawing exceeds bed area!
+
+X: 0.00 → 70.00 (Bed: 0.0 → 50.0)
+Y: 0.00 → 49.81 (Bed: 0.0 → 50.0)
+
+Please re-adjust the offsets.
+2026-08-03 12:11:09 - ERROR - util.py:200 - Out of Bed Range: Drawing exceeds bed area!
+
+X: 0.00 → 60.47 (Bed: 0.0 → 50.0)
+Y: 0.00 → 35.70 (Bed: 0.0 → 50.0)
+
+Please re-adjust the offsets.
