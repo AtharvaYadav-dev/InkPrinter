@@ -700,9 +700,43 @@ class MainWindow(QMainWindow):
         self.profile_list = ["Operator", "Supervisor", "Technician"]
         self.wm.operate(self.profileComboBox, "add", self.profile_list)
         
+        # viscosity and needle gauge combobox update
+        self.viscosity_list = ["Level 1", "Level 2", "Level 3", "Level 4", "Level 5"]
+        self.needle_gauge_list = ["14G", "16G", "18G", "20G", "22G", "24G"]
+        if hasattr(self.ui, 'viscositylevComboBox'):
+            self.ui.viscositylevComboBox.addItems(self.viscosity_list)
+            self.ui.viscositylevComboBox.setCurrentIndex(1) # Default Level 2
+            self.ui.viscositylevComboBox.currentIndexChanged.connect(self.updateCalculations)
+        if hasattr(self.ui, 'needleguageComboBox'):
+            self.ui.needleguageComboBox.addItems(self.needle_gauge_list)
+            self.ui.needleguageComboBox.setCurrentIndex(2) # Default 18G
+            self.ui.needleguageComboBox.currentIndexChanged.connect(self.updateCalculations)
+            
         # self.showStackPage(self.mainStack, self.mainPage_dict, 0)
         self.showMainPage(0)
         self.showStackPage(self.infoStack, self.infoPage_dict, 0)            
+
+    def updateCalculations(self):
+        if not hasattr(self.ui, 'viscositylevComboBox') or not hasattr(self.ui, 'needleguageComboBox'):
+            return
+            
+        visc_idx = self.ui.viscositylevComboBox.currentIndex()
+        gauge_idx = self.ui.needleguageComboBox.currentIndex()
+        
+        # Base feedrate
+        base_feedrate = 500
+        # Viscosity penalty: 50 per level (0 to 4)
+        visc_penalty = visc_idx * 50
+        # Gauge penalty: 20 per gauge step (0 to 5)
+        gauge_penalty = gauge_idx * 20
+        
+        calculated_feedrate = base_feedrate - visc_penalty - gauge_penalty
+        
+        if calculated_feedrate < 50:
+            calculated_feedrate = 50 # Minimum threshold
+            
+        if hasattr(self, 'pgmLine2'):
+            self.pgmLine2.setText(str(calculated_feedrate))
 
     def bindWidgetSignals(self):
         # expand centerMenuContainer
@@ -1645,6 +1679,10 @@ class MainWindow(QMainWindow):
             
         if cmd1 in cmd_dict:
             gcode = f"{cmd_dict.get(cmd1)}"
+            
+            if "home" in cmd1:
+                if hasattr(self, 'blackpill_sercom'):
+                    self.blackpill_sercom.write("HOME\n")
             
             if cmd2:
                 if "home" in cmd1:

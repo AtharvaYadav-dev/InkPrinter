@@ -12,6 +12,7 @@
 #define STEP_PIN    PB10
 #define DIR_PIN     PB2
 #define LED_PIN     PC13
+#define IR_SENSOR_PIN PA0
 
 // Adjust this value according to your stepper driver microstepping and motor
 #define STEPS_PER_MM 100 
@@ -30,6 +31,8 @@ volatile uint32_t pulseCount = 0;
 volatile uint32_t targetPulses = 0;
 
 bool direction = true;      // true = CW (FILL), false = CCW (PURGE)
+
+volatile bool isHoming = false;
 
 /*********************************************************************
  * Timer Interrupt
@@ -67,6 +70,7 @@ void setup()
     pinMode(STEP_PIN, OUTPUT);
     pinMode(DIR_PIN, OUTPUT);
     pinMode(LED_PIN, OUTPUT);
+    pinMode(IR_SENSOR_PIN, INPUT);
 
     digitalWrite(STEP_PIN, LOW);
     digitalWrite(DIR_PIN, LOW);
@@ -88,7 +92,20 @@ void processCommand(String cmd) {
     if (cmd == "STOP") {
         motorRunning = false;
         targetPulses = 0;
+        isHoming = false;
         GPIOB->BSRR = GPIO_BSRR_BR10;
+        return;
+    }
+
+    if (cmd == "HOME") {
+        direction = false;
+        digitalWrite(DIR_PIN, LOW);
+        pulseCount = 0;
+        stepState = false;
+        GPIOB->BSRR = GPIO_BSRR_BR10;
+        targetPulses = 0; // Continuous
+        motorRunning = true;
+        isHoming = true;
         return;
     }
 
@@ -108,6 +125,7 @@ void processCommand(String cmd) {
             targetPulses = 0; // Continuous
         }
         motorRunning = true;
+        isHoming = false;
     } else if (cmd.startsWith("PURGE")) {
         float distance = 0.0;
         if (cmd.length() > 6) {
@@ -124,6 +142,7 @@ void processCommand(String cmd) {
             targetPulses = 0; // Continuous
         }
         motorRunning = true;
+        isHoming = false;
     }
 }
 
@@ -135,7 +154,19 @@ String inputStringUSB = "";
 
 void loop()
 {
+    // Homing check
+    if (isHoming && motorRunning) {
+        if (digitalRead(IR_SENSOR_PIN) == LOW) {
+            motorRunning = false;
+            isHoming = false;
+            GPIOB->BSRR = GPIO_BSRR_BR10;
+            Serial.println("HOMED");
+            Serial1.println("HOMED");
+        }
+    }
+
     // Read from Serial1 (RX/TX pins)
+
     while (Serial1.available()) {
         char inChar = (char)Serial1.read();
         if (inChar == '\n' || inChar == '\r') {
