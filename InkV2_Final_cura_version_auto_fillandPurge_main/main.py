@@ -1680,10 +1680,6 @@ class MainWindow(QMainWindow):
         if cmd1 in cmd_dict:
             gcode = f"{cmd_dict.get(cmd1)}"
             
-            if "home" in cmd1:
-                if hasattr(self, 'blackpill_sercom'):
-                    self.blackpill_sercom.write("HOME\n")
-            
             if cmd2:
                 if "home" in cmd1:
                     gcode += f" {cmd2.upper()}"
