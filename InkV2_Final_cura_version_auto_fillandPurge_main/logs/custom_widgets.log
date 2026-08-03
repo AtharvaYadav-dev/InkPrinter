@@ -3473,3 +3473,86 @@ Failed to generate G-code from DXF.
 2026-08-03 13:25:36,412 - INFO - ==================================================
 2026-08-03 13:25:36,412 - INFO - New session close at 2026-08-03 13:25
 2026-08-03 13:25:36,412 - INFO - ==================================================
+2026-08-03 13:27:13,854 - DEBUG - OpenGL_accelerate module loaded
+2026-08-03 13:27:13,869 - DEBUG - Using accelerated ArrayDatatype
+2026-08-03 13:27:14,814 - DEBUG - searching for blender in: C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\IDM Computer Solutions\UltraEdit;C:\Users\exp\AppData\Roaming\npm;C:\Users\exp\AppData\Local\GitHubDesktop\bin;C:\Users\exp\AppData\Local\Programs\Microsoft VS Code\bin;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\bin\Hostx64\x64;C:\ProgramData\chocolatey\bin;C:\Program Files\WinMerge;C:\Program Files\nodejs\;C:\Program Files (x86)\Python313-32\;C:\Users\exp\.dotnet\tools;C:\Users\exp\AppData\Local\Programs\Antigravity IDE\bin;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Python313\;C:\WINDOWS\System32\Wbem;C:\Program Files\GTK3-Runtime Win64\bin;C:\Program Files (x86)\Python313-32\Scripts\;C:\Program Files\dotnet\;C:\Users\exp\AppData\Local\Microsoft\WindowsApps;c:\Users\exp\.antigravity-ide\extensions\ms-python.debugpy-2026.6.0-win32-x64\bundled\scripts\noConfigScripts;C:\Program Files\Python313\Scripts\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\Python313\Lib\site-packages\PySide6;C:\Program Files\Git\usr\bin;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\WINDOWS;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\cmd;C:\WINDOWS\system32
+2026-08-03 13:27:14,827 - DEBUG - falling back to hashlib hashing: `pip install xxhash`for 50x faster cache checks
+2026-08-03 13:27:15,808 - INFO - ==================================================
+2026-08-03 13:27:15,808 - INFO - New session START at 2026-08-03 13:27
+2026-08-03 13:27:15,808 - INFO - ==================================================
+2026-08-03 13:27:15,809 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-03 13:27:15,809 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-03 13:27:15,809 - INFO - Loaded draw_z from config: Z=43.2, draw_z_UP=21.55
+2026-08-03 13:27:15,809 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-03 13:27:15,810 - INFO - Updated profile.json: layer_height=0.4, layer_height_0=0.4
+2026-08-03 13:27:15,811 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-03 13:27:15,811 - INFO - INI file initialized
+2026-08-03 13:27:15,815 - INFO - UI load successful
+2026-08-03 13:27:16,190 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-03 13:27:28,479 - INFO - Serial communication stopped
+2026-08-03 13:27:28,479 - INFO - COM connection close successfully
+2026-08-03 13:27:28,479 - INFO - Main window close successfully
+2026-08-03 13:27:28,479 - INFO - ==================================================
+2026-08-03 13:27:28,479 - INFO - New session close at 2026-08-03 13:27
+2026-08-03 13:27:28,479 - INFO - ==================================================
+2026-08-03 16:10:32,868 - DEBUG - OpenGL_accelerate module loaded
+2026-08-03 16:10:32,998 - DEBUG - Using accelerated ArrayDatatype
+2026-08-03 16:10:44,186 - DEBUG - searching for blender in: c:\Users\exp\.antigravity-ide\extensions\ms-python.debugpy-2026.6.0-win32-x64\bundled\scripts\noConfigScripts;C:\Program Files\IDM Computer Solutions\UltraEdit;C:\Users\exp\AppData\Local\Programs\Antigravity IDE\bin;C:\Program Files\Python313\;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\WINDOWS\System32\OpenSSH\;C:\Users\exp\AppData\Roaming\npm;C:\Program Files\GTK3-Runtime Win64\bin;C:\Program Files\nodejs\;C:\Program Files\Python313\Lib\site-packages\PySide6;C:\Program Files\Git\mingw64\bin;C:\WINDOWS;C:\Program Files\Python313\Scripts\;C:\Program Files\dotnet\;C:\Program Files\WinMerge;C:\WINDOWS\System32\Wbem;C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\bin\Hostx64\x64;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Users\exp\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Git\usr\bin;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files (x86)\Python313-32\Scripts\;C:\Program Files (x86)\Python313-32\;C:\WINDOWS\system32;C:\Users\exp\AppData\Local\GitHubDesktop\bin;C:\Users\exp\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Users\exp\.dotnet\tools;C:\Program Files\Git\cmd;C:\ProgramData\chocolatey\bin
+2026-08-03 16:10:44,305 - DEBUG - falling back to hashlib hashing: `pip install xxhash`for 50x faster cache checks
+2026-08-03 16:10:52,691 - INFO - ==================================================
+2026-08-03 16:10:52,692 - INFO - New session START at 2026-08-03 16:10
+2026-08-03 16:10:52,692 - INFO - ==================================================
+2026-08-03 16:10:52,702 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-03 16:10:52,702 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-03 16:10:52,702 - INFO - Loaded draw_z from config: Z=43.2, draw_z_UP=21.55
+2026-08-03 16:10:52,702 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-03 16:10:52,704 - INFO - Updated profile.json: layer_height=0.4, layer_height_0=0.4
+2026-08-03 16:10:52,705 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-03 16:10:52,705 - INFO - INI file initialized
+2026-08-03 16:10:52,712 - INFO - UI load successful
+2026-08-03 16:10:53,252 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-03 16:10:58,508 - ERROR - Uncaught exception
+Traceback (most recent call last):
+  File "e:\InkPrinter\InkV2_Final_cura_version_auto_fillandPurge_main\main.py", line 817, in <lambda>
+    self.pgmBtn7.clicked.connect(lambda: self.programAction(self.pgmBtn7))
+                                         ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "e:\InkPrinter\InkV2_Final_cura_version_auto_fillandPurge_main\main.py", line 1739, in programAction
+    self.blackpill_sercom.write("HOME\\n")
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SerialCom' object has no attribute 'write'
+2026-08-03 16:10:59,201 - ERROR - Uncaught exception
+Traceback (most recent call last):
+  File "e:\InkPrinter\InkV2_Final_cura_version_auto_fillandPurge_main\main.py", line 817, in <lambda>
+    self.pgmBtn7.clicked.connect(lambda: self.programAction(self.pgmBtn7))
+                                         ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "e:\InkPrinter\InkV2_Final_cura_version_auto_fillandPurge_main\main.py", line 1739, in programAction
+    self.blackpill_sercom.write("HOME\\n")
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SerialCom' object has no attribute 'write'
+2026-08-03 16:10:59,494 - ERROR - Uncaught exception
+Traceback (most recent call last):
+  File "e:\InkPrinter\InkV2_Final_cura_version_auto_fillandPurge_main\main.py", line 817, in <lambda>
+    self.pgmBtn7.clicked.connect(lambda: self.programAction(self.pgmBtn7))
+                                         ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "e:\InkPrinter\InkV2_Final_cura_version_auto_fillandPurge_main\main.py", line 1739, in programAction
+    self.blackpill_sercom.write("HOME\\n")
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SerialCom' object has no attribute 'write'
+2026-08-03 16:10:59,841 - ERROR - Uncaught exception
+Traceback (most recent call last):
+  File "e:\InkPrinter\InkV2_Final_cura_version_auto_fillandPurge_main\main.py", line 817, in <lambda>
+    self.pgmBtn7.clicked.connect(lambda: self.programAction(self.pgmBtn7))
+                                         ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "e:\InkPrinter\InkV2_Final_cura_version_auto_fillandPurge_main\main.py", line 1739, in programAction
+    self.blackpill_sercom.write("HOME\\n")
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SerialCom' object has no attribute 'write'
+2026-08-03 16:11:00,148 - ERROR - Uncaught exception
+Traceback (most recent call last):
+  File "e:\InkPrinter\InkV2_Final_cura_version_auto_fillandPurge_main\main.py", line 817, in <lambda>
+    self.pgmBtn7.clicked.connect(lambda: self.programAction(self.pgmBtn7))
+                                         ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "e:\InkPrinter\InkV2_Final_cura_version_auto_fillandPurge_main\main.py", line 1739, in programAction
+    self.blackpill_sercom.write("HOME\\n")
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SerialCom' object has no attribute 'write'

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'interfacedlxyWy.ui'
+## Form generated from reading UI file 'interfaceYqhEZj.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.8.1
 ##
@@ -4183,9 +4183,33 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_50.addWidget(self.pgmfillPushButton)
 
-        self.horizontalSpacer_11 = QSpacerItem(174, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
+        self.pgmfillhomePushButton = QPushButton(self.widget_13)
+        self.pgmfillhomePushButton.setObjectName(u"pgmfillhomePushButton")
+        sizePolicy6.setHeightForWidth(self.pgmfillhomePushButton.sizePolicy().hasHeightForWidth())
+        self.pgmfillhomePushButton.setSizePolicy(sizePolicy6)
+        self.pgmfillhomePushButton.setMaximumSize(QSize(350, 60))
+        self.pgmfillhomePushButton.setFont(font2)
+        self.pgmfillhomePushButton.setStyleSheet(u"QPushButton {\n"
+"	color: rgb(255, 255, 255);	\n"
+"	background-color: rgb(16, 42, 131);\n"
+"	border-color: transparent;\n"
+"	border-style: outset;\n"
+"	border-radius: 15px;\n"
+"	border-width: 2px;\n"
+"	padding: 6px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"	color: rgb(16, 42, 131);\n"
+"	background-color: rgb(167, 198, 229);\n"
+"	border-color: rgb(16, 42, 131);\n"
+"}\n"
+"\n"
+"QPushButton:disabled {\n"
+"	background-color: rgb(172, 172, 172);\n"
+"}")
 
-        self.horizontalLayout_50.addItem(self.horizontalSpacer_11)
+        self.horizontalLayout_50.addWidget(self.pgmfillhomePushButton)
 
         self.pgmpurgePushButton = QPushButton(self.widget_13)
         self.pgmpurgePushButton.setObjectName(u"pgmpurgePushButton")
@@ -4345,7 +4369,7 @@ class Ui_MainWindow(object):
 
         self.centerMenuPages.setCurrentIndex(4)
         self.infoSubPages.setCurrentIndex(1)
-        self.mainPages.setCurrentIndex(2)
+        self.mainPages.setCurrentIndex(6)
         self.stackedWidget.setCurrentIndex(1)
 
 
@@ -4554,6 +4578,7 @@ class Ui_MainWindow(object):
         self.travel1_RadioButton_3.setText(QCoreApplication.translate("MainWindow", u"1 mm", None))
         self.travel01_RadioButton.setText(QCoreApplication.translate("MainWindow", u"0.1 mm", None))
         self.pgmfillPushButton.setText(QCoreApplication.translate("MainWindow", u"FILL", None))
+        self.pgmfillhomePushButton.setText(QCoreApplication.translate("MainWindow", u"F HOME", None))
         self.pgmpurgePushButton.setText(QCoreApplication.translate("MainWindow", u"PURGE", None))
         self.notifyLabel.setText(QCoreApplication.translate("MainWindow", u"Notification", None))
         self.notifyTextEdit.setHtml(QCoreApplication.translate("MainWindow", u"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
