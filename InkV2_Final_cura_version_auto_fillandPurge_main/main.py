@@ -1732,7 +1732,7 @@ class MainWindow(QMainWindow):
 
         elif self.util.checkSubString(wobj, "fillhome"):
             if hasattr(self, 'blackpill_sercom'):
-                self.blackpill_sercom.write("HOME\n")
+                self.blackpill_sercom.send("HOME\n")
 
         elif self.util.checkSubString(wobj, "fill"):
             self._handle_fill()

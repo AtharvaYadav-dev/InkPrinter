@@ -33,6 +33,7 @@ volatile uint32_t targetPulses = 0;
 bool direction = true;      // true = CW (FILL), false = CCW (PURGE)
 
 volatile bool isHoming = false;
+int initialIRState = 0;
 
 /*********************************************************************
  * Timer Interrupt
@@ -70,7 +71,7 @@ void setup()
     pinMode(STEP_PIN, OUTPUT);
     pinMode(DIR_PIN, OUTPUT);
     pinMode(LED_PIN, OUTPUT);
-    pinMode(IR_SENSOR_PIN, INPUT);
+    pinMode(IR_SENSOR_PIN, INPUT_PULLUP);
 
     digitalWrite(STEP_PIN, LOW);
     digitalWrite(DIR_PIN, LOW);
@@ -98,14 +99,15 @@ void processCommand(String cmd) {
     }
 
     if (cmd == "HOME") {
-        direction = false;
-        digitalWrite(DIR_PIN, LOW);
+        direction = true;
+        digitalWrite(DIR_PIN, HIGH);
         pulseCount = 0;
         stepState = false;
         GPIOB->BSRR = GPIO_BSRR_BR10;
         targetPulses = 0; // Continuous
         motorRunning = true;
         isHoming = true;
+        initialIRState = digitalRead(IR_SENSOR_PIN);
         return;
     }
 
@@ -156,7 +158,7 @@ void loop()
 {
     // Homing check
     if (isHoming && motorRunning) {
-        if (digitalRead(IR_SENSOR_PIN) == LOW) {
+        if (digitalRead(IR_SENSOR_PIN) != initialIRState) {
             motorRunning = false;
             isHoming = false;
             GPIOB->BSRR = GPIO_BSRR_BR10;
