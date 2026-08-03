@@ -3258,3 +3258,164 @@ Failed to generate G-code from DXF.
 2026-08-03 10:19:44,436 - INFO - Purge command (PURGE 5.0) sent to Blackpill.
 2026-08-03 10:19:50,359 - INFO - Sent STOP to Blackpill
 2026-08-03 10:19:50,359 - INFO - Stop Purge command sent to Blackpill.
+2026-08-03 12:11:07,863 - DEBUG - OpenGL_accelerate module loaded
+2026-08-03 12:11:08,065 - DEBUG - Using accelerated ArrayDatatype
+2026-08-03 12:11:26,023 - DEBUG - searching for blender in: C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Users\exp\AppData\Local\Programs\Antigravity IDE\bin;C:\Users\exp\.dotnet\tools;C:\Program Files (x86)\Python313-32\;C:\Users\exp\AppData\Local\GitHubDesktop\bin;C:\Users\exp\AppData\Roaming\npm;C:\Program Files\Git\cmd;C:\Program Files\IDM Computer Solutions\UltraEdit;C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\bin\Hostx64\x64;C:\Program Files (x86)\Python313-32\Scripts\;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Users\exp\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\Python313\Scripts\;C:\ProgramData\chocolatey\bin;C:\Program Files\nodejs\;C:\Program Files\Python313\Lib\site-packages\PySide6;C:\Program Files\GTK3-Runtime Win64\bin;C:\Program Files\Git\usr\bin;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\mingw64\bin;C:\Program Files\dotnet\;C:\Program Files\WinMerge;C:\Program Files\Python313\;C:\WINDOWS\system32;C:\WINDOWS;C:\Users\exp\AppData\Local\Microsoft\WindowsApps
+2026-08-03 12:11:26,128 - DEBUG - falling back to hashlib hashing: `pip install xxhash`for 50x faster cache checks
+2026-08-03 12:33:32,696 - DEBUG - OpenGL_accelerate module loaded
+2026-08-03 12:33:32,728 - DEBUG - Using accelerated ArrayDatatype
+2026-08-03 12:33:34,814 - DEBUG - searching for blender in: C:\Users\exp\AppData\Local\Microsoft\WindowsApps;c:\Users\exp\.antigravity-ide\extensions\ms-python.debugpy-2026.6.0-win32-x64\bundled\scripts\noConfigScripts;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Users\exp\AppData\Local\GitHubDesktop\bin;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\Git\mingw64\bin;C:\Users\exp\.dotnet\tools;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Python313\;C:\Program Files\dotnet\;C:\Program Files\nodejs\;C:\Program Files\Git\usr\bin;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Python313-32\;C:\Users\exp\AppData\Local\Programs\Antigravity IDE\bin;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Python313-32\Scripts\;C:\Program Files\Git\cmd;C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\bin\Hostx64\x64;C:\Program Files\IDM Computer Solutions\UltraEdit;C:\WINDOWS\System32\OpenSSH\;C:\Users\exp\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\WinMerge;C:\WINDOWS\system32;C:\Program Files\Python313\Scripts\;C:\WINDOWS\System32\Wbem;C:\Program Files\Python313\Lib\site-packages\PySide6;C:\Program Files\GTK3-Runtime Win64\bin;C:\Users\exp\AppData\Roaming\npm
+2026-08-03 12:33:34,845 - DEBUG - falling back to hashlib hashing: `pip install xxhash`for 50x faster cache checks
+2026-08-03 12:33:57,180 - DEBUG - OpenGL_accelerate module loaded
+2026-08-03 12:33:57,194 - DEBUG - Using accelerated ArrayDatatype
+2026-08-03 12:33:58,094 - DEBUG - searching for blender in: C:\ProgramData\chocolatey\bin;C:\WINDOWS;C:\Users\exp\AppData\Local\GitHubDesktop\bin;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\IDM Computer Solutions\UltraEdit;C:\Program Files\Git\mingw64\bin;C:\Program Files (x86)\Python313-32\Scripts\;C:\Program Files\WinMerge;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Python313-32\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\GTK3-Runtime Win64\bin;C:\Program Files\Git\usr\bin;C:\WINDOWS\system32;c:\Users\exp\.antigravity-ide\extensions\ms-python.debugpy-2026.6.0-win32-x64\bundled\scripts\noConfigScripts;C:\Program Files\Python313\Scripts\;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files\Python313\Lib\site-packages\PySide6;C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\bin\Hostx64\x64;C:\Users\exp\AppData\Roaming\npm;C:\Users\exp\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\exp\AppData\Local\Programs\Antigravity IDE\bin;C:\WINDOWS\System32\Wbem;C:\Program Files\nodejs\;C:\Program Files\Python313\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\dotnet\;C:\Users\exp\.dotnet\tools;C:\Users\exp\AppData\Local\Microsoft\WindowsApps
+2026-08-03 12:33:58,107 - DEBUG - falling back to hashlib hashing: `pip install xxhash`for 50x faster cache checks
+2026-08-03 12:35:07,845 - DEBUG - OpenGL_accelerate module loaded
+2026-08-03 12:35:07,866 - DEBUG - Using accelerated ArrayDatatype
+2026-08-03 12:35:09,901 - DEBUG - searching for blender in: C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\dotnet\;C:\Program Files\WinMerge;C:\Program Files\Git\mingw64\bin;C:\Users\exp\AppData\Roaming\npm;C:\Program Files\IDM Computer Solutions\UltraEdit;C:\Program Files\Git\usr\bin;C:\WINDOWS;C:/Users/exp/.gemini/antigravity-ide/bin;C:\Users\exp\AppData\Local\Microsoft\WindowsApps;C:\WINDOWS\System32\Wbem;C:\WINDOWS\system32;C:\Users\exp\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files (x86)\Python313-32\Scripts\;C:\Program Files\Git\cmd;C:\Program Files\Python313\Scripts\;C:\Program Files\nodejs\;C:\Program Files\GTK3-Runtime Win64\bin;C:\Users\exp\AppData\Local\GitHubDesktop\bin;C:\WINDOWS\System32\OpenSSH\;C:\Users\exp\.dotnet\tools;C:\Users\exp\AppData\Local\Programs\Antigravity IDE\bin;C:\Program Files\Python313\;C:\Program Files (x86)\Python313-32\;C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\bin\Hostx64\x64;C:\Program Files\Python313\Lib\site-packages\PySide6;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\chocolatey\bin
+2026-08-03 12:35:09,935 - DEBUG - falling back to hashlib hashing: `pip install xxhash`for 50x faster cache checks
+2026-08-03 12:35:12,650 - INFO - ==================================================
+2026-08-03 12:35:12,650 - INFO - New session START at 2026-08-03 12:35
+2026-08-03 12:35:12,651 - INFO - ==================================================
+2026-08-03 12:35:12,652 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-03 12:35:12,652 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-03 12:35:12,653 - INFO - Loaded draw_z from config: Z=43.2, draw_z_UP=21.55
+2026-08-03 12:35:12,653 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-03 12:35:12,655 - INFO - Updated profile.json: layer_height=0.4, layer_height_0=0.4
+2026-08-03 12:35:12,655 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-03 12:35:12,656 - INFO - INI file initialized
+2026-08-03 12:35:12,666 - INFO - UI load successful
+2026-08-03 12:35:13,268 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-03 12:36:29,888 - DEBUG - OpenGL_accelerate module loaded
+2026-08-03 12:36:29,903 - DEBUG - Using accelerated ArrayDatatype
+2026-08-03 12:36:30,988 - DEBUG - searching for blender in: C:\Program Files\nodejs\;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Python313\;C:\Program Files\dotnet\;C:\Program Files\Python313\Lib\site-packages\PySide6;C:\Program Files\Python313\Scripts\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Python313-32\Scripts\;C:\Program Files\IDM Computer Solutions\UltraEdit;C:\Program Files\Git\mingw64\bin;C:\Users\exp\AppData\Local\Programs\Antigravity IDE\bin;C:\Users\exp\AppData\Local\GitHubDesktop\bin;C:\Program Files\Git\usr\bin;C:\Program Files (x86)\Python313-32\;C:\Users\exp\AppData\Roaming\npm;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;c:\Users\exp\.antigravity-ide\extensions\ms-python.debugpy-2026.6.0-win32-x64\bundled\scripts\noConfigScripts;C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\bin\Hostx64\x64;C:\WINDOWS\System32\Wbem;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Users\exp\AppData\Local\Microsoft\WindowsApps;C:\Users\exp\AppData\Local\Programs\Microsoft VS Code\bin;C:\WINDOWS\system32;C:\Users\exp\.dotnet\tools;C:\WINDOWS\System32\OpenSSH\;C:\WINDOWS;C:\Program Files\WinMerge;C:\Program Files\Git\cmd;C:\Program Files\GTK3-Runtime Win64\bin
+2026-08-03 12:36:31,002 - DEBUG - falling back to hashlib hashing: `pip install xxhash`for 50x faster cache checks
+2026-08-03 12:36:31,966 - INFO - ==================================================
+2026-08-03 12:36:31,966 - INFO - New session START at 2026-08-03 12:36
+2026-08-03 12:36:31,966 - INFO - ==================================================
+2026-08-03 12:36:31,968 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-03 12:36:31,968 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-03 12:36:31,968 - INFO - Loaded draw_z from config: Z=43.2, draw_z_UP=21.55
+2026-08-03 12:36:31,968 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-03 12:36:31,971 - INFO - Updated profile.json: layer_height=0.4, layer_height_0=0.4
+2026-08-03 12:36:31,971 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-03 12:36:31,971 - INFO - INI file initialized
+2026-08-03 12:36:31,976 - INFO - UI load successful
+2026-08-03 12:36:32,345 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-03 12:36:46,333 - INFO - Serial communication stopped
+2026-08-03 12:36:46,334 - INFO - COM connection close successfully
+2026-08-03 12:36:46,334 - INFO - Main window close successfully
+2026-08-03 12:36:46,334 - INFO - ==================================================
+2026-08-03 12:36:46,334 - INFO - New session close at 2026-08-03 12:36
+2026-08-03 12:36:46,335 - INFO - ==================================================
+2026-08-03 12:38:53,941 - DEBUG - OpenGL_accelerate module loaded
+2026-08-03 12:38:53,954 - DEBUG - Using accelerated ArrayDatatype
+2026-08-03 12:38:54,938 - DEBUG - searching for blender in: C:\Users\exp\AppData\Local\Programs\Antigravity IDE\bin;C:\Users\exp\.dotnet\tools;C:\WINDOWS\System32\OpenSSH\;C:\WINDOWS\System32\Wbem;C:\Users\exp\AppData\Local\GitHubDesktop\bin;C:\Program Files\IDM Computer Solutions\UltraEdit;C:\Program Files\Git\mingw64\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\WinMerge;c:\Users\exp\.antigravity-ide\extensions\ms-python.debugpy-2026.6.0-win32-x64\bundled\scripts\noConfigScripts;C:\Program Files\Python313\Scripts\;C:\WINDOWS;C:\Program Files (x86)\Python313-32\;C:\Users\exp\AppData\Roaming\npm;C:\Users\exp\AppData\Local\Microsoft\WindowsApps;C:\Program Files\dotnet\;C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\bin\Hostx64\x64;C:\Program Files (x86)\Python313-32\Scripts\;C:\Program Files\Git\usr\bin;C:\WINDOWS\system32;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\Python313\;C:\Program Files\Git\cmd;C:\Program Files\GTK3-Runtime Win64\bin;C:\Program Files\Python313\Lib\site-packages\PySide6;C:\Users\exp\AppData\Local\Programs\Microsoft VS Code\bin;C:\ProgramData\chocolatey\bin
+2026-08-03 12:38:54,951 - DEBUG - falling back to hashlib hashing: `pip install xxhash`for 50x faster cache checks
+2026-08-03 12:38:55,930 - INFO - ==================================================
+2026-08-03 12:38:55,930 - INFO - New session START at 2026-08-03 12:38
+2026-08-03 12:38:55,930 - INFO - ==================================================
+2026-08-03 12:38:55,931 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-03 12:38:55,931 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-03 12:38:55,931 - INFO - Loaded draw_z from config: Z=43.2, draw_z_UP=21.55
+2026-08-03 12:38:55,931 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-03 12:38:55,933 - INFO - Updated profile.json: layer_height=0.4, layer_height_0=0.4
+2026-08-03 12:38:55,933 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-03 12:38:55,934 - INFO - INI file initialized
+2026-08-03 12:38:55,938 - INFO - UI load successful
+2026-08-03 12:38:56,285 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-03 12:39:21,205 - INFO - Serial communication stopped
+2026-08-03 12:39:21,206 - INFO - COM connection close successfully
+2026-08-03 12:39:21,206 - INFO - Main window close successfully
+2026-08-03 12:39:21,206 - INFO - ==================================================
+2026-08-03 12:39:21,206 - INFO - New session close at 2026-08-03 12:39
+2026-08-03 12:39:21,206 - INFO - ==================================================
+2026-08-03 12:39:46,957 - DEBUG - OpenGL_accelerate module loaded
+2026-08-03 12:39:46,984 - DEBUG - Using accelerated ArrayDatatype
+2026-08-03 12:39:48,278 - DEBUG - searching for blender in: C:\Users\exp\AppData\Local\Programs\Antigravity IDE\bin;C:\ProgramData\chocolatey\bin;C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\bin\Hostx64\x64;C:\WINDOWS\System32\Wbem;C:\Program Files\Git\cmd;C:\Program Files\WinMerge;C:\Program Files\GTK3-Runtime Win64\bin;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\Git\usr\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Users\exp\.dotnet\tools;C:\Program Files\Python313\Lib\site-packages\PySide6;C:\Program Files (x86)\Python313-32\Scripts\;C:\Program Files (x86)\Python313-32\;C:\Users\exp\AppData\Roaming\npm;C:\Users\exp\AppData\Local\Microsoft\WindowsApps;C:\Program Files\nodejs\;C:\Users\exp\AppData\Local\GitHubDesktop\bin;C:\Users\exp\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\IDM Computer Solutions\UltraEdit;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\dotnet\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Python313\;c:\Users\exp\.antigravity-ide\extensions\ms-python.debugpy-2026.6.0-win32-x64\bundled\scripts\noConfigScripts;C:\Program Files\Python313\Scripts\;C:\Program Files\Git\mingw64\bin;C:\Program Files (x86)\Common Files\Oracle\Java\java8path
+2026-08-03 12:39:48,293 - DEBUG - falling back to hashlib hashing: `pip install xxhash`for 50x faster cache checks
+2026-08-03 12:39:49,757 - INFO - ==================================================
+2026-08-03 12:39:49,758 - INFO - New session START at 2026-08-03 12:39
+2026-08-03 12:39:49,758 - INFO - ==================================================
+2026-08-03 12:39:49,759 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-03 12:39:49,760 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-03 12:39:49,760 - INFO - Loaded draw_z from config: Z=43.2, draw_z_UP=21.55
+2026-08-03 12:39:49,761 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-03 12:39:49,767 - INFO - Updated profile.json: layer_height=0.4, layer_height_0=0.4
+2026-08-03 12:39:49,768 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-03 12:39:49,769 - INFO - INI file initialized
+2026-08-03 12:39:49,781 - INFO - UI load successful
+2026-08-03 12:39:50,385 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-03 12:40:11,464 - INFO - Serial communication stopped
+2026-08-03 12:40:11,464 - INFO - COM connection close successfully
+2026-08-03 12:40:11,464 - INFO - Main window close successfully
+2026-08-03 12:40:11,464 - INFO - ==================================================
+2026-08-03 12:40:11,464 - INFO - New session close at 2026-08-03 12:40
+2026-08-03 12:40:11,464 - INFO - ==================================================
+2026-08-03 12:41:27,594 - DEBUG - OpenGL_accelerate module loaded
+2026-08-03 12:41:27,607 - DEBUG - Using accelerated ArrayDatatype
+2026-08-03 12:41:28,612 - DEBUG - searching for blender in: C:\WINDOWS\system32;c:\Users\exp\.antigravity-ide\extensions\ms-python.debugpy-2026.6.0-win32-x64\bundled\scripts\noConfigScripts;C:\Users\exp\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\exp\.dotnet\tools;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\IDM Computer Solutions\UltraEdit;C:\ProgramData\chocolatey\bin;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\Program Files\Git\usr\bin;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files (x86)\Python313-32\;C:\Program Files (x86)\Python313-32\Scripts\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\GTK3-Runtime Win64\bin;C:\Program Files\Python313\;C:\Program Files\dotnet\;C:\Users\exp\AppData\Local\GitHubDesktop\bin;C:\Program Files\Python313\Scripts\;C:\Program Files\Git\mingw64\bin;C:\Users\exp\AppData\Local\Programs\Antigravity IDE\bin;C:\Program Files\WinMerge;C:\Users\exp\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Git\cmd;C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\bin\Hostx64\x64;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\Python313\Lib\site-packages\PySide6;C:\Users\exp\AppData\Roaming\npm;C:\Program Files\nodejs\
+2026-08-03 12:41:28,629 - DEBUG - falling back to hashlib hashing: `pip install xxhash`for 50x faster cache checks
+2026-08-03 12:41:29,683 - INFO - ==================================================
+2026-08-03 12:41:29,683 - INFO - New session START at 2026-08-03 12:41
+2026-08-03 12:41:29,683 - INFO - ==================================================
+2026-08-03 12:41:29,684 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-03 12:41:29,684 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-03 12:41:29,684 - INFO - Loaded draw_z from config: Z=43.2, draw_z_UP=21.55
+2026-08-03 12:41:29,684 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-03 12:41:29,686 - INFO - Updated profile.json: layer_height=0.4, layer_height_0=0.4
+2026-08-03 12:41:29,687 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-03 12:41:29,687 - INFO - INI file initialized
+2026-08-03 12:41:29,694 - INFO - UI load successful
+2026-08-03 12:41:30,013 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-03 12:42:21,432 - INFO - Close event ignored.
+2026-08-03 12:42:56,831 - INFO - Serial communication stopped
+2026-08-03 12:42:56,831 - INFO - COM connection close successfully
+2026-08-03 12:42:56,831 - INFO - Main window close successfully
+2026-08-03 12:42:56,831 - INFO - ==================================================
+2026-08-03 12:42:56,831 - INFO - New session close at 2026-08-03 12:42
+2026-08-03 12:42:56,832 - INFO - ==================================================
+2026-08-03 12:51:26,130 - DEBUG - OpenGL_accelerate module loaded
+2026-08-03 12:51:26,146 - DEBUG - Using accelerated ArrayDatatype
+2026-08-03 12:51:37,087 - DEBUG - OpenGL_accelerate module loaded
+2026-08-03 12:51:37,100 - DEBUG - Using accelerated ArrayDatatype
+2026-08-03 12:51:38,051 - DEBUG - searching for blender in: C:\Program Files\WinMerge;C:\Users\exp\.dotnet\tools;C:\WINDOWS\System32\OpenSSH\;C:\WINDOWS;C:\Program Files\Git\usr\bin;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\Python313\Lib\site-packages\PySide6;C:\Program Files\nodejs\;C:\Program Files\Python313\Scripts\;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files (x86)\Python313-32\Scripts\;C:\WINDOWS\system32;c:\Users\exp\.antigravity-ide\extensions\ms-python.debugpy-2026.6.0-win32-x64\bundled\scripts\noConfigScripts;C:\Program Files (x86)\Python313-32\;C:\Program Files\Git\mingw64\bin;C:\Users\exp\AppData\Local\GitHubDesktop\bin;C:\Program Files\IDM Computer Solutions\UltraEdit;C:\Program Files\dotnet\;C:\Users\exp\AppData\Local\Programs\Antigravity IDE\bin;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Users\exp\AppData\Local\Programs\Microsoft VS Code\bin;C:\WINDOWS\System32\Wbem;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Users\exp\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\bin\Hostx64\x64;C:\Users\exp\AppData\Roaming\npm;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files\Python313\;C:\Program Files\GTK3-Runtime Win64\bin
+2026-08-03 12:51:38,065 - DEBUG - falling back to hashlib hashing: `pip install xxhash`for 50x faster cache checks
+2026-08-03 12:51:39,044 - INFO - ==================================================
+2026-08-03 12:51:39,044 - INFO - New session START at 2026-08-03 12:51
+2026-08-03 12:51:39,044 - INFO - ==================================================
+2026-08-03 12:51:39,045 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-03 12:51:39,045 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-03 12:51:39,045 - INFO - Loaded draw_z from config: Z=43.2, draw_z_UP=21.55
+2026-08-03 12:51:39,046 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-03 12:51:39,049 - INFO - Updated profile.json: layer_height=0.4, layer_height_0=0.4
+2026-08-03 12:51:39,050 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-03 12:51:39,050 - INFO - INI file initialized
+2026-08-03 12:51:39,056 - INFO - UI load successful
+2026-08-03 12:51:39,538 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-03 13:05:20,557 - DEBUG - OpenGL_accelerate module loaded
+2026-08-03 13:05:20,578 - DEBUG - Using accelerated ArrayDatatype
+2026-08-03 13:05:21,917 - DEBUG - searching for blender in: C:\Users\exp\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\exp\AppData\Local\Programs\Antigravity IDE\bin;C:\Users\exp\AppData\Local\GitHubDesktop\bin;C:\Program Files\IDM Computer Solutions\UltraEdit;C:\WINDOWS\System32\OpenSSH\;C:\Users\exp\AppData\Roaming\npm;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files (x86)\Python313-32\Scripts\;C:\Program Files\Python313\;C:\Program Files\WinMerge;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\WINDOWS\system32;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\nodejs\;C:\WINDOWS\System32\Wbem;C:\Program Files\dotnet\;C:\Program Files\Python313\Lib\site-packages\PySide6;C:\WINDOWS;C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\bin\Hostx64\x64;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;c:\Users\exp\.antigravity-ide\extensions\ms-python.debugpy-2026.6.0-win32-x64\bundled\scripts\noConfigScripts;C:\Users\exp\.dotnet\tools;C:\Program Files (x86)\Python313-32\;C:\Users\exp\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\Git\usr\bin;C:\Program Files\Python313\Scripts\;C:\ProgramData\chocolatey\bin;C:\Program Files\GTK3-Runtime Win64\bin
+2026-08-03 13:05:21,929 - DEBUG - falling back to hashlib hashing: `pip install xxhash`for 50x faster cache checks
+2026-08-03 13:05:22,916 - INFO - ==================================================
+2026-08-03 13:05:22,916 - INFO - New session START at 2026-08-03 13:05
+2026-08-03 13:05:22,916 - INFO - ==================================================
+2026-08-03 13:05:22,917 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-03 13:05:22,917 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-03 13:05:22,917 - INFO - Loaded draw_z from config: Z=43.2, draw_z_UP=21.55
+2026-08-03 13:05:22,917 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-03 13:05:22,918 - INFO - Updated profile.json: layer_height=0.4, layer_height_0=0.4
+2026-08-03 13:05:22,918 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-03 13:05:22,920 - INFO - INI file initialized
+2026-08-03 13:05:22,928 - INFO - UI load successful
+2026-08-03 13:05:23,304 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-03 13:05:26,603 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-03 13:05:27,791 - INFO - Fill command (FILL) sent to Blackpill.
+2026-08-03 13:05:28,377 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-03 13:05:29,617 - INFO - Purge command (PURGE) sent to Blackpill.
+2026-08-03 13:05:37,688 - INFO - Serial communication stopped
+2026-08-03 13:05:37,688 - INFO - COM connection close successfully
+2026-08-03 13:05:37,688 - INFO - Main window close successfully
+2026-08-03 13:05:37,688 - INFO - ==================================================
+2026-08-03 13:05:37,688 - INFO - New session close at 2026-08-03 13:05
+2026-08-03 13:05:37,689 - INFO - ==================================================

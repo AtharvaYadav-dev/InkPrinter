@@ -29,8 +29,7 @@ from dxf_to_gcode import convert as convert_dxf_to_gcode_module
 from bmp_to_gcode import convert as convert_bmp_to_gcode_module
 from cura_finder_log1 import checkCuraStatus, copyDefFiles, isCuraSupported
 from config_manager import load_profile, ensure_profile_exists, PROFILE_PATH
-                    
-                    
+            
 class MainWindow(QMainWindow):
     sigPrintProgress = Signal(float)
     exceptionOccurred = Signal(str)
@@ -341,17 +340,20 @@ class MainWindow(QMainWindow):
         self.leftMenuBtn3 = self.findChild(QPushButton, "programsPushButton")
         self.leftMenuBtn4 = self.findChild(QPushButton, "printPushButton")
         self.leftMenuBtn5 = self.findChild(QPushButton, "terminalPushButton")
+        self.leftMenuBtn6 = self.findChild(QPushButton, "syringflushPushButton")
         
         self.leftMenuWidget_dict = {self.leftMenuBtn1.objectName() : "home",
                                     self.leftMenuBtn2.objectName() : "laser",
                                     self.leftMenuBtn3.objectName() : "programs",
                                     self.leftMenuBtn4.objectName() : "print",
                                     self.leftMenuBtn5.objectName() : "terminal",
+                                    self.leftMenuBtn6.objectName() : "syringeflush",
                                     "home" : self.leftMenuBtn1,
                                     "laser" : self.leftMenuBtn2,
                                     "programs" : self.leftMenuBtn3,
                                     "print" : self.leftMenuBtn4,
-                                    "terminal" : self.leftMenuBtn5
+                                    "terminal" : self.leftMenuBtn5,
+                                    "syringeflush" : self.leftMenuBtn6
                                     }
         
         self.leftMenuWidget = DictAsClass(self.leftMenuWidget_dict)
@@ -403,14 +405,17 @@ class MainWindow(QMainWindow):
                               "page2" : 1,
                               "page3" : 2,
                               "page4" : 3,
-                              "page5" : 4
+                              "page5" : 4,
+                              "page6" : 5,
+                              "page7" : 6
                               }
 
         self.mainPageMenu_dict = {0 : self.leftMenuBtn1,
                                   1 : self.leftMenuBtn2,
                                   2 : self.leftMenuBtn3,
                                   3 : self.leftMenuBtn4,
-                                  4 : self.leftMenuBtn5
+                                  4 : self.leftMenuBtn5,
+                                  6 : self.leftMenuBtn6
                                   }
         
         # info sub pages
@@ -525,6 +530,8 @@ class MainWindow(QMainWindow):
         self.pgmText = self.findChild(QTextEdit, "pgmfileTextEdit")
         self.pgmLine2 = self.findChild(QLineEdit, "pgmfeedLineEdit")
         self.pgmComboBox = self.findChild(QComboBox, "pgmlaserComboBox")
+        self.viscositylevComboBox = self.findChild(QComboBox, "viscositylevComboBox")
+        self.needleguageLineEdit = self.findChild(QLineEdit, "needleguageLineEdit")
         self.pgmBtn1 = self.findChild(QPushButton, "pgmfilePushButton")
         self.pgmBtn3 = self.findChild(QPushButton, "pgmfeedPushButton")
         self.pgmBtn4 = self.findChild(QPushButton, "pgmsavePushButton")
@@ -548,9 +555,13 @@ class MainWindow(QMainWindow):
                                    "save" : self.pgmBtn4,
                                    "fill" : self.pgmBtn5,
                                    "purge" : self.pgmBtn6,
+                                   self.viscositylevComboBox.objectName() : "viscosity",
+                                   self.needleguageLineEdit.objectName() : "needle",
                                    "infile" : self.pgmText,
                                    "infeed" : self.pgmLine2,
-                                   "inlaser" : self.pgmComboBox
+                                   "inlaser" : self.pgmComboBox,
+                                   "inviscosity" : self.viscositylevComboBox,
+                                   "inneedle" : self.needleguageLineEdit
                                    }
         
         self.programWidget = DictAsClass(self.programWidget_dict)
@@ -766,6 +777,8 @@ class MainWindow(QMainWindow):
         self.pgmBtn4.clicked.connect(lambda: self.programAction(self.pgmBtn4))
         self.pgmBtn5.clicked.connect(lambda: self.programAction(self.pgmBtn5))
         self.pgmBtn6.clicked.connect(lambda: self.programAction(self.pgmBtn6))
+        self.viscositylevComboBox.currentTextChanged.connect(lambda: self.programAction(self.viscositylevComboBox))
+        self.needleguageLineEdit.textChanged.connect(lambda: self.programAction(self.needleguageLineEdit))
         
         # print widgets
         self.printBtn1.clicked.connect(lambda: self.printAction(self.printBtn1))
