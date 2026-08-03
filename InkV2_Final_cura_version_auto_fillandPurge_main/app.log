@@ -2971,171 +2971,122 @@ Failed to generate G-code from DXF.
 2026-08-03 10:19 - INFO - Purge command (PURGE 5.0) sent to Blackpill.
 2026-08-03 10:19 - INFO - Sent STOP to Blackpill
 2026-08-03 10:19 - INFO - Stop Purge command sent to Blackpill.
-2026-08-03 10:51 - INFO - Sent PURGE 5.0 to Blackpill
-2026-08-03 10:51 - INFO - Purge command (PURGE 5.0) sent to Blackpill.
-2026-08-03 10:51 - INFO - Sent STOP to Blackpill
-2026-08-03 10:51 - INFO - Stop Purge command sent to Blackpill.
-2026-08-03 10:51 - INFO - Sent PURGE 5.0 to Blackpill
-2026-08-03 10:51 - INFO - Purge command (PURGE 5.0) sent to Blackpill.
-2026-08-03 10:51 - INFO - Sent STOP to Blackpill
-2026-08-03 10:51 - INFO - Stop Purge command sent to Blackpill.
-2026-08-03 10:51 - INFO - Sent PURGE 5.0 to Blackpill
-2026-08-03 10:51 - INFO - Purge command (PURGE 5.0) sent to Blackpill.
-2026-08-03 10:51 - INFO - Sent STOP to Blackpill
-2026-08-03 10:51 - INFO - Stop Purge command sent to Blackpill.
-2026-08-03 10:51 - INFO - Sent PURGE 5.0 to Blackpill
-2026-08-03 10:51 - INFO - Purge command (PURGE 5.0) sent to Blackpill.
-2026-08-03 10:52 - INFO - Sent STOP to Blackpill
-2026-08-03 10:52 - INFO - Stop Purge command sent to Blackpill.
-2026-08-03 10:52 - INFO - Sent PURGE 5.0 to Blackpill
-2026-08-03 10:52 - INFO - Purge command (PURGE 5.0) sent to Blackpill.
-2026-08-03 10:52 - INFO - Sent STOP to Blackpill
-2026-08-03 10:52 - INFO - Stop Purge command sent to Blackpill.
-2026-08-03 10:52 - INFO - Sent PURGE 5.0 to Blackpill
-2026-08-03 10:52 - INFO - Purge command (PURGE 5.0) sent to Blackpill.
-2026-08-03 10:52 - INFO - Sent STOP to Blackpill
-2026-08-03 10:52 - INFO - Stop Purge command sent to Blackpill.
-2026-08-03 10:52 - INFO - Sent PURGE 5.0 to Blackpill
-2026-08-03 10:52 - INFO - Purge command (PURGE 5.0) sent to Blackpill.
-2026-08-03 10:52 - INFO - Sent STOP to Blackpill
-2026-08-03 10:52 - INFO - Stop Purge command sent to Blackpill.
-2026-08-03 10:52 - INFO - Sent PURGE 5.0 to Blackpill
-2026-08-03 10:52 - INFO - Purge command (PURGE 5.0) sent to Blackpill.
-2026-08-03 10:52 - INFO - Sent STOP to Blackpill
-2026-08-03 10:52 - INFO - Stop Purge command sent to Blackpill.
-2026-08-03 10:53 - INFO - Sent FILL 5.0 to Blackpill
-2026-08-03 10:53 - INFO - Fill command (FILL 5.0) sent to Blackpill.
-2026-08-03 10:53 - INFO - Sent STOP to Blackpill
-2026-08-03 10:53 - INFO - Stop Fill command sent to Blackpill.
-2026-08-03 10:53 - INFO - Sent FILL 5.0 to Blackpill
-2026-08-03 10:53 - INFO - Fill command (FILL 5.0) sent to Blackpill.
-2026-08-03 10:53 - INFO - Sent STOP to Blackpill
-2026-08-03 10:53 - INFO - Stop Fill command sent to Blackpill.
-2026-08-03 10:53 - INFO - Sent FILL 5.0 to Blackpill
-2026-08-03 10:53 - INFO - Fill command (FILL 5.0) sent to Blackpill.
-2026-08-03 10:53 - INFO - Sent STOP to Blackpill
-2026-08-03 10:53 - INFO - Stop Fill command sent to Blackpill.
-2026-08-03 10:53 - INFO - Sent FILL 5.0 to Blackpill
-2026-08-03 10:53 - INFO - Fill command (FILL 5.0) sent to Blackpill.
-2026-08-03 10:53 - INFO - Sent STOP to Blackpill
-2026-08-03 10:53 - INFO - Stop Fill command sent to Blackpill.
-2026-08-03 10:53 - INFO - Sent FILL 5.0 to Blackpill
-2026-08-03 10:53 - INFO - Fill command (FILL 5.0) sent to Blackpill.
-2026-08-03 10:53 - INFO - Sent STOP to Blackpill
-2026-08-03 10:53 - INFO - Stop Fill command sent to Blackpill.
-2026-08-03 10:53 - INFO - Sent FILL 5.0 to Blackpill
-2026-08-03 10:53 - INFO - Fill command (FILL 5.0) sent to Blackpill.
-2026-08-03 10:53 - INFO - Sent STOP to Blackpill
-2026-08-03 10:53 - INFO - Stop Fill command sent to Blackpill.
-2026-08-03 10:53 - INFO - Sent FILL 5.0 to Blackpill
-2026-08-03 10:53 - INFO - Fill command (FILL 5.0) sent to Blackpill.
-2026-08-03 10:53 - INFO - Sent STOP to Blackpill
-2026-08-03 10:53 - INFO - Stop Fill command sent to Blackpill.
-2026-08-03 10:55 - INFO - Sent PURGE 5.0 to Blackpill
-2026-08-03 10:55 - INFO - Purge command (PURGE 5.0) sent to Blackpill.
-2026-08-03 10:55 - INFO - Sent STOP to Blackpill
-2026-08-03 10:55 - INFO - Stop Purge command sent to Blackpill.
-2026-08-03 10:59 - INFO - File selected: E:/Atharva/InkPrinter/InkV2_Final_cura_version_auto_fillandPurge_main/Test_files/ide2.svg
-2026-08-03 10:59 - INFO - Converting SVG -> G-code directly: E:\Atharva\InkPrinter\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\ide2.svg
-2026-08-03 10:59 - INFO - G-code created: E:\Atharva\InkPrinter\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\ide2.gcode
-2026-08-03 10:59 - INFO - G-code ready from SVG: E:\Atharva\InkPrinter\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\ide2.gcode
-2026-08-03 10:59 - INFO - Raw G-code parsed (1175 lines).
-2026-08-03 11:01 - INFO - File selected: E:/Atharva/InkPrinter/InkV2_Final_cura_version_auto_fillandPurge_main/Test_files/ide2.svg
-2026-08-03 11:01 - INFO - Converting SVG -> G-code directly: E:\Atharva\InkPrinter\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\ide2.svg
-2026-08-03 11:01 - INFO - G-code created: E:\Atharva\InkPrinter\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\ide2.gcode
-2026-08-03 11:01 - INFO - G-code ready from SVG: E:\Atharva\InkPrinter\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\ide2.gcode
-2026-08-03 11:01 - INFO - Raw G-code parsed (1175 lines).
-2026-08-03 11:01 - INFO - Feedrate: 1500.0 mm/min
-2026-08-03 11:01 - INFO - Normalization shift: X=-249.385, Y=-76.833
-2026-08-03 11:01 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=43.350
-2026-08-03 11:01 - INFO - Final applied shift: X=-249.385, Y=-76.833
-2026-08-03 11:05 - INFO - Print Status : RUN
-2026-08-03 11:05 - INFO - Print Status : PAUSE
-2026-08-03 11:06 - INFO - Print Status : RESUME
-2026-08-03 11:07 - INFO - Print Status : ABORT
-2026-08-03 11:11 - INFO - File selected: E:/Atharva/InkPrinter/InkV2_Final_cura_version_auto_fillandPurge_main/Test_files/ide2.svg
-2026-08-03 11:11 - INFO - Converting SVG -> G-code directly: E:\Atharva\InkPrinter\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\ide2.svg
-2026-08-03 11:11 - INFO - G-code created: E:\Atharva\InkPrinter\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\ide2.gcode
-2026-08-03 11:11 - INFO - G-code ready from SVG: E:\Atharva\InkPrinter\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\ide2.gcode
-2026-08-03 11:11 - INFO - Raw G-code parsed (1175 lines).
-2026-08-03 11:11 - INFO - Feedrate: 1500.0 mm/min
-2026-08-03 11:11 - INFO - Normalization shift: X=-249.385, Y=-76.833
-2026-08-03 11:11 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=43.200
-2026-08-03 11:11 - INFO - Final applied shift: X=-249.385, Y=-76.833
-2026-08-03 11:11 - INFO - Print Status : RUN
-2026-08-03 12:08 - INFO - File selected: E:/Atharva/InkPrinter/InkV2_Final_cura_version_auto_fillandPurge_main/Test_files/60KBL-mandala-wall-art-design.dxf
-2026-08-03 12:08 - INFO - Converting DXF -> G-code directly: E:\Atharva\InkPrinter\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\60KBL-mandala-wall-art-design.dxf
-2026-08-03 12:08 - INFO - G-code created: E:\Atharva\InkPrinter\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\60KBL-mandala-wall-art-design.gcode
-2026-08-03 12:08 - INFO - G-code ready from DXF: E:\Atharva\InkPrinter\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\60KBL-mandala-wall-art-design.gcode
-2026-08-03 12:08 - INFO - Raw G-code parsed (220 lines).
-2026-08-03 12:08 - INFO - Feedrate: 1500.0 mm/min
-2026-08-03 12:08 - INFO - Normalization shift: X=-238.948, Y=-74.444
-2026-08-03 12:08 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=43.200
-2026-08-03 12:08 - INFO - Final applied shift: X=-238.948, Y=-74.444
-2026-08-03 12:09 - INFO - File selected: E:/Atharva/InkPrinter/InkV2_Final_cura_version_auto_fillandPurge_main/Test_files/arc_polyline_spline.dxf
-2026-08-03 12:09 - INFO - Converting DXF -> G-code directly: E:\Atharva\InkPrinter\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\arc_polyline_spline.dxf
-2026-08-03 12:09 - ERROR - DXF conversion failed:
-Failed to generate G-code from DXF.
-2026-08-03 12:09 - INFO - File selected: E:/Atharva/InkPrinter/InkV2_Final_cura_version_auto_fillandPurge_main/Test_files/arc_polyline_spline.dxf
-2026-08-03 12:09 - INFO - Converting DXF -> G-code directly: E:\Atharva\InkPrinter\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\arc_polyline_spline.dxf
-2026-08-03 12:09 - ERROR - DXF conversion failed:
-Failed to generate G-code from DXF.
-2026-08-03 12:09 - INFO - File selected: E:/Atharva/InkPrinter/InkV2_Final_cura_version_auto_fillandPurge_main/Test_files/Diamond.dxf
-2026-08-03 12:09 - INFO - Converting DXF -> G-code directly: E:\Atharva\InkPrinter\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\Diamond.dxf
-2026-08-03 12:09 - INFO - G-code created: E:\Atharva\InkPrinter\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\Diamond.gcode
-2026-08-03 12:09 - INFO - G-code ready from DXF: E:\Atharva\InkPrinter\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\Diamond.gcode
-2026-08-03 12:09 - INFO - Raw G-code parsed (49 lines).
-2026-08-03 12:09 - INFO - Feedrate: 1500.0 mm/min
-2026-08-03 12:09 - INFO - Normalization shift: X=-246.466, Y=-74.334
-2026-08-03 12:09 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=43.200
-2026-08-03 12:09 - INFO - Final applied shift: X=-246.466, Y=-74.334
-2026-08-03 12:10 - INFO - File selected: E:/Atharva/InkPrinter/InkV2_Final_cura_version_auto_fillandPurge_main/Test_files/Diamond.gcode
-2026-08-03 12:10 - INFO - Raw G-code parsed (500 lines).
-2026-08-03 12:10 - INFO - Feedrate: 1500.0 mm/min
-2026-08-03 12:10 - INFO - Normalization shift: X=-0.000, Y=-10.093
-2026-08-03 12:10 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=43.200
-2026-08-03 12:10 - INFO - Final applied shift: X=0.000, Y=-10.093
-2026-08-03 12:10 - ERROR - Out of Bed Range: Drawing exceeds bed area!
-
-X: 0.00 → 70.00 (Bed: 0.0 → 50.0)
-Y: 0.00 → 49.81 (Bed: 0.0 → 50.0)
-
-Please re-adjust the offsets.
-2026-08-03 12:10 - INFO - Normalization shift: X=-0.000, Y=-10.093
-2026-08-03 12:10 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=43.200
-2026-08-03 12:10 - INFO - Final applied shift: X=0.000, Y=-10.093
-2026-08-03 12:10 - ERROR - Out of Bed Range: Drawing exceeds bed area!
-
-X: 0.00 → 70.00 (Bed: 0.0 → 50.0)
-Y: 0.00 → 49.81 (Bed: 0.0 → 50.0)
-
-Please re-adjust the offsets.
-2026-08-03 12:11 - INFO - File selected: E:/Atharva/InkPrinter/InkV2_Final_cura_version_auto_fillandPurge_main/Test_files/ellipse_text.dxf
-2026-08-03 12:11 - INFO - Converting DXF -> G-code directly: E:\Atharva\InkPrinter\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\ellipse_text.dxf
-2026-08-03 12:11 - INFO - G-code created: E:\Atharva\InkPrinter\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\ellipse_text.gcode
-2026-08-03 12:11 - INFO - G-code ready from DXF: E:\Atharva\InkPrinter\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\ellipse_text.gcode
-2026-08-03 12:11 - INFO - Raw G-code parsed (386 lines).
-2026-08-03 12:11 - INFO - Feedrate: 1500.0 mm/min
-2026-08-03 12:11 - INFO - Normalization shift: X=-267.265, Y=-107.149
-2026-08-03 12:11 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=43.200
-2026-08-03 12:11 - INFO - Final applied shift: X=-267.265, Y=-107.149
-2026-08-03 12:11 - ERROR - Out of Bed Range: Drawing exceeds bed area!
-
-X: 0.00 → 60.47 (Bed: 0.0 → 50.0)
-Y: 0.00 → 35.70 (Bed: 0.0 → 50.0)
-
-Please re-adjust the offsets.
-2026-08-03 12:12 - INFO - Sent PURGE 5.0 to Blackpill
-2026-08-03 12:12 - INFO - Purge command (PURGE 5.0) sent to Blackpill.
-2026-08-03 12:12 - INFO - Sent STOP to Blackpill
-2026-08-03 12:12 - INFO - Stop Purge command sent to Blackpill.
-2026-08-03 12:16 - INFO - File selected: E:/Atharva/InkPrinter/InkV2_Final_cura_version_auto_fillandPurge_main/Test_files/ide2.svg
-2026-08-03 12:16 - INFO - Converting SVG -> G-code directly: E:\Atharva\InkPrinter\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\ide2.svg
-2026-08-03 12:16 - INFO - G-code created: E:\Atharva\InkPrinter\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\ide2.gcode
-2026-08-03 12:16 - INFO - G-code ready from SVG: E:\Atharva\InkPrinter\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\ide2.gcode
-2026-08-03 12:16 - INFO - Raw G-code parsed (1175 lines).
-2026-08-03 12:16 - INFO - Feedrate: 1500.0 mm/min
-2026-08-03 12:16 - INFO - Normalization shift: X=-249.385, Y=-76.833
-2026-08-03 12:16 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=43.200
-2026-08-03 12:16 - INFO - Final applied shift: X=-249.385, Y=-76.833
-2026-08-03 12:16 - INFO - Print Status : RUN
+2026-08-03 12:35 - INFO - ==================================================
+2026-08-03 12:35 - INFO - New session START at 2026-08-03 12:35
+2026-08-03 12:35 - INFO - ==================================================
+2026-08-03 12:35 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-03 12:35 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-03 12:35 - INFO - Loaded draw_z from config: Z=43.2, draw_z_UP=21.55
+2026-08-03 12:35 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-03 12:35 - INFO - Updated profile.json: layer_height=0.4, layer_height_0=0.4
+2026-08-03 12:35 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-03 12:35 - INFO - INI file initialized
+2026-08-03 12:35 - INFO - UI load successful
+2026-08-03 12:35 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-03 12:36 - INFO - ==================================================
+2026-08-03 12:36 - INFO - New session START at 2026-08-03 12:36
+2026-08-03 12:36 - INFO - ==================================================
+2026-08-03 12:36 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-03 12:36 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-03 12:36 - INFO - Loaded draw_z from config: Z=43.2, draw_z_UP=21.55
+2026-08-03 12:36 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-03 12:36 - INFO - Updated profile.json: layer_height=0.4, layer_height_0=0.4
+2026-08-03 12:36 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-03 12:36 - INFO - INI file initialized
+2026-08-03 12:36 - INFO - UI load successful
+2026-08-03 12:36 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-03 12:36 - INFO - Serial communication stopped
+2026-08-03 12:36 - INFO - COM connection close successfully
+2026-08-03 12:36 - INFO - Main window close successfully
+2026-08-03 12:36 - INFO - ==================================================
+2026-08-03 12:36 - INFO - New session close at 2026-08-03 12:36
+2026-08-03 12:36 - INFO - ==================================================
+2026-08-03 12:38 - INFO - ==================================================
+2026-08-03 12:38 - INFO - New session START at 2026-08-03 12:38
+2026-08-03 12:38 - INFO - ==================================================
+2026-08-03 12:38 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-03 12:38 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-03 12:38 - INFO - Loaded draw_z from config: Z=43.2, draw_z_UP=21.55
+2026-08-03 12:38 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-03 12:38 - INFO - Updated profile.json: layer_height=0.4, layer_height_0=0.4
+2026-08-03 12:38 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-03 12:38 - INFO - INI file initialized
+2026-08-03 12:38 - INFO - UI load successful
+2026-08-03 12:38 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-03 12:39 - INFO - Serial communication stopped
+2026-08-03 12:39 - INFO - COM connection close successfully
+2026-08-03 12:39 - INFO - Main window close successfully
+2026-08-03 12:39 - INFO - ==================================================
+2026-08-03 12:39 - INFO - New session close at 2026-08-03 12:39
+2026-08-03 12:39 - INFO - ==================================================
+2026-08-03 12:39 - INFO - ==================================================
+2026-08-03 12:39 - INFO - New session START at 2026-08-03 12:39
+2026-08-03 12:39 - INFO - ==================================================
+2026-08-03 12:39 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-03 12:39 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-03 12:39 - INFO - Loaded draw_z from config: Z=43.2, draw_z_UP=21.55
+2026-08-03 12:39 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-03 12:39 - INFO - Updated profile.json: layer_height=0.4, layer_height_0=0.4
+2026-08-03 12:39 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-03 12:39 - INFO - INI file initialized
+2026-08-03 12:39 - INFO - UI load successful
+2026-08-03 12:39 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-03 12:40 - INFO - Serial communication stopped
+2026-08-03 12:40 - INFO - COM connection close successfully
+2026-08-03 12:40 - INFO - Main window close successfully
+2026-08-03 12:40 - INFO - ==================================================
+2026-08-03 12:40 - INFO - New session close at 2026-08-03 12:40
+2026-08-03 12:40 - INFO - ==================================================
+2026-08-03 12:41 - INFO - ==================================================
+2026-08-03 12:41 - INFO - New session START at 2026-08-03 12:41
+2026-08-03 12:41 - INFO - ==================================================
+2026-08-03 12:41 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-03 12:41 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-03 12:41 - INFO - Loaded draw_z from config: Z=43.2, draw_z_UP=21.55
+2026-08-03 12:41 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-03 12:41 - INFO - Updated profile.json: layer_height=0.4, layer_height_0=0.4
+2026-08-03 12:41 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-03 12:41 - INFO - INI file initialized
+2026-08-03 12:41 - INFO - UI load successful
+2026-08-03 12:41 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-03 12:42 - INFO - Close event ignored.
+2026-08-03 12:42 - INFO - Serial communication stopped
+2026-08-03 12:42 - INFO - COM connection close successfully
+2026-08-03 12:42 - INFO - Main window close successfully
+2026-08-03 12:42 - INFO - ==================================================
+2026-08-03 12:42 - INFO - New session close at 2026-08-03 12:42
+2026-08-03 12:42 - INFO - ==================================================
+2026-08-03 12:51 - INFO - ==================================================
+2026-08-03 12:51 - INFO - New session START at 2026-08-03 12:51
+2026-08-03 12:51 - INFO - ==================================================
+2026-08-03 12:51 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-03 12:51 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-03 12:51 - INFO - Loaded draw_z from config: Z=43.2, draw_z_UP=21.55
+2026-08-03 12:51 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-03 12:51 - INFO - Updated profile.json: layer_height=0.4, layer_height_0=0.4
+2026-08-03 12:51 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-03 12:51 - INFO - INI file initialized
+2026-08-03 12:51 - INFO - UI load successful
+2026-08-03 12:51 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-03 13:05 - INFO - ==================================================
+2026-08-03 13:05 - INFO - New session START at 2026-08-03 13:05
+2026-08-03 13:05 - INFO - ==================================================
+2026-08-03 13:05 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-03 13:05 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-03 13:05 - INFO - Loaded draw_z from config: Z=43.2, draw_z_UP=21.55
+2026-08-03 13:05 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-03 13:05 - INFO - Updated profile.json: layer_height=0.4, layer_height_0=0.4
+2026-08-03 13:05 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-03 13:05 - INFO - INI file initialized
+2026-08-03 13:05 - INFO - UI load successful
+2026-08-03 13:05 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-03 13:05 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-03 13:05 - INFO - Fill command (FILL) sent to Blackpill.
+2026-08-03 13:05 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-03 13:05 - INFO - Purge command (PURGE) sent to Blackpill.
+2026-08-03 13:05 - INFO - Serial communication stopped
+2026-08-03 13:05 - INFO - COM connection close successfully
+2026-08-03 13:05 - INFO - Main window close successfully
+2026-08-03 13:05 - INFO - ==================================================
+2026-08-03 13:05 - INFO - New session close at 2026-08-03 13:05
+2026-08-03 13:05 - INFO - ==================================================

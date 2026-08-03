@@ -118,7 +118,8 @@
 							"programsPushButton": "programPage",
 							"printPushButton": "printPage",
 							"terminalPushButton": "terminalPage",
-							"laserPushButton": "laserconfPage"
+							"laserPushButton": "laserconfPage",
+							"syringflushPushButton": "syringeflushPage"
 						}
 					]
 				}
@@ -166,7 +167,8 @@
 				"programsPushButton",
 				"printPushButton",
 				"terminalPushButton",
-				"laserPushButton"
+				"laserPushButton",
+				"syringflushPushButton"
 			],
 			"ActiveButton": "homePushButton",
 			"Style":[{

@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'interfacepAlQgw.ui'
+## Form generated from reading UI file 'interfaceqEpOhE.ui'
 ##
-## Created by: Qt User Interface Compiler version 6.11.1
+## Created by: Qt User Interface Compiler version 6.8.1
 ##
 ## WARNING! All changes made in this file will be lost when recompiling UI file!
 ################################################################################
@@ -90,12 +90,12 @@ class Ui_MainWindow(object):
 "	border-radius: 20px;\n"
 "}\n"
 "\n"
-"#jogFrame, #laserconfFrame, #programFrame, #printFrame, #terminalFrame, #parameterFrame {\n"
+"#jogFrame, #laserconfFrame, #programFrame, #printFrame, #terminalFrame, #parameterFrame, #syringeFrame {\n"
 "	background-color: rgb(167, 198, 229);\n"
 "	border-radius: 20px;\n"
 "}\n"
 "\n"
-"#homeFrame, #stepsFrame, #xyFrame, #zFrame, #axisposFrame, #setfocusFrame, #flaserFrame, #zfocusFrame, #fsetFrame, #loffsetFrame, #offlaserFrame, #xyoffsetFrame, #xyposFrame, #offsetFrame, #offbtnFrame, #progFrame, #printimgFrame, #printopFrame, #printprogramFrame, #printprogressFrame, #parasubFrame {\n"
+"#homeFrame, #stepsFrame, #xyFrame, #zFrame, #axisposFrame, #setfocusFrame, #flaserFrame, #zfocusFrame, #fsetFrame, #loffsetFrame, #offlaserFrame, #xyoffsetFrame, #xyposFrame, #offsetFrame, #offbtnFrame, #progFrame, #printimgFrame, #printopFrame, #printprogramFrame, #printprogressFrame, #parasubFrame, #syringemidFrame {\n"
 "	background-color: rgb(144, 170, 197);\n"
 "	border-radius: 20px;\n"
 "	border: 2px solid rgb(16, 42, 131);\n"
@@ -183,13 +183,24 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_3.addWidget(self.laserPushButton)
 
+        self.syringflushPushButton = QPushButton(self.middleFrame)
+        self.syringflushPushButton.setObjectName(u"syringflushPushButton")
+        self.syringflushPushButton.setMinimumSize(QSize(0, 34))
+        self.syringflushPushButton.setFont(font)
+        icon3 = QIcon()
+        icon3.addFile(u":/icons/icons/folder.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.syringflushPushButton.setIcon(icon3)
+        self.syringflushPushButton.setIconSize(QSize(24, 24))
+
+        self.verticalLayout_3.addWidget(self.syringflushPushButton)
+
         self.programsPushButton = QPushButton(self.middleFrame)
         self.programsPushButton.setObjectName(u"programsPushButton")
         self.programsPushButton.setMinimumSize(QSize(0, 34))
         self.programsPushButton.setFont(font)
-        icon3 = QIcon()
-        icon3.addFile(u":/icons/icons/list.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
-        self.programsPushButton.setIcon(icon3)
+        icon4 = QIcon()
+        icon4.addFile(u":/icons/icons/list.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.programsPushButton.setIcon(icon4)
         self.programsPushButton.setIconSize(QSize(24, 24))
 
         self.verticalLayout_3.addWidget(self.programsPushButton)
@@ -198,9 +209,9 @@ class Ui_MainWindow(object):
         self.printPushButton.setObjectName(u"printPushButton")
         self.printPushButton.setMinimumSize(QSize(0, 34))
         self.printPushButton.setFont(font)
-        icon4 = QIcon()
-        icon4.addFile(u":/icons/icons/printer.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
-        self.printPushButton.setIcon(icon4)
+        icon5 = QIcon()
+        icon5.addFile(u":/icons/icons/printer.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.printPushButton.setIcon(icon5)
         self.printPushButton.setIconSize(QSize(24, 24))
 
         self.verticalLayout_3.addWidget(self.printPushButton)
@@ -209,9 +220,9 @@ class Ui_MainWindow(object):
         self.terminalPushButton.setObjectName(u"terminalPushButton")
         self.terminalPushButton.setMinimumSize(QSize(0, 34))
         self.terminalPushButton.setFont(font)
-        icon5 = QIcon()
-        icon5.addFile(u":/icons/icons/monitor.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
-        self.terminalPushButton.setIcon(icon5)
+        icon6 = QIcon()
+        icon6.addFile(u":/icons/icons/monitor.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.terminalPushButton.setIcon(icon6)
         self.terminalPushButton.setIconSize(QSize(24, 24))
 
         self.verticalLayout_3.addWidget(self.terminalPushButton)
@@ -236,9 +247,9 @@ class Ui_MainWindow(object):
         self.comPushButton.setObjectName(u"comPushButton")
         self.comPushButton.setMinimumSize(QSize(0, 34))
         self.comPushButton.setFont(font)
-        icon6 = QIcon()
-        icon6.addFile(u":/icons/icons/link.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
-        self.comPushButton.setIcon(icon6)
+        icon7 = QIcon()
+        icon7.addFile(u":/icons/icons/link.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.comPushButton.setIcon(icon7)
         self.comPushButton.setIconSize(QSize(24, 24))
 
         self.verticalLayout_4.addWidget(self.comPushButton)
@@ -247,9 +258,9 @@ class Ui_MainWindow(object):
         self.blackcomPushButton.setObjectName(u"blackcomPushButton")
         self.blackcomPushButton.setMinimumSize(QSize(0, 34))
         self.blackcomPushButton.setFont(font)
-        icon7 = QIcon()
-        icon7.addFile(u":/icons/icons/link-2.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
-        self.blackcomPushButton.setIcon(icon7)
+        icon8 = QIcon()
+        icon8.addFile(u":/icons/icons/link-2.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.blackcomPushButton.setIcon(icon8)
         self.blackcomPushButton.setIconSize(QSize(24, 24))
 
         self.verticalLayout_4.addWidget(self.blackcomPushButton)
@@ -258,9 +269,9 @@ class Ui_MainWindow(object):
         self.settingsPushButton.setObjectName(u"settingsPushButton")
         self.settingsPushButton.setMinimumSize(QSize(0, 34))
         self.settingsPushButton.setFont(font)
-        icon8 = QIcon()
-        icon8.addFile(u":/icons/icons/settings.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
-        self.settingsPushButton.setIcon(icon8)
+        icon9 = QIcon()
+        icon9.addFile(u":/icons/icons/settings.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.settingsPushButton.setIcon(icon9)
         self.settingsPushButton.setIconSize(QSize(24, 24))
 
         self.verticalLayout_4.addWidget(self.settingsPushButton)
@@ -269,9 +280,9 @@ class Ui_MainWindow(object):
         self.infoPushButton.setObjectName(u"infoPushButton")
         self.infoPushButton.setMinimumSize(QSize(0, 34))
         self.infoPushButton.setFont(font)
-        icon9 = QIcon()
-        icon9.addFile(u":/icons/icons/info.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
-        self.infoPushButton.setIcon(icon9)
+        icon10 = QIcon()
+        icon10.addFile(u":/icons/icons/info.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.infoPushButton.setIcon(icon10)
         self.infoPushButton.setIconSize(QSize(24, 24))
 
         self.verticalLayout_4.addWidget(self.infoPushButton)
@@ -329,9 +340,9 @@ class Ui_MainWindow(object):
         self.closeCenterMenuPushButton = QPushButton(self.centerMenuFrame)
         self.closeCenterMenuPushButton.setObjectName(u"closeCenterMenuPushButton")
         self.closeCenterMenuPushButton.setMinimumSize(QSize(0, 30))
-        icon10 = QIcon()
-        icon10.addFile(u":/icons/icons/x-circle.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
-        self.closeCenterMenuPushButton.setIcon(icon10)
+        icon11 = QIcon()
+        icon11.addFile(u":/icons/icons/x-circle.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.closeCenterMenuPushButton.setIcon(icon11)
         self.closeCenterMenuPushButton.setIconSize(QSize(24, 24))
 
         self.horizontalLayout_2.addWidget(self.closeCenterMenuPushButton, 0, Qt.AlignmentFlag.AlignRight)
@@ -724,7 +735,7 @@ class Ui_MainWindow(object):
 "QPushButton:disabled {\n"
 "	background-color: rgb(172, 172, 172);\n"
 "}")
-        self.aboutPushButton.setIcon(icon9)
+        self.aboutPushButton.setIcon(icon10)
         self.aboutPushButton.setIconSize(QSize(32, 32))
 
         self.verticalLayout_9.addWidget(self.aboutPushButton)
@@ -755,9 +766,9 @@ class Ui_MainWindow(object):
 "QPushButton:disabled {\n"
 "	background-color: rgb(172, 172, 172);\n"
 "}")
-        icon11 = QIcon()
-        icon11.addFile(u":/icons/icons/help-circle.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
-        self.helpPushButton.setIcon(icon11)
+        icon12 = QIcon()
+        icon12.addFile(u":/icons/icons/help-circle.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.helpPushButton.setIcon(icon12)
         self.helpPushButton.setIconSize(QSize(32, 32))
 
         self.verticalLayout_9.addWidget(self.helpPushButton)
@@ -814,9 +825,9 @@ class Ui_MainWindow(object):
 "QPushButton:disabled {\n"
 "	background-color: rgb(172, 172, 172);\n"
 "}")
-        icon12 = QIcon()
-        icon12.addFile(u":/icons/icons/arrow-left.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
-        self.back1PushButton.setIcon(icon12)
+        icon13 = QIcon()
+        icon13.addFile(u":/icons/icons/arrow-left.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.back1PushButton.setIcon(icon13)
         self.back1PushButton.setIconSize(QSize(24, 24))
 
         self.verticalLayout_44.addWidget(self.back1PushButton)
@@ -876,7 +887,7 @@ class Ui_MainWindow(object):
 "QPushButton:disabled {\n"
 "	background-color: rgb(172, 172, 172);\n"
 "}")
-        self.back2PushButton.setIcon(icon12)
+        self.back2PushButton.setIcon(icon13)
         self.back2PushButton.setIconSize(QSize(24, 24))
 
         self.verticalLayout_43.addWidget(self.back2PushButton)
@@ -1226,9 +1237,9 @@ class Ui_MainWindow(object):
         sizePolicy4.setHeightForWidth(self.profilePushButton.sizePolicy().hasHeightForWidth())
         self.profilePushButton.setSizePolicy(sizePolicy4)
         self.profilePushButton.setMinimumSize(QSize(0, 22))
-        icon13 = QIcon()
-        icon13.addFile(u":/icons/icons/user.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
-        self.profilePushButton.setIcon(icon13)
+        icon14 = QIcon()
+        icon14.addFile(u":/icons/icons/user.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.profilePushButton.setIcon(icon14)
         self.profilePushButton.setIconSize(QSize(24, 24))
 
         self.horizontalLayout_29.addWidget(self.profilePushButton)
@@ -1277,45 +1288,45 @@ class Ui_MainWindow(object):
         self.horizontalLayout_7.setContentsMargins(0, 0, 0, 0)
         self.updatePushButton = QPushButton(self.windowFrame)
         self.updatePushButton.setObjectName(u"updatePushButton")
-        icon14 = QIcon()
-        icon14.addFile(u":/icons/icons/download-cloud.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
-        self.updatePushButton.setIcon(icon14)
+        icon15 = QIcon()
+        icon15.addFile(u":/icons/icons/download-cloud.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.updatePushButton.setIcon(icon15)
         self.updatePushButton.setIconSize(QSize(24, 24))
 
         self.horizontalLayout_7.addWidget(self.updatePushButton)
 
         self.notifyPushButton = QPushButton(self.windowFrame)
         self.notifyPushButton.setObjectName(u"notifyPushButton")
-        icon15 = QIcon()
-        icon15.addFile(u":/icons/icons/bell.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
-        self.notifyPushButton.setIcon(icon15)
+        icon16 = QIcon()
+        icon16.addFile(u":/icons/icons/bell.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.notifyPushButton.setIcon(icon16)
         self.notifyPushButton.setIconSize(QSize(24, 24))
 
         self.horizontalLayout_7.addWidget(self.notifyPushButton)
 
         self.minimizePushButton = QPushButton(self.windowFrame)
         self.minimizePushButton.setObjectName(u"minimizePushButton")
-        icon16 = QIcon()
-        icon16.addFile(u":/icons/icons/minus.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
-        self.minimizePushButton.setIcon(icon16)
+        icon17 = QIcon()
+        icon17.addFile(u":/icons/icons/minus.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.minimizePushButton.setIcon(icon17)
         self.minimizePushButton.setIconSize(QSize(24, 24))
 
         self.horizontalLayout_7.addWidget(self.minimizePushButton)
 
         self.restorePushButton = QPushButton(self.windowFrame)
         self.restorePushButton.setObjectName(u"restorePushButton")
-        icon17 = QIcon()
-        icon17.addFile(u":/icons/icons/square.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
-        self.restorePushButton.setIcon(icon17)
+        icon18 = QIcon()
+        icon18.addFile(u":/icons/icons/square.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.restorePushButton.setIcon(icon18)
         self.restorePushButton.setIconSize(QSize(24, 24))
 
         self.horizontalLayout_7.addWidget(self.restorePushButton)
 
         self.closePushButton = QPushButton(self.windowFrame)
         self.closePushButton.setObjectName(u"closePushButton")
-        icon18 = QIcon()
-        icon18.addFile(u":/icons/icons/x.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
-        self.closePushButton.setIcon(icon18)
+        icon19 = QIcon()
+        icon19.addFile(u":/icons/icons/x.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.closePushButton.setIcon(icon19)
         self.closePushButton.setIconSize(QSize(24, 24))
 
         self.horizontalLayout_7.addWidget(self.closePushButton)
@@ -2736,130 +2747,80 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_28.addWidget(self.widget_4)
 
-        self.widget_12 = QWidget(self.progFrame)
-        self.widget_12.setObjectName(u"widget_12")
-        self.horizontalLayout_23 = QHBoxLayout(self.widget_12)
+        self.frame_121 = QFrame(self.progFrame)
+        self.frame_121.setObjectName(u"frame_121")
+        self.horizontalLayout_23 = QHBoxLayout(self.frame_121)
         self.horizontalLayout_23.setObjectName(u"horizontalLayout_23")
-        self.pgmfillPushButton = QPushButton(self.widget_12)
-        self.pgmfillPushButton.setObjectName(u"pgmfillPushButton")
-        sizePolicy6.setHeightForWidth(self.pgmfillPushButton.sizePolicy().hasHeightForWidth())
-        self.pgmfillPushButton.setSizePolicy(sizePolicy6)
-        self.pgmfillPushButton.setMaximumSize(QSize(350, 60))
-        self.pgmfillPushButton.setFont(font2)
-        self.pgmfillPushButton.setStyleSheet(u"QPushButton {\n"
-"	color: rgb(255, 255, 255);	\n"
-"	background-color: rgb(16, 42, 131);\n"
-"	border-color: transparent;\n"
-"	border-style: outset;\n"
-"	border-radius: 15px;\n"
-"	border-width: 2px;\n"
-"	padding: 6px;\n"
-"}\n"
-"\n"
-"QPushButton:hover {\n"
-"	color: rgb(16, 42, 131);\n"
-"	background-color: rgb(167, 198, 229);\n"
-"	border-color: rgb(16, 42, 131);\n"
-"}\n"
-"\n"
-"QPushButton:disabled {\n"
-"	background-color: rgb(172, 172, 172);\n"
+        self.label_25 = QLabel(self.frame_121)
+        self.label_25.setObjectName(u"label_25")
+        self.label_25.setMaximumSize(QSize(16777215, 16777215))
+        self.label_25.setFont(font9)
+        self.label_25.setStyleSheet(u"QLabel {\n"
+"    color: rgb(16, 42, 131);\n"
 "}")
 
-        self.horizontalLayout_23.addWidget(self.pgmfillPushButton)
+        self.horizontalLayout_23.addWidget(self.label_25)
 
-        self.horizontalSpacer_10 = QSpacerItem(174, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
-
-        self.horizontalLayout_23.addItem(self.horizontalSpacer_10)
-
-        self.pgmpurgePushButton = QPushButton(self.widget_12)
-        self.pgmpurgePushButton.setObjectName(u"pgmpurgePushButton")
-        sizePolicy6.setHeightForWidth(self.pgmpurgePushButton.sizePolicy().hasHeightForWidth())
-        self.pgmpurgePushButton.setSizePolicy(sizePolicy6)
-        self.pgmpurgePushButton.setMaximumSize(QSize(350, 60))
-        self.pgmpurgePushButton.setFont(font2)
-        self.pgmpurgePushButton.setStyleSheet(u"QPushButton {\n"
-"	color: rgb(255, 255, 255);	\n"
-"	background-color: rgb(16, 42, 131);\n"
-"	border-color: transparent;\n"
-"	border-style: outset;\n"
-"	border-radius: 15px;\n"
-"	border-width: 2px;\n"
-"	padding: 6px;\n"
+        self.viscositylevComboBox = QComboBox(self.frame_121)
+        self.viscositylevComboBox.setObjectName(u"viscositylevComboBox")
+        self.viscositylevComboBox.setMinimumSize(QSize(0, 40))
+        self.viscositylevComboBox.setMaximumSize(QSize(16777215, 60))
+        self.viscositylevComboBox.setStyleSheet(u"QComboBox {\n"
+"	background-color: rgb(144, 170, 197);\n"
+"    border: 2px solid rgb(16, 42, 131);\n"
 "}\n"
 "\n"
-"QPushButton:hover {\n"
+"QComboBox QAbstractItemView {\n"
+"	background-color: rgb(144, 170, 197);\n"
+"	selection-background-color: #A0D0F0;\n"
 "	color: rgb(16, 42, 131);\n"
-"	background-color: rgb(167, 198, 229);\n"
-"	border-color: rgb(16, 42, 131);\n"
-"}\n"
-"\n"
-"QPushButton:disabled {\n"
-"	background-color: rgb(172, 172, 172);\n"
 "}")
 
-        self.horizontalLayout_23.addWidget(self.pgmpurgePushButton)
+        self.horizontalLayout_23.addWidget(self.viscositylevComboBox)
+
+        self.horizontalLayout_23.setStretch(1, 5)
+
+        self.verticalLayout_28.addWidget(self.frame_121)
+
+        self.frame_3 = QFrame(self.progFrame)
+        self.frame_3.setObjectName(u"frame_3")
+        self.frame_3.setFrameShape(QFrame.Shape.StyledPanel)
+        self.frame_3.setFrameShadow(QFrame.Shadow.Raised)
+        self.horizontalLayout_51 = QHBoxLayout(self.frame_3)
+        self.horizontalLayout_51.setObjectName(u"horizontalLayout_51")
+        self.label_26 = QLabel(self.frame_3)
+        self.label_26.setObjectName(u"label_26")
+        self.label_26.setMaximumSize(QSize(16777215, 16777215))
+        self.label_26.setFont(font9)
+        self.label_26.setStyleSheet(u"QLabel {\n"
+"    color: rgb(16, 42, 131);\n"
+"}")
+
+        self.horizontalLayout_51.addWidget(self.label_26)
+
+        self.needleguageLineEdit = QLineEdit(self.frame_3)
+        self.needleguageLineEdit.setObjectName(u"needleguageLineEdit")
+        self.needleguageLineEdit.setMinimumSize(QSize(0, 40))
+        self.needleguageLineEdit.setStyleSheet(u"QLineEdit {\n"
+"    border: 2px solid #102a83;\n"
+"    border-radius: 6px;       /* Optional: for rounded corners */\n"
+"    padding: 4px;             /* Optional: inner spacing */\n"
+"    color: #102a83;           /* Text color inside the line edit */\n"
+"}\n"
+"")
+
+        self.horizontalLayout_51.addWidget(self.needleguageLineEdit)
 
 
-        self.verticalLayout_28.addWidget(self.widget_12)
+        self.verticalLayout_28.addWidget(self.frame_3)
 
         self.widget_11 = QWidget(self.progFrame)
         self.widget_11.setObjectName(u"widget_11")
         self.horizontalLayout_49 = QHBoxLayout(self.widget_11)
         self.horizontalLayout_49.setObjectName(u"horizontalLayout_49")
-        self.stepsFrame_2 = QFrame(self.widget_11)
-        self.stepsFrame_2.setObjectName(u"stepsFrame_2")
-        self.stepsFrame_2.setFrameShape(QFrame.Shape.StyledPanel)
-        self.stepsFrame_2.setFrameShadow(QFrame.Shadow.Raised)
-        self.verticalLayout_64 = QVBoxLayout(self.stepsFrame_2)
-        self.verticalLayout_64.setObjectName(u"verticalLayout_64")
-        self.verticalLayout_64.setContentsMargins(-1, 4, -1, -1)
-        self.label_15 = QLabel(self.stepsFrame_2)
-        self.label_15.setObjectName(u"label_15")
-        self.label_15.setMinimumSize(QSize(0, 15))
-        self.label_15.setFont(font5)
-        self.label_15.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        self.horizontalSpacer_5 = QSpacerItem(379, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
 
-        self.verticalLayout_64.addWidget(self.label_15, 0, Qt.AlignmentFlag.AlignTop)
-
-        self.frame_13 = QFrame(self.stepsFrame_2)
-        self.frame_13.setObjectName(u"frame_13")
-        sizePolicy6.setHeightForWidth(self.frame_13.sizePolicy().hasHeightForWidth())
-        self.frame_13.setSizePolicy(sizePolicy6)
-        self.frame_13.setMinimumSize(QSize(0, 35))
-        self.frame_13.setFrameShape(QFrame.Shape.StyledPanel)
-        self.frame_13.setFrameShadow(QFrame.Shadow.Raised)
-        self.horizontalLayout_48 = QHBoxLayout(self.frame_13)
-        self.horizontalLayout_48.setObjectName(u"horizontalLayout_48")
-        self.travel10_RadioButton_3 = QRadioButton(self.frame_13)
-        self.travel10_RadioButton_3.setObjectName(u"travel10_RadioButton_3")
-        self.travel10_RadioButton_3.setFont(font2)
-
-        self.horizontalLayout_48.addWidget(self.travel10_RadioButton_3)
-
-        self.travel5_RadioButton = QRadioButton(self.frame_13)
-        self.travel5_RadioButton.setObjectName(u"travel5_RadioButton")
-        self.travel5_RadioButton.setFont(font2)
-
-        self.horizontalLayout_48.addWidget(self.travel5_RadioButton)
-
-        self.travel1_RadioButton_3 = QRadioButton(self.frame_13)
-        self.travel1_RadioButton_3.setObjectName(u"travel1_RadioButton_3")
-        self.travel1_RadioButton_3.setFont(font2)
-
-        self.horizontalLayout_48.addWidget(self.travel1_RadioButton_3)
-
-        self.travel01_RadioButton = QRadioButton(self.frame_13)
-        self.travel01_RadioButton.setObjectName(u"travel01_RadioButton")
-        self.travel01_RadioButton.setFont(font2)
-
-        self.horizontalLayout_48.addWidget(self.travel01_RadioButton)
-
-
-        self.verticalLayout_64.addWidget(self.frame_13)
-
-
-        self.horizontalLayout_49.addWidget(self.stepsFrame_2)
+        self.horizontalLayout_49.addItem(self.horizontalSpacer_5)
 
         self.pgmsavePushButton = QPushButton(self.widget_11)
         self.pgmsavePushButton.setObjectName(u"pgmsavePushButton")
@@ -2890,6 +2851,8 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_49.addWidget(self.pgmsavePushButton)
 
+        self.horizontalLayout_49.setStretch(0, 5)
+        self.horizontalLayout_49.setStretch(1, 2)
 
         self.verticalLayout_28.addWidget(self.widget_11)
 
@@ -2996,9 +2959,9 @@ class Ui_MainWindow(object):
 "QPushButton:disabled {\n"
 "	background-color: rgb(172, 172, 172);\n"
 "}")
-        icon19 = QIcon()
-        icon19.addFile(u":/icons/icons/play.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
-        self.printrunPushButton.setIcon(icon19)
+        icon20 = QIcon()
+        icon20.addFile(u":/icons/icons/play.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.printrunPushButton.setIcon(icon20)
         self.printrunPushButton.setIconSize(QSize(32, 32))
 
         self.verticalLayout_32.addWidget(self.printrunPushButton)
@@ -3028,9 +2991,9 @@ class Ui_MainWindow(object):
 "QPushButton:disabled {\n"
 "	background-color: rgb(172, 172, 172);\n"
 "}")
-        icon20 = QIcon()
-        icon20.addFile(u":/icons/icons/pause.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
-        self.printpausePushButton.setIcon(icon20)
+        icon21 = QIcon()
+        icon21.addFile(u":/icons/icons/pause.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.printpausePushButton.setIcon(icon21)
         self.printpausePushButton.setIconSize(QSize(32, 32))
 
         self.verticalLayout_32.addWidget(self.printpausePushButton)
@@ -3060,7 +3023,7 @@ class Ui_MainWindow(object):
 "QPushButton:disabled {\n"
 "	background-color: rgb(172, 172, 172);\n"
 "}")
-        self.printabortPushButton.setIcon(icon17)
+        self.printabortPushButton.setIcon(icon18)
         self.printabortPushButton.setIconSize(QSize(32, 32))
 
         self.verticalLayout_32.addWidget(self.printabortPushButton)
@@ -3249,9 +3212,9 @@ class Ui_MainWindow(object):
 "QPushButton:disabled {\n"
 "	background-color: rgb(172, 172, 172);\n"
 "}")
-        icon21 = QIcon()
-        icon21.addFile(u":/icons/icons/arrow-right.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
-        self.terminalsendPushButton.setIcon(icon21)
+        icon22 = QIcon()
+        icon22.addFile(u":/icons/icons/arrow-right.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.terminalsendPushButton.setIcon(icon22)
         self.terminalsendPushButton.setIconSize(QSize(24, 24))
 
         self.horizontalLayout_31.addWidget(self.terminalsendPushButton)
@@ -3633,7 +3596,7 @@ class Ui_MainWindow(object):
 "QPushButton:disabled {\n"
 "	background-color: rgb(172, 172, 172);\n"
 "}")
-        self.parabkbedPushButton.setIcon(icon12)
+        self.parabkbedPushButton.setIcon(icon13)
         self.parabkbedPushButton.setIconSize(QSize(24, 24))
 
         self.horizontalLayout_59.addWidget(self.parabkbedPushButton)
@@ -3803,7 +3766,7 @@ class Ui_MainWindow(object):
 "QPushButton:disabled {\n"
 "	background-color: rgb(172, 172, 172);\n"
 "}")
-        self.parabkprPushButton.setIcon(icon12)
+        self.parabkprPushButton.setIcon(icon13)
         self.parabkprPushButton.setIconSize(QSize(24, 24))
 
         self.horizontalLayout_63.addWidget(self.parabkprPushButton)
@@ -4080,7 +4043,7 @@ class Ui_MainWindow(object):
 "QPushButton:disabled {\n"
 "	background-color: rgb(172, 172, 172);\n"
 "}")
-        self.parabkuvPushButton.setIcon(icon12)
+        self.parabkuvPushButton.setIcon(icon13)
         self.parabkuvPushButton.setIconSize(QSize(24, 24))
 
         self.horizontalLayout_67.addWidget(self.parabkuvPushButton)
@@ -4104,6 +4067,163 @@ class Ui_MainWindow(object):
         self.verticalLayout_46.addWidget(self.parameterFrame)
 
         self.mainPages.addWidget(self.parameterPage)
+        self.syringeflushPage = QWidget()
+        self.syringeflushPage.setObjectName(u"syringeflushPage")
+        self.verticalLayout_63 = QVBoxLayout(self.syringeflushPage)
+        self.verticalLayout_63.setObjectName(u"verticalLayout_63")
+        self.page3Label_5 = QLabel(self.syringeflushPage)
+        self.page3Label_5.setObjectName(u"page3Label_5")
+        self.page3Label_5.setMinimumSize(QSize(0, 20))
+        self.page3Label_5.setMaximumSize(QSize(16777215, 20))
+        self.page3Label_5.setFont(font2)
+        self.page3Label_5.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.verticalLayout_63.addWidget(self.page3Label_5)
+
+        self.syringeFrame = QFrame(self.syringeflushPage)
+        self.syringeFrame.setObjectName(u"syringeFrame")
+        self.syringeFrame.setFrameShape(QFrame.Shape.StyledPanel)
+        self.syringeFrame.setFrameShadow(QFrame.Shadow.Raised)
+        self.horizontalLayout_26 = QHBoxLayout(self.syringeFrame)
+        self.horizontalLayout_26.setObjectName(u"horizontalLayout_26")
+        self.syringemidFrame = QFrame(self.syringeFrame)
+        self.syringemidFrame.setObjectName(u"syringemidFrame")
+        self.syringemidFrame.setFrameShape(QFrame.Shape.StyledPanel)
+        self.syringemidFrame.setFrameShadow(QFrame.Shadow.Raised)
+        self.verticalLayout_65 = QVBoxLayout(self.syringemidFrame)
+        self.verticalLayout_65.setObjectName(u"verticalLayout_65")
+        self.stepsFrame_2 = QFrame(self.syringemidFrame)
+        self.stepsFrame_2.setObjectName(u"stepsFrame_2")
+        self.stepsFrame_2.setFrameShape(QFrame.Shape.StyledPanel)
+        self.stepsFrame_2.setFrameShadow(QFrame.Shadow.Raised)
+        self.verticalLayout_64 = QVBoxLayout(self.stepsFrame_2)
+        self.verticalLayout_64.setObjectName(u"verticalLayout_64")
+        self.verticalLayout_64.setContentsMargins(-1, 4, -1, -1)
+        self.label_15 = QLabel(self.stepsFrame_2)
+        self.label_15.setObjectName(u"label_15")
+        self.label_15.setMinimumSize(QSize(0, 15))
+        self.label_15.setFont(font5)
+        self.label_15.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.verticalLayout_64.addWidget(self.label_15, 0, Qt.AlignmentFlag.AlignTop)
+
+        self.frame_13 = QFrame(self.stepsFrame_2)
+        self.frame_13.setObjectName(u"frame_13")
+        sizePolicy6.setHeightForWidth(self.frame_13.sizePolicy().hasHeightForWidth())
+        self.frame_13.setSizePolicy(sizePolicy6)
+        self.frame_13.setMinimumSize(QSize(0, 35))
+        self.frame_13.setFrameShape(QFrame.Shape.StyledPanel)
+        self.frame_13.setFrameShadow(QFrame.Shadow.Raised)
+        self.horizontalLayout_48 = QHBoxLayout(self.frame_13)
+        self.horizontalLayout_48.setObjectName(u"horizontalLayout_48")
+        self.travel10_RadioButton_3 = QRadioButton(self.frame_13)
+        self.travel10_RadioButton_3.setObjectName(u"travel10_RadioButton_3")
+        self.travel10_RadioButton_3.setFont(font2)
+
+        self.horizontalLayout_48.addWidget(self.travel10_RadioButton_3)
+
+        self.travel5_RadioButton = QRadioButton(self.frame_13)
+        self.travel5_RadioButton.setObjectName(u"travel5_RadioButton")
+        self.travel5_RadioButton.setFont(font2)
+
+        self.horizontalLayout_48.addWidget(self.travel5_RadioButton)
+
+        self.travel1_RadioButton_3 = QRadioButton(self.frame_13)
+        self.travel1_RadioButton_3.setObjectName(u"travel1_RadioButton_3")
+        self.travel1_RadioButton_3.setFont(font2)
+
+        self.horizontalLayout_48.addWidget(self.travel1_RadioButton_3)
+
+        self.travel01_RadioButton = QRadioButton(self.frame_13)
+        self.travel01_RadioButton.setObjectName(u"travel01_RadioButton")
+        self.travel01_RadioButton.setFont(font2)
+
+        self.horizontalLayout_48.addWidget(self.travel01_RadioButton)
+
+
+        self.verticalLayout_64.addWidget(self.frame_13)
+
+
+        self.verticalLayout_65.addWidget(self.stepsFrame_2)
+
+        self.widget_13 = QWidget(self.syringemidFrame)
+        self.widget_13.setObjectName(u"widget_13")
+        self.horizontalLayout_50 = QHBoxLayout(self.widget_13)
+        self.horizontalLayout_50.setObjectName(u"horizontalLayout_50")
+        self.pgmfillPushButton = QPushButton(self.widget_13)
+        self.pgmfillPushButton.setObjectName(u"pgmfillPushButton")
+        sizePolicy6.setHeightForWidth(self.pgmfillPushButton.sizePolicy().hasHeightForWidth())
+        self.pgmfillPushButton.setSizePolicy(sizePolicy6)
+        self.pgmfillPushButton.setMaximumSize(QSize(350, 60))
+        self.pgmfillPushButton.setFont(font2)
+        self.pgmfillPushButton.setStyleSheet(u"QPushButton {\n"
+"	color: rgb(255, 255, 255);	\n"
+"	background-color: rgb(16, 42, 131);\n"
+"	border-color: transparent;\n"
+"	border-style: outset;\n"
+"	border-radius: 15px;\n"
+"	border-width: 2px;\n"
+"	padding: 6px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"	color: rgb(16, 42, 131);\n"
+"	background-color: rgb(167, 198, 229);\n"
+"	border-color: rgb(16, 42, 131);\n"
+"}\n"
+"\n"
+"QPushButton:disabled {\n"
+"	background-color: rgb(172, 172, 172);\n"
+"}")
+
+        self.horizontalLayout_50.addWidget(self.pgmfillPushButton)
+
+        self.horizontalSpacer_11 = QSpacerItem(174, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
+
+        self.horizontalLayout_50.addItem(self.horizontalSpacer_11)
+
+        self.pgmpurgePushButton = QPushButton(self.widget_13)
+        self.pgmpurgePushButton.setObjectName(u"pgmpurgePushButton")
+        sizePolicy6.setHeightForWidth(self.pgmpurgePushButton.sizePolicy().hasHeightForWidth())
+        self.pgmpurgePushButton.setSizePolicy(sizePolicy6)
+        self.pgmpurgePushButton.setMaximumSize(QSize(350, 60))
+        self.pgmpurgePushButton.setFont(font2)
+        self.pgmpurgePushButton.setStyleSheet(u"QPushButton {\n"
+"	color: rgb(255, 255, 255);	\n"
+"	background-color: rgb(16, 42, 131);\n"
+"	border-color: transparent;\n"
+"	border-style: outset;\n"
+"	border-radius: 15px;\n"
+"	border-width: 2px;\n"
+"	padding: 6px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"	color: rgb(16, 42, 131);\n"
+"	background-color: rgb(167, 198, 229);\n"
+"	border-color: rgb(16, 42, 131);\n"
+"}\n"
+"\n"
+"QPushButton:disabled {\n"
+"	background-color: rgb(172, 172, 172);\n"
+"}")
+
+        self.horizontalLayout_50.addWidget(self.pgmpurgePushButton)
+
+
+        self.verticalLayout_65.addWidget(self.widget_13)
+
+        self.verticalSpacer_7 = QSpacerItem(20, 101, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
+
+        self.verticalLayout_65.addItem(self.verticalSpacer_7)
+
+
+        self.horizontalLayout_26.addWidget(self.syringemidFrame)
+
+
+        self.verticalLayout_63.addWidget(self.syringeFrame)
+
+        self.mainPages.addWidget(self.syringeflushPage)
 
         self.horizontalLayout_11.addWidget(self.mainPages)
 
@@ -4150,9 +4270,9 @@ class Ui_MainWindow(object):
         self.closeNotifyPushButton = QPushButton(self.frame)
         self.closeNotifyPushButton.setObjectName(u"closeNotifyPushButton")
         self.closeNotifyPushButton.setText(u"")
-        icon22 = QIcon()
-        icon22.addFile(u":/icons/icons/x-octagon.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
-        self.closeNotifyPushButton.setIcon(icon22)
+        icon23 = QIcon()
+        icon23.addFile(u":/icons/icons/x-octagon.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.closeNotifyPushButton.setIcon(icon23)
         self.closeNotifyPushButton.setIconSize(QSize(24, 24))
         self.closeNotifyPushButton.setCheckable(False)
 
@@ -4241,6 +4361,10 @@ class Ui_MainWindow(object):
         self.laserPushButton.setToolTip(QCoreApplication.translate("MainWindow", u"Setting Page", None))
 #endif // QT_CONFIG(tooltip)
         self.laserPushButton.setText(QCoreApplication.translate("MainWindow", u"Setting", None))
+#if QT_CONFIG(tooltip)
+        self.syringflushPushButton.setToolTip(QCoreApplication.translate("MainWindow", u"Terminal Page", None))
+#endif // QT_CONFIG(tooltip)
+        self.syringflushPushButton.setText(QCoreApplication.translate("MainWindow", u"Terminal", None))
 #if QT_CONFIG(tooltip)
         self.programsPushButton.setToolTip(QCoreApplication.translate("MainWindow", u"Program Page", None))
 #endif // QT_CONFIG(tooltip)
@@ -4363,13 +4487,8 @@ class Ui_MainWindow(object):
         self.pgmfeedLineEdit.setText(QCoreApplication.translate("MainWindow", u"500", None))
         self.label_14.setText(QCoreApplication.translate("MainWindow", u"mm/min", None))
         self.pgmfeedPushButton.setText(QCoreApplication.translate("MainWindow", u"SET", None))
-        self.pgmfillPushButton.setText(QCoreApplication.translate("MainWindow", u"FILL", None))
-        self.pgmpurgePushButton.setText(QCoreApplication.translate("MainWindow", u"PURGE", None))
-        self.label_15.setText(QCoreApplication.translate("MainWindow", u"Steps", None))
-        self.travel10_RadioButton_3.setText(QCoreApplication.translate("MainWindow", u"10 mm", None))
-        self.travel5_RadioButton.setText(QCoreApplication.translate("MainWindow", u"5 mm", None))
-        self.travel1_RadioButton_3.setText(QCoreApplication.translate("MainWindow", u"1 mm", None))
-        self.travel01_RadioButton.setText(QCoreApplication.translate("MainWindow", u"0.1 mm", None))
+        self.label_25.setText(QCoreApplication.translate("MainWindow", u"Viscosity Level :", None))
+        self.label_26.setText(QCoreApplication.translate("MainWindow", u"Needle Guage :", None))
         self.pgmsavePushButton.setText(QCoreApplication.translate("MainWindow", u"SAVE", None))
         self.page3Label.setText(QCoreApplication.translate("MainWindow", u"PRINT", None))
         self.label_11.setText(QCoreApplication.translate("MainWindow", u"Image Plot", None))
@@ -4423,6 +4542,14 @@ class Ui_MainWindow(object):
         self.uvonPushButton.setText(QCoreApplication.translate("MainWindow", u"ON", None))
         self.uvoffPushButton.setText(QCoreApplication.translate("MainWindow", u"OFF", None))
         self.parabkuvPushButton.setText("")
+        self.page3Label_5.setText(QCoreApplication.translate("MainWindow", u"Syringe Flushing Cycle", None))
+        self.label_15.setText(QCoreApplication.translate("MainWindow", u"Steps", None))
+        self.travel10_RadioButton_3.setText(QCoreApplication.translate("MainWindow", u"10 mm", None))
+        self.travel5_RadioButton.setText(QCoreApplication.translate("MainWindow", u"5 mm", None))
+        self.travel1_RadioButton_3.setText(QCoreApplication.translate("MainWindow", u"1 mm", None))
+        self.travel01_RadioButton.setText(QCoreApplication.translate("MainWindow", u"0.1 mm", None))
+        self.pgmfillPushButton.setText(QCoreApplication.translate("MainWindow", u"FILL", None))
+        self.pgmpurgePushButton.setText(QCoreApplication.translate("MainWindow", u"PURGE", None))
         self.notifyLabel.setText(QCoreApplication.translate("MainWindow", u"Notification", None))
         self.notifyTextEdit.setHtml(QCoreApplication.translate("MainWindow", u"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\n"
