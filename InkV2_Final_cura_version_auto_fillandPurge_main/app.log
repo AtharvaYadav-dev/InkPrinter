@@ -2971,3 +2971,171 @@ Failed to generate G-code from DXF.
 2026-08-03 10:19 - INFO - Purge command (PURGE 5.0) sent to Blackpill.
 2026-08-03 10:19 - INFO - Sent STOP to Blackpill
 2026-08-03 10:19 - INFO - Stop Purge command sent to Blackpill.
+2026-08-03 10:51 - INFO - Sent PURGE 5.0 to Blackpill
+2026-08-03 10:51 - INFO - Purge command (PURGE 5.0) sent to Blackpill.
+2026-08-03 10:51 - INFO - Sent STOP to Blackpill
+2026-08-03 10:51 - INFO - Stop Purge command sent to Blackpill.
+2026-08-03 10:51 - INFO - Sent PURGE 5.0 to Blackpill
+2026-08-03 10:51 - INFO - Purge command (PURGE 5.0) sent to Blackpill.
+2026-08-03 10:51 - INFO - Sent STOP to Blackpill
+2026-08-03 10:51 - INFO - Stop Purge command sent to Blackpill.
+2026-08-03 10:51 - INFO - Sent PURGE 5.0 to Blackpill
+2026-08-03 10:51 - INFO - Purge command (PURGE 5.0) sent to Blackpill.
+2026-08-03 10:51 - INFO - Sent STOP to Blackpill
+2026-08-03 10:51 - INFO - Stop Purge command sent to Blackpill.
+2026-08-03 10:51 - INFO - Sent PURGE 5.0 to Blackpill
+2026-08-03 10:51 - INFO - Purge command (PURGE 5.0) sent to Blackpill.
+2026-08-03 10:52 - INFO - Sent STOP to Blackpill
+2026-08-03 10:52 - INFO - Stop Purge command sent to Blackpill.
+2026-08-03 10:52 - INFO - Sent PURGE 5.0 to Blackpill
+2026-08-03 10:52 - INFO - Purge command (PURGE 5.0) sent to Blackpill.
+2026-08-03 10:52 - INFO - Sent STOP to Blackpill
+2026-08-03 10:52 - INFO - Stop Purge command sent to Blackpill.
+2026-08-03 10:52 - INFO - Sent PURGE 5.0 to Blackpill
+2026-08-03 10:52 - INFO - Purge command (PURGE 5.0) sent to Blackpill.
+2026-08-03 10:52 - INFO - Sent STOP to Blackpill
+2026-08-03 10:52 - INFO - Stop Purge command sent to Blackpill.
+2026-08-03 10:52 - INFO - Sent PURGE 5.0 to Blackpill
+2026-08-03 10:52 - INFO - Purge command (PURGE 5.0) sent to Blackpill.
+2026-08-03 10:52 - INFO - Sent STOP to Blackpill
+2026-08-03 10:52 - INFO - Stop Purge command sent to Blackpill.
+2026-08-03 10:52 - INFO - Sent PURGE 5.0 to Blackpill
+2026-08-03 10:52 - INFO - Purge command (PURGE 5.0) sent to Blackpill.
+2026-08-03 10:52 - INFO - Sent STOP to Blackpill
+2026-08-03 10:52 - INFO - Stop Purge command sent to Blackpill.
+2026-08-03 10:53 - INFO - Sent FILL 5.0 to Blackpill
+2026-08-03 10:53 - INFO - Fill command (FILL 5.0) sent to Blackpill.
+2026-08-03 10:53 - INFO - Sent STOP to Blackpill
+2026-08-03 10:53 - INFO - Stop Fill command sent to Blackpill.
+2026-08-03 10:53 - INFO - Sent FILL 5.0 to Blackpill
+2026-08-03 10:53 - INFO - Fill command (FILL 5.0) sent to Blackpill.
+2026-08-03 10:53 - INFO - Sent STOP to Blackpill
+2026-08-03 10:53 - INFO - Stop Fill command sent to Blackpill.
+2026-08-03 10:53 - INFO - Sent FILL 5.0 to Blackpill
+2026-08-03 10:53 - INFO - Fill command (FILL 5.0) sent to Blackpill.
+2026-08-03 10:53 - INFO - Sent STOP to Blackpill
+2026-08-03 10:53 - INFO - Stop Fill command sent to Blackpill.
+2026-08-03 10:53 - INFO - Sent FILL 5.0 to Blackpill
+2026-08-03 10:53 - INFO - Fill command (FILL 5.0) sent to Blackpill.
+2026-08-03 10:53 - INFO - Sent STOP to Blackpill
+2026-08-03 10:53 - INFO - Stop Fill command sent to Blackpill.
+2026-08-03 10:53 - INFO - Sent FILL 5.0 to Blackpill
+2026-08-03 10:53 - INFO - Fill command (FILL 5.0) sent to Blackpill.
+2026-08-03 10:53 - INFO - Sent STOP to Blackpill
+2026-08-03 10:53 - INFO - Stop Fill command sent to Blackpill.
+2026-08-03 10:53 - INFO - Sent FILL 5.0 to Blackpill
+2026-08-03 10:53 - INFO - Fill command (FILL 5.0) sent to Blackpill.
+2026-08-03 10:53 - INFO - Sent STOP to Blackpill
+2026-08-03 10:53 - INFO - Stop Fill command sent to Blackpill.
+2026-08-03 10:53 - INFO - Sent FILL 5.0 to Blackpill
+2026-08-03 10:53 - INFO - Fill command (FILL 5.0) sent to Blackpill.
+2026-08-03 10:53 - INFO - Sent STOP to Blackpill
+2026-08-03 10:53 - INFO - Stop Fill command sent to Blackpill.
+2026-08-03 10:55 - INFO - Sent PURGE 5.0 to Blackpill
+2026-08-03 10:55 - INFO - Purge command (PURGE 5.0) sent to Blackpill.
+2026-08-03 10:55 - INFO - Sent STOP to Blackpill
+2026-08-03 10:55 - INFO - Stop Purge command sent to Blackpill.
+2026-08-03 10:59 - INFO - File selected: E:/Atharva/InkPrinter/InkV2_Final_cura_version_auto_fillandPurge_main/Test_files/ide2.svg
+2026-08-03 10:59 - INFO - Converting SVG -> G-code directly: E:\Atharva\InkPrinter\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\ide2.svg
+2026-08-03 10:59 - INFO - G-code created: E:\Atharva\InkPrinter\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\ide2.gcode
+2026-08-03 10:59 - INFO - G-code ready from SVG: E:\Atharva\InkPrinter\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\ide2.gcode
+2026-08-03 10:59 - INFO - Raw G-code parsed (1175 lines).
+2026-08-03 11:01 - INFO - File selected: E:/Atharva/InkPrinter/InkV2_Final_cura_version_auto_fillandPurge_main/Test_files/ide2.svg
+2026-08-03 11:01 - INFO - Converting SVG -> G-code directly: E:\Atharva\InkPrinter\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\ide2.svg
+2026-08-03 11:01 - INFO - G-code created: E:\Atharva\InkPrinter\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\ide2.gcode
+2026-08-03 11:01 - INFO - G-code ready from SVG: E:\Atharva\InkPrinter\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\ide2.gcode
+2026-08-03 11:01 - INFO - Raw G-code parsed (1175 lines).
+2026-08-03 11:01 - INFO - Feedrate: 1500.0 mm/min
+2026-08-03 11:01 - INFO - Normalization shift: X=-249.385, Y=-76.833
+2026-08-03 11:01 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=43.350
+2026-08-03 11:01 - INFO - Final applied shift: X=-249.385, Y=-76.833
+2026-08-03 11:05 - INFO - Print Status : RUN
+2026-08-03 11:05 - INFO - Print Status : PAUSE
+2026-08-03 11:06 - INFO - Print Status : RESUME
+2026-08-03 11:07 - INFO - Print Status : ABORT
+2026-08-03 11:11 - INFO - File selected: E:/Atharva/InkPrinter/InkV2_Final_cura_version_auto_fillandPurge_main/Test_files/ide2.svg
+2026-08-03 11:11 - INFO - Converting SVG -> G-code directly: E:\Atharva\InkPrinter\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\ide2.svg
+2026-08-03 11:11 - INFO - G-code created: E:\Atharva\InkPrinter\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\ide2.gcode
+2026-08-03 11:11 - INFO - G-code ready from SVG: E:\Atharva\InkPrinter\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\ide2.gcode
+2026-08-03 11:11 - INFO - Raw G-code parsed (1175 lines).
+2026-08-03 11:11 - INFO - Feedrate: 1500.0 mm/min
+2026-08-03 11:11 - INFO - Normalization shift: X=-249.385, Y=-76.833
+2026-08-03 11:11 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=43.200
+2026-08-03 11:11 - INFO - Final applied shift: X=-249.385, Y=-76.833
+2026-08-03 11:11 - INFO - Print Status : RUN
+2026-08-03 12:08 - INFO - File selected: E:/Atharva/InkPrinter/InkV2_Final_cura_version_auto_fillandPurge_main/Test_files/60KBL-mandala-wall-art-design.dxf
+2026-08-03 12:08 - INFO - Converting DXF -> G-code directly: E:\Atharva\InkPrinter\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\60KBL-mandala-wall-art-design.dxf
+2026-08-03 12:08 - INFO - G-code created: E:\Atharva\InkPrinter\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\60KBL-mandala-wall-art-design.gcode
+2026-08-03 12:08 - INFO - G-code ready from DXF: E:\Atharva\InkPrinter\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\60KBL-mandala-wall-art-design.gcode
+2026-08-03 12:08 - INFO - Raw G-code parsed (220 lines).
+2026-08-03 12:08 - INFO - Feedrate: 1500.0 mm/min
+2026-08-03 12:08 - INFO - Normalization shift: X=-238.948, Y=-74.444
+2026-08-03 12:08 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=43.200
+2026-08-03 12:08 - INFO - Final applied shift: X=-238.948, Y=-74.444
+2026-08-03 12:09 - INFO - File selected: E:/Atharva/InkPrinter/InkV2_Final_cura_version_auto_fillandPurge_main/Test_files/arc_polyline_spline.dxf
+2026-08-03 12:09 - INFO - Converting DXF -> G-code directly: E:\Atharva\InkPrinter\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\arc_polyline_spline.dxf
+2026-08-03 12:09 - ERROR - DXF conversion failed:
+Failed to generate G-code from DXF.
+2026-08-03 12:09 - INFO - File selected: E:/Atharva/InkPrinter/InkV2_Final_cura_version_auto_fillandPurge_main/Test_files/arc_polyline_spline.dxf
+2026-08-03 12:09 - INFO - Converting DXF -> G-code directly: E:\Atharva\InkPrinter\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\arc_polyline_spline.dxf
+2026-08-03 12:09 - ERROR - DXF conversion failed:
+Failed to generate G-code from DXF.
+2026-08-03 12:09 - INFO - File selected: E:/Atharva/InkPrinter/InkV2_Final_cura_version_auto_fillandPurge_main/Test_files/Diamond.dxf
+2026-08-03 12:09 - INFO - Converting DXF -> G-code directly: E:\Atharva\InkPrinter\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\Diamond.dxf
+2026-08-03 12:09 - INFO - G-code created: E:\Atharva\InkPrinter\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\Diamond.gcode
+2026-08-03 12:09 - INFO - G-code ready from DXF: E:\Atharva\InkPrinter\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\Diamond.gcode
+2026-08-03 12:09 - INFO - Raw G-code parsed (49 lines).
+2026-08-03 12:09 - INFO - Feedrate: 1500.0 mm/min
+2026-08-03 12:09 - INFO - Normalization shift: X=-246.466, Y=-74.334
+2026-08-03 12:09 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=43.200
+2026-08-03 12:09 - INFO - Final applied shift: X=-246.466, Y=-74.334
+2026-08-03 12:10 - INFO - File selected: E:/Atharva/InkPrinter/InkV2_Final_cura_version_auto_fillandPurge_main/Test_files/Diamond.gcode
+2026-08-03 12:10 - INFO - Raw G-code parsed (500 lines).
+2026-08-03 12:10 - INFO - Feedrate: 1500.0 mm/min
+2026-08-03 12:10 - INFO - Normalization shift: X=-0.000, Y=-10.093
+2026-08-03 12:10 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=43.200
+2026-08-03 12:10 - INFO - Final applied shift: X=0.000, Y=-10.093
+2026-08-03 12:10 - ERROR - Out of Bed Range: Drawing exceeds bed area!
+
+X: 0.00 → 70.00 (Bed: 0.0 → 50.0)
+Y: 0.00 → 49.81 (Bed: 0.0 → 50.0)
+
+Please re-adjust the offsets.
+2026-08-03 12:10 - INFO - Normalization shift: X=-0.000, Y=-10.093
+2026-08-03 12:10 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=43.200
+2026-08-03 12:10 - INFO - Final applied shift: X=0.000, Y=-10.093
+2026-08-03 12:10 - ERROR - Out of Bed Range: Drawing exceeds bed area!
+
+X: 0.00 → 70.00 (Bed: 0.0 → 50.0)
+Y: 0.00 → 49.81 (Bed: 0.0 → 50.0)
+
+Please re-adjust the offsets.
+2026-08-03 12:11 - INFO - File selected: E:/Atharva/InkPrinter/InkV2_Final_cura_version_auto_fillandPurge_main/Test_files/ellipse_text.dxf
+2026-08-03 12:11 - INFO - Converting DXF -> G-code directly: E:\Atharva\InkPrinter\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\ellipse_text.dxf
+2026-08-03 12:11 - INFO - G-code created: E:\Atharva\InkPrinter\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\ellipse_text.gcode
+2026-08-03 12:11 - INFO - G-code ready from DXF: E:\Atharva\InkPrinter\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\ellipse_text.gcode
+2026-08-03 12:11 - INFO - Raw G-code parsed (386 lines).
+2026-08-03 12:11 - INFO - Feedrate: 1500.0 mm/min
+2026-08-03 12:11 - INFO - Normalization shift: X=-267.265, Y=-107.149
+2026-08-03 12:11 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=43.200
+2026-08-03 12:11 - INFO - Final applied shift: X=-267.265, Y=-107.149
+2026-08-03 12:11 - ERROR - Out of Bed Range: Drawing exceeds bed area!
+
+X: 0.00 → 60.47 (Bed: 0.0 → 50.0)
+Y: 0.00 → 35.70 (Bed: 0.0 → 50.0)
+
+Please re-adjust the offsets.
+2026-08-03 12:12 - INFO - Sent PURGE 5.0 to Blackpill
+2026-08-03 12:12 - INFO - Purge command (PURGE 5.0) sent to Blackpill.
+2026-08-03 12:12 - INFO - Sent STOP to Blackpill
+2026-08-03 12:12 - INFO - Stop Purge command sent to Blackpill.
+2026-08-03 12:16 - INFO - File selected: E:/Atharva/InkPrinter/InkV2_Final_cura_version_auto_fillandPurge_main/Test_files/ide2.svg
+2026-08-03 12:16 - INFO - Converting SVG -> G-code directly: E:\Atharva\InkPrinter\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\ide2.svg
+2026-08-03 12:16 - INFO - G-code created: E:\Atharva\InkPrinter\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\ide2.gcode
+2026-08-03 12:16 - INFO - G-code ready from SVG: E:\Atharva\InkPrinter\InkV2_Final_cura_version_auto_fillandPurge_main\Test_files\ide2.gcode
+2026-08-03 12:16 - INFO - Raw G-code parsed (1175 lines).
+2026-08-03 12:16 - INFO - Feedrate: 1500.0 mm/min
+2026-08-03 12:16 - INFO - Normalization shift: X=-249.385, Y=-76.833
+2026-08-03 12:16 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=43.200
+2026-08-03 12:16 - INFO - Final applied shift: X=-249.385, Y=-76.833
+2026-08-03 12:16 - INFO - Print Status : RUN
