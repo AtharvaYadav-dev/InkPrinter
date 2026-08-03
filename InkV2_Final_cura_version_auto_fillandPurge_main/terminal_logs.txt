@@ -416090,3 +416090,73 @@ action : Disconnect
 Serial communication stopped
 status : True
 connect btn : Connect | refresh btn : True
+
+==================================================
+Session Started: 2026-08-03 13:27:15
+==================================================
+C:\Program Files\Python313\Lib\site-packages\Custom_Widgets\JSonStyles\__init__.py:842: RuntimeWarning: Failed to disconnect (None) from signal "clicked()".
+  button.clicked.disconnect()
+[2026-08-03 13:27:15] [OK] Found Cura installations:
+[2026-08-03 13:27:15]      - C:\Program Files\UltiMaker Cura 5.10.2
+[2026-08-03 13:27:15]      - C:\Program Files\UltiMaker Cura 5.9.1
+[2026-08-03 13:27:15] [OK] Found Cura installations:
+[2026-08-03 13:27:15]      - C:\Program Files\UltiMaker Cura 5.10.2
+[2026-08-03 13:27:15]      - C:\Program Files\UltiMaker Cura 5.9.1
+Cura version selected for Slicing: 5.9.1
+[Config] profile.json already exists.
+index : 0
+arg : 0
+index : 0
+arg : 0
+UI is loaded
+xindex : 0
+yindex : 0
+feed : 1000
+laser handler : {}
+Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+action : Auto
+status : None
+index : 1
+index : 6
+index : 2
+Application is closing
+action : Disconnect
+Serial communication stopped
+status : True
+connect btn : Connect | refresh btn : True
+
+==================================================
+Session Started: 2026-08-03 16:10:52
+==================================================
+C:\Program Files\Python313\Lib\site-packages\Custom_Widgets\JSonStyles\__init__.py:842: RuntimeWarning: Failed to disconnect (None) from signal "clicked()".
+  button.clicked.disconnect()
+[2026-08-03 16:10:52] [OK] Found Cura installations:
+[2026-08-03 16:10:52]      - C:\Program Files\UltiMaker Cura 5.10.2
+[2026-08-03 16:10:52]      - C:\Program Files\UltiMaker Cura 5.9.1
+[2026-08-03 16:10:52] [OK] Found Cura installations:
+[2026-08-03 16:10:52]      - C:\Program Files\UltiMaker Cura 5.10.2
+[2026-08-03 16:10:52]      - C:\Program Files\UltiMaker Cura 5.9.1
+Cura version selected for Slicing: 5.9.1
+[Config] profile.json already exists.
+pgm : viscositylevComboBox
+pgm : viscositylevComboBox
+pgm : needleguageComboBox
+pgm : needleguageComboBox
+index : 0
+arg : 0
+index : 0
+arg : 0
+UI is loaded
+xindex : 0
+yindex : 0
+feed : 1000
+laser handler : {}
+Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+action : Auto
+status : None
+index : 6
+pgm : pgmfillhomePushButton
+pgm : pgmfillhomePushButton
+pgm : pgmfillhomePushButton
+pgm : pgmfillhomePushButton
+pgm : pgmfillhomePushButton

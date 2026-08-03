@@ -2734,7 +2734,7 @@ QPushButton:disabled {
                 </size>
                </property>
                <property name="currentIndex">
-                <number>2</number>
+                <number>6</number>
                </property>
                <widget class="QWidget" name="jogPage">
                 <layout class="QVBoxLayout" name="verticalLayout_15">
@@ -7889,17 +7889,50 @@ QPushButton:disabled {
                            </widget>
                           </item>
                           <item>
-                           <spacer name="horizontalSpacer_11">
-                            <property name="orientation">
-                             <enum>Qt::Orientation::Horizontal</enum>
+                           <widget class="QPushButton" name="pgmfillhomePushButton">
+                            <property name="sizePolicy">
+                             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                              <horstretch>0</horstretch>
+                              <verstretch>0</verstretch>
+                             </sizepolicy>
                             </property>
-                            <property name="sizeHint" stdset="0">
+                            <property name="maximumSize">
                              <size>
-                              <width>174</width>
-                              <height>20</height>
+                              <width>350</width>
+                              <height>60</height>
                              </size>
                             </property>
-                           </spacer>
+                            <property name="font">
+                             <font>
+                              <pointsize>14</pointsize>
+                              <bold>true</bold>
+                             </font>
+                            </property>
+                            <property name="styleSheet">
+                             <string notr="true">QPushButton {
+	color: rgb(255, 255, 255);	
+	background-color: rgb(16, 42, 131);
+	border-color: transparent;
+	border-style: outset;
+	border-radius: 15px;
+	border-width: 2px;
+	padding: 6px;
+}
+
+QPushButton:hover {
+	color: rgb(16, 42, 131);
+	background-color: rgb(167, 198, 229);
+	border-color: rgb(16, 42, 131);
+}
+
+QPushButton:disabled {
+	background-color: rgb(172, 172, 172);
+}</string>
+                            </property>
+                            <property name="text">
+                             <string>F HOME</string>
+                            </property>
+                           </widget>
                           </item>
                           <item>
                            <widget class="QPushButton" name="pgmpurgePushButton">

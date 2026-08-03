@@ -537,6 +537,7 @@ class MainWindow(QMainWindow):
         self.pgmBtn4 = self.findChild(QPushButton, "pgmsavePushButton")
         self.pgmBtn5 = self.findChild(QPushButton, "pgmfillPushButton")
         self.pgmBtn6 = self.findChild(QPushButton, "pgmpurgePushButton")
+        self.pgmBtn7 = self.findChild(QPushButton, "pgmfillhomePushButton")
         self.travel01_RadioButton = self.findChild(QRadioButton, "travel01_RadioButton")
         self.travel1_RadioButton_3 = self.findChild(QRadioButton, "travel1_RadioButton_3")
         self.travel5_RadioButton = self.findChild(QRadioButton, "travel5_RadioButton")
@@ -548,6 +549,7 @@ class MainWindow(QMainWindow):
                                    self.pgmBtn4.objectName() : "save",
                                    self.pgmBtn5.objectName(): "fill",   
                                    self.pgmBtn6.objectName(): "purge",
+                                   self.pgmBtn7.objectName(): "fillhome",
 
 
                                    "file" : self.pgmBtn1,
@@ -555,6 +557,7 @@ class MainWindow(QMainWindow):
                                    "save" : self.pgmBtn4,
                                    "fill" : self.pgmBtn5,
                                    "purge" : self.pgmBtn6,
+                                   "fillhome" : self.pgmBtn7,
                                    self.viscositylevComboBox.objectName() : "viscosity",
                                    self.needleguageComboBox.objectName() : "needle",
                                    "infile" : self.pgmText,
@@ -811,6 +814,7 @@ class MainWindow(QMainWindow):
         self.pgmBtn4.clicked.connect(lambda: self.programAction(self.pgmBtn4))
         self.pgmBtn5.clicked.connect(lambda: self.programAction(self.pgmBtn5))
         self.pgmBtn6.clicked.connect(lambda: self.programAction(self.pgmBtn6))
+        self.pgmBtn7.clicked.connect(lambda: self.programAction(self.pgmBtn7))
         self.viscositylevComboBox.currentTextChanged.connect(lambda: self.programAction(self.viscositylevComboBox))
         self.needleguageComboBox.currentTextChanged.connect(lambda: self.programAction(self.needleguageComboBox))
         
@@ -1729,6 +1733,10 @@ class MainWindow(QMainWindow):
 
         elif self.util.checkSubString(wobj, "feed"):
             self._handle_feedrate()
+
+        elif self.util.checkSubString(wobj, "fillhome"):
+            if hasattr(self, 'blackpill_sercom'):
+                self.blackpill_sercom.write("HOME\\n")
 
         elif self.util.checkSubString(wobj, "fill"):
             self._handle_fill()
