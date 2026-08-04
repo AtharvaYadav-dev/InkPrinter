@@ -726,20 +726,28 @@ class MainWindow(QMainWindow):
         visc_idx = self.ui.viscositylevComboBox.currentIndex()
         gauge_idx = self.ui.needleguageComboBox.currentIndex()
         
-        # Base feedrate
-        base_feedrate = 500
-        # Viscosity penalty: 50 per level (0 to 4)
-        visc_penalty = visc_idx * 50
-        # Gauge penalty: 20 per gauge step (0 to 5)
-        gauge_penalty = gauge_idx * 20
-        
-        calculated_feedrate = base_feedrate - visc_penalty - gauge_penalty
-        
-        if calculated_feedrate < 50:
-            calculated_feedrate = 50 # Minimum threshold
+        # Constant feedrate based on user requirement
+        calculated_feedrate = 1500
             
         if hasattr(self, 'pgmLine2'):
             self.pgmLine2.setText(str(calculated_feedrate))
+
+        # Hydraulic Pressure Calculation
+        # Syringe Volume = 6000 mm^3, Travel = 69 mm -> Area = 86.95 mm^2
+        # Flow rate Q (mm^3/sec) = Feedrate (mm/min) * Area / 60
+        area = 86.95
+        flow_rate = (calculated_feedrate * area) / 60.0
+        
+        # Resistance model (arbitrary based on viscosity and gauge)
+        resistance = ((visc_idx + 1) * 1000) + ((gauge_idx + 1) * 500)
+        
+        # Pressure (kPa)
+        pressure_kpa = (flow_rate * resistance) / 10000.0
+        
+        pressure_msg = f"-> Theoretical Hydraulic Pressure: {pressure_kpa:.2f} kPa"
+        if hasattr(self, 'terminalText'):
+            self.terminalText.append(pressure_msg)
+        self.logger.info(pressure_msg)
 
     def bindWidgetSignals(self):
         # expand centerMenuContainer
@@ -1264,6 +1272,39 @@ class MainWindow(QMainWindow):
             self.util.debugPrint(f"Skipping empty after stripping comment")
             return
 
+        # --- Extrusion Interception for Blackpill ---
+        if gstr.startswith("M82"):
+            self.is_relative_e = False
+        elif gstr.startswith("M83"):
+            self.is_relative_e = True
+        elif gstr.startswith("G92"):
+            # Check if G92 E<val> is used
+            match_e = re.search(r'E([-+]?[0-9]*\.?[0-9]+)', gstr)
+            if match_e:
+                self.current_e = float(match_e.group(1))
+
+        if gstr.startswith("G1") or gstr.startswith("G0"):
+            match_e = re.search(r'E([-+]?[0-9]*\.?[0-9]+)', gstr)
+            if match_e:
+                e_val = float(match_e.group(1))
+                delta_e = 0.0
+                if getattr(self, 'is_relative_e', False):
+                    delta_e = e_val
+                else:
+                    current_e = getattr(self, 'current_e', 0.0)
+                    delta_e = e_val - current_e
+                    self.current_e = e_val
+                
+                # Send to Blackpill
+                if delta_e > 0:
+                    self._send_to_blackpill(f"FILL {delta_e:.5f}")
+                elif delta_e < 0:
+                    self._send_to_blackpill(f"PURGE {abs(delta_e):.5f}")
+                
+                # Strip E from the G-code string so SKR doesn't get it
+                gstr = re.sub(r'\s*E[-+]?[0-9]*\.?[0-9]+', '', gstr)
+        # --------------------------------------------
+
         # Encode & checksum handling
         self.gcode.encode(gstr)
         if self.gcode.sd_write_flag:
@@ -1715,6 +1756,9 @@ class MainWindow(QMainWindow):
         self.prev_segment = 0
         self.wm.operate(self.programWidget.feed, "enable", False)
         self.wm.operate(self.programWidget.save, "enable", False)
+        # Tracking for Blackpill E-interception
+        self.is_relative_e = False
+        self.current_e = 0.0
 
     def programAction(self, widget):
         """Top-level router matching your original UI buttons."""

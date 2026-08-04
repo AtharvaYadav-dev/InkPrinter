@@ -116,13 +116,16 @@ void processCommand(String cmd) {
         if (cmd.length() > 5) {
             distance = cmd.substring(5).toFloat();
         }
-        direction = true;
-        digitalWrite(DIR_PIN, HIGH);
-        pulseCount = 0;
+        if (direction != true || !motorRunning) {
+            direction = true;
+            digitalWrite(DIR_PIN, HIGH);
+            pulseCount = 0;
+            targetPulses = 0;
+        }
         stepState = false;
         GPIOB->BSRR = GPIO_BSRR_BR10;
         if (distance > 0.0) {
-            targetPulses = (uint32_t)(distance * STEPS_PER_MM);
+            targetPulses += (uint32_t)(distance * STEPS_PER_MM);
         } else {
             targetPulses = 0; // Continuous
         }
@@ -133,13 +136,16 @@ void processCommand(String cmd) {
         if (cmd.length() > 6) {
             distance = cmd.substring(6).toFloat();
         }
-        direction = false;
-        digitalWrite(DIR_PIN, LOW);
-        pulseCount = 0;
+        if (direction != false || !motorRunning) {
+            direction = false;
+            digitalWrite(DIR_PIN, LOW);
+            pulseCount = 0;
+            targetPulses = 0;
+        }
         stepState = false;
         GPIOB->BSRR = GPIO_BSRR_BR10;
         if (distance > 0.0) {
-            targetPulses = (uint32_t)(distance * STEPS_PER_MM);
+            targetPulses += (uint32_t)(distance * STEPS_PER_MM);
         } else {
             targetPulses = 0; // Continuous
         }
