@@ -1,1 +1,1015 @@
 save logs
+Gcode : M114
+ACK : ['X:4.04 Y:24.24 Z:43.00 E:0.00 Count X:1616 Y:9696 Z:110080']
+code = M114
+pos : ['X:4.04', 'Y:24.24', 'Z:43.00', 'E:0.00']
+index : 30
+Blackpill CMD: PURGE 0.00001 | delta_e: 0.00283 | scale: 0.005
+Gcode - G1 X4.221 Y24.039 F1500.000
+Gcode - G4 S1
+Gcode - M114
+Received : ok
+
+response : ok
+Queue : G1 X4.116 Y24.080 F1500.000
+Gcode : G1 X4.116 Y24.080 F1500.000
+ACK : []
+code = G1
+Received : ok
+
+response : ok
+Queue : G4 S1
+Gcode : G4 S1
+ACK : []
+code = G4
+Received : ok
+
+response : ok
+position : ['X:4.12', 'Y:24.08', 'Z:43.00', 'E:0.00']
+Received : X:4.12 Y:24.08 Z:43.00 E:0.00 Count X:1646 Y:9632 Z:110080
+response : X:4.12 Y:24.08 Z:43.00 E:0.00 Count X:1646 Y:9632 Z:110080
+Queue : M114
+Gcode : M114
+ACK : ['X:4.12 Y:24.08 Z:43.00 E:0.00 Count X:1646 Y:9632 Z:110080']
+code = M114
+pos : ['X:4.12', 'Y:24.08', 'Z:43.00', 'E:0.00']
+index : 31
+Blackpill CMD: PURGE 0.00337 | delta_e: 0.67304 | scale: 0.005
+Gcode - G1 X31.056 Y24.038 F1500.000
+Gcode - G4 S1
+Gcode - M114
+Received : ok
+
+response : ok
+Queue : G1 X4.221 Y24.039 F1500.000
+Gcode : G1 X4.221 Y24.039 F1500.000
+ACK : []
+code = G1
+Received : ok
+
+response : ok
+Queue : G4 S1
+Gcode : G4 S1
+ACK : []
+code = G4
+Received : ok
+
+response : ok
+position : ['X:4.22', 'Y:24.04', 'Z:43.00', 'E:0.00']
+Received : X:4.22 Y:24.04 Z:43.00 E:0.00 Count X:1688 Y:9616 Z:110080
+response : X:4.22 Y:24.04 Z:43.00 E:0.00 Count X:1688 Y:9616 Z:110080
+Queue : M114
+Gcode : M114
+ACK : ['X:4.22 Y:24.04 Z:43.00 E:0.00 Count X:1688 Y:9616 Z:110080']
+code = M114
+pos : ['X:4.22', 'Y:24.04', 'Z:43.00', 'E:0.00']
+index : 32
+Blackpill CMD: PURGE 0.00013 | delta_e: 0.02586 | scale: 0.005
+Gcode - G1 X31.058 Y23.007 F1500.000
+Gcode - G4 S1
+Gcode - M114
+Received : ok
+
+response : ok
+Queue : G1 X31.056 Y24.038 F1500.000
+Gcode : G1 X31.056 Y24.038 F1500.000
+ACK : []
+code = G1
+Received : ok
+
+response : ok
+Received : echo:busy: processing
+response : echo:busy: processing
+Queue : G4 S1
+Gcode : G4 S1
+ACK : []
+code = G4
+Received : ok
+
+response : ok
+position : ['X:31.06', 'Y:24.04', 'Z:43.00', 'E:0.00']
+Received : X:31.06 Y:24.04 Z:43.00 E:0.00 Count X:12422 Y:9615 Z:110080
+response : X:31.06 Y:24.04 Z:43.00 E:0.00 Count X:12422 Y:9615 Z:110080
+Queue : M114
+Gcode : M114
+ACK : ['X:31.06 Y:24.04 Z:43.00 E:0.00 Count X:12422 Y:9615 Z:110080']
+code = M114
+pos : ['X:31.06', 'Y:24.04', 'Z:43.00', 'E:0.00']
+index : 33
+Blackpill CMD: PURGE 0.00337 | delta_e: 0.67309 | scale: 0.005
+Gcode - G1 X4.221 Y23.003 F1500.000
+Gcode - G4 S1
+Gcode - M114
+Received : ok
+
+response : ok
+Queue : G1 X31.058 Y23.007 F1500.000
+Gcode : G1 X31.058 Y23.007 F1500.000
+ACK : []
+code = G1
+Received : ok
+
+response : ok
+Queue : G4 S1
+Gcode : G4 S1
+ACK : []
+code = G4
+Received : ok
+
+response : ok
+position : ['X:31.06', 'Y:23.01', 'Z:43.00', 'E:0.00']
+Received : X:31.06 Y:23.01 Z:43.00 E:0.00 Count X:12423 Y:9203 Z:110080
+response : X:31.06 Y:23.01 Z:43.00 E:0.00 Count X:12423 Y:9203 Z:110080
+Queue : M114
+Gcode : M114
+ACK : ['X:31.06 Y:23.01 Z:43.00 E:0.00 Count X:12423 Y:9203 Z:110080']
+code = M114
+pos : ['X:31.06', 'Y:23.01', 'Z:43.00', 'E:0.00']
+index : 34
+Blackpill CMD: PURGE 0.00001 | delta_e: 0.00283 | scale: 0.005
+Gcode - G1 X4.116 Y22.962 F1500.000
+Gcode - G4 S1
+Gcode - M114
+Received : ok
+
+response : ok
+Queue : G1 X4.221 Y23.003 F1500.000
+Gcode : G1 X4.221 Y23.003 F1500.000
+ACK : []
+code = G1
+Received : ok
+
+response : ok
+Received : echo:busy: processing
+response : echo:busy: processing
+Queue : G4 S1
+Gcode : G4 S1
+ACK : []
+code = G4
+Received : ok
+
+response : ok
+position : ['X:4.22', 'Y:23.00', 'Z:43.00', 'E:0.00']
+Received : X:4.22 Y:23.00 Z:43.00 E:0.00 Count X:1688 Y:9201 Z:110080
+response : X:4.22 Y:23.00 Z:43.00 E:0.00 Count X:1688 Y:9201 Z:110080
+Queue : M114
+Gcode : M114
+ACK : ['X:4.22 Y:23.00 Z:43.00 E:0.00 Count X:1688 Y:9201 Z:110080']
+code = M114
+pos : ['X:4.22', 'Y:23.00', 'Z:43.00', 'E:0.00']
+index : 35
+Blackpill CMD: PURGE 0.00002 | delta_e: 0.00363 | scale: 0.005
+Gcode - G1 X4.041 Y22.838 F1500.000
+Gcode - G4 S1
+Gcode - M114
+Received : ok
+
+response : ok
+Queue : G1 X4.116 Y22.962 F1500.000
+Gcode : G1 X4.116 Y22.962 F1500.000
+ACK : []
+code = G1
+Received : ok
+
+response : ok
+Queue : G4 S1
+Gcode : G4 S1
+ACK : []
+code = G4
+Received : ok
+
+response : ok
+position : ['X:4.12', 'Y:22.96', 'Z:43.00', 'E:0.00']
+Received : X:4.12 Y:22.96 Z:43.00 E:0.00 Count X:1646 Y:9185 Z:110080
+response : X:4.12 Y:22.96 Z:43.00 E:0.00 Count X:1646 Y:9185 Z:110080
+Queue : M114
+Gcode : M114
+ACK : ['X:4.12 Y:22.96 Z:43.00 E:0.00 Count X:1646 Y:9185 Z:110080']
+code = M114
+pos : ['X:4.12', 'Y:22.96', 'Z:43.00', 'E:0.00']
+index : 36
+Blackpill CMD: PURGE 0.00058 | delta_e: 0.11535 | scale: 0.005
+Gcode - G1 X4.039 Y18.239 F1500.000
+Gcode - G4 S1
+Gcode - M114
+Received : ok
+
+response : ok
+Queue : G1 X4.041 Y22.838 F1500.000
+Gcode : G1 X4.041 Y22.838 F1500.000
+ACK : []
+code = G1
+Received : ok
+
+response : ok
+Queue : G4 S1
+Gcode : G4 S1
+ACK : []
+code = G4
+Received : ok
+
+response : ok
+position : ['X:4.04', 'Y:22.84', 'Z:43.00', 'E:0.00']
+Received : X:4.04 Y:22.84 Z:43.00 E:0.00 Count X:1616 Y:9135 Z:110080
+response : X:4.04 Y:22.84 Z:43.00 E:0.00 Count X:1616 Y:9135 Z:110080
+Queue : M114
+Gcode : M114
+ACK : ['X:4.04 Y:22.84 Z:43.00 E:0.00 Count X:1616 Y:9135 Z:110080']
+code = M114
+pos : ['X:4.04', 'Y:22.84', 'Z:43.00', 'E:0.00']
+index : 37
+Blackpill CMD: PURGE 0.00002 | delta_e: 0.00302 | scale: 0.005
+Gcode - G1 X4.075 Y18.124 F1500.000
+Gcode - G4 S1
+Gcode - M114
+Received : ok
+
+response : ok
+Queue : G1 X4.039 Y18.239 F1500.000
+Gcode : G1 X4.039 Y18.239 F1500.000
+ACK : []
+code = G1
+Received : ok
+
+response : ok
+Queue : G4 S1
+Gcode : G4 S1
+ACK : []
+code = G4
+Received : ok
+
+response : ok
+position : ['X:4.04', 'Y:18.24', 'Z:43.00', 'E:0.00']
+Received : X:4.04 Y:18.24 Z:43.00 E:0.00 Count X:1616 Y:7296 Z:110080
+response : X:4.04 Y:18.24 Z:43.00 E:0.00 Count X:1616 Y:7296 Z:110080
+Queue : M114
+Gcode : M114
+ACK : ['X:4.04 Y:18.24 Z:43.00 E:0.00 Count X:1616 Y:7296 Z:110080']
+code = M114
+pos : ['X:4.04', 'Y:18.24', 'Z:43.00', 'E:0.00']
+index : 38
+Blackpill CMD: PURGE 0.00002 | delta_e: 0.00424 | scale: 0.005
+Gcode - G1 X4.221 Y18.039 F1500.000
+Gcode - G4 S1
+Gcode - M114
+Received : ok
+
+response : ok
+Queue : G1 X4.075 Y18.124 F1500.000
+Gcode : G1 X4.075 Y18.124 F1500.000
+ACK : []
+code = G1
+Received : ok
+
+response : ok
+Queue : G4 S1
+Gcode : G4 S1
+ACK : []
+code = G4
+Received : ok
+
+response : ok
+position : ['X:4.07', 'Y:18.12', 'Z:43.00', 'E:0.00']
+Received : X:4.07 Y:18.12 Z:43.00 E:0.00 Count X:1630 Y:7250 Z:110080
+response : X:4.07 Y:18.12 Z:43.00 E:0.00 Count X:1630 Y:7250 Z:110080
+Queue : M114
+Gcode : M114
+ACK : ['X:4.07 Y:18.12 Z:43.00 E:0.00 Count X:1630 Y:7250 Z:110080']
+code = M114
+pos : ['X:4.07', 'Y:18.12', 'Z:43.00', 'E:0.00']
+index : 39
+Blackpill CMD: PURGE 0.00337 | delta_e: 0.67301 | scale: 0.005
+Gcode - G1 X31.055 Y18.039 F1500.000
+Gcode - G4 S1
+Gcode - M114
+Received : ok
+
+response : ok
+Queue : G1 X4.221 Y18.039 F1500.000
+Gcode : G1 X4.221 Y18.039 F1500.000
+ACK : []
+code = G1
+Received : ok
+
+response : ok
+Queue : G4 S1
+Gcode : G4 S1
+ACK : []
+code = G4
+Received : ok
+
+response : ok
+position : ['X:4.22', 'Y:18.04', 'Z:43.00', 'E:0.00']
+Received : X:4.22 Y:18.04 Z:43.00 E:0.00 Count X:1688 Y:7216 Z:110080
+response : X:4.22 Y:18.04 Z:43.00 E:0.00 Count X:1688 Y:7216 Z:110080
+Queue : M114
+Gcode : M114
+ACK : ['X:4.22 Y:18.04 Z:43.00 E:0.00 Count X:1688 Y:7216 Z:110080']
+code = M114
+pos : ['X:4.22', 'Y:18.04', 'Z:43.00', 'E:0.00']
+index : 40
+Blackpill CMD: PURGE 0.00014 | delta_e: 0.02835 | scale: 0.005
+Gcode - G1 X31.055 Y16.909 F1500.000
+Gcode - G4 S1
+Gcode - M114
+Received : ok
+
+response : ok
+Queue : G1 X31.055 Y18.039 F1500.000
+Gcode : G1 X31.055 Y18.039 F1500.000
+ACK : []
+code = G1
+Received : ok
+
+response : ok
+Received : echo:busy: processing
+response : echo:busy: processing
+Queue : G4 S1
+Gcode : G4 S1
+ACK : []
+code = G4
+Received : ok
+
+response : ok
+position : ['X:31.06', 'Y:18.04', 'Z:43.00', 'E:0.00']
+Received : X:31.06 Y:18.04 Z:43.00 E:0.00 Count X:12422 Y:7216 Z:110080
+response : X:31.06 Y:18.04 Z:43.00 E:0.00 Count X:12422 Y:7216 Z:110080
+Queue : M114
+Gcode : M114
+ACK : ['X:31.06 Y:18.04 Z:43.00 E:0.00 Count X:12422 Y:7216 Z:110080']
+code = M114
+pos : ['X:31.06', 'Y:18.04', 'Z:43.00', 'E:0.00']
+index : 41
+Blackpill CMD: PURGE 0.00337 | delta_e: 0.67301 | scale: 0.005
+Gcode - G1 X4.221 Y16.903 F1500.000
+Gcode - G4 S1
+Gcode - M114
+Received : ok
+
+response : ok
+Queue : G1 X31.055 Y16.909 F1500.000
+Gcode : G1 X31.055 Y16.909 F1500.000
+ACK : []
+code = G1
+Received : ok
+
+response : ok
+Queue : G4 S1
+Gcode : G4 S1
+ACK : []
+code = G4
+Received : ok
+
+response : ok
+position : ['X:31.06', 'Y:16.91', 'Z:43.00', 'E:0.00']
+Received : X:31.06 Y:16.91 Z:43.00 E:0.00 Count X:12422 Y:6764 Z:110080
+response : X:31.06 Y:16.91 Z:43.00 E:0.00 Count X:12422 Y:6764 Z:110080
+Queue : M114
+Gcode : M114
+ACK : ['X:31.06 Y:16.91 Z:43.00 E:0.00 Count X:12422 Y:6764 Z:110080']
+code = M114
+pos : ['X:31.06', 'Y:16.91', 'Z:43.00', 'E:0.00']
+index : 42
+Blackpill CMD: PURGE 0.00001 | delta_e: 0.00265 | scale: 0.005
+Gcode - G1 X4.122 Y16.866 F1500.000
+Gcode - G4 S1
+Gcode - M114
+Received : ok
+
+response : ok
+Queue : G1 X4.221 Y16.903 F1500.000
+Gcode : G1 X4.221 Y16.903 F1500.000
+ACK : []
+code = G1
+Received : ok
+
+response : ok
+Received : echo:busy: processing
+response : echo:busy: processing
+Queue : G4 S1
+Gcode : G4 S1
+ACK : []
+code = G4
+Received : ok
+
+response : ok
+position : ['X:4.22', 'Y:16.90', 'Z:43.00', 'E:0.00']
+Received : X:4.22 Y:16.90 Z:43.00 E:0.00 Count X:1688 Y:6761 Z:110080
+response : X:4.22 Y:16.90 Z:43.00 E:0.00 Count X:1688 Y:6761 Z:110080
+Queue : M114
+Gcode : M114
+ACK : ['X:4.22 Y:16.90 Z:43.00 E:0.00 Count X:1688 Y:6761 Z:110080']
+code = M114
+pos : ['X:4.22', 'Y:16.90', 'Z:43.00', 'E:0.00']
+index : 43
+Blackpill CMD: PURGE 0.00002 | delta_e: 0.00380 | scale: 0.005
+Gcode - G1 X4.041 Y16.738 F1500.000
+Gcode - G4 S1
+Gcode - M114
+Received : ok
+
+response : ok
+Queue : G1 X4.122 Y16.866 F1500.000
+Gcode : G1 X4.122 Y16.866 F1500.000
+ACK : []
+code = G1
+Received : ok
+
+response : ok
+Queue : G4 S1
+Gcode : G4 S1
+ACK : []
+code = G4
+Received : ok
+
+response : ok
+position : ['X:4.12', 'Y:16.87', 'Z:43.00', 'E:0.00']
+Received : X:4.12 Y:16.87 Z:43.00 E:0.00 Count X:1649 Y:6746 Z:110080
+response : X:4.12 Y:16.87 Z:43.00 E:0.00 Count X:1649 Y:6746 Z:110080
+Queue : M114
+Gcode : M114
+ACK : ['X:4.12 Y:16.87 Z:43.00 E:0.00 Count X:1649 Y:6746 Z:110080']
+code = M114
+pos : ['X:4.12', 'Y:16.87', 'Z:43.00', 'E:0.00']
+index : 44
+Blackpill CMD: PURGE 0.00132 | delta_e: 0.26332 | scale: 0.005
+Gcode - G1 X4.039 Y6.239 F1500.000
+Gcode - G4 S1
+Gcode - M114
+Received : ok
+
+response : ok
+Queue : G1 X4.041 Y16.738 F1500.000
+Gcode : G1 X4.041 Y16.738 F1500.000
+ACK : []
+code = G1
+Received : ok
+
+response : ok
+Queue : G4 S1
+Gcode : G4 S1
+ACK : []
+code = G4
+Received : ok
+
+response : ok
+position : ['X:4.04', 'Y:16.74', 'Z:43.00', 'E:0.00']
+Received : X:4.04 Y:16.74 Z:43.00 E:0.00 Count X:1616 Y:6695 Z:110080
+response : X:4.04 Y:16.74 Z:43.00 E:0.00 Count X:1616 Y:6695 Z:110080
+Queue : M114
+Gcode : M114
+ACK : ['X:4.04 Y:16.74 Z:43.00 E:0.00 Count X:1616 Y:6695 Z:110080']
+code = M114
+pos : ['X:4.04', 'Y:16.74', 'Z:43.00', 'E:0.00']
+index : 45
+Blackpill CMD: PURGE 0.00001 | delta_e: 0.00274 | scale: 0.005
+Gcode - G1 X4.068 Y6.134 F1500.000
+Gcode - G4 S1
+Gcode - M114
+Received : ok
+
+response : ok
+Queue : G1 X4.039 Y6.239 F1500.000
+Gcode : G1 X4.039 Y6.239 F1500.000
+ACK : []
+code = G1
+Received : ok
+
+response : ok
+Queue : G4 S1
+Gcode : G4 S1
+ACK : []
+code = G4
+Received : ok
+
+response : ok
+position : ['X:4.04', 'Y:6.24', 'Z:43.00', 'E:0.00']
+Received : X:4.04 Y:6.24 Z:43.00 E:0.00 Count X:1616 Y:2496 Z:110080
+response : X:4.04 Y:6.24 Z:43.00 E:0.00 Count X:1616 Y:2496 Z:110080
+Queue : M114
+Gcode : M114
+ACK : ['X:4.04 Y:6.24 Z:43.00 E:0.00 Count X:1616 Y:2496 Z:110080']
+code = M114
+pos : ['X:4.04', 'Y:6.24', 'Z:43.00', 'E:0.00']
+index : 46
+Blackpill CMD: PURGE 0.00002 | delta_e: 0.00366 | scale: 0.005
+Gcode - G1 X4.179 Y6.039 F1500.000
+Gcode - G4 S1
+Gcode - M114
+Received : ok
+
+response : ok
+Queue : G1 X4.068 Y6.134 F1500.000
+Gcode : G1 X4.068 Y6.134 F1500.000
+ACK : []
+code = G1
+Received : ok
+
+response : ok
+Queue : G4 S1
+Gcode : G4 S1
+ACK : []
+code = G4
+Received : ok
+
+response : ok
+position : ['X:4.07', 'Y:6.13', 'Z:43.00', 'E:0.00']
+Received : X:4.07 Y:6.13 Z:43.00 E:0.00 Count X:1627 Y:2454 Z:110080
+response : X:4.07 Y:6.13 Z:43.00 E:0.00 Count X:1627 Y:2454 Z:110080
+Queue : M114
+Gcode : M114
+ACK : ['X:4.07 Y:6.13 Z:43.00 E:0.00 Count X:1627 Y:2454 Z:110080']
+code = M114
+pos : ['X:4.07', 'Y:6.13', 'Z:43.00', 'E:0.00']
+index : 47
+Blackpill CMD: PURGE 0.00023 | delta_e: 0.04552 | scale: 0.005
+Gcode - G1 X5.994 Y6.039 F1500.000
+Gcode - G4 S1
+Gcode - M114
+Received : ok
+
+response : ok
+Queue : G1 X4.179 Y6.039 F1500.000
+Gcode : G1 X4.179 Y6.039 F1500.000
+ACK : []
+code = G1
+Received : ok
+
+response : ok
+Queue : G4 S1
+Gcode : G4 S1
+ACK : []
+code = G4
+Received : ok
+
+response : ok
+position : ['X:4.18', 'Y:6.04', 'Z:43.00', 'E:0.00']
+Received : X:4.18 Y:6.04 Z:43.00 E:0.00 Count X:1672 Y:2416 Z:110080
+response : X:4.18 Y:6.04 Z:43.00 E:0.00 Count X:1672 Y:2416 Z:110080
+Queue : M114
+Gcode : M114
+ACK : ['X:4.18 Y:6.04 Z:43.00 E:0.00 Count X:1672 Y:2416 Z:110080']
+code = M114
+pos : ['X:4.18', 'Y:6.04', 'Z:43.00', 'E:0.00']
+index : 48
+Blackpill CMD: PURGE 0.00001 | delta_e: 0.00169 | scale: 0.005
+Gcode - G1 X6.039 Y5.989 F1500.000
+Gcode - G4 S1
+Gcode - M114
+Received : ok
+
+response : ok
+Queue : G1 X5.994 Y6.039 F1500.000
+Gcode : G1 X5.994 Y6.039 F1500.000
+ACK : []
+code = G1
+Received : ok
+
+response : ok
+Queue : G4 S1
+Gcode : G4 S1
+ACK : []
+code = G4
+Received : ok
+
+response : ok
+position : ['X:5.99', 'Y:6.04', 'Z:43.00', 'E:0.00']
+Received : X:5.99 Y:6.04 Z:43.00 E:0.00 Count X:2398 Y:2416 Z:110080
+response : X:5.99 Y:6.04 Z:43.00 E:0.00 Count X:2398 Y:2416 Z:110080
+Queue : M114
+Gcode : M114
+ACK : ['X:5.99 Y:6.04 Z:43.00 E:0.00 Count X:2398 Y:2416 Z:110080']
+code = M114
+pos : ['X:5.99', 'Y:6.04', 'Z:43.00', 'E:0.00']
+index : 49
+Blackpill CMD: PURGE 0.00075 | delta_e: 0.14926 | scale: 0.005
+Gcode - G1 X6.035 Y0.038 F1500.000
+Gcode - G4 S1
+Gcode - M114
+Received : ok
+
+response : ok
+Queue : G1 X6.039 Y5.989 F1500.000
+Gcode : G1 X6.039 Y5.989 F1500.000
+ACK : []
+code = G1
+Received : ok
+
+response : ok
+Queue : G4 S1
+Gcode : G4 S1
+ACK : []
+code = G4
+Received : ok
+
+response : ok
+position : ['X:6.04', 'Y:5.99', 'Z:43.00', 'E:0.00']
+Received : X:6.04 Y:5.99 Z:43.00 E:0.00 Count X:2416 Y:2396 Z:110080
+response : X:6.04 Y:5.99 Z:43.00 E:0.00 Count X:2416 Y:2396 Z:110080
+Queue : M114
+Gcode : M114
+ACK : ['X:6.04 Y:5.99 Z:43.00 E:0.00 Count X:2416 Y:2396 Z:110080']
+code = M114
+pos : ['X:6.04', 'Y:5.99', 'Z:43.00', 'E:0.00']
+index : 50
+Blackpill CMD: PURGE 0.00001 | delta_e: 0.00112 | scale: 0.005
+Gcode - G1 X6.007 Y0.003 F1500.000
+Gcode - G4 S1
+Gcode - M114
+Received : ok
+
+response : ok
+Queue : G1 X6.035 Y0.038 F1500.000
+Gcode : G1 X6.035 Y0.038 F1500.000
+ACK : []
+code = G1
+Received : ok
+
+response : ok
+Queue : G4 S1
+Gcode : G4 S1
+ACK : []
+code = G4
+Received : ok
+
+response : ok
+position : ['X:6.03', 'Y:0.04', 'Z:43.00', 'E:0.00']
+Received : X:6.03 Y:0.04 Z:43.00 E:0.00 Count X:2414 Y:15 Z:110080
+response : X:6.03 Y:0.04 Z:43.00 E:0.00 Count X:2414 Y:15 Z:110080
+Queue : M114
+Gcode : M114
+ACK : ['X:6.03 Y:0.04 Z:43.00 E:0.00 Count X:2414 Y:15 Z:110080']
+code = M114
+pos : ['X:6.03', 'Y:0.04', 'Z:43.00', 'E:0.00']
+index : 51
+Blackpill CMD: PURGE 0.00075 | delta_e: 0.15066 | scale: 0.005
+Gcode - G1 X0.000 Y0.000 F1500.000
+Gcode - G4 S1
+Gcode - M114
+Received : ok
+
+response : ok
+Queue : G1 X6.007 Y0.003 F1500.000
+Gcode : G1 X6.007 Y0.003 F1500.000
+ACK : []
+code = G1
+Received : ok
+
+response : ok
+Queue : G4 S1
+Gcode : G4 S1
+ACK : []
+code = G4
+Received : ok
+
+response : ok
+position : ['X:6.01', 'Y:0.00', 'Z:43.00', 'E:0.00']
+Received : X:6.01 Y:0.00 Z:43.00 E:0.00 Count X:2403 Y:1 Z:110080
+response : X:6.01 Y:0.00 Z:43.00 E:0.00 Count X:2403 Y:1 Z:110080
+Queue : M114
+Gcode : M114
+ACK : ['X:6.01 Y:0.00 Z:43.00 E:0.00 Count X:2403 Y:1 Z:110080']
+code = M114
+pos : ['X:6.01', 'Y:0.00', 'Z:43.00', 'E:0.00']
+index : 52
+Blackpill CMD: PURGE 0.00076 | delta_e: 0.15146 | scale: 0.005
+Gcode - G1 X0.004 Y6.039 F1500.000
+Gcode - G4 S1
+Gcode - M114
+Received : ok
+
+response : ok
+Queue : G1 X0.000 Y0.000 F1500.000
+Gcode : G1 X0.000 Y0.000 F1500.000
+ACK : []
+code = G1
+Received : ok
+
+response : ok
+Queue : G4 S1
+Gcode : G4 S1
+ACK : []
+code = G4
+Received : ok
+
+response : ok
+position : ['X:0.00', 'Y:0.00', 'Z:43.00', 'E:0.00']
+Received : X:0.00 Y:0.00 Z:43.00 E:0.00 Count X:0 Y:0 Z:110080
+response : X:0.00 Y:0.00 Z:43.00 E:0.00 Count X:0 Y:0 Z:110080
+Queue : M114
+Gcode : M114
+ACK : ['X:0.00 Y:0.00 Z:43.00 E:0.00 Count X:0 Y:0 Z:110080']
+code = M114
+pos : ['X:0.00', 'Y:0.00', 'Z:43.00', 'E:0.00']
+index : 53
+Blackpill CMD: PURGE 0.00023 | delta_e: 0.04653 | scale: 0.005
+Gcode - G1 X1.859 Y6.039 F1500.000
+Gcode - G4 S1
+Gcode - M114
+Received : ok
+
+response : ok
+Queue : G1 X0.004 Y6.039 F1500.000
+Gcode : G1 X0.004 Y6.039 F1500.000
+ACK : []
+code = G1
+Received : ok
+
+response : ok
+Queue : G4 S1
+Gcode : G4 S1
+ACK : []
+code = G4
+Received : ok
+
+response : ok
+position : ['X:0.00', 'Y:6.04', 'Z:43.00', 'E:0.00']
+Received : X:0.00 Y:6.04 Z:43.00 E:0.00 Count X:2 Y:2416 Z:110080
+response : X:0.00 Y:6.04 Z:43.00 E:0.00 Count X:2 Y:2416 Z:110080
+Queue : M114
+Gcode : M114
+ACK : ['X:0.00 Y:6.04 Z:43.00 E:0.00 Count X:2 Y:2416 Z:110080']
+code = M114
+pos : ['X:0.00', 'Y:6.04', 'Z:43.00', 'E:0.00']
+index : 54
+Blackpill CMD: PURGE 0.00002 | delta_e: 0.00366 | scale: 0.005
+Gcode - G1 X1.970 Y6.134 F1500.000
+Gcode - G4 S1
+Gcode - M114
+Received : ok
+
+response : ok
+Queue : G1 X1.859 Y6.039 F1500.000
+Gcode : G1 X1.859 Y6.039 F1500.000
+ACK : []
+code = G1
+Received : ok
+
+response : ok
+Queue : G4 S1
+Gcode : G4 S1
+ACK : []
+code = G4
+Received : ok
+
+response : ok
+position : ['X:1.86', 'Y:6.04', 'Z:43.00', 'E:0.00']
+Received : X:1.86 Y:6.04 Z:43.00 E:0.00 Count X:744 Y:2416 Z:110080
+response : X:1.86 Y:6.04 Z:43.00 E:0.00 Count X:744 Y:2416 Z:110080
+Queue : M114
+Gcode : M114
+ACK : ['X:1.86 Y:6.04 Z:43.00 E:0.00 Count X:744 Y:2416 Z:110080']
+code = M114
+pos : ['X:1.86', 'Y:6.04', 'Z:43.00', 'E:0.00']
+index : 55
+Blackpill CMD: PURGE 0.00001 | delta_e: 0.00273 | scale: 0.005
+Gcode - G1 X1.999 Y6.239 F1500.000
+Gcode - G4 S1
+Gcode - M114
+Received : ok
+
+response : ok
+Queue : G1 X1.970 Y6.134 F1500.000
+Gcode : G1 X1.970 Y6.134 F1500.000
+ACK : []
+code = G1
+Received : ok
+
+response : ok
+Queue : G4 S1
+Gcode : G4 S1
+ACK : []
+code = G4
+Received : ok
+
+response : ok
+position : ['X:1.97', 'Y:6.13', 'Z:43.00', 'E:0.00']
+Received : X:1.97 Y:6.13 Z:43.00 E:0.00 Count X:788 Y:2454 Z:110080
+response : X:1.97 Y:6.13 Z:43.00 E:0.00 Count X:788 Y:2454 Z:110080
+Queue : M114
+Gcode : M114
+ACK : ['X:1.97 Y:6.13 Z:43.00 E:0.00 Count X:788 Y:2454 Z:110080']
+code = M114
+pos : ['X:1.97', 'Y:6.13', 'Z:43.00', 'E:0.00']
+index : 56
+Blackpill CMD: PURGE 0.00374 | delta_e: 0.74731 | scale: 0.005
+Gcode - G1 X2.003 Y36.035 F1500.000
+Gcode - G4 S1
+Gcode - M114
+Received : ok
+
+response : ok
+Queue : G1 X1.999 Y6.239 F1500.000
+Gcode : G1 X1.999 Y6.239 F1500.000
+ACK : []
+code = G1
+Received : ok
+
+response : ok
+Queue : G4 S1
+Gcode : G4 S1
+ACK : []
+code = G4
+Received : ok
+
+response : ok
+position : ['X:2.00', 'Y:6.24', 'Z:43.00', 'E:0.00']
+Received : X:2.00 Y:6.24 Z:43.00 E:0.00 Count X:800 Y:2496 Z:110080
+response : X:2.00 Y:6.24 Z:43.00 E:0.00 Count X:800 Y:2496 Z:110080
+Queue : M114
+Gcode : M114
+ACK : ['X:2.00 Y:6.24 Z:43.00 E:0.00 Count X:800 Y:2496 Z:110080']
+code = M114
+pos : ['X:2.00', 'Y:6.24', 'Z:43.00', 'E:0.00']
+index : 57
+Blackpill CMD: PURGE 0.00364 | delta_e: 0.72864 | scale: 0.005
+Gcode - G1 X31.055 Y36.036 F1500.000
+Gcode - G4 S1
+Gcode - M114
+Received : ok
+
+response : ok
+Queue : G1 X2.003 Y36.035 F1500.000
+Gcode : G1 X2.003 Y36.035 F1500.000
+ACK : []
+code = G1
+Received : ok
+
+response : ok
+Received : echo:busy: processing
+response : echo:busy: processing
+Queue : G4 S1
+Gcode : G4 S1
+ACK : []
+code = G4
+Received : ok
+
+response : ok
+position : ['X:2.00', 'Y:36.03', 'Z:43.00', 'E:0.00']
+Received : X:2.00 Y:36.03 Z:43.00 E:0.00 Count X:801 Y:14414 Z:110080
+response : X:2.00 Y:36.03 Z:43.00 E:0.00 Count X:801 Y:14414 Z:110080
+Queue : M114
+Gcode : M114
+ACK : ['X:2.00 Y:36.03 Z:43.00 E:0.00 Count X:801 Y:14414 Z:110080']
+code = M114
+pos : ['X:2.00', 'Y:36.03', 'Z:43.00', 'E:0.00']
+index : 58
+Blackpill CMD: PURGE 0.00013 | delta_e: 0.02581 | scale: 0.005
+Gcode - G1 X31.058 Y35.007 F1500.000
+Gcode - G4 S1
+Gcode - M114
+Received : ok
+
+response : ok
+Queue : G1 X31.055 Y36.036 F1500.000
+Gcode : G1 X31.055 Y36.036 F1500.000
+ACK : []
+code = G1
+Received : ok
+
+response : ok
+Received : echo:busy: processing
+response : echo:busy: processing
+Queue : G4 S1
+Gcode : G4 S1
+ACK : []
+code = G4
+Received : ok
+
+response : ok
+position : ['X:31.06', 'Y:36.04', 'Z:43.00', 'E:0.00']
+Received : X:31.06 Y:36.04 Z:43.00 E:0.00 Count X:12422 Y:14414 Z:110080
+response : X:31.06 Y:36.04 Z:43.00 E:0.00 Count X:12422 Y:14414 Z:110080
+Queue : M114
+Gcode : M114
+ACK : ['X:31.06 Y:36.04 Z:43.00 E:0.00 Count X:12422 Y:14414 Z:110080']
+code = M114
+pos : ['X:31.06', 'Y:36.04', 'Z:43.00', 'E:0.00']
+index : 59
+Blackpill CMD: PURGE 0.00336 | delta_e: 0.67264 | scale: 0.005
+Gcode - G1 X4.239 Y35.004 F1500.000
+Gcode - G4 S1
+Gcode - M114
+Received : ok
+
+response : ok
+Queue : G1 X31.058 Y35.007 F1500.000
+Gcode : G1 X31.058 Y35.007 F1500.000
+ACK : []
+code = G1
+Received : ok
+
+response : ok
+Queue : G4 S1
+Gcode : G4 S1
+ACK : []
+code = G4
+Received : ok
+
+response : ok
+position : ['X:31.06', 'Y:35.01', 'Z:43.00', 'E:0.00']
+Received : X:31.06 Y:35.01 Z:43.00 E:0.00 Count X:12423 Y:14003 Z:110080
+response : X:31.06 Y:35.01 Z:43.00 E:0.00 Count X:12423 Y:14003 Z:110080
+Queue : M114
+Gcode : M114
+ACK : ['X:31.06 Y:35.01 Z:43.00 E:0.00 Count X:12423 Y:14003 Z:110080']
+code = M114
+pos : ['X:31.06', 'Y:35.01', 'Z:43.00', 'E:0.00']
+index : 60
+Gcode - G0 Z41.000 F1800.0
+Gcode - G4 S1
+Gcode - M114
+Received : ok
+
+response : ok
+Queue : G1 X4.239 Y35.004 F1500.000
+Gcode : G1 X4.239 Y35.004 F1500.000
+ACK : []
+code = G1
+Received : ok
+
+response : ok
+Received : echo:busy: processing
+response : echo:busy: processing
+Queue : G4 S1
+Gcode : G4 S1
+ACK : []
+code = G4
+Received : ok
+
+response : ok
+position : ['X:4.24', 'Y:35.00', 'Z:43.00', 'E:0.00']
+Received : X:4.24 Y:35.00 Z:43.00 E:0.00 Count X:1696 Y:14002 Z:110080
+response : X:4.24 Y:35.00 Z:43.00 E:0.00 Count X:1696 Y:14002 Z:110080
+Queue : M114
+Gcode : M114
+ACK : ['X:4.24 Y:35.00 Z:43.00 E:0.00 Count X:1696 Y:14002 Z:110080']
+code = M114
+pos : ['X:4.24', 'Y:35.00', 'Z:43.00', 'E:0.00']
+index : 61
+Gcode - G0 F1800.000 X2.440 Y35.834
+Gcode - G4 S1
+Gcode - M114
+Received : ok
+
+response : ok
+Queue : G0 Z41.000 F1800.0
+Gcode : G0 Z41.000 F1800.0
+ACK : []
+code = G0
+Received : ok
+
+response : ok
+Queue : G4 S1
+Gcode : G4 S1
+ACK : []
+code = G4
+Received : ok
+
+response : ok
+position : ['X:4.24', 'Y:35.00', 'Z:41.00', 'E:0.00']
+Received : X:4.24 Y:35.00 Z:41.00 E:0.00 Count X:1696 Y:14002 Z:104960
+response : X:4.24 Y:35.00 Z:41.00 E:0.00 Count X:1696 Y:14002 Z:104960
+Queue : M114
+Gcode : M114
+ACK : ['X:4.24 Y:35.00 Z:41.00 E:0.00 Count X:1696 Y:14002 Z:104960']
+code = M114
+pos : ['X:4.24', 'Y:35.00', 'Z:41.00', 'E:0.00']
+Received : ok
+
+response : ok
+Queue : G0 F1800.000 X2.440 Y35.834
+Gcode : G0 F1800.000 X2.440 Y35.834
+ACK : []
+code = G0
+Received : ok
+
+response : ok
+Gcode - G28
+index : 2
+arg : 2
+index : 2
+Queue : G4 S1
+Gcode : G4 S1
+ACK : []
+code = G4
+Received : ok
+
+response : ok
+position : ['X:2.44', 'Y:35.83', 'Z:41.00', 'E:0.00']
+Received : X:2.44 Y:35.83 Z:41.00 E:0.00 Count X:976 Y:14334 Z:104960
+response : X:2.44 Y:35.83 Z:41.00 E:0.00 Count X:976 Y:14334 Z:104960
+Queue : M114
+Gcode : M114
+ACK : ['X:2.44 Y:35.83 Z:41.00 E:0.00 Count X:976 Y:14334 Z:104960']
+code = M114
+pos : ['X:2.44', 'Y:35.83', 'Z:41.00', 'E:0.00']
+Received : ok
+
+response : ok
+Received : echo:busy: processing
+response : echo:busy: processing
+Received : echo:busy: processing
+response : echo:busy: processing
+Received : echo:busy: processing
+response : echo:busy: processing
