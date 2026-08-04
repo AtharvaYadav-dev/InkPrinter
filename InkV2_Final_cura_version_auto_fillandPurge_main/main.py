@@ -1297,9 +1297,9 @@ class MainWindow(QMainWindow):
                 
                 # Send to Blackpill
                 if delta_e > 0:
-                    self._send_to_blackpill(f"FILL {delta_e:.5f}")
+                    self._send_to_blackpill(f"PURGE {delta_e:.5f}")
                 elif delta_e < 0:
-                    self._send_to_blackpill(f"PURGE {abs(delta_e):.5f}")
+                    self._send_to_blackpill(f"FILL {abs(delta_e):.5f}")
                 
                 # Strip E from the G-code string so SKR doesn't get it
                 gstr = re.sub(r'\s*E[-+]?[0-9]*\.?[0-9]+', '', gstr)
