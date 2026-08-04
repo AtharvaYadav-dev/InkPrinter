@@ -1311,13 +1311,13 @@ class MainWindow(QMainWindow):
                 self.syringe_scale = getattr(self, 'syringe_scale', 0.005) 
                 actual_distance = delta_e * self.syringe_scale
 
-                # Send to Blackpill
-                if actual_distance > 0:
-                    cmd = f"PURGE {actual_distance:.5f}"
+                # Send to Blackpill (Only if it's large enough to not round to 0)
+                if actual_distance > 0.000001:
+                    cmd = f"PURGE {actual_distance:.6f}"
                     self.util.debugPrint(f"Blackpill CMD: {cmd} | delta_e: {delta_e:.5f} | scale: {self.syringe_scale}")
                     self._send_to_blackpill(cmd)
-                elif actual_distance < 0:
-                    cmd = f"FILL {abs(actual_distance):.5f}"
+                elif actual_distance < -0.000001:
+                    cmd = f"FILL {abs(actual_distance):.6f}"
                     self.util.debugPrint(f"Blackpill CMD: {cmd} | delta_e: {delta_e:.5f} | scale: {self.syringe_scale}")
                     self._send_to_blackpill(cmd)
                 

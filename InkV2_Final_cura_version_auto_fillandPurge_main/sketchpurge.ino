@@ -15,7 +15,7 @@
 #define IR_SENSOR_PIN PA0
 
 // Adjust this value according to your stepper driver microstepping and motor
-#define STEPS_PER_MM 100 
+#define STEPS_PER_MM 2560 
 
 /*********************************************************************
  * Hardware Timer
@@ -115,53 +115,85 @@ void processCommand(String cmd) {
     }
 
     if (cmd.startsWith("FILL")) {
-        float distance = 0.0;
-        if (cmd.length() > 5) {
-            distance = cmd.substring(5).toFloat();
-        }
-        if (direction != true || !motorRunning) {
-            direction = true;
-            digitalWrite(DIR_PIN, HIGH);
-            pulseCount = 0;
-            targetPulses = 0;
-            fractionalDistanceFill = 0.0;
-        }
-        stepState = false;
-        GPIOB->BSRR = GPIO_BSRR_BR10;
-        if (distance > 0.0) {
-            fractionalDistanceFill += distance;
-            uint32_t newPulses = (uint32_t)(fractionalDistanceFill * STEPS_PER_MM);
-            targetPulses += newPulses;
-            fractionalDistanceFill -= ((float)newPulses / STEPS_PER_MM);
+        if (cmd == "FILL") {
+            // Continuous mode
+            if (direction != true || !motorRunning) {
+                direction = true;
+                digitalWrite(DIR_PIN, HIGH);
+                pulseCount = 0;
+                targetPulses = 0;
+                fractionalDistanceFill = 0.0;
+            }
+            stepState = false;
+            GPIOB->BSRR = GPIO_BSRR_BR10;
+            targetPulses = 0; 
+            motorRunning = true;
+            isHoming = false;
         } else {
-            targetPulses = 0; // Continuous
+            float distance = 0.0;
+            if (cmd.length() > 5) {
+                distance = cmd.substring(5).toFloat();
+            }
+            if (distance > 0.0) {
+                if (direction != true || !motorRunning) {
+                    direction = true;
+                    digitalWrite(DIR_PIN, HIGH);
+                    pulseCount = 0;
+                    targetPulses = 0;
+                    fractionalDistanceFill = 0.0;
+                }
+                stepState = false;
+                GPIOB->BSRR = GPIO_BSRR_BR10;
+                
+                fractionalDistanceFill += distance;
+                uint32_t newPulses = (uint32_t)(fractionalDistanceFill * STEPS_PER_MM);
+                targetPulses += newPulses;
+                fractionalDistanceFill -= ((float)newPulses / STEPS_PER_MM);
+                
+                motorRunning = true;
+                isHoming = false;
+            }
         }
-        motorRunning = true;
-        isHoming = false;
     } else if (cmd.startsWith("PURGE")) {
-        float distance = 0.0;
-        if (cmd.length() > 6) {
-            distance = cmd.substring(6).toFloat();
-        }
-        if (direction != false || !motorRunning) {
-            direction = false;
-            digitalWrite(DIR_PIN, LOW);
-            pulseCount = 0;
-            targetPulses = 0;
-            fractionalDistancePurge = 0.0;
-        }
-        stepState = false;
-        GPIOB->BSRR = GPIO_BSRR_BR10;
-        if (distance > 0.0) {
-            fractionalDistancePurge += distance;
-            uint32_t newPulses = (uint32_t)(fractionalDistancePurge * STEPS_PER_MM);
-            targetPulses += newPulses;
-            fractionalDistancePurge -= ((float)newPulses / STEPS_PER_MM);
+        if (cmd == "PURGE") {
+            // Continuous mode
+            if (direction != false || !motorRunning) {
+                direction = false;
+                digitalWrite(DIR_PIN, LOW);
+                pulseCount = 0;
+                targetPulses = 0;
+                fractionalDistancePurge = 0.0;
+            }
+            stepState = false;
+            GPIOB->BSRR = GPIO_BSRR_BR10;
+            targetPulses = 0; 
+            motorRunning = true;
+            isHoming = false;
         } else {
-            targetPulses = 0; // Continuous
+            float distance = 0.0;
+            if (cmd.length() > 6) {
+                distance = cmd.substring(6).toFloat();
+            }
+            if (distance > 0.0) {
+                if (direction != false || !motorRunning) {
+                    direction = false;
+                    digitalWrite(DIR_PIN, LOW);
+                    pulseCount = 0;
+                    targetPulses = 0;
+                    fractionalDistancePurge = 0.0;
+                }
+                stepState = false;
+                GPIOB->BSRR = GPIO_BSRR_BR10;
+                
+                fractionalDistancePurge += distance;
+                uint32_t newPulses = (uint32_t)(fractionalDistancePurge * STEPS_PER_MM);
+                targetPulses += newPulses;
+                fractionalDistancePurge -= ((float)newPulses / STEPS_PER_MM);
+                
+                motorRunning = true;
+                isHoming = false;
+            }
         }
-        motorRunning = true;
-        isHoming = false;
     }
 }
 
