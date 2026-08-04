@@ -1295,11 +1295,17 @@ class MainWindow(QMainWindow):
                     delta_e = e_val - current_e
                     self.current_e = e_val
                 
+                # The G-code 'E' value assumes standard 1.75mm filament (Area = 2.405 mm^2).
+                # Your Syringe B has an area of 86.95 mm^2 (6ml over 69mm travel).
+                # To push the exact same volume of fluid, we scale the travel distance down by 2.405 / 86.95.
+                syringe_scale = 0.02766 
+                actual_distance = delta_e * syringe_scale
+
                 # Send to Blackpill
-                if delta_e > 0:
-                    self._send_to_blackpill(f"PURGE {delta_e:.5f}")
-                elif delta_e < 0:
-                    self._send_to_blackpill(f"FILL {abs(delta_e):.5f}")
+                if actual_distance > 0:
+                    self._send_to_blackpill(f"PURGE {actual_distance:.5f}")
+                elif actual_distance < 0:
+                    self._send_to_blackpill(f"FILL {abs(actual_distance):.5f}")
                 
                 # Strip E from the G-code string so SKR doesn't get it
                 gstr = re.sub(r'\s*E[-+]?[0-9]*\.?[0-9]+', '', gstr)
