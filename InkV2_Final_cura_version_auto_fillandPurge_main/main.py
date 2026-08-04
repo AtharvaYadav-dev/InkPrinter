@@ -2129,21 +2129,6 @@ class MainWindow(QMainWindow):
         # ======================================================
         # 6) Apply full transform
         # ======================================================
-        
-        # Viscosity & Extrusion Scaling
-        visc_idx = self.ui.viscositylevComboBox.currentIndex() if hasattr(self.ui, 'viscositylevComboBox') else 1
-        gauge_idx = self.ui.needleguageComboBox.currentIndex() if hasattr(self.ui, 'needleguageComboBox') else 2
-
-        # E Multiplier Mapping (Level 1: 0.5 to Level 5: 2.5)
-        e_multipliers = [0.5, 1.0, 1.5, 2.0, 2.5]
-        e_multiplier = e_multipliers[visc_idx] if 0 <= visc_idx < len(e_multipliers) else 1.0
-
-        # Max Feedrate Clamping (Anti-Stall)
-        base_max_feedrate = 800.0
-        visc_penalty = visc_idx * 100.0
-        gauge_penalty = gauge_idx * 50.0
-        max_feedrate = max(100.0, base_max_feedrate - visc_penalty - gauge_penalty)
-        
         adjusted = parser.apply_full_transform(
             cleaned,
             shiftX, shiftY,
@@ -2151,9 +2136,7 @@ class MainWindow(QMainWindow):
             feedrate,
             user_set_drawz,
             self.layer_height,
-            getattr(self, 'uv_time_ms', 0),
-            e_multiplier=e_multiplier,
-            max_feedrate=max_feedrate
+            getattr(self, 'uv_time_ms', 0)
         )
 
         # ======================================================

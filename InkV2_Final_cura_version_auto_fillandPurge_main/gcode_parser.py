@@ -91,9 +91,7 @@ class GcodeParser:
                          feedrate: float,
                          abs_mode: bool,
                          draw_z_user: bool,
-                         layer_height: float | None = None,
-                         e_multiplier: float = 1.0,
-                         max_feedrate: float | None = None):
+                         layer_height: float | None = None):
 
         up = raw.strip().upper()
 
@@ -117,17 +115,10 @@ class GcodeParser:
             # Z override logic (draw_z only)
             if axis == "Z" and draw_z_user:
                 return f"Z{draw_z:.3f}"
-                
-            # E scaling logic (Viscosity Dispense Ratio)
-            if axis == "E" and e_multiplier != 1.0:
-                return f"E{num * e_multiplier:.4f}"
 
-            # Feed override and clamping (Anti-Stall)
-            if axis == "F":
-                f_val = feedrate if feedrate else num
-                if max_feedrate is not None and f_val > max_feedrate:
-                    f_val = max_feedrate
-                return f"F{f_val:.3f}"
+            # Feed override
+            if axis == "F" and feedrate:
+                return f"F{feedrate:.3f}"
 
             return m.group(0)
 
@@ -206,9 +197,7 @@ class GcodeParser:
                          feedrate: float,
                          draw_z_user: bool,
                          layer_height: float | None = None,
-                         uv_time_ms: int = 0,
-                         e_multiplier: float = 1.0,
-                         max_feedrate: float | None = None) -> list[str]:
+                         uv_time_ms: int = 0) -> list[str]:
 
         final = []
         abs_mode = True
@@ -290,7 +279,7 @@ class GcodeParser:
                 continue
 
             # Apply XY shift, but DO NOT touch Z here
-            newline = self.transform_motion(raw, shiftX, shiftY, draw_z, feedrate, abs_mode, False, layer_height, e_multiplier, max_feedrate)
+            newline = self.transform_motion(raw, shiftX, shiftY, draw_z, feedrate, abs_mode, False, layer_height)
             newline = self._strip_negative_E(newline)  # remove E-..
 
             # BEFORE ANCHOR → ALWAYS stay at HOP
