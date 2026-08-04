@@ -27,11 +27,14 @@ HardwareTimer StepTimer(TIM2);
  *********************************************************************/
 volatile bool motorRunning = false;
 volatile bool stepState = false;
-volatile uint32_t pulseCount = 0;
 volatile uint32_t targetPulses = 0;
+volatile uint32_t pulseCount = 0;
+volatile bool direction = true; // true = FILL, false = PURGE
 
-bool direction = true;      // true = CW (FILL), false = CCW (PURGE)
+float fractionalDistanceFill = 0.0;
+float fractionalDistancePurge = 0.0;
 
+// Homing state variables
 volatile bool isHoming = false;
 int initialIRState = 0;
 
@@ -99,14 +102,14 @@ void processCommand(String cmd) {
     }
 
     if (cmd == "HOME") {
+        isHoming = true;
         direction = true;
         digitalWrite(DIR_PIN, HIGH);
+        motorRunning = true;
         pulseCount = 0;
+        targetPulses = 0;
         stepState = false;
         GPIOB->BSRR = GPIO_BSRR_BR10;
-        targetPulses = 0; // Continuous
-        motorRunning = true;
-        isHoming = true;
         initialIRState = digitalRead(IR_SENSOR_PIN);
         return;
     }
@@ -121,11 +124,15 @@ void processCommand(String cmd) {
             digitalWrite(DIR_PIN, HIGH);
             pulseCount = 0;
             targetPulses = 0;
+            fractionalDistanceFill = 0.0;
         }
         stepState = false;
         GPIOB->BSRR = GPIO_BSRR_BR10;
         if (distance > 0.0) {
-            targetPulses += (uint32_t)(distance * STEPS_PER_MM);
+            fractionalDistanceFill += distance;
+            uint32_t newPulses = (uint32_t)(fractionalDistanceFill * STEPS_PER_MM);
+            targetPulses += newPulses;
+            fractionalDistanceFill -= ((float)newPulses / STEPS_PER_MM);
         } else {
             targetPulses = 0; // Continuous
         }
@@ -141,11 +148,15 @@ void processCommand(String cmd) {
             digitalWrite(DIR_PIN, LOW);
             pulseCount = 0;
             targetPulses = 0;
+            fractionalDistancePurge = 0.0;
         }
         stepState = false;
         GPIOB->BSRR = GPIO_BSRR_BR10;
         if (distance > 0.0) {
-            targetPulses += (uint32_t)(distance * STEPS_PER_MM);
+            fractionalDistancePurge += distance;
+            uint32_t newPulses = (uint32_t)(fractionalDistancePurge * STEPS_PER_MM);
+            targetPulses += newPulses;
+            fractionalDistancePurge -= ((float)newPulses / STEPS_PER_MM);
         } else {
             targetPulses = 0; // Continuous
         }

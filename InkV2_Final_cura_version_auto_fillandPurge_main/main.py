@@ -1304,9 +1304,12 @@ class MainWindow(QMainWindow):
                 
                 # The G-code 'E' value assumes standard 1.75mm filament (Area = 2.405 mm^2).
                 # Your Syringe B has an area of 86.95 mm^2 (6ml over 69mm travel).
-                # To push the exact same volume of fluid, we scale the travel distance down by 2.405 / 86.95.
-                syringe_scale = 0.02766 
-                actual_distance = delta_e * syringe_scale
+                # To push the exact same volume of fluid, the geometric scale is 0.02766.
+                # However, since ink is a thin liquid, it flows much faster than molten plastic.
+                # We have lowered this to 0.005 so it purges less. 
+                # *** YOU CAN CHANGE THIS NUMBER TO TUNE IT! ***
+                self.syringe_scale = getattr(self, 'syringe_scale', 0.005) 
+                actual_distance = delta_e * self.syringe_scale
 
                 # Send to Blackpill
                 if actual_distance > 0:
