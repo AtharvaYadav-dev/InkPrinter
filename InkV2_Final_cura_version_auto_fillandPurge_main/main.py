@@ -1288,12 +1288,19 @@ class MainWindow(QMainWindow):
             if match_e:
                 e_val = float(match_e.group(1))
                 delta_e = 0.0
-                if getattr(self, 'is_relative_e', False):
-                    delta_e = e_val
-                else:
-                    current_e = getattr(self, 'current_e', 0.0)
-                    delta_e = e_val - current_e
+                
+                # Check if this is the very first E value we've seen since starting the print
+                if not getattr(self, 'first_e_seen', False):
                     self.current_e = e_val
+                    self.first_e_seen = True
+                    # Delta remains 0.0 because it's just initializing the tracker
+                else:
+                    if getattr(self, 'is_relative_e', False):
+                        delta_e = e_val
+                    else:
+                        current_e = getattr(self, 'current_e', 0.0)
+                        delta_e = e_val - current_e
+                        self.current_e = e_val
                 
                 # The G-code 'E' value assumes standard 1.75mm filament (Area = 2.405 mm^2).
                 # Your Syringe B has an area of 86.95 mm^2 (6ml over 69mm travel).
@@ -1765,6 +1772,7 @@ class MainWindow(QMainWindow):
         # Tracking for Blackpill E-interception
         self.is_relative_e = False
         self.current_e = 0.0
+        self.first_e_seen = False
 
     def programAction(self, widget):
         """Top-level router matching your original UI buttons."""
