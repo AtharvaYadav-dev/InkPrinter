@@ -1313,9 +1313,13 @@ class MainWindow(QMainWindow):
 
                 # Send to Blackpill
                 if actual_distance > 0:
-                    self._send_to_blackpill(f"PURGE {actual_distance:.5f}")
+                    cmd = f"PURGE {actual_distance:.5f}"
+                    self.util.debugPrint(f"Blackpill CMD: {cmd} | delta_e: {delta_e:.5f} | scale: {self.syringe_scale}")
+                    self._send_to_blackpill(cmd)
                 elif actual_distance < 0:
-                    self._send_to_blackpill(f"FILL {abs(actual_distance):.5f}")
+                    cmd = f"FILL {abs(actual_distance):.5f}"
+                    self.util.debugPrint(f"Blackpill CMD: {cmd} | delta_e: {delta_e:.5f} | scale: {self.syringe_scale}")
+                    self._send_to_blackpill(cmd)
                 
                 # Strip E from the G-code string so SKR doesn't get it
                 gstr = re.sub(r'\s*E[-+]?[0-9]*\.?[0-9]+', '', gstr)
