@@ -150,7 +150,9 @@ void processCommand(String cmd) {
                 targetPulses += newPulses;
                 fractionalDistanceFill -= ((float)newPulses / STEPS_PER_MM);
                 
-                motorRunning = true;
+                if (targetPulses > 0) {
+                    motorRunning = true;
+                }
                 isHoming = false;
             }
         }
@@ -190,7 +192,9 @@ void processCommand(String cmd) {
                 targetPulses += newPulses;
                 fractionalDistancePurge -= ((float)newPulses / STEPS_PER_MM);
                 
-                motorRunning = true;
+                if (targetPulses > 0) {
+                    motorRunning = true;
+                }
                 isHoming = false;
             }
         }

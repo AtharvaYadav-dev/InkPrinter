@@ -33,6 +33,7 @@ from config_manager import load_profile, ensure_profile_exists, PROFILE_PATH
 class MainWindow(QMainWindow):
     sigPrintProgress = Signal(float)
     exceptionOccurred = Signal(str)
+    dataReceived = Signal(str)
 
     def __init__(self, parent=None):
         QMainWindow.__init__(self)
@@ -225,7 +226,8 @@ class MainWindow(QMainWindow):
 
         self.util.debugFlag = True
 
-        self.exceptionOccurred.connect(self.showExceptionPopup)
+        self.exceptionOccurred.connect(self.showExceptionPopup, Qt.QueuedConnection)
+        self.dataReceived.connect(self._onDataReceived, Qt.QueuedConnection)
 
         # variables
         self.jogfeed = 1000
@@ -1220,8 +1222,13 @@ class MainWindow(QMainWindow):
                     self.wm.operate(self.paraextrusionWidget.cur, "set", str(cur_t))
 
     def updateData(self, msg):
-        if msg:
-            data = msg.strip("\n")
+        self.dataReceived.emit(msg)
+
+    @Slot(str)
+    def _onDataReceived(self, msg):
+        if not msg:
+            return
+        data = msg.strip("\n")
             
         if data:
             self.gcode.decode(data)
@@ -1239,13 +1246,14 @@ class MainWindow(QMainWindow):
 
     def updateException(self, args):
         self.util.debugPrint(f"error args : {args}")
+        self.exceptionOccurred.emit(str(args))
+
+    @Slot(str)
+    def showExceptionPopup(self, args: str):
         self.com_errorFlag = True
         self.util.debugPrint(f"error flag : {self.com_errorFlag}")
         self.comAction(self.com, action="Disconnect")
 
-        self.exceptionOccurred.emit(str(args))
-
-    def showExceptionPopup(self, args: str):
         self.showCustomPopup(
             "Machine Disconnected",
             "Disconnected from machine.\n\n"
@@ -1306,9 +1314,9 @@ class MainWindow(QMainWindow):
                 # Your Syringe B has an area of 86.95 mm^2 (6ml over 69mm travel).
                 # To push the exact same volume of fluid, the geometric scale is 0.02766.
                 # However, since ink is a thin liquid, it flows much faster than molten plastic.
-                # We have lowered this to 0.005 so it purges less. 
+                # Increased to 0.02766 to purge more while printing. 
                 # *** YOU CAN CHANGE THIS NUMBER TO TUNE IT! ***
-                self.syringe_scale = getattr(self, 'syringe_scale', 0.005) 
+                self.syringe_scale = getattr(self, 'syringe_scale', 0.02766) 
                 actual_distance = delta_e * self.syringe_scale
 
                 # Send to Blackpill (Only if it's large enough to not round to 0)
