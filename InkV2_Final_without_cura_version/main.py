@@ -2714,11 +2714,13 @@ class Tee:
     def write(self, data):
         self.file.write(data)
         self.file.flush()
-        self.stdout.write(data)
-        self.stdout.flush()
+        if self.stdout is not None:
+            self.stdout.write(data)
+            self.stdout.flush()
     def flush(self):
         self.file.flush()
-        self.stdout.flush()
+        if self.stdout is not None:
+            self.stdout.flush()
 
 if __name__ == '__main__':
     # Ensure working directory is the app root (critical for PyInstaller and style.json)
