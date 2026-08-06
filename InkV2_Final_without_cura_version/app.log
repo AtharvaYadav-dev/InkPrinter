@@ -1,0 +1,84 @@
+2026-08-01 14:27 - INFO - ==================================================
+2026-08-01 14:27 - INFO - New session START at 2026-08-01 14:27
+2026-08-01 14:27 - INFO - ==================================================
+2026-08-01 14:27 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-01 14:27 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-01 14:27 - INFO - Loaded draw_z from config: Z=5.0, draw_z_UP=2.5
+2026-08-01 14:27 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-01 14:27 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-01 14:27 - INFO - INI file initialized
+2026-08-01 14:27 - INFO - UI load successful
+2026-08-01 14:27 - INFO - Com : com, Port : ['COM1', 'COM9', 'COM10'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-01 14:27 - ERROR - Error : Invalid Input > Kindly select both COM port and baud rate.
+2026-08-01 14:27 - INFO - Serial communication stopped
+2026-08-01 14:27 - INFO - COM connection close successfully
+2026-08-01 14:27 - INFO - Main window close successfully
+2026-08-01 14:27 - INFO - ==================================================
+2026-08-01 14:27 - INFO - New session close at 2026-08-01 14:27
+2026-08-01 14:27 - INFO - ==================================================
+2026-08-06 10:14 - INFO - ==================================================
+2026-08-06 10:14 - INFO - New session START at 2026-08-06 10:14
+2026-08-06 10:14 - INFO - ==================================================
+2026-08-06 10:14 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-06 10:14 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-06 10:14 - INFO - Loaded draw_z from config: Z=5.0, draw_z_UP=2.5
+2026-08-06 10:14 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-06 10:14 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-06 10:14 - INFO - INI file initialized
+2026-08-06 10:14 - INFO - UI load successful
+2026-08-06 10:14 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-06 10:39 - INFO - ==================================================
+2026-08-06 10:39 - INFO - New session START at 2026-08-06 10:39
+2026-08-06 10:39 - INFO - ==================================================
+2026-08-06 10:39 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-06 10:39 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-06 10:39 - INFO - Loaded draw_z from config: Z=5.0, draw_z_UP=2.5
+2026-08-06 10:39 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-06 10:39 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-06 10:39 - INFO - INI file initialized
+2026-08-06 10:39 - INFO - UI load successful
+2026-08-06 10:39 - INFO - Com : com, Port : ['COM1', 'COM24', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-06 10:39 - INFO - Serial communication stopped
+2026-08-06 10:39 - INFO - COM connection close successfully
+2026-08-06 10:39 - INFO - Main window close successfully
+2026-08-06 10:39 - INFO - ==================================================
+2026-08-06 10:39 - INFO - New session close at 2026-08-06 10:39
+2026-08-06 10:39 - INFO - ==================================================
+2026-08-06 10:40 - INFO - ==================================================
+2026-08-06 10:40 - INFO - New session START at 2026-08-06 10:40
+2026-08-06 10:40 - INFO - ==================================================
+2026-08-06 10:40 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-06 10:40 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-06 10:40 - INFO - Loaded draw_z from config: Z=5.0, draw_z_UP=2.5
+2026-08-06 10:40 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-06 10:40 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-06 10:40 - INFO - INI file initialized
+2026-08-06 10:40 - INFO - UI load successful
+2026-08-06 10:40 - INFO - Com : com, Port : ['COM1', 'COM24', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-06 10:40 - INFO - Serial communication stopped
+2026-08-06 10:40 - INFO - COM connection close successfully
+2026-08-06 10:40 - INFO - Main window close successfully
+2026-08-06 10:40 - INFO - ==================================================
+2026-08-06 10:40 - INFO - New session close at 2026-08-06 10:40
+2026-08-06 10:40 - INFO - ==================================================
+2026-08-06 10:41 - INFO - ==================================================
+2026-08-06 10:41 - INFO - New session START at 2026-08-06 10:41
+2026-08-06 10:41 - INFO - ==================================================
+2026-08-06 10:41 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-06 10:41 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-06 10:41 - INFO - Loaded draw_z from config: Z=5.0, draw_z_UP=2.5
+2026-08-06 10:41 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-06 10:41 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-06 10:41 - INFO - INI file initialized
+2026-08-06 10:41 - INFO - UI load successful
+2026-08-06 10:41 - INFO - Com : com, Port : ['COM1', 'COM24', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-06 10:41 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-06 10:41 - INFO - Fill command (FILL) sent to Blackpill.
+2026-08-06 10:41 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-06 10:41 - INFO - Purge command (PURGE) sent to Blackpill.
+2026-08-06 10:42 - INFO - Serial communication stopped
+2026-08-06 10:42 - INFO - COM connection close successfully
+2026-08-06 10:42 - INFO - Main window close successfully
+2026-08-06 10:42 - INFO - ==================================================
+2026-08-06 10:42 - INFO - New session close at 2026-08-06 10:42
+2026-08-06 10:42 - INFO - ==================================================
