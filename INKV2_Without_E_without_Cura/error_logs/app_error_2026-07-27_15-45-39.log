@@ -1,0 +1,6 @@
+2026-07-27 15:46:23 - ERROR - util.py:200 - Out of Bed Range: Drawing exceeds bed area!
+
+X: 0.00 → 160.80 (Bed: 0.0 → 50.0)
+Y: 0.00 → 160.80 (Bed: 0.0 → 50.0)
+
+Please re-adjust the offsets.

@@ -1,0 +1,32 @@
+{
+    "wall_line_count": 1,
+    "wall_thickness": 0.4,
+    "top_layers": 0,
+    "bottom_layers": 0,
+    "top_bottom_thickness": 0,
+    "infill_sparse_density": 100,
+    "infill_pattern": "lines",
+    "infill_angles": [
+        90
+    ],
+    "connect_infill_polygons": true,
+    "inset_direction": "outside_in",
+    "layer_height": 0.4,
+    "layer_height_0": 0.4,
+    "material_print_temperature": 25,
+    "material_bed_temperature": 25,
+    "optimize_wall_printing_order": true,
+    "retract_at_layer_change": false,
+    "retraction_enable": false,
+    "retraction_amount": 0,
+    "retraction_speed": 0,
+    "speed_infill": 10,
+    "speed_print": 10,
+    "speed_travel": 10,
+    "speed_wall": 10,
+    "speed_wall_0": 10,
+    "speed_wall_x": 10,
+    "speed_layer_0": 10,
+    "adhesion_type": "none",
+    "z_seam_corner": "z_seam_corner_weighted"
+}

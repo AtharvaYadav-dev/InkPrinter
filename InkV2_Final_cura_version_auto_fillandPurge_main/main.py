@@ -1311,12 +1311,10 @@ class MainWindow(QMainWindow):
                         self.current_e = e_val
                 
                 # The G-code 'E' value assumes standard 1.75mm filament (Area = 2.405 mm^2).
-                # Your Syringe B has an area of 86.95 mm^2 (6ml over 69mm travel).
-                # To push the exact same volume of fluid, the geometric scale is 0.02766.
-                # However, since ink is a thin liquid, it flows much faster than molten plastic.
-                # Increased to 0.02766 to purge more while printing. 
-                # *** YOU CAN CHANGE THIS NUMBER TO TUNE IT! ***
-                self.syringe_scale = getattr(self, 'syringe_scale', 0.02766) 
+                # Your physical test showed the syringe purges 0.27 ml per mm (Area = 270 mm^2).
+                # To push the exact same volume of fluid as plastic, the scale is 2.405 / 270 = 0.0089.
+                # *** YOU CAN CHANGE THIS NUMBER TO TUNE IT (e.g. 0.015 for extra flow) ***
+                self.syringe_scale = getattr(self, 'syringe_scale', 0.0089) 
                 actual_distance = delta_e * self.syringe_scale
 
                 # Send to Blackpill (Only if it's large enough to not round to 0)
