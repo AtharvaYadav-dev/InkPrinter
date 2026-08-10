@@ -320,7 +320,7 @@ class GCode3DPreview(QOpenGLWidget):
         self.total_print_length = 0.0
         self.completed_print_length = 0.0
 
-        pos = {"X": 0.0, "Y": 0.0, "Z": 0.0, "E": 0.0}
+        pos = {"X": 0.0, "Y": 0.0, "Z": 0.0}
         x0 = y0 = z0 = 0.0
         relative_mode = False
         current_layer_z = None
@@ -373,7 +373,7 @@ class GCode3DPreview(QOpenGLWidget):
                 if axis in ("X", "Y", "Z"):
                     if relative_mode: pos[axis] += val
                     else: pos[axis] = val
-                elif axis == "E": pos["E"] = val
+
 
             x1, y1, z1 = pos["X"], pos["Y"], pos["Z"]
 
@@ -386,7 +386,7 @@ class GCode3DPreview(QOpenGLWidget):
                     self.total_print_length += math.sqrt((x1-x0)**2 + (y1-y0)**2 + (z1-z0)**2)
                 
                 # Layer tracking (Check E OR Ink Active)
-                is_extruding = ("E" in raw_line.upper()) or self.ink_active
+                is_extruding = ("G1" in cmd) or self.ink_active
                 if "G1" in cmd and is_extruding:
                     lz = round(z1, self.layer_round_digits)
                     
@@ -577,7 +577,7 @@ class GCode3DPreview(QOpenGLWidget):
         if ink_active: 
             return current_type if current_type else "wall"
             
-        if "E" not in line.upper(): return "travel"
+        if "G1" not in line.upper() and not ink_active: return "travel"
         
         if current_type: return current_type
         

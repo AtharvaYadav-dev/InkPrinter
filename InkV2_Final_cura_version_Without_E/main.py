@@ -1280,55 +1280,51 @@ class MainWindow(QMainWindow):
             self.util.debugPrint(f"Skipping empty after stripping comment")
             return
 
-        # --- Extrusion Interception for Blackpill ---
-        if gstr.startswith("M82"):
-            self.is_relative_e = False
-        elif gstr.startswith("M83"):
-            self.is_relative_e = True
-        elif gstr.startswith("G92"):
-            # Check if G92 E<val> is used
-            match_e = re.search(r'E([-+]?[0-9]*\.?[0-9]+)', gstr)
-            if match_e:
-                self.current_e = float(match_e.group(1))
+        # --- Extrusion Interception for Blackpill (XY Distance Based) ---
+        if gstr.startswith("G90"):
+            self.is_relative_xy = False
+        elif gstr.startswith("G91"):
+            self.is_relative_xy = True
+        elif gstr.startswith("G28"):
+            self.current_x = 0.0
+            self.current_y = 0.0
+
+        if not hasattr(self, 'current_x'): self.current_x = 0.0
+        if not hasattr(self, 'current_y'): self.current_y = 0.0
+        if not hasattr(self, 'is_relative_xy'): self.is_relative_xy = False
 
         if gstr.startswith("G1") or gstr.startswith("G0"):
-            match_e = re.search(r'E([-+]?[0-9]*\.?[0-9]+)', gstr)
-            if match_e:
-                e_val = float(match_e.group(1))
-                delta_e = 0.0
-                
-                # Check if this is the very first E value we've seen since starting the print
-                if not getattr(self, 'first_e_seen', False):
-                    self.current_e = e_val
-                    self.first_e_seen = True
-                    # Delta remains 0.0 because it's just initializing the tracker
-                else:
-                    if getattr(self, 'is_relative_e', False):
-                        delta_e = e_val
-                    else:
-                        current_e = getattr(self, 'current_e', 0.0)
-                        delta_e = e_val - current_e
-                        self.current_e = e_val
-                
-                # The G-code 'E' value assumes standard 1.75mm filament (Area = 2.405 mm^2).
-                # Your physical test showed the syringe purges 0.27 ml per mm (Area = 270 mm^2).
-                # To push the exact same volume of fluid as plastic, the scale is 2.405 / 270 = 0.0089.
-                # *** YOU CAN CHANGE THIS NUMBER TO TUNE IT (e.g. 0.015 for extra flow) ***
-                self.syringe_scale = getattr(self, 'syringe_scale', 0.0089) 
-                actual_distance = delta_e * self.syringe_scale
+            match_x = re.search(r'X([-+]?[0-9]*\.?[0-9]+)', gstr)
+            match_y = re.search(r'Y([-+]?[0-9]*\.?[0-9]+)', gstr)
+            
+            new_x = self.current_x
+            new_y = self.current_y
+            
+            if match_x:
+                val = float(match_x.group(1))
+                new_x = self.current_x + val if self.is_relative_xy else val
+            if match_y:
+                val = float(match_y.group(1))
+                new_y = self.current_y + val if self.is_relative_xy else val
 
-                # Send to Blackpill (Only if it's large enough to not round to 0)
-                if actual_distance > 0.000001:
-                    cmd = f"PURGE {actual_distance:.6f}"
-                    self.util.debugPrint(f"Blackpill CMD: {cmd} | delta_e: {delta_e:.5f} | scale: {self.syringe_scale}")
-                    self._send_to_blackpill(cmd)
-                elif actual_distance < -0.000001:
-                    cmd = f"FILL {abs(actual_distance):.6f}"
-                    self.util.debugPrint(f"Blackpill CMD: {cmd} | delta_e: {delta_e:.5f} | scale: {self.syringe_scale}")
-                    self._send_to_blackpill(cmd)
+            distance = math.hypot(new_x - self.current_x, new_y - self.current_y)
+            
+            # G1 is considered an extrusion move (PURGE), G0 is travel
+            if gstr.startswith("G1") and distance > 0.000001:
+                # The scale now applies directly to physical XY distance instead of E values.
+                # You may need to retune this value since XY distance is larger than typical E values.
+                self.syringe_scale = getattr(self, 'syringe_scale', 0.0089) 
+                actual_distance = distance * self.syringe_scale
                 
-                # Strip E from the G-code string so SKR doesn't get it
-                gstr = re.sub(r'\s*E[-+]?[0-9]*\.?[0-9]+', '', gstr)
+                cmd = f"PURGE {actual_distance:.6f}"
+                self.util.debugPrint(f"Blackpill CMD: {cmd} | dist: {distance:.5f} | scale: {self.syringe_scale}")
+                self._send_to_blackpill(cmd)
+            
+            self.current_x = new_x
+            self.current_y = new_y
+            
+            # Strip E from the G-code string so SKR doesn't get it (just in case)
+            gstr = re.sub(r'\s*E[-+]?[0-9]*\.?[0-9]+', '', gstr)
         # --------------------------------------------
 
         # Encode & checksum handling
