@@ -202,7 +202,7 @@ class GCode3DPreview(QOpenGLWidget):
         if self.is_minimized:
             self.overlay.setFixedSize(32, 32)
         else:
-            self.overlay.setFixedSize(210, 130)
+            self.overlay.setFixedSize(210, 180)
             
         self.apply_theme_style()
         # Reposition after size change
@@ -229,11 +229,19 @@ class GCode3DPreview(QOpenGLWidget):
         self.bed_z_height = float(z_height)
         self.sigRequestUpdate.emit()
 
+    def _add_completed_segment(self, gcode: str):
+        if gcode and gcode not in self.completed_segments:
+            self.completed_segments.add(gcode)
+            if hasattr(self, 'completed_print_length'):
+                x0, y0, z0, x1, y1, z1, feature = self.segment_dict.get(gcode, (0,0,0,0,0,0,"travel"))
+                if feature != "travel":
+                    self.completed_print_length += math.sqrt((x1-x0)**2 + (y1-y0)**2 + (z1-z0)**2)
+
     def set_live_printing(self, state: bool):
         self.live_printing = bool(state)
         if not state:
             if self.processed_gcode:
-                self.completed_segments.add(self.processed_gcode)
+                self._add_completed_segment(self.processed_gcode)
             self.processed_gcode = None
             self.current_print_layer = None
         self._update_info_label()
@@ -243,6 +251,7 @@ class GCode3DPreview(QOpenGLWidget):
         self.completed_segments.clear()
         self.processed_gcode = None
         self.current_print_layer = None
+        self.completed_print_length = 0.0
         self._update_info_label()
         self.sigRequestUpdate.emit()
 
@@ -255,6 +264,8 @@ class GCode3DPreview(QOpenGLWidget):
         self.processed_gcode = None
         self.current_print_layer = None
         self.last_print_z = None
+        self.total_print_length = 0.0
+        self.completed_print_length = 0.0
         self._update_info_label()
         self.sigRequestUpdate.emit()
 
@@ -306,6 +317,8 @@ class GCode3DPreview(QOpenGLWidget):
         self.completed_segments.clear()
         self.processed_gcode = None
         self.current_print_layer = None
+        self.total_print_length = 0.0
+        self.completed_print_length = 0.0
 
         pos = {"X": 0.0, "Y": 0.0, "Z": 0.0, "E": 0.0}
         x0 = y0 = z0 = 0.0
@@ -369,6 +382,9 @@ class GCode3DPreview(QOpenGLWidget):
                 feature = self._classify_feature(x0, y0, x1, y1, raw_line, self.ink_active, self.current_feature_type)
                 self.segment_dict[seg_key] = (x0, y0, z0, x1, y1, z1, feature)
                 
+                if feature != "travel":
+                    self.total_print_length += math.sqrt((x1-x0)**2 + (y1-y0)**2 + (z1-z0)**2)
+                
                 # Layer tracking (Check E OR Ink Active)
                 is_extruding = ("E" in raw_line.upper()) or self.ink_active
                 if "G1" in cmd and is_extruding:
@@ -396,7 +412,7 @@ class GCode3DPreview(QOpenGLWidget):
     def _onMarkSegment(self, gcode: str) -> None:
         if gcode in self.segment_dict:
             if self.processed_gcode:
-                self.completed_segments.add(self.processed_gcode)
+                self._add_completed_segment(self.processed_gcode)
             self.processed_gcode = gcode
             
             x0, y0, z0, x1, y1, z1, feature = self.segment_dict[gcode]
@@ -540,7 +556,18 @@ class GCode3DPreview(QOpenGLWidget):
     # -------------------------
     def _update_info_label(self):
         total = len(self.layer_z_list)
-        self.lbl_info.setText(f"Layers: {total}")
+        
+        comp = getattr(self, "completed_print_length", 0.0)
+        if self.processed_gcode:
+            x0, y0, z0, x1, y1, z1, feature = self.segment_dict.get(self.processed_gcode, (0,0,0,0,0,0,"travel"))
+            if feature != "travel":
+                comp += math.sqrt((x1-x0)**2 + (y1-y0)**2 + (z1-z0)**2)
+                
+        total_len = getattr(self, "total_print_length", 0.0)
+        rem = max(0.0, total_len - comp)
+        
+        text = f"Layers: {total}\nTotal: {total_len:.1f} mm\nDone: {comp:.1f} mm\nRem: {rem:.1f} mm"
+        self.lbl_info.setText(text)
 
     def _classify_feature(self, x0, y0, x1, y1, line, ink_active=False, current_type=None):
         # Filter vertical-only moves as travel, to hide Z-drops inside M106 blocks

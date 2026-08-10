@@ -283,6 +283,8 @@ class MainWindow(QMainWindow):
         self.temp_report_hide_flag = False
         
         self.axishandler = AxisHandler()
+        self.preview = GCode3DPreview()
+        self.preview.sigGlError.connect(lambda msg: print("⚠️", msg))
 
         # log file session separator
         self.logger.sessionSeparator("START")
@@ -583,15 +585,6 @@ class MainWindow(QMainWindow):
         
         plot = QVBoxLayout()
         self.printFrame.setLayout(plot)
-        
-        # New Length Tracker Label
-        self.lengthTrackerLabel = QLabel("Total Length: 0.00 mm | Remaining: 0.00 mm")
-        self.lengthTrackerLabel.setAlignment(Qt.AlignCenter)
-        self.lengthTrackerLabel.setStyleSheet("color: white; font-weight: bold; background-color: rgb(16, 42, 131); padding: 5px; border-radius: 5px;")
-        plot.addWidget(self.lengthTrackerLabel)
-        
-        self.preview = GCode3DPreview()
-        self.preview.sigGlError.connect(lambda msg: print("⚠️", msg))
         plot.addWidget(self.preview)
         
         self.printWidget_dict = {self.printBtn1.objectName() : "run",
@@ -1287,21 +1280,55 @@ class MainWindow(QMainWindow):
             self.util.debugPrint(f"Skipping empty after stripping comment")
             return
 
-        # --- Constant Flow Method for Blackpill ---
-        if gstr.startswith("G1"):
-            if not getattr(self, 'is_flowing', False):
-                self._send_to_blackpill("PURGE")  # Turn motor ON for continuous flow
-                self.is_flowing = True
-                self.util.debugPrint("Blackpill CMD: PURGE (Flow Started)")
-        elif gstr.startswith("G0"):
-            if getattr(self, 'is_flowing', False):
-                self._send_to_blackpill("STOP")   # Turn motor OFF during travel
-                self.is_flowing = False
-                self.util.debugPrint("Blackpill CMD: STOP (Flow Stopped)")
+        # --- Extrusion Interception for Blackpill ---
+        if gstr.startswith("M82"):
+            self.is_relative_e = False
+        elif gstr.startswith("M83"):
+            self.is_relative_e = True
+        elif gstr.startswith("G92"):
+            # Check if G92 E<val> is used
+            match_e = re.search(r'E([-+]?[0-9]*\.?[0-9]+)', gstr)
+            if match_e:
+                self.current_e = float(match_e.group(1))
 
-        # Strip E from the G-code string so SKR doesn't get it
         if gstr.startswith("G1") or gstr.startswith("G0"):
-            gstr = re.sub(r'\s*E[-+]?[0-9]*\.?[0-9]+', '', gstr)
+            match_e = re.search(r'E([-+]?[0-9]*\.?[0-9]+)', gstr)
+            if match_e:
+                e_val = float(match_e.group(1))
+                delta_e = 0.0
+                
+                # Check if this is the very first E value we've seen since starting the print
+                if not getattr(self, 'first_e_seen', False):
+                    self.current_e = e_val
+                    self.first_e_seen = True
+                    # Delta remains 0.0 because it's just initializing the tracker
+                else:
+                    if getattr(self, 'is_relative_e', False):
+                        delta_e = e_val
+                    else:
+                        current_e = getattr(self, 'current_e', 0.0)
+                        delta_e = e_val - current_e
+                        self.current_e = e_val
+                
+                # The G-code 'E' value assumes standard 1.75mm filament (Area = 2.405 mm^2).
+                # Your physical test showed the syringe purges 0.27 ml per mm (Area = 270 mm^2).
+                # To push the exact same volume of fluid as plastic, the scale is 2.405 / 270 = 0.0089.
+                # *** YOU CAN CHANGE THIS NUMBER TO TUNE IT (e.g. 0.015 for extra flow) ***
+                self.syringe_scale = getattr(self, 'syringe_scale', 0.0089) 
+                actual_distance = delta_e * self.syringe_scale
+
+                # Send to Blackpill (Only if it's large enough to not round to 0)
+                if actual_distance > 0.000001:
+                    cmd = f"PURGE {actual_distance:.6f}"
+                    self.util.debugPrint(f"Blackpill CMD: {cmd} | delta_e: {delta_e:.5f} | scale: {self.syringe_scale}")
+                    self._send_to_blackpill(cmd)
+                elif actual_distance < -0.000001:
+                    cmd = f"FILL {abs(actual_distance):.6f}"
+                    self.util.debugPrint(f"Blackpill CMD: {cmd} | delta_e: {delta_e:.5f} | scale: {self.syringe_scale}")
+                    self._send_to_blackpill(cmd)
+                
+                # Strip E from the G-code string so SKR doesn't get it
+                gstr = re.sub(r'\s*E[-+]?[0-9]*\.?[0-9]+', '', gstr)
         # --------------------------------------------
 
         # Encode & checksum handling
@@ -2197,11 +2224,6 @@ class MainWindow(QMainWindow):
 
         self.filtered_gcode = adjusted[:]  # Print buffer
 
-        # Calculate lengths for UI
-        self.total_mm, self.cumulative_lengths = self._calculate_gcode_lengths(self.filtered_gcode)
-        if hasattr(self, 'lengthTrackerLabel'):
-            self.lengthTrackerLabel.setText(f"Total Length: {self.total_mm:.2f} mm | Remaining: {self.total_mm:.2f} mm")
-
         try:
             self.preview.loadGcode(adjusted)
             self.showMainPage(3)
@@ -2210,58 +2232,6 @@ class MainWindow(QMainWindow):
 
         for ln in adjusted:
             self.util.debugPrint(ln)
-
-    def _calculate_gcode_lengths(self, gcode_lines):
-        import math
-        import re
-        total = 0.0
-        cumulative = []
-        current_x = 0.0
-        current_y = 0.0
-        abs_mode = True
-
-        for line in gcode_lines:
-            up = line.upper().strip()
-            if up.startswith(";") or up.startswith("("):
-                cumulative.append(total)
-                continue
-            if ";" in up:
-                up = up.split(";", 1)[0].strip()
-
-            if up.startswith("G90"):
-                abs_mode = True
-            elif up.startswith("G91"):
-                abs_mode = False
-
-            if up.startswith("G1"):
-                x_match = re.search(r'X([-+]?[0-9]*\.?[0-9]+)', up)
-                y_match = re.search(r'Y([-+]?[0-9]*\.?[0-9]+)', up)
-                
-                new_x = current_x
-                new_y = current_y
-                
-                if x_match:
-                    new_x = float(x_match.group(1)) if abs_mode else current_x + float(x_match.group(1))
-                if y_match:
-                    new_y = float(y_match.group(1)) if abs_mode else current_y + float(y_match.group(1))
-                
-                if x_match or y_match:
-                    dist = math.hypot(new_x - current_x, new_y - current_y)
-                    total += dist
-                
-                current_x = new_x
-                current_y = new_y
-            elif up.startswith("G0"):
-                x_match = re.search(r'X([-+]?[0-9]*\.?[0-9]+)', up)
-                y_match = re.search(r'Y([-+]?[0-9]*\.?[0-9]+)', up)
-                if x_match:
-                    current_x = float(x_match.group(1)) if abs_mode else current_x + float(x_match.group(1))
-                if y_match:
-                    current_y = float(y_match.group(1)) if abs_mode else current_y + float(y_match.group(1))
-
-            cumulative.append(total)
-            
-        return total, cumulative
 
     def update_profile_json(profile_path, layer_height, layer_height_0):
         """
@@ -2364,9 +2334,6 @@ class MainWindow(QMainWindow):
 
         elif arg == "pause":
             self.pgm_pause_flag = True
-            if getattr(self, 'is_flowing', False):
-                self._send_to_blackpill("STOP")
-                self.is_flowing = False
             self.logger.info("Print Status : PAUSE")
 
         elif arg == "resume":
@@ -2375,10 +2342,6 @@ class MainWindow(QMainWindow):
             self.logger.info("Print Status : RESUME")
 
         elif arg == "abort":
-            if getattr(self, 'is_flowing', False):
-                self._send_to_blackpill("STOP")
-                self.is_flowing = False
-                
             self.ui.uvonPushButton.setEnabled(True)
             self.ui.uvoffPushButton.setEnabled(True)
             self.pgm_run_flag = False
@@ -2404,13 +2367,6 @@ class MainWindow(QMainWindow):
 
     def startProgram(self):
         gcode = self.filtered_gcode[self.pgm_index]
-        
-        if hasattr(self, 'cumulative_lengths') and self.pgm_index < len(self.cumulative_lengths):
-            current = self.cumulative_lengths[self.pgm_index]
-            remaining = self.total_mm - current
-            if hasattr(self, 'lengthTrackerLabel'):
-                self.lengthTrackerLabel.setText(f"Total Length: {self.total_mm:.2f} mm | Remaining: {max(0, remaining):.2f} mm")
-                
         self.pgm_index += 1
         self.pgmGcode(gcode)
         self.pgmGcode("G4 S1")
@@ -2430,10 +2386,6 @@ class MainWindow(QMainWindow):
             self.startProgram()
 
     def finishProgram(self):
-        if getattr(self, 'is_flowing', False):
-            self._send_to_blackpill("STOP")
-            self.is_flowing = False
-            
         self.ui.uvonPushButton.setEnabled(True)
         self.ui.uvoffPushButton.setEnabled(True)
         self.pgm_index = 0
