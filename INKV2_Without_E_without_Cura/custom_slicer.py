@@ -63,61 +63,89 @@ def extract_paths(polygons, spacing, angle=0):
             
     return paths
 
-def optimize_paths_tsp(paths):
+def optimize_paths_tsp_numpy(paths):
     """
-    Greedy nearest-neighbor approach to order LineStrings
+    Vectorized greedy nearest-neighbor approach to order LineStrings
     and minimize non-extruding travel distance.
-    Also decides whether to reverse a path if it's closer to start at its end.
+    Extremely fast compared to pure Python loops.
     """
     if not paths:
         return []
-
-    unvisited = list(paths)
-    ordered = []
+        
+    num_paths = len(paths)
+    starts = np.zeros((num_paths, 2))
+    ends = np.zeros((num_paths, 2))
     
-    # Start at (0, 0)
+    for i, path in enumerate(paths):
+        coords = list(path.coords)
+        starts[i] = coords[0]
+        ends[i] = coords[-1]
+        
+    ordered = []
+    visited = np.zeros(num_paths, dtype=bool)
     current_pos = np.array([0.0, 0.0])
     
-    while unvisited:
-        best_idx = -1
-        best_dist = float('inf')
-        reverse_best = False
+    for _ in range(num_paths):
+        # Distance squared from current_pos to all unvisited starts
+        diff_starts = starts - current_pos
+        dist_starts = np.sum(diff_starts**2, axis=1)
+        dist_starts[visited] = np.inf
         
-        for i, path in enumerate(unvisited):
-            coords = list(path.coords)
-            if not coords:
-                continue
-            
-            p_start = np.array(coords[0])
-            p_end = np.array(coords[-1])
-            
-            dist_to_start = np.linalg.norm(current_pos - p_start)
-            dist_to_end = np.linalg.norm(current_pos - p_end)
-            
-            if dist_to_start < best_dist:
-                best_dist = dist_to_start
-                best_idx = i
-                reverse_best = False
-                
-            if dist_to_end < best_dist:
-                best_dist = dist_to_end
-                best_idx = i
-                reverse_best = True
-                
-        if best_idx == -1:
-            break
-            
-        best_path = unvisited.pop(best_idx)
-        coords = list(best_path.coords)
+        # Distance squared from current_pos to all unvisited ends
+        diff_ends = ends - current_pos
+        dist_ends = np.sum(diff_ends**2, axis=1)
+        dist_ends[visited] = np.inf
         
-        if reverse_best:
+        min_start_idx = np.argmin(dist_starts)
+        min_end_idx = np.argmin(dist_ends)
+        
+        if dist_starts[min_start_idx] < dist_ends[min_end_idx]:
+            best_idx = min_start_idx
+            reverse = False
+        else:
+            best_idx = min_end_idx
+            reverse = True
+            
+        visited[best_idx] = True
+        
+        coords = list(paths[best_idx].coords)
+        if reverse:
             coords.reverse()
-            best_path = LineString(coords)
             
-        ordered.append(best_path)
+        ordered.append(LineString(coords))
         current_pos = np.array(coords[-1])
         
     return ordered
+
+def merge_close_paths(paths, threshold=0.1):
+    """
+    Merge paths where the end of one is very close to the start of the next.
+    This connects hatch lines into continuous zig-zag paths and avoids tiny Z-hops.
+    """
+    if not paths:
+        return []
+    
+    merged = []
+    current_coords = list(paths[0].coords)
+    
+    for i in range(1, len(paths)):
+        next_coords = list(paths[i].coords)
+        
+        # Distance from end of current to start of next
+        dist = np.linalg.norm(np.array(current_coords[-1]) - np.array(next_coords[0]))
+        
+        if dist <= threshold:
+            if dist > 1e-6:
+                current_coords.extend(next_coords)
+            else:
+                # Exactly the same point, skip duplicate
+                current_coords.extend(next_coords[1:])
+        else:
+            merged.append(LineString(current_coords))
+            current_coords = next_coords
+            
+    merged.append(LineString(current_coords))
+    return merged
 
 def generate_gcode(paths, speed=1000, z_height=0.4, z_hop=5.0):
     """
@@ -165,11 +193,17 @@ def slice_polygons(polygons, gcode_file, nozzle=0.4, speed=1000, z_height=0.4, z
     print(f"  -> Generating infill (nozzle={nozzle}) and extracting paths...")
     paths = extract_paths(polygons, spacing=nozzle)
     
-    print(f"  -> Optimizing shortest path (TSP) for {len(paths)} toolpaths...")
-    optimized_paths = optimize_paths_tsp(paths)
+    print(f"  -> Optimizing shortest path (TSP) for {len(paths)} toolpaths (Fast Vectorized)...")
+    optimized_paths = optimize_paths_tsp_numpy(paths)
+    
+    # Merge paths closer than 1.5x the nozzle width (connects zig-zag hatches and eliminates tiny Z-hops)
+    merge_threshold = max(0.1, nozzle * 1.5)
+    print(f"  -> Merging paths closer than {merge_threshold:.2f}mm to create continuous strokes...")
+    merged_paths = merge_close_paths(optimized_paths, threshold=merge_threshold)
+    print(f"  -> Reduced from {len(optimized_paths)} to {len(merged_paths)} continuous paths.")
     
     print(f"  -> Generating G-code (M106/M107, no E value)...")
-    gcode_str = generate_gcode(optimized_paths, speed=speed, z_height=z_height, z_hop=z_hop)
+    gcode_str = generate_gcode(merged_paths, speed=speed, z_height=z_height, z_hop=z_hop)
     
     with open(gcode_file, 'w') as f:
         f.write(gcode_str)

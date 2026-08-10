@@ -1281,18 +1281,16 @@ class MainWindow(QMainWindow):
             return
 
         # --- Extrusion Interception for Blackpill (Constant Flow) ---
-        if gstr.strip() == "M106":
-            if not getattr(self, 'is_pump_on', False):
-                self.util.debugPrint("Starting continuous flow (FILL)")
-                self._send_to_blackpill("FILL")
-                self.is_pump_on = True
+        if gstr.strip().startswith("M106"):
+            self.util.debugPrint("Starting continuous flow (FILL)")
+            self._send_to_blackpill("FILL")
+            self.is_pump_on = True
             return
 
-        if gstr.strip() == "M107":
-            if getattr(self, 'is_pump_on', False):
-                self.util.debugPrint("Stopping continuous flow (STOP)")
-                self._send_to_blackpill("STOP")
-                self.is_pump_on = False
+        if gstr.strip().startswith("M107"):
+            self.util.debugPrint("Stopping continuous flow (STOP)")
+            self._send_to_blackpill("STOP")
+            self.is_pump_on = False
             return
         # --------------------------------------------
 
