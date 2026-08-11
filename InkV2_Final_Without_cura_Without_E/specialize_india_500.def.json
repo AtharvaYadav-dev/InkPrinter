@@ -1,0 +1,96 @@
+{
+    "name": "Specialize India 500",
+    "version": 2,
+    "inherits": "fdmprinter",
+
+    "overrides": {
+        "machine_name": { "default_value": "Specialize India 500" },
+
+        "machine_start_gcode": { 
+            "default_value": "\nG28 ;Home\n"
+        },
+
+        "machine_end_gcode": { 
+            "default_value": "G28 X Y ;Present print\nM106 S0 ;Turn-off fan\nM104 S0 ;Turn-off hotend\nM140 S0 ;Turn-off bed\n\nM84 X Y E ;Disable all steppers but Z\n"
+        },
+
+        "machine_width": { "default_value": 50 },
+        "machine_depth": { "default_value": 50 },
+        "machine_height": { "default_value": 50 },
+
+        "z_seam_type": { "default_value": "sharpest_corner" },
+        "z_seam_corner": { "default_value": "z_seam_corner_inner" },
+
+        "infill_sparse_density": { "default_value": 20 },
+        "infill_pattern": { "default_value": "lines" },
+        "infill_angles": { "default_value": [90, 180] },
+        "infill_area_inner_offset": { "default_value": 0.4 },
+        "infill_overlap": { "default_value": 0 },
+
+        "material_print_temperature": { "default_value": 220 },
+        "material_bed_temperature": { "default_value": 65 },
+
+        "retraction_amount": { "default_value": 10 },
+        "retraction_speed": { "default_value": 80 },
+
+        "speed_travel": { "default_value": 250 },
+        "speed_print_layer_0": { "default_value": 20 },
+        "speed_travel_layer_0": { "default_value": 30 },
+
+        "machine_head_polygon": { 
+            "default_value": [
+                [-26, 34],
+                [-26, -32],
+                [22, -32],
+                [22, 34]
+            ]
+        },
+
+        "machine_head_with_fans_polygon": { 
+            "default_value": [
+                [-26, 34],
+                [-26, -32],
+                [32, -32],
+                [32, 34]
+            ]
+        },
+
+        "gantry_height": { "default_value": 25 },
+
+        "line_width": { "default_value": 0.44 },
+
+        "wall_thickness": { "default_value": 1.32 },
+        "wall_line_count": { "default_value": 3 },
+
+        "small_hole_max_size": { "default_value": 5 },
+        "small_feature_speed_factor": { "default_value": 30 },
+        "small_feature_speed_factor_0": { "default_value": 20 },
+
+        "retraction_combing": { "default_value": "off" },
+
+        "zig_zaggify_infill": { "default_value": true },
+        "infill_before_walls": { "default_value": true },
+
+        "meshfix_maximum_resolution": { "default_value": 0.65 },
+        "meshfix_maximum_deviation": { "default_value": 0.025 },
+        "meshfix_maximum_travel_resolution": { "default_value": 0.65 },
+
+        "speed_print": { "default_value": 250 },
+        "speed_infill": { "default_value": 250 },
+        "infill_material_flow": { "default_value": 125 },
+
+        "speed_wall": { "default_value": 60 },
+        "speed_wall_0": { "default_value": 60 },
+        "speed_wall_x": { "default_value": 80 },
+
+        "speed_roofing": { "default_value": 100 },
+        "speed_topbottom": { "default_value": 125 },
+        "speed_support": { "default_value": 50 },
+        "speed_support_infill": { "default_value": 100 }
+    },
+
+    "metadata": {
+        "quality_definition": "creality_base",
+        "visible": true
+    }
+}

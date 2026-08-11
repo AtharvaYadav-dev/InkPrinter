@@ -1,0 +1,209 @@
+{
+ "version": "auto-py-to-exe-configuration_v1",
+ "pyinstallerOptions": [
+  {
+   "optionDest": "noconfirm",
+   "value": true
+  },
+  {
+   "optionDest": "filenames",
+   "value": "D:/GitHub/RuthvijR-ES/WORKS/INK/Main_file_2/InkV2_UI6_working_Final_Zmerged/main.py"
+  },
+  {
+   "optionDest": "onefile",
+   "value": true
+  },
+  {
+   "optionDest": "console",
+   "value": false
+  },
+  {
+   "optionDest": "icon_file",
+   "value": "D:/GitHub/RuthvijR-ES/WORKS/INK/Main_file_2/new_logo.ico"
+  },
+  {
+   "optionDest": "clean_build",
+   "value": false
+  },
+  {
+   "optionDest": "strip",
+   "value": false
+  },
+  {
+   "optionDest": "noupx",
+   "value": false
+  },
+  {
+   "optionDest": "disable_windowed_traceback",
+   "value": false
+  },
+  {
+   "optionDest": "uac_admin",
+   "value": false
+  },
+  {
+   "optionDest": "uac_uiaccess",
+   "value": false
+  },
+  {
+   "optionDest": "argv_emulation",
+   "value": false
+  },
+  {
+   "optionDest": "bootloader_ignore_signals",
+   "value": false
+  },
+  {
+   "optionDest": "datas",
+   "value": "D:/GitHub/RuthvijR-ES/WORKS/INK/Main_file_2/InkV2_UI6_working_Final_Zmerged/config;config/"
+  },
+  {
+   "optionDest": "datas",
+   "value": "D:/GitHub/RuthvijR-ES/WORKS/INK/Main_file_2/InkV2_UI6_working_Final_Zmerged/icons;icons/"
+  },
+  {
+   "optionDest": "datas",
+   "value": "D:/GitHub/RuthvijR-ES/WORKS/INK/Main_file_2/InkV2_UI6_working_Final_Zmerged/logo;logo/"
+  },
+  {
+   "optionDest": "datas",
+   "value": "D:/GitHub/RuthvijR-ES/WORKS/INK/Main_file_2/InkV2_UI6_working_Final_Zmerged/logs;logs/"
+  },
+  {
+   "optionDest": "datas",
+   "value": "D:/GitHub/RuthvijR-ES/WORKS/INK/Main_file_2/InkV2_UI6_working_Final_Zmerged/Qss;Qss/"
+  },
+  {
+   "optionDest": "datas",
+   "value": "D:/GitHub/RuthvijR-ES/WORKS/INK/Main_file_2/InkV2_UI6_working_Final_Zmerged/app.log;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "D:/GitHub/RuthvijR-ES/WORKS/INK/Main_file_2/InkV2_UI6_working_Final_Zmerged/com.py;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "D:/GitHub/RuthvijR-ES/WORKS/INK/Main_file_2/InkV2_UI6_working_Final_Zmerged/cura_finder_log1.py;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "D:/GitHub/RuthvijR-ES/WORKS/INK/Main_file_2/InkV2_UI6_working_Final_Zmerged/cura_log.txt;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "D:/GitHub/RuthvijR-ES/WORKS/INK/Main_file_2/InkV2_UI6_working_Final_Zmerged/curaprofile_to_json.py;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "D:/GitHub/RuthvijR-ES/WORKS/INK/Main_file_2/InkV2_UI6_working_Final_Zmerged/custom.py;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "D:/GitHub/RuthvijR-ES/WORKS/INK/Main_file_2/InkV2_UI6_working_Final_Zmerged/dxf.py;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "D:/GitHub/RuthvijR-ES/WORKS/INK/Main_file_2/InkV2_UI6_working_Final_Zmerged/extruder.def.json;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "D:/GitHub/RuthvijR-ES/WORKS/INK/Main_file_2/InkV2_UI6_working_Final_Zmerged/gcode.py;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "D:/GitHub/RuthvijR-ES/WORKS/INK/Main_file_2/InkV2_UI6_working_Final_Zmerged/gcode_parser.py;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "D:/GitHub/RuthvijR-ES/WORKS/INK/Main_file_2/InkV2_UI6_working_Final_Zmerged/inktest.curaprofile;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "D:/GitHub/RuthvijR-ES/WORKS/INK/Main_file_2/InkV2_UI6_working_Final_Zmerged/interface.ui;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "D:/GitHub/RuthvijR-ES/WORKS/INK/Main_file_2/InkV2_UI6_working_Final_Zmerged/laser.py;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "D:/GitHub/RuthvijR-ES/WORKS/INK/Main_file_2/InkV2_UI6_working_Final_Zmerged/libcairo-2.dll;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "D:/GitHub/RuthvijR-ES/WORKS/INK/Main_file_2/InkV2_UI6_working_Final_Zmerged/machine.def.json;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "D:/GitHub/RuthvijR-ES/WORKS/INK/Main_file_2/InkV2_UI6_working_Final_Zmerged/misc.txt;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "D:/GitHub/RuthvijR-ES/WORKS/INK/Main_file_2/InkV2_UI6_working_Final_Zmerged/preview3d.py;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "D:/GitHub/RuthvijR-ES/WORKS/INK/Main_file_2/InkV2_UI6_working_Final_Zmerged/printer.def.json;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "D:/GitHub/RuthvijR-ES/WORKS/INK/Main_file_2/InkV2_UI6_working_Final_Zmerged/profile.json;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "D:/GitHub/RuthvijR-ES/WORKS/INK/Main_file_2/InkV2_UI6_working_Final_Zmerged/resources.qrc;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "D:/GitHub/RuthvijR-ES/WORKS/INK/Main_file_2/InkV2_UI6_working_Final_Zmerged/resources_rc.py;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "D:/GitHub/RuthvijR-ES/WORKS/INK/Main_file_2/InkV2_UI6_working_Final_Zmerged/specialize_india_500.def.json;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "D:/GitHub/RuthvijR-ES/WORKS/INK/Main_file_2/InkV2_UI6_working_Final_Zmerged/specialize_india_500_extruder_0.def.json;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "D:/GitHub/RuthvijR-ES/WORKS/INK/Main_file_2/InkV2_UI6_working_Final_Zmerged/status.txt;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "D:/GitHub/RuthvijR-ES/WORKS/INK/Main_file_2/InkV2_UI6_working_Final_Zmerged/stl_to_gcode.py;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "D:/GitHub/RuthvijR-ES/WORKS/INK/Main_file_2/InkV2_UI6_working_Final_Zmerged/style.json;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "D:/GitHub/RuthvijR-ES/WORKS/INK/Main_file_2/InkV2_UI6_working_Final_Zmerged/svg_to_stl.py;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "D:/GitHub/RuthvijR-ES/WORKS/INK/Main_file_2/InkV2_UI6_working_Final_Zmerged/test.py;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "D:/GitHub/RuthvijR-ES/WORKS/INK/Main_file_2/InkV2_UI6_working_Final_Zmerged/test_gcode_parser.py;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "D:/GitHub/RuthvijR-ES/WORKS/INK/Main_file_2/InkV2_UI6_working_Final_Zmerged/ui_interface.py;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "D:/GitHub/RuthvijR-ES/WORKS/INK/Main_file_2/InkV2_UI6_working_Final_Zmerged/uihandler.py;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "D:/GitHub/RuthvijR-ES/WORKS/INK/Main_file_2/InkV2_UI6_working_Final_Zmerged/util.py;."
+  }
+ ],
+ "nonPyinstallerOptions": {
+  "increaseRecursionLimit": false,
+  "manualArguments": ""
+ }
+}
