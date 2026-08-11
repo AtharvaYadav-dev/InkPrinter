@@ -334,7 +334,20 @@ def slice_layers(
                     
                 perimeter_paths = []
                 infill_paths = []
-                for poly in polygons:
+                
+                from shapely.ops import unary_union
+                merged = unary_union(polygons)
+                if merged.is_empty:
+                    continue
+                    
+                if merged.geom_type == 'Polygon':
+                    merged_polys = [merged]
+                elif merged.geom_type == 'MultiPolygon':
+                    merged_polys = list(merged.geoms)
+                else:
+                    merged_polys = []
+                
+                for poly in merged_polys:
                     if wall_line_count > 0:
                         perimeter_paths.extend(extract_perimeters(poly))
                         
