@@ -26,27 +26,34 @@ def get_optimal_infill_angle(poly: Polygon) -> float:
         pass
     return 0.0
 
-def generate_smart_orthogonal_infill(polygon: Polygon, spacing: float) -> List[LineString]:
+def generate_smart_orthogonal_infill(polygon: Polygon, spacing: float, has_walls: bool = True) -> List[LineString]:
     """
     Generates horizontal and vertical lines for infill.
-    It restricts the infill to the inside of the polygon (offset by spacing) so it doesn't overlap the perimeter.
+    It restricts the infill to the inside of the polygon so it doesn't overlap the perimeter.
     Longer lines cut shorter lines to prevent corner bulges.
     """
-    # Offset inward to leave room for the perimeter
-    inner_poly = polygon.buffer(-spacing + 1e-4, join_style=2)
+    if has_walls:
+        # Offset inward to leave room for the perimeter
+        inner_poly = polygon.buffer(-spacing + 1e-4, join_style=2)
+        grid_offset = spacing
+    else:
+        # No perimeter, just stay slightly inside the boundary
+        inner_poly = polygon.buffer(-1e-4, join_style=2)
+        grid_offset = spacing / 2.0
+        
     if inner_poly.is_empty:
         return []
         
-    minx, miny, maxx, maxy = inner_poly.bounds
+    minx, miny, maxx, maxy = polygon.bounds
     
     h_lines = []
-    y = miny + spacing / 2.0
+    y = miny + grid_offset
     while y <= maxy:
         h_lines.append(LineString([(minx - 1, y), (maxx + 1, y)]))
         y += spacing
         
     v_lines = []
-    x = minx + spacing / 2.0
+    x = minx + grid_offset
     while x <= maxx:
         v_lines.append(LineString([(x, miny - 1), (x, maxy + 1)]))
         x += spacing
@@ -351,7 +358,7 @@ def slice_layers(
                         perimeter_paths.extend(extract_perimeters(poly))
                         
                     if infill_angle == 'smart_xy':
-                        infill = generate_smart_orthogonal_infill(poly, nozzle)
+                        infill = generate_smart_orthogonal_infill(poly, nozzle, wall_line_count > 0)
                     else:
                         poly_angle = get_optimal_infill_angle(poly) if base_angle is None else base_angle
                         current_angle = poly_angle if layer_idx % 2 == 0 else poly_angle + 90.0
