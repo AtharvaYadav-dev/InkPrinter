@@ -367,6 +367,11 @@ def slice_layers(
                 
                 from shapely.ops import unary_union
                 merged = unary_union(polygons)
+                
+                # Simplify the geometry to remove rounded micro-segments (turns curves into sharp edges)
+                # This drastically reduces G-code size and stops the printer from slowing down at corners.
+                merged = merged.simplify(0.1, preserve_topology=True)
+                
                 if merged.is_empty:
                     continue
                     
