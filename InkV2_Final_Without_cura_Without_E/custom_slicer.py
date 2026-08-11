@@ -125,6 +125,37 @@ def optimize_paths_tsp(paths: List[LineString], start_pt: Tuple[float, float] = 
         optimized.append(chosen_path)
         current_pt = chosen_path.coords[-1]
 
+    # 2. 2-opt Post-Processing
+    def dist(p1, p2):
+        return math.hypot(p1[0] - p2[0], p1[1] - p2[1])
+
+    improved = True
+    while improved:
+        improved = False
+        for i in range(1, len(optimized) - 1):
+            for j in range(i + 1, len(optimized)):
+                p_i_minus_1_end = optimized[i-1].coords[-1]
+                p_i_start = optimized[i].coords[0]
+                p_j_end = optimized[j].coords[-1]
+                
+                if j + 1 < len(optimized):
+                    p_j_plus_1_start = optimized[j+1].coords[0]
+                    d_curr = dist(p_i_minus_1_end, p_i_start) + dist(p_j_end, p_j_plus_1_start)
+                    d_new = dist(p_i_minus_1_end, p_j_end) + dist(p_i_start, p_j_plus_1_start)
+                else:
+                    d_curr = dist(p_i_minus_1_end, p_i_start)
+                    d_new = dist(p_i_minus_1_end, p_j_end)
+                
+                if d_new < d_curr - 1e-5:
+                    sub_reversed = []
+                    for k in range(j, i - 1, -1):
+                        sub_reversed.append(LineString(optimized[k].coords[::-1]))
+                    optimized[i:j+1] = sub_reversed
+                    improved = True
+                    break
+            if improved:
+                break
+
     return optimized
 
 def calculate_e(dist: float, line_width: float, layer_height: float, filament_dia: float = 1.75) -> float:
@@ -142,7 +173,7 @@ def slice_layers(
     speed: int = 1000, 
     z_height: float = 0.4,
     wall_line_count: int = 0,
-    infill_angle: float = 90.0,
+    infill_angle: float = 45.0,
     z_hop: float = 5.0
 ) -> bool:
     """
@@ -163,6 +194,7 @@ def slice_layers(
             f.write(f"G0 Z{z_hop:.3f} F{speed}\n")
             
             current_e = 0.0
+            current_head_pos = (0.0, 0.0)
             
             for layer_idx, polygons in enumerate(layers_polygons):
                 if not polygons:
@@ -173,18 +205,28 @@ def slice_layers(
                 # Alternate angle by 90 degrees per layer
                 current_angle = infill_angle if layer_idx % 2 == 0 else infill_angle + 90.0
                 
-                all_paths = []
+                perimeter_paths = []
+                infill_paths = []
                 for poly in polygons:
                     if wall_line_count > 0:
-                        all_paths.extend(extract_perimeters(poly))
+                        perimeter_paths.extend(extract_perimeters(poly))
                         
                     infill = generate_infill_lines(poly, current_angle, nozzle)
-                    all_paths.extend(infill)
+                    infill_paths.extend(infill)
                 
-                if not all_paths:
+                if not perimeter_paths and not infill_paths:
                     continue
                     
-                optimized_paths = optimize_paths_tsp(all_paths, (0.0, 0.0))
+                optimized_paths = []
+                if perimeter_paths:
+                    opt_perim = optimize_paths_tsp(perimeter_paths, current_head_pos)
+                    optimized_paths.extend(opt_perim)
+                    current_head_pos = opt_perim[-1].coords[-1]
+                    
+                if infill_paths:
+                    opt_infill = optimize_paths_tsp(infill_paths, current_head_pos)
+                    optimized_paths.extend(opt_infill)
+                    current_head_pos = opt_infill[-1].coords[-1]
                 
                 # Write layer indicator
                 f.write(f";LAYER:{layer_idx}\n")
@@ -232,7 +274,7 @@ def slice_polygons(
     speed: int = 1000, 
     z_height: float = 0.4,
     wall_line_count: int = 0,
-    infill_angle: float = 90.0,
+    infill_angle: float = 45.0,
     z_hop: float = 5.0
 ) -> bool:
     """
