@@ -3,6 +3,29 @@ import numpy as np
 from shapely.geometry import Polygon, LineString, Point, MultiLineString
 from typing import List, Tuple
 
+def get_optimal_infill_angle(poly: Polygon) -> float:
+    """
+    Calculate the optimal infill angle based on the polygon's minimum rotated rectangle,
+    aligning the infill with the longest dimension of the shape.
+    """
+    try:
+        mrr = poly.minimum_rotated_rectangle
+        coords = list(mrr.exterior.coords)
+        if len(coords) >= 3:
+            p0, p1, p2 = coords[0], coords[1], coords[2]
+            dist1 = math.hypot(p1[0] - p0[0], p1[1] - p0[1])
+            dist2 = math.hypot(p2[0] - p1[0], p2[1] - p1[1])
+            
+            if dist1 > dist2:
+                dx, dy = p1[0] - p0[0], p1[1] - p0[1]
+            else:
+                dx, dy = p2[0] - p1[0], p2[1] - p1[1]
+                
+            return math.degrees(math.atan2(dy, dx))
+    except Exception:
+        pass
+    return 0.0
+
 def generate_infill_lines(polygon: Polygon, angle_deg: float, spacing: float) -> List[LineString]:
     """
     Generate parallel infill lines for a polygon at a given angle.
@@ -199,8 +222,8 @@ def slice_layers(
     nozzle: float = 0.4, 
     speed: int = 1000, 
     z_height: float = 0.4,
-    wall_line_count: int = 0,
-    infill_angle: float = 45.0,
+    wall_line_count: int = 1,
+    infill_angle: str | float = 'smart',
     z_hop: float = 5.0
 ) -> bool:
     """
@@ -227,17 +250,24 @@ def slice_layers(
                 if not polygons:
                     continue
                     
-                current_z = (layer_idx + 1) * z_height
-                
-                # Alternate angle by 90 degrees per layer
-                current_angle = infill_angle if layer_idx % 2 == 0 else infill_angle + 90.0
-                
+                # Determine base angle
+                if infill_angle == 'smart':
+                    # Will be calculated per polygon
+                    base_angle = None
+                else:
+                    base_angle = float(infill_angle)
+                    
                 perimeter_paths = []
                 infill_paths = []
                 for poly in polygons:
                     if wall_line_count > 0:
                         perimeter_paths.extend(extract_perimeters(poly))
                         
+                    poly_angle = get_optimal_infill_angle(poly) if base_angle is None else base_angle
+                    
+                    # Alternate angle by 90 degrees per layer if it's not 'smart' or even if it is
+                    current_angle = poly_angle if layer_idx % 2 == 0 else poly_angle + 90.0
+                    
                     infill = generate_infill_lines(poly, current_angle, nozzle)
                     infill_paths.extend(infill)
                 
@@ -300,8 +330,8 @@ def slice_polygons(
     nozzle: float = 0.4, 
     speed: int = 1000, 
     z_height: float = 0.4,
-    wall_line_count: int = 0,
-    infill_angle: float = 45.0,
+    wall_line_count: int = 1,
+    infill_angle: str | float = 'smart',
     z_hop: float = 5.0
 ) -> bool:
     """
