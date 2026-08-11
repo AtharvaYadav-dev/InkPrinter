@@ -64,7 +64,8 @@ def generate_smart_orthogonal_infill(polygon: Polygon, spacing: float) -> List[L
     final_v = []
     
     # Resolve junctions: longer lines cut shorter lines to prevent crosshatch overlap
-    # cap_style=2 is FLAT, meaning the buffer does not extend past the endpoints
+    # cap_style=3 is SQUARE, meaning the buffer extends past the endpoints by the radius.
+    # This ensures that perpendicular lines lying exactly on the polygon boundary are fully swallowed.
     buffer_radius = spacing / 2.0 + 1e-4
     
     for h in h_long:
@@ -73,7 +74,7 @@ def generate_smart_orthogonal_infill(polygon: Polygon, spacing: float) -> List[L
             if h.intersects(v):
                 if v.length > h.length:
                     # v wins, it will cut h
-                    cut_poly = cut_poly.union(v.buffer(buffer_radius, cap_style=2))
+                    cut_poly = cut_poly.union(v.buffer(buffer_radius, cap_style=3))
         
         if not cut_poly.is_empty:
             diff = h.difference(cut_poly)
@@ -87,7 +88,7 @@ def generate_smart_orthogonal_infill(polygon: Polygon, spacing: float) -> List[L
             if v.intersects(h):
                 if h.length >= v.length:
                     # h wins, it will cut v
-                    cut_poly = cut_poly.union(h.buffer(buffer_radius, cap_style=2))
+                    cut_poly = cut_poly.union(h.buffer(buffer_radius, cap_style=3))
                     
         if not cut_poly.is_empty:
             diff = v.difference(cut_poly)
@@ -95,8 +96,8 @@ def generate_smart_orthogonal_infill(polygon: Polygon, spacing: float) -> List[L
         else:
             final_v.append(v)
             
-    # Final cleanup to remove any tiny slivers created by the cutting process
-    kept_lines = [seg for seg in final_h + final_v if seg.length >= spacing * 0.5]
+    # Final cleanup to remove any tiny slivers or edge-stubs created by the cutting process
+    kept_lines = [seg for seg in final_h + final_v if seg.length >= spacing * 1.2]
     return kept_lines
 
 def generate_infill_lines(polygon: Polygon, angle_deg: float, spacing: float) -> List[LineString]:
