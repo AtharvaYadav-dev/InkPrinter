@@ -1311,13 +1311,16 @@ class MainWindow(QMainWindow):
             
             # G1 is considered an extrusion move (PURGE), G0 is travel
             if gstr.startswith("G1") and distance > 0.000001:
-                # The scale now applies directly to physical XY distance instead of E values.
-                # You may need to retune this value since XY distance is larger than typical E values.
+                # The old syringe_scale was tuned for E values. Physical XY distance is roughly 30x larger than typical E values.
+                # To maintain compatibility with your tuned syringe_scale (e.g. 0.011057), we simulate the E value.
+                # E ≈ Distance * (Line Width * Layer Height) / (Filament Area) ≈ Distance * (0.4 * 0.2) / 2.405 ≈ Distance * 0.03326
+                simulated_e = distance * 0.03326
+                
                 self.syringe_scale = getattr(self, 'syringe_scale', 0.0089) 
-                actual_distance = distance * self.syringe_scale
+                actual_distance = simulated_e * self.syringe_scale
                 
                 cmd = f"PURGE {actual_distance:.6f}"
-                self.util.debugPrint(f"Blackpill CMD: {cmd} | dist: {distance:.5f} | scale: {self.syringe_scale}")
+                self.util.debugPrint(f"Blackpill CMD: {cmd} | dist: {distance:.5f} | sim_e: {simulated_e:.5f} | scale: {self.syringe_scale}")
                 self._send_to_blackpill(cmd)
             
             self.current_x = new_x
