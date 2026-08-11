@@ -72,36 +72,39 @@ def generate_smart_orthogonal_infill(polygon: Polygon, spacing: float, has_walls
     h_long = [seg for seg in h_segments if seg.length >= min_len]
     v_long = [seg for seg in v_segments if seg.length >= min_len]
     
-    final_h = []
-    final_v = []
-    
+    # To prevent the "trunk" (bus) from being chopped into tiny pieces by the "branches" (fingers),
+    # we evaluate both possibilities: H cuts V, or V cuts H.
+    # We choose the option that results in the FEWEST total line segments, minimizing travel moves.
     buffer_radius = spacing / 2.0 + 1e-4
     
-    for h in h_long:
-        cut_poly = Polygon()
-        for v in v_long:
-            if h.intersects(v):
-                if v.length > h.length:
-                    cut_poly = cut_poly.union(v.buffer(buffer_radius, cap_style=3))
-        
-        if not cut_poly.is_empty:
-            diff = h.difference(cut_poly)
-            final_h.extend(extract_segments(diff))
+    h_multi = MultiLineString(h_long)
+    v_multi = MultiLineString(v_long)
+    
+    h_buffer = h_multi.buffer(buffer_radius, cap_style=3)
+    v_buffer = v_multi.buffer(buffer_radius, cap_style=3)
+    
+    v_cut_by_h = extract_segments(v_multi.difference(h_buffer))
+    h_cut_by_v = extract_segments(h_multi.difference(v_buffer))
+    
+    pieces_if_h_wins = len(h_long) + len(v_cut_by_h)
+    pieces_if_v_wins = len(v_long) + len(h_cut_by_v)
+    
+    if pieces_if_h_wins < pieces_if_v_wins:
+        final_h = h_long
+        final_v = v_cut_by_h
+    elif pieces_if_v_wins < pieces_if_h_wins:
+        final_h = h_cut_by_v
+        final_v = v_long
+    else:
+        # Tie-breaker: which one has the longer max line?
+        max_h = max([h.length for h in h_long] + [0])
+        max_v = max([v.length for v in v_long] + [0])
+        if max_h >= max_v:
+            final_h = h_long
+            final_v = v_cut_by_h
         else:
-            final_h.append(h)
-            
-    for v in v_long:
-        cut_poly = Polygon()
-        for h in h_long:
-            if v.intersects(h):
-                if h.length >= v.length:
-                    cut_poly = cut_poly.union(h.buffer(buffer_radius, cap_style=3))
-                    
-        if not cut_poly.is_empty:
-            diff = v.difference(cut_poly)
-            final_v.extend(extract_segments(diff))
-        else:
-            final_v.append(v)
+            final_h = h_cut_by_v
+            final_v = v_long
             
     kept_lines = [seg for seg in final_h + final_v if seg.length >= spacing * 1.2]
     return kept_lines
