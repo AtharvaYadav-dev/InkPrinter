@@ -35,13 +35,14 @@ def generate_smart_orthogonal_infill(polygon: Polygon, spacing: float) -> List[L
     """
     lines = []
     # Start half a spacing inward so the outer extrusion perfectly touches the boundary
-    current_poly = polygon.buffer(-spacing / 2.0)
+    # join_style=2 (MITRE) ensures all corners are perfectly sharp and straight, no curves.
+    current_poly = polygon.buffer(-spacing / 2.0, join_style=2)
     
     while not current_poly.is_empty and current_poly.area > 1e-5:
         # extract_perimeters returns the boundary of the current offset
         lines.extend(extract_perimeters(current_poly))
         # Step inward by exactly one nozzle width
-        current_poly = current_poly.buffer(-spacing)
+        current_poly = current_poly.buffer(-spacing, join_style=2)
         
     return lines
 
