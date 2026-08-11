@@ -92,21 +92,28 @@ def optimize_paths_tsp(paths: List[LineString], start_pt: Tuple[float, float] = 
     if not paths:
         return []
 
-    unvisited = list(paths)
     current_pt = start_pt
     optimized = []
 
-    while unvisited:
+    # 1. Greedy NN (Optimized)
+    unvisited_paths = list(paths)
+    unvisited_starts = [p.coords[0] for p in unvisited_paths]
+    unvisited_ends = [p.coords[-1] for p in unvisited_paths]
+    
+    while unvisited_paths:
         best_idx = -1
         best_dist = float('inf')
         best_reverse = False
         
-        for i, path in enumerate(unvisited):
-            p_start = path.coords[0]
-            p_end = path.coords[-1]
+        # Cache current point for faster access in the loop
+        cx, cy = current_pt
+        
+        for i in range(len(unvisited_paths)):
+            sx, sy = unvisited_starts[i]
+            ex, ey = unvisited_ends[i]
             
-            d_start = (current_pt[0] - p_start[0])**2 + (current_pt[1] - p_start[1])**2
-            d_end = (current_pt[0] - p_end[0])**2 + (current_pt[1] - p_end[1])**2
+            d_start = (cx - sx)**2 + (cy - sy)**2
+            d_end = (cx - ex)**2 + (cy - ey)**2
             
             if d_start < best_dist:
                 best_dist = d_start
@@ -118,39 +125,59 @@ def optimize_paths_tsp(paths: List[LineString], start_pt: Tuple[float, float] = 
                 best_idx = i
                 best_reverse = True
                 
-        chosen_path = unvisited.pop(best_idx)
+        chosen_path = unvisited_paths.pop(best_idx)
+        unvisited_starts.pop(best_idx)
+        unvisited_ends.pop(best_idx)
+        
         if best_reverse:
             chosen_path = LineString(chosen_path.coords[::-1])
             
         optimized.append(chosen_path)
         current_pt = chosen_path.coords[-1]
 
-    # 2. 2-opt Post-Processing
+    # 2. 2-opt Post-Processing (Windowed & Iteration Bounded)
     def dist(p1, p2):
         return math.hypot(p1[0] - p2[0], p1[1] - p2[1])
 
     improved = True
-    while improved:
+    passes = 0
+    max_passes = 2 # strict limit to prevent UI hanging
+    window_size = 60 # only check nearby paths in the greedy tour
+
+    while improved and passes < max_passes:
         improved = False
+        passes += 1
+        
+        # Pre-extract coords for speed
+        ends = [p.coords[-1] for p in optimized]
+        starts = [p.coords[0] for p in optimized]
+        
         for i in range(1, len(optimized) - 1):
-            for j in range(i + 1, len(optimized)):
-                p_i_minus_1_end = optimized[i-1].coords[-1]
-                p_i_start = optimized[i].coords[0]
-                p_j_end = optimized[j].coords[-1]
+            limit = min(len(optimized), i + window_size)
+            for j in range(i + 1, limit):
+                p_i_minus_1_end = ends[i-1]
+                p_i_start = starts[i]
+                p_j_end = ends[j]
                 
                 if j + 1 < len(optimized):
-                    p_j_plus_1_start = optimized[j+1].coords[0]
+                    p_j_plus_1_start = starts[j+1]
                     d_curr = dist(p_i_minus_1_end, p_i_start) + dist(p_j_end, p_j_plus_1_start)
                     d_new = dist(p_i_minus_1_end, p_j_end) + dist(p_i_start, p_j_plus_1_start)
                 else:
                     d_curr = dist(p_i_minus_1_end, p_i_start)
                     d_new = dist(p_i_minus_1_end, p_j_end)
                 
-                if d_new < d_curr - 1e-5:
+                if d_new < d_curr - 1e-4:
                     sub_reversed = []
                     for k in range(j, i - 1, -1):
                         sub_reversed.append(LineString(optimized[k].coords[::-1]))
                     optimized[i:j+1] = sub_reversed
+                    
+                    # Update cached coords
+                    for k in range(i, j + 1):
+                        starts[k] = optimized[k].coords[0]
+                        ends[k] = optimized[k].coords[-1]
+                        
                     improved = True
                     break
             if improved:
