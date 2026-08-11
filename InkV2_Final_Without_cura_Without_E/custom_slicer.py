@@ -28,8 +28,9 @@ def get_optimal_infill_angle(poly: Polygon) -> float:
 
 def generate_smart_orthogonal_infill(polygon: Polygon, spacing: float) -> List[LineString]:
     """
-    Generates horizontal and vertical lines, keeping only those aligned with the local longest dimension.
-    This perfectly fills branching orthogonal structures (like interdigitated combs) with straight lines.
+    Generates horizontal and vertical lines, resolving junctions by cutting shorter lines with 
+    the bounding area of longer lines. This perfectly fills branching orthogonal structures 
+    without any crosshatching/overlapping at the corners (prevents corner bulges).
     """
     minx, miny, maxx, maxy = polygon.bounds
     
@@ -54,34 +55,48 @@ def generate_smart_orthogonal_infill(polygon: Polygon, spacing: float) -> List[L
     h_segments = extract_segments(MultiLineString(h_lines).intersection(polygon))
     v_segments = extract_segments(MultiLineString(v_lines).intersection(polygon))
     
-    kept_lines = []
+    # Filter out tiny zig-zags and artifacts
+    min_len = spacing * 1.5
+    h_long = [seg for seg in h_segments if seg.length >= min_len]
+    v_long = [seg for seg in v_segments if seg.length >= min_len]
     
-    def get_cross_section_length(pt_x, pt_y, is_horizontal_cross):
-        cross_line = LineString([(minx - 1, pt_y), (maxx + 1, pt_y)]) if is_horizontal_cross else LineString([(pt_x, miny - 1), (pt_x, maxy + 1)])
-        segs = extract_segments(cross_line.intersection(polygon))
-        for seg in segs:
-            if seg.distance(Point(pt_x, pt_y)) < 1e-5:
-                return seg.length
-        return 0.0
-
-    def should_keep(seg: LineString, check_horizontal_cross: bool, threshold: float) -> bool:
-        coords = list(seg.coords)
-        L = seg.length
-        # Check 3 points along the segment (25%, 50%, 75%) to avoid junction gaps
-        for factor in [0.25, 0.5, 0.75]:
-            pt_x = coords[0][0] + (coords[-1][0] - coords[0][0]) * factor
-            pt_y = coords[0][1] + (coords[-1][1] - coords[0][1]) * factor
-            W = get_cross_section_length(pt_x, pt_y, check_horizontal_cross)
-            if (L >= W if not check_horizontal_cross else L > W):
-                return True
-        return False
-
-    for seg in h_segments:
-        if should_keep(seg, False, 0.0): kept_lines.append(seg)
+    final_h = []
+    final_v = []
+    
+    # Resolve junctions: longer lines cut shorter lines to prevent crosshatch overlap
+    # cap_style=2 is FLAT, meaning the buffer does not extend past the endpoints
+    buffer_radius = spacing / 2.0 + 1e-4
+    
+    for h in h_long:
+        cut_poly = Polygon()
+        for v in v_long:
+            if h.intersects(v):
+                if v.length > h.length:
+                    # v wins, it will cut h
+                    cut_poly = cut_poly.union(v.buffer(buffer_radius, cap_style=2))
+        
+        if not cut_poly.is_empty:
+            diff = h.difference(cut_poly)
+            final_h.extend(extract_segments(diff))
+        else:
+            final_h.append(h)
             
-    for seg in v_segments:
-        if should_keep(seg, True, 0.0): kept_lines.append(seg)
+    for v in v_long:
+        cut_poly = Polygon()
+        for h in h_long:
+            if v.intersects(h):
+                if h.length >= v.length:
+                    # h wins, it will cut v
+                    cut_poly = cut_poly.union(h.buffer(buffer_radius, cap_style=2))
+                    
+        if not cut_poly.is_empty:
+            diff = v.difference(cut_poly)
+            final_v.extend(extract_segments(diff))
+        else:
+            final_v.append(v)
             
+    # Final cleanup to remove any tiny slivers created by the cutting process
+    kept_lines = [seg for seg in final_h + final_v if seg.length >= spacing * 0.5]
     return kept_lines
 
 def generate_infill_lines(polygon: Polygon, angle_deg: float, spacing: float) -> List[LineString]:
