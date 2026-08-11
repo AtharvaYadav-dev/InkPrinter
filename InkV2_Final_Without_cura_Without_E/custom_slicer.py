@@ -26,6 +26,64 @@ def get_optimal_infill_angle(poly: Polygon) -> float:
         pass
     return 0.0
 
+def generate_smart_orthogonal_infill(polygon: Polygon, spacing: float) -> List[LineString]:
+    """
+    Generates horizontal and vertical lines, keeping only those aligned with the local longest dimension.
+    This perfectly fills branching orthogonal structures (like interdigitated combs) with straight lines.
+    """
+    minx, miny, maxx, maxy = polygon.bounds
+    
+    h_lines = []
+    y = miny + spacing / 2.0
+    while y <= maxy:
+        h_lines.append(LineString([(minx - 1, y), (maxx + 1, y)]))
+        y += spacing
+        
+    v_lines = []
+    x = minx + spacing / 2.0
+    while x <= maxx:
+        v_lines.append(LineString([(x, miny - 1), (x, maxy + 1)]))
+        x += spacing
+
+    def extract_segments(geom) -> List[LineString]:
+        if geom.is_empty: return []
+        if geom.geom_type == 'LineString': return [geom]
+        elif geom.geom_type == 'MultiLineString': return list(geom.geoms)
+        return []
+
+    h_segments = extract_segments(MultiLineString(h_lines).intersection(polygon))
+    v_segments = extract_segments(MultiLineString(v_lines).intersection(polygon))
+    
+    kept_lines = []
+    
+    def get_cross_section_length(pt_x, pt_y, is_horizontal_cross):
+        cross_line = LineString([(minx - 1, pt_y), (maxx + 1, pt_y)]) if is_horizontal_cross else LineString([(pt_x, miny - 1), (pt_x, maxy + 1)])
+        segs = extract_segments(cross_line.intersection(polygon))
+        for seg in segs:
+            if seg.distance(Point(pt_x, pt_y)) < 1e-5:
+                return seg.length
+        return 0.0
+
+    def should_keep(seg: LineString, check_horizontal_cross: bool, threshold: float) -> bool:
+        coords = list(seg.coords)
+        L = seg.length
+        # Check 3 points along the segment (25%, 50%, 75%) to avoid junction gaps
+        for factor in [0.25, 0.5, 0.75]:
+            pt_x = coords[0][0] + (coords[-1][0] - coords[0][0]) * factor
+            pt_y = coords[0][1] + (coords[-1][1] - coords[0][1]) * factor
+            W = get_cross_section_length(pt_x, pt_y, check_horizontal_cross)
+            if (L >= W if not check_horizontal_cross else L > W):
+                return True
+        return False
+
+    for seg in h_segments:
+        if should_keep(seg, False, 0.0): kept_lines.append(seg)
+            
+    for seg in v_segments:
+        if should_keep(seg, True, 0.0): kept_lines.append(seg)
+            
+    return kept_lines
+
 def generate_infill_lines(polygon: Polygon, angle_deg: float, spacing: float) -> List[LineString]:
     """
     Generate parallel infill lines for a polygon at a given angle.
@@ -223,7 +281,7 @@ def slice_layers(
     speed: int = 1000, 
     z_height: float = 0.4,
     wall_line_count: int = 1,
-    infill_angle: str | float = 'smart',
+    infill_angle: str | float = 'smart_xy',
     z_hop: float = 5.0
 ) -> bool:
     """
@@ -253,8 +311,7 @@ def slice_layers(
                 current_z = (layer_idx + 1) * z_height
                     
                 # Determine base angle
-                if infill_angle == 'smart':
-                    # Will be calculated per polygon
+                if infill_angle == 'smart' or infill_angle == 'smart_xy':
                     base_angle = None
                 else:
                     base_angle = float(infill_angle)
@@ -265,12 +322,13 @@ def slice_layers(
                     if wall_line_count > 0:
                         perimeter_paths.extend(extract_perimeters(poly))
                         
-                    poly_angle = get_optimal_infill_angle(poly) if base_angle is None else base_angle
-                    
-                    # Alternate angle by 90 degrees per layer if it's not 'smart' or even if it is
-                    current_angle = poly_angle if layer_idx % 2 == 0 else poly_angle + 90.0
-                    
-                    infill = generate_infill_lines(poly, current_angle, nozzle)
+                    if infill_angle == 'smart_xy':
+                        infill = generate_smart_orthogonal_infill(poly, nozzle)
+                    else:
+                        poly_angle = get_optimal_infill_angle(poly) if base_angle is None else base_angle
+                        current_angle = poly_angle if layer_idx % 2 == 0 else poly_angle + 90.0
+                        infill = generate_infill_lines(poly, current_angle, nozzle)
+                        
                     infill_paths.extend(infill)
                 
                 if not perimeter_paths and not infill_paths:
@@ -333,7 +391,7 @@ def slice_polygons(
     speed: int = 1000, 
     z_height: float = 0.4,
     wall_line_count: int = 1,
-    infill_angle: str | float = 'smart',
+    infill_angle: str | float = 'smart_xy',
     z_hop: float = 5.0
 ) -> bool:
     """
