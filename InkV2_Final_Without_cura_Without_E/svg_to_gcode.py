@@ -561,7 +561,7 @@ def convert(
         nozzle=nozzle, 
         speed=speed, 
         z_height=z_height,
-        wall_line_count=0
+        wall_line_count=1
     )
 
     if ok:

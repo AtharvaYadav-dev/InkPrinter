@@ -28,23 +28,76 @@ def get_optimal_infill_angle(poly: Polygon) -> float:
 
 def generate_smart_orthogonal_infill(polygon: Polygon, spacing: float) -> List[LineString]:
     """
-    Generates perfectly even concentric straight lines.
-    This traces the shape inwards, ensuring that horizontal fingers get exact horizontal lines,
-    vertical fingers get exact vertical lines, and line counts are identical for equal-width fingers.
-    It also eliminates messy travel moves at junctions by forming continuous loops.
+    Generates horizontal and vertical lines for infill.
+    It restricts the infill to the inside of the polygon (offset by spacing) so it doesn't overlap the perimeter.
+    Longer lines cut shorter lines to prevent corner bulges.
     """
-    lines = []
-    # Start half a spacing inward so the outer extrusion perfectly touches the boundary
-    # join_style=2 (MITRE) ensures all corners are perfectly sharp and straight, no curves.
-    current_poly = polygon.buffer(-spacing / 2.0, join_style=2)
-    
-    while not current_poly.is_empty and current_poly.area > 1e-5:
-        # extract_perimeters returns the boundary of the current offset
-        lines.extend(extract_perimeters(current_poly))
-        # Step inward by exactly one nozzle width
-        current_poly = current_poly.buffer(-spacing, join_style=2)
+    # Offset inward to leave room for the perimeter
+    inner_poly = polygon.buffer(-spacing + 1e-4, join_style=2)
+    if inner_poly.is_empty:
+        return []
         
-    return lines
+    minx, miny, maxx, maxy = inner_poly.bounds
+    
+    h_lines = []
+    y = miny + spacing / 2.0
+    while y <= maxy:
+        h_lines.append(LineString([(minx - 1, y), (maxx + 1, y)]))
+        y += spacing
+        
+    v_lines = []
+    x = minx + spacing / 2.0
+    while x <= maxx:
+        v_lines.append(LineString([(x, miny - 1), (x, maxy + 1)]))
+        x += spacing
+
+    def extract_segments(geom) -> List[LineString]:
+        if geom.is_empty: return []
+        if geom.geom_type == 'LineString': return [geom]
+        elif geom.geom_type == 'MultiLineString': return list(geom.geoms)
+        return []
+
+    h_segments = extract_segments(MultiLineString(h_lines).intersection(inner_poly))
+    v_segments = extract_segments(MultiLineString(v_lines).intersection(inner_poly))
+    
+    # Filter out tiny zig-zags and artifacts
+    min_len = spacing * 1.5
+    h_long = [seg for seg in h_segments if seg.length >= min_len]
+    v_long = [seg for seg in v_segments if seg.length >= min_len]
+    
+    final_h = []
+    final_v = []
+    
+    buffer_radius = spacing / 2.0 + 1e-4
+    
+    for h in h_long:
+        cut_poly = Polygon()
+        for v in v_long:
+            if h.intersects(v):
+                if v.length > h.length:
+                    cut_poly = cut_poly.union(v.buffer(buffer_radius, cap_style=3))
+        
+        if not cut_poly.is_empty:
+            diff = h.difference(cut_poly)
+            final_h.extend(extract_segments(diff))
+        else:
+            final_h.append(h)
+            
+    for v in v_long:
+        cut_poly = Polygon()
+        for h in h_long:
+            if v.intersects(h):
+                if h.length >= v.length:
+                    cut_poly = cut_poly.union(h.buffer(buffer_radius, cap_style=3))
+                    
+        if not cut_poly.is_empty:
+            diff = v.difference(cut_poly)
+            final_v.extend(extract_segments(diff))
+        else:
+            final_v.append(v)
+            
+    kept_lines = [seg for seg in final_h + final_v if seg.length >= spacing * 1.2]
+    return kept_lines
 
 def generate_infill_lines(polygon: Polygon, angle_deg: float, spacing: float) -> List[LineString]:
     """
