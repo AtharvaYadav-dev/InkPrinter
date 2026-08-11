@@ -250,6 +250,8 @@ def slice_layers(
                 if not polygons:
                     continue
                     
+                current_z = (layer_idx + 1) * z_height
+                    
                 # Determine base angle
                 if infill_angle == 'smart':
                     # Will be calculated per polygon
