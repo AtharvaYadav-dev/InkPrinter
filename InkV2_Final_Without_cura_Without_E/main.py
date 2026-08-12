@@ -1825,9 +1825,9 @@ class MainWindow(QMainWindow):
     def _handle_file_load(self):
         file_path, _ = QFileDialog.getOpenFileName(
             self,
-            "Select File (G-code / SVG / DXF / BMP)",
+            "Select File (G-code / STL / SVG / DXF / BMP)",
             "",
-            "Supported Files (*.gcode *.nc *.ngc *.txt *.svg *.dxf *.bmp)"
+            "Supported Files (*.gcode *.nc *.ngc *.txt *.stl *.svg *.dxf *.bmp)"
         )
         if not file_path:
             return
@@ -2017,6 +2017,18 @@ class MainWindow(QMainWindow):
         if hasattr(self, 'travel10_RadioButton_3') and self.travel10_RadioButton_3.isChecked(): return "10.0"
         return "0.0"
 
+    def _reset_fill_button(self):
+        if getattr(self, 'fill_state', False):
+            self.fill_state = False
+            self.programWidget.fill.setText("Fill")
+            self.logger.info("Fill button auto-reset (Hardware finished).")
+
+    def _reset_purge_button(self):
+        if getattr(self, 'purge_state', False):
+            self.purge_state = False
+            self.programWidget.purge.setText("Purge")
+            self.logger.info("Purge button auto-reset (Hardware finished).")
+
     def _handle_fill(self):
         if not hasattr(self, 'fill_state'):
             self.fill_state = False
@@ -2031,10 +2043,14 @@ class MainWindow(QMainWindow):
             self.programWidget.fill.setText("Stop Fill")
             self.programWidget.purge.setText("Purge")
             self.logger.info(f"Fill command ({cmd}) sent to Blackpill.")
+            
+            if dist != "0.0":
+                # Hardware takes 0.768s per mm based on STEPS_PER_MM and Timer Overflow. Add a 100ms buffer.
+                duration_ms = int(float(dist) * 768) + 100
+                QTimer.singleShot(duration_ms, self._reset_fill_button)
         else:
             self._send_to_blackpill("STOP")
-            self.fill_state = False
-            self.programWidget.fill.setText("Fill")
+            self._reset_fill_button()
             self.logger.info("Stop Fill command sent to Blackpill.")
 
     def _handle_purge(self):
@@ -2051,10 +2067,13 @@ class MainWindow(QMainWindow):
             self.programWidget.purge.setText("Stop Purge")
             self.programWidget.fill.setText("Fill")
             self.logger.info(f"Purge command ({cmd}) sent to Blackpill.")
+            
+            if dist != "0.0":
+                duration_ms = int(float(dist) * 768) + 100
+                QTimer.singleShot(duration_ms, self._reset_purge_button)
         else:
             self._send_to_blackpill("STOP")
-            self.purge_state = False
-            self.programWidget.purge.setText("Purge")
+            self._reset_purge_button()
             self.logger.info("Stop Purge command sent to Blackpill.")
                         
     # -------------------------------
