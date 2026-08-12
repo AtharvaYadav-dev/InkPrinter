@@ -3207,3 +3207,192 @@ Traceback (most recent call last):
     self.blackpill_sercom.write("HOME\\n")
     ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 AttributeError: 'SerialCom' object has no attribute 'write'
+2026-08-11 18:12 - INFO - ==================================================
+2026-08-11 18:12 - INFO - New session START at 2026-08-11 18:12
+2026-08-11 18:12 - INFO - ==================================================
+2026-08-11 18:12 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-11 18:12 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-11 18:12 - INFO - Loaded draw_z from config: Z=43.2, draw_z_UP=21.55
+2026-08-11 18:12 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-11 18:12 - INFO - Updated profile.json: layer_height=0.4, layer_height_0=0.4
+2026-08-11 18:12 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-11 18:12 - INFO - INI file initialized
+2026-08-11 18:12 - INFO - UI load successful
+2026-08-11 18:12 - INFO - Com : com, Port : ['COM1', 'COM6'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-11 18:12 - INFO - File selected: D:/Atharva/INK V2/InkPrinter/InkV2_Final_Without_cura_Without_E/Test_files/ide2.svg
+2026-08-11 18:12 - INFO - Converting SVG -> G-code directly: D:\Atharva\INK V2\InkPrinter\InkV2_Final_Without_cura_Without_E\Test_files\ide2.svg
+2026-08-11 18:12 - INFO - G-code created: D:\Atharva\INK V2\InkPrinter\InkV2_Final_Without_cura_Without_E\Test_files\ide2.gcode
+2026-08-11 18:12 - INFO - G-code ready from SVG: D:\Atharva\INK V2\InkPrinter\InkV2_Final_Without_cura_Without_E\Test_files\ide2.gcode
+2026-08-11 18:12 - INFO - Raw G-code parsed (359 lines).
+2026-08-11 18:12 - INFO - Feedrate: 1500.0 mm/min
+2026-08-11 18:13 - INFO - Normalization shift: X=-1.704, Y=-1.655
+2026-08-11 18:13 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=43.200
+2026-08-11 18:13 - INFO - Final applied shift: X=-1.704, Y=-1.655
+2026-08-11 18:17 - INFO - Serial communication stopped
+2026-08-11 18:17 - INFO - COM connection close successfully
+2026-08-11 18:17 - INFO - Main window close successfully
+2026-08-11 18:17 - INFO - ==================================================
+2026-08-11 18:17 - INFO - New session close at 2026-08-11 18:17
+2026-08-11 18:17 - INFO - ==================================================
+2026-08-12 10:18 - INFO - ==================================================
+2026-08-12 10:18 - INFO - New session START at 2026-08-12 10:18
+2026-08-12 10:18 - INFO - ==================================================
+2026-08-12 10:18 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-12 10:18 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-12 10:18 - INFO - Loaded draw_z from config: Z=43.2, draw_z_UP=21.55
+2026-08-12 10:18 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-12 10:18 - INFO - Updated profile.json: layer_height=0.4, layer_height_0=0.4
+2026-08-12 10:18 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-12 10:18 - INFO - INI file initialized
+2026-08-12 10:18 - INFO - UI load successful
+2026-08-12 10:18 - INFO - Com : com, Port : ['COM1', 'COM6'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-12 10:18 - INFO - File selected: D:/Atharva/INK V2/InkPrinter/InkV2_Final_Without_cura_Without_E/Test_files/ide2.svg
+2026-08-12 10:18 - INFO - Converting SVG -> G-code directly: D:\Atharva\INK V2\InkPrinter\InkV2_Final_Without_cura_Without_E\Test_files\ide2.svg
+2026-08-12 10:18 - INFO - G-code created: D:\Atharva\INK V2\InkPrinter\InkV2_Final_Without_cura_Without_E\Test_files\ide2.gcode
+2026-08-12 10:18 - INFO - G-code ready from SVG: D:\Atharva\INK V2\InkPrinter\InkV2_Final_Without_cura_Without_E\Test_files\ide2.gcode
+2026-08-12 10:18 - INFO - Raw G-code parsed (307 lines).
+2026-08-12 10:18 - INFO - Feedrate: 1500.0 mm/min
+2026-08-12 10:18 - INFO - Normalization shift: X=-1.704, Y=-1.655
+2026-08-12 10:18 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=43.200
+2026-08-12 10:18 - INFO - Final applied shift: X=-1.704, Y=-1.655
+2026-08-12 10:21 - INFO - Serial communication stopped
+2026-08-12 10:21 - INFO - COM connection close successfully
+2026-08-12 10:21 - INFO - Main window close successfully
+2026-08-12 10:21 - INFO - ==================================================
+2026-08-12 10:21 - INFO - New session close at 2026-08-12 10:21
+2026-08-12 10:21 - INFO - ==================================================
+2026-08-12 10:21 - INFO - ==================================================
+2026-08-12 10:21 - INFO - New session START at 2026-08-12 10:21
+2026-08-12 10:21 - INFO - ==================================================
+2026-08-12 10:21 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-12 10:21 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-12 10:21 - INFO - Loaded draw_z from config: Z=43.2, draw_z_UP=21.55
+2026-08-12 10:21 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-12 10:21 - INFO - Updated profile.json: layer_height=0.4, layer_height_0=0.4
+2026-08-12 10:21 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-12 10:21 - INFO - INI file initialized
+2026-08-12 10:21 - INFO - UI load successful
+2026-08-12 10:21 - INFO - Com : com, Port : ['COM1', 'COM6'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-12 10:22 - INFO - File selected: D:/Atharva/INK V2/InkPrinter/InkV2_Final_Without_cura_Without_E/Test_files/ide2.svg
+2026-08-12 10:22 - INFO - Converting SVG -> G-code directly: D:\Atharva\INK V2\InkPrinter\InkV2_Final_Without_cura_Without_E\Test_files\ide2.svg
+2026-08-12 10:22 - INFO - G-code created: D:\Atharva\INK V2\InkPrinter\InkV2_Final_Without_cura_Without_E\Test_files\ide2.gcode
+2026-08-12 10:22 - INFO - G-code ready from SVG: D:\Atharva\INK V2\InkPrinter\InkV2_Final_Without_cura_Without_E\Test_files\ide2.gcode
+2026-08-12 10:22 - INFO - Raw G-code parsed (273 lines).
+2026-08-12 10:22 - INFO - Feedrate: 1500.0 mm/min
+2026-08-12 10:22 - INFO - Normalization shift: X=-1.704, Y=-1.655
+2026-08-12 10:22 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=43.200
+2026-08-12 10:22 - INFO - Final applied shift: X=-1.704, Y=-1.655
+2026-08-12 10:27 - INFO - Serial communication stopped
+2026-08-12 10:27 - INFO - COM connection close successfully
+2026-08-12 10:27 - INFO - Main window close successfully
+2026-08-12 10:27 - INFO - ==================================================
+2026-08-12 10:27 - INFO - New session close at 2026-08-12 10:27
+2026-08-12 10:27 - INFO - ==================================================
+2026-08-12 10:28 - INFO - ==================================================
+2026-08-12 10:28 - INFO - New session START at 2026-08-12 10:28
+2026-08-12 10:28 - INFO - ==================================================
+2026-08-12 10:28 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-12 10:28 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-12 10:28 - INFO - Loaded draw_z from config: Z=43.2, draw_z_UP=21.55
+2026-08-12 10:28 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-12 10:28 - INFO - Updated profile.json: layer_height=0.4, layer_height_0=0.4
+2026-08-12 10:28 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-12 10:28 - INFO - INI file initialized
+2026-08-12 10:28 - INFO - UI load successful
+2026-08-12 10:28 - INFO - Com : com, Port : ['COM1', 'COM6'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-12 10:28 - INFO - File selected: D:/Atharva/INK V2/InkPrinter/InkV2_Final_Without_cura_Without_E/Test_files/ide2.svg
+2026-08-12 10:28 - INFO - Converting SVG -> G-code directly: D:\Atharva\INK V2\InkPrinter\InkV2_Final_Without_cura_Without_E\Test_files\ide2.svg
+2026-08-12 10:28 - INFO - G-code created: D:\Atharva\INK V2\InkPrinter\InkV2_Final_Without_cura_Without_E\Test_files\ide2.gcode
+2026-08-12 10:28 - INFO - G-code ready from SVG: D:\Atharva\INK V2\InkPrinter\InkV2_Final_Without_cura_Without_E\Test_files\ide2.gcode
+2026-08-12 10:28 - INFO - Raw G-code parsed (309 lines).
+2026-08-12 10:28 - INFO - Feedrate: 1500.0 mm/min
+2026-08-12 10:28 - INFO - Normalization shift: X=-1.704, Y=-1.655
+2026-08-12 10:28 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=43.200
+2026-08-12 10:28 - INFO - Final applied shift: X=-1.704, Y=-1.655
+2026-08-12 10:30 - INFO - Serial communication stopped
+2026-08-12 10:30 - INFO - COM connection close successfully
+2026-08-12 10:30 - INFO - Main window close successfully
+2026-08-12 10:30 - INFO - ==================================================
+2026-08-12 10:30 - INFO - New session close at 2026-08-12 10:30
+2026-08-12 10:30 - INFO - ==================================================
+2026-08-12 10:31 - INFO - ==================================================
+2026-08-12 10:31 - INFO - New session START at 2026-08-12 10:31
+2026-08-12 10:31 - INFO - ==================================================
+2026-08-12 10:31 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-12 10:31 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-12 10:31 - INFO - Loaded draw_z from config: Z=43.2, draw_z_UP=21.55
+2026-08-12 10:31 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-12 10:31 - INFO - Updated profile.json: layer_height=0.4, layer_height_0=0.4
+2026-08-12 10:31 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-12 10:31 - INFO - INI file initialized
+2026-08-12 10:31 - INFO - UI load successful
+2026-08-12 10:31 - INFO - Com : com, Port : ['COM1', 'COM6'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-12 10:31 - INFO - File selected: D:/Atharva/INK V2/InkPrinter/InkV2_Final_Without_cura_Without_E/Test_files/ide2.svg
+2026-08-12 10:31 - INFO - Converting SVG -> G-code directly: D:\Atharva\INK V2\InkPrinter\InkV2_Final_Without_cura_Without_E\Test_files\ide2.svg
+2026-08-12 10:31 - INFO - G-code created: D:\Atharva\INK V2\InkPrinter\InkV2_Final_Without_cura_Without_E\Test_files\ide2.gcode
+2026-08-12 10:31 - INFO - G-code ready from SVG: D:\Atharva\INK V2\InkPrinter\InkV2_Final_Without_cura_Without_E\Test_files\ide2.gcode
+2026-08-12 10:31 - INFO - Raw G-code parsed (293 lines).
+2026-08-12 10:31 - INFO - Feedrate: 500.0 mm/min
+2026-08-12 10:31 - INFO - Normalization shift: X=-1.704, Y=-1.655
+2026-08-12 10:31 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=43.200
+2026-08-12 10:31 - INFO - Final applied shift: X=-1.704, Y=-1.655
+2026-08-12 10:36 - INFO - Serial communication stopped
+2026-08-12 10:36 - INFO - COM connection close successfully
+2026-08-12 10:36 - INFO - Main window close successfully
+2026-08-12 10:36 - INFO - ==================================================
+2026-08-12 10:36 - INFO - New session close at 2026-08-12 10:36
+2026-08-12 10:36 - INFO - ==================================================
+2026-08-12 10:36 - INFO - ==================================================
+2026-08-12 10:36 - INFO - New session START at 2026-08-12 10:36
+2026-08-12 10:36 - INFO - ==================================================
+2026-08-12 10:36 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-12 10:36 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-12 10:36 - INFO - Loaded draw_z from config: Z=43.2, draw_z_UP=21.55
+2026-08-12 10:36 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-12 10:36 - INFO - Updated profile.json: layer_height=0.4, layer_height_0=0.4
+2026-08-12 10:36 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-12 10:36 - INFO - INI file initialized
+2026-08-12 10:36 - INFO - UI load successful
+2026-08-12 10:36 - INFO - Com : com, Port : ['COM1', 'COM6'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-12 10:36 - INFO - File selected: D:/Atharva/INK V2/InkPrinter/InkV2_Final_Without_cura_Without_E/Test_files/ide2.svg
+2026-08-12 10:36 - INFO - Converting SVG -> G-code directly: D:\Atharva\INK V2\InkPrinter\InkV2_Final_Without_cura_Without_E\Test_files\ide2.svg
+2026-08-12 10:36 - INFO - G-code created: D:\Atharva\INK V2\InkPrinter\InkV2_Final_Without_cura_Without_E\Test_files\ide2.gcode
+2026-08-12 10:36 - INFO - G-code ready from SVG: D:\Atharva\INK V2\InkPrinter\InkV2_Final_Without_cura_Without_E\Test_files\ide2.gcode
+2026-08-12 10:36 - INFO - Raw G-code parsed (2233 lines).
+2026-08-12 10:36 - INFO - Feedrate: 1500.0 mm/min
+2026-08-12 10:36 - INFO - Normalization shift: X=-1.704, Y=-1.655
+2026-08-12 10:36 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=43.200
+2026-08-12 10:36 - INFO - Final applied shift: X=-1.704, Y=-1.655
+2026-08-12 10:37 - INFO - Serial communication stopped
+2026-08-12 10:37 - INFO - COM connection close successfully
+2026-08-12 10:37 - INFO - Main window close successfully
+2026-08-12 10:37 - INFO - ==================================================
+2026-08-12 10:37 - INFO - New session close at 2026-08-12 10:37
+2026-08-12 10:37 - INFO - ==================================================
+2026-08-12 10:37 - INFO - ==================================================
+2026-08-12 10:37 - INFO - New session START at 2026-08-12 10:37
+2026-08-12 10:37 - INFO - ==================================================
+2026-08-12 10:37 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-12 10:37 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-12 10:37 - INFO - Loaded draw_z from config: Z=43.2, draw_z_UP=21.55
+2026-08-12 10:37 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-12 10:37 - INFO - Updated profile.json: layer_height=0.4, layer_height_0=0.4
+2026-08-12 10:37 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-12 10:37 - INFO - INI file initialized
+2026-08-12 10:37 - INFO - UI load successful
+2026-08-12 10:37 - INFO - Com : com, Port : ['COM1', 'COM6'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-12 10:37 - INFO - File selected: D:/Atharva/INK V2/InkPrinter/InkV2_Final_Without_cura_Without_E/Test_files/ide2.svg
+2026-08-12 10:37 - INFO - Converting SVG -> G-code directly: D:\Atharva\INK V2\InkPrinter\InkV2_Final_Without_cura_Without_E\Test_files\ide2.svg
+2026-08-12 10:37 - INFO - G-code created: D:\Atharva\INK V2\InkPrinter\InkV2_Final_Without_cura_Without_E\Test_files\ide2.gcode
+2026-08-12 10:37 - INFO - G-code ready from SVG: D:\Atharva\INK V2\InkPrinter\InkV2_Final_Without_cura_Without_E\Test_files\ide2.gcode
+2026-08-12 10:37 - INFO - Raw G-code parsed (293 lines).
+2026-08-12 10:37 - INFO - Feedrate: 500.0 mm/min
+2026-08-12 10:37 - INFO - Normalization shift: X=-1.704, Y=-1.655
+2026-08-12 10:37 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=43.200
+2026-08-12 10:37 - INFO - Final applied shift: X=-1.704, Y=-1.655
+2026-08-12 10:37 - INFO - Serial communication stopped
+2026-08-12 10:37 - INFO - COM connection close successfully
+2026-08-12 10:37 - INFO - Main window close successfully
+2026-08-12 10:37 - INFO - ==================================================
+2026-08-12 10:37 - INFO - New session close at 2026-08-12 10:37
+2026-08-12 10:37 - INFO - ==================================================

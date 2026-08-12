@@ -163,53 +163,55 @@ class MainWindow(QMainWindow):
             self.btnNo.clicked.connect(lambda: self.onPopupBtnClicked(QMessageBox.No))
             self.btnCancel.clicked.connect(lambda: self.onPopupBtnClicked(QMessageBox.Cancel))
 
-        missing_files = checkCuraStatus()
-
-        if missing_files:
-            self.showCustomPopup(
-                "Cura Setup Required",
-                "Required Cura configuration files are missing.\n"
-                "Click OK to run the Cura Fixer tool with Administrator privileges."
-            )
-
-            import subprocess
-            # --------------------------
-            # Detect packaged .EXE or .PY
-            # --------------------------
-            if getattr(sys, 'frozen', False):
-                # Running as EXE -> use bundled fixer EXE
-                fixer_exe = os.path.join(os.path.dirname(sys.executable), "cura_finder_log1.exe")
-
-                if not os.path.exists(fixer_exe):   
-                    self.showCustomPopup("Error", f"Cura Fixer EXE not found:\n{fixer_exe}")
-                else:
-                    # Run EXE normally
-                    subprocess.Popen([fixer_exe], shell=True)
-
-            else:
-                # Running from Python source
-                subprocess.Popen([sys.executable, "cura_finder_log1.py"], shell=True)
-
-     
-        selected_version, bad_versions = isCuraSupported()
-
-        if not selected_version:
-            self.showCustomPopup(
-                "Unsupported Cura Version",
-                "No compatible Cura version was found.\n\n"
-                "Installed Cura versions:\n"
-                + ("\n".join(bad_versions) if bad_versions else "None") +
-                "\n\nVersion required: Ultimaker Cura 5.9.1\n\n"
-                "Click OK to download."
-            )
-
-            # Open download page after popup
-            webbrowser.open("https://github.com/Ultimaker/Cura/releases/tag/5.9.1")
-
-            sys.exit(0)
-
-        # Approved version
-        print(f"Cura version selected for Slicing: {selected_version}")
+        # We now use the custom internal slicer, so we don't strictly require Cura.
+        # missing_files = checkCuraStatus()
+        #
+        # if missing_files:
+        #     self.showCustomPopup(
+        #         "Cura Setup Required",
+        #         "Required Cura configuration files are missing.\n"
+        #         "Click OK to run the Cura Fixer tool with Administrator privileges."
+        #     )
+        #
+        #     import subprocess
+        #     # --------------------------
+        #     # Detect packaged .EXE or .PY
+        #     # --------------------------
+        #     if getattr(sys, 'frozen', False):
+        #         # Running as EXE -> use bundled fixer EXE
+        #         fixer_exe = os.path.join(os.path.dirname(sys.executable), "cura_finder_log1.exe")
+        #
+        #         if not os.path.exists(fixer_exe):   
+        #             self.showCustomPopup("Error", f"Cura Fixer EXE not found:\n{fixer_exe}")
+        #         else:
+        #             # Run EXE normally
+        #             subprocess.Popen([fixer_exe], shell=True)
+        #
+        #     else:
+        #         # Running from Python source
+        #         subprocess.Popen([sys.executable, "cura_finder_log1.py"], shell=True)
+        #
+        #
+        # selected_version, bad_versions = isCuraSupported()
+        #
+        # if not selected_version:
+        #     self.showCustomPopup(
+        #         "Unsupported Cura Version",
+        #         "No compatible Cura version was found.\n\n"
+        #         "Installed Cura versions:\n"
+        #         + ("\n".join(bad_versions) if bad_versions else "None") +
+        #         "\n\nVersion required: Ultimaker Cura 5.9.1\n\n"
+        #         "Click OK to download."
+        #     )
+        #
+        #     # Open download page after popup
+        #     webbrowser.open("https://github.com/Ultimaker/Cura/releases/tag/5.9.1")
+        #
+        #     sys.exit(0)
+        #
+        # # Approved version
+        # print(f"Cura version selected for Slicing: {selected_version}")
+        
         
         # Module and Class instances
         self.sercom = SerialCom()

@@ -35,28 +35,31 @@ def generate_smart_orthogonal_infill(polygon: Polygon, spacing: float, has_walls
     if has_walls:
         # Offset inward to leave room for the perimeter
         inner_poly = polygon.buffer(-spacing + 1e-4, join_style=2)
-        grid_offset = spacing
     else:
         # No perimeter, just stay slightly inside the boundary
         inner_poly = polygon.buffer(-1e-4, join_style=2)
-        grid_offset = spacing / 2.0
         
     if inner_poly.is_empty:
         return []
         
-    minx, miny, maxx, maxy = polygon.bounds
+    # Align grid to the inner polygon to minimize edge gaps
+    minx, miny, maxx, maxy = inner_poly.bounds
+    
+    # Use a slightly denser grid for the internal lines to ensure it fills tightly
+    dense_spacing = spacing * 0.85
+    grid_offset = spacing * 0.5
     
     h_lines = []
     y = miny + grid_offset
     while y <= maxy:
         h_lines.append(LineString([(minx - 1, y), (maxx + 1, y)]))
-        y += spacing
+        y += dense_spacing
         
     v_lines = []
     x = minx + grid_offset
     while x <= maxx:
         v_lines.append(LineString([(x, miny - 1), (x, maxy + 1)]))
-        x += spacing
+        x += dense_spacing
 
     def extract_segments(geom) -> List[LineString]:
         if geom.is_empty: return []
@@ -80,23 +83,32 @@ def generate_smart_orthogonal_infill(polygon: Polygon, spacing: float, has_walls
     final_v = []
     
     buffer_radius = spacing / 2.0 + 1e-4
+    trunk_threshold = spacing * 5.0
+    margin = spacing * 1.5
     
+    def v_cuts_h(h_line: LineString, v_line: LineString, pt: Point) -> bool:
+        h_len = h_line.length
+        v_len = v_line.length
+        
+        # A pad is a region where both H and V lines are wide.
+        # We want to fill pads uniformly without splitting them.
+        pad_threshold = spacing * 6.0 
+        
+        if h_len > pad_threshold and v_len > pad_threshold:
+            # Both are wide -> it's a pad. Consistently prefer H for the entire pad.
+            return False
+            
+        # For fingers, one line will be narrow, so the longer one is the trunk.
+        return v_len > h_len
+
     for h in h_long:
         h_cut_poly = Polygon()
         for v in v_long:
             if h.intersects(v):
                 pt = h.intersection(v)
                 if pt.geom_type == 'Point':
-                    d_h = min(pt.distance(Point(h.coords[0])), pt.distance(Point(h.coords[-1])))
-                    d_v = min(pt.distance(Point(v.coords[0])), pt.distance(Point(v.coords[-1])))
-                    
-                    if d_v > d_h + 1e-3:
-                        # V is trunk, V cuts H
+                    if v_cuts_h(h, v, pt):
                         h_cut_poly = h_cut_poly.union(v.buffer(buffer_radius, cap_style=3))
-                    elif abs(d_v - d_h) <= 1e-3:
-                        # Tie: longer line wins
-                        if v.length > h.length:
-                            h_cut_poly = h_cut_poly.union(v.buffer(buffer_radius, cap_style=3))
                             
         if not h_cut_poly.is_empty:
             diff = h.difference(h_cut_poly)
@@ -110,16 +122,9 @@ def generate_smart_orthogonal_infill(polygon: Polygon, spacing: float, has_walls
             if v.intersects(h):
                 pt = v.intersection(h)
                 if pt.geom_type == 'Point':
-                    d_h = min(pt.distance(Point(h.coords[0])), pt.distance(Point(h.coords[-1])))
-                    d_v = min(pt.distance(Point(v.coords[0])), pt.distance(Point(v.coords[-1])))
-                    
-                    if d_h > d_v + 1e-3:
-                        # H is trunk, H cuts V
+                    if not v_cuts_h(h, v, pt):
+                        # H wins, so H cuts V
                         v_cut_poly = v_cut_poly.union(h.buffer(buffer_radius, cap_style=3))
-                    elif abs(d_v - d_h) <= 1e-3:
-                        # Tie: longer line wins
-                        if h.length >= v.length:
-                            v_cut_poly = v_cut_poly.union(h.buffer(buffer_radius, cap_style=3))
                             
         if not v_cut_poly.is_empty:
             diff = v.difference(v_cut_poly)
@@ -211,6 +216,60 @@ def extract_perimeters(polygon: Polygon) -> List[LineString]:
             for interior in poly.interiors:
                 lines.append(LineString(interior.coords))
     return lines
+
+def generate_concentric_infill(polygon: Polygon, spacing: float) -> List[LineString]:
+    """
+    Generates concentric infill by iteratively buffering the polygon inwards.
+    This guarantees perfectly even and continuous infill following the perimeter.
+    """
+    paths = []
+    current_poly = polygon.buffer(-spacing, join_style=2)
+    # Use a slightly denser spacing for the actual infill loops
+    dense_spacing = spacing * 0.85
+    
+    while not current_poly.is_empty:
+        if current_poly.geom_type == 'Polygon':
+            paths.extend(extract_perimeters(current_poly))
+        elif current_poly.geom_type == 'MultiPolygon':
+            for p in current_poly.geoms:
+                paths.extend(extract_perimeters(p))
+        elif current_poly.geom_type == 'LineString':
+            paths.append(current_poly)
+        elif current_poly.geom_type == 'MultiLineString':
+            paths.extend(list(current_poly.geoms))
+            
+        current_poly = current_poly.buffer(-dense_spacing, join_style=2)
+        
+    return paths
+
+def link_paths(paths: List[LineString], max_dist: float) -> List[LineString]:
+    """
+    Links paths together into continuous zig-zags if they start/end close to each other.
+    This prevents unnecessary travels and Z-hops.
+    """
+    if not paths:
+        return []
+    
+    linked_paths = []
+    current_coords = list(paths[0].coords)
+    
+    for i in range(1, len(paths)):
+        next_coords = list(paths[i].coords)
+        p1 = current_coords[-1]
+        p2 = next_coords[0]
+        
+        dist = math.hypot(p1[0] - p2[0], p1[1] - p2[1])
+        
+        if dist <= max_dist:
+            # Link them
+            current_coords.extend(next_coords)
+        else:
+            # Too far, break link
+            linked_paths.append(LineString(current_coords))
+            current_coords = next_coords
+            
+    linked_paths.append(LineString(current_coords))
+    return linked_paths
 
 def optimize_paths_tsp(paths: List[LineString], start_pt: Tuple[float, float] = (0.0, 0.0)) -> List[LineString]:
     """
@@ -388,6 +447,8 @@ def slice_layers(
                         
                     if infill_angle == 'smart_xy':
                         infill = generate_smart_orthogonal_infill(poly, nozzle, wall_line_count > 0)
+                    elif infill_angle == 'concentric':
+                        infill = generate_concentric_infill(poly, nozzle)
                     else:
                         poly_angle = get_optimal_infill_angle(poly) if base_angle is None else base_angle
                         current_angle = poly_angle if layer_idx % 2 == 0 else poly_angle + 90.0
@@ -406,8 +467,10 @@ def slice_layers(
                     
                 if infill_paths:
                     opt_infill = optimize_paths_tsp(infill_paths, current_head_pos)
-                    optimized_paths.extend(opt_infill)
-                    current_head_pos = opt_infill[-1].coords[-1]
+                    # Link infill paths to form continuous zig-zags and eliminate z-hops
+                    linked_infill = link_paths(opt_infill, nozzle * 2.5)
+                    optimized_paths.extend(linked_infill)
+                    current_head_pos = linked_infill[-1].coords[-1]
                 
                 # Write layer indicator
                 f.write(f";LAYER:{layer_idx}\n")

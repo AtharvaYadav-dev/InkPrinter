@@ -3556,3 +3556,216 @@ Traceback (most recent call last):
     self.blackpill_sercom.write("HOME\\n")
     ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 AttributeError: 'SerialCom' object has no attribute 'write'
+2026-08-11 18:06:06,956 - INFO - No OpenGL_accelerate module loaded: No module named 'OpenGL_accelerate'
+2026-08-11 18:06:14,384 - DEBUG - searching for blender in: C:\Program Files\Python312\Lib\site-packages\PySide6;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\WinMerge;C:\Program Files (x86)\Python313-32\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\GTK3-Runtime Win64\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Git LFS;C:\Users\EXPSOL\AppData\Local\GitHubDesktop\bin;c:\Users\EXPSOL\.antigravity-ide\extensions\ms-python.debugpy-2026.6.0-win32-x64\bundled\scripts\noConfigScripts;C:\TDM-GCC-32\bin;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\TDM-GCC-64\bin;C:\Program Files\Python312\Scripts\;C:\Users\EXPSOL\AppData\Local\Programs\Antigravity IDE\bin;C:\Program Files\CMake\bin;C:\iverilog\bin;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\Users\EXPSOL\AppData\Local\Programs\Antigravity\bin;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Python312\;C:\Program Files (x86)\Python313-32\Scripts\;C:\msys64\mingw64\bin;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\Program Files\Arduino CLI\;C:\Program Files\OpenLogic\jdk-8.0.402.06-hotspot\bin;C:\Program Files\Zulu\zulu-21\bin\
+2026-08-11 18:06:14,417 - DEBUG - falling back to hashlib hashing: `pip install xxhash`for 50x faster cache checks
+2026-08-11 18:12:41,462 - INFO - No OpenGL_accelerate module loaded: No module named 'OpenGL_accelerate'
+2026-08-11 18:12:42,499 - DEBUG - searching for blender in: C:\Program Files\nodejs\;C:\Program Files\Arduino CLI\;C:\Program Files\OpenLogic\jdk-8.0.402.06-hotspot\bin;C:\TDM-GCC-32\bin;C:\iverilog\bin;C:\Program Files\Microsoft VS Code\bin;C:\Users\EXPSOL\AppData\Local\GitHubDesktop\bin;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\msys64\mingw64\bin;C:\Users\EXPSOL\AppData\Local\Programs\Antigravity\bin;c:\Users\EXPSOL\.antigravity-ide\extensions\ms-python.debugpy-2026.6.0-win32-x64\bundled\scripts\noConfigScripts;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Users\EXPSOL\AppData\Local\Programs\Antigravity IDE\bin;C:\WINDOWS\system32;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Python313-32\;C:\Program Files\Python312\;C:\Program Files (x86)\Python313-32\Scripts\;C:\Program Files\Git LFS;C:\Program Files\GTK3-Runtime Win64\bin;C:\TDM-GCC-64\bin;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Git\cmd;C:\Program Files\Python312\Lib\site-packages\PySide6;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\System32\Wbem;C:\Program Files\WinMerge;C:\Program Files\Zulu\zulu-21\bin\;C:\Program Files\CMake\bin;C:\Program Files\Python312\Scripts\
+2026-08-11 18:12:42,508 - DEBUG - falling back to hashlib hashing: `pip install xxhash`for 50x faster cache checks
+2026-08-11 18:12:43,518 - INFO - ==================================================
+2026-08-11 18:12:43,518 - INFO - New session START at 2026-08-11 18:12
+2026-08-11 18:12:43,518 - INFO - ==================================================
+2026-08-11 18:12:43,518 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-11 18:12:43,518 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-11 18:12:43,518 - INFO - Loaded draw_z from config: Z=43.2, draw_z_UP=21.55
+2026-08-11 18:12:43,518 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-11 18:12:43,518 - INFO - Updated profile.json: layer_height=0.4, layer_height_0=0.4
+2026-08-11 18:12:43,533 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-11 18:12:43,533 - INFO - INI file initialized
+2026-08-11 18:12:43,540 - INFO - UI load successful
+2026-08-11 18:12:44,153 - INFO - Com : com, Port : ['COM1', 'COM6'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-11 18:12:55,048 - INFO - File selected: D:/Atharva/INK V2/InkPrinter/InkV2_Final_Without_cura_Without_E/Test_files/ide2.svg
+2026-08-11 18:12:55,051 - INFO - Converting SVG -> G-code directly: D:\Atharva\INK V2\InkPrinter\InkV2_Final_Without_cura_Without_E\Test_files\ide2.svg
+2026-08-11 18:12:56,324 - INFO - G-code created: D:\Atharva\INK V2\InkPrinter\InkV2_Final_Without_cura_Without_E\Test_files\ide2.gcode
+2026-08-11 18:12:56,324 - INFO - G-code ready from SVG: D:\Atharva\INK V2\InkPrinter\InkV2_Final_Without_cura_Without_E\Test_files\ide2.gcode
+2026-08-11 18:12:56,337 - INFO - Raw G-code parsed (359 lines).
+2026-08-11 18:12:58,952 - INFO - Feedrate: 1500.0 mm/min
+2026-08-11 18:13:00,402 - INFO - Normalization shift: X=-1.704, Y=-1.655
+2026-08-11 18:13:00,402 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=43.200
+2026-08-11 18:13:00,402 - INFO - Final applied shift: X=-1.704, Y=-1.655
+2026-08-11 18:17:32,264 - INFO - Serial communication stopped
+2026-08-11 18:17:32,267 - INFO - COM connection close successfully
+2026-08-11 18:17:32,267 - INFO - Main window close successfully
+2026-08-11 18:17:32,267 - INFO - ==================================================
+2026-08-11 18:17:32,267 - INFO - New session close at 2026-08-11 18:17
+2026-08-11 18:17:32,268 - INFO - ==================================================
+2026-08-12 10:18:18,924 - INFO - No OpenGL_accelerate module loaded: No module named 'OpenGL_accelerate'
+2026-08-12 10:18:20,781 - DEBUG - searching for blender in: C:\Program Files\Microsoft VS Code\bin;C:\Program Files (x86)\Python313-32\;C:\Program Files\CMake\bin;C:\iverilog\bin;C:\Users\EXPSOL\AppData\Local\Programs\Antigravity IDE\bin;C:\Program Files\WinMerge;C:\Program Files (x86)\Python313-32\Scripts\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\GTK3-Runtime Win64\bin;C:\msys64\mingw64\bin;C:\Program Files\Zulu\zulu-21\bin\;C:\Program Files\Python312\Lib\site-packages\PySide6;C:\Program Files\Python312\Scripts\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\WINDOWS\system32;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\TDM-GCC-32\bin;C:\WINDOWS\System32\Wbem;C:\Users\EXPSOL\AppData\Local\Programs\Antigravity\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\OpenLogic\jdk-8.0.402.06-hotspot\bin;C:\Program Files\Git\cmd;C:\TDM-GCC-64\bin;C:\Users\EXPSOL\AppData\Local\GitHubDesktop\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files\Git LFS;c:\Users\EXPSOL\.antigravity-ide\extensions\ms-python.debugpy-2026.6.0-win32-x64\bundled\scripts\noConfigScripts;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Arduino CLI\;C:\Program Files\Python312\
+2026-08-12 10:18:20,797 - DEBUG - falling back to hashlib hashing: `pip install xxhash`for 50x faster cache checks
+2026-08-12 10:18:22,573 - INFO - ==================================================
+2026-08-12 10:18:22,573 - INFO - New session START at 2026-08-12 10:18
+2026-08-12 10:18:22,573 - INFO - ==================================================
+2026-08-12 10:18:22,573 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-12 10:18:22,573 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-12 10:18:22,573 - INFO - Loaded draw_z from config: Z=43.2, draw_z_UP=21.55
+2026-08-12 10:18:22,574 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-12 10:18:22,574 - INFO - Updated profile.json: layer_height=0.4, layer_height_0=0.4
+2026-08-12 10:18:22,576 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-12 10:18:22,576 - INFO - INI file initialized
+2026-08-12 10:18:22,581 - INFO - UI load successful
+2026-08-12 10:18:23,070 - INFO - Com : com, Port : ['COM1', 'COM6'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-12 10:18:45,728 - INFO - File selected: D:/Atharva/INK V2/InkPrinter/InkV2_Final_Without_cura_Without_E/Test_files/ide2.svg
+2026-08-12 10:18:45,728 - INFO - Converting SVG -> G-code directly: D:\Atharva\INK V2\InkPrinter\InkV2_Final_Without_cura_Without_E\Test_files\ide2.svg
+2026-08-12 10:18:46,494 - INFO - G-code created: D:\Atharva\INK V2\InkPrinter\InkV2_Final_Without_cura_Without_E\Test_files\ide2.gcode
+2026-08-12 10:18:46,494 - INFO - G-code ready from SVG: D:\Atharva\INK V2\InkPrinter\InkV2_Final_Without_cura_Without_E\Test_files\ide2.gcode
+2026-08-12 10:18:46,510 - INFO - Raw G-code parsed (307 lines).
+2026-08-12 10:18:49,309 - INFO - Feedrate: 1500.0 mm/min
+2026-08-12 10:18:49,869 - INFO - Normalization shift: X=-1.704, Y=-1.655
+2026-08-12 10:18:49,869 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=43.200
+2026-08-12 10:18:49,869 - INFO - Final applied shift: X=-1.704, Y=-1.655
+2026-08-12 10:21:43,103 - INFO - Serial communication stopped
+2026-08-12 10:21:43,103 - INFO - COM connection close successfully
+2026-08-12 10:21:43,103 - INFO - Main window close successfully
+2026-08-12 10:21:43,103 - INFO - ==================================================
+2026-08-12 10:21:43,103 - INFO - New session close at 2026-08-12 10:21
+2026-08-12 10:21:43,103 - INFO - ==================================================
+2026-08-12 10:21:46,363 - INFO - No OpenGL_accelerate module loaded: No module named 'OpenGL_accelerate'
+2026-08-12 10:21:47,275 - DEBUG - searching for blender in: C:\Program Files (x86)\Python313-32\Scripts\;C:\Program Files\Git\cmd;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\nodejs\;C:\Program Files\Git LFS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\TDM-GCC-32\bin;C:\Program Files\WinMerge;C:\Program Files\Zulu\zulu-21\bin\;c:\Users\EXPSOL\.antigravity-ide\extensions\ms-python.debugpy-2026.6.0-win32-x64\bundled\scripts\noConfigScripts;C:\WINDOWS\system32;C:\Program Files (x86)\Python313-32\;C:\Program Files\OpenLogic\jdk-8.0.402.06-hotspot\bin;C:\WINDOWS\System32\Wbem;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\iverilog\bin;C:\Users\EXPSOL\AppData\Local\GitHubDesktop\bin;C:\Program Files\Python312\;C:\Program Files\Arduino CLI\;C:\Program Files\Microsoft VS Code\bin;C:\msys64\mingw64\bin;C:\TDM-GCC-64\bin;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files\Python312\Lib\site-packages\PySide6;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Python312\Scripts\;C:\Users\EXPSOL\AppData\Local\Programs\Antigravity IDE\bin;C:\Users\EXPSOL\AppData\Local\Programs\Antigravity\bin;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\GTK3-Runtime Win64\bin;C:\Program Files\CMake\bin
+2026-08-12 10:21:47,286 - DEBUG - falling back to hashlib hashing: `pip install xxhash`for 50x faster cache checks
+2026-08-12 10:21:48,243 - INFO - ==================================================
+2026-08-12 10:21:48,243 - INFO - New session START at 2026-08-12 10:21
+2026-08-12 10:21:48,243 - INFO - ==================================================
+2026-08-12 10:21:48,243 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-12 10:21:48,243 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-12 10:21:48,243 - INFO - Loaded draw_z from config: Z=43.2, draw_z_UP=21.55
+2026-08-12 10:21:48,243 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-12 10:21:48,262 - INFO - Updated profile.json: layer_height=0.4, layer_height_0=0.4
+2026-08-12 10:21:48,262 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-12 10:21:48,262 - INFO - INI file initialized
+2026-08-12 10:21:48,267 - INFO - UI load successful
+2026-08-12 10:21:48,557 - INFO - Com : com, Port : ['COM1', 'COM6'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-12 10:22:00,596 - INFO - File selected: D:/Atharva/INK V2/InkPrinter/InkV2_Final_Without_cura_Without_E/Test_files/ide2.svg
+2026-08-12 10:22:00,596 - INFO - Converting SVG -> G-code directly: D:\Atharva\INK V2\InkPrinter\InkV2_Final_Without_cura_Without_E\Test_files\ide2.svg
+2026-08-12 10:22:01,339 - INFO - G-code created: D:\Atharva\INK V2\InkPrinter\InkV2_Final_Without_cura_Without_E\Test_files\ide2.gcode
+2026-08-12 10:22:01,339 - INFO - G-code ready from SVG: D:\Atharva\INK V2\InkPrinter\InkV2_Final_Without_cura_Without_E\Test_files\ide2.gcode
+2026-08-12 10:22:01,339 - INFO - Raw G-code parsed (273 lines).
+2026-08-12 10:22:03,944 - INFO - Feedrate: 1500.0 mm/min
+2026-08-12 10:22:05,229 - INFO - Normalization shift: X=-1.704, Y=-1.655
+2026-08-12 10:22:05,229 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=43.200
+2026-08-12 10:22:05,229 - INFO - Final applied shift: X=-1.704, Y=-1.655
+2026-08-12 10:27:52,726 - INFO - Serial communication stopped
+2026-08-12 10:27:52,726 - INFO - COM connection close successfully
+2026-08-12 10:27:52,726 - INFO - Main window close successfully
+2026-08-12 10:27:52,726 - INFO - ==================================================
+2026-08-12 10:27:52,726 - INFO - New session close at 2026-08-12 10:27
+2026-08-12 10:27:52,726 - INFO - ==================================================
+2026-08-12 10:28:00,250 - INFO - No OpenGL_accelerate module loaded: No module named 'OpenGL_accelerate'
+2026-08-12 10:28:06,944 - DEBUG - searching for blender in: C:\Users\EXPSOL\AppData\Local\GitHubDesktop\bin;C:\Users\EXPSOL\AppData\Local\Programs\Antigravity\bin;C:\Program Files\Python312\;C:\WINDOWS\System32\Wbem;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\TDM-GCC-64\bin;C:\Users\EXPSOL\AppData\Local\Programs\Antigravity IDE\bin;C:\TDM-GCC-32\bin;C:\Program Files\Microsoft VS Code\bin;c:\Users\EXPSOL\.antigravity-ide\extensions\ms-python.debugpy-2026.6.0-win32-x64\bundled\scripts\noConfigScripts;C:\Program Files\Common Files\Oracle\Java\javapath;C:\iverilog\bin;C:\Program Files\OpenLogic\jdk-8.0.402.06-hotspot\bin;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\CMake\bin;C:\Program Files\Git LFS;C:\Program Files\WinMerge;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\System32\OpenSSH\;C:\msys64\mingw64\bin;C:\WINDOWS;C:\Program Files (x86)\Python313-32\Scripts\;C:\WINDOWS\system32;C:\Program Files\Python312\Scripts\;C:\Program Files\GTK3-Runtime Win64\bin;C:\Program Files\Python312\Lib\site-packages\PySide6;C:\Program Files\Zulu\zulu-21\bin\;C:\Program Files\Arduino CLI\;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files (x86)\Python313-32\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath
+2026-08-12 10:28:06,970 - DEBUG - falling back to hashlib hashing: `pip install xxhash`for 50x faster cache checks
+2026-08-12 10:28:14,777 - INFO - ==================================================
+2026-08-12 10:28:14,777 - INFO - New session START at 2026-08-12 10:28
+2026-08-12 10:28:14,779 - INFO - ==================================================
+2026-08-12 10:28:14,785 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-12 10:28:14,785 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-12 10:28:14,785 - INFO - Loaded draw_z from config: Z=43.2, draw_z_UP=21.55
+2026-08-12 10:28:14,785 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-12 10:28:14,797 - INFO - Updated profile.json: layer_height=0.4, layer_height_0=0.4
+2026-08-12 10:28:14,797 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-12 10:28:14,797 - INFO - INI file initialized
+2026-08-12 10:28:14,802 - INFO - UI load successful
+2026-08-12 10:28:15,156 - INFO - Com : com, Port : ['COM1', 'COM6'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-12 10:28:22,436 - INFO - File selected: D:/Atharva/INK V2/InkPrinter/InkV2_Final_Without_cura_Without_E/Test_files/ide2.svg
+2026-08-12 10:28:22,436 - INFO - Converting SVG -> G-code directly: D:\Atharva\INK V2\InkPrinter\InkV2_Final_Without_cura_Without_E\Test_files\ide2.svg
+2026-08-12 10:28:23,468 - INFO - G-code created: D:\Atharva\INK V2\InkPrinter\InkV2_Final_Without_cura_Without_E\Test_files\ide2.gcode
+2026-08-12 10:28:23,468 - INFO - G-code ready from SVG: D:\Atharva\INK V2\InkPrinter\InkV2_Final_Without_cura_Without_E\Test_files\ide2.gcode
+2026-08-12 10:28:23,487 - INFO - Raw G-code parsed (309 lines).
+2026-08-12 10:28:25,388 - INFO - Feedrate: 1500.0 mm/min
+2026-08-12 10:28:26,644 - INFO - Normalization shift: X=-1.704, Y=-1.655
+2026-08-12 10:28:26,644 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=43.200
+2026-08-12 10:28:26,644 - INFO - Final applied shift: X=-1.704, Y=-1.655
+2026-08-12 10:30:54,665 - INFO - Serial communication stopped
+2026-08-12 10:30:54,665 - INFO - COM connection close successfully
+2026-08-12 10:30:54,665 - INFO - Main window close successfully
+2026-08-12 10:30:54,665 - INFO - ==================================================
+2026-08-12 10:30:54,665 - INFO - New session close at 2026-08-12 10:30
+2026-08-12 10:30:54,665 - INFO - ==================================================
+2026-08-12 10:30:59,951 - INFO - No OpenGL_accelerate module loaded: No module named 'OpenGL_accelerate'
+2026-08-12 10:31:00,876 - DEBUG - searching for blender in: C:\Program Files\Common Files\Oracle\Java\javapath;C:\TDM-GCC-32\bin;C:\Program Files\Arduino CLI\;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\Zulu\zulu-21\bin\;C:\Program Files\Microsoft VS Code\bin;c:\Users\EXPSOL\.antigravity-ide\extensions\ms-python.debugpy-2026.6.0-win32-x64\bundled\scripts\noConfigScripts;C:\WINDOWS;C:\Program Files\Python312\Lib\site-packages\PySide6;C:\Program Files\GTK3-Runtime Win64\bin;C:\TDM-GCC-64\bin;C:\WINDOWS\system32;C:\Users\EXPSOL\AppData\Local\Programs\Antigravity IDE\bin;C:\Program Files\Git LFS;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files (x86)\Python313-32\Scripts\;C:\Users\EXPSOL\AppData\Local\GitHubDesktop\bin;C:\Program Files\OpenLogic\jdk-8.0.402.06-hotspot\bin;C:\Program Files\WinMerge;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Users\EXPSOL\AppData\Local\Programs\Antigravity\bin;C:\iverilog\bin;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\msys64\mingw64\bin;C:\Program Files\Python312\;C:\Program Files\Git\cmd;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Python312\Scripts\;C:\Program Files\CMake\bin;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\Python313-32\
+2026-08-12 10:31:00,890 - DEBUG - falling back to hashlib hashing: `pip install xxhash`for 50x faster cache checks
+2026-08-12 10:31:01,844 - INFO - ==================================================
+2026-08-12 10:31:01,844 - INFO - New session START at 2026-08-12 10:31
+2026-08-12 10:31:01,844 - INFO - ==================================================
+2026-08-12 10:31:01,844 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-12 10:31:01,844 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-12 10:31:01,844 - INFO - Loaded draw_z from config: Z=43.2, draw_z_UP=21.55
+2026-08-12 10:31:01,844 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-12 10:31:01,858 - INFO - Updated profile.json: layer_height=0.4, layer_height_0=0.4
+2026-08-12 10:31:01,858 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-12 10:31:01,858 - INFO - INI file initialized
+2026-08-12 10:31:01,866 - INFO - UI load successful
+2026-08-12 10:31:02,134 - INFO - Com : com, Port : ['COM1', 'COM6'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-12 10:31:09,329 - INFO - File selected: D:/Atharva/INK V2/InkPrinter/InkV2_Final_Without_cura_Without_E/Test_files/ide2.svg
+2026-08-12 10:31:09,331 - INFO - Converting SVG -> G-code directly: D:\Atharva\INK V2\InkPrinter\InkV2_Final_Without_cura_Without_E\Test_files\ide2.svg
+2026-08-12 10:31:10,000 - INFO - G-code created: D:\Atharva\INK V2\InkPrinter\InkV2_Final_Without_cura_Without_E\Test_files\ide2.gcode
+2026-08-12 10:31:10,000 - INFO - G-code ready from SVG: D:\Atharva\INK V2\InkPrinter\InkV2_Final_Without_cura_Without_E\Test_files\ide2.gcode
+2026-08-12 10:31:10,019 - INFO - Raw G-code parsed (293 lines).
+2026-08-12 10:31:10,474 - INFO - Feedrate: 500.0 mm/min
+2026-08-12 10:31:11,147 - INFO - Normalization shift: X=-1.704, Y=-1.655
+2026-08-12 10:31:11,147 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=43.200
+2026-08-12 10:31:11,147 - INFO - Final applied shift: X=-1.704, Y=-1.655
+2026-08-12 10:36:01,663 - INFO - Serial communication stopped
+2026-08-12 10:36:01,663 - INFO - COM connection close successfully
+2026-08-12 10:36:01,663 - INFO - Main window close successfully
+2026-08-12 10:36:01,663 - INFO - ==================================================
+2026-08-12 10:36:01,663 - INFO - New session close at 2026-08-12 10:36
+2026-08-12 10:36:01,663 - INFO - ==================================================
+2026-08-12 10:36:13,363 - INFO - No OpenGL_accelerate module loaded: No module named 'OpenGL_accelerate'
+2026-08-12 10:36:14,278 - DEBUG - searching for blender in: C:\WINDOWS;C:\Program Files\CMake\bin;C:\Program Files\Arduino CLI\;C:\Program Files\Git LFS;C:\Users\EXPSOL\AppData\Local\Programs\Antigravity IDE\bin;C:\Program Files\Microsoft VS Code\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\GTK3-Runtime Win64\bin;C:\TDM-GCC-64\bin;C:\Program Files (x86)\Python313-32\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Users\EXPSOL\AppData\Local\Programs\Antigravity\bin;C:\WINDOWS\system32;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\iverilog\bin;C:\Program Files\nodejs\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\OpenLogic\jdk-8.0.402.06-hotspot\bin;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Python312\Lib\site-packages\PySide6;C:\Program Files\WinMerge;C:\Program Files\Python312\Scripts\;C:\Program Files\Git\cmd;c:\Users\EXPSOL\.antigravity-ide\extensions\ms-python.debugpy-2026.6.0-win32-x64\bundled\scripts\noConfigScripts;C:\Program Files\Python312\;C:\WINDOWS\System32\Wbem;C:\Program Files\Zulu\zulu-21\bin\;C:\TDM-GCC-32\bin;C:\msys64\mingw64\bin;C:\Program Files (x86)\Python313-32\Scripts\;C:\Users\EXPSOL\AppData\Local\GitHubDesktop\bin;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files (x86)\Common Files\Oracle\Java\java8path
+2026-08-12 10:36:14,290 - DEBUG - falling back to hashlib hashing: `pip install xxhash`for 50x faster cache checks
+2026-08-12 10:36:15,218 - INFO - ==================================================
+2026-08-12 10:36:15,218 - INFO - New session START at 2026-08-12 10:36
+2026-08-12 10:36:15,218 - INFO - ==================================================
+2026-08-12 10:36:15,227 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-12 10:36:15,227 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-12 10:36:15,227 - INFO - Loaded draw_z from config: Z=43.2, draw_z_UP=21.55
+2026-08-12 10:36:15,227 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-12 10:36:15,229 - INFO - Updated profile.json: layer_height=0.4, layer_height_0=0.4
+2026-08-12 10:36:15,229 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-12 10:36:15,229 - INFO - INI file initialized
+2026-08-12 10:36:15,234 - INFO - UI load successful
+2026-08-12 10:36:15,514 - INFO - Com : com, Port : ['COM1', 'COM6'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-12 10:36:23,240 - INFO - File selected: D:/Atharva/INK V2/InkPrinter/InkV2_Final_Without_cura_Without_E/Test_files/ide2.svg
+2026-08-12 10:36:23,240 - INFO - Converting SVG -> G-code directly: D:\Atharva\INK V2\InkPrinter\InkV2_Final_Without_cura_Without_E\Test_files\ide2.svg
+2026-08-12 10:36:39,575 - INFO - G-code created: D:\Atharva\INK V2\InkPrinter\InkV2_Final_Without_cura_Without_E\Test_files\ide2.gcode
+2026-08-12 10:36:39,575 - INFO - G-code ready from SVG: D:\Atharva\INK V2\InkPrinter\InkV2_Final_Without_cura_Without_E\Test_files\ide2.gcode
+2026-08-12 10:36:39,585 - INFO - Raw G-code parsed (2233 lines).
+2026-08-12 10:36:48,913 - INFO - Feedrate: 1500.0 mm/min
+2026-08-12 10:36:50,144 - INFO - Normalization shift: X=-1.704, Y=-1.655
+2026-08-12 10:36:50,144 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=43.200
+2026-08-12 10:36:50,144 - INFO - Final applied shift: X=-1.704, Y=-1.655
+2026-08-12 10:37:11,905 - INFO - Serial communication stopped
+2026-08-12 10:37:11,905 - INFO - COM connection close successfully
+2026-08-12 10:37:11,905 - INFO - Main window close successfully
+2026-08-12 10:37:11,905 - INFO - ==================================================
+2026-08-12 10:37:11,905 - INFO - New session close at 2026-08-12 10:37
+2026-08-12 10:37:11,905 - INFO - ==================================================
+2026-08-12 10:37:14,764 - INFO - No OpenGL_accelerate module loaded: No module named 'OpenGL_accelerate'
+2026-08-12 10:37:15,698 - DEBUG - searching for blender in: C:\Program Files\Python312\Scripts\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\Python312\;C:\Program Files (x86)\Python313-32\;C:\Program Files (x86)\Python313-32\Scripts\;C:\msys64\mingw64\bin;C:\Users\EXPSOL\AppData\Local\Programs\Antigravity IDE\bin;C:\Program Files\CMake\bin;C:\iverilog\bin;C:\WINDOWS\System32\Wbem;C:\Program Files\nodejs\;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\TDM-GCC-32\bin;c:\Users\EXPSOL\.antigravity-ide\extensions\ms-python.debugpy-2026.6.0-win32-x64\bundled\scripts\noConfigScripts;C:\WINDOWS\system32;C:\TDM-GCC-64\bin;C:\Program Files\GTK3-Runtime Win64\bin;C:\Users\EXPSOL\AppData\Local\GitHubDesktop\bin;C:\Users\EXPSOL\AppData\Local\Programs\Antigravity\bin;C:\Program Files\Microsoft VS Code\bin;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Zulu\zulu-21\bin\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS;C:\Program Files\WinMerge;C:\Program Files\Git LFS;C:\Program Files\OpenLogic\jdk-8.0.402.06-hotspot\bin;C:\Program Files\Python312\Lib\site-packages\PySide6;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Arduino CLI\;C:\Program Files\Git\cmd;C:\WINDOWS\System32\WindowsPowerShell\v1.0\
+2026-08-12 10:37:15,710 - DEBUG - falling back to hashlib hashing: `pip install xxhash`for 50x faster cache checks
+2026-08-12 10:37:16,710 - INFO - ==================================================
+2026-08-12 10:37:16,710 - INFO - New session START at 2026-08-12 10:37
+2026-08-12 10:37:16,710 - INFO - ==================================================
+2026-08-12 10:37:16,710 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-12 10:37:16,710 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-12 10:37:16,710 - INFO - Loaded draw_z from config: Z=43.2, draw_z_UP=21.55
+2026-08-12 10:37:16,710 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-12 10:37:16,721 - INFO - Updated profile.json: layer_height=0.4, layer_height_0=0.4
+2026-08-12 10:37:16,721 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-12 10:37:16,721 - INFO - INI file initialized
+2026-08-12 10:37:16,726 - INFO - UI load successful
+2026-08-12 10:37:16,993 - INFO - Com : com, Port : ['COM1', 'COM6'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-12 10:37:22,623 - INFO - File selected: D:/Atharva/INK V2/InkPrinter/InkV2_Final_Without_cura_Without_E/Test_files/ide2.svg
+2026-08-12 10:37:22,623 - INFO - Converting SVG -> G-code directly: D:\Atharva\INK V2\InkPrinter\InkV2_Final_Without_cura_Without_E\Test_files\ide2.svg
+2026-08-12 10:37:23,259 - INFO - G-code created: D:\Atharva\INK V2\InkPrinter\InkV2_Final_Without_cura_Without_E\Test_files\ide2.gcode
+2026-08-12 10:37:23,259 - INFO - G-code ready from SVG: D:\Atharva\INK V2\InkPrinter\InkV2_Final_Without_cura_Without_E\Test_files\ide2.gcode
+2026-08-12 10:37:23,259 - INFO - Raw G-code parsed (293 lines).
+2026-08-12 10:37:23,929 - INFO - Feedrate: 500.0 mm/min
+2026-08-12 10:37:24,845 - INFO - Normalization shift: X=-1.704, Y=-1.655
+2026-08-12 10:37:24,845 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=43.200
+2026-08-12 10:37:24,845 - INFO - Final applied shift: X=-1.704, Y=-1.655
+2026-08-12 10:37:45,154 - INFO - Serial communication stopped
+2026-08-12 10:37:45,154 - INFO - COM connection close successfully
+2026-08-12 10:37:45,154 - INFO - Main window close successfully
+2026-08-12 10:37:45,154 - INFO - ==================================================
+2026-08-12 10:37:45,154 - INFO - New session close at 2026-08-12 10:37
+2026-08-12 10:37:45,154 - INFO - ==================================================

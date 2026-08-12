@@ -2150,3 +2150,5 @@ All Cura installations verified successfully.
 [2026-08-03 16:10:52] [OK] Found Cura installations:
 [2026-08-03 16:10:52]      - C:\Program Files\UltiMaker Cura 5.10.2
 [2026-08-03 16:10:52]      - C:\Program Files\UltiMaker Cura 5.9.1
+[2026-08-11 18:06:22] [ERROR] No Cura installations found.
+[2026-08-11 18:06:22] [ERROR] No Cura installations found.
