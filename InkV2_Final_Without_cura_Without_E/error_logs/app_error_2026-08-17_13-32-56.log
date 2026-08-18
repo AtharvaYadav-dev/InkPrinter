@@ -1,0 +1,6 @@
+2026-08-17 13:33:02 - ERROR - util.py:180 - Uncaught exception
+Traceback (most recent call last):
+  File "e:\InkPrinter\InkV2_Final_Without_cura_Without_E\main.py", line 669, in <lambda>
+    self.notifyMenuBtn1.clicked.connect(lambda: self.notifyMenuAction(self.notifyMenuBtn1))
+                                                ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'MainWindow' object has no attribute 'notifyMenuAction'. Did you mean: 'notifyMenuBtn1'?

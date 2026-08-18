@@ -2177,6 +2177,7 @@ QPushButton:disabled {
                        <string notr="true">QComboBox {
 	background-color: rgb(144, 170, 197);
     border: 2px solid rgb(16, 42, 131);
+	color: rgb(16, 42, 131);
 }
 
 QComboBox QAbstractItemView {
@@ -2235,6 +2236,7 @@ QComboBox QAbstractItemView {
                        <string notr="true">QComboBox {
 	background-color: rgb(144, 170, 197);
     border: 2px solid rgb(16, 42, 131);
+	color: rgb(16, 42, 131);
 }
 
 QComboBox QAbstractItemView {
@@ -2734,7 +2736,7 @@ QPushButton:disabled {
                 </size>
                </property>
                <property name="currentIndex">
-                <number>6</number>
+                <number>2</number>
                </property>
                <widget class="QWidget" name="jogPage">
                 <layout class="QVBoxLayout" name="verticalLayout_15">
@@ -5416,6 +5418,7 @@ QPushButton:disabled {
                              <string notr="true">QComboBox {
 	background-color: rgb(144, 170, 197);
     border: 2px solid rgb(16, 42, 131);
+	color: rgb(16, 42, 131);
 }
 
 QComboBox QAbstractItemView {
@@ -5480,6 +5483,7 @@ QComboBox QAbstractItemView {
                              <string notr="true">QComboBox {
 	background-color: rgb(144, 170, 197);
     border: 2px solid rgb(16, 42, 131);
+	color: rgb(16, 42, 131);
 }
 
 QComboBox QAbstractItemView {

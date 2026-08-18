@@ -29,6 +29,7 @@ from dxf_to_gcode import convert as convert_dxf_to_gcode_module
 from bmp_to_gcode import convert as convert_bmp_to_gcode_module
 from cura_finder_log1 import checkCuraStatus, copyDefFiles, isCuraSupported
 from config_manager import load_profile, ensure_profile_exists, PROFILE_PATH
+from notifier_ui import NotifierUI
             
 class MainWindow(QMainWindow):
     sigPrintProgress = Signal(float)
@@ -61,113 +62,13 @@ class MainWindow(QMainWindow):
 
         self.msgbox = CustomMessageBox(self)
 
-        # notify menu widgets
-        self.notifyMenu = self.findChild(QCustomSlideMenu, "notifyContainer")
-        self.notifyMenuBtn1 = self.findChild(QPushButton, "closeNotifyPushButton")
-        self.notifyLabel = self.findChild(QLabel, "notifyLabel")
-        self.notifyTextEdit = self.findChild(QTextEdit, "notifyTextEdit")
-        self.notifySubContainer = self.findChild(QWidget, "notifySubContainer")
-
-        if self.notifyTextEdit:
-            self.notifyTextEdit.setReadOnly(True)
-
-        # Apply Premium CSS for the notification container
-        if self.notifySubContainer:
-            self.notifySubContainer.layout().setContentsMargins(0, 0, 0, 0)
-            self.notifySubContainer.setStyleSheet("""
-                QWidget#notifySubContainer {
-                    background-color: rgb(167, 198, 229); 
-                    color: rgb(16, 42, 83); 
-                    border-radius: 15px;
-                    border: 2px solid rgb(16, 42, 131);
-                }
-            """)
-        if self.notifyLabel:
-            self.notifyLabel.setMinimumHeight(35)
-            self.notifyLabel.setStyleSheet("""
-                QLabel {
-                    background-color: rgb(16, 42, 131); 
-                    color: white; 
-                    font-weight: bold; 
-                    font-size: 14px; 
-                    padding-left: 15px; 
-                    border-top-left-radius: 13px; 
-                    border-top-right-radius: 13px;
-                    border-bottom-left-radius: 0px;
-                    border-bottom-right-radius: 0px;
-                }
-            """)
-        if self.notifyTextEdit:
-             self.notifyTextEdit.setStyleSheet("""
-                QTextEdit {
-                    background-color: transparent; 
-                    color: rgb(16, 42, 83); 
-                    border: none; 
-                    font-size: 13px; 
-                    padding: 10px 15px;
-                }
-             """)
-
-        # Increase size limits to accommodate buttons
-        if self.notifyMenu:
-            self.notifyMenu.setMaximumHeight(180)
-        if self.notifySubContainer:
-            self.notifySubContainer.setMaximumHeight(180)
-
-        # --- Notification System Setup ---
-        self.popupLoop = QEventLoop(self)
-        self.popupResult = QMessageBox.Ok
-
-        # Container for buttons
-        if self.notifySubContainer:
-            self.notifyBtnContainer = QWidget(self.notifySubContainer)
-            self.notifyBtnContainer.setStyleSheet("background-color: transparent;")
-            self.notifyBtnLayout = QHBoxLayout(self.notifyBtnContainer)
-            self.notifyBtnLayout.setContentsMargins(0, 0, 0, 5)
-            self.notifyBtnLayout.setSpacing(10)
-            self.notifyBtnLayout.setAlignment(Qt.AlignCenter)
-
-            self.notifySubContainer.layout().addWidget(self.notifyBtnContainer)
-
-            self.btnOk = QPushButton("OK")
-            self.btnYes = QPushButton("Yes")
-            self.btnNo = QPushButton("No")
-            self.btnCancel = QPushButton("Cancel")
-
-            btn_style = """
-                QPushButton {
-                    background-color: rgb(16, 42, 131);
-                    color: white;
-                    border: 1px solid rgb(16, 42, 131);
-                    border-radius: 8px;
-                    padding: 6px 20px;
-                    font-weight: bold;
-                    font-size: 12px;
-                }
-                QPushButton:hover {
-                    background-color: rgb(40, 70, 160);
-                    color: white;
-                }
-                QPushButton:pressed {
-                    background-color: rgb(10, 30, 100);
-                }
-            """
-
-            for btn in [self.btnOk, self.btnYes, self.btnNo, self.btnCancel]:
-                btn.setStyleSheet(btn_style)
-                btn.hide()
-                self.notifyBtnLayout.addWidget(btn)
-
-            self.btnOk.clicked.connect(lambda: self.onPopupBtnClicked(QMessageBox.Ok))
-            self.btnYes.clicked.connect(lambda: self.onPopupBtnClicked(QMessageBox.Yes))
-            self.btnNo.clicked.connect(lambda: self.onPopupBtnClicked(QMessageBox.No))
-            self.btnCancel.clicked.connect(lambda: self.onPopupBtnClicked(QMessageBox.Cancel))
+        NotifierUI.setup(self)
 
         # We now use the custom internal slicer, so we don't strictly require Cura.
         # missing_files = checkCuraStatus()
         #
         # if missing_files:
-        #     self.showCustomPopup(
+        #     NotifierUI.showCustomPopup(self, 
         #         "Cura Setup Required",
         #         "Required Cura configuration files are missing.\n"
         #         "Click OK to run the Cura Fixer tool with Administrator privileges."
@@ -182,7 +83,7 @@ class MainWindow(QMainWindow):
         #         fixer_exe = os.path.join(os.path.dirname(sys.executable), "cura_finder_log1.exe")
         #
         #         if not os.path.exists(fixer_exe):   
-        #             self.showCustomPopup("Error", f"Cura Fixer EXE not found:\n{fixer_exe}")
+        #             NotifierUI.showCustomPopup(self, "Error", f"Cura Fixer EXE not found:\n{fixer_exe}")
         #         else:
         #             # Run EXE normally
         #             subprocess.Popen([fixer_exe], shell=True)
@@ -195,7 +96,7 @@ class MainWindow(QMainWindow):
         # selected_version, bad_versions = isCuraSupported()
         #
         # if not selected_version:
-        #     self.showCustomPopup(
+        #     NotifierUI.showCustomPopup(self, 
         #         "Unsupported Cura Version",
         #         "No compatible Cura version was found.\n\n"
         #         "Installed Cura versions:\n"
@@ -1148,7 +1049,7 @@ class MainWindow(QMainWindow):
                         msg = f"Error : {error_title} > {error_text}"
                         self.util.debugPrint(msg)
                         self.logger.error(msg)
-                        self.showCustomPopup(error_title, error_text)
+                        NotifierUI.showCustomPopup(self, error_title, error_text)
                         return False
                     
                 serial_obj.port = port
@@ -1176,7 +1077,7 @@ class MainWindow(QMainWindow):
                 msg_title, msg_text = msg_dict.get(condition)
 
                 if condition:
-                    retval = self.showCustomPopup(msg_title, msg_text, buttons=QMessageBox.Ok | QMessageBox.Cancel)
+                    retval = NotifierUI.showCustomPopup(self, msg_title, msg_text, buttons=QMessageBox.Ok | QMessageBox.Cancel)
                     self.logger.info(msg_text)
 
                     if retval == QMessageBox.Ok:
@@ -1256,7 +1157,7 @@ class MainWindow(QMainWindow):
         self.util.debugPrint(f"error flag : {self.com_errorFlag}")
         self.comAction(self.com, action="Disconnect")
 
-        self.showCustomPopup(
+        NotifierUI.showCustomPopup(self, 
             "Machine Disconnected",
             "Disconnected from machine.\n\n"
             "Please connect again and reconnect the COM port or rerun the UI."
@@ -1395,7 +1296,7 @@ class MainWindow(QMainWindow):
         self.comAction(self.com, action="Auto")
 
     def closeEvent(self, event):
-        reply = self.showCustomPopup('Confirmation', "Are you sure you want to quit?", buttons=QMessageBox.Yes | QMessageBox.No)
+        reply = NotifierUI.showCustomPopup(self, 'Confirmation', "Are you sure you want to quit?", buttons=QMessageBox.Yes | QMessageBox.No)
         
         if reply == QMessageBox.Yes:
             self.util.debugPrint("Application is closing")
@@ -1462,71 +1363,9 @@ class MainWindow(QMainWindow):
                 self.centerMenuActiveBtn.setStyleSheet("background-color: rgb(167, 198, 229);")
             self.centerMenu.expandMenu()
                 
-    def notifyMenuAction(self, widget):
-        closeBtn = self.notifyMenuBtn1
-        
-        if widget == closeBtn:
-            if self.popupLoop.isRunning():
-                self.popupResult = QMessageBox.Cancel
-                self.popupLoop.quit()
-            self.notifyMenu.collapseMenu()    
-        
     def checkButtonGroup(self):
-        """Required by Custom_Widgets library for QPushButtonGroup in style.json."""
         pass
 
-    def onPopupBtnClicked(self, result):
-        self.popupResult = result
-        if self.popupLoop.isRunning():
-            self.popupLoop.quit()
-        self.notifyMenu.collapseMenu()
-
-    def showCustomPopup(self, title, message, icon_type="info", buttons=QMessageBox.Ok, delay=0):
-        """
-        Displays a notification in the notifyContainer.
-        Blocks until user interaction if buttons are provided, matching Bio4D style.
-        """
-        if self.notifyLabel:
-            self.notifyLabel.setText(title)
-        if self.notifyTextEdit:
-            self.notifyTextEdit.setPlainText(message)
-        
-        # Reset buttons
-        self.btnOk.hide()
-        self.btnYes.hide()
-        self.btnNo.hide()
-        self.btnCancel.hide()
-        
-        # Show requested buttons
-        if buttons & QMessageBox.Ok:
-            self.btnOk.show()
-        if buttons & QMessageBox.Yes:
-            self.btnYes.show()
-        if buttons & QMessageBox.No:
-            self.btnNo.show()
-        if buttons & QMessageBox.Cancel:
-            self.btnCancel.show()
-
-        # Slide in
-        # FIX: Force the floating menu to recalculate its position relative to the window
-        if hasattr(self.notifyMenu, 'floatReposition'):
-            self.notifyMenu.floatReposition()
-        elif hasattr(self.notifyMenu, 'reposition'):
-            self.notifyMenu.reposition()
-            
-        self.notifyMenu.expandMenu()
-        
-        # If no buttons are shown, it's just an informative message
-        if buttons == 0 or (not any(b.isVisible() for b in [self.btnOk, self.btnYes, self.btnNo, self.btnCancel])):
-            if delay > 0:
-                QTimer.singleShot(delay, self.notifyMenu.collapseMenu)
-            return QMessageBox.Ok
-
-        # Block and wait
-        self.popupLoop.exec()
-        
-        return self.popupResult
-        
     def comAction(self, com, widget=None, action=None):
         connect_btn_text = None
         refresh_btn_status = None
@@ -1641,7 +1480,7 @@ class MainWindow(QMainWindow):
                 self.sendGcode("M114")
 
                 msg_text = f"Draw Z value set to {self.draw_z_value:.2f} mm.\ndraw_z_UP set to {self.draw_z_UP:.2f} mm."
-                self.showCustomPopup("Draw Z Set", msg_text)
+                NotifierUI.showCustomPopup(self, "Draw Z Set", msg_text)
 
 
             # --- Set Offset (X/Y) ---
@@ -1660,7 +1499,7 @@ class MainWindow(QMainWindow):
                                 f"Allowed X range: {bed_xmin}–{bed_xmax}\n"
                                 f"Allowed Y range: {bed_ymin}–{bed_ymax}\n"
                                 f"Tried: X={x_final:.2f}, Y={y_final:.2f}")
-                    self.showCustomPopup("Index Error", msg_text)
+                    NotifierUI.showCustomPopup(self, "Index Error", msg_text)
                     self.logger.warning("Offset attempt rejected: " + msg_text)
                     self.wm.operate(offset_btn, "enable", True)
                     return
@@ -1688,7 +1527,7 @@ class MainWindow(QMainWindow):
 
                 # Inform user about X/Y offsets
                 msg_text = f"Offsets set to :\nXoffset = {self.offset_x:.2f}\nYoffset = {self.offset_y:.2f}"
-                self.showCustomPopup("Offsets Set", msg_text)
+                NotifierUI.showCustomPopup(self, "Offsets Set", msg_text)
 
                 # Send draw_z_UP value to Z
                 if hasattr(self, 'draw_z_UP') and self.draw_z_UP is not None:
@@ -1859,7 +1698,7 @@ class MainWindow(QMainWindow):
                 error_msg = f"SVG conversion failed:\n{e}"
                 self.logger.error(error_msg)
                 self.util.debugPrint(error_msg)
-                self.showCustomPopup("Slicing Error", error_msg) # Show user the error
+                NotifierUI.showCustomPopup(self, "Slicing Error", error_msg) # Show user the error
                 return
             
         # --- If DXF -> convert to G-code ---
@@ -1875,7 +1714,7 @@ class MainWindow(QMainWindow):
                 error_msg = f"DXF conversion failed:\n{e}"
                 self.logger.error(error_msg)
                 self.util.debugPrint(error_msg)
-                self.showCustomPopup("Slicing Error", error_msg) # Show user the error
+                NotifierUI.showCustomPopup(self, "Slicing Error", error_msg) # Show user the error
                 return
             
         # --- If BMP -> convert to G-code ---
@@ -1891,7 +1730,7 @@ class MainWindow(QMainWindow):
                 error_msg = f"BMP conversion failed:\n{e}"
                 self.logger.error(error_msg)
                 self.util.debugPrint(error_msg)
-                self.showCustomPopup("Conversion Error", error_msg) # Show user the error
+                NotifierUI.showCustomPopup(self, "Conversion Error", error_msg) # Show user the error
                 return
 
         # Parse once and cache (raw, unmodified)
@@ -1901,14 +1740,14 @@ class MainWindow(QMainWindow):
             error_msg = f"Error parsing G-code file:\n{e}"
             self.logger.error(error_msg)
             self.util.debugPrint(error_msg)
-            self.showCustomPopup("Parse Error", error_msg)
+            NotifierUI.showCustomPopup(self, "Parse Error", error_msg)
             self.pgm_glist = []
             return
 
         if not self.pgm_glist or len(self.pgm_glist) < 5:
             error_msg = "Parsed G-code is empty or too short."
             self.logger.warning(error_msg)
-            self.showCustomPopup("File Error", error_msg)
+            NotifierUI.showCustomPopup(self, "File Error", error_msg)
             return
 
         self.logger.info(f"Raw G-code parsed ({len(self.pgm_glist)} lines).")
@@ -1978,7 +1817,7 @@ class MainWindow(QMainWindow):
         try:
             self.pgm_feed = float(feed)
         except ValueError:
-            self.showCustomPopup("Invalid feedrate", "Please enter a numeric feedrate.")
+            NotifierUI.showCustomPopup(self, "Invalid feedrate", "Please enter a numeric feedrate.")
             return
 
         msg = f"Feedrate: {self.pgm_feed} mm/min"
@@ -2008,7 +1847,7 @@ class MainWindow(QMainWindow):
             msg = "Blackpill is not connected. Please connect via the Black COM page."
             self.logger.error(msg)
             self.util.debugPrint(msg)
-            self.showCustomPopup("Connection Error", msg)
+            NotifierUI.showCustomPopup(self, "Connection Error", msg)
 
     def _get_travel_distance(self):
         if hasattr(self, 'travel01_RadioButton') and self.travel01_RadioButton.isChecked(): return "0.1"
@@ -2088,11 +1927,11 @@ class MainWindow(QMainWindow):
             return
 
         if not getattr(self, "pgm_glist", None):
-            self.showCustomPopup("Error", "Load a G-code file first.")
+            NotifierUI.showCustomPopup(self, "Error", "Load a G-code file first.")
             return
 
         if not getattr(self, "zero_laser", None):
-            self.showCustomPopup("Laser not set", "Select a laser before saving.")
+            NotifierUI.showCustomPopup(self, "Laser not set", "Select a laser before saving.")
             return
 
         # ---------------------------------------------------------
@@ -2210,7 +2049,7 @@ class MainWindow(QMainWindow):
             if hasattr(self, 'logger') and self.logger:
                 self.logger.error(f"Out of Bed Range: {error_msg.replace('\\n', ' | ')}")
 
-            self.showCustomPopup(
+            NotifierUI.showCustomPopup(self, 
                 "Out of Bed Range",
                 error_msg
             )
@@ -2303,7 +2142,7 @@ class MainWindow(QMainWindow):
             else:
                 error_title = "Gcode File Error"
                 error_text = "Filtered G-code not ready. Do SAVE first."
-                self.showCustomPopup(error_title, error_text)
+                NotifierUI.showCustomPopup(self, error_title, error_text)
                 self.showMainPage(2)
                     
         if self.util.checkSubString(wobj, "pause"):

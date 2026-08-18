@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'interfaceYqhEZj.ui'
+## Form generated from reading UI file 'interfaceqpVtoD.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.8.1
 ##
@@ -1076,6 +1076,7 @@ class Ui_MainWindow(object):
         self.blackportComboBox.setStyleSheet(u"QComboBox {\n"
 "	background-color: rgb(144, 170, 197);\n"
 "    border: 2px solid rgb(16, 42, 131);\n"
+"	color: rgb(16, 42, 131);\n"
 "}\n"
 "\n"
 "QComboBox QAbstractItemView {\n"
@@ -1111,6 +1112,7 @@ class Ui_MainWindow(object):
         self.blackbaudComboBox.setStyleSheet(u"QComboBox {\n"
 "	background-color: rgb(144, 170, 197);\n"
 "    border: 2px solid rgb(16, 42, 131);\n"
+"	color: rgb(16, 42, 131);\n"
 "}\n"
 "\n"
 "QComboBox QAbstractItemView {\n"
@@ -2768,6 +2770,7 @@ class Ui_MainWindow(object):
         self.viscositylevComboBox.setStyleSheet(u"QComboBox {\n"
 "	background-color: rgb(144, 170, 197);\n"
 "    border: 2px solid rgb(16, 42, 131);\n"
+"	color: rgb(16, 42, 131);\n"
 "}\n"
 "\n"
 "QComboBox QAbstractItemView {\n"
@@ -2805,6 +2808,7 @@ class Ui_MainWindow(object):
         self.needleguageComboBox.setStyleSheet(u"QComboBox {\n"
 "	background-color: rgb(144, 170, 197);\n"
 "    border: 2px solid rgb(16, 42, 131);\n"
+"	color: rgb(16, 42, 131);\n"
 "}\n"
 "\n"
 "QComboBox QAbstractItemView {\n"
@@ -4369,7 +4373,7 @@ class Ui_MainWindow(object):
 
         self.centerMenuPages.setCurrentIndex(4)
         self.infoSubPages.setCurrentIndex(1)
-        self.mainPages.setCurrentIndex(6)
+        self.mainPages.setCurrentIndex(2)
         self.stackedWidget.setCurrentIndex(1)
 
 

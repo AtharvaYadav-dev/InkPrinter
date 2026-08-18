@@ -1,0 +1,11 @@
+2026-08-17 13:20:19 - ERROR - util.py:180 - Uncaught exception
+Traceback (most recent call last):
+  File "e:\InkPrinter\InkV2_Final_Without_cura_Without_E\main.py", line 2490, in <module>
+    window = MainWindow()
+  File "e:\InkPrinter\InkV2_Final_Without_cura_Without_E\main.py", line 602, in __init__
+    self.bindWidgetSignals()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "e:\InkPrinter\InkV2_Final_Without_cura_Without_E\main.py", line 670, in bindWidgetSignals
+    self.notifyMenuBtn1.clicked.connect(lambda: self.notifyMenuAction(self.notifyMenuBtn1))
+    ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'MainWindow' object has no attribute 'notifyMenuBtn1'

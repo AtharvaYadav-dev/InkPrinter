@@ -1,0 +1,42 @@
+2026-08-17 13:21:49 - ERROR - util.py:180 - Uncaught exception
+Traceback (most recent call last):
+  File "e:\InkPrinter\InkV2_Final_Without_cura_Without_E\notifier_ui.py", line 120, in <lambda>
+    main_window.btnYes.clicked.connect(lambda: main_window.onPopupBtnClicked(QMessageBox.Yes))
+                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'MainWindow' object has no attribute 'onPopupBtnClicked'
+2026-08-17 13:21:49 - ERROR - util.py:180 - Uncaught exception
+Traceback (most recent call last):
+  File "e:\InkPrinter\InkV2_Final_Without_cura_Without_E\notifier_ui.py", line 120, in <lambda>
+    main_window.btnYes.clicked.connect(lambda: main_window.onPopupBtnClicked(QMessageBox.Yes))
+                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'MainWindow' object has no attribute 'onPopupBtnClicked'
+2026-08-17 13:21:49 - ERROR - util.py:180 - Uncaught exception
+Traceback (most recent call last):
+  File "e:\InkPrinter\InkV2_Final_Without_cura_Without_E\notifier_ui.py", line 120, in <lambda>
+    main_window.btnYes.clicked.connect(lambda: main_window.onPopupBtnClicked(QMessageBox.Yes))
+                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'MainWindow' object has no attribute 'onPopupBtnClicked'
+2026-08-17 13:21:50 - ERROR - util.py:180 - Uncaught exception
+Traceback (most recent call last):
+  File "e:\InkPrinter\InkV2_Final_Without_cura_Without_E\notifier_ui.py", line 120, in <lambda>
+    main_window.btnYes.clicked.connect(lambda: main_window.onPopupBtnClicked(QMessageBox.Yes))
+                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'MainWindow' object has no attribute 'onPopupBtnClicked'
+2026-08-17 13:21:50 - ERROR - util.py:180 - Uncaught exception
+Traceback (most recent call last):
+  File "e:\InkPrinter\InkV2_Final_Without_cura_Without_E\notifier_ui.py", line 120, in <lambda>
+    main_window.btnYes.clicked.connect(lambda: main_window.onPopupBtnClicked(QMessageBox.Yes))
+                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'MainWindow' object has no attribute 'onPopupBtnClicked'
+2026-08-17 13:21:50 - ERROR - util.py:180 - Uncaught exception
+Traceback (most recent call last):
+  File "e:\InkPrinter\InkV2_Final_Without_cura_Without_E\notifier_ui.py", line 120, in <lambda>
+    main_window.btnYes.clicked.connect(lambda: main_window.onPopupBtnClicked(QMessageBox.Yes))
+                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'MainWindow' object has no attribute 'onPopupBtnClicked'
+2026-08-17 13:21:51 - ERROR - util.py:180 - Uncaught exception
+Traceback (most recent call last):
+  File "e:\InkPrinter\InkV2_Final_Without_cura_Without_E\notifier_ui.py", line 120, in <lambda>
+    main_window.btnYes.clicked.connect(lambda: main_window.onPopupBtnClicked(QMessageBox.Yes))
+                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'MainWindow' object has no attribute 'onPopupBtnClicked'
