@@ -1,0 +1,2399 @@
+2026-08-07 14:45 - INFO - ==================================================
+2026-08-07 14:45 - INFO - New session START at 2026-08-07 14:45
+2026-08-07 14:45 - INFO - ==================================================
+2026-08-07 14:45 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-07 14:45 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-07 14:45 - INFO - Loaded draw_z from config: Z=5.0, draw_z_UP=2.5
+2026-08-07 14:45 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-07 14:45 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-07 14:45 - INFO - INI file initialized
+2026-08-07 14:45 - INFO - UI load successful
+2026-08-07 14:45 - INFO - Com : com, Port : ['COM1', 'COM9', 'COM10'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-07 14:46 - INFO - File selected: D:/GitHub/RuthvijR-ES/WORKS/sppl-server/InkV2_Final_without_cura_version/Test_files/ide2.svg
+2026-08-07 14:46 - INFO - Converting SVG -> G-code directly: D:\GitHub\RuthvijR-ES\WORKS\sppl-server\InkV2_Final_without_cura_version\Test_files\ide2.svg
+2026-08-07 14:46 - INFO - G-code created: D:\GitHub\RuthvijR-ES\WORKS\sppl-server\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-07 14:46 - INFO - G-code ready from SVG: D:\GitHub\RuthvijR-ES\WORKS\sppl-server\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-07 14:46 - INFO - Raw G-code parsed (7497 lines).
+2026-08-07 14:46 - INFO - Feedrate: 500.0 mm/min
+2026-08-07 14:46 - INFO - Normalization shift: X=-2.339, Y=10.897
+2026-08-07 14:46 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-08-07 14:46 - INFO - Final applied shift: X=-2.339, Y=10.897
+2026-08-07 14:51 - INFO - Serial communication stopped
+2026-08-07 14:51 - INFO - COM connection close successfully
+2026-08-07 14:51 - INFO - Main window close successfully
+2026-08-07 14:51 - INFO - ==================================================
+2026-08-07 14:51 - INFO - New session close at 2026-08-07 14:51
+2026-08-07 14:51 - INFO - ==================================================
+2026-08-11 12:50 - INFO - ==================================================
+2026-08-11 12:50 - INFO - New session START at 2026-08-11 12:50
+2026-08-11 12:50 - INFO - ==================================================
+2026-08-11 12:50 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-11 12:50 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-11 12:50 - INFO - Loaded draw_z from config: Z=5.0, draw_z_UP=2.5
+2026-08-11 12:50 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-11 12:50 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-11 12:50 - INFO - INI file initialized
+2026-08-11 12:50 - INFO - UI load successful
+2026-08-11 12:50 - INFO - Com : com, Port : ['COM1', 'COM9', 'COM10'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-18 10:44 - INFO - ==================================================
+2026-08-18 10:44 - INFO - New session START at 2026-08-18 10:44
+2026-08-18 10:44 - INFO - ==================================================
+2026-08-18 10:44 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-18 10:44 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-18 10:44 - INFO - Loaded draw_z from config: Z=5.0, draw_z_UP=2.5
+2026-08-18 10:44 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-18 10:44 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-18 10:44 - INFO - INI file initialized
+2026-08-18 10:44 - INFO - UI load successful
+2026-08-18 10:44 - INFO - Com : com, Port : ['COM1', 'COM9', 'COM10'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-18 10:44 - INFO - File selected: D:/TeamDev/Ink_withouth_cura/InkV2_Final_without_cura_version/Test_files/ide2.svg
+2026-08-18 10:44 - INFO - Converting SVG -> G-code directly: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.svg
+2026-08-18 10:44 - INFO - G-code created: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-18 10:44 - INFO - G-code ready from SVG: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-18 10:44 - INFO - Raw G-code parsed (7497 lines).
+2026-08-18 10:44 - INFO - Feedrate: 500.0 mm/min
+2026-08-18 10:44 - INFO - Normalization shift: X=-2.339, Y=10.897
+2026-08-18 10:44 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-08-18 10:44 - INFO - Final applied shift: X=-2.339, Y=10.897
+2026-08-18 10:45 - INFO - Serial communication stopped
+2026-08-18 10:45 - INFO - COM connection close successfully
+2026-08-18 10:45 - INFO - Main window close successfully
+2026-08-18 10:45 - INFO - ==================================================
+2026-08-18 10:45 - INFO - New session close at 2026-08-18 10:45
+2026-08-18 10:45 - INFO - ==================================================
+2026-08-18 10:50 - INFO - ==================================================
+2026-08-18 10:50 - INFO - New session START at 2026-08-18 10:50
+2026-08-18 10:50 - INFO - ==================================================
+2026-08-18 10:50 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-18 10:50 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-18 10:50 - INFO - Loaded draw_z from config: Z=5.0, draw_z_UP=2.5
+2026-08-18 10:50 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-18 10:50 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-18 10:50 - INFO - INI file initialized
+2026-08-18 10:50 - INFO - UI load successful
+2026-08-18 10:50 - INFO - Com : com, Port : ['COM1', 'COM9', 'COM10'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-18 10:50 - INFO - File selected: D:/TeamDev/Ink_withouth_cura/InkV2_Final_without_cura_version/Test_files/ide2.svg
+2026-08-18 10:50 - INFO - Converting SVG -> G-code directly: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.svg
+2026-08-18 10:50 - INFO - G-code created: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-18 10:50 - INFO - G-code ready from SVG: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-18 10:50 - INFO - Raw G-code parsed (3273 lines).
+2026-08-18 10:50 - INFO - Feedrate: 500.0 mm/min
+2026-08-18 10:50 - INFO - Normalization shift: X=-2.339, Y=10.897
+2026-08-18 10:50 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-08-18 10:50 - INFO - Final applied shift: X=-2.339, Y=10.897
+2026-08-18 11:02 - INFO - Serial communication stopped
+2026-08-18 11:02 - INFO - COM connection close successfully
+2026-08-18 11:02 - INFO - Main window close successfully
+2026-08-18 11:02 - INFO - ==================================================
+2026-08-18 11:02 - INFO - New session close at 2026-08-18 11:02
+2026-08-18 11:02 - INFO - ==================================================
+2026-08-18 11:07 - INFO - ==================================================
+2026-08-18 11:07 - INFO - New session START at 2026-08-18 11:07
+2026-08-18 11:07 - INFO - ==================================================
+2026-08-18 11:07 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-18 11:07 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-18 11:07 - INFO - Loaded draw_z from config: Z=5.0, draw_z_UP=2.5
+2026-08-18 11:07 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-18 11:07 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-18 11:07 - INFO - INI file initialized
+2026-08-18 11:07 - INFO - UI load successful
+2026-08-18 11:07 - INFO - Com : com, Port : ['COM1', 'COM9', 'COM10'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-18 11:07 - INFO - File selected: D:/TeamDev/Ink_withouth_cura/InkV2_Final_without_cura_version/Test_files/ide2.svg
+2026-08-18 11:07 - INFO - Converting SVG -> G-code directly: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.svg
+2026-08-18 11:07 - INFO - G-code created: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-18 11:07 - INFO - G-code ready from SVG: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-18 11:07 - INFO - Raw G-code parsed (3393 lines).
+2026-08-18 11:07 - INFO - Feedrate: 500.0 mm/min
+2026-08-18 11:07 - INFO - Normalization shift: X=-2.339, Y=10.897
+2026-08-18 11:07 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-08-18 11:07 - INFO - Final applied shift: X=-2.339, Y=10.897
+2026-08-18 11:13 - INFO - ==================================================
+2026-08-18 11:13 - INFO - New session START at 2026-08-18 11:13
+2026-08-18 11:13 - INFO - ==================================================
+2026-08-18 11:13 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-18 11:13 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-18 11:13 - INFO - Loaded draw_z from config: Z=5.0, draw_z_UP=2.5
+2026-08-18 11:13 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-18 11:13 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-18 11:13 - INFO - INI file initialized
+2026-08-18 11:13 - INFO - UI load successful
+2026-08-18 11:13 - INFO - Com : com, Port : ['COM1', 'COM9', 'COM10'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-18 11:13 - INFO - File selected: D:/TeamDev/Ink_withouth_cura/InkV2_Final_without_cura_version/Test_files/ide2.svg
+2026-08-18 11:13 - INFO - Converting SVG -> G-code directly: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.svg
+2026-08-18 11:13 - INFO - G-code created: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-18 11:13 - INFO - G-code ready from SVG: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-18 11:13 - INFO - Raw G-code parsed (3273 lines).
+2026-08-18 11:13 - INFO - Feedrate: 500.0 mm/min
+2026-08-18 11:13 - INFO - Normalization shift: X=-2.339, Y=10.897
+2026-08-18 11:13 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-08-18 11:13 - INFO - Final applied shift: X=-2.339, Y=10.897
+2026-08-18 11:38 - INFO - Close event ignored.
+2026-08-18 11:46 - INFO - ==================================================
+2026-08-18 11:46 - INFO - New session START at 2026-08-18 11:46
+2026-08-18 11:46 - INFO - ==================================================
+2026-08-18 11:46 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-18 11:46 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-18 11:46 - INFO - Loaded draw_z from config: Z=5.0, draw_z_UP=2.5
+2026-08-18 11:46 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-18 11:46 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-18 11:46 - INFO - INI file initialized
+2026-08-18 11:46 - INFO - UI load successful
+2026-08-18 11:46 - INFO - Com : com, Port : ['COM1', 'COM9', 'COM10'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-18 11:46 - INFO - File selected: D:/TeamDev/Ink_withouth_cura/InkV2_Final_without_cura_version/Test_files/ide2.svg
+2026-08-18 11:46 - INFO - Converting SVG -> G-code directly: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.svg
+2026-08-18 11:46 - INFO - G-code created: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-18 11:46 - INFO - G-code ready from SVG: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-18 11:46 - INFO - Raw G-code parsed (1314 lines).
+2026-08-18 11:46 - INFO - Feedrate: 500.0 mm/min
+2026-08-18 11:46 - INFO - Normalization shift: X=-2.339, Y=10.897
+2026-08-18 11:46 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-08-18 11:46 - INFO - Final applied shift: X=-2.339, Y=10.897
+2026-08-18 11:54 - INFO - File selected: D:/TeamDev/Ink_withouth_cura/InkV2_Final_without_cura_version/Test_files/IDE_F_Cu_gbr.svg
+2026-08-18 11:54 - INFO - Converting SVG -> G-code directly: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\IDE_F_Cu_gbr.svg
+2026-08-18 11:54 - INFO - G-code created: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\IDE_F_Cu_gbr.gcode
+2026-08-18 11:54 - INFO - G-code ready from SVG: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\IDE_F_Cu_gbr.gcode
+2026-08-18 11:54 - INFO - Raw G-code parsed (798 lines).
+2026-08-18 11:54 - INFO - Feedrate: 500.0 mm/min
+2026-08-18 11:54 - INFO - Normalization shift: X=-0.933, Y=3.174
+2026-08-18 11:54 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-08-18 11:54 - INFO - Final applied shift: X=-0.933, Y=3.174
+2026-08-18 11:55 - INFO - File selected: D:/TeamDev/Ink_withouth_cura/InkV2_Final_without_cura_version/Test_files/IDT.svg
+2026-08-18 11:55 - INFO - Converting SVG -> G-code directly: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\IDT.svg
+2026-08-18 11:55 - ERROR - SVG conversion failed:
+Failed to generate G-code from SVG.
+2026-08-18 11:55 - INFO - Feedrate: 500.0 mm/min
+2026-08-18 11:55 - INFO - Feedrate: 500.0 mm/min
+2026-08-18 11:56 - INFO - File selected: D:/TeamDev/Ink_withouth_cura/InkV2_Final_without_cura_version/Test_files/IDT.svg
+2026-08-18 11:56 - INFO - Converting SVG -> G-code directly: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\IDT.svg
+2026-08-18 11:56 - ERROR - SVG conversion failed:
+Failed to generate G-code from SVG.
+2026-08-18 11:56 - INFO - Feedrate: 500.0 mm/min
+2026-08-18 11:56 - INFO - File selected: D:/TeamDev/Ink_withouth_cura/InkV2_Final_without_cura_version/Test_files/IDT.svg
+2026-08-18 11:56 - INFO - Converting SVG -> G-code directly: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\IDT.svg
+2026-08-18 11:56 - ERROR - SVG conversion failed:
+Failed to generate G-code from SVG.
+2026-08-18 11:56 - INFO - File selected: D:/TeamDev/Ink_withouth_cura/InkV2_Final_without_cura_version/Test_files/ide2.svg
+2026-08-18 11:56 - INFO - Converting SVG -> G-code directly: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.svg
+2026-08-18 11:56 - INFO - G-code created: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-18 11:56 - INFO - G-code ready from SVG: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-18 11:56 - INFO - Raw G-code parsed (1314 lines).
+2026-08-18 11:56 - INFO - Feedrate: 500.0 mm/min
+2026-08-18 11:56 - INFO - Normalization shift: X=-2.339, Y=10.897
+2026-08-18 11:56 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-08-18 11:56 - INFO - Final applied shift: X=-2.339, Y=10.897
+2026-08-18 11:56 - INFO - Serial communication stopped
+2026-08-18 11:56 - INFO - COM connection close successfully
+2026-08-18 11:56 - INFO - Main window close successfully
+2026-08-18 11:56 - INFO - ==================================================
+2026-08-18 11:56 - INFO - New session close at 2026-08-18 11:56
+2026-08-18 11:56 - INFO - ==================================================
+2026-08-18 11:58 - INFO - ==================================================
+2026-08-18 11:58 - INFO - New session START at 2026-08-18 11:58
+2026-08-18 11:58 - INFO - ==================================================
+2026-08-18 11:58 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-18 11:58 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-18 11:58 - INFO - Loaded draw_z from config: Z=5.0, draw_z_UP=2.5
+2026-08-18 11:58 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-18 11:58 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-18 11:58 - INFO - INI file initialized
+2026-08-18 11:58 - INFO - UI load successful
+2026-08-18 11:58 - INFO - Com : com, Port : ['COM1', 'COM9', 'COM10'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-18 11:59 - INFO - File selected: D:/TeamDev/Ink_withouth_cura/InkV2_Final_without_cura_version/Test_files/ide2.svg
+2026-08-18 11:59 - INFO - Converting SVG -> G-code directly: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.svg
+2026-08-18 11:59 - INFO - G-code created: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-18 11:59 - INFO - G-code ready from SVG: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-18 11:59 - INFO - Raw G-code parsed (975 lines).
+2026-08-18 11:59 - INFO - Feedrate: 500.0 mm/min
+2026-08-18 11:59 - INFO - Normalization shift: X=-2.339, Y=10.897
+2026-08-18 11:59 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-08-18 11:59 - INFO - Final applied shift: X=-2.339, Y=10.897
+2026-08-18 12:01 - INFO - File selected: D:/TeamDev/Ink_withouth_cura/InkV2_Final_without_cura_version/Test_files/IDE_F_Cu_gbr.svg
+2026-08-18 12:01 - INFO - Converting SVG -> G-code directly: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\IDE_F_Cu_gbr.svg
+2026-08-18 12:01 - INFO - G-code created: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\IDE_F_Cu_gbr.gcode
+2026-08-18 12:01 - INFO - G-code ready from SVG: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\IDE_F_Cu_gbr.gcode
+2026-08-18 12:01 - INFO - Raw G-code parsed (570 lines).
+2026-08-18 12:01 - INFO - Feedrate: 500.0 mm/min
+2026-08-18 12:01 - INFO - Normalization shift: X=-0.933, Y=3.174
+2026-08-18 12:01 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-08-18 12:01 - INFO - Final applied shift: X=-0.933, Y=3.174
+2026-08-18 12:01 - INFO - Serial communication stopped
+2026-08-18 12:01 - INFO - COM connection close successfully
+2026-08-18 12:01 - INFO - Main window close successfully
+2026-08-18 12:01 - INFO - ==================================================
+2026-08-18 12:01 - INFO - New session close at 2026-08-18 12:01
+2026-08-18 12:01 - INFO - ==================================================
+2026-08-18 12:02 - INFO - ==================================================
+2026-08-18 12:02 - INFO - New session START at 2026-08-18 12:02
+2026-08-18 12:02 - INFO - ==================================================
+2026-08-18 12:02 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-18 12:02 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-18 12:02 - INFO - Loaded draw_z from config: Z=5.0, draw_z_UP=2.5
+2026-08-18 12:02 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-18 12:02 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-18 12:02 - INFO - INI file initialized
+2026-08-18 12:02 - INFO - UI load successful
+2026-08-18 12:02 - INFO - Com : com, Port : ['COM1', 'COM9', 'COM10'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-18 12:02 - INFO - File selected: D:/TeamDev/Ink_withouth_cura/InkV2_Final_without_cura_version/Test_files/IDE_F_Cu_gbr.svg
+2026-08-18 12:02 - INFO - Converting SVG -> G-code directly: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\IDE_F_Cu_gbr.svg
+2026-08-18 12:02 - INFO - G-code created: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\IDE_F_Cu_gbr.gcode
+2026-08-18 12:02 - INFO - G-code ready from SVG: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\IDE_F_Cu_gbr.gcode
+2026-08-18 12:02 - INFO - Raw G-code parsed (570 lines).
+2026-08-18 12:02 - INFO - Feedrate: 500.0 mm/min
+2026-08-18 12:02 - INFO - Normalization shift: X=-0.933, Y=3.174
+2026-08-18 12:02 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-08-18 12:02 - INFO - Final applied shift: X=-0.933, Y=3.174
+2026-08-18 12:02 - INFO - Serial communication stopped
+2026-08-18 12:02 - INFO - COM connection close successfully
+2026-08-18 12:02 - INFO - Main window close successfully
+2026-08-18 12:02 - INFO - ==================================================
+2026-08-18 12:02 - INFO - New session close at 2026-08-18 12:02
+2026-08-18 12:02 - INFO - ==================================================
+2026-08-18 12:06 - INFO - ==================================================
+2026-08-18 12:06 - INFO - New session START at 2026-08-18 12:06
+2026-08-18 12:06 - INFO - ==================================================
+2026-08-18 12:06 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-18 12:06 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-18 12:06 - INFO - Loaded draw_z from config: Z=5.0, draw_z_UP=2.5
+2026-08-18 12:06 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-18 12:06 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-18 12:06 - INFO - INI file initialized
+2026-08-18 12:06 - INFO - UI load successful
+2026-08-18 12:06 - INFO - Com : com, Port : ['COM1', 'COM9', 'COM10'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-18 12:06 - INFO - File selected: D:/TeamDev/Ink_withouth_cura/InkV2_Final_without_cura_version/Test_files/ide2.svg
+2026-08-18 12:06 - INFO - Converting SVG -> G-code directly: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.svg
+2026-08-18 12:06 - INFO - G-code created: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-18 12:06 - INFO - G-code ready from SVG: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-18 12:06 - INFO - Raw G-code parsed (198 lines).
+2026-08-18 12:06 - INFO - Feedrate: 500.0 mm/min
+2026-08-18 12:06 - INFO - Normalization shift: X=-2.539, Y=10.697
+2026-08-18 12:06 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-08-18 12:06 - INFO - Final applied shift: X=-2.539, Y=10.697
+2026-08-18 12:06 - INFO - Serial communication stopped
+2026-08-18 12:06 - INFO - COM connection close successfully
+2026-08-18 12:06 - INFO - Main window close successfully
+2026-08-18 12:06 - INFO - ==================================================
+2026-08-18 12:06 - INFO - New session close at 2026-08-18 12:06
+2026-08-18 12:06 - INFO - ==================================================
+2026-08-18 12:07 - INFO - ==================================================
+2026-08-18 12:07 - INFO - New session START at 2026-08-18 12:07
+2026-08-18 12:07 - INFO - ==================================================
+2026-08-18 12:07 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-18 12:07 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-18 12:07 - INFO - Loaded draw_z from config: Z=5.0, draw_z_UP=2.5
+2026-08-18 12:07 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-18 12:07 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-18 12:07 - INFO - INI file initialized
+2026-08-18 12:07 - INFO - UI load successful
+2026-08-18 12:07 - INFO - Com : com, Port : ['COM1', 'COM9', 'COM10'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-18 12:07 - INFO - File selected: D:/TeamDev/Ink_withouth_cura/InkV2_Final_without_cura_version/Test_files/ide2.svg
+2026-08-18 12:07 - INFO - Converting SVG -> G-code directly: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.svg
+2026-08-18 12:07 - INFO - G-code created: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-18 12:07 - INFO - G-code ready from SVG: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-18 12:07 - INFO - Raw G-code parsed (1314 lines).
+2026-08-18 12:07 - INFO - Feedrate: 500.0 mm/min
+2026-08-18 12:07 - INFO - Normalization shift: X=-2.339, Y=10.897
+2026-08-18 12:07 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-08-18 12:07 - INFO - Final applied shift: X=-2.339, Y=10.897
+2026-08-18 12:07 - INFO - Serial communication stopped
+2026-08-18 12:07 - INFO - COM connection close successfully
+2026-08-18 12:07 - INFO - Main window close successfully
+2026-08-18 12:07 - INFO - ==================================================
+2026-08-18 12:07 - INFO - New session close at 2026-08-18 12:07
+2026-08-18 12:07 - INFO - ==================================================
+2026-08-18 12:10 - INFO - ==================================================
+2026-08-18 12:10 - INFO - New session START at 2026-08-18 12:10
+2026-08-18 12:10 - INFO - ==================================================
+2026-08-18 12:10 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-18 12:10 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-18 12:10 - INFO - Loaded draw_z from config: Z=5.0, draw_z_UP=2.5
+2026-08-18 12:10 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-18 12:10 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-18 12:10 - INFO - INI file initialized
+2026-08-18 12:10 - INFO - UI load successful
+2026-08-18 12:10 - INFO - Com : com, Port : ['COM1', 'COM9', 'COM10'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-18 12:10 - INFO - File selected: D:/TeamDev/Ink_withouth_cura/InkV2_Final_without_cura_version/Test_files/ide2.svg
+2026-08-18 12:10 - INFO - Converting SVG -> G-code directly: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.svg
+2026-08-18 12:10 - INFO - G-code created: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-18 12:10 - INFO - G-code ready from SVG: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-18 12:10 - INFO - Raw G-code parsed (349 lines).
+2026-08-18 12:10 - INFO - Feedrate: 500.0 mm/min
+2026-08-18 12:10 - INFO - Normalization shift: X=-2.539, Y=10.697
+2026-08-18 12:10 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-08-18 12:10 - INFO - Final applied shift: X=-2.539, Y=10.697
+2026-08-18 12:23 - INFO - File selected: D:/TeamDev/Ink_withouth_cura/InkV2_Final_without_cura_version/Test_files/IDE_F_Cu_gbr.svg
+2026-08-18 12:23 - INFO - Converting SVG -> G-code directly: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\IDE_F_Cu_gbr.svg
+2026-08-18 12:23 - INFO - G-code created: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\IDE_F_Cu_gbr.gcode
+2026-08-18 12:23 - INFO - G-code ready from SVG: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\IDE_F_Cu_gbr.gcode
+2026-08-18 12:23 - INFO - Raw G-code parsed (238 lines).
+2026-08-18 12:23 - INFO - Feedrate: 500.0 mm/min
+2026-08-18 12:23 - INFO - Normalization shift: X=-0.998, Y=3.170
+2026-08-18 12:23 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-08-18 12:23 - INFO - Final applied shift: X=-0.998, Y=3.170
+2026-08-18 12:23 - INFO - File selected: D:/TeamDev/Ink_withouth_cura/InkV2_Final_without_cura_version/Test_files/ide2.svg
+2026-08-18 12:23 - INFO - Converting SVG -> G-code directly: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.svg
+2026-08-18 12:23 - INFO - G-code created: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-18 12:23 - INFO - G-code ready from SVG: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-18 12:23 - INFO - Raw G-code parsed (349 lines).
+2026-08-18 12:23 - INFO - Feedrate: 500.0 mm/min
+2026-08-18 12:23 - INFO - Normalization shift: X=-2.539, Y=10.697
+2026-08-18 12:23 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-08-18 12:23 - INFO - Final applied shift: X=-2.539, Y=10.697
+2026-08-18 12:29 - INFO - ==================================================
+2026-08-18 12:29 - INFO - New session START at 2026-08-18 12:29
+2026-08-18 12:29 - INFO - ==================================================
+2026-08-18 12:29 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-18 12:29 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-18 12:29 - INFO - Loaded draw_z from config: Z=5.0, draw_z_UP=2.5
+2026-08-18 12:29 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-18 12:29 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-18 12:29 - INFO - INI file initialized
+2026-08-18 12:29 - INFO - UI load successful
+2026-08-18 12:29 - INFO - Com : com, Port : ['COM1', 'COM9', 'COM10'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-18 12:29 - INFO - File selected: D:/TeamDev/Ink_withouth_cura/InkV2_Final_without_cura_version/Test_files/ide2.svg
+2026-08-18 12:29 - INFO - Converting SVG -> G-code directly: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.svg
+2026-08-18 12:29 - INFO - G-code created: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-18 12:29 - INFO - G-code ready from SVG: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-18 12:29 - INFO - Raw G-code parsed (1314 lines).
+2026-08-18 12:29 - INFO - Feedrate: 500.0 mm/min
+2026-08-18 12:29 - INFO - Normalization shift: X=-2.339, Y=10.897
+2026-08-18 12:29 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-08-18 12:29 - INFO - Final applied shift: X=-2.339, Y=10.897
+2026-08-18 12:30 - INFO - File selected: D:/TeamDev/Ink_withouth_cura/InkV2_Final_without_cura_version/Test_files/IDE_F_Cu_gbr.svg
+2026-08-18 12:30 - INFO - Converting SVG -> G-code directly: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\IDE_F_Cu_gbr.svg
+2026-08-18 12:30 - INFO - G-code created: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\IDE_F_Cu_gbr.gcode
+2026-08-18 12:30 - INFO - G-code ready from SVG: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\IDE_F_Cu_gbr.gcode
+2026-08-18 12:30 - INFO - Raw G-code parsed (798 lines).
+2026-08-18 12:30 - INFO - Feedrate: 500.0 mm/min
+2026-08-18 12:30 - INFO - Normalization shift: X=-0.933, Y=3.174
+2026-08-18 12:30 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-08-18 12:30 - INFO - Final applied shift: X=-0.933, Y=3.174
+2026-08-18 12:30 - INFO - ==================================================
+2026-08-18 12:30 - INFO - New session START at 2026-08-18 12:30
+2026-08-18 12:30 - INFO - ==================================================
+2026-08-18 12:30 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-18 12:30 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-18 12:30 - INFO - Loaded draw_z from config: Z=5.0, draw_z_UP=2.5
+2026-08-18 12:30 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-18 12:30 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-18 12:30 - INFO - INI file initialized
+2026-08-18 12:30 - INFO - UI load successful
+2026-08-18 12:30 - INFO - Com : com, Port : ['COM1', 'COM9', 'COM10'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-18 12:30 - INFO - File selected: D:/TeamDev/Ink_withouth_cura/InkV2_Final_without_cura_version/Test_files/ide2.svg
+2026-08-18 12:30 - INFO - Converting SVG -> G-code directly: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.svg
+2026-08-18 12:30 - INFO - G-code created: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-18 12:30 - INFO - G-code ready from SVG: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-18 12:30 - INFO - Raw G-code parsed (1314 lines).
+2026-08-18 12:30 - INFO - Feedrate: 500.0 mm/min
+2026-08-18 12:30 - INFO - Normalization shift: X=-2.339, Y=10.897
+2026-08-18 12:30 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-08-18 12:30 - INFO - Final applied shift: X=-2.339, Y=10.897
+2026-08-18 12:31 - INFO - Serial communication stopped
+2026-08-18 12:31 - INFO - COM connection close successfully
+2026-08-18 12:31 - INFO - Main window close successfully
+2026-08-18 12:31 - INFO - ==================================================
+2026-08-18 12:31 - INFO - New session close at 2026-08-18 12:31
+2026-08-18 12:31 - INFO - ==================================================
+2026-08-18 12:31 - INFO - ==================================================
+2026-08-18 12:31 - INFO - New session START at 2026-08-18 12:31
+2026-08-18 12:31 - INFO - ==================================================
+2026-08-18 12:31 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-18 12:31 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-18 12:31 - INFO - Loaded draw_z from config: Z=5.0, draw_z_UP=2.5
+2026-08-18 12:31 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-18 12:31 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-18 12:31 - INFO - INI file initialized
+2026-08-18 12:31 - INFO - UI load successful
+2026-08-18 12:31 - INFO - Com : com, Port : ['COM1', 'COM9', 'COM10'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-18 12:31 - INFO - File selected: D:/TeamDev/Ink_withouth_cura/InkV2_Final_without_cura_version/Test_files/ide2.svg
+2026-08-18 12:31 - INFO - Converting SVG -> G-code directly: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.svg
+2026-08-18 12:31 - INFO - G-code created: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-18 12:31 - INFO - G-code ready from SVG: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-18 12:31 - INFO - Raw G-code parsed (198 lines).
+2026-08-18 12:31 - INFO - Feedrate: 500.0 mm/min
+2026-08-18 12:31 - INFO - Normalization shift: X=-2.539, Y=10.697
+2026-08-18 12:31 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-08-18 12:31 - INFO - Final applied shift: X=-2.539, Y=10.697
+2026-08-18 12:31 - INFO - File selected: D:/TeamDev/Ink_withouth_cura/InkV2_Final_without_cura_version/Test_files/IDE_F_Cu_gbr.svg
+2026-08-18 12:31 - INFO - Converting SVG -> G-code directly: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\IDE_F_Cu_gbr.svg
+2026-08-18 12:31 - INFO - G-code created: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\IDE_F_Cu_gbr.gcode
+2026-08-18 12:31 - INFO - G-code ready from SVG: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\IDE_F_Cu_gbr.gcode
+2026-08-18 12:31 - INFO - Raw G-code parsed (94 lines).
+2026-08-18 12:31 - INFO - Feedrate: 500.0 mm/min
+2026-08-18 12:31 - INFO - Normalization shift: X=-1.266, Y=2.841
+2026-08-18 12:31 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-08-18 12:31 - INFO - Final applied shift: X=-1.266, Y=2.841
+2026-08-18 12:34 - INFO - File selected: D:/TeamDev/Ink_withouth_cura/InkV2_Final_without_cura_version/Test_files/ide2.svg
+2026-08-18 12:34 - INFO - Converting SVG -> G-code directly: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.svg
+2026-08-18 12:34 - INFO - G-code created: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-18 12:34 - INFO - G-code ready from SVG: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-18 12:34 - INFO - Raw G-code parsed (198 lines).
+2026-08-18 12:34 - INFO - Feedrate: 500.0 mm/min
+2026-08-18 12:34 - INFO - Normalization shift: X=-2.539, Y=10.697
+2026-08-18 12:34 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-08-18 12:34 - INFO - Final applied shift: X=-2.539, Y=10.697
+2026-08-18 12:40 - INFO - ==================================================
+2026-08-18 12:40 - INFO - New session START at 2026-08-18 12:40
+2026-08-18 12:40 - INFO - ==================================================
+2026-08-18 12:40 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-18 12:40 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-18 12:40 - INFO - Loaded draw_z from config: Z=5.0, draw_z_UP=2.5
+2026-08-18 12:40 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-18 12:40 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-18 12:40 - INFO - INI file initialized
+2026-08-18 12:40 - INFO - UI load successful
+2026-08-18 12:40 - INFO - Com : com, Port : ['COM1', 'COM9', 'COM10'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-18 12:40 - INFO - File selected: D:/TeamDev/Ink_withouth_cura/InkV2_Final_without_cura_version/Test_files/IDE_F_Cu_gbr.svg
+2026-08-18 12:40 - INFO - Converting SVG -> G-code directly: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\IDE_F_Cu_gbr.svg
+2026-08-18 12:40 - INFO - G-code created: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\IDE_F_Cu_gbr.gcode
+2026-08-18 12:40 - INFO - G-code ready from SVG: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\IDE_F_Cu_gbr.gcode
+2026-08-18 12:40 - INFO - Raw G-code parsed (411 lines).
+2026-08-18 12:40 - INFO - Feedrate: 500.0 mm/min
+2026-08-18 12:40 - INFO - Normalization shift: X=-0.933, Y=3.174
+2026-08-18 12:40 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-08-18 12:40 - INFO - Final applied shift: X=-0.933, Y=3.174
+2026-08-18 12:40 - INFO - File selected: D:/TeamDev/Ink_withouth_cura/InkV2_Final_without_cura_version/Test_files/ide2.svg
+2026-08-18 12:40 - INFO - Converting SVG -> G-code directly: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.svg
+2026-08-18 12:40 - INFO - G-code created: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-18 12:40 - INFO - G-code ready from SVG: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-18 12:40 - INFO - Raw G-code parsed (198 lines).
+2026-08-18 12:40 - INFO - Feedrate: 500.0 mm/min
+2026-08-18 12:40 - INFO - Normalization shift: X=-2.539, Y=10.697
+2026-08-18 12:40 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-08-18 12:40 - INFO - Final applied shift: X=-2.539, Y=10.697
+2026-08-18 12:40 - INFO - Serial communication stopped
+2026-08-18 12:40 - INFO - COM connection close successfully
+2026-08-18 12:40 - INFO - Main window close successfully
+2026-08-18 12:40 - INFO - ==================================================
+2026-08-18 12:40 - INFO - New session close at 2026-08-18 12:40
+2026-08-18 12:40 - INFO - ==================================================
+2026-08-18 12:42 - INFO - ==================================================
+2026-08-18 12:42 - INFO - New session START at 2026-08-18 12:42
+2026-08-18 12:42 - INFO - ==================================================
+2026-08-18 12:42 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-18 12:42 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-18 12:42 - INFO - Loaded draw_z from config: Z=5.0, draw_z_UP=2.5
+2026-08-18 12:42 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-18 12:42 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-18 12:42 - INFO - INI file initialized
+2026-08-18 12:42 - INFO - UI load successful
+2026-08-18 12:42 - INFO - Com : com, Port : ['COM1', 'COM9', 'COM10'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-18 12:42 - INFO - File selected: D:/TeamDev/Ink_withouth_cura/InkV2_Final_without_cura_version/Test_files/IDE_F_Cu_gbr.svg
+2026-08-18 12:42 - INFO - Converting SVG -> G-code directly: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\IDE_F_Cu_gbr.svg
+2026-08-18 12:42 - INFO - G-code created: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\IDE_F_Cu_gbr.gcode
+2026-08-18 12:42 - INFO - G-code ready from SVG: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\IDE_F_Cu_gbr.gcode
+2026-08-18 12:42 - INFO - Raw G-code parsed (579 lines).
+2026-08-18 12:42 - INFO - Feedrate: 500.0 mm/min
+2026-08-18 12:42 - INFO - Normalization shift: X=-0.933, Y=3.174
+2026-08-18 12:42 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-08-18 12:42 - INFO - Final applied shift: X=-0.933, Y=3.174
+2026-08-18 12:43 - INFO - File selected: D:/TeamDev/Ink_withouth_cura/InkV2_Final_without_cura_version/Test_files/ide2.svg
+2026-08-18 12:43 - INFO - Converting SVG -> G-code directly: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.svg
+2026-08-18 12:43 - INFO - G-code created: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-18 12:43 - INFO - G-code ready from SVG: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-18 12:43 - INFO - Raw G-code parsed (399 lines).
+2026-08-18 12:43 - INFO - Feedrate: 500.0 mm/min
+2026-08-18 12:43 - INFO - Normalization shift: X=-2.539, Y=10.697
+2026-08-18 12:43 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-08-18 12:43 - INFO - Final applied shift: X=-2.539, Y=10.697
+2026-08-18 12:44 - INFO - Serial communication stopped
+2026-08-18 12:44 - INFO - COM connection close successfully
+2026-08-18 12:44 - INFO - Main window close successfully
+2026-08-18 12:44 - INFO - ==================================================
+2026-08-18 12:44 - INFO - New session close at 2026-08-18 12:44
+2026-08-18 12:44 - INFO - ==================================================
+2026-08-18 13:05 - INFO - ==================================================
+2026-08-18 13:05 - INFO - New session START at 2026-08-18 13:05
+2026-08-18 13:05 - INFO - ==================================================
+2026-08-18 13:05 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-18 13:05 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-18 13:05 - INFO - Loaded draw_z from config: Z=5.0, draw_z_UP=2.5
+2026-08-18 13:05 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-18 13:05 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-18 13:05 - INFO - INI file initialized
+2026-08-18 13:05 - INFO - UI load successful
+2026-08-18 13:05 - INFO - Com : com, Port : ['COM1', 'COM9', 'COM10'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-18 13:05 - INFO - File selected: D:/TeamDev/Ink_withouth_cura/InkV2_Final_without_cura_version/Test_files/ide2.svg
+2026-08-18 13:05 - INFO - Converting SVG -> G-code directly: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.svg
+2026-08-18 13:05 - INFO - G-code created: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-18 13:05 - INFO - G-code ready from SVG: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-18 13:05 - INFO - Raw G-code parsed (399 lines).
+2026-08-18 13:05 - INFO - Feedrate: 500.0 mm/min
+2026-08-18 13:05 - INFO - Normalization shift: X=-2.539, Y=10.697
+2026-08-18 13:05 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-08-18 13:05 - INFO - Final applied shift: X=-2.539, Y=10.697
+2026-08-18 13:06 - INFO - File selected: D:/TeamDev/Ink_withouth_cura/InkV2_Final_without_cura_version/Test_files/IDE_F_Cu_gbr.svg
+2026-08-18 13:06 - INFO - Converting SVG -> G-code directly: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\IDE_F_Cu_gbr.svg
+2026-08-18 13:06 - INFO - G-code created: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\IDE_F_Cu_gbr.gcode
+2026-08-18 13:06 - INFO - G-code ready from SVG: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\IDE_F_Cu_gbr.gcode
+2026-08-18 13:06 - INFO - Raw G-code parsed (579 lines).
+2026-08-18 13:06 - INFO - Feedrate: 500.0 mm/min
+2026-08-18 13:06 - INFO - Normalization shift: X=-0.933, Y=3.174
+2026-08-18 13:06 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-08-18 13:06 - INFO - Final applied shift: X=-0.933, Y=3.174
+2026-08-18 13:14 - INFO - Serial communication stopped
+2026-08-18 13:14 - INFO - COM connection close successfully
+2026-08-18 13:14 - INFO - Main window close successfully
+2026-08-18 13:14 - INFO - ==================================================
+2026-08-18 13:14 - INFO - New session close at 2026-08-18 13:14
+2026-08-18 13:14 - INFO - ==================================================
+2026-08-18 13:18 - INFO - ==================================================
+2026-08-18 13:18 - INFO - New session START at 2026-08-18 13:18
+2026-08-18 13:18 - INFO - ==================================================
+2026-08-18 13:18 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-18 13:18 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-18 13:18 - INFO - Loaded draw_z from config: Z=5.0, draw_z_UP=2.5
+2026-08-18 13:18 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-18 13:18 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-18 13:18 - INFO - INI file initialized
+2026-08-18 13:18 - INFO - UI load successful
+2026-08-18 13:18 - INFO - Com : com, Port : ['COM1', 'COM9', 'COM10'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-18 13:18 - INFO - File selected: D:/TeamDev/Ink_withouth_cura/InkV2_Final_without_cura_version/Test_files/ide2.svg
+2026-08-18 13:18 - INFO - Converting SVG -> G-code directly: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.svg
+2026-08-18 13:18 - INFO - G-code created: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-18 13:18 - INFO - G-code ready from SVG: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-18 13:18 - INFO - Raw G-code parsed (399 lines).
+2026-08-18 13:18 - INFO - Feedrate: 500.0 mm/min
+2026-08-18 13:18 - INFO - Normalization shift: X=-2.539, Y=10.697
+2026-08-18 13:18 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-08-18 13:18 - INFO - Final applied shift: X=-2.539, Y=10.697
+2026-08-18 13:23 - INFO - File selected: D:/TeamDev/Ink_withouth_cura/InkV2_Final_without_cura_version/Test_files/IDE_F_Cu_gbr.svg
+2026-08-18 13:23 - INFO - Converting SVG -> G-code directly: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\IDE_F_Cu_gbr.svg
+2026-08-18 13:24 - INFO - G-code created: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\IDE_F_Cu_gbr.gcode
+2026-08-18 13:24 - INFO - G-code ready from SVG: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\IDE_F_Cu_gbr.gcode
+2026-08-18 13:24 - INFO - Raw G-code parsed (579 lines).
+2026-08-18 13:24 - INFO - Feedrate: 500.0 mm/min
+2026-08-18 13:24 - INFO - Normalization shift: X=-0.933, Y=3.174
+2026-08-18 13:24 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-08-18 13:24 - INFO - Final applied shift: X=-0.933, Y=3.174
+2026-08-18 13:25 - INFO - Serial communication stopped
+2026-08-18 13:25 - INFO - COM connection close successfully
+2026-08-18 13:25 - INFO - Main window close successfully
+2026-08-18 13:25 - INFO - ==================================================
+2026-08-18 13:25 - INFO - New session close at 2026-08-18 13:25
+2026-08-18 13:25 - INFO - ==================================================
+2026-08-18 13:25 - INFO - ==================================================
+2026-08-18 13:25 - INFO - New session START at 2026-08-18 13:25
+2026-08-18 13:25 - INFO - ==================================================
+2026-08-18 13:25 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-18 13:25 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-18 13:25 - INFO - Loaded draw_z from config: Z=5.0, draw_z_UP=2.5
+2026-08-18 13:25 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-18 13:25 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-18 13:25 - INFO - INI file initialized
+2026-08-18 13:25 - INFO - UI load successful
+2026-08-18 13:25 - INFO - Com : com, Port : ['COM1', 'COM9', 'COM10'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-18 13:25 - INFO - File selected: D:/TeamDev/Ink_withouth_cura/InkV2_Final_without_cura_version/Test_files/ide2.svg
+2026-08-18 13:25 - INFO - Converting SVG -> G-code directly: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.svg
+2026-08-18 13:25 - INFO - G-code created: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-18 13:25 - INFO - G-code ready from SVG: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-18 13:25 - INFO - Raw G-code parsed (198 lines).
+2026-08-18 13:25 - INFO - Feedrate: 500.0 mm/min
+2026-08-18 13:25 - INFO - Normalization shift: X=-2.539, Y=10.697
+2026-08-18 13:25 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-08-18 13:25 - INFO - Final applied shift: X=-2.539, Y=10.697
+2026-08-18 13:25 - INFO - File selected: D:/TeamDev/Ink_withouth_cura/InkV2_Final_without_cura_version/Test_files/IDE_F_Cu_gbr.svg
+2026-08-18 13:25 - INFO - Converting SVG -> G-code directly: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\IDE_F_Cu_gbr.svg
+2026-08-18 13:26 - INFO - G-code created: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\IDE_F_Cu_gbr.gcode
+2026-08-18 13:26 - INFO - G-code ready from SVG: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\IDE_F_Cu_gbr.gcode
+2026-08-18 13:26 - INFO - Raw G-code parsed (411 lines).
+2026-08-18 13:26 - INFO - Feedrate: 500.0 mm/min
+2026-08-18 13:26 - INFO - Normalization shift: X=-0.933, Y=3.174
+2026-08-18 13:26 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-08-18 13:26 - INFO - Final applied shift: X=-0.933, Y=3.174
+2026-08-18 13:26 - INFO - Serial communication stopped
+2026-08-18 13:26 - INFO - COM connection close successfully
+2026-08-18 13:26 - INFO - Main window close successfully
+2026-08-18 13:26 - INFO - ==================================================
+2026-08-18 13:26 - INFO - New session close at 2026-08-18 13:26
+2026-08-18 13:26 - INFO - ==================================================
+2026-08-18 13:27 - INFO - ==================================================
+2026-08-18 13:27 - INFO - New session START at 2026-08-18 13:27
+2026-08-18 13:27 - INFO - ==================================================
+2026-08-18 13:27 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-18 13:27 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-18 13:27 - INFO - Loaded draw_z from config: Z=5.0, draw_z_UP=2.5
+2026-08-18 13:27 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-18 13:27 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-18 13:27 - INFO - INI file initialized
+2026-08-18 13:27 - INFO - UI load successful
+2026-08-18 13:27 - INFO - Com : com, Port : ['COM1', 'COM9', 'COM10'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-18 13:27 - INFO - File selected: D:/TeamDev/Ink_withouth_cura/InkV2_Final_without_cura_version/Test_files/ide2.svg
+2026-08-18 13:27 - INFO - Converting SVG -> G-code directly: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.svg
+2026-08-18 13:27 - INFO - G-code created: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-18 13:27 - INFO - G-code ready from SVG: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-18 13:27 - INFO - Raw G-code parsed (399 lines).
+2026-08-18 13:27 - INFO - Feedrate: 500.0 mm/min
+2026-08-18 13:27 - INFO - Normalization shift: X=-2.539, Y=10.697
+2026-08-18 13:27 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-08-18 13:27 - INFO - Final applied shift: X=-2.539, Y=10.697
+2026-08-18 14:37 - INFO - Serial communication stopped
+2026-08-18 14:37 - INFO - COM connection close successfully
+2026-08-18 14:37 - INFO - Main window close successfully
+2026-08-18 14:37 - INFO - ==================================================
+2026-08-18 14:37 - INFO - New session close at 2026-08-18 14:37
+2026-08-18 14:37 - INFO - ==================================================
+2026-08-18 15:12 - INFO - ==================================================
+2026-08-18 15:12 - INFO - New session START at 2026-08-18 15:12
+2026-08-18 15:12 - INFO - ==================================================
+2026-08-18 15:12 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-18 15:12 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-18 15:12 - INFO - Loaded draw_z from config: Z=5.0, draw_z_UP=2.5
+2026-08-18 15:12 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-18 15:12 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-18 15:12 - INFO - INI file initialized
+2026-08-18 15:12 - INFO - UI load successful
+2026-08-18 15:12 - INFO - Com : com, Port : ['COM1', 'COM9', 'COM10'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-18 15:12 - INFO - File selected: D:/TeamDev/Ink_withouth_cura/InkV2_Final_without_cura_version/Test_files/ide2.svg
+2026-08-18 15:12 - INFO - Converting SVG -> G-code directly: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.svg
+2026-08-18 15:12 - INFO - G-code created: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-18 15:12 - INFO - G-code ready from SVG: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-18 15:12 - INFO - Raw G-code parsed (399 lines).
+2026-08-18 15:12 - INFO - Feedrate: 500.0 mm/min
+2026-08-18 15:12 - INFO - Normalization shift: X=-2.539, Y=10.697
+2026-08-18 15:12 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-08-18 15:12 - INFO - Final applied shift: X=-2.539, Y=10.697
+2026-08-18 15:15 - INFO - ==================================================
+2026-08-18 15:15 - INFO - New session START at 2026-08-18 15:15
+2026-08-18 15:15 - INFO - ==================================================
+2026-08-18 15:15 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-18 15:15 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-18 15:15 - INFO - Loaded draw_z from config: Z=5.0, draw_z_UP=2.5
+2026-08-18 15:15 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-18 15:15 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-18 15:15 - INFO - INI file initialized
+2026-08-18 15:15 - INFO - UI load successful
+2026-08-18 15:15 - INFO - Com : com, Port : ['COM1', 'COM9', 'COM10'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-18 15:15 - INFO - File selected: D:/TeamDev/Ink_withouth_cura/InkV2_Final_without_cura_version/Test_files/ide2.svg
+2026-08-18 15:15 - INFO - Converting SVG -> G-code directly: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.svg
+2026-08-18 15:15 - INFO - G-code created: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-18 15:15 - INFO - G-code ready from SVG: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-18 15:15 - INFO - Raw G-code parsed (270 lines).
+2026-08-18 15:15 - INFO - Feedrate: 500.0 mm/min
+2026-08-18 15:15 - INFO - Normalization shift: X=-2.539, Y=10.697
+2026-08-18 15:15 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-08-18 15:15 - INFO - Final applied shift: X=-2.539, Y=10.697
+2026-08-18 15:23 - INFO - ==================================================
+2026-08-18 15:23 - INFO - New session START at 2026-08-18 15:23
+2026-08-18 15:23 - INFO - ==================================================
+2026-08-18 15:23 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-18 15:23 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-18 15:23 - INFO - Loaded draw_z from config: Z=5.0, draw_z_UP=2.5
+2026-08-18 15:23 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-18 15:23 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-18 15:23 - INFO - INI file initialized
+2026-08-18 15:23 - INFO - UI load successful
+2026-08-18 15:23 - INFO - Com : com, Port : ['COM1', 'COM9', 'COM10'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-18 15:23 - INFO - File selected: D:/TeamDev/Ink_withouth_cura/InkV2_Final_without_cura_version/Test_files/ide2.svg
+2026-08-18 15:23 - INFO - Converting SVG -> G-code directly: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.svg
+2026-08-18 15:23 - INFO - G-code created: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-18 15:23 - INFO - G-code ready from SVG: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-18 15:23 - INFO - Raw G-code parsed (399 lines).
+2026-08-18 15:23 - INFO - Feedrate: 500.0 mm/min
+2026-08-18 15:23 - INFO - Normalization shift: X=-2.539, Y=10.697
+2026-08-18 15:23 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-08-18 15:23 - INFO - Final applied shift: X=-2.539, Y=10.697
+2026-08-18 15:26 - INFO - ==================================================
+2026-08-18 15:26 - INFO - New session START at 2026-08-18 15:26
+2026-08-18 15:26 - INFO - ==================================================
+2026-08-18 15:26 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-18 15:26 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-18 15:26 - INFO - Loaded draw_z from config: Z=5.0, draw_z_UP=2.5
+2026-08-18 15:26 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-18 15:26 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-18 15:26 - INFO - INI file initialized
+2026-08-18 15:26 - INFO - UI load successful
+2026-08-18 15:26 - INFO - Com : com, Port : ['COM1', 'COM9', 'COM10'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-18 15:26 - INFO - File selected: D:/TeamDev/Ink_withouth_cura/InkV2_Final_without_cura_version/Test_files/ide2.svg
+2026-08-18 15:26 - INFO - Converting SVG -> G-code directly: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.svg
+2026-08-18 15:26 - INFO - G-code created: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-18 15:26 - INFO - G-code ready from SVG: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-18 15:26 - INFO - Raw G-code parsed (306 lines).
+2026-08-18 15:26 - INFO - Feedrate: 500.0 mm/min
+2026-08-18 15:26 - INFO - Normalization shift: X=-2.539, Y=10.697
+2026-08-18 15:26 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-08-18 15:26 - INFO - Final applied shift: X=-2.539, Y=10.697
+2026-08-18 15:26 - INFO - Serial communication stopped
+2026-08-18 15:26 - INFO - COM connection close successfully
+2026-08-18 15:26 - INFO - Main window close successfully
+2026-08-18 15:26 - INFO - ==================================================
+2026-08-18 15:26 - INFO - New session close at 2026-08-18 15:26
+2026-08-18 15:26 - INFO - ==================================================
+2026-08-18 15:26 - INFO - ==================================================
+2026-08-18 15:26 - INFO - New session START at 2026-08-18 15:26
+2026-08-18 15:26 - INFO - ==================================================
+2026-08-18 15:26 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-18 15:26 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-18 15:26 - INFO - Loaded draw_z from config: Z=5.0, draw_z_UP=2.5
+2026-08-18 15:26 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-18 15:26 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-18 15:26 - INFO - INI file initialized
+2026-08-18 15:26 - INFO - UI load successful
+2026-08-18 15:26 - INFO - Com : com, Port : ['COM1', 'COM9', 'COM10'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-18 15:26 - INFO - File selected: D:/TeamDev/Ink_withouth_cura/InkV2_Final_without_cura_version/Test_files/ide2.svg
+2026-08-18 15:26 - INFO - Converting SVG -> G-code directly: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.svg
+2026-08-18 15:26 - INFO - G-code created: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-18 15:26 - INFO - G-code ready from SVG: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-18 15:26 - INFO - Raw G-code parsed (270 lines).
+2026-08-18 15:26 - INFO - Feedrate: 500.0 mm/min
+2026-08-18 15:26 - INFO - Normalization shift: X=-2.539, Y=10.697
+2026-08-18 15:26 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-08-18 15:26 - INFO - Final applied shift: X=-2.539, Y=10.697
+2026-08-18 15:28 - INFO - Serial communication stopped
+2026-08-18 15:28 - INFO - COM connection close successfully
+2026-08-18 15:28 - INFO - Main window close successfully
+2026-08-18 15:28 - INFO - ==================================================
+2026-08-18 15:28 - INFO - New session close at 2026-08-18 15:28
+2026-08-18 15:28 - INFO - ==================================================
+2026-08-18 15:28 - INFO - ==================================================
+2026-08-18 15:28 - INFO - New session START at 2026-08-18 15:28
+2026-08-18 15:28 - INFO - ==================================================
+2026-08-18 15:28 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-18 15:28 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-18 15:28 - INFO - Loaded draw_z from config: Z=5.0, draw_z_UP=2.5
+2026-08-18 15:28 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-18 15:28 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-18 15:28 - INFO - INI file initialized
+2026-08-18 15:28 - INFO - UI load successful
+2026-08-18 15:28 - INFO - Com : com, Port : ['COM1', 'COM9', 'COM10'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-18 15:28 - INFO - File selected: D:/TeamDev/Ink_withouth_cura/InkV2_Final_without_cura_version/Test_files/ide2.svg
+2026-08-18 15:28 - INFO - Converting SVG -> G-code directly: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.svg
+2026-08-18 15:28 - INFO - G-code created: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-18 15:28 - INFO - G-code ready from SVG: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-18 15:28 - INFO - Raw G-code parsed (282 lines).
+2026-08-18 15:28 - INFO - Feedrate: 500.0 mm/min
+2026-08-18 15:28 - INFO - Normalization shift: X=-2.539, Y=10.697
+2026-08-18 15:28 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-08-18 15:28 - INFO - Final applied shift: X=-2.539, Y=10.697
+2026-08-18 15:29 - INFO - ==================================================
+2026-08-18 15:29 - INFO - New session START at 2026-08-18 15:29
+2026-08-18 15:29 - INFO - ==================================================
+2026-08-18 15:29 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-18 15:29 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-18 15:29 - INFO - Loaded draw_z from config: Z=5.0, draw_z_UP=2.5
+2026-08-18 15:29 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-18 15:29 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-18 15:29 - INFO - INI file initialized
+2026-08-18 15:29 - INFO - UI load successful
+2026-08-18 15:29 - INFO - Com : com, Port : ['COM1', 'COM9', 'COM10'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-18 15:29 - INFO - File selected: D:/TeamDev/Ink_withouth_cura/InkV2_Final_without_cura_version/Test_files/IDE_F_Cu_gbr.svg
+2026-08-18 15:29 - INFO - Converting SVG -> G-code directly: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\IDE_F_Cu_gbr.svg
+2026-08-18 15:29 - INFO - G-code created: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\IDE_F_Cu_gbr.gcode
+2026-08-18 15:29 - INFO - G-code ready from SVG: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\IDE_F_Cu_gbr.gcode
+2026-08-18 15:29 - INFO - Raw G-code parsed (516 lines).
+2026-08-18 15:29 - INFO - Feedrate: 500.0 mm/min
+2026-08-18 15:29 - INFO - Normalization shift: X=-0.933, Y=3.174
+2026-08-18 15:29 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-08-18 15:29 - INFO - Final applied shift: X=-0.933, Y=3.174
+2026-08-18 15:30 - INFO - Serial communication stopped
+2026-08-18 15:30 - INFO - COM connection close successfully
+2026-08-18 15:30 - INFO - Main window close successfully
+2026-08-18 15:30 - INFO - ==================================================
+2026-08-18 15:30 - INFO - New session close at 2026-08-18 15:30
+2026-08-18 15:30 - INFO - ==================================================
+2026-08-18 15:33 - INFO - ==================================================
+2026-08-18 15:33 - INFO - New session START at 2026-08-18 15:33
+2026-08-18 15:33 - INFO - ==================================================
+2026-08-18 15:33 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-18 15:33 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-18 15:33 - INFO - Loaded draw_z from config: Z=5.0, draw_z_UP=2.5
+2026-08-18 15:33 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-18 15:33 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-18 15:33 - INFO - INI file initialized
+2026-08-18 15:33 - INFO - UI load successful
+2026-08-18 15:33 - INFO - Com : com, Port : ['COM1', 'COM9', 'COM10'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-18 15:36 - INFO - File selected: D:/TeamDev/Ink_withouth_cura/InkV2_Final_without_cura_version/Test_files/ide2.svg
+2026-08-18 15:36 - INFO - Converting SVG -> G-code directly: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.svg
+2026-08-18 15:36 - INFO - G-code created: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-18 15:36 - INFO - G-code ready from SVG: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-18 15:36 - INFO - Raw G-code parsed (282 lines).
+2026-08-18 15:36 - INFO - Feedrate: 500.0 mm/min
+2026-08-18 15:36 - INFO - Normalization shift: X=-2.539, Y=10.697
+2026-08-18 15:36 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-08-18 15:36 - INFO - Final applied shift: X=-2.539, Y=10.697
+2026-08-18 15:39 - INFO - Serial communication stopped
+2026-08-18 15:39 - INFO - COM connection close successfully
+2026-08-18 15:39 - INFO - Main window close successfully
+2026-08-18 15:39 - INFO - ==================================================
+2026-08-18 15:39 - INFO - New session close at 2026-08-18 15:39
+2026-08-18 15:39 - INFO - ==================================================
+2026-08-18 15:49 - INFO - ==================================================
+2026-08-18 15:49 - INFO - New session START at 2026-08-18 15:49
+2026-08-18 15:49 - INFO - ==================================================
+2026-08-18 15:49 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-18 15:49 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-18 15:49 - INFO - Loaded draw_z from config: Z=5.0, draw_z_UP=2.5
+2026-08-18 15:49 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-18 15:49 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-18 15:49 - INFO - INI file initialized
+2026-08-18 15:49 - INFO - UI load successful
+2026-08-18 15:49 - INFO - Com : com, Port : ['COM1', 'COM9', 'COM10'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-18 15:49 - INFO - File selected: D:/TeamDev/Ink_withouth_cura/InkV2_Final_without_cura_version/Test_files/ide2.svg
+2026-08-18 15:49 - INFO - Converting SVG -> G-code directly: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.svg
+2026-08-18 15:49 - INFO - G-code created: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-18 15:49 - INFO - G-code ready from SVG: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-18 15:49 - INFO - Raw G-code parsed (369 lines).
+2026-08-18 15:49 - INFO - Feedrate: 500.0 mm/min
+2026-08-18 15:49 - INFO - Normalization shift: X=-2.539, Y=10.697
+2026-08-18 15:49 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-08-18 15:49 - INFO - Final applied shift: X=-2.539, Y=10.697
+2026-08-18 15:50 - INFO - Serial communication stopped
+2026-08-18 15:50 - INFO - COM connection close successfully
+2026-08-18 15:50 - INFO - Main window close successfully
+2026-08-18 15:50 - INFO - ==================================================
+2026-08-18 15:50 - INFO - New session close at 2026-08-18 15:50
+2026-08-18 15:50 - INFO - ==================================================
+2026-08-18 15:50 - INFO - ==================================================
+2026-08-18 15:50 - INFO - New session START at 2026-08-18 15:50
+2026-08-18 15:50 - INFO - ==================================================
+2026-08-18 15:50 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-18 15:50 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-18 15:50 - INFO - Loaded draw_z from config: Z=5.0, draw_z_UP=2.5
+2026-08-18 15:50 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-18 15:50 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-18 15:50 - INFO - INI file initialized
+2026-08-18 15:50 - INFO - UI load successful
+2026-08-18 15:50 - INFO - Com : com, Port : ['COM1', 'COM9', 'COM10'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-18 15:50 - INFO - File selected: D:/TeamDev/Ink_withouth_cura/InkV2_Final_without_cura_version/Test_files/ide2.svg
+2026-08-18 15:50 - INFO - Converting SVG -> G-code directly: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.svg
+2026-08-18 15:50 - INFO - G-code created: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-18 15:50 - INFO - G-code ready from SVG: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-18 15:50 - INFO - Raw G-code parsed (276 lines).
+2026-08-18 15:50 - INFO - Feedrate: 500.0 mm/min
+2026-08-18 15:50 - INFO - Normalization shift: X=-2.539, Y=10.697
+2026-08-18 15:50 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-08-18 15:50 - INFO - Final applied shift: X=-2.539, Y=10.697
+2026-08-18 15:50 - INFO - Serial communication stopped
+2026-08-18 15:50 - INFO - COM connection close successfully
+2026-08-18 15:50 - INFO - Main window close successfully
+2026-08-18 15:50 - INFO - ==================================================
+2026-08-18 15:50 - INFO - New session close at 2026-08-18 15:50
+2026-08-18 15:50 - INFO - ==================================================
+2026-08-18 15:51 - INFO - ==================================================
+2026-08-18 15:51 - INFO - New session START at 2026-08-18 15:51
+2026-08-18 15:51 - INFO - ==================================================
+2026-08-18 15:51 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-18 15:51 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-18 15:51 - INFO - Loaded draw_z from config: Z=5.0, draw_z_UP=2.5
+2026-08-18 15:51 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-18 15:51 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-18 15:51 - INFO - INI file initialized
+2026-08-18 15:51 - INFO - UI load successful
+2026-08-18 15:51 - INFO - Com : com, Port : ['COM1', 'COM9', 'COM10'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-18 15:51 - INFO - File selected: D:/TeamDev/Ink_withouth_cura/InkV2_Final_without_cura_version/Test_files/ide2.svg
+2026-08-18 15:51 - INFO - Converting SVG -> G-code directly: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.svg
+2026-08-18 15:51 - INFO - G-code created: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-18 15:51 - INFO - G-code ready from SVG: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-18 15:51 - INFO - Raw G-code parsed (336 lines).
+2026-08-18 15:51 - INFO - Feedrate: 500.0 mm/min
+2026-08-18 15:51 - INFO - Normalization shift: X=-2.539, Y=10.697
+2026-08-18 15:51 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-08-18 15:51 - INFO - Final applied shift: X=-2.539, Y=10.697
+2026-08-18 15:52 - INFO - Serial communication stopped
+2026-08-18 15:52 - INFO - COM connection close successfully
+2026-08-18 15:52 - INFO - Main window close successfully
+2026-08-18 15:52 - INFO - ==================================================
+2026-08-18 15:52 - INFO - New session close at 2026-08-18 15:52
+2026-08-18 15:52 - INFO - ==================================================
+2026-08-18 15:53 - INFO - ==================================================
+2026-08-18 15:53 - INFO - New session START at 2026-08-18 15:53
+2026-08-18 15:53 - INFO - ==================================================
+2026-08-18 15:53 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-18 15:53 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-18 15:53 - INFO - Loaded draw_z from config: Z=5.0, draw_z_UP=2.5
+2026-08-18 15:53 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-18 15:53 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-18 15:53 - INFO - INI file initialized
+2026-08-18 15:53 - INFO - UI load successful
+2026-08-18 15:53 - INFO - Com : com, Port : ['COM1', 'COM9', 'COM10'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-18 15:53 - INFO - File selected: D:/TeamDev/Ink_withouth_cura/InkV2_Final_without_cura_version/Test_files/ide2.svg
+2026-08-18 15:53 - INFO - Converting SVG -> G-code directly: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.svg
+2026-08-18 15:53 - INFO - G-code created: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-18 15:53 - INFO - G-code ready from SVG: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-18 15:53 - INFO - Raw G-code parsed (342 lines).
+2026-08-18 15:53 - INFO - Feedrate: 500.0 mm/min
+2026-08-18 15:53 - INFO - Feedrate: 500.0 mm/min
+2026-08-18 15:53 - INFO - Normalization shift: X=-2.539, Y=10.697
+2026-08-18 15:53 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-08-18 15:53 - INFO - Final applied shift: X=-2.539, Y=10.697
+2026-08-18 15:57 - INFO - Serial communication stopped
+2026-08-18 15:57 - INFO - COM connection close successfully
+2026-08-18 15:57 - INFO - Main window close successfully
+2026-08-18 15:57 - INFO - ==================================================
+2026-08-18 15:57 - INFO - New session close at 2026-08-18 15:57
+2026-08-18 15:57 - INFO - ==================================================
+2026-08-18 15:57 - INFO - ==================================================
+2026-08-18 15:57 - INFO - New session START at 2026-08-18 15:57
+2026-08-18 15:57 - INFO - ==================================================
+2026-08-18 15:57 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-18 15:57 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-18 15:57 - INFO - Loaded draw_z from config: Z=5.0, draw_z_UP=2.5
+2026-08-18 15:57 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-18 15:57 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-18 15:57 - INFO - INI file initialized
+2026-08-18 15:57 - INFO - UI load successful
+2026-08-18 15:57 - INFO - Com : com, Port : ['COM1', 'COM9', 'COM10'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-18 15:57 - INFO - File selected: D:/TeamDev/Ink_withouth_cura/InkV2_Final_without_cura_version/Test_files/ide2.svg
+2026-08-18 15:57 - INFO - Converting SVG -> G-code directly: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.svg
+2026-08-18 15:57 - INFO - G-code created: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-18 15:57 - INFO - G-code ready from SVG: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-18 15:57 - INFO - Raw G-code parsed (492 lines).
+2026-08-18 15:57 - INFO - Feedrate: 500.0 mm/min
+2026-08-18 15:57 - INFO - Normalization shift: X=-2.539, Y=10.697
+2026-08-18 15:57 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-08-18 15:57 - INFO - Final applied shift: X=-2.539, Y=10.697
+2026-08-18 15:58 - INFO - Serial communication stopped
+2026-08-18 15:58 - INFO - COM connection close successfully
+2026-08-18 15:58 - INFO - Main window close successfully
+2026-08-18 15:58 - INFO - ==================================================
+2026-08-18 15:58 - INFO - New session close at 2026-08-18 15:58
+2026-08-18 15:58 - INFO - ==================================================
+2026-08-18 15:58 - INFO - ==================================================
+2026-08-18 15:58 - INFO - New session START at 2026-08-18 15:58
+2026-08-18 15:58 - INFO - ==================================================
+2026-08-18 15:58 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-18 15:58 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-18 15:58 - INFO - Loaded draw_z from config: Z=5.0, draw_z_UP=2.5
+2026-08-18 15:58 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-18 15:58 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-18 15:58 - INFO - INI file initialized
+2026-08-18 15:58 - INFO - UI load successful
+2026-08-18 15:58 - INFO - Com : com, Port : ['COM1', 'COM9', 'COM10'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-18 15:58 - INFO - File selected: D:/TeamDev/Ink_withouth_cura/InkV2_Final_without_cura_version/Test_files/ide2.svg
+2026-08-18 15:58 - INFO - Converting SVG -> G-code directly: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.svg
+2026-08-18 15:58 - INFO - G-code created: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-18 15:58 - INFO - G-code ready from SVG: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-18 15:58 - INFO - Raw G-code parsed (339 lines).
+2026-08-18 15:58 - INFO - Feedrate: 500.0 mm/min
+2026-08-18 15:58 - INFO - Normalization shift: X=-2.539, Y=10.697
+2026-08-18 15:58 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-08-18 15:58 - INFO - Final applied shift: X=-2.539, Y=10.697
+2026-08-18 15:59 - INFO - Serial communication stopped
+2026-08-18 15:59 - INFO - COM connection close successfully
+2026-08-18 15:59 - INFO - Main window close successfully
+2026-08-18 15:59 - INFO - ==================================================
+2026-08-18 15:59 - INFO - New session close at 2026-08-18 15:59
+2026-08-18 15:59 - INFO - ==================================================
+2026-08-18 15:59 - INFO - ==================================================
+2026-08-18 15:59 - INFO - New session START at 2026-08-18 15:59
+2026-08-18 15:59 - INFO - ==================================================
+2026-08-18 15:59 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-18 15:59 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-18 15:59 - INFO - Loaded draw_z from config: Z=5.0, draw_z_UP=2.5
+2026-08-18 15:59 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-18 15:59 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-18 15:59 - INFO - INI file initialized
+2026-08-18 15:59 - INFO - UI load successful
+2026-08-18 15:59 - INFO - Com : com, Port : ['COM1', 'COM9', 'COM10'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-18 15:59 - INFO - File selected: D:/TeamDev/Ink_withouth_cura/InkV2_Final_without_cura_version/Test_files/ide2.svg
+2026-08-18 15:59 - INFO - Converting SVG -> G-code directly: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.svg
+2026-08-18 15:59 - INFO - G-code created: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-18 15:59 - INFO - G-code ready from SVG: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-18 15:59 - INFO - Raw G-code parsed (673 lines).
+2026-08-18 15:59 - INFO - Feedrate: 500.0 mm/min
+2026-08-18 15:59 - INFO - Normalization shift: X=-2.539, Y=10.697
+2026-08-18 15:59 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-08-18 15:59 - INFO - Final applied shift: X=-2.539, Y=10.697
+2026-08-18 16:00 - INFO - Serial communication stopped
+2026-08-18 16:00 - INFO - COM connection close successfully
+2026-08-18 16:00 - INFO - Main window close successfully
+2026-08-18 16:00 - INFO - ==================================================
+2026-08-18 16:00 - INFO - New session close at 2026-08-18 16:00
+2026-08-18 16:00 - INFO - ==================================================
+2026-08-18 16:00 - INFO - ==================================================
+2026-08-18 16:00 - INFO - New session START at 2026-08-18 16:00
+2026-08-18 16:00 - INFO - ==================================================
+2026-08-18 16:00 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-18 16:00 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-18 16:00 - INFO - Loaded draw_z from config: Z=5.0, draw_z_UP=2.5
+2026-08-18 16:00 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-18 16:00 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-18 16:00 - INFO - INI file initialized
+2026-08-18 16:00 - INFO - UI load successful
+2026-08-18 16:00 - INFO - Com : com, Port : ['COM1', 'COM9', 'COM10'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-18 16:00 - INFO - File selected: D:/TeamDev/Ink_withouth_cura/InkV2_Final_without_cura_version/Test_files/ide2.svg
+2026-08-18 16:00 - INFO - Converting SVG -> G-code directly: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.svg
+2026-08-18 16:00 - INFO - G-code created: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-18 16:00 - INFO - G-code ready from SVG: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-18 16:00 - INFO - Raw G-code parsed (694 lines).
+2026-08-18 16:00 - INFO - Feedrate: 500.0 mm/min
+2026-08-18 16:00 - INFO - Normalization shift: X=-2.539, Y=10.697
+2026-08-18 16:00 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-08-18 16:00 - INFO - Final applied shift: X=-2.539, Y=10.697
+2026-08-18 16:01 - INFO - Serial communication stopped
+2026-08-18 16:01 - INFO - COM connection close successfully
+2026-08-18 16:01 - INFO - Main window close successfully
+2026-08-18 16:01 - INFO - ==================================================
+2026-08-18 16:01 - INFO - New session close at 2026-08-18 16:01
+2026-08-18 16:01 - INFO - ==================================================
+2026-08-18 16:01 - INFO - ==================================================
+2026-08-18 16:01 - INFO - New session START at 2026-08-18 16:01
+2026-08-18 16:01 - INFO - ==================================================
+2026-08-18 16:01 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-18 16:01 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-18 16:01 - INFO - Loaded draw_z from config: Z=5.0, draw_z_UP=2.5
+2026-08-18 16:01 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-18 16:01 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-18 16:01 - INFO - INI file initialized
+2026-08-18 16:01 - INFO - UI load successful
+2026-08-18 16:01 - INFO - Com : com, Port : ['COM1', 'COM9', 'COM10'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-18 16:01 - INFO - File selected: D:/TeamDev/Ink_withouth_cura/InkV2_Final_without_cura_version/Test_files/ide2.svg
+2026-08-18 16:01 - INFO - Converting SVG -> G-code directly: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.svg
+2026-08-18 16:01 - INFO - G-code created: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-18 16:01 - INFO - G-code ready from SVG: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-18 16:01 - INFO - Raw G-code parsed (610 lines).
+2026-08-18 16:01 - INFO - Feedrate: 500.0 mm/min
+2026-08-18 16:01 - INFO - Feedrate: 500.0 mm/min
+2026-08-18 16:01 - INFO - Normalization shift: X=-2.539, Y=10.697
+2026-08-18 16:01 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-08-18 16:01 - INFO - Final applied shift: X=-2.539, Y=10.697
+2026-08-18 16:02 - INFO - Serial communication stopped
+2026-08-18 16:02 - INFO - COM connection close successfully
+2026-08-18 16:02 - INFO - Main window close successfully
+2026-08-18 16:02 - INFO - ==================================================
+2026-08-18 16:02 - INFO - New session close at 2026-08-18 16:02
+2026-08-18 16:02 - INFO - ==================================================
+2026-08-18 16:02 - INFO - ==================================================
+2026-08-18 16:02 - INFO - New session START at 2026-08-18 16:02
+2026-08-18 16:02 - INFO - ==================================================
+2026-08-18 16:02 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-18 16:02 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-18 16:02 - INFO - Loaded draw_z from config: Z=5.0, draw_z_UP=2.5
+2026-08-18 16:02 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-18 16:02 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-18 16:02 - INFO - INI file initialized
+2026-08-18 16:02 - INFO - UI load successful
+2026-08-18 16:02 - INFO - Com : com, Port : ['COM1', 'COM9', 'COM10'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-18 16:02 - INFO - File selected: D:/TeamDev/Ink_withouth_cura/InkV2_Final_without_cura_version/Test_files/ide2.svg
+2026-08-18 16:02 - INFO - Converting SVG -> G-code directly: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.svg
+2026-08-18 16:02 - INFO - G-code created: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-18 16:02 - INFO - G-code ready from SVG: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-18 16:02 - INFO - Raw G-code parsed (628 lines).
+2026-08-18 16:02 - INFO - Feedrate: 500.0 mm/min
+2026-08-18 16:02 - INFO - Normalization shift: X=-2.539, Y=10.697
+2026-08-18 16:02 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-08-18 16:02 - INFO - Final applied shift: X=-2.539, Y=10.697
+2026-08-18 16:03 - INFO - Serial communication stopped
+2026-08-18 16:03 - INFO - COM connection close successfully
+2026-08-18 16:03 - INFO - Main window close successfully
+2026-08-18 16:03 - INFO - ==================================================
+2026-08-18 16:03 - INFO - New session close at 2026-08-18 16:03
+2026-08-18 16:03 - INFO - ==================================================
+2026-08-18 16:03 - INFO - ==================================================
+2026-08-18 16:03 - INFO - New session START at 2026-08-18 16:03
+2026-08-18 16:03 - INFO - ==================================================
+2026-08-18 16:03 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-18 16:03 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-18 16:03 - INFO - Loaded draw_z from config: Z=5.0, draw_z_UP=2.5
+2026-08-18 16:03 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-18 16:03 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-18 16:03 - INFO - INI file initialized
+2026-08-18 16:03 - INFO - UI load successful
+2026-08-18 16:03 - INFO - Com : com, Port : ['COM1', 'COM9', 'COM10'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-18 16:04 - INFO - File selected: D:/TeamDev/Ink_withouth_cura/InkV2_Final_without_cura_version/Test_files/ide2.svg
+2026-08-18 16:04 - INFO - Converting SVG -> G-code directly: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.svg
+2026-08-18 16:04 - INFO - G-code created: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-18 16:04 - INFO - G-code ready from SVG: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-18 16:04 - INFO - Raw G-code parsed (670 lines).
+2026-08-18 16:04 - INFO - Feedrate: 500.0 mm/min
+2026-08-18 16:04 - INFO - Normalization shift: X=-2.539, Y=10.697
+2026-08-18 16:04 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-08-18 16:04 - INFO - Final applied shift: X=-2.539, Y=10.697
+2026-08-18 16:04 - INFO - Serial communication stopped
+2026-08-18 16:04 - INFO - COM connection close successfully
+2026-08-18 16:04 - INFO - Main window close successfully
+2026-08-18 16:04 - INFO - ==================================================
+2026-08-18 16:04 - INFO - New session close at 2026-08-18 16:04
+2026-08-18 16:04 - INFO - ==================================================
+2026-08-18 16:04 - INFO - ==================================================
+2026-08-18 16:04 - INFO - New session START at 2026-08-18 16:04
+2026-08-18 16:04 - INFO - ==================================================
+2026-08-18 16:04 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-18 16:04 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-18 16:04 - INFO - Loaded draw_z from config: Z=5.0, draw_z_UP=2.5
+2026-08-18 16:04 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-18 16:04 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-18 16:04 - INFO - INI file initialized
+2026-08-18 16:04 - INFO - UI load successful
+2026-08-18 16:04 - INFO - Com : com, Port : ['COM1', 'COM9', 'COM10'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-18 16:04 - INFO - File selected: D:/TeamDev/Ink_withouth_cura/InkV2_Final_without_cura_version/Test_files/ide2.svg
+2026-08-18 16:04 - INFO - Converting SVG -> G-code directly: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.svg
+2026-08-18 16:04 - INFO - G-code created: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-18 16:04 - INFO - G-code ready from SVG: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-18 16:04 - INFO - Raw G-code parsed (598 lines).
+2026-08-18 16:04 - INFO - Feedrate: 500.0 mm/min
+2026-08-18 16:05 - INFO - Normalization shift: X=-2.539, Y=10.697
+2026-08-18 16:05 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-08-18 16:05 - INFO - Final applied shift: X=-2.539, Y=10.697
+2026-08-18 16:06 - INFO - Serial communication stopped
+2026-08-18 16:06 - INFO - COM connection close successfully
+2026-08-18 16:06 - INFO - Main window close successfully
+2026-08-18 16:06 - INFO - ==================================================
+2026-08-18 16:06 - INFO - New session close at 2026-08-18 16:06
+2026-08-18 16:06 - INFO - ==================================================
+2026-08-18 16:06 - INFO - ==================================================
+2026-08-18 16:06 - INFO - New session START at 2026-08-18 16:06
+2026-08-18 16:06 - INFO - ==================================================
+2026-08-18 16:06 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-18 16:06 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-18 16:06 - INFO - Loaded draw_z from config: Z=5.0, draw_z_UP=2.5
+2026-08-18 16:06 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-18 16:06 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-18 16:06 - INFO - INI file initialized
+2026-08-18 16:06 - INFO - UI load successful
+2026-08-18 16:06 - INFO - Com : com, Port : ['COM1', 'COM9', 'COM10'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-18 16:06 - INFO - File selected: D:/TeamDev/Ink_withouth_cura/InkV2_Final_without_cura_version/Test_files/ide2.svg
+2026-08-18 16:06 - INFO - Converting SVG -> G-code directly: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.svg
+2026-08-18 16:06 - INFO - G-code created: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-18 16:06 - INFO - G-code ready from SVG: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-18 16:06 - INFO - Raw G-code parsed (673 lines).
+2026-08-18 16:06 - INFO - Feedrate: 500.0 mm/min
+2026-08-18 16:06 - INFO - Normalization shift: X=-2.539, Y=10.697
+2026-08-18 16:06 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-08-18 16:06 - INFO - Final applied shift: X=-2.539, Y=10.697
+2026-08-18 16:07 - INFO - Serial communication stopped
+2026-08-18 16:07 - INFO - COM connection close successfully
+2026-08-18 16:07 - INFO - Main window close successfully
+2026-08-18 16:07 - INFO - ==================================================
+2026-08-18 16:07 - INFO - New session close at 2026-08-18 16:07
+2026-08-18 16:07 - INFO - ==================================================
+2026-08-18 16:07 - INFO - ==================================================
+2026-08-18 16:07 - INFO - New session START at 2026-08-18 16:07
+2026-08-18 16:07 - INFO - ==================================================
+2026-08-18 16:07 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-18 16:07 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-18 16:07 - INFO - Loaded draw_z from config: Z=5.0, draw_z_UP=2.5
+2026-08-18 16:07 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-18 16:07 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-18 16:07 - INFO - INI file initialized
+2026-08-18 16:07 - INFO - UI load successful
+2026-08-18 16:07 - INFO - Com : com, Port : ['COM1', 'COM9', 'COM10'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-18 16:07 - INFO - File selected: D:/TeamDev/Ink_withouth_cura/InkV2_Final_without_cura_version/Test_files/ide2.svg
+2026-08-18 16:07 - INFO - Converting SVG -> G-code directly: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.svg
+2026-08-18 16:07 - INFO - G-code created: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-18 16:07 - INFO - G-code ready from SVG: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-18 16:07 - INFO - Raw G-code parsed (616 lines).
+2026-08-18 16:07 - INFO - Feedrate: 500.0 mm/min
+2026-08-18 16:07 - INFO - Normalization shift: X=-2.539, Y=10.697
+2026-08-18 16:07 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-08-18 16:07 - INFO - Final applied shift: X=-2.539, Y=10.697
+2026-08-18 16:07 - INFO - Serial communication stopped
+2026-08-18 16:07 - INFO - COM connection close successfully
+2026-08-18 16:07 - INFO - Main window close successfully
+2026-08-18 16:07 - INFO - ==================================================
+2026-08-18 16:07 - INFO - New session close at 2026-08-18 16:07
+2026-08-18 16:07 - INFO - ==================================================
+2026-08-18 16:07 - INFO - ==================================================
+2026-08-18 16:07 - INFO - New session START at 2026-08-18 16:07
+2026-08-18 16:07 - INFO - ==================================================
+2026-08-18 16:07 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-18 16:07 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-18 16:07 - INFO - Loaded draw_z from config: Z=5.0, draw_z_UP=2.5
+2026-08-18 16:07 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-18 16:07 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-18 16:07 - INFO - INI file initialized
+2026-08-18 16:07 - INFO - UI load successful
+2026-08-18 16:07 - INFO - Com : com, Port : ['COM1', 'COM9', 'COM10'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-18 16:07 - INFO - File selected: D:/TeamDev/Ink_withouth_cura/InkV2_Final_without_cura_version/Test_files/ide2.svg
+2026-08-18 16:07 - INFO - Converting SVG -> G-code directly: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.svg
+2026-08-18 16:07 - INFO - G-code created: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-18 16:07 - INFO - G-code ready from SVG: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-18 16:07 - INFO - Raw G-code parsed (580 lines).
+2026-08-18 16:07 - INFO - Feedrate: 500.0 mm/min
+2026-08-18 16:07 - INFO - Normalization shift: X=-2.539, Y=10.697
+2026-08-18 16:07 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-08-18 16:07 - INFO - Final applied shift: X=-2.539, Y=10.697
+2026-08-18 16:09 - INFO - File selected: D:/TeamDev/Ink_withouth_cura/InkV2_Final_without_cura_version/Test_files/IDE_F_Cu_gbr.svg
+2026-08-18 16:09 - INFO - Converting SVG -> G-code directly: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\IDE_F_Cu_gbr.svg
+2026-08-18 16:09 - ERROR - SVG conversion failed:
+'MultiPolygon' object has no attribute 'exterior'
+2026-08-18 16:09 - INFO - File selected: D:/TeamDev/Ink_withouth_cura/InkV2_Final_without_cura_version/Test_files/IDE_F_Cu_gbr.svg
+2026-08-18 16:09 - INFO - Converting SVG -> G-code directly: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\IDE_F_Cu_gbr.svg
+2026-08-18 16:09 - ERROR - SVG conversion failed:
+'MultiPolygon' object has no attribute 'exterior'
+2026-08-18 16:11 - INFO - ==================================================
+2026-08-18 16:11 - INFO - New session START at 2026-08-18 16:11
+2026-08-18 16:11 - INFO - ==================================================
+2026-08-18 16:11 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-18 16:11 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-18 16:11 - INFO - Loaded draw_z from config: Z=5.0, draw_z_UP=2.5
+2026-08-18 16:11 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-18 16:11 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-18 16:11 - INFO - INI file initialized
+2026-08-18 16:11 - INFO - UI load successful
+2026-08-18 16:11 - INFO - Com : com, Port : ['COM1', 'COM9', 'COM10'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-18 16:11 - INFO - File selected: D:/TeamDev/Ink_withouth_cura/InkV2_Final_without_cura_version/Test_files/IDE_F_Cu_gbr.svg
+2026-08-18 16:11 - INFO - Converting SVG -> G-code directly: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\IDE_F_Cu_gbr.svg
+2026-08-18 16:11 - INFO - G-code created: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\IDE_F_Cu_gbr.gcode
+2026-08-18 16:11 - INFO - G-code ready from SVG: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\IDE_F_Cu_gbr.gcode
+2026-08-18 16:11 - INFO - Raw G-code parsed (736 lines).
+2026-08-18 16:11 - INFO - Feedrate: 500.0 mm/min
+2026-08-18 16:11 - INFO - Normalization shift: X=-1.333, Y=2.774
+2026-08-18 16:11 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-08-18 16:11 - INFO - Final applied shift: X=-1.333, Y=2.774
+2026-08-18 16:18 - INFO - Serial communication stopped
+2026-08-18 16:18 - INFO - COM connection close successfully
+2026-08-18 16:18 - INFO - Main window close successfully
+2026-08-18 16:18 - INFO - ==================================================
+2026-08-18 16:18 - INFO - New session close at 2026-08-18 16:18
+2026-08-18 16:18 - INFO - ==================================================
+2026-08-18 16:18 - INFO - ==================================================
+2026-08-18 16:18 - INFO - New session START at 2026-08-18 16:18
+2026-08-18 16:18 - INFO - ==================================================
+2026-08-18 16:18 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-18 16:18 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-18 16:18 - INFO - Loaded draw_z from config: Z=5.0, draw_z_UP=2.5
+2026-08-18 16:18 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-18 16:18 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-18 16:18 - INFO - INI file initialized
+2026-08-18 16:18 - INFO - UI load successful
+2026-08-18 16:18 - INFO - Com : com, Port : ['COM1', 'COM9', 'COM10'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-18 16:18 - INFO - File selected: D:/TeamDev/Ink_withouth_cura/InkV2_Final_without_cura_version/Test_files/IDE_F_Cu_gbr.svg
+2026-08-18 16:18 - INFO - Converting SVG -> G-code directly: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\IDE_F_Cu_gbr.svg
+2026-08-18 16:18 - INFO - G-code created: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\IDE_F_Cu_gbr.gcode
+2026-08-18 16:18 - INFO - G-code ready from SVG: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\IDE_F_Cu_gbr.gcode
+2026-08-18 16:18 - INFO - Raw G-code parsed (736 lines).
+2026-08-18 16:18 - INFO - Feedrate: 500.0 mm/min
+2026-08-18 16:18 - INFO - Normalization shift: X=-1.333, Y=2.774
+2026-08-18 16:18 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-08-18 16:18 - INFO - Final applied shift: X=-1.333, Y=2.774
+2026-08-18 16:19 - INFO - Serial communication stopped
+2026-08-18 16:19 - INFO - COM connection close successfully
+2026-08-18 16:19 - INFO - Main window close successfully
+2026-08-18 16:19 - INFO - ==================================================
+2026-08-18 16:19 - INFO - New session close at 2026-08-18 16:19
+2026-08-18 16:19 - INFO - ==================================================
+2026-08-18 16:22 - INFO - ==================================================
+2026-08-18 16:22 - INFO - New session START at 2026-08-18 16:22
+2026-08-18 16:22 - INFO - ==================================================
+2026-08-18 16:22 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-18 16:22 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-18 16:22 - INFO - Loaded draw_z from config: Z=5.0, draw_z_UP=2.5
+2026-08-18 16:22 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-18 16:22 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-18 16:22 - INFO - INI file initialized
+2026-08-18 16:22 - INFO - UI load successful
+2026-08-18 16:22 - INFO - Com : com, Port : ['COM1', 'COM9', 'COM10'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-18 16:22 - INFO - File selected: D:/TeamDev/Ink_withouth_cura/InkV2_Final_without_cura_version/Test_files/IDE_F_Cu_gbr.svg
+2026-08-18 16:22 - INFO - Converting SVG -> G-code directly: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\IDE_F_Cu_gbr.svg
+2026-08-18 16:22 - INFO - G-code created: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\IDE_F_Cu_gbr.gcode
+2026-08-18 16:22 - INFO - G-code ready from SVG: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\IDE_F_Cu_gbr.gcode
+2026-08-18 16:22 - INFO - Raw G-code parsed (1800 lines).
+2026-08-18 16:22 - INFO - Feedrate: 500.0 mm/min
+2026-08-18 16:22 - INFO - Normalization shift: X=-1.158, Y=2.949
+2026-08-18 16:22 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-08-18 16:22 - INFO - Final applied shift: X=-1.158, Y=2.949
+2026-08-18 16:25 - INFO - Serial communication stopped
+2026-08-18 16:25 - INFO - COM connection close successfully
+2026-08-18 16:25 - INFO - Main window close successfully
+2026-08-18 16:25 - INFO - ==================================================
+2026-08-18 16:25 - INFO - New session close at 2026-08-18 16:25
+2026-08-18 16:25 - INFO - ==================================================
+2026-08-18 16:25 - INFO - ==================================================
+2026-08-18 16:25 - INFO - New session START at 2026-08-18 16:25
+2026-08-18 16:25 - INFO - ==================================================
+2026-08-18 16:25 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-18 16:25 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-18 16:25 - INFO - Loaded draw_z from config: Z=5.0, draw_z_UP=2.5
+2026-08-18 16:25 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-18 16:25 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-18 16:25 - INFO - INI file initialized
+2026-08-18 16:25 - INFO - UI load successful
+2026-08-18 16:25 - INFO - Com : com, Port : ['COM1', 'COM9', 'COM10'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-18 16:25 - INFO - File selected: D:/TeamDev/Ink_withouth_cura/InkV2_Final_without_cura_version/Test_files/ide2.svg
+2026-08-18 16:25 - INFO - Converting SVG -> G-code directly: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.svg
+2026-08-18 16:25 - INFO - G-code created: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-18 16:25 - INFO - G-code ready from SVG: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-18 16:25 - INFO - Raw G-code parsed (580 lines).
+2026-08-18 16:25 - INFO - Feedrate: 500.0 mm/min
+2026-08-18 16:25 - INFO - Normalization shift: X=-2.539, Y=10.697
+2026-08-18 16:25 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-08-18 16:25 - INFO - Final applied shift: X=-2.539, Y=10.697
+2026-08-18 16:26 - INFO - File selected: D:/TeamDev/Ink_withouth_cura/InkV2_Final_without_cura_version/Test_files/IDE_F_Cu_gbr.svg
+2026-08-18 16:26 - INFO - Converting SVG -> G-code directly: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\IDE_F_Cu_gbr.svg
+2026-08-18 16:26 - INFO - G-code created: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\IDE_F_Cu_gbr.gcode
+2026-08-18 16:26 - INFO - G-code ready from SVG: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\IDE_F_Cu_gbr.gcode
+2026-08-18 16:26 - INFO - Raw G-code parsed (1800 lines).
+2026-08-18 16:26 - INFO - Feedrate: 500.0 mm/min
+2026-08-18 16:26 - INFO - Normalization shift: X=-1.158, Y=2.949
+2026-08-18 16:26 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-08-18 16:26 - INFO - Final applied shift: X=-1.158, Y=2.949
+2026-08-18 16:29 - INFO - Serial communication stopped
+2026-08-18 16:29 - INFO - COM connection close successfully
+2026-08-18 16:29 - INFO - Main window close successfully
+2026-08-18 16:29 - INFO - ==================================================
+2026-08-18 16:29 - INFO - New session close at 2026-08-18 16:29
+2026-08-18 16:29 - INFO - ==================================================
+2026-08-18 16:29 - INFO - ==================================================
+2026-08-18 16:29 - INFO - New session START at 2026-08-18 16:29
+2026-08-18 16:29 - INFO - ==================================================
+2026-08-18 16:29 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-18 16:29 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-18 16:29 - INFO - Loaded draw_z from config: Z=5.0, draw_z_UP=2.5
+2026-08-18 16:29 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-18 16:29 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-18 16:29 - INFO - INI file initialized
+2026-08-18 16:29 - INFO - UI load successful
+2026-08-18 16:29 - INFO - Com : com, Port : ['COM1', 'COM9', 'COM10'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-18 16:29 - INFO - File selected: D:/TeamDev/Ink_withouth_cura/InkV2_Final_without_cura_version/Test_files/IDE_F_Cu_gbr.svg
+2026-08-18 16:29 - INFO - Converting SVG -> G-code directly: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\IDE_F_Cu_gbr.svg
+2026-08-18 16:29 - INFO - G-code created: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\IDE_F_Cu_gbr.gcode
+2026-08-18 16:29 - INFO - G-code ready from SVG: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\IDE_F_Cu_gbr.gcode
+2026-08-18 16:29 - INFO - Raw G-code parsed (498 lines).
+2026-08-18 16:29 - INFO - Feedrate: 500.0 mm/min
+2026-08-18 16:29 - INFO - Normalization shift: X=-0.933, Y=3.174
+2026-08-18 16:29 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-08-18 16:29 - INFO - Final applied shift: X=-0.933, Y=3.174
+2026-08-18 16:30 - INFO - Close event ignored.
+2026-08-18 16:30 - INFO - Serial communication stopped
+2026-08-18 16:30 - INFO - COM connection close successfully
+2026-08-18 16:30 - INFO - Main window close successfully
+2026-08-18 16:30 - INFO - ==================================================
+2026-08-18 16:30 - INFO - New session close at 2026-08-18 16:30
+2026-08-18 16:30 - INFO - ==================================================
+2026-08-18 16:30 - INFO - ==================================================
+2026-08-18 16:30 - INFO - New session START at 2026-08-18 16:30
+2026-08-18 16:30 - INFO - ==================================================
+2026-08-18 16:30 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-18 16:30 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-18 16:30 - INFO - Loaded draw_z from config: Z=5.0, draw_z_UP=2.5
+2026-08-18 16:30 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-18 16:30 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-18 16:30 - INFO - INI file initialized
+2026-08-18 16:30 - INFO - UI load successful
+2026-08-18 16:30 - INFO - Com : com, Port : ['COM1', 'COM9', 'COM10'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-18 16:31 - INFO - File selected: D:/TeamDev/Ink_withouth_cura/InkV2_Final_without_cura_version/Test_files/ide2.svg
+2026-08-18 16:31 - INFO - Converting SVG -> G-code directly: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.svg
+2026-08-18 16:31 - INFO - G-code created: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-18 16:31 - INFO - G-code ready from SVG: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-18 16:31 - INFO - Raw G-code parsed (276 lines).
+2026-08-18 16:31 - INFO - Feedrate: 500.0 mm/min
+2026-08-18 16:31 - INFO - Normalization shift: X=-2.539, Y=10.697
+2026-08-18 16:31 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-08-18 16:31 - INFO - Final applied shift: X=-2.539, Y=10.697
+2026-08-18 16:32 - INFO - Serial communication stopped
+2026-08-18 16:32 - INFO - COM connection close successfully
+2026-08-18 16:32 - INFO - Main window close successfully
+2026-08-18 16:32 - INFO - ==================================================
+2026-08-18 16:32 - INFO - New session close at 2026-08-18 16:32
+2026-08-18 16:32 - INFO - ==================================================
+2026-08-18 16:47 - INFO - ==================================================
+2026-08-18 16:47 - INFO - New session START at 2026-08-18 16:47
+2026-08-18 16:47 - INFO - ==================================================
+2026-08-18 16:47 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-18 16:47 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-18 16:47 - INFO - Loaded draw_z from config: Z=5.0, draw_z_UP=2.5
+2026-08-18 16:47 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-18 16:47 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-18 16:47 - INFO - INI file initialized
+2026-08-18 16:47 - INFO - UI load successful
+2026-08-18 16:47 - INFO - Com : com, Port : ['COM1', 'COM9', 'COM10'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-18 16:48 - INFO - File selected: D:/TeamDev/Ink_withouth_cura/InkV2_Final_without_cura_version/Test_files/ide2.svg
+2026-08-18 16:48 - INFO - Converting SVG -> G-code directly: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.svg
+2026-08-18 16:48 - INFO - G-code created: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-18 16:48 - INFO - G-code ready from SVG: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-18 16:48 - INFO - Raw G-code parsed (276 lines).
+2026-08-18 16:48 - INFO - Feedrate: 500.0 mm/min
+2026-08-18 16:48 - INFO - Normalization shift: X=-2.539, Y=10.697
+2026-08-18 16:48 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-08-18 16:48 - INFO - Final applied shift: X=-2.539, Y=10.697
+2026-08-18 16:48 - INFO - ==================================================
+2026-08-18 16:48 - INFO - New session START at 2026-08-18 16:48
+2026-08-18 16:48 - INFO - ==================================================
+2026-08-18 16:48 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-18 16:48 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-18 16:48 - INFO - Loaded draw_z from config: Z=5.0, draw_z_UP=2.5
+2026-08-18 16:48 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-18 16:48 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-18 16:48 - INFO - INI file initialized
+2026-08-18 16:48 - INFO - UI load successful
+2026-08-18 16:48 - INFO - Com : com, Port : ['COM1', 'COM9', 'COM10'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-18 16:48 - INFO - File selected: D:/TeamDev/Ink_withouth_cura/InkV2_Final_without_cura_version/Test_files/ide2.svg
+2026-08-18 16:48 - INFO - Converting SVG -> G-code directly: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.svg
+2026-08-18 16:48 - INFO - G-code created: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-18 16:48 - INFO - G-code ready from SVG: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-18 16:48 - INFO - Raw G-code parsed (369 lines).
+2026-08-18 16:48 - INFO - Feedrate: 500.0 mm/min
+2026-08-18 16:48 - INFO - Normalization shift: X=-2.539, Y=10.697
+2026-08-18 16:48 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-08-18 16:48 - INFO - Final applied shift: X=-2.539, Y=10.697
+2026-08-18 16:49 - INFO - File selected: D:/TeamDev/Ink_withouth_cura/InkV2_Final_without_cura_version/Test_files/IDE_F_Cu_gbr.svg
+2026-08-18 16:49 - INFO - Converting SVG -> G-code directly: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\IDE_F_Cu_gbr.svg
+2026-08-18 16:49 - INFO - G-code created: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\IDE_F_Cu_gbr.gcode
+2026-08-18 16:49 - INFO - G-code ready from SVG: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\IDE_F_Cu_gbr.gcode
+2026-08-18 16:49 - INFO - Raw G-code parsed (738 lines).
+2026-08-18 16:49 - INFO - Feedrate: 500.0 mm/min
+2026-08-18 16:49 - INFO - Normalization shift: X=-0.933, Y=3.174
+2026-08-18 16:49 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-08-18 16:49 - INFO - Final applied shift: X=-0.933, Y=3.174
+2026-08-18 16:50 - INFO - File selected: D:/TeamDev/Ink_withouth_cura/InkV2_Final_without_cura_version/Test_files/ide2.svg
+2026-08-18 16:50 - INFO - Converting SVG -> G-code directly: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.svg
+2026-08-18 16:50 - INFO - G-code created: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-18 16:50 - INFO - G-code ready from SVG: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-18 16:50 - INFO - Raw G-code parsed (369 lines).
+2026-08-18 16:50 - INFO - Feedrate: 500.0 mm/min
+2026-08-18 16:50 - INFO - Normalization shift: X=-2.539, Y=10.697
+2026-08-18 16:50 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-08-18 16:50 - INFO - Final applied shift: X=-2.539, Y=10.697
+2026-08-18 16:51 - INFO - File selected: D:/TeamDev/Ink_withouth_cura/InkV2_Final_Without_cura_Without_E/Test_files/testbox2.svg
+2026-08-18 16:51 - INFO - Converting SVG -> G-code directly: D:\TeamDev\Ink_withouth_cura\InkV2_Final_Without_cura_Without_E\Test_files\testbox2.svg
+2026-08-18 16:51 - INFO - G-code created: D:\TeamDev\Ink_withouth_cura\InkV2_Final_Without_cura_Without_E\Test_files\testbox2.gcode
+2026-08-18 16:51 - INFO - G-code ready from SVG: D:\TeamDev\Ink_withouth_cura\InkV2_Final_Without_cura_Without_E\Test_files\testbox2.gcode
+2026-08-18 16:51 - INFO - Raw G-code parsed (310 lines).
+2026-08-18 16:51 - INFO - Feedrate: 500.0 mm/min
+2026-08-18 16:51 - INFO - Feedrate: 500.0 mm/min
+2026-08-18 16:51 - INFO - Normalization shift: X=-0.000, Y=-0.000
+2026-08-18 16:51 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-08-18 16:51 - INFO - Final applied shift: X=0.000, Y=0.000
+2026-08-18 16:51 - INFO - Serial communication stopped
+2026-08-18 16:51 - INFO - COM connection close successfully
+2026-08-18 16:51 - INFO - Main window close successfully
+2026-08-18 16:51 - INFO - ==================================================
+2026-08-18 16:51 - INFO - New session close at 2026-08-18 16:51
+2026-08-18 16:51 - INFO - ==================================================
+2026-08-18 16:53 - INFO - ==================================================
+2026-08-18 16:53 - INFO - New session START at 2026-08-18 16:53
+2026-08-18 16:53 - INFO - ==================================================
+2026-08-18 16:53 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-18 16:53 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-18 16:53 - INFO - Loaded draw_z from config: Z=5.0, draw_z_UP=2.5
+2026-08-18 16:53 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-18 16:53 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-18 16:53 - INFO - INI file initialized
+2026-08-18 16:53 - INFO - UI load successful
+2026-08-18 16:53 - INFO - Com : com, Port : ['COM1', 'COM9', 'COM10'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-18 16:54 - INFO - File selected: D:/TeamDev/Ink_withouth_cura/InkV2_Final_without_cura_version/Test_files/ide2.svg
+2026-08-18 16:54 - INFO - Converting SVG -> G-code directly: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.svg
+2026-08-18 16:54 - INFO - G-code created: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-18 16:54 - INFO - G-code ready from SVG: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-18 16:54 - INFO - Raw G-code parsed (369 lines).
+2026-08-18 16:54 - INFO - Feedrate: 500.0 mm/min
+2026-08-18 16:54 - INFO - Normalization shift: X=-2.539, Y=10.697
+2026-08-18 16:54 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-08-18 16:54 - INFO - Final applied shift: X=-2.539, Y=10.697
+2026-08-18 16:54 - INFO - Serial communication stopped
+2026-08-18 16:54 - INFO - COM connection close successfully
+2026-08-18 16:54 - INFO - Main window close successfully
+2026-08-18 16:54 - INFO - ==================================================
+2026-08-18 16:54 - INFO - New session close at 2026-08-18 16:54
+2026-08-18 16:54 - INFO - ==================================================
+2026-08-18 17:29 - INFO - ==================================================
+2026-08-18 17:29 - INFO - New session START at 2026-08-18 17:29
+2026-08-18 17:29 - INFO - ==================================================
+2026-08-18 17:29 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-18 17:29 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-18 17:29 - INFO - Loaded draw_z from config: Z=5.0, draw_z_UP=2.5
+2026-08-18 17:29 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-18 17:29 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-18 17:29 - INFO - INI file initialized
+2026-08-18 17:29 - INFO - UI load successful
+2026-08-18 17:29 - INFO - Com : com, Port : ['COM1', 'COM9', 'COM10'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-18 17:30 - INFO - Serial communication stopped
+2026-08-18 17:30 - INFO - COM connection close successfully
+2026-08-18 17:30 - INFO - Main window close successfully
+2026-08-18 17:30 - INFO - ==================================================
+2026-08-18 17:30 - INFO - New session close at 2026-08-18 17:30
+2026-08-18 17:30 - INFO - ==================================================
+2026-08-19 10:33 - INFO - ==================================================
+2026-08-19 10:33 - INFO - New session START at 2026-08-19 10:33
+2026-08-19 10:33 - INFO - ==================================================
+2026-08-19 10:33 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-19 10:33 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-19 10:33 - INFO - Loaded draw_z from config: Z=5.0, draw_z_UP=2.5
+2026-08-19 10:33 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-19 10:33 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-19 10:33 - INFO - INI file initialized
+2026-08-19 10:33 - INFO - UI load successful
+2026-08-19 10:33 - INFO - Com : com, Port : ['COM1', 'COM9', 'COM10'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-19 10:36 - INFO - File selected: D:/TeamDev/Ink_withouth_cura/InkV2_Final_without_cura_version/Test_files/ide2.svg
+2026-08-19 10:36 - INFO - Converting SVG -> G-code directly: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.svg
+2026-08-19 10:36 - INFO - G-code created: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-19 10:36 - INFO - G-code ready from SVG: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-19 10:36 - INFO - Raw G-code parsed (369 lines).
+2026-08-19 10:36 - INFO - Feedrate: 500.0 mm/min
+2026-08-19 10:36 - INFO - Normalization shift: X=-2.539, Y=10.697
+2026-08-19 10:36 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-08-19 10:36 - INFO - Final applied shift: X=-2.539, Y=10.697
+2026-08-19 10:36 - INFO - Serial communication stopped
+2026-08-19 10:36 - INFO - COM connection close successfully
+2026-08-19 10:36 - INFO - Main window close successfully
+2026-08-19 10:36 - INFO - ==================================================
+2026-08-19 10:36 - INFO - New session close at 2026-08-19 10:36
+2026-08-19 10:36 - INFO - ==================================================
+2026-08-19 10:47 - INFO - ==================================================
+2026-08-19 10:47 - INFO - New session START at 2026-08-19 10:47
+2026-08-19 10:47 - INFO - ==================================================
+2026-08-19 10:47 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-19 10:47 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-19 10:47 - INFO - Loaded draw_z from config: Z=5.0, draw_z_UP=2.5
+2026-08-19 10:47 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-19 10:47 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-19 10:47 - INFO - INI file initialized
+2026-08-19 10:47 - INFO - UI load successful
+2026-08-19 10:47 - INFO - Com : com, Port : ['COM1', 'COM9', 'COM10'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-19 10:47 - INFO - File selected: D:/TeamDev/Ink_withouth_cura/InkV2_Final_without_cura_version/Test_files/ide2.svg
+2026-08-19 10:47 - INFO - Converting SVG -> G-code directly: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.svg
+2026-08-19 10:47 - INFO - G-code created: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-19 10:47 - INFO - G-code ready from SVG: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-19 10:47 - INFO - Raw G-code parsed (312 lines).
+2026-08-19 10:47 - INFO - Feedrate: 500.0 mm/min
+2026-08-19 10:47 - INFO - Normalization shift: X=-1.904, Y=-1.855
+2026-08-19 10:47 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-08-19 10:47 - INFO - Final applied shift: X=-1.904, Y=-1.855
+2026-08-19 10:48 - INFO - Serial communication stopped
+2026-08-19 10:48 - INFO - COM connection close successfully
+2026-08-19 10:48 - INFO - Main window close successfully
+2026-08-19 10:48 - INFO - ==================================================
+2026-08-19 10:48 - INFO - New session close at 2026-08-19 10:48
+2026-08-19 10:48 - INFO - ==================================================
+2026-08-19 10:48 - INFO - ==================================================
+2026-08-19 10:48 - INFO - New session START at 2026-08-19 10:48
+2026-08-19 10:48 - INFO - ==================================================
+2026-08-19 10:48 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-19 10:48 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-19 10:48 - INFO - Loaded draw_z from config: Z=5.0, draw_z_UP=2.5
+2026-08-19 10:48 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-19 10:48 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-19 10:48 - INFO - INI file initialized
+2026-08-19 10:48 - INFO - UI load successful
+2026-08-19 10:48 - INFO - Com : com, Port : ['COM1', 'COM9', 'COM10'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-19 10:49 - INFO - File selected: D:/TeamDev/Ink_withouth_cura/InkV2_Final_without_cura_version/Test_files/ide2.svg
+2026-08-19 10:49 - INFO - Converting SVG -> G-code directly: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.svg
+2026-08-19 10:49 - INFO - G-code created: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-19 10:49 - INFO - G-code ready from SVG: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-19 10:49 - INFO - Raw G-code parsed (758 lines).
+2026-08-19 10:49 - INFO - Feedrate: 500.0 mm/min
+2026-08-19 10:49 - INFO - Normalization shift: X=-1.854, Y=-1.805
+2026-08-19 10:49 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-08-19 10:49 - INFO - Final applied shift: X=-1.854, Y=-1.805
+2026-08-19 10:50 - INFO - Serial communication stopped
+2026-08-19 10:50 - INFO - COM connection close successfully
+2026-08-19 10:50 - INFO - Main window close successfully
+2026-08-19 10:50 - INFO - ==================================================
+2026-08-19 10:50 - INFO - New session close at 2026-08-19 10:50
+2026-08-19 10:50 - INFO - ==================================================
+2026-08-19 10:50 - INFO - ==================================================
+2026-08-19 10:50 - INFO - New session START at 2026-08-19 10:50
+2026-08-19 10:50 - INFO - ==================================================
+2026-08-19 10:50 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-19 10:50 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-19 10:50 - INFO - Loaded draw_z from config: Z=5.0, draw_z_UP=2.5
+2026-08-19 10:50 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-19 10:50 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-19 10:50 - INFO - INI file initialized
+2026-08-19 10:50 - INFO - UI load successful
+2026-08-19 10:50 - INFO - Com : com, Port : ['COM1', 'COM9', 'COM10'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-19 10:50 - INFO - File selected: D:/TeamDev/Ink_withouth_cura/InkV2_Final_without_cura_version/Test_files/ide2.svg
+2026-08-19 10:50 - INFO - Converting SVG -> G-code directly: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.svg
+2026-08-19 10:50 - INFO - G-code created: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-19 10:50 - INFO - G-code ready from SVG: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-19 10:50 - INFO - Raw G-code parsed (312 lines).
+2026-08-19 10:50 - INFO - Feedrate: 500.0 mm/min
+2026-08-19 10:50 - INFO - Normalization shift: X=-1.904, Y=-1.855
+2026-08-19 10:50 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-08-19 10:50 - INFO - Final applied shift: X=-1.904, Y=-1.855
+2026-08-19 10:57 - INFO - File selected: D:/TeamDev/Ink_withouth_cura/InkV2_Final_without_cura_version/Test_files/IDE_F_Cu_gbr.svg
+2026-08-19 10:57 - INFO - Converting SVG -> G-code directly: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\IDE_F_Cu_gbr.svg
+2026-08-19 10:57 - INFO - G-code created: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\IDE_F_Cu_gbr.gcode
+2026-08-19 10:57 - INFO - G-code ready from SVG: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\IDE_F_Cu_gbr.gcode
+2026-08-19 10:57 - INFO - Raw G-code parsed (465 lines).
+2026-08-19 10:57 - INFO - Feedrate: 500.0 mm/min
+2026-08-19 10:57 - INFO - Normalization shift: X=-0.699, Y=-0.530
+2026-08-19 10:57 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-08-19 10:57 - INFO - Final applied shift: X=-0.699, Y=-0.530
+2026-08-19 10:58 - INFO - Serial communication stopped
+2026-08-19 10:58 - INFO - COM connection close successfully
+2026-08-19 10:58 - INFO - Main window close successfully
+2026-08-19 10:58 - INFO - ==================================================
+2026-08-19 10:58 - INFO - New session close at 2026-08-19 10:58
+2026-08-19 10:58 - INFO - ==================================================
+2026-08-19 10:59 - INFO - ==================================================
+2026-08-19 10:59 - INFO - New session START at 2026-08-19 10:59
+2026-08-19 10:59 - INFO - ==================================================
+2026-08-19 10:59 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-19 10:59 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-19 10:59 - INFO - Loaded draw_z from config: Z=5.0, draw_z_UP=2.5
+2026-08-19 10:59 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-19 10:59 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-19 10:59 - INFO - INI file initialized
+2026-08-19 10:59 - INFO - UI load successful
+2026-08-19 10:59 - INFO - Com : com, Port : ['COM1', 'COM22', 'COM9', 'COM10'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-19 10:59 - INFO - Do you want to auto connect to COM22 @ 115200
+2026-08-19 10:59 - INFO - Auto Connect dialog button : Ok
+2026-08-19 10:59 - INFO - Serial communication autostarted
+2026-08-19 11:00 - INFO - File selected: D:/TeamDev/Ink_withouth_cura/InkV2_Final_without_cura_version/Test_files/ide2.svg
+2026-08-19 11:00 - INFO - Converting SVG -> G-code directly: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.svg
+2026-08-19 11:00 - INFO - G-code created: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-19 11:00 - INFO - G-code ready from SVG: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-19 11:00 - INFO - Raw G-code parsed (312 lines).
+2026-08-19 11:00 - INFO - Feedrate: 500.0 mm/min
+2026-08-19 11:00 - INFO - Normalization shift: X=-1.904, Y=-1.855
+2026-08-19 11:00 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-08-19 11:00 - INFO - Final applied shift: X=-1.904, Y=-1.855
+2026-08-19 11:00 - INFO - Print Status : RUN
+2026-08-19 11:00 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:00 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:00 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:00 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:00 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:00 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:00 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:01 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:01 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:01 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:01 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:01 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:01 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:01 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:01 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:01 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:01 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:01 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:01 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:01 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:01 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:01 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:01 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:02 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:02 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:02 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:18 - INFO - ==================================================
+2026-08-19 11:18 - INFO - New session START at 2026-08-19 11:18
+2026-08-19 11:18 - INFO - ==================================================
+2026-08-19 11:18 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-19 11:18 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-19 11:18 - INFO - Loaded draw_z from config: Z=5.0, draw_z_UP=2.5
+2026-08-19 11:18 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-19 11:18 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-19 11:18 - INFO - INI file initialized
+2026-08-19 11:18 - INFO - UI load successful
+2026-08-19 11:18 - INFO - Com : com, Port : ['COM1', 'COM22', 'COM9', 'COM10'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-19 11:18 - INFO - Do you want to auto connect to COM22 @ 115200
+2026-08-19 11:18 - INFO - Auto Connect dialog button : Ok
+2026-08-19 11:18 - INFO - Serial communication autostarted
+2026-08-19 11:19 - INFO - File selected: D:/TeamDev/Ink_withouth_cura/InkV2_Final_without_cura_version/Test_files/ide2.svg
+2026-08-19 11:19 - INFO - Converting SVG -> G-code directly: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.svg
+2026-08-19 11:19 - INFO - G-code created: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-19 11:19 - INFO - G-code ready from SVG: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-19 11:19 - INFO - Raw G-code parsed (312 lines).
+2026-08-19 11:19 - INFO - Feedrate: 500.0 mm/min
+2026-08-19 11:19 - INFO - Normalization shift: X=-1.904, Y=-1.855
+2026-08-19 11:19 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-08-19 11:19 - INFO - Final applied shift: X=-1.904, Y=-1.855
+2026-08-19 11:19 - INFO - Print Status : RUN
+2026-08-19 11:19 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:19 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:20 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:20 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:20 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:20 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:20 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:20 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:20 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:20 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:20 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:20 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:20 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:20 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:20 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:20 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:20 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:20 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:20 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:20 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:20 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:20 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:21 - INFO - Print Status : ABORT
+2026-08-19 11:21 - INFO - Serial communication stopped
+2026-08-19 11:21 - INFO - COM connection close successfully
+2026-08-19 11:21 - INFO - Main window close successfully
+2026-08-19 11:21 - INFO - ==================================================
+2026-08-19 11:21 - INFO - New session close at 2026-08-19 11:21
+2026-08-19 11:21 - INFO - ==================================================
+2026-08-19 11:25 - INFO - ==================================================
+2026-08-19 11:25 - INFO - New session START at 2026-08-19 11:25
+2026-08-19 11:25 - INFO - ==================================================
+2026-08-19 11:25 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-19 11:25 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-19 11:25 - INFO - Loaded draw_z from config: Z=5.0, draw_z_UP=2.5
+2026-08-19 11:25 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-19 11:25 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-19 11:25 - INFO - INI file initialized
+2026-08-19 11:25 - INFO - UI load successful
+2026-08-19 11:25 - INFO - Com : com, Port : ['COM1', 'COM22', 'COM9', 'COM10'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-19 11:25 - INFO - Do you want to auto connect to COM22 @ 115200
+2026-08-19 11:25 - INFO - Auto Connect dialog button : Ok
+2026-08-19 11:25 - INFO - Serial communication autostarted
+2026-08-19 11:25 - INFO - File selected: D:/TeamDev/Ink_withouth_cura/InkV2_Final_without_cura_version/Test_files/ide2.svg
+2026-08-19 11:25 - INFO - Converting SVG -> G-code directly: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.svg
+2026-08-19 11:25 - INFO - G-code created: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-19 11:25 - INFO - G-code ready from SVG: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-19 11:25 - INFO - Raw G-code parsed (312 lines).
+2026-08-19 11:25 - INFO - Feedrate: 500.0 mm/min
+2026-08-19 11:25 - INFO - Normalization shift: X=-1.904, Y=-1.855
+2026-08-19 11:25 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-08-19 11:25 - INFO - Final applied shift: X=-1.904, Y=-1.855
+2026-08-19 11:25 - ERROR - Uncaught exception
+Traceback (most recent call last):
+  File "d:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\preview3d.py", line 373, in _onLoadGcode
+    self.total_print_length += math.sqrt((x1-x0)**2 + (y1-y0)**2 + (z1-z0)**2)
+    ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'GCode3DPreview' object has no attribute 'total_print_length'
+2026-08-19 11:25 - INFO - Serial communication stopped
+2026-08-19 11:25 - INFO - COM connection close successfully
+2026-08-19 11:25 - INFO - Main window close successfully
+2026-08-19 11:25 - INFO - ==================================================
+2026-08-19 11:25 - INFO - New session close at 2026-08-19 11:25
+2026-08-19 11:25 - INFO - ==================================================
+2026-08-19 11:27 - INFO - ==================================================
+2026-08-19 11:27 - INFO - New session START at 2026-08-19 11:27
+2026-08-19 11:27 - INFO - ==================================================
+2026-08-19 11:27 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-19 11:27 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-19 11:27 - INFO - Loaded draw_z from config: Z=5.0, draw_z_UP=2.5
+2026-08-19 11:27 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-19 11:27 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-19 11:27 - INFO - INI file initialized
+2026-08-19 11:27 - INFO - UI load successful
+2026-08-19 11:27 - INFO - Com : com, Port : ['COM1', 'COM22', 'COM9', 'COM10'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-19 11:27 - INFO - Do you want to auto connect to COM22 @ 115200
+2026-08-19 11:27 - INFO - Auto Connect dialog button : Ok
+2026-08-19 11:27 - INFO - Serial communication autostarted
+2026-08-19 11:27 - INFO - File selected: D:/TeamDev/Ink_withouth_cura/InkV2_Final_without_cura_version/Test_files/ide2.svg
+2026-08-19 11:27 - INFO - Converting SVG -> G-code directly: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.svg
+2026-08-19 11:27 - INFO - G-code created: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-19 11:27 - INFO - G-code ready from SVG: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-19 11:27 - INFO - Raw G-code parsed (312 lines).
+2026-08-19 11:27 - INFO - Feedrate: 500.0 mm/min
+2026-08-19 11:27 - INFO - Normalization shift: X=-1.904, Y=-1.855
+2026-08-19 11:27 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-08-19 11:27 - INFO - Final applied shift: X=-1.904, Y=-1.855
+2026-08-19 11:27 - INFO - Print Status : RUN
+2026-08-19 11:28 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:28 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:28 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:28 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:28 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:28 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:28 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:28 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:28 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:28 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:28 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:28 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:28 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:28 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:28 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:28 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:29 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:29 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:29 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:29 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:29 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:29 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:29 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:29 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:29 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:29 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:30 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:30 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:30 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:30 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:30 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:30 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:30 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:30 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:31 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:31 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:31 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:31 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:31 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:31 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:32 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:32 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:32 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:32 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:32 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:32 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:32 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:32 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:32 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:32 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:32 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:32 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:32 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:32 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:32 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:32 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:32 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:33 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:33 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:33 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:33 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:33 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:33 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:33 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:33 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:33 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:33 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:33 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:33 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:34 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:34 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:34 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:34 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:34 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:34 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:34 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:35 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:35 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:35 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:35 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:35 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:35 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:35 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:36 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:36 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:36 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:36 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:36 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:36 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:37 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:37 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:37 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:37 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:37 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:37 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:37 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:38 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:38 - INFO - Print Status : ABORT
+2026-08-19 11:47 - INFO - ==================================================
+2026-08-19 11:47 - INFO - New session START at 2026-08-19 11:47
+2026-08-19 11:47 - INFO - ==================================================
+2026-08-19 11:47 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-19 11:47 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-19 11:47 - INFO - Loaded draw_z from config: Z=5.0, draw_z_UP=2.5
+2026-08-19 11:47 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-19 11:47 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-19 11:47 - INFO - INI file initialized
+2026-08-19 11:47 - INFO - UI load successful
+2026-08-19 11:47 - INFO - Com : com, Port : ['COM1', 'COM22', 'COM9', 'COM10'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-19 11:47 - INFO - Do you want to auto connect to COM22 @ 115200
+2026-08-19 11:47 - INFO - Auto Connect dialog button : Ok
+2026-08-19 11:47 - INFO - Serial communication autostarted
+2026-08-19 11:47 - INFO - File selected: D:/TeamDev/Ink_withouth_cura/InkV2_Final_without_cura_version/Test_files/ide2.svg
+2026-08-19 11:47 - INFO - Converting SVG -> G-code directly: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.svg
+2026-08-19 11:48 - INFO - G-code created: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-19 11:48 - INFO - G-code ready from SVG: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-19 11:48 - INFO - Raw G-code parsed (174 lines).
+2026-08-19 11:48 - INFO - Feedrate: 1000.0 mm/min
+2026-08-19 11:48 - INFO - Normalization shift: X=-1.904, Y=-1.855
+2026-08-19 11:48 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-08-19 11:48 - INFO - Final applied shift: X=-1.904, Y=-1.855
+2026-08-19 11:48 - INFO - Print Status : RUN
+2026-08-19 11:48 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:48 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:48 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:48 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:48 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:48 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:48 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:48 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:48 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:48 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:48 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:49 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:49 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:49 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:49 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:49 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:49 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:49 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:49 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:49 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:49 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:49 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:49 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:49 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:49 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:49 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:50 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:50 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:50 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:50 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:50 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:50 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:50 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:50 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:51 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:51 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:51 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:51 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:51 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:51 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:51 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:51 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:52 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:52 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:52 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:52 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:52 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:52 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:52 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:52 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:52 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:52 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:52 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:52 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:52 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:52 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:52 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:52 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:52 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:52 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:52 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:52 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:52 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:52 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:52 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:52 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:53 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:53 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:53 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:53 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:53 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:53 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:53 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:54 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:54 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:54 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:54 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:54 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:54 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:54 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:54 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:55 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:55 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:55 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:56 - INFO - File selected: D:/TeamDev/Ink_withouth_cura/InkV2_Final_without_cura_version/Test_files/IDE_F_Cu_gbr.svg
+2026-08-19 11:56 - INFO - Converting SVG -> G-code directly: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\IDE_F_Cu_gbr.svg
+2026-08-19 11:56 - INFO - G-code created: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\IDE_F_Cu_gbr.gcode
+2026-08-19 11:56 - INFO - G-code ready from SVG: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\IDE_F_Cu_gbr.gcode
+2026-08-19 11:56 - INFO - Raw G-code parsed (465 lines).
+2026-08-19 11:56 - INFO - Feedrate: 1000.0 mm/min
+2026-08-19 11:56 - INFO - Normalization shift: X=-0.699, Y=-0.530
+2026-08-19 11:56 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-08-19 11:56 - INFO - Final applied shift: X=-0.699, Y=-0.530
+2026-08-19 11:56 - INFO - Print Status : RUN
+2026-08-19 11:56 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:56 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:56 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:56 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:56 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:56 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:56 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:56 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:56 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:56 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:56 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:56 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:57 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:57 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:57 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:57 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:57 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:57 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:57 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:57 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:57 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:57 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:57 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:57 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:57 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:57 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:57 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:57 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:57 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:57 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:57 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:57 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:57 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:57 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:57 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:57 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:57 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:57 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:57 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:57 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:57 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:57 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:57 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:57 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:57 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:57 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:57 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:57 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:57 - INFO - Print Status : ABORT
+2026-08-19 11:57 - INFO - File selected: D:/TeamDev/Ink_withouth_cura/InkV2_Final_Without_cura_Without_E/Test_files/testbox2.svg
+2026-08-19 11:57 - INFO - Converting SVG -> G-code directly: D:\TeamDev\Ink_withouth_cura\InkV2_Final_Without_cura_Without_E\Test_files\testbox2.svg
+2026-08-19 11:58 - INFO - G-code created: D:\TeamDev\Ink_withouth_cura\InkV2_Final_Without_cura_Without_E\Test_files\testbox2.gcode
+2026-08-19 11:58 - INFO - G-code ready from SVG: D:\TeamDev\Ink_withouth_cura\InkV2_Final_Without_cura_Without_E\Test_files\testbox2.gcode
+2026-08-19 11:58 - INFO - Raw G-code parsed (310 lines).
+2026-08-19 11:58 - INFO - Feedrate: 1000.0 mm/min
+2026-08-19 11:58 - INFO - Normalization shift: X=-0.000, Y=-0.000
+2026-08-19 11:58 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-08-19 11:58 - INFO - Final applied shift: X=0.000, Y=0.000
+2026-08-19 11:58 - INFO - Print Status : RUN
+2026-08-19 11:58 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:58 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:58 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:58 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:59 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:59 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:59 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:59 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 11:59 - INFO - Print Status : ABORT
+2026-08-19 11:59 - INFO - Serial communication stopped
+2026-08-19 11:59 - INFO - COM connection close successfully
+2026-08-19 11:59 - INFO - Main window close successfully
+2026-08-19 11:59 - INFO - ==================================================
+2026-08-19 11:59 - INFO - New session close at 2026-08-19 11:59
+2026-08-19 11:59 - INFO - ==================================================
+2026-08-19 12:15 - INFO - ==================================================
+2026-08-19 12:15 - INFO - New session START at 2026-08-19 12:15
+2026-08-19 12:15 - INFO - ==================================================
+2026-08-19 12:15 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-19 12:15 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-19 12:15 - INFO - Loaded draw_z from config: Z=5.0, draw_z_UP=2.5
+2026-08-19 12:15 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-19 12:15 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-19 12:15 - INFO - INI file initialized
+2026-08-19 12:15 - INFO - UI load successful
+2026-08-19 12:15 - INFO - Com : com, Port : ['COM1', 'COM22', 'COM9', 'COM10'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-19 12:15 - INFO - Do you want to auto connect to COM22 @ 115200
+2026-08-19 12:15 - INFO - Auto Connect dialog button : Ok
+2026-08-19 12:15 - INFO - Serial communication autostarted
+2026-08-19 12:16 - INFO - File selected: D:/TeamDev/Ink_withouth_cura/InkV2_Final_Without_cura_Without_E/Test_files/testbox2.svg
+2026-08-19 12:16 - INFO - Converting SVG -> G-code directly: D:\TeamDev\Ink_withouth_cura\InkV2_Final_Without_cura_Without_E\Test_files\testbox2.svg
+2026-08-19 12:16 - INFO - G-code created: D:\TeamDev\Ink_withouth_cura\InkV2_Final_Without_cura_Without_E\Test_files\testbox2.gcode
+2026-08-19 12:16 - INFO - G-code ready from SVG: D:\TeamDev\Ink_withouth_cura\InkV2_Final_Without_cura_Without_E\Test_files\testbox2.gcode
+2026-08-19 12:16 - INFO - Raw G-code parsed (310 lines).
+2026-08-19 12:16 - INFO - Feedrate: 500.0 mm/min
+2026-08-19 12:16 - INFO - Feedrate: 1000.0 mm/min
+2026-08-19 12:16 - INFO - Normalization shift: X=-0.000, Y=-0.000
+2026-08-19 12:16 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-08-19 12:16 - INFO - Final applied shift: X=0.000, Y=0.000
+2026-08-19 12:16 - INFO - Print Status : RUN
+2026-08-19 12:16 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 12:16 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 12:16 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 12:16 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 12:17 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 12:17 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 12:17 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 12:17 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 12:17 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 12:17 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 12:18 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 12:18 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 12:18 - INFO - Print Status : ABORT
+2026-08-19 12:18 - INFO - Serial communication stopped
+2026-08-19 12:51 - INFO - ==================================================
+2026-08-19 12:51 - INFO - New session START at 2026-08-19 12:51
+2026-08-19 12:51 - INFO - ==================================================
+2026-08-19 12:51 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-19 12:51 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-19 12:51 - INFO - Loaded draw_z from config: Z=5.0, draw_z_UP=2.5
+2026-08-19 12:51 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-19 12:51 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-19 12:51 - INFO - INI file initialized
+2026-08-19 12:51 - INFO - UI load successful
+2026-08-19 12:51 - INFO - Com : com, Port : ['COM1', 'COM22', 'COM9', 'COM10'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-19 12:51 - INFO - Do you want to auto connect to COM22 @ 115200
+2026-08-19 12:51 - INFO - Auto Connect dialog button : Ok
+2026-08-19 12:51 - INFO - Serial communication autostarted
+2026-08-19 12:52 - INFO - File selected: D:/TeamDev/Ink_withouth_cura/InkV2_Final_Without_cura_Without_E/Test_files/testbox2.svg
+2026-08-19 12:52 - INFO - Converting SVG -> G-code directly: D:\TeamDev\Ink_withouth_cura\InkV2_Final_Without_cura_Without_E\Test_files\testbox2.svg
+2026-08-19 12:52 - INFO - G-code created: D:\TeamDev\Ink_withouth_cura\InkV2_Final_Without_cura_Without_E\Test_files\testbox2.gcode
+2026-08-19 12:52 - INFO - G-code ready from SVG: D:\TeamDev\Ink_withouth_cura\InkV2_Final_Without_cura_Without_E\Test_files\testbox2.gcode
+2026-08-19 12:52 - INFO - Raw G-code parsed (310 lines).
+2026-08-19 12:52 - INFO - Feedrate: 500.0 mm/min
+2026-08-19 12:52 - INFO - Feedrate: 1000.0 mm/min
+2026-08-19 12:52 - INFO - Normalization shift: X=-0.000, Y=-0.000
+2026-08-19 12:52 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-08-19 12:52 - INFO - Final applied shift: X=0.000, Y=0.000
+2026-08-19 12:52 - INFO - Print Status : RUN
+2026-08-19 12:52 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 12:52 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 12:53 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 12:53 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 12:53 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 12:53 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 12:53 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 12:53 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 12:54 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 12:54 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 12:54 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 12:54 - INFO - Print Status : ABORT
+2026-08-19 12:54 - INFO - Serial communication stopped
+2026-08-19 12:54 - INFO - COM connection close successfully
+2026-08-19 12:54 - INFO - Main window close successfully
+2026-08-19 12:54 - INFO - ==================================================
+2026-08-19 12:54 - INFO - New session close at 2026-08-19 12:54
+2026-08-19 12:54 - INFO - ==================================================
+2026-08-19 12:59 - INFO - ==================================================
+2026-08-19 12:59 - INFO - New session START at 2026-08-19 12:59
+2026-08-19 12:59 - INFO - ==================================================
+2026-08-19 12:59 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-19 12:59 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-19 12:59 - INFO - Loaded draw_z from config: Z=5.0, draw_z_UP=2.5
+2026-08-19 12:59 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-19 12:59 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-19 12:59 - INFO - INI file initialized
+2026-08-19 12:59 - INFO - UI load successful
+2026-08-19 12:59 - INFO - Com : com, Port : ['COM1', 'COM22', 'COM9', 'COM10'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-19 12:59 - INFO - Do you want to auto connect to COM22 @ 115200
+2026-08-19 12:59 - INFO - Auto Connect dialog button : Ok
+2026-08-19 12:59 - INFO - Serial communication autostarted
+2026-08-19 12:59 - INFO - File selected: D:/TeamDev/Ink_withouth_cura/InkV2_Final_Without_cura_Without_E/Test_files/testbox2.svg
+2026-08-19 12:59 - INFO - Converting SVG -> G-code directly: D:\TeamDev\Ink_withouth_cura\InkV2_Final_Without_cura_Without_E\Test_files\testbox2.svg
+2026-08-19 12:59 - INFO - G-code created: D:\TeamDev\Ink_withouth_cura\InkV2_Final_Without_cura_Without_E\Test_files\testbox2.gcode
+2026-08-19 12:59 - INFO - G-code ready from SVG: D:\TeamDev\Ink_withouth_cura\InkV2_Final_Without_cura_Without_E\Test_files\testbox2.gcode
+2026-08-19 12:59 - INFO - Raw G-code parsed (310 lines).
+2026-08-19 13:00 - INFO - Feedrate: 1000.0 mm/min
+2026-08-19 13:00 - INFO - Normalization shift: X=-0.000, Y=-0.000
+2026-08-19 13:00 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-08-19 13:00 - INFO - Final applied shift: X=0.000, Y=0.000
+2026-08-19 13:00 - INFO - Print Status : RUN
+2026-08-19 13:00 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 13:00 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 13:00 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 13:00 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 13:00 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 13:00 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 13:01 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 13:01 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 13:01 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 13:01 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 13:01 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 13:02 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 13:02 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 13:02 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 13:02 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 13:02 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 13:02 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 13:03 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 13:03 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 13:03 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 13:03 - INFO - Print Status : ABORT
+2026-08-19 14:25 - INFO - ==================================================
+2026-08-19 14:25 - INFO - New session START at 2026-08-19 14:25
+2026-08-19 14:25 - INFO - ==================================================
+2026-08-19 14:25 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-19 14:25 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-19 14:25 - INFO - Loaded draw_z from config: Z=5.0, draw_z_UP=2.5
+2026-08-19 14:25 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-19 14:25 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-19 14:25 - INFO - INI file initialized
+2026-08-19 14:25 - INFO - UI load successful
+2026-08-19 14:25 - INFO - Com : com, Port : ['COM1', 'COM9', 'COM10'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-19 14:26 - INFO - File selected: D:/TeamDev/Ink_withouth_cura/InkV2_Final_without_cura_version/Test_files/testbox2.svg
+2026-08-19 14:26 - INFO - Converting SVG -> G-code directly: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\testbox2.svg
+2026-08-19 14:26 - INFO - G-code created: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\testbox2.gcode
+2026-08-19 14:26 - INFO - G-code ready from SVG: D:\TeamDev\Ink_withouth_cura\InkV2_Final_without_cura_version\Test_files\testbox2.gcode
+2026-08-19 14:26 - INFO - Raw G-code parsed (310 lines).
+2026-08-19 14:26 - INFO - Feedrate: 1000.0 mm/min
+2026-08-19 14:26 - INFO - Normalization shift: X=-0.000, Y=-0.000
+2026-08-19 14:26 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-08-19 14:26 - INFO - Final applied shift: X=0.000, Y=0.000
+2026-08-19 14:26 - INFO - Print Status : RUN
+2026-08-19 14:26 - INFO - Print Status : ABORT
+2026-08-19 14:26 - INFO - Com : com, Port : ['COM1', 'COM9', 'COM10'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-19 14:26 - INFO - Com : com, Port : ['COM1', 'COM9', 'COM10'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-19 14:26 - INFO - Com : com, Port : ['COM1', 'COM9', 'COM10'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-19 14:28 - INFO - Serial communication stopped
+2026-08-19 14:28 - INFO - COM connection close successfully
+2026-08-19 14:28 - INFO - Main window close successfully
+2026-08-19 14:28 - INFO - ==================================================
+2026-08-19 14:28 - INFO - New session close at 2026-08-19 14:28
+2026-08-19 14:28 - INFO - ==================================================
+2026-08-19 14:44 - INFO - ==================================================
+2026-08-19 14:44 - INFO - New session START at 2026-08-19 14:44
+2026-08-19 14:44 - INFO - ==================================================
+2026-08-19 14:44 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-19 14:44 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-19 14:44 - INFO - Loaded draw_z from config: Z=5.0, draw_z_UP=2.5
+2026-08-19 14:44 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-19 14:44 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-19 14:44 - INFO - INI file initialized
+2026-08-19 14:44 - INFO - UI load successful
+2026-08-19 14:44 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8', 'COM15'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-19 14:44 - INFO - Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8', 'COM15'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-19 14:45 - INFO - Serial communication stopped
+2026-08-19 14:45 - INFO - COM connection close successfully
+2026-08-19 14:45 - INFO - Main window close successfully
+2026-08-19 14:45 - INFO - ==================================================
+2026-08-19 14:45 - INFO - New session close at 2026-08-19 14:45
+2026-08-19 14:45 - INFO - ==================================================
+2026-08-19 15:37 - INFO - ==================================================
+2026-08-19 15:37 - INFO - New session START at 2026-08-19 15:37
+2026-08-19 15:37 - INFO - ==================================================
+2026-08-19 15:37 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-19 15:37 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-19 15:37 - INFO - Loaded draw_z from config: Z=5.0, draw_z_UP=2.5
+2026-08-19 15:37 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-19 15:37 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-19 15:37 - INFO - INI file initialized
+2026-08-19 15:37 - INFO - UI load successful
+2026-08-19 15:37 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8', 'COM15'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-19 15:37 - INFO - File selected: E:/Sakshi/Works/Ink/InkV2_Final_without_cura_version/Test_files/ide2.svg
+2026-08-19 15:37 - INFO - Converting SVG -> G-code directly: E:\Sakshi\Works\Ink\InkV2_Final_without_cura_version\Test_files\ide2.svg
+2026-08-19 15:37 - INFO - G-code created: E:\Sakshi\Works\Ink\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-19 15:37 - INFO - G-code ready from SVG: E:\Sakshi\Works\Ink\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-19 15:37 - INFO - Raw G-code parsed (174 lines).
+2026-08-19 15:37 - INFO - Feedrate: 500.0 mm/min
+2026-08-19 15:37 - INFO - Normalization shift: X=-1.904, Y=-1.855
+2026-08-19 15:37 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-08-19 15:37 - INFO - Final applied shift: X=-1.904, Y=-1.855
+2026-08-19 15:39 - INFO - Serial communication stopped
+2026-08-19 15:39 - INFO - COM connection close successfully
+2026-08-19 15:39 - INFO - Main window close successfully
+2026-08-19 15:39 - INFO - ==================================================
+2026-08-19 15:39 - INFO - New session close at 2026-08-19 15:39
+2026-08-19 15:39 - INFO - ==================================================
+2026-08-19 15:39 - INFO - ==================================================
+2026-08-19 15:39 - INFO - New session START at 2026-08-19 15:39
+2026-08-19 15:39 - INFO - ==================================================
+2026-08-19 15:39 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-19 15:39 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-19 15:39 - INFO - Loaded draw_z from config: Z=5.0, draw_z_UP=2.5
+2026-08-19 15:39 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-19 15:39 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-19 15:39 - INFO - INI file initialized
+2026-08-19 15:39 - INFO - UI load successful
+2026-08-19 15:39 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8', 'COM15'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-19 15:39 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 15:39 - INFO - HOME command sent to Blackpill.
+2026-08-19 15:40 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-19 15:40 - INFO - Stop HOME command sent to Blackpill.
+2026-08-19 15:40 - INFO - Serial communication stopped
+2026-08-19 15:40 - INFO - COM connection close successfully
+2026-08-19 15:40 - INFO - Main window close successfully
+2026-08-19 15:40 - INFO - ==================================================
+2026-08-19 15:40 - INFO - New session close at 2026-08-19 15:40
+2026-08-19 15:40 - INFO - ==================================================
+2026-08-19 16:48 - INFO - ==================================================
+2026-08-19 16:48 - INFO - New session START at 2026-08-19 16:48
+2026-08-19 16:48 - INFO - ==================================================
+2026-08-19 16:48 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-19 16:48 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-19 16:48 - INFO - Loaded draw_z from config: Z=5.0, draw_z_UP=2.5
+2026-08-19 16:48 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-19 16:48 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-19 16:48 - INFO - INI file initialized
+2026-08-19 16:48 - INFO - UI load successful
+2026-08-19 16:48 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-19 16:48 - INFO - File selected: E:/Sakshi/Works/Ink/InkV2_Final_without_cura_version/Test_files/ide2.svg
+2026-08-19 16:48 - INFO - Converting SVG -> G-code directly: E:\Sakshi\Works\Ink\InkV2_Final_without_cura_version\Test_files\ide2.svg
+2026-08-19 16:48 - INFO - G-code created: E:\Sakshi\Works\Ink\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-19 16:48 - INFO - G-code ready from SVG: E:\Sakshi\Works\Ink\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-19 16:48 - INFO - Raw G-code parsed (174 lines).
+2026-08-19 16:48 - INFO - Feedrate: 500.0 mm/min
+2026-08-19 16:48 - INFO - Normalization shift: X=-1.904, Y=-1.855
+2026-08-19 16:48 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-08-19 16:48 - INFO - Final applied shift: X=-1.904, Y=-1.855
+2026-08-19 17:16 - INFO - Serial communication stopped
+2026-08-19 17:16 - INFO - COM connection close successfully
+2026-08-19 17:16 - INFO - Main window close successfully
+2026-08-19 17:16 - INFO - ==================================================
+2026-08-19 17:16 - INFO - New session close at 2026-08-19 17:16
+2026-08-19 17:16 - INFO - ==================================================
+2026-08-26 17:44 - INFO - ==================================================
+2026-08-26 17:44 - INFO - New session START at 2026-08-26 17:44
+2026-08-26 17:44 - INFO - ==================================================
+2026-08-26 17:44 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-26 17:44 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-26 17:44 - INFO - Loaded draw_z from config: Z=5.0, draw_z_UP=2.5
+2026-08-26 17:44 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-26 17:44 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-26 17:44 - INFO - INI file initialized
+2026-08-26 17:44 - INFO - UI load successful
+2026-08-26 17:44 - INFO - Com : com, Port : ['COM12', 'COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-27 14:31 - INFO - ==================================================
+2026-08-27 14:31 - INFO - New session START at 2026-08-27 14:31
+2026-08-27 14:31 - INFO - ==================================================
+2026-08-27 14:31 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-27 14:31 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-27 14:31 - INFO - Loaded draw_z from config: Z=5.0, draw_z_UP=2.5
+2026-08-27 14:31 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-27 14:31 - INFO - Loaded purge settings: interval=200.0, amount=0.4
+2026-08-27 14:31 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-27 14:31 - INFO - INI file initialized
+2026-08-27 14:31 - INFO - UI load successful
+2026-08-27 14:31 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-27 14:52 - INFO - ==================================================
+2026-08-27 14:52 - INFO - New session START at 2026-08-27 14:52
+2026-08-27 14:52 - INFO - ==================================================
+2026-08-27 14:52 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-27 14:52 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-27 14:52 - INFO - Loaded draw_z from config: Z=5.0, draw_z_UP=2.5
+2026-08-27 14:52 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-27 14:52 - INFO - Loaded purge settings: interval=200.0, amount=0.4
+2026-08-27 14:52 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-27 14:52 - INFO - INI file initialized
+2026-08-27 14:52 - INFO - UI load successful
+2026-08-27 14:52 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-27 15:20 - INFO - ==================================================
+2026-08-27 15:20 - INFO - New session START at 2026-08-27 15:20
+2026-08-27 15:20 - INFO - ==================================================
+2026-08-27 15:20 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-27 15:20 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-27 15:20 - INFO - Loaded draw_z from config: Z=5.0, draw_z_UP=2.5
+2026-08-27 15:20 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-27 15:20 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-27 15:20 - INFO - INI file initialized
+2026-08-27 15:20 - INFO - UI load successful
+2026-08-27 15:20 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-27 15:20 - INFO - Serial communication stopped
+2026-08-27 15:20 - INFO - COM connection close successfully
+2026-08-27 15:20 - INFO - Main window close successfully
+2026-08-27 15:20 - INFO - ==================================================
+2026-08-27 15:20 - INFO - New session close at 2026-08-27 15:20
+2026-08-27 15:20 - INFO - ==================================================
+2026-08-27 15:21 - INFO - ==================================================
+2026-08-27 15:21 - INFO - New session START at 2026-08-27 15:21
+2026-08-27 15:21 - INFO - ==================================================
+2026-08-27 15:21 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-27 15:21 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-27 15:21 - INFO - Loaded draw_z from config: Z=5.0, draw_z_UP=2.5
+2026-08-27 15:21 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-27 15:21 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-27 15:21 - INFO - INI file initialized
+2026-08-27 15:21 - INFO - UI load successful
+2026-08-27 15:21 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-27 15:21 - ERROR - Invalid purge values entered in UI
+2026-08-27 15:21 - INFO - Updated purge settings via UI: length_mm=7000.0, purge_value=0.3
+2026-08-27 15:21 - INFO - Serial communication stopped
+2026-08-27 15:21 - INFO - COM connection close successfully
+2026-08-27 15:21 - INFO - Main window close successfully
+2026-08-27 15:21 - INFO - ==================================================
+2026-08-27 15:21 - INFO - New session close at 2026-08-27 15:21
+2026-08-27 15:21 - INFO - ==================================================
+2026-08-27 16:59 - INFO - ==================================================
+2026-08-27 16:59 - INFO - New session START at 2026-08-27 16:59
+2026-08-27 16:59 - INFO - ==================================================
+2026-08-27 16:59 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-27 16:59 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-27 16:59 - INFO - Loaded draw_z from config: Z=5.0, draw_z_UP=2.5
+2026-08-27 16:59 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-27 16:59 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-27 16:59 - INFO - INI file initialized
+2026-08-27 16:59 - INFO - UI load successful
+2026-08-27 16:59 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-27 16:59 - INFO - Updated purge settings via UI: length_mm=100.0, purge_value=0.5
+2026-08-27 16:59 - INFO - Updated purge settings via UI: length_mm=100.0, purge_value=0.5
+2026-08-27 16:59 - INFO - Serial communication stopped
+2026-08-27 16:59 - INFO - COM connection close successfully
+2026-08-27 16:59 - INFO - Main window close successfully
+2026-08-27 16:59 - INFO - ==================================================
+2026-08-27 16:59 - INFO - New session close at 2026-08-27 16:59
+2026-08-27 16:59 - INFO - ==================================================
