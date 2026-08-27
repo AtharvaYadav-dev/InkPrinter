@@ -649,3 +649,17 @@ New Session at 2026-08-27 15:20:39
 New Session at 2026-08-27 15:21:04
 ==================================================
 2026-08-27 15:21:17 - ERROR - util.py:204 - Invalid purge values entered in UI
+
+==================================================
+New Session at 2026-08-27 15:44:22
+==================================================
+2026-08-27 15:50:25 - CRITICAL - util.py:207 - Serial communication started
+2026-08-27 15:50:33 - CRITICAL - util.py:207 - Serial communication started
+2026-08-27 16:00:46 - CRITICAL - util.py:207 - Serial communication started
+2026-08-27 16:00:49 - CRITICAL - util.py:207 - Serial communication started
+2026-08-27 16:08:30 - CRITICAL - util.py:207 - Laser 1 : has offset, Xoffset = 5.0, Yoffset = 5.0
+
+==================================================
+New Session at 2026-08-27 16:14:20
+==================================================
+2026-08-27 16:16:44 - CRITICAL - util.py:207 - Serial communication started

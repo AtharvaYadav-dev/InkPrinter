@@ -2378,3 +2378,248 @@ AttributeError: 'GCode3DPreview' object has no attribute 'total_print_length'
 2026-08-27 15:21 - INFO - ==================================================
 2026-08-27 15:21 - INFO - New session close at 2026-08-27 15:21
 2026-08-27 15:21 - INFO - ==================================================
+2026-08-27 15:44 - INFO - ==================================================
+2026-08-27 15:44 - INFO - New session START at 2026-08-27 15:44
+2026-08-27 15:44 - INFO - ==================================================
+2026-08-27 15:44 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-27 15:44 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-27 15:44 - INFO - Loaded draw_z from config: Z=5.0, draw_z_UP=2.5
+2026-08-27 15:44 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-27 15:44 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-27 15:44 - INFO - INI file initialized
+2026-08-27 15:44 - INFO - UI load successful
+2026-08-27 15:44 - INFO - Com : com, Port : ['COM3', 'COM1'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-27 15:50 - INFO - Com : black_com, Port : ['COM3', 'COM1', 'COM4'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-27 15:50 - CRITICAL - Serial communication started
+2026-08-27 15:50 - INFO - Com : com, Port : ['COM3', 'COM1', 'COM4'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-27 15:50 - CRITICAL - Serial communication started
+2026-08-27 15:50 - INFO - syringflushAction triggered - CheckBox state: True
+2026-08-27 15:51 - INFO - File selected: D:/Manali_L/ManaliL/InkPrinter/New changes/InkV2_Final_without_cura_version/Test_files/ide2.svg
+2026-08-27 15:51 - INFO - Converting SVG -> G-code directly: D:\Manali_L\ManaliL\InkPrinter\New changes\InkV2_Final_without_cura_version\Test_files\ide2.svg
+2026-08-27 15:51 - INFO - G-code created: D:\Manali_L\ManaliL\InkPrinter\New changes\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-27 15:51 - INFO - G-code ready from SVG: D:\Manali_L\ManaliL\InkPrinter\New changes\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-27 15:51 - INFO - Raw G-code parsed (174 lines).
+2026-08-27 15:51 - INFO - Feedrate: 500.0 mm/min
+2026-08-27 15:51 - INFO - Normalization shift: X=-1.904, Y=-1.855
+2026-08-27 15:51 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-08-27 15:51 - INFO - Final applied shift: X=-1.904, Y=-1.855
+2026-08-27 15:51 - INFO - Updated purge settings via UI: length_mm=100.0, purge_value=0.5
+2026-08-27 15:51 - INFO - Test CheckBox is checked, prepending L-shape prime line.
+2026-08-27 15:51 - INFO - Print Status : RUN
+2026-08-27 15:52 - INFO - Sent PURGE 0.500000 to Blackpill
+2026-08-27 15:52 - INFO - Print Status : PAUSE
+2026-08-27 15:52 - INFO - Print Status : ABORT
+2026-08-27 15:52 - INFO - File selected: D:/Manali_L/ManaliL/InkPrinter/New changes/InkV2_Final_without_cura_version/Test_files/ide2.svg
+2026-08-27 15:52 - INFO - Converting SVG -> G-code directly: D:\Manali_L\ManaliL\InkPrinter\New changes\InkV2_Final_without_cura_version\Test_files\ide2.svg
+2026-08-27 15:52 - INFO - G-code created: D:\Manali_L\ManaliL\InkPrinter\New changes\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-27 15:52 - INFO - G-code ready from SVG: D:\Manali_L\ManaliL\InkPrinter\New changes\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-27 15:52 - INFO - Raw G-code parsed (174 lines).
+2026-08-27 15:52 - INFO - Feedrate: 500.0 mm/min
+2026-08-27 15:52 - INFO - Normalization shift: X=-1.904, Y=-1.855
+2026-08-27 15:52 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-08-27 15:52 - INFO - Final applied shift: X=-1.904, Y=-1.855
+2026-08-27 15:52 - INFO - Test CheckBox is checked, prepending L-shape prime line.
+2026-08-27 15:52 - INFO - Print Status : RUN
+2026-08-27 15:53 - INFO - Sent PURGE 0.500000 to Blackpill
+2026-08-27 15:53 - INFO - Print Status : ABORT
+2026-08-27 15:54 - INFO - File selected: D:/Manali_L/ManaliL/InkPrinter/New changes/InkV2_Final_without_cura_version/Test_files/ide2.svg
+2026-08-27 15:54 - INFO - Converting SVG -> G-code directly: D:\Manali_L\ManaliL\InkPrinter\New changes\InkV2_Final_without_cura_version\Test_files\ide2.svg
+2026-08-27 15:54 - INFO - G-code created: D:\Manali_L\ManaliL\InkPrinter\New changes\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-27 15:54 - INFO - G-code ready from SVG: D:\Manali_L\ManaliL\InkPrinter\New changes\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-27 15:54 - INFO - Raw G-code parsed (174 lines).
+2026-08-27 15:54 - INFO - Feedrate: 1500.0 mm/min
+2026-08-27 15:54 - INFO - Normalization shift: X=-1.904, Y=-1.855
+2026-08-27 15:54 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-08-27 15:54 - INFO - Final applied shift: X=-1.904, Y=-1.855
+2026-08-27 15:55 - INFO - Test CheckBox is checked, prepending L-shape prime line.
+2026-08-27 15:55 - INFO - Print Status : RUN
+2026-08-27 15:55 - INFO - Sent PURGE 0.500000 to Blackpill
+2026-08-27 15:56 - INFO - Print Status : ABORT
+2026-08-27 15:58 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-27 15:58 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-27 15:58 - INFO - Auto-reset Purge button state.
+2026-08-27 15:58 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-27 15:58 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-27 15:58 - INFO - Auto-reset Purge button state.
+2026-08-27 15:58 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-27 15:58 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-27 15:58 - INFO - Auto-reset Purge button state.
+2026-08-27 15:58 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-27 15:58 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-27 15:58 - INFO - Auto-reset Purge button state.
+2026-08-27 15:58 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-27 15:58 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-27 15:58 - INFO - Auto-reset Purge button state.
+2026-08-27 15:59 - INFO - Sent HOME to Blackpill
+2026-08-27 15:59 - INFO - HOME command sent to Blackpill.
+2026-08-27 15:59 - INFO - Sent STOP to Blackpill
+2026-08-27 15:59 - INFO - Stop HOME command sent to Blackpill.
+2026-08-27 15:59 - INFO - File selected: D:/Manali_L/ManaliL/InkPrinter/New changes/InkV2_Final_without_cura_version/Test_files/ide2.svg
+2026-08-27 15:59 - INFO - Converting SVG -> G-code directly: D:\Manali_L\ManaliL\InkPrinter\New changes\InkV2_Final_without_cura_version\Test_files\ide2.svg
+2026-08-27 15:59 - INFO - G-code created: D:\Manali_L\ManaliL\InkPrinter\New changes\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-27 15:59 - INFO - G-code ready from SVG: D:\Manali_L\ManaliL\InkPrinter\New changes\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-27 15:59 - INFO - Raw G-code parsed (174 lines).
+2026-08-27 15:59 - INFO - Feedrate: 1500.0 mm/min
+2026-08-27 15:59 - INFO - Normalization shift: X=-1.904, Y=-1.855
+2026-08-27 15:59 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=5.000
+2026-08-27 15:59 - INFO - Final applied shift: X=-1.904, Y=-1.855
+2026-08-27 15:59 - INFO - Sent HOME to Blackpill
+2026-08-27 15:59 - INFO - HOME command sent to Blackpill.
+2026-08-27 16:00 - INFO - Sent STOP to Blackpill
+2026-08-27 16:00 - INFO - Stop HOME command sent to Blackpill.
+2026-08-27 16:00 - INFO - Sent HOME to Blackpill
+2026-08-27 16:00 - INFO - HOME command sent to Blackpill.
+2026-08-27 16:00 - INFO - Sent STOP to Blackpill
+2026-08-27 16:00 - INFO - Stop HOME command sent to Blackpill.
+2026-08-27 16:00 - INFO - Sent HOME to Blackpill
+2026-08-27 16:00 - INFO - HOME command sent to Blackpill.
+2026-08-27 16:00 - INFO - Sent STOP to Blackpill
+2026-08-27 16:00 - INFO - Stop HOME command sent to Blackpill.
+2026-08-27 16:00 - INFO - Serial communication stopped
+2026-08-27 16:00 - INFO - Do you want to auto connect to COM4 @ 115200
+2026-08-27 16:00 - INFO - Auto Connect dialog button : Ok
+2026-08-27 16:00 - INFO - Serial communication autostarted
+2026-08-27 16:00 - INFO - Serial communication stopped
+2026-08-27 16:00 - CRITICAL - Serial communication started
+2026-08-27 16:00 - INFO - Serial communication stopped
+2026-08-27 16:00 - CRITICAL - Serial communication started
+2026-08-27 16:01 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-27 16:01 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-27 16:01 - INFO - Auto-reset Purge button state.
+2026-08-27 16:01 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-27 16:01 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-27 16:01 - INFO - Auto-reset Purge button state.
+2026-08-27 16:01 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-27 16:01 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-27 16:01 - INFO - Auto-reset Purge button state.
+2026-08-27 16:01 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-27 16:01 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-27 16:01 - INFO - Auto-reset Purge button state.
+2026-08-27 16:01 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-27 16:01 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-27 16:01 - INFO - Auto-reset Purge button state.
+2026-08-27 16:01 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-27 16:01 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-27 16:01 - INFO - Auto-reset Purge button state.
+2026-08-27 16:01 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-27 16:01 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-27 16:02 - INFO - Auto-reset Purge button state.
+2026-08-27 16:02 - INFO - Sent HOME to Blackpill
+2026-08-27 16:02 - INFO - HOME command sent to Blackpill.
+2026-08-27 16:02 - INFO - Sent STOP to Blackpill
+2026-08-27 16:02 - INFO - Stop HOME command sent to Blackpill.
+2026-08-27 16:02 - INFO - Sent HOME to Blackpill
+2026-08-27 16:02 - INFO - HOME command sent to Blackpill.
+2026-08-27 16:02 - INFO - Sent STOP to Blackpill
+2026-08-27 16:02 - INFO - Stop HOME command sent to Blackpill.
+2026-08-27 16:08 - INFO - Sent PURGE 0.500000 to Blackpill
+2026-08-27 16:08 - CRITICAL - Laser 1 : has offset, Xoffset = 5.0, Yoffset = 5.0
+2026-08-27 16:10 - INFO - Test CheckBox is checked, prepending L-shape prime line.
+2026-08-27 16:10 - INFO - Print Status : RUN
+2026-08-27 16:11 - INFO - Sent PURGE 0.500000 to Blackpill
+2026-08-27 16:12 - INFO - Sent PURGE 0.500000 to Blackpill
+2026-08-27 16:12 - INFO - Sent PURGE 0.500000 to Blackpill
+2026-08-27 16:12 - INFO - Sent PURGE 0.500000 to Blackpill
+2026-08-27 16:12 - INFO - Print Status : ABORT
+2026-08-27 16:14 - INFO - Serial communication stopped
+2026-08-27 16:14 - INFO - COM connection close successfully
+2026-08-27 16:14 - INFO - Main window close successfully
+2026-08-27 16:14 - INFO - ==================================================
+2026-08-27 16:14 - INFO - New session close at 2026-08-27 16:14
+2026-08-27 16:14 - INFO - ==================================================
+2026-08-27 16:14 - INFO - ==================================================
+2026-08-27 16:14 - INFO - New session START at 2026-08-27 16:14
+2026-08-27 16:14 - INFO - ==================================================
+2026-08-27 16:14 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-27 16:14 - INFO - Loaded offsets from config: X=5.0, Y=5.0
+2026-08-27 16:14 - INFO - Loaded draw_z from config: Z=41.5, draw_z_UP=20.75
+2026-08-27 16:14 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-27 16:14 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-27 16:14 - INFO - INI file initialized
+2026-08-27 16:14 - INFO - UI load successful
+2026-08-27 16:14 - INFO - Com : com, Port : ['COM3', 'COM1', 'COM4'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-27 16:14 - INFO - Do you want to auto connect to COM4 @ 115200
+2026-08-27 16:14 - INFO - Auto Connect dialog button : Ok
+2026-08-27 16:14 - INFO - Serial communication autostarted
+2026-08-27 16:15 - INFO - File selected: D:/Manali_L/ManaliL/InkPrinter/New changes/InkV2_Final_without_cura_version/Test_files/ide2.svg
+2026-08-27 16:15 - INFO - Converting SVG -> G-code directly: D:\Manali_L\ManaliL\InkPrinter\New changes\InkV2_Final_without_cura_version\Test_files\ide2.svg
+2026-08-27 16:16 - INFO - G-code created: D:\Manali_L\ManaliL\InkPrinter\New changes\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-27 16:16 - INFO - G-code ready from SVG: D:\Manali_L\ManaliL\InkPrinter\New changes\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-27 16:16 - INFO - Raw G-code parsed (174 lines).
+2026-08-27 16:16 - INFO - Feedrate: 500.0 mm/min
+2026-08-27 16:16 - INFO - Normalization shift: X=-1.904, Y=-1.855
+2026-08-27 16:16 - INFO - Using OFFSETS: X=5.000, Y=5.000, drawZ=41.000
+2026-08-27 16:16 - INFO - Final applied shift: X=3.096, Y=3.145
+2026-08-27 16:16 - INFO - Com : black_com, Port : ['COM3', 'COM1', 'COM4'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-27 16:16 - CRITICAL - Serial communication started
+2026-08-27 16:16 - INFO - Print Status : RUN
+2026-08-27 16:17 - INFO - Sent PURGE 0.500000 to Blackpill
+2026-08-27 16:18 - INFO - Sent PURGE 0.500000 to Blackpill
+2026-08-27 16:18 - INFO - Sent PURGE 0.500000 to Blackpill
+2026-08-27 16:19 - INFO - Sent PURGE 0.500000 to Blackpill
+2026-08-27 16:19 - INFO - Print Status : ABORT
+2026-08-27 16:21 - INFO - File selected: D:/Manali_L/ManaliL/InkPrinter/New changes/InkV2_Final_without_cura_version/Test_files/ide2.svg
+2026-08-27 16:21 - INFO - Converting SVG -> G-code directly: D:\Manali_L\ManaliL\InkPrinter\New changes\InkV2_Final_without_cura_version\Test_files\ide2.svg
+2026-08-27 16:21 - INFO - G-code created: D:\Manali_L\ManaliL\InkPrinter\New changes\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-27 16:21 - INFO - G-code ready from SVG: D:\Manali_L\ManaliL\InkPrinter\New changes\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-27 16:21 - INFO - Raw G-code parsed (174 lines).
+2026-08-27 16:21 - INFO - Feedrate: 1500.0 mm/min
+2026-08-27 16:21 - INFO - Normalization shift: X=-1.904, Y=-1.855
+2026-08-27 16:21 - INFO - Using OFFSETS: X=5.000, Y=5.000, drawZ=41.000
+2026-08-27 16:21 - INFO - Final applied shift: X=3.096, Y=3.145
+2026-08-27 16:33 - INFO - File selected: D:/Manali_L/ManaliL/InkPrinter/New changes/InkV2_Final_without_cura_version/Test_files/ide2.svg
+2026-08-27 16:33 - INFO - Converting SVG -> G-code directly: D:\Manali_L\ManaliL\InkPrinter\New changes\InkV2_Final_without_cura_version\Test_files\ide2.svg
+2026-08-27 16:34 - INFO - G-code created: D:\Manali_L\ManaliL\InkPrinter\New changes\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-27 16:34 - INFO - G-code ready from SVG: D:\Manali_L\ManaliL\InkPrinter\New changes\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-27 16:34 - INFO - Raw G-code parsed (174 lines).
+2026-08-27 16:34 - INFO - Feedrate: 1500.0 mm/min
+2026-08-27 16:34 - INFO - Normalization shift: X=-1.904, Y=-1.855
+2026-08-27 16:34 - INFO - Using OFFSETS: X=5.000, Y=5.000, drawZ=41.000
+2026-08-27 16:34 - INFO - Final applied shift: X=3.096, Y=3.145
+2026-08-27 16:34 - INFO - Updated purge settings via UI: length_mm=300.0, purge_value=0.25
+2026-08-27 16:34 - INFO - Updated purge settings via UI: length_mm=300.0, purge_value=0.25
+2026-08-27 16:34 - INFO - syringflushAction triggered - CheckBox state: True
+2026-08-27 16:34 - INFO - Test CheckBox is checked, prepending L-shape prime line.
+2026-08-27 16:34 - INFO - Print Status : RUN
+2026-08-27 16:36 - INFO - Sent PURGE 0.250000 to Blackpill
+2026-08-27 16:37 - INFO - Updated purge settings via UI: length_mm=300.0, purge_value=0.25
+2026-08-27 16:38 - INFO - Sent PURGE 0.250000 to Blackpill
+2026-08-27 16:38 - INFO - Print Status : ABORT
+2026-08-27 16:39 - INFO - File selected: D:/Manali_L/ManaliL/InkPrinter/New changes/InkV2_Final_without_cura_version/Test_files/ide2.svg
+2026-08-27 16:39 - INFO - Converting SVG -> G-code directly: D:\Manali_L\ManaliL\InkPrinter\New changes\InkV2_Final_without_cura_version\Test_files\ide2.svg
+2026-08-27 16:39 - INFO - G-code created: D:\Manali_L\ManaliL\InkPrinter\New changes\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-27 16:39 - INFO - G-code ready from SVG: D:\Manali_L\ManaliL\InkPrinter\New changes\InkV2_Final_without_cura_version\Test_files\ide2.gcode
+2026-08-27 16:39 - INFO - Raw G-code parsed (174 lines).
+2026-08-27 16:39 - INFO - Feedrate: 1500.0 mm/min
+2026-08-27 16:39 - INFO - Normalization shift: X=-1.904, Y=-1.855
+2026-08-27 16:39 - INFO - Using OFFSETS: X=5.000, Y=5.000, drawZ=41.000
+2026-08-27 16:39 - INFO - Final applied shift: X=3.096, Y=3.145
+2026-08-27 16:39 - INFO - Updated purge settings via UI: length_mm=300.0, purge_value=0.25
+2026-08-27 16:39 - INFO - Updated purge settings via UI: length_mm=300.0, purge_value=0.25
+2026-08-27 16:39 - INFO - Updated purge settings via UI: length_mm=300.0, purge_value=0.25
+2026-08-27 16:39 - INFO - Updated purge settings via UI: length_mm=300.0, purge_value=0.25
+2026-08-27 16:40 - INFO - Normalization shift: X=-1.904, Y=-1.855
+2026-08-27 16:40 - INFO - Using OFFSETS: X=5.000, Y=5.000, drawZ=41.000
+2026-08-27 16:40 - INFO - Final applied shift: X=3.096, Y=3.145
+2026-08-27 16:40 - INFO - Sent PURGE 0.1 to Blackpill
+2026-08-27 16:40 - INFO - Purge command (PURGE 0.1) sent to Blackpill.
+2026-08-27 16:40 - INFO - Auto-reset Purge button state.
+2026-08-27 16:41 - INFO - Sent PURGE 0.1 to Blackpill
+2026-08-27 16:41 - INFO - Purge command (PURGE 0.1) sent to Blackpill.
+2026-08-27 16:41 - INFO - Auto-reset Purge button state.
+2026-08-27 16:41 - INFO - Normalization shift: X=-1.904, Y=-1.855
+2026-08-27 16:41 - INFO - Using OFFSETS: X=5.000, Y=5.000, drawZ=41.000
+2026-08-27 16:41 - INFO - Final applied shift: X=3.096, Y=3.145
+2026-08-27 16:41 - INFO - Updated purge settings via UI: length_mm=300.0, purge_value=0.25
+2026-08-27 16:42 - INFO - Test CheckBox is checked, prepending L-shape prime line.
+2026-08-27 16:42 - INFO - Print Status : RUN
+2026-08-27 16:43 - INFO - Sent PURGE 0.250000 to Blackpill
+2026-08-27 16:44 - INFO - Sent PURGE 0.250000 to Blackpill
+2026-08-27 16:46 - INFO - Sent PURGE 0.250000 to Blackpill
+2026-08-27 16:47 - INFO - Sent PURGE 0.250000 to Blackpill
+2026-08-27 16:53 - INFO - Serial communication stopped
+2026-08-27 16:53 - INFO - COM connection close successfully
+2026-08-27 16:53 - INFO - Main window close successfully
+2026-08-27 16:53 - INFO - ==================================================
+2026-08-27 16:53 - INFO - New session close at 2026-08-27 16:53
+2026-08-27 16:53 - INFO - ==================================================
