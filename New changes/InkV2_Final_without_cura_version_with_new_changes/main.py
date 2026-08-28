@@ -1057,6 +1057,7 @@ class MainWindow(QMainWindow):
         self.purge_distance_interval = 100.0
         self.purge_amount = 0.5
         self.accumulated_print_distance = 0.0
+        self.total_print_distance = 0.0
 
         if hasattr(self, 'ui'):
             if hasattr(self.ui, 'extlenghtLineEdit'):
@@ -1313,6 +1314,7 @@ class MainWindow(QMainWindow):
         elif gstr.startswith("; --- PRIME LINE END ---"):
             self.in_prime_line = False
             self.accumulated_print_distance = 0.0
+            self.total_print_distance = 0.0
 
         # Ignore full-line comments or empty lines
         if not gstr or gstr.startswith(";") or gstr.startswith("("):
@@ -1371,16 +1373,17 @@ class MainWindow(QMainWindow):
                 # --- NEW PURGE LOGIC ---
                 if not getattr(self, 'in_prime_line', False):
                     self.accumulated_print_distance = getattr(self, 'accumulated_print_distance', 0.0) + distance
+                    self.total_print_distance = getattr(self, 'total_print_distance', 0.0) + distance
                     purge_interval = getattr(self, 'purge_distance_interval', 100.0)
                     if self.accumulated_print_distance >= purge_interval:
                         purge_val = getattr(self, 'purge_amount', 0.5)
                         cmd = f"PURGE {purge_val:.6f}"
-                        msg = f"PURGE EXECUTED: {cmd} | triggered after {self.accumulated_print_distance:.2f}mm"
+                        msg = f"PURGE EXECUTED: {cmd} | triggered at total distance {self.total_print_distance:.2f}mm"
                         self.util.debugPrint(msg)
                         if hasattr(self, 'terminalWidget') and hasattr(self.terminalWidget, 'output'):
                             self.receiveACK(self.terminalWidget.output, f">>> {msg}")
                         self._send_to_blackpill(cmd)
-                        self.accumulated_print_distance = 0.0  # reset after purging
+                        self.accumulated_print_distance -= purge_interval  # subtract interval to keep remainder
 
             
             self.current_x = new_x
