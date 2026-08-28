@@ -699,3 +699,10 @@ New Session at 2026-08-28 10:56:10
 ==================================================
 2026-08-28 10:56:23 - CRITICAL - util.py:207 - Serial communication started
 2026-08-28 11:11:38 - CRITICAL - util.py:207 - Laser 1 : has offset, Xoffset = 5.0, Yoffset = 5.0
+
+==================================================
+New Session at 2026-08-28 11:57:15
+==================================================
+2026-08-28 12:03:34 - ERROR - util.py:204 - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-28 12:03:45 - CRITICAL - util.py:207 - Serial communication started
+2026-08-28 12:20:58 - CRITICAL - util.py:207 - Laser 1 : has offset, Xoffset = 5.0, Yoffset = 5.0
