@@ -2419,6 +2419,10 @@ class MainWindow(QMainWindow):
                 self.showCustomPopup("Connection Error", msg)
                 return
 
+            # Reset purge counters for every new print
+            self.accumulated_print_distance = 0.0
+            self.total_print_distance = 0.0
+
             if hasattr(self, "filtered_gcode") and self.filtered_gcode:
                 # --- PRIME LINE LOGIC ---
                 if hasattr(self, 'ui') and hasattr(self.ui, 'testCheckBox'):
