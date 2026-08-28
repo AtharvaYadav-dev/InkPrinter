@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'interfacegVjFto.ui'
+## Form generated from reading UI file 'interfacevEHJXh.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.8.1
 ##
@@ -368,6 +368,9 @@ class Ui_MainWindow(object):
         font4.setPointSize(16)
         font4.setBold(True)
         self.comLabel.setFont(font4)
+        self.comLabel.setStyleSheet(u"QLabel {\n"
+"    color: rgb(16, 42, 131);\n"
+"}")
         self.comLabel.setAlignment(Qt.AlignmentFlag.AlignCenter)
 
         self.verticalLayout_20.addWidget(self.comLabel)
@@ -395,6 +398,9 @@ class Ui_MainWindow(object):
         font5.setPointSize(12)
         font5.setBold(True)
         self.portLabel.setFont(font5)
+        self.portLabel.setStyleSheet(u"QLabel {\n"
+"    color: rgb(16, 42, 131);\n"
+"}")
 
         self.horizontalLayout_12.addWidget(self.portLabel)
 
@@ -430,6 +436,9 @@ class Ui_MainWindow(object):
         self.baudLabel.setObjectName(u"baudLabel")
         self.baudLabel.setMinimumSize(QSize(0, 30))
         self.baudLabel.setFont(font5)
+        self.baudLabel.setStyleSheet(u"QLabel {\n"
+"    color: rgb(16, 42, 131);\n"
+"}")
 
         self.horizontalLayout_13.addWidget(self.baudLabel)
 
@@ -1042,6 +1051,9 @@ class Ui_MainWindow(object):
         self.comLabel_2 = QLabel(self.blackcomPage)
         self.comLabel_2.setObjectName(u"comLabel_2")
         self.comLabel_2.setFont(font4)
+        self.comLabel_2.setStyleSheet(u"QLabel {\n"
+"    color: rgb(16, 42, 131);\n"
+"}")
         self.comLabel_2.setAlignment(Qt.AlignmentFlag.AlignCenter)
 
         self.verticalLayout_62.addWidget(self.comLabel_2)
@@ -1066,6 +1078,9 @@ class Ui_MainWindow(object):
         self.portLabel_2.setObjectName(u"portLabel_2")
         self.portLabel_2.setMinimumSize(QSize(0, 30))
         self.portLabel_2.setFont(font5)
+        self.portLabel_2.setStyleSheet(u"QLabel {\n"
+"    color: rgb(16, 42, 131);\n"
+"}")
 
         self.horizontalLayout_45.addWidget(self.portLabel_2)
 
@@ -1102,6 +1117,9 @@ class Ui_MainWindow(object):
         self.baudLabel_2.setObjectName(u"baudLabel_2")
         self.baudLabel_2.setMinimumSize(QSize(0, 30))
         self.baudLabel_2.setFont(font5)
+        self.baudLabel_2.setStyleSheet(u"QLabel {\n"
+"    color: rgb(16, 42, 131);\n"
+"}")
 
         self.horizontalLayout_46.addWidget(self.baudLabel_2)
 
@@ -4513,9 +4531,9 @@ class Ui_MainWindow(object):
 #endif // QT_CONFIG(tooltip)
         self.comPushButton.setText(QCoreApplication.translate("MainWindow", u"Connect", None))
 #if QT_CONFIG(tooltip)
-        self.blackcomPushButton.setToolTip(QCoreApplication.translate("MainWindow", u"Info", None))
+        self.blackcomPushButton.setToolTip(QCoreApplication.translate("MainWindow", u"Blackpill Com", None))
 #endif // QT_CONFIG(tooltip)
-        self.blackcomPushButton.setText(QCoreApplication.translate("MainWindow", u"Information", None))
+        self.blackcomPushButton.setText(QCoreApplication.translate("MainWindow", u"Black com", None))
         self.settingsPushButton.setText(QCoreApplication.translate("MainWindow", u"Settings", None))
 #if QT_CONFIG(tooltip)
         self.infoPushButton.setToolTip(QCoreApplication.translate("MainWindow", u"Info", None))

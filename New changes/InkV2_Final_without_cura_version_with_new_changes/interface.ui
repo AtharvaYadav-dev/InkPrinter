@@ -524,10 +524,10 @@
                 </font>
                </property>
                <property name="toolTip">
-                <string>Info</string>
+                <string>Blackpill Com</string>
                </property>
                <property name="text">
-                <string>Information</string>
+                <string>Black com</string>
                </property>
                <property name="icon">
                 <iconset resource="resources.qrc">
@@ -751,6 +751,11 @@
                   <bold>true</bold>
                  </font>
                 </property>
+                <property name="styleSheet">
+                 <string notr="true">QLabel {
+    color: rgb(16, 42, 131);
+}</string>
+                </property>
                 <property name="text">
                  <string>Communication</string>
                 </property>
@@ -818,6 +823,11 @@
                         <bold>true</bold>
                        </font>
                       </property>
+                      <property name="styleSheet">
+                       <string notr="true">QLabel {
+    color: rgb(16, 42, 131);
+}</string>
+                      </property>
                       <property name="text">
                        <string>Port</string>
                       </property>
@@ -875,6 +885,11 @@ QComboBox QAbstractItemView {
                         <pointsize>12</pointsize>
                         <bold>true</bold>
                        </font>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">QLabel {
+    color: rgb(16, 42, 131);
+}</string>
                       </property>
                       <property name="text">
                        <string>Baud</string>
@@ -2088,6 +2103,11 @@ QPushButton:disabled {
                   <bold>true</bold>
                  </font>
                 </property>
+                <property name="styleSheet">
+                 <string notr="true">QLabel {
+    color: rgb(16, 42, 131);
+}</string>
+                </property>
                 <property name="text">
                  <string>Com2</string>
                 </property>
@@ -2155,6 +2175,11 @@ QPushButton:disabled {
                         <bold>true</bold>
                        </font>
                       </property>
+                      <property name="styleSheet">
+                       <string notr="true">QLabel {
+    color: rgb(16, 42, 131);
+}</string>
+                      </property>
                       <property name="text">
                        <string>Port</string>
                       </property>
@@ -2213,6 +2238,11 @@ QComboBox QAbstractItemView {
                         <pointsize>12</pointsize>
                         <bold>true</bold>
                        </font>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">QLabel {
+    color: rgb(16, 42, 131);
+}</string>
                       </property>
                       <property name="text">
                        <string>Baud</string>

@@ -2793,3 +2793,133 @@ AttributeError: 'GCode3DPreview' object has no attribute 'total_print_length'
 2026-08-28 12:27 - INFO - Sent PURGE 0.062500 to Blackpill
 2026-08-28 12:28 - INFO - Sent PURGE 0.062500 to Blackpill
 2026-08-28 12:29 - INFO - Sent PURGE 0.062500 to Blackpill
+2026-08-28 12:57 - INFO - ==================================================
+2026-08-28 12:57 - INFO - New session START at 2026-08-28 12:57
+2026-08-28 12:57 - INFO - ==================================================
+2026-08-28 12:57 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-28 12:57 - INFO - Loaded offsets from config: X=5.0, Y=5.0
+2026-08-28 12:57 - INFO - Loaded draw_z from config: Z=41.5, draw_z_UP=20.75
+2026-08-28 12:57 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-28 12:57 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-28 12:57 - INFO - INI file initialized
+2026-08-28 12:57 - INFO - UI load successful
+2026-08-28 12:57 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-28 12:57 - INFO - Do you want to auto connect to COM4 @ 115200
+2026-08-28 12:57 - INFO - Auto Connect dialog button : Cancel
+2026-08-28 12:57 - INFO - Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-28 12:57 - INFO - Do you want to auto connect to COM3 @ 115200
+2026-08-28 12:57 - INFO - Auto Connect dialog button : Cancel
+2026-08-28 12:57 - INFO - ==================================================
+2026-08-28 12:57 - INFO - New session START at 2026-08-28 12:57
+2026-08-28 12:57 - INFO - ==================================================
+2026-08-28 12:57 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-28 12:57 - INFO - Loaded offsets from config: X=5.0, Y=5.0
+2026-08-28 12:57 - INFO - Loaded draw_z from config: Z=41.5, draw_z_UP=20.75
+2026-08-28 12:57 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-28 12:57 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-28 12:57 - INFO - INI file initialized
+2026-08-28 12:57 - INFO - UI load successful
+2026-08-28 12:57 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-28 12:57 - INFO - Do you want to auto connect to COM4 @ 115200
+2026-08-28 12:57 - INFO - Auto Connect dialog button : Cancel
+2026-08-28 12:57 - INFO - Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-28 12:57 - INFO - Do you want to auto connect to COM3 @ 115200
+2026-08-28 12:57 - INFO - Auto Connect dialog button : Cancel
+2026-08-28 12:57 - INFO - ==================================================
+2026-08-28 12:57 - INFO - New session START at 2026-08-28 12:57
+2026-08-28 12:57 - INFO - ==================================================
+2026-08-28 12:57 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-28 12:57 - INFO - Loaded offsets from config: X=5.0, Y=5.0
+2026-08-28 12:57 - INFO - Loaded draw_z from config: Z=41.5, draw_z_UP=20.75
+2026-08-28 12:57 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-28 12:57 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-28 12:57 - INFO - INI file initialized
+2026-08-28 12:57 - INFO - UI load successful
+2026-08-28 12:57 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-28 12:57 - INFO - Do you want to auto connect to COM4 @ 115200
+2026-08-28 12:57 - INFO - Auto Connect dialog button : Cancel
+2026-08-28 12:57 - INFO - Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-28 12:58 - INFO - Do you want to auto connect to COM3 @ 115200
+2026-08-28 12:58 - INFO - Auto Connect dialog button : Cancel
+2026-08-28 12:58 - INFO - Serial communication stopped
+2026-08-28 12:58 - INFO - COM connection close successfully
+2026-08-28 12:58 - INFO - Main window close successfully
+2026-08-28 12:58 - INFO - ==================================================
+2026-08-28 12:58 - INFO - New session close at 2026-08-28 12:58
+2026-08-28 12:58 - INFO - ==================================================
+2026-08-28 13:00 - INFO - ==================================================
+2026-08-28 13:00 - INFO - New session START at 2026-08-28 13:00
+2026-08-28 13:00 - INFO - ==================================================
+2026-08-28 13:00 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-28 13:00 - INFO - Loaded offsets from config: X=5.0, Y=5.0
+2026-08-28 13:00 - INFO - Loaded draw_z from config: Z=41.5, draw_z_UP=20.75
+2026-08-28 13:00 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-28 13:00 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-28 13:00 - INFO - INI file initialized
+2026-08-28 13:00 - INFO - UI load successful
+2026-08-28 13:00 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-28 13:00 - INFO - Do you want to auto connect Main Printer COM to COM4 @ 115200?
+2026-08-28 13:00 - INFO - Auto Connect dialog button : Cancel
+2026-08-28 13:00 - INFO - Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-28 13:00 - INFO - Do you want to auto connect Blackpill COM to COM3 @ 115200?
+2026-08-28 13:00 - INFO - Auto Connect dialog button : Cancel
+2026-08-28 13:00 - INFO - ==================================================
+2026-08-28 13:00 - INFO - New session START at 2026-08-28 13:00
+2026-08-28 13:00 - INFO - ==================================================
+2026-08-28 13:00 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-28 13:00 - INFO - Loaded offsets from config: X=5.0, Y=5.0
+2026-08-28 13:00 - INFO - Loaded draw_z from config: Z=41.5, draw_z_UP=20.75
+2026-08-28 13:00 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-28 13:00 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-28 13:00 - INFO - INI file initialized
+2026-08-28 13:00 - INFO - UI load successful
+2026-08-28 13:00 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-28 13:00 - INFO - Do you want to auto connect Main Printer COM to COM4 @ 115200?
+2026-08-28 13:00 - INFO - Auto Connect dialog button : Cancel
+2026-08-28 13:00 - INFO - Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-28 13:00 - INFO - Do you want to auto connect Blackpill COM to COM3 @ 115200?
+2026-08-28 13:00 - INFO - Auto Connect dialog button : Cancel
+2026-08-28 13:00 - INFO - Serial communication stopped
+2026-08-28 13:00 - INFO - COM connection close successfully
+2026-08-28 13:00 - INFO - Main window close successfully
+2026-08-28 13:00 - INFO - ==================================================
+2026-08-28 13:00 - INFO - New session close at 2026-08-28 13:00
+2026-08-28 13:00 - INFO - ==================================================
+2026-08-28 13:02 - INFO - ==================================================
+2026-08-28 13:02 - INFO - New session START at 2026-08-28 13:02
+2026-08-28 13:02 - INFO - ==================================================
+2026-08-28 13:02 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-28 13:02 - INFO - Loaded offsets from config: X=5.0, Y=5.0
+2026-08-28 13:02 - INFO - Loaded draw_z from config: Z=41.5, draw_z_UP=20.75
+2026-08-28 13:02 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-28 13:02 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-28 13:02 - INFO - INI file initialized
+2026-08-28 13:02 - INFO - UI load successful
+2026-08-28 13:02 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-28 13:02 - INFO - Do you want to auto connect Main Printer COM to COM4 @ 115200?
+2026-08-28 13:02 - INFO - Auto Connect dialog button : Cancel
+2026-08-28 13:02 - INFO - Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-28 13:02 - INFO - Do you want to auto connect Blackpill COM to COM3 @ 115200?
+2026-08-28 13:02 - INFO - Auto Connect dialog button : Cancel
+2026-08-28 13:02 - INFO - Serial communication stopped
+2026-08-28 13:02 - INFO - COM connection close successfully
+2026-08-28 13:02 - INFO - Main window close successfully
+2026-08-28 13:02 - INFO - ==================================================
+2026-08-28 13:02 - INFO - New session close at 2026-08-28 13:02
+2026-08-28 13:02 - INFO - ==================================================
+2026-08-28 13:03 - INFO - ==================================================
+2026-08-28 13:03 - INFO - New session START at 2026-08-28 13:03
+2026-08-28 13:03 - INFO - ==================================================
+2026-08-28 13:03 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-28 13:03 - INFO - Loaded offsets from config: X=5.0, Y=5.0
+2026-08-28 13:03 - INFO - Loaded draw_z from config: Z=41.5, draw_z_UP=20.75
+2026-08-28 13:03 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-28 13:03 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-28 13:03 - INFO - INI file initialized
+2026-08-28 13:03 - INFO - UI load successful
+2026-08-28 13:03 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-28 13:03 - INFO - Do you want to auto connect Main Printer COM to COM4 @ 115200?
+2026-08-28 13:03 - INFO - Auto Connect dialog button : Cancel
+2026-08-28 13:03 - INFO - Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-28 13:03 - INFO - Do you want to auto connect Blackpill COM to COM3 @ 115200?
+2026-08-28 13:03 - INFO - Auto Connect dialog button : Cancel

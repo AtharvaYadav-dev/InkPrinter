@@ -1206,8 +1206,9 @@ class MainWindow(QMainWindow):
                 port = self.conf.getValues(conf_name, "port")
                 baud = self.conf.getValues(conf_name, "baudrate")
 
-                msg_dict = {True : ("COM Port Connection",f"Do you want to auto connect to {port} @ {baud}"),
-                            False : ("COM Port Auto-Connection failed","Kindly peform manual COM port configuration!!!")}
+                display_name = "Blackpill COM" if com.object == "blackpill_sercom" else "Main Printer COM"
+                msg_dict = {True : (f"{display_name} Auto Connect", f"Do you want to auto connect {display_name} to {port} @ {baud}?"),
+                            False : (f"{display_name} Auto-Connection failed", f"Kindly perform manual {display_name} configuration!!!")}
                 
                 condition = serial_obj.validatePort(port) and serial_obj.validateBaudrate(baud)
                 msg_title, msg_text = msg_dict.get(condition)
@@ -1453,8 +1454,14 @@ class MainWindow(QMainWindow):
         
         self.initAxis()
         self.initSetting()
+        
+        # Initialize and auto-connect Main Printer COM
         self.initCom(self.com, refresh=True)
         self.comAction(self.com, action="Auto")
+        
+        # Initialize and auto-connect Blackpill COM
+        self.initCom(self.black_com, refresh=True)
+        self.comAction(self.black_com, action="Auto")
 
     def closeEvent(self, event):
         reply = self.showCustomPopup('Confirmation', "Are you sure you want to quit?", buttons=QMessageBox.Yes | QMessageBox.No)
