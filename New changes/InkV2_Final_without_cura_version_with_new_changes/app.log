@@ -2626,3 +2626,83 @@ AttributeError: 'GCode3DPreview' object has no attribute 'total_print_length'
 2026-08-27 17:56 - INFO - ==================================================
 2026-08-27 17:56 - INFO - New session close at 2026-08-27 17:56
 2026-08-27 17:56 - INFO - ==================================================
+2026-08-28 10:56 - INFO - ==================================================
+2026-08-28 10:56 - INFO - New session START at 2026-08-28 10:56
+2026-08-28 10:56 - INFO - ==================================================
+2026-08-28 10:56 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-28 10:56 - INFO - Loaded offsets from config: X=5.0, Y=5.0
+2026-08-28 10:56 - INFO - Loaded draw_z from config: Z=41.6, draw_z_UP=20.8
+2026-08-28 10:56 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-28 10:56 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-28 10:56 - INFO - INI file initialized
+2026-08-28 10:56 - INFO - UI load successful
+2026-08-28 10:56 - INFO - Com : com, Port : ['COM3', 'COM1', 'COM4'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-28 10:56 - INFO - Do you want to auto connect to COM4 @ 115200
+2026-08-28 10:56 - INFO - Auto Connect dialog button : Ok
+2026-08-28 10:56 - INFO - Serial communication autostarted
+2026-08-28 10:56 - INFO - Com : black_com, Port : ['COM3', 'COM1', 'COM4'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-28 10:56 - CRITICAL - Serial communication started
+2026-08-28 10:57 - INFO - File selected: D:/Manali_L/ManaliL/InkPrinter/New changes/InkV2_Final_without_cura_version_with_new_changes/Test_files/ide2.svg
+2026-08-28 10:57 - INFO - Converting SVG -> G-code directly: D:\Manali_L\ManaliL\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\Test_files\ide2.svg
+2026-08-28 10:57 - INFO - G-code created: D:\Manali_L\ManaliL\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\Test_files\ide2.gcode
+2026-08-28 10:57 - INFO - G-code ready from SVG: D:\Manali_L\ManaliL\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\Test_files\ide2.gcode
+2026-08-28 10:57 - INFO - Raw G-code parsed (174 lines).
+2026-08-28 10:57 - INFO - Feedrate: 1500.0 mm/min
+2026-08-28 10:57 - INFO - Normalization shift: X=-1.904, Y=-1.855
+2026-08-28 10:57 - INFO - Using OFFSETS: X=5.000, Y=5.000, drawZ=41.600
+2026-08-28 10:57 - INFO - Final applied shift: X=3.096, Y=3.145
+2026-08-28 10:57 - INFO - Updated purge settings via UI: length_mm=300.0, purge_value=0.25
+2026-08-28 11:00 - INFO - syringflushAction triggered - CheckBox state: True
+2026-08-28 11:11 - CRITICAL - Laser 1 : has offset, Xoffset = 5.0, Yoffset = 5.0
+2026-08-28 11:11 - INFO - Updated purge settings via UI: length_mm=300.0, purge_value=0.25
+2026-08-28 11:12 - INFO - Test CheckBox is checked, prepending L-shape prime line.
+2026-08-28 11:12 - INFO - Print Status : RUN
+2026-08-28 11:14 - INFO - Sent PURGE 0.250000 to Blackpill
+2026-08-28 11:16 - INFO - Sent PURGE 0.250000 to Blackpill
+2026-08-28 11:17 - INFO - Sent PURGE 0.250000 to Blackpill
+2026-08-28 11:18 - INFO - Sent PURGE 0.250000 to Blackpill
+2026-08-28 11:21 - INFO - Sent PURGE 0.1 to Blackpill
+2026-08-28 11:21 - INFO - Purge command (PURGE 0.1) sent to Blackpill.
+2026-08-28 11:21 - INFO - Auto-reset Purge button state.
+2026-08-28 11:21 - INFO - Sent PURGE 0.1 to Blackpill
+2026-08-28 11:21 - INFO - Purge command (PURGE 0.1) sent to Blackpill.
+2026-08-28 11:21 - INFO - Auto-reset Purge button state.
+2026-08-28 11:21 - INFO - Sent PURGE 0.1 to Blackpill
+2026-08-28 11:21 - INFO - Purge command (PURGE 0.1) sent to Blackpill.
+2026-08-28 11:21 - INFO - Auto-reset Purge button state.
+2026-08-28 11:21 - INFO - Sent PURGE 0.1 to Blackpill
+2026-08-28 11:21 - INFO - Purge command (PURGE 0.1) sent to Blackpill.
+2026-08-28 11:21 - INFO - Auto-reset Purge button state.
+2026-08-28 11:21 - INFO - Sent PURGE 0.1 to Blackpill
+2026-08-28 11:21 - INFO - Purge command (PURGE 0.1) sent to Blackpill.
+2026-08-28 11:21 - INFO - Auto-reset Purge button state.
+2026-08-28 11:21 - INFO - Sent PURGE 0.1 to Blackpill
+2026-08-28 11:21 - INFO - Purge command (PURGE 0.1) sent to Blackpill.
+2026-08-28 11:21 - INFO - Auto-reset Purge button state.
+2026-08-28 11:21 - INFO - Sent PURGE 0.1 to Blackpill
+2026-08-28 11:21 - INFO - Purge command (PURGE 0.1) sent to Blackpill.
+2026-08-28 11:21 - INFO - Auto-reset Purge button state.
+2026-08-28 11:21 - INFO - Sent PURGE 0.1 to Blackpill
+2026-08-28 11:21 - INFO - Purge command (PURGE 0.1) sent to Blackpill.
+2026-08-28 11:22 - INFO - Auto-reset Purge button state.
+2026-08-28 11:22 - INFO - Sent PURGE 0.1 to Blackpill
+2026-08-28 11:22 - INFO - Purge command (PURGE 0.1) sent to Blackpill.
+2026-08-28 11:22 - INFO - Auto-reset Purge button state.
+2026-08-28 11:22 - INFO - Sent PURGE 0.1 to Blackpill
+2026-08-28 11:22 - INFO - Purge command (PURGE 0.1) sent to Blackpill.
+2026-08-28 11:22 - INFO - Auto-reset Purge button state.
+2026-08-28 11:22 - INFO - Sent PURGE 0.1 to Blackpill
+2026-08-28 11:22 - INFO - Purge command (PURGE 0.1) sent to Blackpill.
+2026-08-28 11:22 - INFO - Auto-reset Purge button state.
+2026-08-28 11:22 - INFO - Sent PURGE 0.1 to Blackpill
+2026-08-28 11:22 - INFO - Purge command (PURGE 0.1) sent to Blackpill.
+2026-08-28 11:22 - INFO - Auto-reset Purge button state.
+2026-08-28 11:22 - INFO - Sent PURGE 0.1 to Blackpill
+2026-08-28 11:22 - INFO - Purge command (PURGE 0.1) sent to Blackpill.
+2026-08-28 11:22 - INFO - Auto-reset Purge button state.
+2026-08-28 11:23 - INFO - Updated purge settings via UI: length_mm=300.0, purge_value=0.25
+2026-08-28 11:25 - INFO - Print Status : RUN
+2026-08-28 11:27 - INFO - Sent PURGE 0.250000 to Blackpill
+2026-08-28 11:28 - INFO - Sent PURGE 0.250000 to Blackpill
+2026-08-28 11:30 - INFO - Sent PURGE 0.250000 to Blackpill
+2026-08-28 11:31 - INFO - Sent PURGE 0.250000 to Blackpill

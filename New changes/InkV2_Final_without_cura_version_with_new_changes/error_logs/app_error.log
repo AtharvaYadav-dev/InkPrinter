@@ -693,3 +693,9 @@ New Session at 2026-08-27 17:40:02
 ==================================================
 2026-08-27 17:40:16 - CRITICAL - util.py:207 - Serial communication started
 2026-08-27 17:46:40 - CRITICAL - util.py:207 - Laser 1 : has offset, Xoffset = 5.0, Yoffset = 5.0
+
+==================================================
+New Session at 2026-08-28 10:56:10
+==================================================
+2026-08-28 10:56:23 - CRITICAL - util.py:207 - Serial communication started
+2026-08-28 11:11:38 - CRITICAL - util.py:207 - Laser 1 : has offset, Xoffset = 5.0, Yoffset = 5.0
