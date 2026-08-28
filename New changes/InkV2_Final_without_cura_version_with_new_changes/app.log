@@ -2397,3 +2397,232 @@ AttributeError: 'GCode3DPreview' object has no attribute 'total_print_length'
 2026-08-27 16:59 - INFO - ==================================================
 2026-08-27 16:59 - INFO - New session close at 2026-08-27 16:59
 2026-08-27 16:59 - INFO - ==================================================
+2026-08-27 17:13 - INFO - ==================================================
+2026-08-27 17:13 - INFO - New session START at 2026-08-27 17:13
+2026-08-27 17:13 - INFO - ==================================================
+2026-08-27 17:13 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-27 17:13 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-08-27 17:13 - INFO - Loaded draw_z from config: Z=41.0, draw_z_UP=20.5
+2026-08-27 17:13 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-27 17:13 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-27 17:13 - INFO - INI file initialized
+2026-08-27 17:13 - INFO - UI load successful
+2026-08-27 17:13 - INFO - Com : com, Port : ['COM3', 'COM1', 'COM4'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-27 17:14 - CRITICAL - Serial communication started
+2026-08-27 17:15 - INFO - Com : black_com, Port : ['COM3', 'COM1', 'COM4'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-27 17:15 - CRITICAL - Serial communication started
+2026-08-27 17:16 - INFO - syringflushAction triggered - CheckBox state: True
+2026-08-27 17:16 - INFO - File selected: D:/Manali_L/ManaliL/InkPrinter/New changes/InkV2_Final_without_cura_version_with_new_changes/Test_files/ide2.svg
+2026-08-27 17:16 - INFO - Converting SVG -> G-code directly: D:\Manali_L\ManaliL\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\Test_files\ide2.svg
+2026-08-27 17:16 - INFO - G-code created: D:\Manali_L\ManaliL\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\Test_files\ide2.gcode
+2026-08-27 17:16 - INFO - G-code ready from SVG: D:\Manali_L\ManaliL\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\Test_files\ide2.gcode
+2026-08-27 17:16 - INFO - Raw G-code parsed (174 lines).
+2026-08-27 17:16 - INFO - Feedrate: 1500.0 mm/min
+2026-08-27 17:16 - INFO - Normalization shift: X=-1.904, Y=-1.855
+2026-08-27 17:16 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=41.600
+2026-08-27 17:16 - INFO - Final applied shift: X=-1.904, Y=-1.855
+2026-08-27 17:16 - INFO - Updated purge settings via UI: length_mm=300.0, purge_value=0.25
+2026-08-27 17:16 - INFO - Test CheckBox is checked, prepending L-shape prime line.
+2026-08-27 17:16 - INFO - Print Status : RUN
+2026-08-27 17:17 - INFO - Print Status : ABORT
+2026-08-27 17:17 - CRITICAL - Laser 1 : has offset, Xoffset = 5.0, Yoffset = 5.0
+2026-08-27 17:18 - INFO - File selected: D:/Manali_L/ManaliL/InkPrinter/New changes/InkV2_Final_without_cura_version_with_new_changes/Test_files/ide2.svg
+2026-08-27 17:18 - INFO - Converting SVG -> G-code directly: D:\Manali_L\ManaliL\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\Test_files\ide2.svg
+2026-08-27 17:18 - INFO - G-code created: D:\Manali_L\ManaliL\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\Test_files\ide2.gcode
+2026-08-27 17:18 - INFO - G-code ready from SVG: D:\Manali_L\ManaliL\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\Test_files\ide2.gcode
+2026-08-27 17:18 - INFO - Raw G-code parsed (174 lines).
+2026-08-27 17:18 - INFO - Feedrate: 1500.0 mm/min
+2026-08-27 17:18 - INFO - Normalization shift: X=-1.904, Y=-1.855
+2026-08-27 17:18 - INFO - Using OFFSETS: X=5.000, Y=5.000, drawZ=41.600
+2026-08-27 17:18 - INFO - Final applied shift: X=3.096, Y=3.145
+2026-08-27 17:18 - INFO - Updated purge settings via UI: length_mm=300.0, purge_value=0.25
+2026-08-27 17:18 - INFO - Test CheckBox is checked, prepending L-shape prime line.
+2026-08-27 17:18 - INFO - Print Status : RUN
+2026-08-27 17:19 - INFO - Serial communication stopped
+2026-08-27 17:19 - INFO - COM connection close successfully
+2026-08-27 17:19 - INFO - Main window close successfully
+2026-08-27 17:19 - INFO - ==================================================
+2026-08-27 17:19 - INFO - New session close at 2026-08-27 17:19
+2026-08-27 17:19 - INFO - ==================================================
+2026-08-27 17:19 - INFO - ==================================================
+2026-08-27 17:19 - INFO - New session START at 2026-08-27 17:19
+2026-08-27 17:19 - INFO - ==================================================
+2026-08-27 17:19 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-27 17:19 - INFO - Loaded offsets from config: X=5.0, Y=5.0
+2026-08-27 17:19 - INFO - Loaded draw_z from config: Z=41.6, draw_z_UP=20.8
+2026-08-27 17:19 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-27 17:19 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-27 17:19 - INFO - INI file initialized
+2026-08-27 17:19 - INFO - UI load successful
+2026-08-27 17:19 - INFO - Com : com, Port : ['COM1', 'COM4'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-27 17:19 - INFO - Do you want to auto connect to COM4 @ 115200
+2026-08-27 17:19 - INFO - Auto Connect dialog button : Ok
+2026-08-27 17:19 - INFO - Serial communication autostarted
+2026-08-27 17:19 - INFO - Com : black_com, Port : ['COM1', 'COM4'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-27 17:19 - INFO - Com : black_com, Port : ['COM1', 'COM4'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-27 17:20 - INFO - Com : black_com, Port : ['COM3', 'COM1', 'COM4'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-27 17:20 - CRITICAL - Serial communication started
+2026-08-27 17:20 - INFO - Serial communication stopped
+2026-08-27 17:20 - INFO - Do you want to auto connect to COM4 @ 115200
+2026-08-27 17:20 - INFO - Auto Connect dialog button : Ok
+2026-08-27 17:20 - INFO - Serial communication autostarted
+2026-08-27 17:20 - INFO - syringflushAction triggered - CheckBox state: True
+2026-08-27 17:21 - INFO - File selected: D:/Manali_L/ManaliL/InkPrinter/New changes/InkV2_Final_without_cura_version_with_new_changes/Test_files/ide2.svg
+2026-08-27 17:21 - INFO - Converting SVG -> G-code directly: D:\Manali_L\ManaliL\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\Test_files\ide2.svg
+2026-08-27 17:21 - INFO - G-code created: D:\Manali_L\ManaliL\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\Test_files\ide2.gcode
+2026-08-27 17:21 - INFO - G-code ready from SVG: D:\Manali_L\ManaliL\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\Test_files\ide2.gcode
+2026-08-27 17:21 - INFO - Raw G-code parsed (174 lines).
+2026-08-27 17:21 - INFO - Feedrate: 1500.0 mm/min
+2026-08-27 17:21 - INFO - Normalization shift: X=-1.904, Y=-1.855
+2026-08-27 17:21 - INFO - Using OFFSETS: X=5.000, Y=5.000, drawZ=41.600
+2026-08-27 17:21 - INFO - Final applied shift: X=3.096, Y=3.145
+2026-08-27 17:21 - INFO - Updated purge settings via UI: length_mm=100.0, purge_value=0.5
+2026-08-27 17:21 - INFO - Updated purge settings via UI: length_mm=300.0, purge_value=0.25
+2026-08-27 17:21 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-27 17:21 - INFO - Serial communication stopped
+2026-08-27 17:21 - INFO - Com : black_com, Port : ['COM3', 'COM1', 'COM4'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-27 17:21 - CRITICAL - Serial communication started
+2026-08-27 17:21 - INFO - Serial communication stopped
+2026-08-27 17:21 - INFO - Do you want to auto connect to COM4 @ 115200
+2026-08-27 17:21 - INFO - Auto Connect dialog button : Ok
+2026-08-27 17:21 - INFO - Serial communication autostarted
+2026-08-27 17:21 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-08-27 17:24 - INFO - Serial communication stopped
+2026-08-27 17:24 - CRITICAL - Serial communication started
+2026-08-27 17:24 - INFO - Serial communication stopped
+2026-08-27 17:24 - INFO - Do you want to auto connect to COM4 @ 115200
+2026-08-27 17:24 - INFO - Auto Connect dialog button : Ok
+2026-08-27 17:24 - INFO - Serial communication autostarted
+2026-08-27 17:25 - INFO - Serial communication stopped
+2026-08-27 17:25 - INFO - COM connection close successfully
+2026-08-27 17:25 - INFO - Main window close successfully
+2026-08-27 17:25 - INFO - ==================================================
+2026-08-27 17:25 - INFO - New session close at 2026-08-27 17:25
+2026-08-27 17:25 - INFO - ==================================================
+2026-08-27 17:25 - INFO - ==================================================
+2026-08-27 17:25 - INFO - New session START at 2026-08-27 17:25
+2026-08-27 17:25 - INFO - ==================================================
+2026-08-27 17:25 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-27 17:25 - INFO - Loaded offsets from config: X=5.0, Y=5.0
+2026-08-27 17:25 - INFO - Loaded draw_z from config: Z=41.6, draw_z_UP=20.8
+2026-08-27 17:25 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-27 17:25 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-27 17:25 - INFO - INI file initialized
+2026-08-27 17:25 - INFO - UI load successful
+2026-08-27 17:25 - INFO - Com : com, Port : ['COM3', 'COM1', 'COM4'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-27 17:25 - INFO - Do you want to auto connect to COM4 @ 115200
+2026-08-27 17:25 - INFO - Auto Connect dialog button : Ok
+2026-08-27 17:25 - INFO - Serial communication autostarted
+2026-08-27 17:25 - INFO - Com : black_com, Port : ['COM3', 'COM1', 'COM4'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-27 17:25 - CRITICAL - Serial communication started
+2026-08-27 17:25 - INFO - Serial communication stopped
+2026-08-27 17:25 - INFO - Do you want to auto connect to COM4 @ 115200
+2026-08-27 17:25 - INFO - Auto Connect dialog button : Ok
+2026-08-27 17:25 - INFO - Serial communication autostarted
+2026-08-27 17:25 - INFO - Serial communication stopped
+2026-08-27 17:25 - ERROR - Error : Invalid Input > Kindly select a COM port.
+2026-08-27 17:26 - ERROR - Error : Invalid Input > Kindly select a COM port.
+2026-08-27 17:26 - ERROR - Error : Invalid Input > Kindly select a COM port.
+2026-08-27 17:26 - ERROR - Error : Invalid Input > Kindly select a COM port.
+2026-08-27 17:26 - INFO - Serial communication stopped
+2026-08-27 17:26 - INFO - COM connection close successfully
+2026-08-27 17:26 - INFO - Main window close successfully
+2026-08-27 17:26 - INFO - ==================================================
+2026-08-27 17:26 - INFO - New session close at 2026-08-27 17:26
+2026-08-27 17:26 - INFO - ==================================================
+2026-08-27 17:26 - INFO - ==================================================
+2026-08-27 17:26 - INFO - New session START at 2026-08-27 17:26
+2026-08-27 17:26 - INFO - ==================================================
+2026-08-27 17:26 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-27 17:26 - INFO - Loaded offsets from config: X=5.0, Y=5.0
+2026-08-27 17:26 - INFO - Loaded draw_z from config: Z=41.6, draw_z_UP=20.8
+2026-08-27 17:26 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-27 17:26 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-27 17:26 - INFO - INI file initialized
+2026-08-27 17:26 - INFO - UI load successful
+2026-08-27 17:26 - INFO - Com : com, Port : ['COM1', 'COM4'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-27 17:26 - INFO - Do you want to auto connect to COM4 @ 115200
+2026-08-27 17:26 - INFO - Auto Connect dialog button : Ok
+2026-08-27 17:26 - INFO - Serial communication autostarted
+2026-08-27 17:27 - INFO - Com : black_com, Port : ['COM1', 'COM4'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-27 17:27 - INFO - Com : black_com, Port : ['COM1', 'COM4'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-27 17:27 - INFO - Com : black_com, Port : ['COM1', 'COM4'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-27 17:28 - INFO - Com : black_com, Port : ['COM1', 'COM4'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-27 17:28 - INFO - Com : black_com, Port : ['COM1', 'COM4'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-27 17:29 - INFO - Com : black_com, Port : ['COM1', 'COM4'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-27 17:29 - INFO - Serial communication stopped
+2026-08-27 17:29 - INFO - COM connection close successfully
+2026-08-27 17:29 - INFO - Main window close successfully
+2026-08-27 17:29 - INFO - ==================================================
+2026-08-27 17:29 - INFO - New session close at 2026-08-27 17:29
+2026-08-27 17:29 - INFO - ==================================================
+2026-08-27 17:31 - INFO - ==================================================
+2026-08-27 17:31 - INFO - New session START at 2026-08-27 17:31
+2026-08-27 17:31 - INFO - ==================================================
+2026-08-27 17:31 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-27 17:31 - INFO - Loaded offsets from config: X=5.0, Y=5.0
+2026-08-27 17:31 - INFO - Loaded draw_z from config: Z=41.6, draw_z_UP=20.8
+2026-08-27 17:31 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-27 17:31 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-27 17:31 - INFO - INI file initialized
+2026-08-27 17:31 - INFO - UI load successful
+2026-08-27 17:31 - INFO - Com : com, Port : ['COM1', 'COM4'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-27 17:31 - INFO - Do you want to auto connect to COM4 @ 115200
+2026-08-27 17:31 - INFO - Auto Connect dialog button : Ok
+2026-08-27 17:31 - INFO - Serial communication autostarted
+2026-08-27 17:31 - INFO - Com : black_com, Port : ['COM1', 'COM4'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-27 17:31 - INFO - Com : black_com, Port : ['COM1', 'COM4'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-27 17:31 - CRITICAL - Serial communication started
+2026-08-27 17:31 - INFO - Serial communication stopped
+2026-08-27 17:39 - INFO - Do you want to auto connect to COM4 @ 115200
+2026-08-27 17:39 - INFO - Auto Connect dialog button : Ok
+2026-08-27 17:39 - INFO - Serial communication autostarted
+2026-08-27 17:39 - INFO - Serial communication stopped
+2026-08-27 17:39 - INFO - COM connection close successfully
+2026-08-27 17:39 - INFO - Main window close successfully
+2026-08-27 17:39 - INFO - ==================================================
+2026-08-27 17:39 - INFO - New session close at 2026-08-27 17:39
+2026-08-27 17:39 - INFO - ==================================================
+2026-08-27 17:40 - INFO - ==================================================
+2026-08-27 17:40 - INFO - New session START at 2026-08-27 17:40
+2026-08-27 17:40 - INFO - ==================================================
+2026-08-27 17:40 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-27 17:40 - INFO - Loaded offsets from config: X=5.0, Y=5.0
+2026-08-27 17:40 - INFO - Loaded draw_z from config: Z=41.6, draw_z_UP=20.8
+2026-08-27 17:40 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-27 17:40 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-27 17:40 - INFO - INI file initialized
+2026-08-27 17:40 - INFO - UI load successful
+2026-08-27 17:40 - INFO - Com : com, Port : ['COM3', 'COM1', 'COM4'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-27 17:40 - INFO - Do you want to auto connect to COM4 @ 115200
+2026-08-27 17:40 - INFO - Auto Connect dialog button : Ok
+2026-08-27 17:40 - INFO - Serial communication autostarted
+2026-08-27 17:40 - INFO - Com : black_com, Port : ['COM3', 'COM1', 'COM4'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-27 17:40 - CRITICAL - Serial communication started
+2026-08-27 17:41 - INFO - Sent HOME to Blackpill
+2026-08-27 17:41 - INFO - HOME command sent to Blackpill.
+2026-08-27 17:41 - INFO - Sent STOP to Blackpill
+2026-08-27 17:41 - INFO - Stop HOME command sent to Blackpill.
+2026-08-27 17:43 - INFO - File selected: D:/Manali_L/ManaliL/InkPrinter/New changes/InkV2_Final_without_cura_version_with_new_changes/Test_files/ide2.svg
+2026-08-27 17:43 - INFO - Converting SVG -> G-code directly: D:\Manali_L\ManaliL\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\Test_files\ide2.svg
+2026-08-27 17:43 - INFO - G-code created: D:\Manali_L\ManaliL\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\Test_files\ide2.gcode
+2026-08-27 17:43 - INFO - G-code ready from SVG: D:\Manali_L\ManaliL\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\Test_files\ide2.gcode
+2026-08-27 17:43 - INFO - Raw G-code parsed (174 lines).
+2026-08-27 17:43 - INFO - Feedrate: 1500.0 mm/min
+2026-08-27 17:43 - INFO - Normalization shift: X=-1.904, Y=-1.855
+2026-08-27 17:43 - INFO - Using OFFSETS: X=5.000, Y=5.000, drawZ=41.600
+2026-08-27 17:43 - INFO - Final applied shift: X=3.096, Y=3.145
+2026-08-27 17:43 - INFO - Updated purge settings via UI: length_mm=300.0, purge_value=0.25
+2026-08-27 17:46 - CRITICAL - Laser 1 : has offset, Xoffset = 5.0, Yoffset = 5.0
+2026-08-27 17:46 - INFO - Print Status : RUN
+2026-08-27 17:48 - INFO - Sent PURGE 0.250000 to Blackpill
+2026-08-27 17:50 - INFO - Sent PURGE 0.250000 to Blackpill
+2026-08-27 17:51 - INFO - Sent PURGE 0.250000 to Blackpill
+2026-08-27 17:53 - INFO - Sent PURGE 0.250000 to Blackpill
+2026-08-27 17:53 - INFO - Print Status : ABORT
+2026-08-27 17:56 - INFO - Serial communication stopped
+2026-08-27 17:56 - INFO - COM connection close successfully
+2026-08-27 17:56 - INFO - Main window close successfully
+2026-08-27 17:56 - INFO - ==================================================
+2026-08-27 17:56 - INFO - New session close at 2026-08-27 17:56
+2026-08-27 17:56 - INFO - ==================================================

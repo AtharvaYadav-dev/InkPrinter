@@ -2623,3 +2623,61 @@ AttributeError: 'GCode3DPreview' object has no attribute 'total_print_length'
 2026-08-27 16:53 - INFO - ==================================================
 2026-08-27 16:53 - INFO - New session close at 2026-08-27 16:53
 2026-08-27 16:53 - INFO - ==================================================
+2026-08-27 16:59 - INFO - ==================================================
+2026-08-27 16:59 - INFO - New session START at 2026-08-27 16:59
+2026-08-27 16:59 - INFO - ==================================================
+2026-08-27 16:59 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-08-27 16:59 - INFO - Loaded offsets from config: X=5.0, Y=5.0
+2026-08-27 16:59 - INFO - Loaded draw_z from config: Z=41.0, draw_z_UP=20.5
+2026-08-27 16:59 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-08-27 16:59 - INFO - UV Exposure Time loaded: 30000 ms
+2026-08-27 16:59 - INFO - INI file initialized
+2026-08-27 16:59 - INFO - UI load successful
+2026-08-27 16:59 - INFO - Com : com, Port : ['COM3', 'COM1', 'COM4'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-27 16:59 - INFO - Do you want to auto connect to COM4 @ 115200
+2026-08-27 16:59 - INFO - Auto Connect dialog button : Ok
+2026-08-27 16:59 - INFO - Serial communication autostarted
+2026-08-27 16:59 - INFO - Com : black_com, Port : ['COM3', 'COM1', 'COM4'], Baud : ['9600', '57600', '115200', '250000']
+2026-08-27 16:59 - CRITICAL - Serial communication started
+2026-08-27 17:00 - INFO - Sent PURGE 0.1 to Blackpill
+2026-08-27 17:00 - INFO - Purge command (PURGE 0.1) sent to Blackpill.
+2026-08-27 17:00 - INFO - Auto-reset Purge button state.
+2026-08-27 17:00 - INFO - Sent PURGE 0.1 to Blackpill
+2026-08-27 17:00 - INFO - Purge command (PURGE 0.1) sent to Blackpill.
+2026-08-27 17:00 - INFO - Auto-reset Purge button state.
+2026-08-27 17:00 - INFO - Sent PURGE 0.1 to Blackpill
+2026-08-27 17:00 - INFO - Purge command (PURGE 0.1) sent to Blackpill.
+2026-08-27 17:00 - INFO - Auto-reset Purge button state.
+2026-08-27 17:00 - INFO - Sent PURGE 0.1 to Blackpill
+2026-08-27 17:00 - INFO - Purge command (PURGE 0.1) sent to Blackpill.
+2026-08-27 17:00 - INFO - Auto-reset Purge button state.
+2026-08-27 17:00 - INFO - Sent PURGE 0.1 to Blackpill
+2026-08-27 17:00 - INFO - Purge command (PURGE 0.1) sent to Blackpill.
+2026-08-27 17:00 - INFO - Auto-reset Purge button state.
+2026-08-27 17:00 - INFO - Sent PURGE 0.1 to Blackpill
+2026-08-27 17:00 - INFO - Purge command (PURGE 0.1) sent to Blackpill.
+2026-08-27 17:00 - INFO - Auto-reset Purge button state.
+2026-08-27 17:00 - INFO - Sent PURGE 0.1 to Blackpill
+2026-08-27 17:00 - INFO - Purge command (PURGE 0.1) sent to Blackpill.
+2026-08-27 17:00 - INFO - Auto-reset Purge button state.
+2026-08-27 17:01 - INFO - Sent PURGE 0.1 to Blackpill
+2026-08-27 17:01 - INFO - Purge command (PURGE 0.1) sent to Blackpill.
+2026-08-27 17:01 - INFO - Auto-reset Purge button state.
+2026-08-27 17:01 - INFO - Sent PURGE 0.1 to Blackpill
+2026-08-27 17:01 - INFO - Purge command (PURGE 0.1) sent to Blackpill.
+2026-08-27 17:01 - INFO - Auto-reset Purge button state.
+2026-08-27 17:01 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-27 17:01 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-27 17:01 - INFO - Auto-reset Purge button state.
+2026-08-27 17:01 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-27 17:01 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-27 17:01 - INFO - Auto-reset Purge button state.
+2026-08-27 17:02 - INFO - Sent PURGE 10.0 to Blackpill
+2026-08-27 17:02 - INFO - Purge command (PURGE 10.0) sent to Blackpill.
+2026-08-27 17:02 - INFO - Auto-reset Purge button state.
+2026-08-27 17:07 - INFO - Serial communication stopped
+2026-08-27 17:07 - INFO - COM connection close successfully
+2026-08-27 17:07 - INFO - Main window close successfully
+2026-08-27 17:07 - INFO - ==================================================
+2026-08-27 17:07 - INFO - New session close at 2026-08-27 17:07
+2026-08-27 17:07 - INFO - ==================================================
