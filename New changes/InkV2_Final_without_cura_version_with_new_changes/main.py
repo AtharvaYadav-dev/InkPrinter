@@ -112,132 +112,10 @@ class MainWindow(QMainWindow):
         # notify menu widgets
         self.notifyMenu = self.findChild(QCustomSlideMenu, "notifyContainer")
         self.notifyMenuBtn1 = self.findChild(QPushButton, "closeNotifyPushButton")
-        self.notifyLabel = self.findChild(QLabel, "notifyLabel")
-        self.notifyTextEdit = self.findChild(QTextEdit, "notifyTextEdit")
-        self.notifySubContainer = self.findChild(QWidget, "notifySubContainer")
-
-        if self.notifyTextEdit:
-            self.notifyTextEdit.setReadOnly(True)
-
-        # Apply Premium CSS for the notification container
-        if self.notifySubContainer:
-            self.notifySubContainer.layout().setContentsMargins(0, 0, 0, 0)
-            self.notifySubContainer.setStyleSheet("""
-                QWidget#notifySubContainer {
-                    background-color: rgb(167, 198, 229); 
-                    color: rgb(16, 42, 83); 
-                    border-radius: 15px;
-                    border: 2px solid rgb(16, 42, 131);
-                }
-            """)
-        if self.notifyLabel:
-            self.notifyLabel.setMinimumHeight(35)
-            self.notifyLabel.setStyleSheet("""
-                QLabel {
-                    background-color: rgb(16, 42, 131); 
-                    color: white; 
-                    font-weight: bold; 
-                    font-size: 14px; 
-                    padding-left: 15px; 
-                    border-top-left-radius: 13px; 
-                    border-top-right-radius: 13px;
-                    border-bottom-left-radius: 0px;
-                    border-bottom-right-radius: 0px;
-                }
-            """)
-        if self.notifyTextEdit:
-             self.notifyTextEdit.setStyleSheet("""
-                QTextEdit {
-                    background-color: transparent; 
-                    color: rgb(16, 42, 83); 
-                    border: none; 
-                    font-size: 13px; 
-                    padding: 10px 15px;
-                }
-             """)
-
-        # Increase size limits to accommodate buttons
         if self.notifyMenu:
             self.notifyMenu.setMaximumHeight(180)
-        if self.notifySubContainer:
-            self.notifySubContainer.setMaximumHeight(180)
 
-        # --- Notification System Setup ---
-        self.popupLoop = QEventLoop(self)
-        self.popupResult = QMessageBox.Ok
-
-        # Container for buttons
-        if self.notifySubContainer:
-            self.notifyBtnContainer = QWidget(self.notifySubContainer)
-            self.notifyBtnContainer.setStyleSheet("background-color: transparent;")
-            self.notifyBtnLayout = QHBoxLayout(self.notifyBtnContainer)
-            self.notifyBtnLayout.setContentsMargins(0, 0, 0, 5)
-            self.notifyBtnLayout.setSpacing(10)
-            self.notifyBtnLayout.setAlignment(Qt.AlignCenter)
-
-            self.notifySubContainer.layout().addWidget(self.notifyBtnContainer)
-
-            self.btnOk = QPushButton("OK")
-            self.btnYes = QPushButton("Yes")
-            self.btnNo = QPushButton("No")
-            self.btnCancel = QPushButton("Cancel")
-
-            btn_style = """
-                QPushButton {
-                    background-color: rgb(16, 42, 131);
-                    color: white;
-                    border: 1px solid rgb(16, 42, 131);
-                    border-radius: 8px;
-                    padding: 6px 20px;
-                    font-weight: bold;
-                    font-size: 12px;
-                }
-                QPushButton:hover {
-                    background-color: rgb(40, 70, 160);
-                    color: white;
-                }
-                QPushButton:pressed {
-                    background-color: rgb(10, 30, 100);
-                }
-            """
-
-            for btn in [self.btnOk, self.btnYes, self.btnNo, self.btnCancel]:
-                btn.setStyleSheet(btn_style)
-                btn.hide()
-                self.notifyBtnLayout.addWidget(btn)
-
-            self.btnOk.clicked.connect(lambda: NotifierUI.onPopupBtnClicked(self, QMessageBox.Ok))
-            self.btnYes.clicked.connect(lambda: NotifierUI.onPopupBtnClicked(self, QMessageBox.Yes))
-            self.btnNo.clicked.connect(lambda: NotifierUI.onPopupBtnClicked(self, QMessageBox.No))
-            self.btnCancel.clicked.connect(lambda: NotifierUI.onPopupBtnClicked(self, QMessageBox.Cancel))
-
-            self.notifyProgressBar = QProgressBar()
-            self.notifyProgressBar.setRange(0, 100)
-            self.notifyProgressBar.setTextVisible(True)
-            self.notifyProgressBar.setFixedSize(300, 28)
-            self.notifyProgressBar.setStyleSheet("""
-                QProgressBar {
-                    border: 2px solid rgb(16, 42, 131);
-                    border-radius: 5px;
-                    text-align: center;
-                    color: rgb(16, 42, 83);
-                    font-weight: bold;
-                }
-                QProgressBar::chunk {
-                    background-color: rgb(16, 42, 131);
-                    width: 10px;
-                    margin: 0.5px;
-                }
-            """)
-            self.notifyProgressBar.hide()
-            self.notifyBtnLayout.addWidget(self.notifyProgressBar)
-
-            self.btnCancelDownload = QPushButton("Cancel")
-            self.btnCancelDownload.setStyleSheet(btn_style)
-            self.btnCancelDownload.setFixedSize(100, 28)
-            self.btnCancelDownload.hide()
-            self.notifyBtnLayout.addWidget(self.btnCancelDownload)
-            self.btnCancelDownload.clicked.connect(self.onCancelDownloadClicked)
+        NotifierUI.setup(self)
 
         # Module and Class instances
         self.sercom = SerialCom()
@@ -2602,10 +2480,8 @@ class MainWindow(QMainWindow):
     def getProgress(self, index, total):
         if index is not None and total is not None:
             if total > 0:
-
                 frac = 0 if total <= 0 else min(index / total, 1.0)
                 self.progress = round(frac * 100, 2)
-
                 self.showProgress()
 
     def showProgress(self):

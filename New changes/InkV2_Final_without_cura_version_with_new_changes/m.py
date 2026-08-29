@@ -5,15 +5,25 @@ import re
 import webbrowser
 import json
 
+# --- Fix for Custom_Widgets Log PermissionError ---
+# Custom_Widgets tries to write logs to os.getcwd()/logs during import, which throws PermissionError in Program Files
+_app_data_dir = os.path.join(os.environ.get('APPDATA', os.path.expanduser('~')), 'Ink_Printer')
+os.makedirs(_app_data_dir, exist_ok=True)
+_original_getcwd = os.getcwd
+os.getcwd = lambda: _app_data_dir
 
 from ui_interface import *
 from Custom_Widgets.Widgets import *
-from PySide6.QtCore import QTimer, QRegularExpression, Signal, Slot, Qt, QThread, QEvent, QEventLoop
+
+# Restore getcwd safely
+os.getcwd = _original_getcwd
+
+from PySide6.QtCore import QTimer, QRegularExpression, Signal, Slot, Qt, QThread, QEvent, QEventLoop, QObject
 from PySide6.QtGui import QIcon, QCloseEvent, QIntValidator, QDoubleValidator, QRegularExpressionValidator
 from PySide6.QtWidgets import (
     QFileDialog, QMessageBox, QComboBox, QPushButton, 
     QLineEdit, QLabel, QTextEdit, QWidget,
-    QHBoxLayout
+    QHBoxLayout, QProgressDialog
 )
 
 from com import SerialCom
@@ -24,12 +34,45 @@ from gcode_parser import GcodeParser
 from preview3d import GCode3DPreview
 from uihandler import AxisHandler, LaserHandler, WidgetHandler, WidgetManger, DictAsClass
 from pathlib import Path
-from svg_to_gcode import convert as convert_svg_to_gcode_module
 from dxf_to_gcode import convert as convert_dxf_to_gcode_module
 from bmp_to_gcode import convert as convert_bmp_to_gcode_module
-from cura_finder_log1 import checkCuraStatus, copyDefFiles, isCuraSupported
-from config_manager import load_profile, ensure_profile_exists, PROFILE_PATH
-            
+from svg_to_gcode import convert as convert_svg_to_gcode_module
+
+import version
+from notifier_ui import NotifierUI
+from sppl_agent import SPPLAgent
+
+# --- SPPL Control Center Telemetry & Updates ---
+try:
+    sppl_config_path = os.path.join(getattr(sys, '_MEIPASS', os.path.dirname(__file__)), 'sppl_config.json')
+    if os.path.exists(sppl_config_path):
+        with open(sppl_config_path, 'r') as f:
+            cfg = json.load(f)
+    else:
+        cfg = {
+            "api_url": "https://sppl-server.onrender.com",
+            "project_id": "ink_printer_proj_001",
+            "client_id": "demo_client_456"
+        }
+        
+    sppl = SPPLAgent(
+        api_url=cfg.get("api_url", "https://sppl-server.onrender.com"),
+        project_id=cfg.get("project_id", "ink_printer_proj_001"),
+        client_id=cfg.get("client_id", "demo_client_456"),
+        app_version=version.VERSION
+    )
+    sppl.start()
+except Exception as e:
+    print(f"Failed to start SPPL Agent: {e}")
+# ---------------------------------------------
+
+class DownloadProgressSignal(QObject):
+    progress = Signal(float)
+
+class UpdateCheckSignal(QObject):
+    result = Signal(object)
+    error = Signal(str)
+
 class MainWindow(QMainWindow):
     sigPrintProgress = Signal(float)
     exceptionOccurred = Signal(str)
@@ -40,6 +83,11 @@ class MainWindow(QMainWindow):
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
 
+        update_btn = getattr(self.ui, 'updatePushButton', None) or self.findChild(QPushButton, "updatePushButton")
+        if update_btn:
+            update_btn.clicked.connect(self.check_for_updates)
+
+        
         # Add placeholder text to specific QComboBoxes
         if hasattr(self.ui, 'userComboBox'):
             self.ui.userComboBox.setPlaceholderText("Select User")
@@ -158,59 +206,39 @@ class MainWindow(QMainWindow):
                 btn.hide()
                 self.notifyBtnLayout.addWidget(btn)
 
-            self.btnOk.clicked.connect(lambda: self.onPopupBtnClicked(QMessageBox.Ok))
-            self.btnYes.clicked.connect(lambda: self.onPopupBtnClicked(QMessageBox.Yes))
-            self.btnNo.clicked.connect(lambda: self.onPopupBtnClicked(QMessageBox.No))
-            self.btnCancel.clicked.connect(lambda: self.onPopupBtnClicked(QMessageBox.Cancel))
+            self.btnOk.clicked.connect(lambda: NotifierUI.onPopupBtnClicked(self, QMessageBox.Ok))
+            self.btnYes.clicked.connect(lambda: NotifierUI.onPopupBtnClicked(self, QMessageBox.Yes))
+            self.btnNo.clicked.connect(lambda: NotifierUI.onPopupBtnClicked(self, QMessageBox.No))
+            self.btnCancel.clicked.connect(lambda: NotifierUI.onPopupBtnClicked(self, QMessageBox.Cancel))
 
-        missing_files = checkCuraStatus()
+            self.notifyProgressBar = QProgressBar()
+            self.notifyProgressBar.setRange(0, 100)
+            self.notifyProgressBar.setTextVisible(True)
+            self.notifyProgressBar.setFixedSize(300, 28)
+            self.notifyProgressBar.setStyleSheet("""
+                QProgressBar {
+                    border: 2px solid rgb(16, 42, 131);
+                    border-radius: 5px;
+                    text-align: center;
+                    color: rgb(16, 42, 83);
+                    font-weight: bold;
+                }
+                QProgressBar::chunk {
+                    background-color: rgb(16, 42, 131);
+                    width: 10px;
+                    margin: 0.5px;
+                }
+            """)
+            self.notifyProgressBar.hide()
+            self.notifyBtnLayout.addWidget(self.notifyProgressBar)
 
-        if missing_files:
-            self.showCustomPopup(
-                "Cura Setup Required",
-                "Required Cura configuration files are missing.\n"
-                "Click OK to run the Cura Fixer tool with Administrator privileges."
-            )
+            self.btnCancelDownload = QPushButton("Cancel")
+            self.btnCancelDownload.setStyleSheet(btn_style)
+            self.btnCancelDownload.setFixedSize(100, 28)
+            self.btnCancelDownload.hide()
+            self.notifyBtnLayout.addWidget(self.btnCancelDownload)
+            self.btnCancelDownload.clicked.connect(self.onCancelDownloadClicked)
 
-            import subprocess
-            # --------------------------
-            # Detect packaged .EXE or .PY
-            # --------------------------
-            if getattr(sys, 'frozen', False):
-                # Running as EXE -> use bundled fixer EXE
-                fixer_exe = os.path.join(os.path.dirname(sys.executable), "cura_finder_log1.exe")
-
-                if not os.path.exists(fixer_exe):   
-                    self.showCustomPopup("Error", f"Cura Fixer EXE not found:\n{fixer_exe}")
-                else:
-                    # Run EXE normally
-                    subprocess.Popen([fixer_exe], shell=True)
-
-            else:
-                # Running from Python source
-                subprocess.Popen([sys.executable, "cura_finder_log1.py"], shell=True)
-
-     
-        selected_version, bad_versions = isCuraSupported()
-
-        if not selected_version:
-            self.showCustomPopup(
-                "Unsupported Cura Version",
-                "No compatible Cura version was found.\n\n"
-                "Installed Cura versions:\n"
-                + ("\n".join(bad_versions) if bad_versions else "None") +
-                "\n\nVersion required: Ultimaker Cura 5.9.1\n\n"
-                "Click OK to download."
-            )
-
-            # Open download page after popup
-            webbrowser.open("https://github.com/Ultimaker/Cura/releases/tag/5.9.1")
-
-            sys.exit(0)
-
-        # Approved version
-        print(f"Cura version selected for Slicing: {selected_version}")
-        
         # Module and Class instances
         self.sercom = SerialCom()
         self.blackpill_sercom = SerialCom()
@@ -544,6 +572,8 @@ class MainWindow(QMainWindow):
         self.travel1_RadioButton_3 = self.findChild(QRadioButton, "travel1_RadioButton_3")
         self.travel5_RadioButton = self.findChild(QRadioButton, "travel5_RadioButton")
         self.travel10_RadioButton_3 = self.findChild(QRadioButton, "travel10_RadioButton_3")
+        if self.travel10_RadioButton_3:
+            self.travel10_RadioButton_3.setChecked(True)
         
         
         self.programWidget_dict = {self.pgmBtn1.objectName() : "file",
@@ -1010,31 +1040,6 @@ class MainWindow(QMainWindow):
             f"layer_height_0={self.layer_height_0}, "
             f"nozzle_size={self.nozzle_size}"
         )
-
-        # ----------------------------
-        # Update profile.json → only layer_height + layer_height_0
-        # ----------------------------
-        try:
-            profile_path = ensure_profile_exists()   # ensures file exists
-
-            with open(profile_path, "r", encoding="utf-8") as f:
-                data = json.load(f)
-
-            # ---- Update the keys ----
-            data["layer_height"] = float(self.layer_height)
-            data["layer_height_0"] = float(self.layer_height_0)
-
-            with open(profile_path, "w", encoding="utf-8") as f:
-                json.dump(data, f, indent=4)
-
-            self.logger.info(
-                f"Updated profile.json: layer_height={self.layer_height}, "
-                f"layer_height_0={self.layer_height_0}"
-            )
-
-        except Exception as e:
-            self.logger.error(f"Failed to update profile.json: {e}")
-
         # ----------------------------
         # UV Exposure Feature Toggle
         # ----------------------------
@@ -1801,8 +1806,7 @@ class MainWindow(QMainWindow):
             self._handle_feedrate()
 
         elif self.util.checkSubString(wobj, "fillhome"):
-            if hasattr(self, 'blackpill_sercom'):
-                self.blackpill_sercom.send("HOME\n")
+            self._handle_fillhome()
 
         elif self.util.checkSubString(wobj, "fill"):
             self._handle_fill()
@@ -1844,22 +1848,6 @@ class MainWindow(QMainWindow):
         self.wm.operate(self.programWidget.infile, "set", self.pgm_file)
         self.wm.operate(self.programWidget.feed, "enable", True)
 
-        # If SVG: convert -> STL -> G-code (non-destructive; final is .gcode beside svg)
-        if self.pgm_file.lower().endswith(".svg"):
-            try:
-                converted_file = self._convert_svg_to_gcode(Path(self.pgm_file))
-                if not converted_file:
-                    raise RuntimeError("SVG conversion produced no G-code.")
-                self.pgm_file = converted_file
-                self.logger.info(f"G-code ready from SVG: {self.pgm_file}")
-                self.wm.operate(self.programWidget.infile, "set", self.pgm_file)
-            except Exception as e:
-                error_msg = f"SVG conversion failed:\n{e}"
-                self.logger.error(error_msg)
-                self.util.debugPrint(error_msg)
-                self.showCustomPopup("Slicing Error", error_msg) # Show user the error
-                return
-            
         # --- If DXF -> convert to G-code ---
         if self.pgm_file.lower().endswith(".dxf"):
             try:
@@ -1873,9 +1861,9 @@ class MainWindow(QMainWindow):
                 error_msg = f"DXF conversion failed:\n{e}"
                 self.logger.error(error_msg)
                 self.util.debugPrint(error_msg)
-                self.showCustomPopup("Slicing Error", error_msg) # Show user the error
+                self.showCustomPopup("Conversion Error", error_msg) # Show user the error
                 return
-            
+
         # --- If BMP -> convert to G-code ---
         if self.pgm_file.lower().endswith(".bmp"):
             try:
@@ -1887,6 +1875,22 @@ class MainWindow(QMainWindow):
                 self.wm.operate(self.programWidget.infile, "set", self.pgm_file)
             except Exception as e:
                 error_msg = f"BMP conversion failed:\n{e}"
+                self.logger.error(error_msg)
+                self.util.debugPrint(error_msg)
+                self.showCustomPopup("Conversion Error", error_msg) # Show user the error
+                return
+
+        # --- If SVG -> convert to G-code ---
+        if self.pgm_file.lower().endswith(".svg"):
+            try:
+                converted_file = self._convert_svg_to_gcode(Path(self.pgm_file))
+                if not converted_file:
+                    raise RuntimeError("SVG conversion produced no G-code.")
+                self.pgm_file = converted_file
+                self.logger.info(f"G-code ready from SVG: {self.pgm_file}")
+                self.wm.operate(self.programWidget.infile, "set", self.pgm_file)
+            except Exception as e:
+                error_msg = f"SVG conversion failed:\n{e}"
                 self.logger.error(error_msg)
                 self.util.debugPrint(error_msg)
                 self.showCustomPopup("Conversion Error", error_msg) # Show user the error
@@ -1911,33 +1915,22 @@ class MainWindow(QMainWindow):
 
         self.logger.info(f"Raw G-code parsed ({len(self.pgm_glist)} lines).")
 
-
-    def _convert_svg_to_gcode(self, svg_path: Path) -> str:
-        gcode_file = svg_path.with_suffix(".gcode")
-
-        self.logger.info(f"Converting SVG -> G-code directly: {svg_path}")
-        
-        success = convert_svg_to_gcode_module(
-            svg_file=str(svg_path),
-            gcode_file=str(gcode_file)
-        )
-        
-        if not success or not os.path.exists(gcode_file):
-            raise RuntimeError("Failed to generate G-code from SVG.")
-
-        self.logger.info(f"G-code created: {gcode_file}")
-
-        return str(gcode_file)
-
     def _convert_dxf_to_gcode(self, dxf_path: Path) -> str:
         gcode_file = dxf_path.with_suffix(".gcode")
 
         self.logger.info(f"Converting DXF -> G-code directly: {dxf_path}")
         
+        nozzle_val = self.conf.getValues("nozzle", "nozzle_size")
+        layer_val = self.conf.getValues("nozzle", "layer_height")
+        
+        nozzle = float(nozzle_val) if nozzle_val else 0.4
+        layer_height = float(layer_val) if layer_val else 0.4
+        
         success = convert_dxf_to_gcode_module(
             dxf_file=str(dxf_path),
             gcode_file=str(gcode_file),
-            nozzle=getattr(self, 'nozzle_size', 0.4)
+            nozzle=nozzle,
+            layer_height=layer_height
         )
         
         if not success or not os.path.exists(gcode_file):
@@ -1952,11 +1945,19 @@ class MainWindow(QMainWindow):
 
         self.logger.info(f"Converting BMP -> G-code directly: {bmp_path}")
         
+        nozzle_val = self.conf.getValues("nozzle", "nozzle_size")
+        layer_val = self.conf.getValues("nozzle", "layer_height")
+        
+        nozzle = float(nozzle_val) if nozzle_val else 0.4
+        layer_height = float(layer_val) if layer_val else 0.4
+        
         success = convert_bmp_to_gcode_module(
             bmp_file=str(bmp_path),
             gcode_file=str(gcode_file),
-            pixel_size=getattr(self, 'nozzle_size', 0.4)
-
+            nozzle=nozzle,
+            layer_height=layer_height,
+            pixel_size=nozzle,  # Setting pixel_size to nozzle size based on user preference
+            invert=False
         )
         
         if not success or not os.path.exists(gcode_file):
@@ -1965,6 +1966,42 @@ class MainWindow(QMainWindow):
         self.logger.info(f"G-code created: {gcode_file}")
 
         return str(gcode_file)
+
+    def _convert_svg_to_gcode(self, svg_path: Path) -> str:
+        gcode_file = svg_path.with_suffix(".gcode")
+
+        self.logger.info(f"Converting SVG -> G-code directly: {svg_path}")
+        
+        nozzle_val = self.conf.getValues("nozzle", "nozzle_size")
+        layer_val = self.conf.getValues("nozzle", "layer_height")
+        
+        # Read SVG settings from config
+        hatch_enable_val = self.conf.getValues("svg", "hatching_enable")
+        hatch_linewidth_val = self.conf.getValues("svg", "hatching_linewidth")
+        
+        nozzle = float(nozzle_val) if nozzle_val else 0.4
+        layer_height = float(layer_val) if layer_val else 0.4
+        
+        hatching_enable = str(hatch_enable_val).strip().lower() == "yes" if hatch_enable_val else True
+        hatching_linewidth = float(hatch_linewidth_val) if hatch_linewidth_val else 0.4
+        
+        success = convert_svg_to_gcode_module(
+            svg_file=str(svg_path),
+            gcode_file=str(gcode_file),
+            nozzle=nozzle,
+            layer_height=layer_height,
+            hatching_enable=hatching_enable,
+            hatching_linewidth=hatching_linewidth
+        )
+        
+        if not success or not os.path.exists(gcode_file):
+            raise RuntimeError("Failed to generate G-code from SVG.")
+
+        self.logger.info(f"G-code created: {gcode_file}")
+
+        return str(gcode_file)
+
+
 
     # -------------------------------
     # 2) Feedrate
@@ -2013,47 +2050,127 @@ class MainWindow(QMainWindow):
         if hasattr(self, 'travel1_RadioButton_3') and self.travel1_RadioButton_3.isChecked(): return "1.0"
         if hasattr(self, 'travel5_RadioButton') and self.travel5_RadioButton.isChecked(): return "5.0"
         if hasattr(self, 'travel10_RadioButton_3') and self.travel10_RadioButton_3.isChecked(): return "10.0"
-        return "0.0"
+        return "10.0"
 
     def _handle_fill(self):
+        if not hasattr(self, 'blackpill_sercom') or not self.blackpill_sercom.is_connected:
+            msg = "Blackpill is not connected. Please connect via the Black COM page."
+            self.logger.error(msg)
+            self.util.debugPrint(msg)
+            self.showCustomPopup("Connection Error", msg)
+            return
+
         if not hasattr(self, 'fill_state'):
             self.fill_state = False
             self.purge_state = False
+
+        if not hasattr(self, '_fill_timer'):
+            self._fill_timer = QTimer(self)
+            self._fill_timer.setSingleShot(True)
+            self._fill_timer.timeout.connect(self._reset_fill_ui)
 
         if not self.fill_state:
             dist = self._get_travel_distance()
             cmd = f"FILL {dist}" if dist != "0.0" else "FILL"
             self._send_to_blackpill(cmd)
+            
             self.fill_state = True
             self.purge_state = False
             self.programWidget.fill.setText("Stop Fill")
             self.programWidget.purge.setText("Purge")
+                
             self.logger.info(f"Fill command ({cmd}) sent to Blackpill.")
+            
+            if dist != "0.0":
+                # Estimate duration: ~120 mm/min (2 mm/s) -> 500ms per mm + 1s buffer
+                delay_ms = int(float(dist) * 500) + 1000
+                self._fill_timer.start(delay_ms)
+            else:
+                self._fill_timer.stop()
         else:
             self._send_to_blackpill("STOP")
             self.fill_state = False
             self.programWidget.fill.setText("Fill")
+            if hasattr(self, '_fill_timer'):
+                self._fill_timer.stop()
             self.logger.info("Stop Fill command sent to Blackpill.")
 
+    def _reset_fill_ui(self):
+        if getattr(self, 'fill_state', False):
+            self.fill_state = False
+            self.programWidget.fill.setText("Fill")
+            self.logger.info("Auto-reset Fill button state.")
+
     def _handle_purge(self):
+        if not hasattr(self, 'blackpill_sercom') or not self.blackpill_sercom.is_connected:
+            msg = "Blackpill is not connected. Please connect via the Black COM page."
+            self.logger.error(msg)
+            self.util.debugPrint(msg)
+            self.showCustomPopup("Connection Error", msg)
+            return
+
         if not hasattr(self, 'fill_state'):
             self.fill_state = False
             self.purge_state = False
+
+        if not hasattr(self, '_purge_timer'):
+            self._purge_timer = QTimer(self)
+            self._purge_timer.setSingleShot(True)
+            self._purge_timer.timeout.connect(self._reset_purge_ui)
 
         if not self.purge_state:
             dist = self._get_travel_distance()
             cmd = f"PURGE {dist}" if dist != "0.0" else "PURGE"
             self._send_to_blackpill(cmd)
+            
             self.purge_state = True
             self.fill_state = False
             self.programWidget.purge.setText("Stop Purge")
             self.programWidget.fill.setText("Fill")
+                
             self.logger.info(f"Purge command ({cmd}) sent to Blackpill.")
+            
+            if dist != "0.0":
+                # Estimate duration: ~120 mm/min (2 mm/s) -> 500ms per mm + 1s buffer
+                delay_ms = int(float(dist) * 500) + 1000
+                self._purge_timer.start(delay_ms)
+            else:
+                self._purge_timer.stop()
         else:
             self._send_to_blackpill("STOP")
             self.purge_state = False
             self.programWidget.purge.setText("Purge")
+            if hasattr(self, '_purge_timer'):
+                self._purge_timer.stop()
             self.logger.info("Stop Purge command sent to Blackpill.")
+
+    def _reset_purge_ui(self):
+        if getattr(self, 'purge_state', False):
+            self.purge_state = False
+            self.programWidget.purge.setText("Purge")
+            self.logger.info("Auto-reset Purge button state.")
+
+    def _handle_fillhome(self):
+        if not hasattr(self, 'blackpill_sercom') or not self.blackpill_sercom.is_connected:
+            msg = "Blackpill is not connected. Please connect via the Black COM page."
+            self.logger.error(msg)
+            self.util.debugPrint(msg)
+            self.showCustomPopup("Connection Error", msg)
+            return
+
+        if not hasattr(self, 'fillhome_state'):
+            self.fillhome_state = False
+
+        if not self.fillhome_state:
+            self._send_to_blackpill("HOME")
+            self.fillhome_state = True
+            self.programWidget.fillhome.setText("Stop F home")
+            self.logger.info("HOME command sent to Blackpill.")
+        else:
+            self._send_to_blackpill("STOP")
+            self.fillhome_state = False
+            self.programWidget.fillhome.setText("F home")
+            self.logger.info("Stop HOME command sent to Blackpill.")
                         
     # -------------------------------
     # 4) Save: apply Z height, draw_z, offsets, feed; bounds; preview
@@ -2232,46 +2349,17 @@ class MainWindow(QMainWindow):
         for ln in adjusted:
             self.util.debugPrint(ln)
 
-    def update_profile_json(profile_path, layer_height, layer_height_0):
-        """
-        Update profile.json: set layer_height and layer_height_0 (if present in any section).
-        Writes string values to match Cura-style profile content.
-        """
-        try:
-            with open(profile_path, "r", encoding="utf-8") as f:
-                data = json.load(f)
-        except Exception as e:
-            # If profile.json doesn't exist or can't be read, log/raise as needed.
-            # Here we simply bail out silently (you can change to raise/log).
-            print(f"[update_profile_json] failed to read {profile_path}: {e}")
-            return
-
-        updated = False
-        for section, settings in data.items():
-            if isinstance(settings, dict):
-                if "layer_height" in settings:
-                    settings["layer_height"] = str(layer_height)
-                    updated = True
-                if "layer_height_0" in settings:
-                    settings["layer_height_0"] = str(layer_height_0)
-                    updated = True
-
-        if updated:
-            try:
-                with open(profile_path, "w", encoding="utf-8") as f:
-                    json.dump(data, f, indent=4)
-                print(f"[update_profile_json] Updated {profile_path} with layer_height={layer_height}, layer_height_0={layer_height_0}")
-            except Exception as e:
-                print(f"[update_profile_json] failed to write {profile_path}: {e}")
-        else:
-            # nothing to change
-            print(f"[update_profile_json] No layer keys found in {profile_path}; nothing changed.")
-
-
     def printAction(self, widget):
         wobj = widget.objectName()
         
         if self.util.checkSubString(wobj, "run"):
+            if not hasattr(self, 'blackpill_sercom') or not self.blackpill_sercom.is_connected:
+                msg = "Blackpill is not connected. Please connect via the Black COM page."
+                self.logger.error(msg)
+                self.util.debugPrint(msg)
+                self.showCustomPopup("Connection Error", msg)
+                return
+
             if hasattr(self, "filtered_gcode") and self.filtered_gcode:
                 self.runProgram("run")
 
@@ -2355,7 +2443,7 @@ class MainWindow(QMainWindow):
             self.pgm_mlist = []
 
             pausebtn = self.printWidget.pause
-            self.pauseWidget(pausebtn, "pause")
+            self.pauseWidget(pausebtn, "resume")
             self.wm.operate(self.printWidget.pause, "enable", False)
             self.wm.operate(self.printWidget.abort, "enable", False)
 
@@ -2599,7 +2687,103 @@ class MainWindow(QMainWindow):
                     QTimer.singleShot(200, lambda: self.notifyMenu.updateGeometry())
         
         super().changeEvent(event)
-            
+
+    def onPopupBtnClicked(self, result):
+        NotifierUI.onPopupBtnClicked(self, result)
+
+    def onCancelDownloadClicked(self):
+        if hasattr(self, 'download_cancel_event'):
+            self.download_cancel_event.set()
+        
+        if hasattr(self, 'notifyMenu') and self.notifyMenu:
+            self.notifyMenu.collapseMenu()
+        elif hasattr(self, 'notify_menu_widgets') and self.notify_menu_widgets.notify:
+            self.notify_menu_widgets.notify.collapseMenu()
+
+    def showCustomPopup(self, title, message, buttons=QMessageBox.Ok):
+        """Show notification in the slide-in panel and block until user responds."""
+        return NotifierUI.showCustomPopup(self, title, message, buttons)
+
+    def showAutoCloseMessage(self, title, message, timeout_ms=5000):
+        """Show notification that auto-collapses after timeout_ms ms."""
+        NotifierUI.showAutoCloseMessage(self, title, message, timeout_ms)
+
+    def check_for_updates(self):
+        """Checks for software updates asynchronously so it doesn't freeze the UI."""
+        self.showAutoCloseMessage("Check for Updates", "Checking for updates, please wait...", timeout_ms=3000)
+        
+        self.update_sig = UpdateCheckSignal()
+        self.update_sig.result.connect(self._handle_update_result)
+        self.update_sig.error.connect(self._handle_update_error)
+        
+        def worker():
+            try:
+                info = sppl.updater.check_for_updates(auto_install=False)
+                self.update_sig.result.emit(info)
+            except Exception as e:
+                self.update_sig.error.emit(str(e))
+                
+        import threading
+        threading.Thread(target=worker, daemon=True).start()
+
+    def _handle_update_error(self, err_msg):
+        self.showAutoCloseMessage(
+            "Update Check Failed",
+            f"Failed to check for updates: {err_msg}",
+            timeout_ms=10000
+        )
+
+    def _handle_update_result(self, update_info):
+        try:
+            if update_info and update_info.get("version") and not update_info.get("upToDate") and update_info.get("version") != version.VERSION:
+                latest_ver = update_info.get("version")
+                download_url = update_info.get("downloadUrl")
+                notes = update_info.get("releaseNotes", "")
+                
+                msg = f"A new version (v{latest_ver}) is available!\n"
+                if notes:
+                    msg += f"\nRelease Notes:\n{notes}\n"
+                msg += "\nWould you like to download and install this update now?"
+                
+                reply = self.showCustomPopup(
+                    "Update Available",
+                    msg,
+                    buttons=QMessageBox.Yes | QMessageBox.No
+                )
+                
+                if reply == QMessageBox.Yes:
+                    NotifierUI.showProgressUI(self, "Downloading Update", f"Downloading version v{latest_ver}...")
+                    
+                    self.dl_signal = DownloadProgressSignal()
+                    self.dl_signal.progress.connect(lambda pct: NotifierUI.updateProgress(self, pct))
+                    
+                    def progress_cb(pct):
+                        self.dl_signal.progress.emit(pct)
+                    
+                    import threading
+                    self.download_cancel_event = threading.Event()
+                    
+                    threading.Thread(
+                        target=sppl.updater._download_and_install,
+                        args=(latest_ver, download_url, progress_cb, self.download_cancel_event),
+                        daemon=True
+                    ).start()
+            elif update_info and (update_info.get("upToDate") or update_info.get("version") == version.VERSION):
+                self.showAutoCloseMessage(
+                    "No Updates",
+                    f"You are using the latest version (v{version.VERSION}).",
+                    timeout_ms=10000
+                )
+            else:
+                self.showAutoCloseMessage(
+                    "No Release Found",
+                    f"No update release package available on GitHub yet.",
+                    timeout_ms=10000
+                )
+        except Exception as e:
+            self._handle_update_error(str(e))
+
+
 
 import datetime
 
@@ -2612,13 +2796,21 @@ class Tee:
     def write(self, data):
         self.file.write(data)
         self.file.flush()
-        self.stdout.write(data)
-        self.stdout.flush()
+        if self.stdout is not None:
+            self.stdout.write(data)
+            self.stdout.flush()
     def flush(self):
         self.file.flush()
-        self.stdout.flush()
+        if self.stdout is not None:
+            self.stdout.flush()
 
 if __name__ == '__main__':
+    # Ensure working directory is the app root (critical for PyInstaller and style.json)
+    if getattr(sys, 'frozen', False):
+        os.chdir(sys._MEIPASS)
+    else:
+        os.chdir(os.path.dirname(os.path.abspath(__file__)))
+
     # Redirect all console output to BOTH the terminal and a file
     tee_logger = Tee("terminal_logs.txt", "a")
     sys.stdout = tee_logger
@@ -2627,5 +2819,11 @@ if __name__ == '__main__':
     app = QApplication(sys.argv)
     window = MainWindow()
     window.show()
-    sys.exit(app.exec_()) 
+    ret = app.exec_()
+    try:
+        if 'sppl' in globals():
+            sppl.telemetry.upload_logs()
+    except Exception:
+        pass
+    sys.exit(ret)
     
