@@ -175,10 +175,6 @@ class MainWindow(QMainWindow):
         self.ytemp = 0
         self.travel_index = 0
 
-        self.step_list = [1, 5, 10, 50]
-        self.step_index = 0      
-        self.current_step = 1
-
         self.release_flag = False           # machine free
 
         self.offset_user_set = False  # track if user actually set offsets
@@ -468,8 +464,8 @@ class MainWindow(QMainWindow):
                                    "fill" : self.pgmBtn5,
                                    "purge" : self.pgmBtn6,
                                    "fillhome" : self.pgmBtn7,
-                                   self.viscositylevComboBox.objectName() : "viscosity",
-                                   self.needleguageComboBox.objectName() : "needle",
+                                   self.viscositylevComboBox.objectName() : "inviscosity",
+                                   self.needleguageComboBox.objectName() : "inneedle",
                                    "infile" : self.pgmText,
                                    "infeed" : self.pgmLine2,
                                    "inlaser" : self.pgmComboBox,
@@ -733,8 +729,6 @@ class MainWindow(QMainWindow):
         self.pgmBtn5.clicked.connect(lambda: self.programAction(self.pgmBtn5))
         self.pgmBtn6.clicked.connect(lambda: self.programAction(self.pgmBtn6))
         self.pgmBtn7.clicked.connect(lambda: self.programAction(self.pgmBtn7))
-        self.viscositylevComboBox.currentTextChanged.connect(lambda: self.programAction(self.viscositylevComboBox))
-        self.needleguageComboBox.currentTextChanged.connect(lambda: self.programAction(self.needleguageComboBox))
         
         # print widgets
         self.printBtn1.clicked.connect(lambda: self.printAction(self.printBtn1))
@@ -1421,58 +1415,6 @@ class MainWindow(QMainWindow):
     def checkButtonGroup(self):
         """Required by Custom_Widgets library for QPushButtonGroup in style.json."""
         pass
-
-    def onPopupBtnClicked(self, result):
-        self.popupResult = result
-        if self.popupLoop.isRunning():
-            self.popupLoop.quit()
-        self.notifyMenu.collapseMenu()
-
-    def showCustomPopup(self, title, message, icon_type="info", buttons=QMessageBox.Ok, delay=0):
-        """
-        Displays a notification in the notifyContainer.
-        Blocks until user interaction if buttons are provided, matching Bio4D style.
-        """
-        if self.notifyLabel:
-            self.notifyLabel.setText(title)
-        if self.notifyTextEdit:
-            self.notifyTextEdit.setPlainText(message)
-        
-        # Reset buttons
-        self.btnOk.hide()
-        self.btnYes.hide()
-        self.btnNo.hide()
-        self.btnCancel.hide()
-        
-        # Show requested buttons
-        if buttons & QMessageBox.Ok:
-            self.btnOk.show()
-        if buttons & QMessageBox.Yes:
-            self.btnYes.show()
-        if buttons & QMessageBox.No:
-            self.btnNo.show()
-        if buttons & QMessageBox.Cancel:
-            self.btnCancel.show()
-
-        # Slide in
-        # FIX: Force the floating menu to recalculate its position relative to the window
-        if hasattr(self.notifyMenu, 'floatReposition'):
-            self.notifyMenu.floatReposition()
-        elif hasattr(self.notifyMenu, 'reposition'):
-            self.notifyMenu.reposition()
-            
-        self.notifyMenu.expandMenu()
-        
-        # If no buttons are shown, it's just an informative message
-        if buttons == 0 or (not any(b.isVisible() for b in [self.btnOk, self.btnYes, self.btnNo, self.btnCancel])):
-            if delay > 0:
-                QTimer.singleShot(delay, self.notifyMenu.collapseMenu)
-            return QMessageBox.Ok
-
-        # Block and wait
-        self.popupLoop.exec()
-        
-        return self.popupResult
         
     def comAction(self, com, widget=None, action=None):
         connect_btn_text = None
@@ -1706,7 +1648,7 @@ class MainWindow(QMainWindow):
                 if self.util.checkSubString(cmd1, "relative", "absolute"): 
                     glist.append(gcode)
                     
-                    gcode = f"{cmd_dict.get("linear")}"
+                    gcode = f"{cmd_dict.get('linear')}"
                     
                     for arg in cmd2:
                         if arg in ['x', 'y', 'z']:
@@ -1754,9 +1696,6 @@ class MainWindow(QMainWindow):
 
         elif self.util.checkSubString(wobj, "fill"):
             self._handle_fill()
-
-        elif self.util.checkSubString(wobj, "step"):
-            self._handle_step()
 
         elif self.util.checkSubString(wobj, "purge"):
             self._handle_purge()
@@ -1969,16 +1908,6 @@ class MainWindow(QMainWindow):
     # -------------------------------
     # 3) Step,Fill,Purge
     # -------------------------------
-    def _handle_step(self):
-        """Cycle step size: 1 → 5 → 10 → 50 → 1 ..."""
-        self.step_index = (self.step_index + 1) % len(self.step_list)
-        self.current_step = self.step_list[self.step_index]
-
-        # Update UI label/button
-        self.wm.operate(self.programWidget.step, "set", str(self.current_step))
-
-        self.logger.info(f"Step size changed to {self.current_step}")
-
     def _send_to_blackpill(self, cmd):
         if hasattr(self, 'blackpill_sercom') and self.blackpill_sercom.is_connected:
             self.blackpill_sercom.send(cmd + "\n")
@@ -2714,7 +2643,7 @@ class MainWindow(QMainWindow):
         """Checks for software updates asynchronously so it doesn't freeze the UI."""
         self.showAutoCloseMessage("Check for Updates", "Checking for updates, please wait...", timeout_ms=3000)
         
-        self.update_sig = UpdateCheckSignal()
+        self.update_sig = UpdateCheckSignal(self)
         self.update_sig.result.connect(self._handle_update_result)
         self.update_sig.error.connect(self._handle_update_error)
         
@@ -2756,7 +2685,7 @@ class MainWindow(QMainWindow):
                 if reply == QMessageBox.Yes:
                     NotifierUI.showProgressUI(self, "Downloading Update", f"Downloading version v{latest_ver}...")
                     
-                    self.dl_signal = DownloadProgressSignal()
+                    self.dl_signal = DownloadProgressSignal(self)
                     self.dl_signal.progress.connect(lambda pct: NotifierUI.updateProgress(self, pct))
                     
                     def progress_cb(pct):

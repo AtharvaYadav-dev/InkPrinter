@@ -759,3 +759,35 @@ New Session at 2026-08-29 15:30:47
 ==================================================
 New Session at 2026-08-29 15:33:28
 ==================================================
+
+==================================================
+New Session at 2026-08-31 10:55:22
+==================================================
+2026-08-31 10:55:22 - ERROR - util.py:184 - Uncaught exception
+Traceback (most recent call last):
+  File "e:\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\main.py", line 2772, in <module>
+    window = MainWindow()
+  File "e:\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\main.py", line 459, in __init__
+    self.pgmBtn2.objectName() : "step",
+    ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'objectName'
+
+==================================================
+New Session at 2026-08-31 10:55:45
+==================================================
+2026-08-31 10:55:45 - ERROR - util.py:184 - Uncaught exception
+Traceback (most recent call last):
+  File "e:\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\main.py", line 2772, in <module>
+    window = MainWindow()
+  File "e:\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\main.py", line 459, in __init__
+    self.pgmBtn2.objectName() : "step",
+    ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'objectName'
+
+==================================================
+New Session at 2026-08-31 10:58:41
+==================================================
+
+==================================================
+New Session at 2026-08-31 11:06:44
+==================================================
