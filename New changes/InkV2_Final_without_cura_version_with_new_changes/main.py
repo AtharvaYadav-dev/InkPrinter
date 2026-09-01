@@ -751,12 +751,19 @@ class MainWindow(QMainWindow):
         if hasattr(self.ui, 'extsavePushButton'):
             self.ui.extsavePushButton.clicked.connect(lambda: self.paraextrusionAction(self.ui.extsavePushButton))
             
-        # Bind testCheckBox to syringflushAction
+        # Bind actvaluesetPushButton to calculate syringe error
+        act_btn = self.findChild(QPushButton, "actvaluesetPushButton")
+        if act_btn:
+            act_btn.clicked.connect(self.syringflushAction)
+        elif hasattr(self.ui, 'actvaluesetPushButton'):
+            self.ui.actvaluesetPushButton.clicked.connect(self.syringflushAction)
+            
+        # Bind testCheckBox back
         test_cb = self.findChild(QCheckBox, "testCheckBox")
         if test_cb:
-            test_cb.stateChanged.connect(self.syringflushAction)
+            test_cb.stateChanged.connect(self.testCheckBoxAction)
         elif hasattr(self.ui, 'testCheckBox'):
-            self.ui.testCheckBox.stateChanged.connect(self.syringflushAction)
+            self.ui.testCheckBox.stateChanged.connect(self.testCheckBoxAction)
         
         self.prSlider.valueChanged.connect(lambda val: self.wm.operate(self.paraextrusionWidget.set_line, "set", str(val)))
         self.prsetLine.textChanged.connect(lambda text: self.prSlider.setValue(int(text)) if text.isdigit() else None)
@@ -767,9 +774,23 @@ class MainWindow(QMainWindow):
 
         # print progress bar
         self.sigPrintProgress.connect(self._updatePrintProgress, Qt.QueuedConnection)
+        
+        # When preview finishes parsing the G-code
+        if hasattr(self, 'preview'):
+            self.preview.sigGcodeParsed.connect(self._on_gcode_parsed)
 
         # main stack page change signal
         self.mainStack.currentChanged.connect(self.showMainPage)
+
+    @Slot()
+    def _on_gcode_parsed(self):
+        """Called when preview3d has finished parsing the G-code and total_print_length is available."""
+        if hasattr(self, 'ui') and hasattr(self.ui, 'volumemmLineEdit'):
+            total_len = getattr(self.preview, "total_print_length", 0.0)
+            volume_mm3 = total_len * 0.4 * 0.4
+            self.ui.volumemmLineEdit.setText(f"{volume_mm3:.2f}")
+            if hasattr(self.ui, 'volumemlLineEdit'):
+                self.ui.volumemlLineEdit.setText(f"{(volume_mm3 / 1000.0):.4f}")
 
     @Slot(float)
     def _updatePrintProgress(self, value: float):
@@ -1244,7 +1265,7 @@ class MainWindow(QMainWindow):
                     purge_interval = getattr(self, 'purge_distance_interval', 100.0)
                     if self.accumulated_print_distance >= purge_interval:
                         purge_val = getattr(self, 'purge_amount', 0.5)
-                        cmd = f"PURGE {purge_val:.6f}"
+                        cmd = f"P {purge_val:.6f}"
                         msg = f"PURGE EXECUTED: {cmd} | triggered at total distance {self.total_print_distance:.2f}mm"
                         self.util.debugPrint(msg)
                         if hasattr(self, 'terminalWidget') and hasattr(self.terminalWidget, 'output'):
@@ -1938,7 +1959,7 @@ class MainWindow(QMainWindow):
 
         if not self.fill_state:
             dist = self._get_travel_distance()
-            cmd = f"FILL {dist}" if dist != "0.0" else "FILL"
+            cmd = f"F {dist}" if dist != "0.0" else "F"
             self._send_to_blackpill(cmd)
             
             self.fill_state = True
@@ -1955,7 +1976,7 @@ class MainWindow(QMainWindow):
             else:
                 self._fill_timer.stop()
         else:
-            self._send_to_blackpill("STOP")
+            self._send_to_blackpill("S")
             self.fill_state = False
             self.programWidget.fill.setText("Fill")
             if hasattr(self, '_fill_timer'):
@@ -1987,7 +2008,7 @@ class MainWindow(QMainWindow):
 
         if not self.purge_state:
             dist = self._get_travel_distance()
-            cmd = f"PURGE {dist}" if dist != "0.0" else "PURGE"
+            cmd = f"P {dist}" if dist != "0.0" else "P"
             self._send_to_blackpill(cmd)
             
             self.purge_state = True
@@ -2004,7 +2025,7 @@ class MainWindow(QMainWindow):
             else:
                 self._purge_timer.stop()
         else:
-            self._send_to_blackpill("STOP")
+            self._send_to_blackpill("S")
             self.purge_state = False
             self.programWidget.purge.setText("Purge")
             if hasattr(self, '_purge_timer'):
@@ -2029,12 +2050,12 @@ class MainWindow(QMainWindow):
             self.fillhome_state = False
 
         if not self.fillhome_state:
-            self._send_to_blackpill("HOME")
+            self._send_to_blackpill("H")
             self.fillhome_state = True
             self.programWidget.fillhome.setText("Stop F home")
             self.logger.info("HOME command sent to Blackpill.")
         else:
-            self._send_to_blackpill("STOP")
+            self._send_to_blackpill("S")
             self.fillhome_state = False
             self.programWidget.fillhome.setText("F home")
             self.logger.info("Stop HOME command sent to Blackpill.")
@@ -2438,17 +2459,40 @@ class MainWindow(QMainWindow):
             if page:
                 self.mainStack.setCurrentWidget(page)
 
-    def syringflushAction(self, state):
+    def testCheckBoxAction(self, state):
         """Action for testCheckBox state change"""
         is_checked = (state == 2)  # Qt.Checked is 2
-        print(f"syringflushAction triggered - CheckBox state: {is_checked}")
-        self.logger.info(f"syringflushAction triggered - CheckBox state: {is_checked}")
+        print(f"testCheckBoxAction triggered - CheckBox state: {is_checked}")
+        self.logger.info(f"testCheckBoxAction triggered - CheckBox state: {is_checked}")
+        # Independent logic for testCheckBox can go here (e.g. prime line toggling)
+
+    def syringflushAction(self):
+        """Action for actvaluesetPushButton click to calculate syringe error"""
+        self.logger.info("syringflushAction triggered - calculating error")
         
-        # Add your syringe flush logic here based on 'is_checked'
-        if is_checked:
-            pass # CheckBox is checked
-        else:
-            pass # CheckBox is unchecked
+        try:
+            if hasattr(self, 'ui'):
+                # Retrieve values from LineEdits
+                vol_mm_str = self.ui.volumemmLineEdit.text()
+                vol_ml_str = self.ui.volumemlLineEdit.text()
+                act_val_str = self.ui.actvalueLineEdit.text()
+                
+                # Perform the percentage error calculation
+                if vol_ml_str and act_val_str:
+                    theoretical_ml = float(vol_ml_str)
+                    actual_ml = float(act_val_str)
+                    
+                    if actual_ml != 0:
+                        error = abs((theoretical_ml - actual_ml) / actual_ml) * 100
+                        self.ui.percenterrorLineEdit.setText(f"{error:.2f}")
+                    else:
+                        self.ui.percenterrorLineEdit.setText("0.00")
+        except ValueError:
+            self.logger.error("ValueError in syringflushAction: Invalid number entered.")
+            if hasattr(self, 'ui'):
+                self.ui.percenterrorLineEdit.setText("Error")
+        except Exception as e:
+            self.logger.error(f"Error in syringflushAction: {e}")
 
     def paraextrusionAction(self, widget):
         wobj = widget.objectName()

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'interfaceXAlpaH.ui'
+## Form generated from reading UI file 'interfacecPqSNd.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.8.1
 ##
@@ -4362,9 +4362,152 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_65.addWidget(self.frame_14)
 
-        self.verticalSpacer_7 = QSpacerItem(20, 101, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
+        self.frame_15 = QFrame(self.syringemidFrame)
+        self.frame_15.setObjectName(u"frame_15")
+        self.frame_15.setFrameShape(QFrame.Shape.StyledPanel)
+        self.frame_15.setFrameShadow(QFrame.Shadow.Raised)
+        self.horizontalLayout_60 = QHBoxLayout(self.frame_15)
+        self.horizontalLayout_60.setObjectName(u"horizontalLayout_60")
+        self.userLabel_3 = QLabel(self.frame_15)
+        self.userLabel_3.setObjectName(u"userLabel_3")
+        self.userLabel_3.setFont(font5)
+        self.userLabel_3.setStyleSheet(u"QLabel {\n"
+"    color: rgb(16, 42, 131);\n"
+"    font-weight: bold;\n"
+"}")
+        self.userLabel_3.setAlignment(Qt.AlignmentFlag.AlignCenter)
 
-        self.verticalLayout_65.addItem(self.verticalSpacer_7)
+        self.horizontalLayout_60.addWidget(self.userLabel_3)
+
+        self.volumemmLineEdit = QLineEdit(self.frame_15)
+        self.volumemmLineEdit.setObjectName(u"volumemmLineEdit")
+        self.volumemmLineEdit.setStyleSheet(u"QLineEdit {\n"
+"    border: 2px solid #102a83;\n"
+"    border-radius: 6px;       /* Optional: for rounded corners */\n"
+"    padding: 4px;             /* Optional: inner spacing */\n"
+"    color: #102a83;           /* Text color inside the line edit */\n"
+"}\n"
+"")
+
+        self.horizontalLayout_60.addWidget(self.volumemmLineEdit)
+
+        self.userLabel_4 = QLabel(self.frame_15)
+        self.userLabel_4.setObjectName(u"userLabel_4")
+        self.userLabel_4.setFont(font5)
+        self.userLabel_4.setStyleSheet(u"QLabel {\n"
+"    color: rgb(16, 42, 131);\n"
+"    font-weight: bold;\n"
+"}")
+        self.userLabel_4.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.horizontalLayout_60.addWidget(self.userLabel_4)
+
+        self.volumemlLineEdit = QLineEdit(self.frame_15)
+        self.volumemlLineEdit.setObjectName(u"volumemlLineEdit")
+        self.volumemlLineEdit.setStyleSheet(u"QLineEdit {\n"
+"    border: 2px solid #102a83;\n"
+"    border-radius: 6px;       /* Optional: for rounded corners */\n"
+"    padding: 4px;             /* Optional: inner spacing */\n"
+"    color: #102a83;           /* Text color inside the line edit */\n"
+"}\n"
+"")
+
+        self.horizontalLayout_60.addWidget(self.volumemlLineEdit)
+
+        self.userLabel_5 = QLabel(self.frame_15)
+        self.userLabel_5.setObjectName(u"userLabel_5")
+        self.userLabel_5.setFont(font5)
+        self.userLabel_5.setStyleSheet(u"QLabel {\n"
+"    color: rgb(16, 42, 131);\n"
+"    font-weight: bold;\n"
+"}")
+        self.userLabel_5.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.horizontalLayout_60.addWidget(self.userLabel_5)
+
+
+        self.verticalLayout_65.addWidget(self.frame_15)
+
+        self.frame_16 = QFrame(self.syringemidFrame)
+        self.frame_16.setObjectName(u"frame_16")
+        self.frame_16.setFrameShape(QFrame.Shape.StyledPanel)
+        self.frame_16.setFrameShadow(QFrame.Shadow.Raised)
+        self.horizontalLayout_54 = QHBoxLayout(self.frame_16)
+        self.horizontalLayout_54.setObjectName(u"horizontalLayout_54")
+        self.userLabel_6 = QLabel(self.frame_16)
+        self.userLabel_6.setObjectName(u"userLabel_6")
+        self.userLabel_6.setFont(font5)
+        self.userLabel_6.setStyleSheet(u"QLabel {\n"
+"    color: rgb(16, 42, 131);\n"
+"    font-weight: bold;\n"
+"}")
+        self.userLabel_6.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.horizontalLayout_54.addWidget(self.userLabel_6)
+
+        self.actvalueLineEdit = QLineEdit(self.frame_16)
+        self.actvalueLineEdit.setObjectName(u"actvalueLineEdit")
+        self.actvalueLineEdit.setStyleSheet(u"QLineEdit {\n"
+"    border: 2px solid #102a83;\n"
+"    border-radius: 6px;       /* Optional: for rounded corners */\n"
+"    padding: 4px;             /* Optional: inner spacing */\n"
+"    color: #102a83;           /* Text color inside the line edit */\n"
+"}\n"
+"")
+
+        self.horizontalLayout_54.addWidget(self.actvalueLineEdit)
+
+        self.actvaluesetPushButton = QPushButton(self.frame_16)
+        self.actvaluesetPushButton.setObjectName(u"actvaluesetPushButton")
+        self.actvaluesetPushButton.setMinimumSize(QSize(0, 0))
+        self.actvaluesetPushButton.setFont(font2)
+        self.actvaluesetPushButton.setStyleSheet(u"QPushButton {\n"
+"	color: rgb(255, 255, 255);	\n"
+"	background-color: rgb(16, 42, 131);\n"
+"	border-color: transparent;\n"
+"	border-style: outset;\n"
+"	border-radius: 20px;\n"
+"	border-width: 2px;\n"
+"	padding: 6px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"	color: rgb(16, 42, 131);\n"
+"	background-color: rgb(167, 198, 229);\n"
+"	border-color: rgb(16, 42, 131);\n"
+"}\n"
+"\n"
+"QPushButton:disabled {\n"
+"	background-color: rgb(172, 172, 172);\n"
+"}")
+
+        self.horizontalLayout_54.addWidget(self.actvaluesetPushButton)
+
+        self.userLabel_7 = QLabel(self.frame_16)
+        self.userLabel_7.setObjectName(u"userLabel_7")
+        self.userLabel_7.setFont(font5)
+        self.userLabel_7.setStyleSheet(u"QLabel {\n"
+"    color: rgb(16, 42, 131);\n"
+"    font-weight: bold;\n"
+"}")
+        self.userLabel_7.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.horizontalLayout_54.addWidget(self.userLabel_7)
+
+        self.percenterrorLineEdit = QLineEdit(self.frame_16)
+        self.percenterrorLineEdit.setObjectName(u"percenterrorLineEdit")
+        self.percenterrorLineEdit.setStyleSheet(u"QLineEdit {\n"
+"    border: 2px solid #102a83;\n"
+"    border-radius: 6px;       /* Optional: for rounded corners */\n"
+"    padding: 4px;             /* Optional: inner spacing */\n"
+"    color: #102a83;           /* Text color inside the line edit */\n"
+"}\n"
+"")
+
+        self.horizontalLayout_54.addWidget(self.percenterrorLineEdit)
+
+
+        self.verticalLayout_65.addWidget(self.frame_16)
 
 
         self.horizontalLayout_26.addWidget(self.syringemidFrame)
@@ -4489,8 +4632,8 @@ class Ui_MainWindow(object):
 
         self.centerMenuPages.setCurrentIndex(3)
         self.infoSubPages.setCurrentIndex(1)
-        self.mainPages.setCurrentIndex(1)
-        self.stackedWidget.setCurrentIndex(1)
+        self.mainPages.setCurrentIndex(6)
+        self.stackedWidget.setCurrentIndex(0)
 
 
         QMetaObject.connectSlotsByName(MainWindow)
@@ -4705,6 +4848,12 @@ class Ui_MainWindow(object):
         self.pgmpurgePushButton.setText(QCoreApplication.translate("MainWindow", u"PURGE", None))
         self.userLabel_2.setText(QCoreApplication.translate("MainWindow", u"Test :", None))
         self.testCheckBox.setText("")
+        self.userLabel_3.setText(QCoreApplication.translate("MainWindow", u"Volume :", None))
+        self.userLabel_4.setText(QCoreApplication.translate("MainWindow", u"mm3", None))
+        self.userLabel_5.setText(QCoreApplication.translate("MainWindow", u"ml", None))
+        self.userLabel_6.setText(QCoreApplication.translate("MainWindow", u"Actual Value :", None))
+        self.actvaluesetPushButton.setText(QCoreApplication.translate("MainWindow", u"SET", None))
+        self.userLabel_7.setText(QCoreApplication.translate("MainWindow", u"Percent Error :", None))
         self.notifyLabel.setText(QCoreApplication.translate("MainWindow", u"Notification", None))
         self.notifyTextEdit.setHtml(QCoreApplication.translate("MainWindow", u"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\n"

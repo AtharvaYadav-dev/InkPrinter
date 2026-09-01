@@ -15,6 +15,7 @@ class GCode3DPreview(QOpenGLWidget):
     sigMarkSegment = Signal(str)
     sigRequestUpdate = Signal()
     sigGlError = Signal(str)
+    sigGcodeParsed = Signal()
 
     def __init__(self, parent=None):
         super().__init__(parent)
@@ -407,6 +408,7 @@ class GCode3DPreview(QOpenGLWidget):
         self.selected_layer_index = len(self.layer_z_list)-1 if self.layer_z_list else None
         self._update_info_label()
         self.fit_model()
+        self.sigGcodeParsed.emit()
 
     @Slot(str)
     def _onMarkSegment(self, gcode: str) -> None:
@@ -566,7 +568,10 @@ class GCode3DPreview(QOpenGLWidget):
         total_len = getattr(self, "total_print_length", 0.0)
         rem = max(0.0, total_len - comp)
         
-        text = f"Layers: {total}\nTotal: {total_len:.1f} mm\nDone: {comp:.1f} mm\nRem: {rem:.1f} mm"
+        # Calculate volume based on total length
+        volume_mm3 = total_len * 0.4 * 0.4
+        
+        text = f"Layers: {total}\nTotal: {total_len:.1f} mm\nDone: {comp:.1f} mm\nRem: {rem:.1f} mm\nVolume: {volume_mm3:.2f} mm³"
         self.lbl_info.setText(text)
 
     def _classify_feature(self, x0, y0, x1, y1, line, ink_active=False, current_type=None):
