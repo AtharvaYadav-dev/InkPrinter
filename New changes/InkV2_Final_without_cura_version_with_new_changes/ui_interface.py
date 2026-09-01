@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'interfacecPqSNd.ui'
+## Form generated from reading UI file 'interfaceqLmdNJ.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.8.1
 ##
@@ -4216,6 +4216,7 @@ class Ui_MainWindow(object):
         self.frame_13.setFrameShadow(QFrame.Shadow.Raised)
         self.horizontalLayout_48 = QHBoxLayout(self.frame_13)
         self.horizontalLayout_48.setObjectName(u"horizontalLayout_48")
+        self.horizontalLayout_48.setContentsMargins(0, 0, 0, 0)
         self.travel10_RadioButton_3 = QRadioButton(self.frame_13)
         self.travel10_RadioButton_3.setObjectName(u"travel10_RadioButton_3")
         self.travel10_RadioButton_3.setFont(font2)
@@ -4254,7 +4255,7 @@ class Ui_MainWindow(object):
         self.pgmfillPushButton.setObjectName(u"pgmfillPushButton")
         sizePolicy6.setHeightForWidth(self.pgmfillPushButton.sizePolicy().hasHeightForWidth())
         self.pgmfillPushButton.setSizePolicy(sizePolicy6)
-        self.pgmfillPushButton.setMaximumSize(QSize(350, 60))
+        self.pgmfillPushButton.setMaximumSize(QSize(350, 50))
         self.pgmfillPushButton.setFont(font2)
         self.pgmfillPushButton.setStyleSheet(u"QPushButton {\n"
 "	color: rgb(255, 255, 255);	\n"
@@ -4282,7 +4283,7 @@ class Ui_MainWindow(object):
         self.pgmfillhomePushButton.setObjectName(u"pgmfillhomePushButton")
         sizePolicy6.setHeightForWidth(self.pgmfillhomePushButton.sizePolicy().hasHeightForWidth())
         self.pgmfillhomePushButton.setSizePolicy(sizePolicy6)
-        self.pgmfillhomePushButton.setMaximumSize(QSize(350, 60))
+        self.pgmfillhomePushButton.setMaximumSize(QSize(350, 50))
         self.pgmfillhomePushButton.setFont(font2)
         self.pgmfillhomePushButton.setStyleSheet(u"QPushButton {\n"
 "	color: rgb(255, 255, 255);	\n"
@@ -4310,7 +4311,7 @@ class Ui_MainWindow(object):
         self.pgmpurgePushButton.setObjectName(u"pgmpurgePushButton")
         sizePolicy6.setHeightForWidth(self.pgmpurgePushButton.sizePolicy().hasHeightForWidth())
         self.pgmpurgePushButton.setSizePolicy(sizePolicy6)
-        self.pgmpurgePushButton.setMaximumSize(QSize(350, 60))
+        self.pgmpurgePushButton.setMaximumSize(QSize(350, 50))
         self.pgmpurgePushButton.setFont(font2)
         self.pgmpurgePushButton.setStyleSheet(u"QPushButton {\n"
 "	color: rgb(255, 255, 255);	\n"
