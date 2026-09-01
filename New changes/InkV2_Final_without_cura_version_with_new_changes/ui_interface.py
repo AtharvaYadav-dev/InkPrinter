@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'interfacevEHJXh.ui'
+## Form generated from reading UI file 'interfaceXAlpaH.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.8.1
 ##
@@ -2554,7 +2554,7 @@ class Ui_MainWindow(object):
         sizePolicy6.setHeightForWidth(self.offsetPushButton.sizePolicy().hasHeightForWidth())
         self.offsetPushButton.setSizePolicy(sizePolicy6)
         self.offsetPushButton.setMinimumSize(QSize(0, 0))
-        self.offsetPushButton.setMaximumSize(QSize(500, 150))
+        self.offsetPushButton.setMaximumSize(QSize(300, 80))
         self.offsetPushButton.setFont(font2)
         self.offsetPushButton.setStyleSheet(u"QPushButton {\n"
 "	color: rgb(255, 255, 255);	\n"
@@ -4489,7 +4489,7 @@ class Ui_MainWindow(object):
 
         self.centerMenuPages.setCurrentIndex(3)
         self.infoSubPages.setCurrentIndex(1)
-        self.mainPages.setCurrentIndex(5)
+        self.mainPages.setCurrentIndex(1)
         self.stackedWidget.setCurrentIndex(1)
 
 

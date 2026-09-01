@@ -434,8 +434,6 @@ class MainWindow(QMainWindow):
         self.pgmText = self.findChild(QTextEdit, "pgmfileTextEdit")
         self.pgmLine2 = self.findChild(QLineEdit, "pgmfeedLineEdit")
         self.pgmComboBox = self.findChild(QComboBox, "pgmlaserComboBox")
-        self.viscositylevComboBox = self.findChild(QComboBox, "viscositylevComboBox")
-        self.needleguageComboBox = self.findChild(QComboBox, "needleguageComboBox")
         self.pgmBtn1 = self.findChild(QPushButton, "pgmfilePushButton")
         self.pgmBtn3 = self.findChild(QPushButton, "pgmfeedPushButton")
         self.pgmBtn4 = self.findChild(QPushButton, "pgmsavePushButton")
@@ -464,13 +462,9 @@ class MainWindow(QMainWindow):
                                    "fill" : self.pgmBtn5,
                                    "purge" : self.pgmBtn6,
                                    "fillhome" : self.pgmBtn7,
-                                   self.viscositylevComboBox.objectName() : "inviscosity",
-                                   self.needleguageComboBox.objectName() : "inneedle",
                                    "infile" : self.pgmText,
                                    "infeed" : self.pgmLine2,
-                                   "inlaser" : self.pgmComboBox,
-                                   "inviscosity" : self.viscositylevComboBox,
-                                   "inneedle" : self.needleguageComboBox
+                                   "inlaser" : self.pgmComboBox
                                    }
         
         self.programWidget = DictAsClass(self.programWidget_dict)

@@ -9746,3 +9746,170 @@ index : 1
 index : 6
 index : 3
 index : 2
+
+==================================================
+Session Started: 2026-08-31 16:30:59
+==================================================
+C:\Program Files\Python313\Lib\site-packages\Custom_Widgets\JSonStyles\__init__.py:842: RuntimeWarning: Failed to disconnect (None) from signal "clicked()".
+  button.clicked.disconnect()
+index : 0
+arg : 0
+index : 0
+arg : 0
+[SPPL Agent] Device INK-724634DD registered successfully.
+UI is loaded
+xindex : 0
+yindex : 0
+feed : 1000
+laser handler : {}
+Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+action : Auto
+Cancel clicked
+status : False
+Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+action : Auto
+Cancel clicked
+status : False
+index : 2
+Application is closing
+action : Disconnect
+Serial communication stopped
+status : True
+connect btn : Connect | refresh btn : True
+
+==================================================
+Session Started: 2026-08-31 16:33:53
+==================================================
+C:\Program Files\Python313\Lib\site-packages\Custom_Widgets\JSonStyles\__init__.py:842: RuntimeWarning: Failed to disconnect (None) from signal "clicked()".
+  button.clicked.disconnect()
+index : 0
+arg : 0
+index : 0
+arg : 0
+UI is loaded
+xindex : 0
+yindex : 0
+feed : 1000
+laser handler : {}
+Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+action : Auto
+Cancel clicked
+status : False
+Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+action : Auto
+[SPPL Agent] Device INK-724634DD registered successfully.
+Cancel clicked
+status : False
+index : 2
+index : 1
+wobj : flaserPushButton
+wobj : offsetPushButton
+Gcode - G90
+Gcode - G0 Z20.750 F1000
+Gcode - M114
+xoffset : 0.0, yoffset : 0.0
+
+==================================================
+Session Started: 2026-08-31 16:35:11
+==================================================
+C:\Program Files\Python313\Lib\site-packages\Custom_Widgets\JSonStyles\__init__.py:842: RuntimeWarning: Failed to disconnect (None) from signal "clicked()".
+  button.clicked.disconnect()
+index : 0
+arg : 0
+index : 0
+arg : 0
+UI is loaded
+xindex : 0
+yindex : 0
+feed : 1000
+laser handler : {}
+Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+action : Auto
+[SPPL Agent] Device INK-724634DD registered successfully.
+Cancel clicked
+status : False
+Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+action : Auto
+Cancel clicked
+status : False
+index : 1
+
+==================================================
+Session Started: 2026-08-31 16:35:53
+==================================================
+C:\Program Files\Python313\Lib\site-packages\Custom_Widgets\JSonStyles\__init__.py:842: RuntimeWarning: Failed to disconnect (None) from signal "clicked()".
+  button.clicked.disconnect()
+index : 0
+arg : 0
+index : 0
+arg : 0
+UI is loaded
+xindex : 0
+yindex : 0
+feed : 1000
+laser handler : {}
+Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+action : Auto
+[SPPL Agent] Device INK-724634DD registered successfully.
+Cancel clicked
+status : False
+Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+action : Auto
+Cancel clicked
+status : False
+index : 6
+index : 2
+index : 3
+index : 1
+
+==================================================
+Session Started: 2026-08-31 16:36:35
+==================================================
+C:\Program Files\Python313\Lib\site-packages\Custom_Widgets\JSonStyles\__init__.py:842: RuntimeWarning: Failed to disconnect (None) from signal "clicked()".
+  button.clicked.disconnect()
+index : 0
+arg : 0
+index : 0
+arg : 0
+UI is loaded
+xindex : 0
+yindex : 0
+feed : 1000
+laser handler : {}
+Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+action : Auto
+[SPPL Agent] Device INK-724634DD registered successfully.
+Cancel clicked
+status : False
+Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+action : Auto
+Cancel clicked
+status : False
+index : 1
+
+==================================================
+Session Started: 2026-08-31 16:37:08
+==================================================
+C:\Program Files\Python313\Lib\site-packages\Custom_Widgets\JSonStyles\__init__.py:842: RuntimeWarning: Failed to disconnect (None) from signal "clicked()".
+  button.clicked.disconnect()
+index : 0
+arg : 0
+index : 0
+arg : 0
+[SPPL Agent] Device INK-724634DD registered successfully.
+UI is loaded
+xindex : 0
+yindex : 0
+feed : 1000
+laser handler : {}
+Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+action : Auto
+Cancel clicked
+status : False
+Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+action : Auto
+Cancel clicked
+status : False
+index : 6
+index : 2
+index : 1

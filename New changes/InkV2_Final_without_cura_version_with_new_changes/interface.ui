@@ -2766,7 +2766,7 @@ QPushButton:disabled {
                 </size>
                </property>
                <property name="currentIndex">
-                <number>6</number>
+                <number>1</number>
                </property>
                <widget class="QWidget" name="jogPage">
                 <layout class="QVBoxLayout" name="verticalLayout_15">
@@ -5029,8 +5029,8 @@ QPushButton:disabled {
                                </property>
                                <property name="maximumSize">
                                 <size>
-                                 <width>500</width>
-                                 <height>150</height>
+                                 <width>300</width>
+                                 <height>80</height>
                                 </size>
                                </property>
                                <property name="font">
