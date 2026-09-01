@@ -1129,3 +1129,136 @@ action : Auto
 Cancel clicked
 status : False
 index : 6
+
+==================================================
+Session Started: 2026-09-01 15:11:35
+==================================================
+C:\Users\SPPL03\AppData\Local\Programs\Python\Python312\Lib\site-packages\Custom_Widgets\JSonStyles\__init__.py:842: RuntimeWarning: libpyside: Failed to disconnect (None) from signal "clicked()".
+  button.clicked.disconnect()
+index : 0
+arg : 0
+index : 0
+arg : 0
+UI is loaded
+xindex : 0
+yindex : 0
+feed : 1000
+laser handler : {}
+Com : com, Port : ['COM1', 'COM4', 'COM13'], Baud : ['9600', '57600', '115200', '250000']
+action : Auto
+[SPPL Agent] Device INK-11FF2A8B registered successfully.
+OK clicked
+error args : Cannot configure port, something went wrong. Original message: PermissionError(13, 'A device attached to the system is not functioning.', None, 31)
+Serial communication autostarted
+status : True
+connect btn : Disconnect | refresh btn : False
+Com : black_com, Port : ['COM1', 'COM4', 'COM13'], Baud : ['9600', '57600', '115200', '250000']
+action : Auto
+error flag : True
+action : Disconnect
+Serial communication stopped
+status : True
+connect btn : Connect | refresh btn : True
+action : Auto
+OK clicked
+error args : Cannot configure port, something went wrong. Original message: PermissionError(13, 'A device attached to the system is not functioning.', None, 31)
+Serial communication autostarted
+status : True
+connect btn : Disconnect | refresh btn : False
+OK clicked
+Serial communication autostarted
+status : True
+connect btn : Disconnect | refresh btn : False
+error flag : True
+action : Disconnect
+Serial communication stopped
+status : True
+connect btn : Connect | refresh btn : True
+action : Auto
+Cancel clicked
+status : False
+action : Refresh
+Com : com, Port : ['COM1', 'COM4', 'COM13'], Baud : ['9600', '57600', '115200', '250000']
+action : Refresh
+Com : com, Port : ['COM1', 'COM4', 'COM13'], Baud : ['9600', '57600', '115200', '250000']
+action : Connect
+port : COM4
+baud : 115200
+error args : Cannot configure port, something went wrong. Original message: PermissionError(13, 'A device attached to the system is not functioning.', None, 31)
+Serial communication started
+status : True
+connect btn : Disconnect | refresh btn : False
+error flag : True
+action : Disconnect
+Serial communication stopped
+status : True
+connect btn : Connect | refresh btn : True
+Close event ignored.
+action : Auto
+OK clicked
+error args : could not open port 'COM4': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+Serial communication autostarted
+status : True
+connect btn : Disconnect | refresh btn : False
+error flag : True
+action : Disconnect
+Serial communication stopped
+status : True
+connect btn : Connect | refresh btn : True
+action : Auto
+status : None
+Application is closing
+action : Disconnect
+Serial communication stopped
+status : True
+connect btn : Connect | refresh btn : True
+
+==================================================
+Session Started: 2026-09-01 15:12:47
+==================================================
+C:\Users\SPPL03\AppData\Local\Programs\Python\Python312\Lib\site-packages\Custom_Widgets\JSonStyles\__init__.py:842: RuntimeWarning: libpyside: Failed to disconnect (None) from signal "clicked()".
+  button.clicked.disconnect()
+index : 0
+arg : 0
+index : 0
+arg : 0
+UI is loaded
+xindex : 0
+yindex : 0
+feed : 1000
+laser handler : {}
+Com : com, Port : ['COM1', 'COM4', 'COM13'], Baud : ['9600', '57600', '115200', '250000']
+action : Auto
+[SPPL Agent] Device INK-11FF2A8B registered successfully.
+OK clicked
+Serial communication autostarted
+status : True
+connect btn : Disconnect | refresh btn : False
+Com : black_com, Port : ['COM1', 'COM4', 'COM13'], Baud : ['9600', '57600', '115200', '250000']
+action : Auto
+OK clicked
+Serial communication autostarted
+status : True
+connect btn : Disconnect | refresh btn : False
+action : Disconnect
+Serial communication stopped
+status : True
+connect btn : Connect | refresh btn : True
+action : Connect
+port : COM13
+baud : 115200
+Serial communication started
+status : True
+connect btn : Disconnect | refresh btn : False
+index : 6
+pgm : pgmpurgePushButton
+pgm : pgmfillPushButton
+pgm : pgmpurgePushButton
+pgm : pgmfillPushButton
+pgm : pgmpurgePushButton
+pgm : pgmfillhomePushButton
+pgm : pgmfillhomePushButton
+action : Disconnect
+Serial communication stopped
+status : True
+connect btn : Connect | refresh btn : True

@@ -3625,3 +3625,83 @@ AttributeError: 'NoneType' object has no attribute 'objectName'
 2026-09-01 15:07 - INFO - Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
 2026-09-01 15:07 - INFO - Do you want to auto connect Blackpill COM to COM1 @ 9600?
 2026-09-01 15:07 - INFO - Auto Connect dialog button : Cancel
+2026-09-01 15:11 - INFO - ==================================================
+2026-09-01 15:11 - INFO - New session START at 2026-09-01 15:11
+2026-09-01 15:11 - INFO - ==================================================
+2026-09-01 15:11 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-09-01 15:11 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-09-01 15:11 - INFO - Loaded draw_z from config: Z=41.5, draw_z_UP=20.75
+2026-09-01 15:11 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-09-01 15:11 - INFO - UV Exposure Time loaded: 30000 ms
+2026-09-01 15:11 - INFO - INI file initialized
+2026-09-01 15:11 - INFO - UI load successful
+2026-09-01 15:11 - INFO - Com : com, Port : ['COM1', 'COM4', 'COM13'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-01 15:11 - INFO - Do you want to auto connect Main Printer COM to COM4 @ 115200?
+2026-09-01 15:11 - INFO - Auto Connect dialog button : Ok
+2026-09-01 15:11 - INFO - Serial communication autostarted
+2026-09-01 15:11 - INFO - Com : black_com, Port : ['COM1', 'COM4', 'COM13'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-01 15:11 - INFO - Serial communication stopped
+2026-09-01 15:11 - INFO - Do you want to auto connect Main Printer COM to COM4 @ 115200?
+2026-09-01 15:11 - INFO - Auto Connect dialog button : Ok
+2026-09-01 15:11 - INFO - Serial communication autostarted
+2026-09-01 15:11 - INFO - Do you want to auto connect Blackpill COM to COM1 @ 9600?
+2026-09-01 15:11 - INFO - Auto Connect dialog button : Ok
+2026-09-01 15:11 - INFO - Serial communication autostarted
+2026-09-01 15:11 - INFO - Serial communication stopped
+2026-09-01 15:11 - INFO - Do you want to auto connect Main Printer COM to COM4 @ 115200?
+2026-09-01 15:11 - INFO - Auto Connect dialog button : Cancel
+2026-09-01 15:11 - INFO - Com : com, Port : ['COM1', 'COM4', 'COM13'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-01 15:11 - INFO - Com : com, Port : ['COM1', 'COM4', 'COM13'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-01 15:12 - CRITICAL - Serial communication started
+2026-09-01 15:12 - INFO - Serial communication stopped
+2026-09-01 15:12 - INFO - Close event ignored.
+2026-09-01 15:12 - INFO - Do you want to auto connect Main Printer COM to COM4 @ 115200?
+2026-09-01 15:12 - INFO - Auto Connect dialog button : Ok
+2026-09-01 15:12 - INFO - Serial communication autostarted
+2026-09-01 15:12 - INFO - Serial communication stopped
+2026-09-01 15:12 - INFO - Serial communication stopped
+2026-09-01 15:12 - INFO - COM connection close successfully
+2026-09-01 15:12 - INFO - Main window close successfully
+2026-09-01 15:12 - INFO - ==================================================
+2026-09-01 15:12 - INFO - New session close at 2026-09-01 15:12
+2026-09-01 15:12 - INFO - ==================================================
+2026-09-01 15:12 - INFO - ==================================================
+2026-09-01 15:12 - INFO - New session START at 2026-09-01 15:12
+2026-09-01 15:12 - INFO - ==================================================
+2026-09-01 15:12 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-09-01 15:12 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-09-01 15:12 - INFO - Loaded draw_z from config: Z=41.5, draw_z_UP=20.75
+2026-09-01 15:12 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-09-01 15:12 - INFO - UV Exposure Time loaded: 30000 ms
+2026-09-01 15:12 - INFO - INI file initialized
+2026-09-01 15:12 - INFO - UI load successful
+2026-09-01 15:12 - INFO - Com : com, Port : ['COM1', 'COM4', 'COM13'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-01 15:12 - INFO - Do you want to auto connect Main Printer COM to COM4 @ 115200?
+2026-09-01 15:12 - INFO - Auto Connect dialog button : Ok
+2026-09-01 15:12 - INFO - Serial communication autostarted
+2026-09-01 15:12 - INFO - Com : black_com, Port : ['COM1', 'COM4', 'COM13'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-01 15:12 - INFO - Do you want to auto connect Blackpill COM to COM1 @ 9600?
+2026-09-01 15:12 - INFO - Auto Connect dialog button : Ok
+2026-09-01 15:12 - INFO - Serial communication autostarted
+2026-09-01 15:13 - INFO - Serial communication stopped
+2026-09-01 15:13 - CRITICAL - Serial communication started
+2026-09-01 15:13 - INFO - Sent P 0.1 to Blackpill
+2026-09-01 15:13 - INFO - Purge command (P 0.1) sent to Blackpill.
+2026-09-01 15:13 - INFO - Auto-reset Purge button state.
+2026-09-01 15:13 - INFO - Sent F 0.1 to Blackpill
+2026-09-01 15:13 - INFO - Fill command (F 0.1) sent to Blackpill.
+2026-09-01 15:13 - INFO - Auto-reset Fill button state.
+2026-09-01 15:13 - INFO - Sent P 1.0 to Blackpill
+2026-09-01 15:13 - INFO - Purge command (P 1.0) sent to Blackpill.
+2026-09-01 15:13 - INFO - Auto-reset Purge button state.
+2026-09-01 15:13 - INFO - Sent F 1.0 to Blackpill
+2026-09-01 15:13 - INFO - Fill command (F 1.0) sent to Blackpill.
+2026-09-01 15:13 - INFO - Auto-reset Fill button state.
+2026-09-01 15:13 - INFO - Sent P 5.0 to Blackpill
+2026-09-01 15:13 - INFO - Purge command (P 5.0) sent to Blackpill.
+2026-09-01 15:13 - INFO - Auto-reset Purge button state.
+2026-09-01 15:13 - INFO - Sent H to Blackpill
+2026-09-01 15:13 - INFO - HOME command sent to Blackpill.
+2026-09-01 15:13 - INFO - Sent S to Blackpill
+2026-09-01 15:13 - INFO - Stop HOME command sent to Blackpill.
+2026-09-01 15:14 - INFO - Serial communication stopped
