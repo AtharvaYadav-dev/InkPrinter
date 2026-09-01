@@ -1927,6 +1927,10 @@ class MainWindow(QMainWindow):
         if hasattr(self, 'blackpill_sercom') and self.blackpill_sercom.is_connected:
             self.blackpill_sercom.send(cmd + "\n")
             self.logger.info(f"Sent {cmd} to Blackpill")
+            # print(f"Gcode - {cmd}")
+            self.util.debugPrint(f"Gcode - {cmd}")
+            if hasattr(self, 'terminalWidget') and hasattr(self.terminalWidget, 'output'):
+                self.receiveACK(self.terminalWidget.output, f"Gcode - {cmd}")
         else:
             msg = "Blackpill is not connected. Please connect via the Black COM page."
             self.logger.error(msg)
