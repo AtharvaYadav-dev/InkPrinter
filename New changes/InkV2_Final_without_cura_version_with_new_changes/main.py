@@ -2596,8 +2596,12 @@ class MainWindow(QMainWindow):
             
             if gcode:
                 self.wm.operate(self.terminalWidget.input, "clear")
-                self.sendGcode(gcode)
-                self.sendGcode("M114")
+                upper_gcode = gcode.upper().strip()
+                if upper_gcode.startswith("P ") or upper_gcode.startswith("F ") or upper_gcode in ["H", "S", "P", "F"]:
+                    self._send_to_blackpill(gcode)
+                else:
+                    self.sendGcode(gcode)
+                    self.sendGcode("M114")
                 
     def receiveACK(self, widget, arg):
         if widget:
