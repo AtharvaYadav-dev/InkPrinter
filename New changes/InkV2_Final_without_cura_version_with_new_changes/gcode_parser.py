@@ -383,11 +383,24 @@ class GcodeParser:
         # Add hop and UV sequence before FINAL G28
         for i in range(len(final)-1, -1, -1):
             if final[i].upper().startswith("G28"):
+                insert_idx = i
+                
+                # 1. Safe 30mm relative Z hop
+                final.insert(insert_idx, "G91")
+                insert_idx += 1
+                final.insert(insert_idx, "G0 Z30.000 F1800")
+                insert_idx += 1
+                final.insert(insert_idx, "G90")
+                insert_idx += 1
+                
+                # 2. UV sequence
                 if uv_time_ms > 0:
-                    final.insert(i, "M118 A1 P2 UO")
-                    final.insert(i, f"G4 P{uv_time_ms}")
-                    final.insert(i, "M118 A1 P2 UR")
-                final.insert(i, f"G0 Z{printZ + hopDelta:.3f} F{travelF}")
+                    final.insert(insert_idx, "M118 A1 P2 UR")
+                    insert_idx += 1
+                    final.insert(insert_idx, f"G4 P{uv_time_ms}")
+                    insert_idx += 1
+                    final.insert(insert_idx, "M118 A1 P2 UO")
+                    
                 break
 
         # --------------------------------------
