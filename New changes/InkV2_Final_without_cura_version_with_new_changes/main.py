@@ -2372,10 +2372,10 @@ class MainWindow(QMainWindow):
             self.programInit()
             
             # Safe abort sequence
-            self.sendGcode("M118 A1 P2 UO\n")  # UV off just in case
-            self.sendGcode("G91\n")            # Relative mode
-            self.sendGcode("G0 Z30.000 F1800\n") # Safe Z hop up 30mm
-            self.sendGcode("G90\n")            # Absolute mode
+            # self.sendGcode("M118 A1 P2 UO\n")  # UV off just in case
+            # self.sendGcode("G91\n")            # Relative mode
+            # self.sendGcode("G0 Z5.000 F1800\n") # Safe Z hop up 5mm
+            # self.sendGcode("G90\n")            # Absolute mode
             self.sendGcode("G28\n")            # Go to home position
             
             self.logger.info("Print Status : ABORT")
