@@ -360,7 +360,27 @@ class GcodeParser:
         # Add layer comment
         final.insert(0, f";Layer height: {(layer_height or 0.0):.3f}")
 
-        # Add hop before FINAL G28
+        # Ensure proper end sequence
+        last_g1_idx = -1
+        for i in range(len(final)-1, -1, -1):
+            if final[i].upper().startswith("G1"):
+                last_g1_idx = i
+                break
+                
+        last_g28_idx = -1
+        for i in range(len(final)-1, -1, -1):
+            if final[i].upper().startswith("G28"):
+                last_g28_idx = i
+                break
+                
+        if last_g28_idx <= last_g1_idx:
+            # Remove trailing M84 to add it back after G28
+            while final and "M84" in final[-1].upper():
+                final.pop()
+            final.append("G28")
+            final.append("M84")
+
+        # Add hop and UV sequence before FINAL G28
         for i in range(len(final)-1, -1, -1):
             if final[i].upper().startswith("G28"):
                 if uv_time_ms > 0:

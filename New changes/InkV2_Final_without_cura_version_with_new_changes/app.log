@@ -4150,3 +4150,50 @@ AttributeError: 'NoneType' object has no attribute 'objectName'
 2026-09-02 11:59 - INFO - Serial communication stopped
 2026-09-02 12:06 - CRITICAL - Serial communication started
 2026-09-02 12:07 - INFO - Profile : Supervisor
+2026-09-02 12:36 - INFO - ==================================================
+2026-09-02 12:36 - INFO - New session START at 2026-09-02 12:36
+2026-09-02 12:36 - INFO - ==================================================
+2026-09-02 12:36 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-09-02 12:36 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-09-02 12:36 - INFO - Loaded draw_z from config: Z=41.5, draw_z_UP=20.75
+2026-09-02 12:36 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-09-02 12:36 - INFO - UV Exposure Time loaded: 30000 ms
+2026-09-02 12:36 - INFO - INI file initialized
+2026-09-02 12:36 - INFO - UI load successful
+2026-09-02 12:36 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-02 12:36 - INFO - Do you want to auto connect Main Printer COM to COM4 @ 115200?
+2026-09-02 12:36 - INFO - Auto Connect dialog button : Cancel
+2026-09-02 12:36 - INFO - Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-02 12:36 - INFO - File selected: E:/InkPrinter/New changes/InkV2_Final_without_cura_version_with_new_changes/Test_files/ide2.svg
+2026-09-02 12:36 - INFO - Converting SVG -> G-code directly: E:\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\Test_files\ide2.svg
+2026-09-02 12:36 - INFO - G-code created: E:\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\Test_files\ide2.gcode
+2026-09-02 12:36 - INFO - G-code ready from SVG: E:\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\Test_files\ide2.gcode
+2026-09-02 12:36 - INFO - Raw G-code parsed (174 lines).
+2026-09-02 12:38 - INFO - Feedrate: 500.0 mm/min
+2026-09-02 12:38 - INFO - Normalization shift: X=-1.904, Y=-1.855
+2026-09-02 12:38 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=41.500
+2026-09-02 12:38 - INFO - Final applied shift: X=-1.904, Y=-1.855
+2026-09-02 12:39 - INFO - syringflushAction triggered - calculating error
+2026-09-02 12:45 - INFO - ==================================================
+2026-09-02 12:45 - INFO - New session START at 2026-09-02 12:45
+2026-09-02 12:45 - INFO - ==================================================
+2026-09-02 12:45 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-09-02 12:45 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-09-02 12:45 - INFO - Loaded draw_z from config: Z=41.5, draw_z_UP=20.75
+2026-09-02 12:45 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-09-02 12:45 - INFO - UV Exposure Time loaded: 30000 ms
+2026-09-02 12:45 - INFO - INI file initialized
+2026-09-02 12:45 - INFO - UI load successful
+2026-09-02 12:45 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-02 12:45 - INFO - Do you want to auto connect Main Printer COM to COM4 @ 115200?
+2026-09-02 12:45 - INFO - Auto Connect dialog button : Cancel
+2026-09-02 12:45 - INFO - Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-02 12:45 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-02 12:46 - INFO - -> Theoretical Hydraulic Pressure: 869.50 kPa
+2026-09-02 12:46 - INFO - -> Theoretical Hydraulic Pressure: 652.12 kPa
+2026-09-02 12:46 - INFO - -> Theoretical Hydraulic Pressure: 543.44 kPa
+2026-09-02 12:46 - INFO - -> Theoretical Hydraulic Pressure: 1086.88 kPa
+2026-09-02 12:46 - INFO - -> Theoretical Hydraulic Pressure: 760.81 kPa
+2026-09-02 12:46 - INFO - -> Theoretical Hydraulic Pressure: 652.12 kPa
+2026-09-02 12:46 - INFO - -> Theoretical Hydraulic Pressure: 434.75 kPa
+2026-09-02 12:46 - INFO - -> Theoretical Hydraulic Pressure: 652.12 kPa
