@@ -1151,7 +1151,8 @@ class MainWindow(QMainWindow):
     def updateData(self, msg):
         self.dataReceived.emit(msg)
 
-    @Slot(str)
+
+
     def _onDataReceived(self, msg):
         if not msg:
             return
@@ -2410,6 +2411,10 @@ class MainWindow(QMainWindow):
         self.wm.operate(self.printWidget.run, "enable", True)
         self.wm.operate(self.printWidget.pause, "enable", False)
         self.wm.operate(self.printWidget.abort, "enable", False)
+        
+        # Go to home position automatically when print finishes
+        self.sendGcode("G28\n")
+        self.logger.info("Print finished, sending G28 to home.")
 
     def indexProgram(self):
         if self.pgm_run_flag and not self.pgm_pause_flag:

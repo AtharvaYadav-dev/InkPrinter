@@ -4197,3 +4197,72 @@ AttributeError: 'NoneType' object has no attribute 'objectName'
 2026-09-02 12:46 - INFO - -> Theoretical Hydraulic Pressure: 652.12 kPa
 2026-09-02 12:46 - INFO - -> Theoretical Hydraulic Pressure: 434.75 kPa
 2026-09-02 12:46 - INFO - -> Theoretical Hydraulic Pressure: 652.12 kPa
+2026-09-07 14:32 - INFO - ==================================================
+2026-09-07 14:32 - INFO - New session START at 2026-09-07 14:32
+2026-09-07 14:32 - INFO - ==================================================
+2026-09-07 14:32 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-09-07 14:32 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-09-07 14:32 - INFO - Loaded draw_z from config: Z=41.5, draw_z_UP=20.75
+2026-09-07 14:32 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-09-07 14:32 - INFO - UV Exposure Time loaded: 30000 ms
+2026-09-07 14:32 - INFO - INI file initialized
+2026-09-07 14:32 - INFO - UI load successful
+2026-09-07 14:32 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-07 14:32 - INFO - Do you want to auto connect Main Printer COM to COM4 @ 115200?
+2026-09-07 14:32 - INFO - Auto Connect dialog button : Cancel
+2026-09-07 14:32 - INFO - Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-07 14:32 - INFO - File selected: C:/Users/exp/Downloads/2squares.gcode
+2026-09-07 14:32 - INFO - Raw G-code parsed (106 lines).
+2026-09-07 14:32 - INFO - Feedrate: 500.0 mm/min
+2026-09-07 14:32 - INFO - Normalization shift: X=-204.246, Y=-85.498
+2026-09-07 14:32 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=41.500
+2026-09-07 14:32 - INFO - Final applied shift: X=-204.246, Y=-85.498
+2026-09-07 14:32 - INFO - File selected: C:/Users/exp/Downloads/FSS ON  ITO (1).bmp
+2026-09-07 14:32 - INFO - Converting BMP -> G-code directly: C:\Users\exp\Downloads\FSS ON  ITO (1).bmp
+2026-09-07 14:32 - INFO - G-code created: C:\Users\exp\Downloads\FSS ON  ITO (1).gcode
+2026-09-07 14:32 - INFO - G-code ready from BMP: C:\Users\exp\Downloads\FSS ON  ITO (1).gcode
+2026-09-07 14:32 - INFO - Raw G-code parsed (169324 lines).
+2026-09-07 14:32 - INFO - Feedrate: 500.0 mm/min
+2026-09-07 14:32 - INFO - Normalization shift: X=-44.000, Y=-61.200
+2026-09-07 14:32 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=41.500
+2026-09-07 14:32 - INFO - Final applied shift: X=-44.000, Y=-61.200
+2026-09-07 14:32 - ERROR - Out of Bed Range: Drawing exceeds bed area!
+
+X: 0.00 → 349.20 (Bed: 0.0 → 50.0)
+Y: 0.00 → 187.20 (Bed: 0.0 → 50.0)
+
+Please re-adjust the offsets.
+2026-09-07 14:32 - INFO - Serial communication stopped
+2026-09-07 14:32 - INFO - COM connection close successfully
+2026-09-07 14:32 - INFO - Main window close successfully
+2026-09-07 14:32 - INFO - ==================================================
+2026-09-07 14:32 - INFO - New session close at 2026-09-07 14:32
+2026-09-07 14:32 - INFO - ==================================================
+2026-09-07 14:33 - INFO - ==================================================
+2026-09-07 14:33 - INFO - New session START at 2026-09-07 14:33
+2026-09-07 14:33 - INFO - ==================================================
+2026-09-07 14:33 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-09-07 14:33 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-09-07 14:33 - INFO - Loaded draw_z from config: Z=41.5, draw_z_UP=20.75
+2026-09-07 14:33 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-09-07 14:33 - INFO - UV Exposure Time loaded: 30000 ms
+2026-09-07 14:33 - INFO - INI file initialized
+2026-09-07 14:33 - INFO - UI load successful
+2026-09-07 14:33 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-07 14:33 - INFO - Do you want to auto connect Main Printer COM to COM4 @ 115200?
+2026-09-07 14:33 - INFO - Auto Connect dialog button : Cancel
+2026-09-07 14:33 - INFO - Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-07 14:39 - INFO - ==================================================
+2026-09-07 14:39 - INFO - New session START at 2026-09-07 14:39
+2026-09-07 14:39 - INFO - ==================================================
+2026-09-07 14:39 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-09-07 14:39 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-09-07 14:39 - INFO - Loaded draw_z from config: Z=41.5, draw_z_UP=20.75
+2026-09-07 14:39 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-09-07 14:39 - INFO - UV Exposure Time loaded: 30000 ms
+2026-09-07 14:39 - INFO - INI file initialized
+2026-09-07 14:39 - INFO - UI load successful
+2026-09-07 14:39 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-07 14:39 - INFO - Do you want to auto connect Main Printer COM to COM4 @ 115200?
+2026-09-07 14:39 - INFO - Auto Connect dialog button : Cancel
+2026-09-07 14:39 - INFO - Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']

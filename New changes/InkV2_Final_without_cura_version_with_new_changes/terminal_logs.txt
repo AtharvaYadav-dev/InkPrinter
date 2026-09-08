@@ -1043,3 +1043,188 @@ index : 1
 index : 6
 index : 2
 index : 6
+
+==================================================
+Session Started: 2026-09-07 14:32:12
+==================================================
+C:\Program Files\Python313\Lib\site-packages\Custom_Widgets\JSonStyles\__init__.py:842: RuntimeWarning: Failed to disconnect (None) from signal "clicked()".
+  button.clicked.disconnect()
+index : 0
+arg : 0
+index : 0
+arg : 0
+[SPPL Agent] Device INK-724634DD registered successfully.
+UI is loaded
+xindex : 0
+yindex : 0
+feed : 1000
+laser handler : {}
+Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+action : Auto
+Cancel clicked
+status : False
+Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+action : Auto
+status : None
+index : 6
+index : 2
+pgm : pgmfilePushButton
+pgm : pgmfeedPushButton
+Feedrate: 500.0 mm/min
+pgm : pgmsavePushButton
+index : 3
+arg : 3
+index : 3
+;Layer height: 0.400
+;MINX: 0.000
+;MAXX: 19.500
+;MINY: 0.000
+;MAXY: 19.500
+;MINZ: 20.750
+;MAXZ: 20.750
+M82
+G0 Z20.750
+G28
+G0 Z39.500
+M302 S0
+G90
+G92 E0
+M107
+M205 X10 Y10
+G0 F1800.000 X14.369 Y14.905
+;TYPE:WALL-OUTER
+G0 Z41.500 F1800.0
+G1 F500.000 X14.411 Y14.741 E0.00577
+G1 F500.000 X14.412 Y5.698 E0.28985
+G1 F500.000 X14.369 Y5.491 E0.29705
+G1 X14.162 Y5.448 E0.30424 F500.000
+G1 F500.000 X5.119 Y5.449 E0.58945
+G1 F500.000 X4.955 Y5.491 E0.59525
+G1 F500.000 X4.912 Y5.698 E0.60245
+G1 F500.000 X4.913 Y14.741 E0.88765
+G1 F500.000 X4.955 Y14.905 E0.89345
+G1 F500.000 X5.162 Y14.948 E0.90065
+G1 F500.000 X14.205 Y14.947 E1.18585
+G1 F500.000 X14.369 Y14.905 E1.19165
+G0 Z39.500 F1800.0
+G0 F1800.000 X15.302 Y14.905
+G0 X18.622 Y18.624 F1800.000
+G0 X19.457 Y19.457 F1800.000
+G0 Z41.500 F1800.0
+G1 F500.000 X19.499 Y19.293 E1.19743
+G1 F500.000 X19.500 Y0.250 E1.79563
+G1 F500.000 X19.457 Y0.043 E1.80283
+G1 X19.250 Y0.000 E1.81003 F500.000
+G1 F500.000 X0.207 Y0.001 E2.41063
+G1 F500.000 X0.043 Y0.043 E2.41642
+G1 F500.000 X0.000 Y0.250 E2.42362
+G1 F500.000 X0.001 Y19.293 E3.02422
+G1 F500.000 X0.043 Y19.457 E3.03002
+G1 F500.000 X0.250 Y19.500 E3.03721
+G1 F500.000 X19.293 Y19.499 E3.63781
+G1 F500.000 X19.457 Y19.457 E3.64361
+G0 Z39.500 F1800.0
+G0 F1800.000 X19.457 Y19.457
+G0 F1800.000 X18.622 Y18.624
+G0 X15.302 Y14.905 F1800.000
+G0 X14.369 Y14.905 F1800.000
+;TYPE:WALL-OUTER
+G0 Z41.500 F1800.0
+G1 F500.000 X14.411 Y14.741 E3.64938
+G1 F500.000 X14.412 Y5.698 E3.93346
+G1 F500.000 X14.369 Y5.491 E3.94065
+G1 X14.162 Y5.448 E3.94785 F500.000
+G1 F500.000 X5.119 Y5.449 E4.23306
+G1 F500.000 X4.955 Y5.491 E4.23886
+G1 F500.000 X4.912 Y5.698 E4.24605
+G1 F500.000 X4.913 Y14.741 E4.53126
+G1 F500.000 X4.955 Y14.905 E4.53706
+G1 F500.000 X5.162 Y14.948 E4.54426
+G1 F500.000 X14.205 Y14.947 E4.82946
+G1 F500.000 X14.369 Y14.905 E4.83526
+G0 Z39.500 F1800.0
+G0 F1800.000 X15.302 Y14.905
+G0 X18.622 Y18.624 F1800.000
+G0 X19.457 Y19.457 F1800.000
+G0 Z41.500 F1800.0
+G1 F500.000 X19.499 Y19.293 E4.84103
+G1 F500.000 X19.500 Y0.250 E5.43924
+G1 F500.000 X19.457 Y0.043 E5.44644
+G1 X19.250 Y0.000 E5.45364 F500.000
+G1 F500.000 X0.207 Y0.001 E6.05424
+G1 F500.000 X0.043 Y0.043 E6.06003
+G1 F500.000 X0.000 Y0.250 E6.06723
+G1 F500.000 X0.001 Y19.293 E6.66783
+G1 F500.000 X0.043 Y19.457 E6.67363
+G1 F500.000 X0.250 Y19.500 E6.68082
+G1 F500.000 X19.293 Y19.499 E7.28142
+G1 F500.000 X19.457 Y19.457 E7.28722
+M205 X20 Y20
+G28 X Y
+M106 S0
+M84 X Y E
+M82
+G0 Z39.500 F1800.0
+M118 A1 P2 UR
+G4 P30000
+M118 A1 P2 UO
+G28
+index : 2
+pgm : pgmfilePushButton
+pgm : pgmfeedPushButton
+Feedrate: 500.0 mm/min
+pgm : pgmsavePushButton
+index : 1
+arg : 1
+index : 1
+Application is closing
+action : Disconnect
+Serial communication stopped
+status : True
+connect btn : Connect | refresh btn : True
+
+==================================================
+Session Started: 2026-09-07 14:33:42
+==================================================
+C:\Program Files\Python313\Lib\site-packages\Custom_Widgets\JSonStyles\__init__.py:842: RuntimeWarning: Failed to disconnect (None) from signal "clicked()".
+  button.clicked.disconnect()
+index : 0
+arg : 0
+index : 0
+arg : 0
+UI is loaded
+xindex : 0
+yindex : 0
+feed : 1000
+laser handler : {}
+Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+action : Auto
+[SPPL Agent] Device INK-724634DD registered successfully.
+Cancel clicked
+status : False
+Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+action : Auto
+status : None
+
+==================================================
+Session Started: 2026-09-07 14:39:20
+==================================================
+C:\Program Files\Python313\Lib\site-packages\Custom_Widgets\JSonStyles\__init__.py:842: RuntimeWarning: Failed to disconnect (None) from signal "clicked()".
+  button.clicked.disconnect()
+index : 0
+arg : 0
+index : 0
+arg : 0
+UI is loaded
+xindex : 0
+yindex : 0
+feed : 1000
+laser handler : {}
+Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+action : Auto
+[SPPL Agent] Device INK-724634DD registered successfully.
+Cancel clicked
+status : False
+Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+action : Auto
+status : None

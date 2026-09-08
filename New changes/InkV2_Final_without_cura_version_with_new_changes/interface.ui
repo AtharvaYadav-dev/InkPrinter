@@ -8596,7 +8596,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
                 </size>
                </property>
                <property name="text">
-                <string>Copyright Specialise Products Pvt. Ltd.</string>
+                <string>Copyright Spécialisé Products Pvt. Ltd.</string>
                </property>
                <property name="alignment">
                 <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignTop</set>
