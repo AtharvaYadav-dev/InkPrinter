@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'interfaceLsNuvr.ui'
+## Form generated from reading UI file 'interfacekTapZZ.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.8.1
 ##
@@ -3746,90 +3746,6 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_61.addWidget(self.frame_27)
 
-        self.frame_11 = QFrame(self.printheadFrame_4)
-        self.frame_11.setObjectName(u"frame_11")
-        self.frame_11.setFrameShape(QFrame.Shape.StyledPanel)
-        self.frame_11.setFrameShadow(QFrame.Shadow.Raised)
-        self.horizontalLayout_52 = QHBoxLayout(self.frame_11)
-        self.horizontalLayout_52.setObjectName(u"horizontalLayout_52")
-        self.label_39 = QLabel(self.frame_11)
-        self.label_39.setObjectName(u"label_39")
-        self.label_39.setMinimumSize(QSize(0, 15))
-        self.label_39.setFont(font5)
-        self.label_39.setStyleSheet(u"QLabel {\n"
-"    color: rgb(16, 42, 131);\n"
-"}")
-        self.label_39.setAlignment(Qt.AlignmentFlag.AlignCenter)
-
-        self.horizontalLayout_52.addWidget(self.label_39)
-
-        self.extlenghtLineEdit = QLineEdit(self.frame_11)
-        self.extlenghtLineEdit.setObjectName(u"extlenghtLineEdit")
-        self.extlenghtLineEdit.setStyleSheet(u"QLineEdit {\n"
-"    border: 2px solid #102a83;\n"
-"    border-radius: 6px;       /* Optional: for rounded corners */\n"
-"    padding: 4px;             /* Optional: inner spacing */\n"
-"    color: #102a83;           /* Text color inside the line edit */\n"
-"}\n"
-"")
-
-        self.horizontalLayout_52.addWidget(self.extlenghtLineEdit)
-
-        self.label_42 = QLabel(self.frame_11)
-        self.label_42.setObjectName(u"label_42")
-        self.label_42.setMinimumSize(QSize(0, 15))
-        self.label_42.setFont(font5)
-        self.label_42.setStyleSheet(u"QLabel {\n"
-"    color: rgb(16, 42, 131);\n"
-"}")
-        self.label_42.setAlignment(Qt.AlignmentFlag.AlignCenter)
-
-        self.horizontalLayout_52.addWidget(self.label_42)
-
-        self.extpurgeLineEdit = QLineEdit(self.frame_11)
-        self.extpurgeLineEdit.setObjectName(u"extpurgeLineEdit")
-        self.extpurgeLineEdit.setStyleSheet(u"QLineEdit {\n"
-"    border: 2px solid #102a83;\n"
-"    border-radius: 6px;       /* Optional: for rounded corners */\n"
-"    padding: 4px;             /* Optional: inner spacing */\n"
-"    color: #102a83;           /* Text color inside the line edit */\n"
-"}\n"
-"")
-
-        self.horizontalLayout_52.addWidget(self.extpurgeLineEdit)
-
-        self.extsavePushButton = QPushButton(self.frame_11)
-        self.extsavePushButton.setObjectName(u"extsavePushButton")
-        self.extsavePushButton.setEnabled(True)
-        sizePolicy6.setHeightForWidth(self.extsavePushButton.sizePolicy().hasHeightForWidth())
-        self.extsavePushButton.setSizePolicy(sizePolicy6)
-        self.extsavePushButton.setMaximumSize(QSize(100, 50))
-        self.extsavePushButton.setFont(font2)
-        self.extsavePushButton.setStyleSheet(u"QPushButton {\n"
-"	color: rgb(255, 255, 255);	\n"
-"	background-color: rgb(16, 42, 131);\n"
-"	border-color: transparent;\n"
-"	border-style: outset;\n"
-"	border-radius: 15px;\n"
-"	border-width: 2px;\n"
-"	padding: 6px;\n"
-"}\n"
-"\n"
-"QPushButton:hover {\n"
-"	color: rgb(16, 42, 131);\n"
-"	background-color: rgb(167, 198, 229);\n"
-"	border-color: rgb(16, 42, 131);\n"
-"}\n"
-"\n"
-"QPushButton:disabled {\n"
-"	background-color: rgb(172, 172, 172);\n"
-"}")
-
-        self.horizontalLayout_52.addWidget(self.extsavePushButton)
-
-
-        self.verticalLayout_61.addWidget(self.frame_11)
-
 
         self.verticalLayout_60.addWidget(self.printheadFrame_4)
 
@@ -4338,6 +4254,90 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_65.addWidget(self.widget_13)
 
+        self.frame_11 = QFrame(self.syringemidFrame)
+        self.frame_11.setObjectName(u"frame_11")
+        self.frame_11.setFrameShape(QFrame.Shape.StyledPanel)
+        self.frame_11.setFrameShadow(QFrame.Shadow.Raised)
+        self.horizontalLayout_52 = QHBoxLayout(self.frame_11)
+        self.horizontalLayout_52.setObjectName(u"horizontalLayout_52")
+        self.label_39 = QLabel(self.frame_11)
+        self.label_39.setObjectName(u"label_39")
+        self.label_39.setMinimumSize(QSize(0, 15))
+        self.label_39.setFont(font5)
+        self.label_39.setStyleSheet(u"QLabel {\n"
+"    color: rgb(16, 42, 131);\n"
+"}")
+        self.label_39.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.horizontalLayout_52.addWidget(self.label_39)
+
+        self.extlenghtLineEdit = QLineEdit(self.frame_11)
+        self.extlenghtLineEdit.setObjectName(u"extlenghtLineEdit")
+        self.extlenghtLineEdit.setStyleSheet(u"QLineEdit {\n"
+"    border: 2px solid #102a83;\n"
+"    border-radius: 6px;       /* Optional: for rounded corners */\n"
+"    padding: 4px;             /* Optional: inner spacing */\n"
+"    color: #102a83;           /* Text color inside the line edit */\n"
+"}\n"
+"")
+
+        self.horizontalLayout_52.addWidget(self.extlenghtLineEdit)
+
+        self.label_42 = QLabel(self.frame_11)
+        self.label_42.setObjectName(u"label_42")
+        self.label_42.setMinimumSize(QSize(0, 15))
+        self.label_42.setFont(font5)
+        self.label_42.setStyleSheet(u"QLabel {\n"
+"    color: rgb(16, 42, 131);\n"
+"}")
+        self.label_42.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.horizontalLayout_52.addWidget(self.label_42)
+
+        self.extpurgeLineEdit = QLineEdit(self.frame_11)
+        self.extpurgeLineEdit.setObjectName(u"extpurgeLineEdit")
+        self.extpurgeLineEdit.setStyleSheet(u"QLineEdit {\n"
+"    border: 2px solid #102a83;\n"
+"    border-radius: 6px;       /* Optional: for rounded corners */\n"
+"    padding: 4px;             /* Optional: inner spacing */\n"
+"    color: #102a83;           /* Text color inside the line edit */\n"
+"}\n"
+"")
+
+        self.horizontalLayout_52.addWidget(self.extpurgeLineEdit)
+
+        self.extsavePushButton = QPushButton(self.frame_11)
+        self.extsavePushButton.setObjectName(u"extsavePushButton")
+        self.extsavePushButton.setEnabled(True)
+        sizePolicy6.setHeightForWidth(self.extsavePushButton.sizePolicy().hasHeightForWidth())
+        self.extsavePushButton.setSizePolicy(sizePolicy6)
+        self.extsavePushButton.setMaximumSize(QSize(100, 50))
+        self.extsavePushButton.setFont(font2)
+        self.extsavePushButton.setStyleSheet(u"QPushButton {\n"
+"	color: rgb(255, 255, 255);	\n"
+"	background-color: rgb(16, 42, 131);\n"
+"	border-color: transparent;\n"
+"	border-style: outset;\n"
+"	border-radius: 15px;\n"
+"	border-width: 2px;\n"
+"	padding: 6px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"	color: rgb(16, 42, 131);\n"
+"	background-color: rgb(167, 198, 229);\n"
+"	border-color: rgb(16, 42, 131);\n"
+"}\n"
+"\n"
+"QPushButton:disabled {\n"
+"	background-color: rgb(172, 172, 172);\n"
+"}")
+
+        self.horizontalLayout_52.addWidget(self.extsavePushButton)
+
+
+        self.verticalLayout_65.addWidget(self.frame_11)
+
         self.frame_14 = QFrame(self.syringemidFrame)
         self.frame_14.setObjectName(u"frame_14")
         self.frame_14.setFrameShape(QFrame.Shape.StyledPanel)
@@ -4634,7 +4634,7 @@ class Ui_MainWindow(object):
         self.centerMenuPages.setCurrentIndex(3)
         self.infoSubPages.setCurrentIndex(1)
         self.mainPages.setCurrentIndex(6)
-        self.stackedWidget.setCurrentIndex(0)
+        self.stackedWidget.setCurrentIndex(1)
 
 
         QMetaObject.connectSlotsByName(MainWindow)
@@ -4822,9 +4822,6 @@ class Ui_MainWindow(object):
         self.label_40.setText(QCoreApplication.translate("MainWindow", u"Set Flow :", None))
         self.label_43.setText(QCoreApplication.translate("MainWindow", u"ml/min", None))
         self.prsetPushButton.setText(QCoreApplication.translate("MainWindow", u"SET", None))
-        self.label_39.setText(QCoreApplication.translate("MainWindow", u"Length : ", None))
-        self.label_42.setText(QCoreApplication.translate("MainWindow", u"Purge : ", None))
-        self.extsavePushButton.setText(QCoreApplication.translate("MainWindow", u"SAVE", None))
         self.parabkprPushButton.setText("")
         self.label_6.setText(QCoreApplication.translate("MainWindow", u"UV :", None))
         self.pgmuvCheckBox.setText("")
@@ -4847,6 +4844,9 @@ class Ui_MainWindow(object):
         self.pgmfillPushButton.setText(QCoreApplication.translate("MainWindow", u"FILL", None))
         self.pgmfillhomePushButton.setText(QCoreApplication.translate("MainWindow", u"F HOME", None))
         self.pgmpurgePushButton.setText(QCoreApplication.translate("MainWindow", u"PURGE", None))
+        self.label_39.setText(QCoreApplication.translate("MainWindow", u"Length : ", None))
+        self.label_42.setText(QCoreApplication.translate("MainWindow", u"Purge : ", None))
+        self.extsavePushButton.setText(QCoreApplication.translate("MainWindow", u"SAVE", None))
         self.userLabel_2.setText(QCoreApplication.translate("MainWindow", u"Test :", None))
         self.testCheckBox.setText("")
         self.userLabel_3.setText(QCoreApplication.translate("MainWindow", u"Volume :", None))

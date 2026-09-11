@@ -184,6 +184,12 @@ class MainWindow(QMainWindow):
 
         self.temp_report_hide_flag = False
         
+        # Flag to hide frame_15, frame_16 and frame_14
+        self.hide_syringe_frames_flag = True
+        
+        # Flag to hide printparaPushButton
+        self.hide_printpara_button_flag = False
+        
         self.axishandler = AxisHandler()
         self.preview = GCode3DPreview()
         self.preview.sigGlError.connect(lambda msg: print("⚠️", msg))
@@ -618,6 +624,24 @@ class MainWindow(QMainWindow):
         # self.showStackPage(self.mainStack, self.mainPage_dict, 0)
         self.showMainPage(0)
         self.showStackPage(self.infoStack, self.infoPage_dict, 0)            
+
+        # Hide frame_15 and frame_16 if the flag is set
+        if getattr(self, 'hide_syringe_frames_flag', False):
+            if hasattr(self.ui, 'frame_15'):
+                self.ui.frame_15.hide()
+            if hasattr(self.ui, 'frame_16'):
+                self.ui.frame_16.hide()
+            if hasattr(self.ui, 'frame_14'):
+                self.ui.frame_14.hide()
+            if hasattr(self.ui, 'verticalLayout_65'):
+                from PySide6.QtWidgets import QSpacerItem, QSizePolicy
+                spacer = QSpacerItem(20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
+                self.ui.verticalLayout_65.addItem(spacer)
+
+        # Hide printparaPushButton if the flag is set
+        if getattr(self, 'hide_printpara_button_flag', False):
+            if hasattr(self.ui, 'printparaPushButton'):
+                self.ui.printparaPushButton.hide()
 
     def updateCalculations(self):
         if not hasattr(self.ui, 'viscositylevComboBox') or not hasattr(self.ui, 'needleguageComboBox'):
@@ -1739,6 +1763,24 @@ class MainWindow(QMainWindow):
         self.pgm_file = file_path
         self.pgm_glist = []
         self.filtered_gcode = []
+        
+        # Reset print states and progress
+        self.pgm_run_flag = False
+        self.pgm_pause_flag = False
+        self.pgm_index = 0
+        self.seg_index = 0
+        if hasattr(self, 'initProgress'):
+            self.initProgress()
+
+        # Reset UI buttons
+        if hasattr(self, 'printWidget'):
+            self.wm.operate(self.printWidget.run, "enable", True)
+            self.wm.operate(self.printWidget.pause, "enable", False)
+            self.wm.operate(self.printWidget.abort, "enable", False)
+            self.pause_flag = False
+            if hasattr(self, 'pauseWidget'):
+                self.pauseWidget(self.printWidget.pause, "resume")
+
         if hasattr(self, "preview"):
             self.preview.loadGcode([])  # Clear 3D preview
         
@@ -2054,16 +2096,30 @@ class MainWindow(QMainWindow):
         if not hasattr(self, 'fillhome_state'):
             self.fillhome_state = False
 
+        if not hasattr(self, '_fillhome_timer'):
+            self._fillhome_timer = QTimer(self)
+            self._fillhome_timer.setSingleShot(True)
+            self._fillhome_timer.timeout.connect(self._reset_fillhome_ui)
+
         if not self.fillhome_state:
             self._send_to_blackpill("H")
             self.fillhome_state = True
             self.programWidget.fillhome.setText("Stop F home")
             self.logger.info("HOME command sent to Blackpill.")
+            self._fillhome_timer.start(10000)  # 10 seconds timeout for Homing
         else:
             self._send_to_blackpill("S")
             self.fillhome_state = False
             self.programWidget.fillhome.setText("F home")
             self.logger.info("Stop HOME command sent to Blackpill.")
+            if hasattr(self, '_fillhome_timer'):
+                self._fillhome_timer.stop()
+
+    def _reset_fillhome_ui(self):
+        if getattr(self, 'fillhome_state', False):
+            self.fillhome_state = False
+            self.programWidget.fillhome.setText("F home")
+            self.logger.info("Auto-reset F home button state.")
                         
     # -------------------------------
     # 4) Save: apply Z height, draw_z, offsets, feed; bounds; preview

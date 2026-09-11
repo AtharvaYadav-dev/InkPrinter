@@ -4266,3 +4266,806 @@ Please re-adjust the offsets.
 2026-09-07 14:39 - INFO - Do you want to auto connect Main Printer COM to COM4 @ 115200?
 2026-09-07 14:39 - INFO - Auto Connect dialog button : Cancel
 2026-09-07 14:39 - INFO - Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-10 10:37 - INFO - ==================================================
+2026-09-10 10:37 - INFO - New session START at 2026-09-10 10:37
+2026-09-10 10:37 - INFO - ==================================================
+2026-09-10 10:37 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-09-10 10:37 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-09-10 10:37 - INFO - Loaded draw_z from config: Z=41.5, draw_z_UP=20.75
+2026-09-10 10:37 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-09-10 10:37 - INFO - UV Exposure Time loaded: 30000 ms
+2026-09-10 10:37 - INFO - INI file initialized
+2026-09-10 10:37 - INFO - UI load successful
+2026-09-10 10:37 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-10 10:37 - INFO - Do you want to auto connect Main Printer COM to COM4 @ 115200?
+2026-09-10 10:37 - INFO - Auto Connect dialog button : Cancel
+2026-09-10 10:37 - INFO - Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-10 10:37 - INFO - File selected: E:/InkPrinter/New changes/InkV2_Final_without_cura_version_with_new_changes/Test_files/ide2.svg
+2026-09-10 10:37 - INFO - Converting SVG -> G-code directly: E:\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\Test_files\ide2.svg
+2026-09-10 10:37 - INFO - G-code created: E:\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\Test_files\ide2.gcode
+2026-09-10 10:37 - INFO - G-code ready from SVG: E:\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\Test_files\ide2.gcode
+2026-09-10 10:37 - INFO - Raw G-code parsed (174 lines).
+2026-09-10 10:37 - INFO - Feedrate: 500.0 mm/min
+2026-09-10 10:37 - INFO - Normalization shift: X=-1.904, Y=-1.855
+2026-09-10 10:37 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=41.500
+2026-09-10 10:37 - INFO - Final applied shift: X=-1.904, Y=-1.855
+2026-09-10 10:37 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-09-10 10:37 - CRITICAL - Serial communication started
+2026-09-10 10:37 - INFO - Print Status : RUN
+2026-09-10 10:37 - INFO - Print Status : PAUSE
+2026-09-10 10:37 - INFO - File selected: E:/InkPrinter/New changes/InkV2_Final_without_cura_version_with_new_changes/Test_files/ide2.svg
+2026-09-10 10:37 - INFO - Converting SVG -> G-code directly: E:\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\Test_files\ide2.svg
+2026-09-10 10:37 - INFO - G-code created: E:\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\Test_files\ide2.gcode
+2026-09-10 10:37 - INFO - G-code ready from SVG: E:\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\Test_files\ide2.gcode
+2026-09-10 10:37 - INFO - Raw G-code parsed (174 lines).
+2026-09-10 10:37 - INFO - Feedrate: 500.0 mm/min
+2026-09-10 10:37 - INFO - Normalization shift: X=-1.904, Y=-1.855
+2026-09-10 10:37 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=41.500
+2026-09-10 10:37 - INFO - Final applied shift: X=-1.904, Y=-1.855
+2026-09-10 10:38 - INFO - Print Status : RESUME
+2026-09-10 10:38 - INFO - Print Status : ABORT
+2026-09-10 10:42 - INFO - ==================================================
+2026-09-10 10:42 - INFO - New session START at 2026-09-10 10:42
+2026-09-10 10:42 - INFO - ==================================================
+2026-09-10 10:42 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-09-10 10:42 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-09-10 10:42 - INFO - Loaded draw_z from config: Z=41.5, draw_z_UP=20.75
+2026-09-10 10:42 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-09-10 10:42 - INFO - UV Exposure Time loaded: 30000 ms
+2026-09-10 10:42 - INFO - INI file initialized
+2026-09-10 10:42 - INFO - UI load successful
+2026-09-10 10:42 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-10 10:42 - INFO - Do you want to auto connect Main Printer COM to COM4 @ 115200?
+2026-09-10 10:42 - INFO - Auto Connect dialog button : Cancel
+2026-09-10 10:42 - INFO - Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-10 10:42 - INFO - Do you want to auto connect Blackpill COM to COM1 @ 9600?
+2026-09-10 10:42 - INFO - Auto Connect dialog button : Ok
+2026-09-10 10:42 - INFO - Serial communication autostarted
+2026-09-10 10:42 - INFO - File selected: E:/InkPrinter/New changes/InkV2_Final_without_cura_version_with_new_changes/Test_files/ide2.svg
+2026-09-10 10:42 - INFO - Converting SVG -> G-code directly: E:\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\Test_files\ide2.svg
+2026-09-10 10:42 - INFO - G-code created: E:\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\Test_files\ide2.gcode
+2026-09-10 10:42 - INFO - G-code ready from SVG: E:\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\Test_files\ide2.gcode
+2026-09-10 10:42 - INFO - Raw G-code parsed (174 lines).
+2026-09-10 10:42 - INFO - Feedrate: 500.0 mm/min
+2026-09-10 10:43 - INFO - Normalization shift: X=-1.904, Y=-1.855
+2026-09-10 10:43 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=41.500
+2026-09-10 10:43 - INFO - Final applied shift: X=-1.904, Y=-1.855
+2026-09-10 10:43 - INFO - Print Status : RUN
+2026-09-10 10:43 - INFO - Print Status : PAUSE
+2026-09-10 10:43 - INFO - File selected: E:/InkPrinter/New changes/InkV2_Final_without_cura_version_with_new_changes/Test_files/ide2.svg
+2026-09-10 10:43 - INFO - Converting SVG -> G-code directly: E:\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\Test_files\ide2.svg
+2026-09-10 10:43 - INFO - G-code created: E:\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\Test_files\ide2.gcode
+2026-09-10 10:43 - INFO - G-code ready from SVG: E:\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\Test_files\ide2.gcode
+2026-09-10 10:43 - INFO - Raw G-code parsed (174 lines).
+2026-09-10 10:43 - INFO - Feedrate: 500.0 mm/min
+2026-09-10 10:43 - INFO - Normalization shift: X=-1.904, Y=-1.855
+2026-09-10 10:43 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=41.500
+2026-09-10 10:43 - INFO - Final applied shift: X=-1.904, Y=-1.855
+2026-09-10 10:49 - INFO - ==================================================
+2026-09-10 10:49 - INFO - New session START at 2026-09-10 10:49
+2026-09-10 10:49 - INFO - ==================================================
+2026-09-10 10:49 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-09-10 10:49 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-09-10 10:49 - INFO - Loaded draw_z from config: Z=41.5, draw_z_UP=20.75
+2026-09-10 10:49 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-09-10 10:49 - INFO - UV Exposure Time loaded: 30000 ms
+2026-09-10 10:49 - INFO - INI file initialized
+2026-09-10 10:49 - INFO - UI load successful
+2026-09-10 10:49 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-10 10:49 - INFO - Do you want to auto connect Main Printer COM to COM4 @ 115200?
+2026-09-10 10:49 - INFO - Auto Connect dialog button : Cancel
+2026-09-10 10:49 - INFO - Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-10 10:49 - INFO - Do you want to auto connect Blackpill COM to COM1 @ 9600?
+2026-09-10 10:49 - INFO - Auto Connect dialog button : Ok
+2026-09-10 10:49 - INFO - Serial communication autostarted
+2026-09-10 10:49 - INFO - File selected: E:/InkPrinter/New changes/InkV2_Final_without_cura_version_with_new_changes/Test_files/ide2.svg
+2026-09-10 10:49 - INFO - Converting SVG -> G-code directly: E:\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\Test_files\ide2.svg
+2026-09-10 10:49 - INFO - G-code created: E:\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\Test_files\ide2.gcode
+2026-09-10 10:49 - INFO - G-code ready from SVG: E:\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\Test_files\ide2.gcode
+2026-09-10 10:49 - INFO - Raw G-code parsed (174 lines).
+2026-09-10 10:49 - INFO - Feedrate: 500.0 mm/min
+2026-09-10 10:49 - INFO - Normalization shift: X=-1.904, Y=-1.855
+2026-09-10 10:49 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=41.500
+2026-09-10 10:49 - INFO - Final applied shift: X=-1.904, Y=-1.855
+2026-09-10 10:49 - INFO - Print Status : RUN
+2026-09-10 10:49 - INFO - Print Status : PAUSE
+2026-09-10 10:49 - INFO - File selected: E:/InkPrinter/New changes/InkV2_Final_without_cura_version_with_new_changes/Test_files/ide2.svg
+2026-09-10 10:49 - INFO - Converting SVG -> G-code directly: E:\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\Test_files\ide2.svg
+2026-09-10 10:49 - INFO - G-code created: E:\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\Test_files\ide2.gcode
+2026-09-10 10:49 - INFO - G-code ready from SVG: E:\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\Test_files\ide2.gcode
+2026-09-10 10:49 - INFO - Raw G-code parsed (174 lines).
+2026-09-10 10:49 - INFO - Feedrate: 500.0 mm/min
+2026-09-10 10:49 - INFO - Normalization shift: X=-1.904, Y=-1.855
+2026-09-10 10:49 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=41.500
+2026-09-10 10:49 - INFO - Final applied shift: X=-1.904, Y=-1.855
+2026-09-10 10:49 - INFO - Serial communication stopped
+2026-09-10 10:49 - INFO - COM connection close successfully
+2026-09-10 10:49 - INFO - Main window close successfully
+2026-09-10 10:49 - INFO - ==================================================
+2026-09-10 10:49 - INFO - New session close at 2026-09-10 10:49
+2026-09-10 10:49 - INFO - ==================================================
+2026-09-10 10:50 - INFO - ==================================================
+2026-09-10 10:50 - INFO - New session START at 2026-09-10 10:50
+2026-09-10 10:50 - INFO - ==================================================
+2026-09-10 10:50 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-09-10 10:50 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-09-10 10:50 - INFO - Loaded draw_z from config: Z=41.5, draw_z_UP=20.75
+2026-09-10 10:50 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-09-10 10:50 - INFO - UV Exposure Time loaded: 30000 ms
+2026-09-10 10:50 - INFO - INI file initialized
+2026-09-10 10:50 - INFO - UI load successful
+2026-09-10 10:50 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-10 10:50 - INFO - Do you want to auto connect Main Printer COM to COM4 @ 115200?
+2026-09-10 10:50 - INFO - Auto Connect dialog button : Cancel
+2026-09-10 10:50 - INFO - Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-10 10:50 - INFO - Do you want to auto connect Blackpill COM to COM1 @ 9600?
+2026-09-10 10:50 - INFO - Auto Connect dialog button : Ok
+2026-09-10 10:50 - INFO - Serial communication autostarted
+2026-09-10 10:50 - INFO - File selected: E:/InkPrinter/New changes/InkV2_Final_without_cura_version_with_new_changes/Test_files/ide2.svg
+2026-09-10 10:50 - INFO - Converting SVG -> G-code directly: E:\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\Test_files\ide2.svg
+2026-09-10 10:50 - INFO - G-code created: E:\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\Test_files\ide2.gcode
+2026-09-10 10:50 - INFO - G-code ready from SVG: E:\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\Test_files\ide2.gcode
+2026-09-10 10:50 - INFO - Raw G-code parsed (174 lines).
+2026-09-10 10:50 - INFO - Feedrate: 500.0 mm/min
+2026-09-10 10:50 - INFO - Normalization shift: X=-1.904, Y=-1.855
+2026-09-10 10:50 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=41.500
+2026-09-10 10:50 - INFO - Final applied shift: X=-1.904, Y=-1.855
+2026-09-10 10:50 - INFO - Print Status : RUN
+2026-09-10 10:50 - INFO - Print Status : PAUSE
+2026-09-10 10:50 - INFO - File selected: E:/InkPrinter/New changes/InkV2_Final_without_cura_version_with_new_changes/Test_files/ide2.svg
+2026-09-10 10:50 - INFO - Converting SVG -> G-code directly: E:\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\Test_files\ide2.svg
+2026-09-10 10:50 - INFO - G-code created: E:\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\Test_files\ide2.gcode
+2026-09-10 10:50 - INFO - G-code ready from SVG: E:\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\Test_files\ide2.gcode
+2026-09-10 10:50 - INFO - Raw G-code parsed (174 lines).
+2026-09-10 10:50 - INFO - Feedrate: 500.0 mm/min
+2026-09-10 10:51 - INFO - Normalization shift: X=-1.904, Y=-1.855
+2026-09-10 10:51 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=41.500
+2026-09-10 10:51 - INFO - Final applied shift: X=-1.904, Y=-1.855
+2026-09-10 10:51 - INFO - Print Status : RUN
+2026-09-10 10:51 - INFO - Print Status : RESUME
+2026-09-10 10:51 - INFO - Print Status : PAUSE
+2026-09-10 10:51 - INFO - Print Status : RESUME
+2026-09-10 10:55 - INFO - ==================================================
+2026-09-10 10:55 - INFO - New session START at 2026-09-10 10:55
+2026-09-10 10:55 - INFO - ==================================================
+2026-09-10 10:55 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-09-10 10:55 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-09-10 10:55 - INFO - Loaded draw_z from config: Z=41.5, draw_z_UP=20.75
+2026-09-10 10:55 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-09-10 10:55 - INFO - UV Exposure Time loaded: 30000 ms
+2026-09-10 10:55 - INFO - INI file initialized
+2026-09-10 10:55 - INFO - UI load successful
+2026-09-10 10:55 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-10 10:55 - INFO - Do you want to auto connect Main Printer COM to COM4 @ 115200?
+2026-09-10 10:55 - INFO - Auto Connect dialog button : Cancel
+2026-09-10 10:55 - INFO - Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-10 10:55 - INFO - Do you want to auto connect Blackpill COM to COM1 @ 9600?
+2026-09-10 10:55 - INFO - Auto Connect dialog button : Ok
+2026-09-10 10:55 - INFO - Serial communication autostarted
+2026-09-10 10:55 - INFO - File selected: E:/InkPrinter/New changes/InkV2_Final_without_cura_version_with_new_changes/Test_files/ide2.svg
+2026-09-10 10:55 - INFO - Converting SVG -> G-code directly: E:\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\Test_files\ide2.svg
+2026-09-10 10:55 - INFO - G-code created: E:\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\Test_files\ide2.gcode
+2026-09-10 10:55 - INFO - G-code ready from SVG: E:\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\Test_files\ide2.gcode
+2026-09-10 10:55 - INFO - Raw G-code parsed (174 lines).
+2026-09-10 10:55 - INFO - Feedrate: 500.0 mm/min
+2026-09-10 10:55 - INFO - Normalization shift: X=-1.904, Y=-1.855
+2026-09-10 10:55 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=41.500
+2026-09-10 10:55 - INFO - Final applied shift: X=-1.904, Y=-1.855
+2026-09-10 10:55 - INFO - Print Status : RUN
+2026-09-10 10:55 - INFO - Print Status : PAUSE
+2026-09-10 10:55 - INFO - File selected: E:/InkPrinter/New changes/InkV2_Final_without_cura_version_with_new_changes/Test_files/ide2.svg
+2026-09-10 10:55 - INFO - Converting SVG -> G-code directly: E:\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\Test_files\ide2.svg
+2026-09-10 10:55 - INFO - G-code created: E:\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\Test_files\ide2.gcode
+2026-09-10 10:55 - INFO - G-code ready from SVG: E:\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\Test_files\ide2.gcode
+2026-09-10 10:55 - INFO - Raw G-code parsed (174 lines).
+2026-09-10 10:55 - INFO - Feedrate: 500.0 mm/min
+2026-09-10 10:55 - INFO - Normalization shift: X=-1.904, Y=-1.855
+2026-09-10 10:55 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=41.500
+2026-09-10 10:55 - INFO - Final applied shift: X=-1.904, Y=-1.855
+2026-09-10 10:55 - INFO - Print Status : RUN
+2026-09-10 10:55 - INFO - Print Status : RESUME
+2026-09-10 10:55 - INFO - Print Status : PAUSE
+2026-09-10 10:56 - INFO - ==================================================
+2026-09-10 10:56 - INFO - New session START at 2026-09-10 10:56
+2026-09-10 10:56 - INFO - ==================================================
+2026-09-10 10:56 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-09-10 10:56 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-09-10 10:56 - INFO - Loaded draw_z from config: Z=41.5, draw_z_UP=20.75
+2026-09-10 10:56 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-09-10 10:56 - INFO - UV Exposure Time loaded: 30000 ms
+2026-09-10 10:56 - INFO - INI file initialized
+2026-09-10 10:56 - INFO - UI load successful
+2026-09-10 10:56 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-10 10:56 - INFO - Do you want to auto connect Main Printer COM to COM4 @ 115200?
+2026-09-10 10:56 - INFO - Auto Connect dialog button : Cancel
+2026-09-10 10:56 - INFO - Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-10 10:56 - INFO - Do you want to auto connect Blackpill COM to COM1 @ 9600?
+2026-09-10 10:56 - INFO - Auto Connect dialog button : Ok
+2026-09-10 10:56 - INFO - Serial communication autostarted
+2026-09-10 10:57 - INFO - File selected: E:/InkPrinter/New changes/InkV2_Final_without_cura_version_with_new_changes/Test_files/ide2.svg
+2026-09-10 10:57 - INFO - Converting SVG -> G-code directly: E:\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\Test_files\ide2.svg
+2026-09-10 10:57 - INFO - G-code created: E:\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\Test_files\ide2.gcode
+2026-09-10 10:57 - INFO - G-code ready from SVG: E:\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\Test_files\ide2.gcode
+2026-09-10 10:57 - INFO - Raw G-code parsed (174 lines).
+2026-09-10 10:57 - INFO - Feedrate: 500.0 mm/min
+2026-09-10 10:57 - INFO - Normalization shift: X=-1.904, Y=-1.855
+2026-09-10 10:57 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=41.500
+2026-09-10 10:57 - INFO - Final applied shift: X=-1.904, Y=-1.855
+2026-09-10 10:57 - INFO - Print Status : RUN
+2026-09-10 10:57 - INFO - Print Status : PAUSE
+2026-09-10 10:57 - INFO - File selected: E:/InkPrinter/New changes/InkV2_Final_without_cura_version_with_new_changes/Test_files/ide2.svg
+2026-09-10 10:57 - INFO - Converting SVG -> G-code directly: E:\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\Test_files\ide2.svg
+2026-09-10 10:57 - INFO - G-code created: E:\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\Test_files\ide2.gcode
+2026-09-10 10:57 - INFO - G-code ready from SVG: E:\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\Test_files\ide2.gcode
+2026-09-10 10:57 - INFO - Raw G-code parsed (174 lines).
+2026-09-10 10:57 - INFO - Feedrate: 500.0 mm/min
+2026-09-10 10:57 - INFO - Normalization shift: X=-1.904, Y=-1.855
+2026-09-10 10:57 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=41.500
+2026-09-10 10:57 - INFO - Final applied shift: X=-1.904, Y=-1.855
+2026-09-10 10:57 - INFO - Print Status : RUN
+2026-09-10 10:57 - INFO - Print Status : RESUME
+2026-09-10 11:36 - INFO - ==================================================
+2026-09-10 11:36 - INFO - New session START at 2026-09-10 11:36
+2026-09-10 11:36 - INFO - ==================================================
+2026-09-10 11:36 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-09-10 11:36 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-09-10 11:36 - INFO - Loaded draw_z from config: Z=41.5, draw_z_UP=20.75
+2026-09-10 11:36 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-09-10 11:36 - INFO - UV Exposure Time loaded: 30000 ms
+2026-09-10 11:36 - INFO - INI file initialized
+2026-09-10 11:36 - INFO - UI load successful
+2026-09-10 11:36 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-10 11:36 - INFO - Do you want to auto connect Main Printer COM to COM4 @ 115200?
+2026-09-10 11:36 - INFO - Auto Connect dialog button : Cancel
+2026-09-10 11:36 - INFO - Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-10 11:36 - INFO - Do you want to auto connect Blackpill COM to COM1 @ 9600?
+2026-09-10 11:36 - INFO - Auto Connect dialog button : Ok
+2026-09-10 11:36 - INFO - Serial communication autostarted
+2026-09-10 11:37 - INFO - File selected: E:/InkPrinter/New changes/InkV2_Final_without_cura_version_with_new_changes/Test_files/ide2.svg
+2026-09-10 11:37 - INFO - Converting SVG -> G-code directly: E:\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\Test_files\ide2.svg
+2026-09-10 11:37 - INFO - G-code created: E:\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\Test_files\ide2.gcode
+2026-09-10 11:37 - INFO - G-code ready from SVG: E:\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\Test_files\ide2.gcode
+2026-09-10 11:37 - INFO - Raw G-code parsed (174 lines).
+2026-09-10 11:37 - INFO - Feedrate: 500.0 mm/min
+2026-09-10 11:37 - INFO - Normalization shift: X=-1.904, Y=-1.855
+2026-09-10 11:37 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=41.500
+2026-09-10 11:37 - INFO - Final applied shift: X=-1.904, Y=-1.855
+2026-09-10 11:37 - INFO - Print Status : RUN
+2026-09-10 11:37 - INFO - Print Status : PAUSE
+2026-09-10 11:37 - INFO - File selected: E:/InkPrinter/New changes/InkV2_Final_without_cura_version_with_new_changes/Test_files/ide2.svg
+2026-09-10 11:37 - INFO - Converting SVG -> G-code directly: E:\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\Test_files\ide2.svg
+2026-09-10 11:37 - INFO - G-code created: E:\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\Test_files\ide2.gcode
+2026-09-10 11:37 - INFO - G-code ready from SVG: E:\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\Test_files\ide2.gcode
+2026-09-10 11:37 - INFO - Raw G-code parsed (174 lines).
+2026-09-10 11:37 - INFO - Feedrate: 500.0 mm/min
+2026-09-10 11:37 - INFO - Normalization shift: X=-1.904, Y=-1.855
+2026-09-10 11:37 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=41.500
+2026-09-10 11:37 - INFO - Final applied shift: X=-1.904, Y=-1.855
+2026-09-10 11:37 - INFO - Print Status : RUN
+2026-09-10 12:36 - INFO - ==================================================
+2026-09-10 12:36 - INFO - New session START at 2026-09-10 12:36
+2026-09-10 12:36 - INFO - ==================================================
+2026-09-10 12:36 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-09-10 12:36 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-09-10 12:36 - INFO - Loaded draw_z from config: Z=41.5, draw_z_UP=20.75
+2026-09-10 12:36 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-09-10 12:36 - INFO - UV Exposure Time loaded: 10000 ms
+2026-09-10 12:36 - INFO - INI file initialized
+2026-09-10 12:36 - INFO - UI load successful
+2026-09-10 12:36 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-10 12:36 - INFO - Do you want to auto connect Main Printer COM to COM4 @ 115200?
+2026-09-10 12:36 - INFO - Auto Connect dialog button : Cancel
+2026-09-10 12:36 - INFO - Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-10 12:36 - INFO - Do you want to auto connect Blackpill COM to COM1 @ 9600?
+2026-09-10 12:36 - INFO - Auto Connect dialog button : Cancel
+2026-09-10 12:37 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-09-10 12:37 - INFO - Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-10 12:37 - CRITICAL - Serial communication started
+2026-09-10 12:37 - INFO - Sent H to Blackpill
+2026-09-10 12:37 - INFO - HOME command sent to Blackpill.
+2026-09-10 12:37 - INFO - Sent S to Blackpill
+2026-09-10 12:37 - INFO - Stop HOME command sent to Blackpill.
+2026-09-10 12:37 - INFO - Close event ignored.
+2026-09-10 12:37 - INFO - Sent H to Blackpill
+2026-09-10 12:37 - INFO - HOME command sent to Blackpill.
+2026-09-10 12:37 - INFO - Serial communication stopped
+2026-09-10 12:37 - INFO - COM connection close successfully
+2026-09-10 12:37 - INFO - Main window close successfully
+2026-09-10 12:37 - INFO - ==================================================
+2026-09-10 12:37 - INFO - New session close at 2026-09-10 12:37
+2026-09-10 12:37 - INFO - ==================================================
+2026-09-10 12:52 - INFO - ==================================================
+2026-09-10 12:52 - INFO - New session START at 2026-09-10 12:52
+2026-09-10 12:52 - INFO - ==================================================
+2026-09-10 12:52 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-09-10 12:52 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-09-10 12:52 - INFO - Loaded draw_z from config: Z=41.5, draw_z_UP=20.75
+2026-09-10 12:52 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-09-10 12:52 - INFO - UV Exposure Time loaded: 10000 ms
+2026-09-10 12:52 - INFO - INI file initialized
+2026-09-10 12:52 - INFO - UI load successful
+2026-09-10 12:52 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-10 12:52 - INFO - Do you want to auto connect Main Printer COM to COM4 @ 115200?
+2026-09-10 12:52 - INFO - Auto Connect dialog button : Ok
+2026-09-10 12:52 - INFO - Serial communication autostarted
+2026-09-10 12:52 - INFO - Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-10 12:52 - INFO - Do you want to auto connect Blackpill COM to COM1 @ 9600?
+2026-09-10 12:52 - INFO - Auto Connect dialog button : Cancel
+2026-09-10 12:52 - INFO - ==================================================
+2026-09-10 12:52 - INFO - New session START at 2026-09-10 12:52
+2026-09-10 12:52 - INFO - ==================================================
+2026-09-10 12:52 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-09-10 12:52 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-09-10 12:52 - INFO - Loaded draw_z from config: Z=41.5, draw_z_UP=20.75
+2026-09-10 12:52 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-09-10 12:52 - INFO - UV Exposure Time loaded: 10000 ms
+2026-09-10 12:52 - INFO - INI file initialized
+2026-09-10 12:52 - INFO - UI load successful
+2026-09-10 12:52 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-10 12:52 - INFO - Do you want to auto connect Main Printer COM to COM4 @ 115200?
+2026-09-10 12:52 - INFO - Auto Connect dialog button : Cancel
+2026-09-10 12:52 - INFO - Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-10 12:52 - INFO - Do you want to auto connect Blackpill COM to COM1 @ 9600?
+2026-09-10 12:52 - INFO - Auto Connect dialog button : Cancel
+2026-09-11 10:17 - INFO - ==================================================
+2026-09-11 10:17 - INFO - New session START at 2026-09-11 10:17
+2026-09-11 10:17 - INFO - ==================================================
+2026-09-11 10:17 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-09-11 10:17 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-09-11 10:17 - INFO - Loaded draw_z from config: Z=41.5, draw_z_UP=20.75
+2026-09-11 10:17 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-09-11 10:17 - INFO - UV Exposure Time loaded: 10000 ms
+2026-09-11 10:17 - INFO - INI file initialized
+2026-09-11 10:17 - INFO - UI load successful
+2026-09-11 10:17 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-11 10:17 - INFO - Do you want to auto connect Main Printer COM to COM4 @ 115200?
+2026-09-11 10:17 - INFO - Auto Connect dialog button : Cancel
+2026-09-11 10:17 - INFO - Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-11 10:17 - INFO - Do you want to auto connect Blackpill COM to COM1 @ 9600?
+2026-09-11 10:17 - INFO - Auto Connect dialog button : Cancel
+2026-09-11 10:23 - INFO - ==================================================
+2026-09-11 10:23 - INFO - New session START at 2026-09-11 10:23
+2026-09-11 10:23 - INFO - ==================================================
+2026-09-11 10:23 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-09-11 10:23 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-09-11 10:23 - INFO - Loaded draw_z from config: Z=41.5, draw_z_UP=20.75
+2026-09-11 10:23 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-09-11 10:23 - INFO - UV Exposure Time loaded: 10000 ms
+2026-09-11 10:23 - INFO - INI file initialized
+2026-09-11 10:23 - INFO - UI load successful
+2026-09-11 10:23 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-11 10:23 - INFO - Do you want to auto connect Main Printer COM to COM4 @ 115200?
+2026-09-11 10:23 - INFO - Auto Connect dialog button : Cancel
+2026-09-11 10:23 - INFO - Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-11 10:24 - INFO - Do you want to auto connect Blackpill COM to COM1 @ 9600?
+2026-09-11 10:24 - INFO - Auto Connect dialog button : Cancel
+2026-09-11 10:27 - INFO - ==================================================
+2026-09-11 10:27 - INFO - New session START at 2026-09-11 10:27
+2026-09-11 10:27 - INFO - ==================================================
+2026-09-11 10:27 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-09-11 10:27 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-09-11 10:27 - INFO - Loaded draw_z from config: Z=41.5, draw_z_UP=20.75
+2026-09-11 10:27 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-09-11 10:27 - INFO - UV Exposure Time loaded: 10000 ms
+2026-09-11 10:27 - INFO - INI file initialized
+2026-09-11 10:27 - INFO - UI load successful
+2026-09-11 10:27 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-11 10:27 - INFO - Do you want to auto connect Main Printer COM to COM4 @ 115200?
+2026-09-11 10:27 - INFO - Auto Connect dialog button : Cancel
+2026-09-11 10:27 - INFO - Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-11 10:27 - INFO - Do you want to auto connect Blackpill COM to COM1 @ 9600?
+2026-09-11 10:27 - INFO - Auto Connect dialog button : Cancel
+2026-09-11 10:28 - INFO - UV turned ON manually.
+2026-09-11 10:28 - INFO - UV turned OFF manually.
+2026-09-11 10:29 - INFO - Extrusion pressure/temp set to 32
+2026-09-11 10:29 - INFO - Bed temperature set to 35
+2026-09-11 10:46 - INFO - ==================================================
+2026-09-11 10:46 - INFO - New session START at 2026-09-11 10:46
+2026-09-11 10:46 - INFO - ==================================================
+2026-09-11 10:46 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-09-11 10:46 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-09-11 10:46 - INFO - Loaded draw_z from config: Z=41.5, draw_z_UP=20.75
+2026-09-11 10:46 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-09-11 10:46 - INFO - UV Exposure Time loaded: 10000 ms
+2026-09-11 10:46 - INFO - INI file initialized
+2026-09-11 10:46 - INFO - UI load successful
+2026-09-11 10:46 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-11 10:46 - INFO - Do you want to auto connect Main Printer COM to COM4 @ 115200?
+2026-09-11 10:46 - INFO - Auto Connect dialog button : Cancel
+2026-09-11 10:46 - INFO - Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-11 10:46 - INFO - Do you want to auto connect Blackpill COM to COM1 @ 9600?
+2026-09-11 10:46 - INFO - Auto Connect dialog button : Cancel
+2026-09-11 10:46 - INFO - Serial communication stopped
+2026-09-11 10:46 - INFO - COM connection close successfully
+2026-09-11 10:46 - INFO - Main window close successfully
+2026-09-11 10:46 - INFO - ==================================================
+2026-09-11 10:46 - INFO - New session close at 2026-09-11 10:46
+2026-09-11 10:46 - INFO - ==================================================
+2026-09-11 10:54 - INFO - ==================================================
+2026-09-11 10:54 - INFO - New session START at 2026-09-11 10:54
+2026-09-11 10:54 - INFO - ==================================================
+2026-09-11 10:54 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-09-11 10:54 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-09-11 10:54 - INFO - Loaded draw_z from config: Z=41.5, draw_z_UP=20.75
+2026-09-11 10:54 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-09-11 10:54 - INFO - UV Exposure Time loaded: 10000 ms
+2026-09-11 10:54 - INFO - INI file initialized
+2026-09-11 10:54 - INFO - UI load successful
+2026-09-11 10:54 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-11 10:54 - INFO - Do you want to auto connect Main Printer COM to COM4 @ 115200?
+2026-09-11 10:54 - INFO - Auto Connect dialog button : Cancel
+2026-09-11 10:54 - INFO - Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-11 10:54 - INFO - Do you want to auto connect Blackpill COM to COM1 @ 9600?
+2026-09-11 10:54 - INFO - Auto Connect dialog button : Cancel
+2026-09-11 10:55 - INFO - ==================================================
+2026-09-11 10:55 - INFO - New session START at 2026-09-11 10:55
+2026-09-11 10:55 - INFO - ==================================================
+2026-09-11 10:55 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-09-11 10:55 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-09-11 10:55 - INFO - Loaded draw_z from config: Z=41.5, draw_z_UP=20.75
+2026-09-11 10:55 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-09-11 10:55 - INFO - UV Exposure Time loaded: 10000 ms
+2026-09-11 10:55 - INFO - INI file initialized
+2026-09-11 10:55 - INFO - UI load successful
+2026-09-11 10:55 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-11 10:55 - INFO - Do you want to auto connect Main Printer COM to COM4 @ 115200?
+2026-09-11 10:55 - INFO - Auto Connect dialog button : Cancel
+2026-09-11 10:55 - INFO - Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-11 10:55 - INFO - Do you want to auto connect Blackpill COM to COM1 @ 9600?
+2026-09-11 10:55 - INFO - Auto Connect dialog button : Cancel
+2026-09-11 10:58 - INFO - Serial communication stopped
+2026-09-11 10:58 - INFO - COM connection close successfully
+2026-09-11 10:58 - INFO - Main window close successfully
+2026-09-11 10:58 - INFO - ==================================================
+2026-09-11 10:58 - INFO - New session close at 2026-09-11 10:58
+2026-09-11 10:58 - INFO - ==================================================
+2026-09-11 11:30 - INFO - ==================================================
+2026-09-11 11:30 - INFO - New session START at 2026-09-11 11:30
+2026-09-11 11:30 - INFO - ==================================================
+2026-09-11 11:30 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-09-11 11:30 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-09-11 11:30 - INFO - Loaded draw_z from config: Z=41.5, draw_z_UP=20.75
+2026-09-11 11:30 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-09-11 11:30 - INFO - UV Exposure Time loaded: 10000 ms
+2026-09-11 11:30 - INFO - INI file initialized
+2026-09-11 11:30 - INFO - UI load successful
+2026-09-11 11:30 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-11 11:30 - INFO - Do you want to auto connect Main Printer COM to COM4 @ 115200?
+2026-09-11 11:30 - INFO - Auto Connect dialog button : Cancel
+2026-09-11 11:30 - INFO - Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-11 11:30 - INFO - Do you want to auto connect Blackpill COM to COM1 @ 9600?
+2026-09-11 11:30 - INFO - Auto Connect dialog button : Cancel
+2026-09-11 11:30 - INFO - Serial communication stopped
+2026-09-11 11:30 - INFO - COM connection close successfully
+2026-09-11 11:30 - INFO - Main window close successfully
+2026-09-11 11:30 - INFO - ==================================================
+2026-09-11 11:30 - INFO - New session close at 2026-09-11 11:30
+2026-09-11 11:30 - INFO - ==================================================
+2026-09-11 11:31 - INFO - ==================================================
+2026-09-11 11:31 - INFO - New session START at 2026-09-11 11:31
+2026-09-11 11:31 - INFO - ==================================================
+2026-09-11 11:31 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-09-11 11:31 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-09-11 11:31 - INFO - Loaded draw_z from config: Z=41.5, draw_z_UP=20.75
+2026-09-11 11:31 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-09-11 11:31 - INFO - UV Exposure Time loaded: 10000 ms
+2026-09-11 11:31 - INFO - INI file initialized
+2026-09-11 11:31 - INFO - UI load successful
+2026-09-11 11:31 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-11 11:31 - INFO - Do you want to auto connect Main Printer COM to COM4 @ 115200?
+2026-09-11 11:31 - INFO - Auto Connect dialog button : Cancel
+2026-09-11 11:31 - INFO - Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-11 11:31 - INFO - Do you want to auto connect Blackpill COM to COM1 @ 9600?
+2026-09-11 11:31 - INFO - Auto Connect dialog button : Cancel
+2026-09-11 11:31 - INFO - Serial communication stopped
+2026-09-11 11:31 - INFO - COM connection close successfully
+2026-09-11 11:31 - INFO - Main window close successfully
+2026-09-11 11:31 - INFO - ==================================================
+2026-09-11 11:31 - INFO - New session close at 2026-09-11 11:31
+2026-09-11 11:31 - INFO - ==================================================
+2026-09-11 11:39 - INFO - ==================================================
+2026-09-11 11:39 - INFO - New session START at 2026-09-11 11:39
+2026-09-11 11:39 - INFO - ==================================================
+2026-09-11 11:39 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-09-11 11:39 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-09-11 11:39 - INFO - Loaded draw_z from config: Z=41.5, draw_z_UP=20.75
+2026-09-11 11:39 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-09-11 11:39 - INFO - UV Exposure Time loaded: 10000 ms
+2026-09-11 11:39 - INFO - INI file initialized
+2026-09-11 11:39 - INFO - UI load successful
+2026-09-11 11:39 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-11 11:39 - INFO - Do you want to auto connect Main Printer COM to COM4 @ 115200?
+2026-09-11 11:39 - INFO - Auto Connect dialog button : Cancel
+2026-09-11 11:39 - INFO - Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-11 11:39 - INFO - Do you want to auto connect Blackpill COM to COM1 @ 9600?
+2026-09-11 11:39 - INFO - Auto Connect dialog button : Cancel
+2026-09-11 11:58 - INFO - ==================================================
+2026-09-11 11:58 - INFO - New session START at 2026-09-11 11:58
+2026-09-11 11:58 - INFO - ==================================================
+2026-09-11 11:58 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-09-11 11:58 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-09-11 11:58 - INFO - Loaded draw_z from config: Z=41.5, draw_z_UP=20.75
+2026-09-11 11:58 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-09-11 11:58 - INFO - UV Exposure Time loaded: 10000 ms
+2026-09-11 11:58 - INFO - INI file initialized
+2026-09-11 11:58 - INFO - UI load successful
+2026-09-11 11:58 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-11 11:58 - INFO - Do you want to auto connect Main Printer COM to COM4 @ 115200?
+2026-09-11 11:58 - INFO - Auto Connect dialog button : Cancel
+2026-09-11 11:58 - INFO - Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-11 11:58 - INFO - Do you want to auto connect Blackpill COM to COM1 @ 9600?
+2026-09-11 11:58 - INFO - Auto Connect dialog button : Cancel
+2026-09-11 11:58 - INFO - Updated purge settings via UI: length_mm=100.0, purge_value=0.5
+2026-09-11 11:59 - INFO - UV turned ON manually.
+2026-09-11 11:59 - INFO - UV turned OFF manually.
+2026-09-11 11:59 - INFO - Updated purge settings via UI: length_mm=100.0, purge_value=0.5
+2026-09-11 12:19 - INFO - ==================================================
+2026-09-11 12:19 - INFO - New session START at 2026-09-11 12:19
+2026-09-11 12:19 - INFO - ==================================================
+2026-09-11 12:19 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-09-11 12:19 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-09-11 12:19 - INFO - Loaded draw_z from config: Z=41.5, draw_z_UP=20.75
+2026-09-11 12:19 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-09-11 12:19 - INFO - UV Exposure Time loaded: 10000 ms
+2026-09-11 12:19 - INFO - INI file initialized
+2026-09-11 12:19 - INFO - UI load successful
+2026-09-11 12:19 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-11 12:19 - INFO - Do you want to auto connect Main Printer COM to COM4 @ 115200?
+2026-09-11 12:19 - INFO - Auto Connect dialog button : Cancel
+2026-09-11 12:19 - INFO - Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-11 12:19 - INFO - Do you want to auto connect Blackpill COM to COM1 @ 9600?
+2026-09-11 12:19 - INFO - Auto Connect dialog button : Cancel
+2026-09-11 12:20 - INFO - Serial communication stopped
+2026-09-11 12:20 - INFO - COM connection close successfully
+2026-09-11 12:20 - INFO - Main window close successfully
+2026-09-11 12:20 - INFO - ==================================================
+2026-09-11 12:20 - INFO - New session close at 2026-09-11 12:20
+2026-09-11 12:20 - INFO - ==================================================
+2026-09-11 12:33 - INFO - ==================================================
+2026-09-11 12:33 - INFO - New session START at 2026-09-11 12:33
+2026-09-11 12:33 - INFO - ==================================================
+2026-09-11 12:33 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-09-11 12:33 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-09-11 12:33 - INFO - Loaded draw_z from config: Z=41.5, draw_z_UP=20.75
+2026-09-11 12:33 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-09-11 12:33 - INFO - UV Exposure Time loaded: 10000 ms
+2026-09-11 12:33 - INFO - INI file initialized
+2026-09-11 12:33 - INFO - UI load successful
+2026-09-11 12:33 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-11 12:33 - INFO - Do you want to auto connect Main Printer COM to COM4 @ 115200?
+2026-09-11 12:33 - INFO - Auto Connect dialog button : Cancel
+2026-09-11 12:33 - INFO - Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-11 12:34 - INFO - Do you want to auto connect Blackpill COM to COM1 @ 9600?
+2026-09-11 12:34 - INFO - Auto Connect dialog button : Cancel
+2026-09-11 12:36 - INFO - File selected: E:/InkPrinter/New changes/InkV2_Final_without_cura_version_with_new_changes/Test_files/ide2.svg
+2026-09-11 12:36 - INFO - Converting SVG -> G-code directly: E:\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\Test_files\ide2.svg
+2026-09-11 12:36 - INFO - G-code created: E:\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\Test_files\ide2.gcode
+2026-09-11 12:36 - INFO - G-code ready from SVG: E:\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\Test_files\ide2.gcode
+2026-09-11 12:36 - INFO - Raw G-code parsed (174 lines).
+2026-09-11 12:36 - INFO - Feedrate: 500.0 mm/min
+2026-09-11 12:36 - INFO - Normalization shift: X=-1.904, Y=-1.855
+2026-09-11 12:36 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=41.500
+2026-09-11 12:36 - INFO - Final applied shift: X=-1.904, Y=-1.855
+2026-09-11 12:36 - INFO - Updated purge settings via UI: length_mm=100.0, purge_value=0.5
+2026-09-11 12:37 - INFO - Profile : Supervisor
+2026-09-11 12:51 - INFO - ==================================================
+2026-09-11 12:51 - INFO - New session START at 2026-09-11 12:51
+2026-09-11 12:51 - INFO - ==================================================
+2026-09-11 12:51 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-09-11 12:51 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-09-11 12:51 - INFO - Loaded draw_z from config: Z=41.5, draw_z_UP=20.75
+2026-09-11 12:51 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-09-11 12:51 - INFO - UV Exposure Time loaded: 10000 ms
+2026-09-11 12:51 - INFO - INI file initialized
+2026-09-11 12:51 - INFO - UI load successful
+2026-09-11 12:51 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-11 12:51 - INFO - Do you want to auto connect Main Printer COM to COM4 @ 115200?
+2026-09-11 12:51 - INFO - Auto Connect dialog button : Cancel
+2026-09-11 12:51 - INFO - Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-11 12:51 - INFO - Do you want to auto connect Blackpill COM to COM1 @ 9600?
+2026-09-11 12:51 - INFO - Auto Connect dialog button : Cancel
+2026-09-11 13:01 - INFO - Serial communication stopped
+2026-09-11 13:01 - INFO - COM connection close successfully
+2026-09-11 13:01 - INFO - Main window close successfully
+2026-09-11 13:01 - INFO - ==================================================
+2026-09-11 13:01 - INFO - New session close at 2026-09-11 13:01
+2026-09-11 13:01 - INFO - ==================================================
+2026-09-11 16:56 - INFO - ==================================================
+2026-09-11 16:56 - INFO - New session START at 2026-09-11 16:56
+2026-09-11 16:56 - INFO - ==================================================
+2026-09-11 16:56 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-09-11 16:56 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-09-11 16:56 - INFO - Loaded draw_z from config: Z=41.5, draw_z_UP=20.75
+2026-09-11 16:56 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-09-11 16:56 - INFO - UV Exposure Time loaded: 10000 ms
+2026-09-11 16:56 - INFO - INI file initialized
+2026-09-11 16:56 - INFO - UI load successful
+2026-09-11 16:56 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-11 16:56 - INFO - Do you want to auto connect Main Printer COM to COM4 @ 115200?
+2026-09-11 16:56 - INFO - Auto Connect dialog button : Cancel
+2026-09-11 16:56 - INFO - Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-11 16:56 - INFO - Do you want to auto connect Blackpill COM to COM1 @ 9600?
+2026-09-11 16:56 - INFO - Auto Connect dialog button : Cancel
+2026-09-11 16:56 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-11 16:58 - ERROR - Error : Invalid Input > Kindly select both COM port and baud rate.
+2026-09-11 16:58 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8', 'COM9'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-11 16:58 - CRITICAL - Serial communication started
+2026-09-11 17:01 - INFO - Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8', 'COM9'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-11 17:01 - INFO - Serial communication stopped
+2026-09-11 17:23 - INFO - ==================================================
+2026-09-11 17:23 - INFO - New session START at 2026-09-11 17:23
+2026-09-11 17:23 - INFO - ==================================================
+2026-09-11 17:23 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-09-11 17:23 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-09-11 17:23 - INFO - Loaded draw_z from config: Z=41.5, draw_z_UP=20.75
+2026-09-11 17:23 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-09-11 17:23 - INFO - UV Exposure Time loaded: 10000 ms
+2026-09-11 17:23 - INFO - INI file initialized
+2026-09-11 17:23 - INFO - UI load successful
+2026-09-11 17:23 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8', 'COM19'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-11 17:23 - INFO - Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8', 'COM19'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-11 17:23 - INFO - Do you want to auto connect Blackpill COM to COM1 @ 9600?
+2026-09-11 17:23 - INFO - Auto Connect dialog button : Cancel
+2026-09-11 17:23 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8', 'COM19'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-11 17:23 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8', 'COM19'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-11 17:23 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8', 'COM19'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-11 17:23 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8', 'COM19'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-11 17:23 - INFO - ==================================================
+2026-09-11 17:23 - INFO - New session START at 2026-09-11 17:23
+2026-09-11 17:23 - INFO - ==================================================
+2026-09-11 17:23 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-09-11 17:23 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-09-11 17:23 - INFO - Loaded draw_z from config: Z=41.5, draw_z_UP=20.75
+2026-09-11 17:23 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-09-11 17:23 - INFO - UV Exposure Time loaded: 10000 ms
+2026-09-11 17:23 - INFO - INI file initialized
+2026-09-11 17:23 - INFO - UI load successful
+2026-09-11 17:23 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8', 'COM9', 'COM19'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-11 17:24 - INFO - Do you want to auto connect Main Printer COM to COM9 @ 115200?
+2026-09-11 17:24 - INFO - Auto Connect dialog button : Ok
+2026-09-11 17:24 - INFO - Serial communication autostarted
+2026-09-11 17:24 - INFO - Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8', 'COM9', 'COM19'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-11 17:24 - INFO - Do you want to auto connect Blackpill COM to COM1 @ 9600?
+2026-09-11 17:24 - INFO - Auto Connect dialog button : Cancel
+2026-09-11 17:24 - INFO - Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8', 'COM9', 'COM19'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-11 17:24 - CRITICAL - Serial communication started
+2026-09-11 17:24 - INFO - Sent F 10.0 to Blackpill
+2026-09-11 17:24 - INFO - Fill command (F 10.0) sent to Blackpill.
+2026-09-11 17:24 - INFO - Auto-reset Fill button state.
+2026-09-11 17:24 - INFO - Sent F 10.0 to Blackpill
+2026-09-11 17:24 - INFO - Fill command (F 10.0) sent to Blackpill.
+2026-09-11 17:24 - INFO - Auto-reset Fill button state.
+2026-09-11 17:25 - INFO - Sent H to Blackpill
+2026-09-11 17:25 - INFO - HOME command sent to Blackpill.
+2026-09-11 17:25 - INFO - Auto-reset F home button state.
+2026-09-11 17:27 - INFO - Sent F 10.0 to Blackpill
+2026-09-11 17:27 - INFO - Fill command (F 10.0) sent to Blackpill.
+2026-09-11 17:27 - INFO - Auto-reset Fill button state.
+2026-09-11 17:27 - INFO - Sent H to Blackpill
+2026-09-11 17:27 - INFO - HOME command sent to Blackpill.
+2026-09-11 17:27 - INFO - Sent S to Blackpill
+2026-09-11 17:27 - INFO - Stop HOME command sent to Blackpill.
+2026-09-11 17:27 - INFO - Sent P 10.0 to Blackpill
+2026-09-11 17:27 - INFO - Purge command (P 10.0) sent to Blackpill.
+2026-09-11 17:27 - INFO - Auto-reset Purge button state.
+2026-09-11 17:28 - INFO - Sent H to Blackpill
+2026-09-11 17:28 - INFO - HOME command sent to Blackpill.
+2026-09-11 17:28 - INFO - Auto-reset F home button state.
+2026-09-11 17:30 - INFO - Sent H to Blackpill
+2026-09-11 17:30 - INFO - HOME command sent to Blackpill.
+2026-09-11 17:30 - INFO - Sent S to Blackpill
+2026-09-11 17:30 - INFO - Stop HOME command sent to Blackpill.
+2026-09-11 17:30 - INFO - Sent H to Blackpill
+2026-09-11 17:30 - INFO - HOME command sent to Blackpill.
+2026-09-11 17:30 - INFO - Sent S to Blackpill
+2026-09-11 17:30 - INFO - Stop HOME command sent to Blackpill.
+2026-09-11 17:30 - INFO - Sent H to Blackpill
+2026-09-11 17:30 - INFO - HOME command sent to Blackpill.
+2026-09-11 17:31 - INFO - Auto-reset F home button state.
+2026-09-11 17:31 - INFO - Sent H to Blackpill
+2026-09-11 17:31 - INFO - HOME command sent to Blackpill.
+2026-09-11 17:31 - INFO - Auto-reset F home button state.
+2026-09-11 17:31 - INFO - Sent H to Blackpill
+2026-09-11 17:31 - INFO - HOME command sent to Blackpill.
+2026-09-11 17:32 - INFO - Auto-reset F home button state.
+2026-09-11 17:32 - INFO - Sent H to Blackpill
+2026-09-11 17:32 - INFO - HOME command sent to Blackpill.
+2026-09-11 17:32 - INFO - Auto-reset F home button state.
+2026-09-11 17:32 - INFO - Sent P 10.0 to Blackpill
+2026-09-11 17:32 - INFO - Purge command (P 10.0) sent to Blackpill.
+2026-09-11 17:33 - INFO - Auto-reset Purge button state.
+2026-09-11 17:33 - INFO - Sent H to Blackpill
+2026-09-11 17:33 - INFO - HOME command sent to Blackpill.
+2026-09-11 17:34 - INFO - Auto-reset F home button state.
+2026-09-11 17:34 - INFO - Serial communication stopped
+2026-09-11 17:35 - INFO - Do you want to auto connect Main Printer COM to COM9 @ 115200?
+2026-09-11 17:35 - INFO - Auto Connect dialog button : Cancel
+2026-09-11 17:35 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8', 'COM9', 'COM19'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-11 17:36 - CRITICAL - Serial communication started
+2026-09-11 17:36 - INFO - Serial communication stopped
+2026-09-11 17:36 - CRITICAL - Serial communication started
+2026-09-11 17:36 - INFO - Sent H to Blackpill
+2026-09-11 17:36 - INFO - HOME command sent to Blackpill.
+2026-09-11 17:36 - INFO - Sent S to Blackpill
+2026-09-11 17:36 - INFO - Stop HOME command sent to Blackpill.
+2026-09-11 17:36 - INFO - Sent H to Blackpill
+2026-09-11 17:36 - INFO - HOME command sent to Blackpill.
+2026-09-11 17:36 - INFO - Auto-reset F home button state.
+2026-09-11 17:37 - INFO - Serial communication stopped
+2026-09-11 17:37 - INFO - Do you want to auto connect Main Printer COM to COM9 @ 115200?
+2026-09-11 17:37 - INFO - Auto Connect dialog button : Ok
+2026-09-11 17:37 - INFO - Serial communication autostarted
+2026-09-11 17:37 - INFO - Serial communication stopped
+2026-09-11 17:51 - INFO - ==================================================
+2026-09-11 17:51 - INFO - New session START at 2026-09-11 17:51
+2026-09-11 17:51 - INFO - ==================================================
+2026-09-11 17:51 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-09-11 17:51 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-09-11 17:51 - INFO - Loaded draw_z from config: Z=41.5, draw_z_UP=20.75
+2026-09-11 17:51 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-09-11 17:51 - INFO - UV Exposure Time loaded: 10000 ms
+2026-09-11 17:51 - INFO - INI file initialized
+2026-09-11 17:51 - INFO - UI load successful
+2026-09-11 17:51 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8', 'COM9', 'COM19'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-11 17:51 - INFO - Do you want to auto connect Main Printer COM to COM9 @ 115200?
+2026-09-11 17:51 - INFO - Auto Connect dialog button : Ok
+2026-09-11 17:51 - INFO - Serial communication autostarted
+2026-09-11 17:51 - INFO - Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8', 'COM9', 'COM19'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-11 17:51 - INFO - Do you want to auto connect Blackpill COM to COM19 @ 115200?
+2026-09-11 17:51 - INFO - Auto Connect dialog button : Ok
+2026-09-11 17:51 - INFO - Serial communication autostarted
+2026-09-11 17:52 - INFO - Sent H to Blackpill
+2026-09-11 17:52 - INFO - HOME command sent to Blackpill.
+2026-09-11 17:52 - INFO - Auto-reset F home button state.
+2026-09-11 17:53 - INFO - File selected: E:/InkPrinter/New changes/InkV2_Final_without_cura_version_with_new_changes/Test_files/ide2.svg
+2026-09-11 17:53 - INFO - Converting SVG -> G-code directly: E:\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\Test_files\ide2.svg
+2026-09-11 17:53 - INFO - G-code created: E:\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\Test_files\ide2.gcode
+2026-09-11 17:53 - INFO - G-code ready from SVG: E:\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\Test_files\ide2.gcode
+2026-09-11 17:53 - INFO - Raw G-code parsed (174 lines).
+2026-09-11 17:54 - INFO - Feedrate: 1500.0 mm/min
+2026-09-11 17:54 - INFO - Normalization shift: X=-1.904, Y=-1.855
+2026-09-11 17:54 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=41.500
+2026-09-11 17:54 - INFO - Final applied shift: X=-1.904, Y=-1.855
+2026-09-11 17:54 - INFO - Print Status : RUN
+2026-09-11 17:55 - INFO - Sent P 0.500000 to Blackpill
+2026-09-11 17:55 - INFO - Sent P 0.500000 to Blackpill
+2026-09-11 17:55 - INFO - Sent P 0.500000 to Blackpill
+2026-09-11 17:55 - INFO - Sent P 0.500000 to Blackpill
+2026-09-11 17:57 - INFO - Sent P 0.500000 to Blackpill
+2026-09-11 17:57 - INFO - Sent P 0.500000 to Blackpill
+2026-09-11 17:58 - INFO - Sent P 0.500000 to Blackpill
+2026-09-11 17:58 - INFO - Sent P 0.500000 to Blackpill
+2026-09-11 17:58 - INFO - Sent P 0.500000 to Blackpill
+2026-09-11 17:58 - INFO - Sent P 0.500000 to Blackpill
+2026-09-11 17:59 - INFO - Sent P 0.500000 to Blackpill
+2026-09-11 18:00 - INFO - Sent P 0.500000 to Blackpill
+2026-09-11 18:01 - INFO - Print finished, sending G28 to home.
+2026-09-11 18:01 - INFO - Profile : Supervisor
+2026-09-11 18:04 - INFO - Serial communication stopped
+2026-09-11 18:04 - INFO - COM connection close successfully
+2026-09-11 18:04 - INFO - Main window close successfully
+2026-09-11 18:04 - INFO - ==================================================
+2026-09-11 18:04 - INFO - New session close at 2026-09-11 18:04
+2026-09-11 18:04 - INFO - ==================================================
+2026-09-11 18:04 - INFO - ==================================================
+2026-09-11 18:04 - INFO - New session START at 2026-09-11 18:04
+2026-09-11 18:04 - INFO - ==================================================
+2026-09-11 18:04 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-09-11 18:04 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-09-11 18:04 - INFO - Loaded draw_z from config: Z=41.5, draw_z_UP=20.75
+2026-09-11 18:04 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-09-11 18:04 - INFO - UV Exposure Time loaded: 10000 ms
+2026-09-11 18:04 - INFO - INI file initialized
+2026-09-11 18:04 - INFO - UI load successful
+2026-09-11 18:04 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8', 'COM9', 'COM19'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-11 18:04 - INFO - Do you want to auto connect Main Printer COM to COM9 @ 115200?
+2026-09-11 18:04 - INFO - Auto Connect dialog button : Cancel
+2026-09-11 18:04 - INFO - Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8', 'COM9', 'COM19'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-11 18:04 - INFO - Do you want to auto connect Blackpill COM to COM19 @ 115200?
+2026-09-11 18:04 - INFO - Auto Connect dialog button : Cancel
+2026-09-11 18:04 - INFO - Serial communication stopped
+2026-09-11 18:04 - INFO - COM connection close successfully
+2026-09-11 18:04 - INFO - Main window close successfully
+2026-09-11 18:04 - INFO - ==================================================
+2026-09-11 18:04 - INFO - New session close at 2026-09-11 18:04
+2026-09-11 18:04 - INFO - ==================================================
