@@ -1336,8 +1336,12 @@ class MainWindow(QMainWindow):
         else:
             gcode = gstr
 
-        self.sendGcode(gcode)
+        if gcode.startswith("M106 P0 S255"):
+            uv_time_sec = getattr(self, 'uv_time_ms', 0) // 1000
+            if uv_time_sec > 0:
+                self.showAutoCloseMessage("UV Curing Started", f"UV light is ON. Please wait {uv_time_sec} seconds for curing.", timeout_ms=5000)
 
+        self.sendGcode(gcode)
         
     def goHome(self):
         self.updateAxisPos()

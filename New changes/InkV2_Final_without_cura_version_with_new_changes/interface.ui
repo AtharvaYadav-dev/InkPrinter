@@ -2766,7 +2766,7 @@ QPushButton:disabled {
                 </size>
                </property>
                <property name="currentIndex">
-                <number>6</number>
+                <number>5</number>
                </property>
                <widget class="QWidget" name="jogPage">
                 <layout class="QVBoxLayout" name="verticalLayout_15">
@@ -6527,7 +6527,7 @@ QPushButton:disabled {
                        <item>
                         <widget class="QStackedWidget" name="stackedWidget">
                          <property name="currentIndex">
-                          <number>1</number>
+                          <number>2</number>
                          </property>
                          <widget class="QWidget" name="bedPage">
                           <layout class="QHBoxLayout" name="horizontalLayout_24">
