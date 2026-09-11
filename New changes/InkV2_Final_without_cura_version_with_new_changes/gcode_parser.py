@@ -384,9 +384,9 @@ class GcodeParser:
         for i in range(len(final)-1, -1, -1):
             if final[i].upper().startswith("G28"):
                 if uv_time_ms > 0:
-                    final.insert(i, "M118 A1 P2 UO")
+                    final.insert(i, "M106 P0 S0")
                     final.insert(i, f"G4 P{uv_time_ms}")
-                    final.insert(i, "M118 A1 P2 UR")
+                    final.insert(i, "M106 P0 S255")
                 final.insert(i, f"G0 Z{printZ + hopDelta:.3f} F{travelF}")
                 break
 

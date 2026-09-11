@@ -688,8 +688,8 @@ class MainWindow(QMainWindow):
         self.notifyMenuBtn1.clicked.connect(lambda: self.notifyMenuAction(self.notifyMenuBtn1))
         
         # UV Exposure buttons
-        self.ui.uvonPushButton.clicked.connect(lambda: self.sendGcode("M118 A1 P2 UR\n"))
-        self.ui.uvoffPushButton.clicked.connect(lambda: self.sendGcode("M118 A1 P2 UO\n"))
+        self.ui.uvonPushButton.clicked.connect(lambda: self.sendGcode("M106 P0 S255\n"))
+        self.ui.uvoffPushButton.clicked.connect(lambda: self.sendGcode("M106 P0 S0\n"))
         
         # profile
         self.profileBtn.clicked.connect(lambda: self.profileAction(self.profileBtn))
