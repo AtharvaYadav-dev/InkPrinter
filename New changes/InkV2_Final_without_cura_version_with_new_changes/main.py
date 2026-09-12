@@ -107,8 +107,8 @@ class MainWindow(QMainWindow):
             self.ui.expdurationComboBox.setCurrentIndex(-1)
             
             if hasattr(self.ui, 'pgmuvCheckBox'):
-                self.ui.expdurationComboBox.setEnabled(self.ui.pgmuvCheckBox.isChecked())
-                self.ui.pgmuvCheckBox.toggled.connect(self.ui.expdurationComboBox.setEnabled)
+                self.ui.pgmuvCheckBox.toggled.connect(self.onUvCheckBoxToggled)
+                self.onUvCheckBoxToggled(self.ui.pgmuvCheckBox.isChecked())
             
             self.uv_manual_seconds = 0
             self._uv_manual_timer = QTimer(self)
@@ -1529,6 +1529,26 @@ class MainWindow(QMainWindow):
         if hasattr(self.ui, 'uvminLCDNumber') and hasattr(self.ui, 'uvsecLCDNumber'):
             self.ui.uvminLCDNumber.display(mins)
             self.ui.uvsecLCDNumber.display(secs)
+
+    def onUvCheckBoxToggled(self, checked):
+        if hasattr(self.ui, 'expdurationComboBox'):
+            self.ui.expdurationComboBox.setEnabled(checked)
+        
+        if checked:
+            if hasattr(self.ui, 'uvonPushButton'):
+                self.ui.uvonPushButton.setEnabled(True)
+            if hasattr(self.ui, 'uvoffPushButton'):
+                self.ui.uvoffPushButton.setEnabled(False)
+            if hasattr(self.ui, 'pgmuvPushButton'):
+                self.ui.pgmuvPushButton.setEnabled(True)
+        else:
+            self.handleUvOff() # Ensure UV is turned off if it was running
+            if hasattr(self.ui, 'uvonPushButton'):
+                self.ui.uvonPushButton.setEnabled(False)
+            if hasattr(self.ui, 'uvoffPushButton'):
+                self.ui.uvoffPushButton.setEnabled(False)
+            if hasattr(self.ui, 'pgmuvPushButton'):
+                self.ui.pgmuvPushButton.setEnabled(False)
 
     def showUvSetTime(self):
         if not (hasattr(self.ui, 'pgmuvCheckBox') and self.ui.pgmuvCheckBox.isChecked()):
