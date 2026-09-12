@@ -1542,7 +1542,8 @@ class MainWindow(QMainWindow):
             if hasattr(self.ui, 'pgmuvPushButton'):
                 self.ui.pgmuvPushButton.setEnabled(True)
         else:
-            self.handleUvOff() # Ensure UV is turned off if it was running
+            if hasattr(self, 'gcode'):
+                self.handleUvOff() # Ensure UV is turned off if it was running
             if hasattr(self.ui, 'uvonPushButton'):
                 self.ui.uvonPushButton.setEnabled(False)
             if hasattr(self.ui, 'uvoffPushButton'):
