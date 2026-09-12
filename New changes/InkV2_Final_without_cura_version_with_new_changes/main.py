@@ -992,8 +992,8 @@ class MainWindow(QMainWindow):
             uv_exposure_str = parser.get("features", "uv_exposure", fallback="False").strip()
             self.uv_exposure = uv_exposure_str.lower() in ["true", "1", "yes"]
             if not self.uv_exposure:
-                self.ui.widget_2.hide()
-                self.ui.frame_18.hide()
+                self.ui.widget_2.show()
+                self.ui.frame_18.show()
                 
             uv_time_str = parser.get("features", "uv_exposure_time", fallback="0 min,0 sec").strip()
             mins = 0
