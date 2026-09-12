@@ -151,7 +151,7 @@ class MainWindow(QMainWindow):
         self.dataReceived.connect(self._onDataReceived, Qt.QueuedConnection)
 
         # variables
-        self.jogfeed = 1000
+        self.jogfeed = 500
         self.xcenter = 60
         self.ycenter = 65
         self.zcenter = 35
@@ -2544,6 +2544,7 @@ class MainWindow(QMainWindow):
             self.wm.operate(self.printWidget.abort, "enable", False)
 
             self.programInit()
+            
             
             # Safe abort sequence
             self.sendGcode("G91\n")            # Relative mode
