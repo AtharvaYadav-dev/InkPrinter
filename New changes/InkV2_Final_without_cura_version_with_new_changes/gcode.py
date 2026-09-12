@@ -124,7 +124,7 @@ class GcodeHandler():
             self.append_response_flag = False
             self.ack_list = []
             
-        if all(pattern in response for pattern in ["X:", "Y:", "Z:", "Count"]):
+        if all(pattern in response for pattern in ["X:", "Y:", "Z:"]):
             self.decodeAxisPos(response)
 
         if self.append_response_flag:
@@ -179,7 +179,8 @@ class GcodeHandler():
         self.getAxisPos()
 
     def decodeAxisPos(self, cmd):
-        self.pos_list = [pos for pos in cmd.split('Count')[0].split()]
+        part = cmd.split('Count')[0]
+        self.pos_list = [pos for pos in part.split() if ':' in pos]
         print(f"position : {self.pos_list}")
         
     def getAxisPos(self):
