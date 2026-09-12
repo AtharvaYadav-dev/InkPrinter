@@ -2579,8 +2579,11 @@ class MainWindow(QMainWindow):
                         uv_triggered = True
                         self.home_after_uv = True
                         self.showAutoCloseMessage("UV Curing", "UV is on. Curing in progress...", timeout_ms=3000)
-                        if hasattr(self.ui, 'uvPpage'):
-                            self.showMainPage(self.ui.uvPpage)
+                        
+                        # Navigate to UV page inside parameter stack
+                        self.showMainPage("page6")
+                        if hasattr(self, 'paraBtn3'):
+                            self.parameterAction(self.paraBtn3)
                         
                         self.handleUvOn()
 

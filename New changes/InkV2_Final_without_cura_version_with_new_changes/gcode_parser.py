@@ -43,15 +43,7 @@ class GcodeParser:
             if not has_g28_start:
                 lines.insert(0, 'G28 ; Auto-homing at start')
                 
-            # Check end
-            has_g28_end = False
-            for line in reversed(lines):
-                if self.is_executable(line):
-                    if line.upper().startswith('G28'):
-                        has_g28_end = True
-                    break
-            if not has_g28_end:
-                lines.append('G28 ; Auto-homing at end')
+            # We no longer auto-add G28 at the end, so UV curing can happen at the last position.
                 
         return lines
 
@@ -359,31 +351,26 @@ class GcodeParser:
         # Add layer comment
         final.insert(0, f";Layer height: {(layer_height or 0.0):.3f}")
 
-        # Ensure proper end sequence
+        # Ensure proper end sequence without G28 (let main program handle homing after UV)
         last_g1_idx = -1
         for i in range(len(final)-1, -1, -1):
             if final[i].upper().startswith("G1"):
                 last_g1_idx = i
                 break
                 
-        last_g28_idx = -1
-        for i in range(len(final)-1, -1, -1):
+        # Remove any G28 that occurs after the last G1 (to prevent homing before UV curing)
+        i = len(final) - 1
+        while i > last_g1_idx and i >= 0:
             if final[i].upper().startswith("G28"):
-                last_g28_idx = i
-                break
-                
-        if last_g28_idx <= last_g1_idx:
-            # Remove trailing M84 to add it back after G28
-            while final and "M84" in final[-1].upper():
-                final.pop()
-            final.append("G28")
-            final.append("M84")
-
-        # Add hop sequence before FINAL G28
-        for i in range(len(final)-1, -1, -1):
-            if final[i].upper().startswith("G28"):
-                final.insert(i, f"G0 Z{printZ + hopDelta:.3f} F{travelF}")
-                break
+                final.pop(i)
+            i -= 1
+            
+        # Ensure M84 is at the end (but add a hop first)
+        while final and "M84" in final[-1].upper():
+            final.pop()
+            
+        final.append(f"G0 Z{printZ + hopDelta:.3f} F{travelF}")
+        final.append("M84")
 
         # --------------------------------------
         # ADD BOUNDS COMMENTS
