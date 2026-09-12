@@ -103,7 +103,22 @@ class MainWindow(QMainWindow):
             self.ui.exposureComboBox.setCurrentIndex(-1)
         if hasattr(self.ui, 'expdurationComboBox'):
             self.ui.expdurationComboBox.setPlaceholderText("Select Duration")
+            self.ui.expdurationComboBox.addItems(["Manual", "Timer"])
             self.ui.expdurationComboBox.setCurrentIndex(-1)
+            
+            if hasattr(self.ui, 'pgmuvCheckBox'):
+                self.ui.expdurationComboBox.setEnabled(self.ui.pgmuvCheckBox.isChecked())
+                self.ui.pgmuvCheckBox.toggled.connect(self.ui.expdurationComboBox.setEnabled)
+            
+            self.uv_manual_seconds = 0
+            self._uv_manual_timer = QTimer(self)
+            self._uv_manual_timer.timeout.connect(self.updateUvManualTimer)
+            self.ui.expdurationComboBox.currentTextChanged.connect(self.onExpDurationChanged)
+            if hasattr(self.ui, 'uvonPushButton') and hasattr(self.ui, 'uvoffPushButton'):
+                self.ui.uvonPushButton.clicked.connect(self.handleUvOn)
+                self.ui.uvoffPushButton.clicked.connect(self.handleUvOff)
+            if hasattr(self.ui, 'pgmuvPushButton'):
+                self.ui.pgmuvPushButton.clicked.connect(self.showUvSetTime)
         
         loadJsonStyle(self, self.ui)
 
@@ -687,10 +702,7 @@ class MainWindow(QMainWindow):
         # close notifyContainer
         self.notifyMenuBtn1.clicked.connect(lambda: self.notifyMenuAction(self.notifyMenuBtn1))
         
-        # UV Exposure buttons
-        self.ui.uvonPushButton.clicked.connect(lambda: self.sendGcode("M106 P0 S255\n"))
-        self.ui.uvoffPushButton.clicked.connect(lambda: self.sendGcode("M106 P0 S0\n"))
-        
+
         # profile
         self.profileBtn.clicked.connect(lambda: self.profileAction(self.profileBtn))
         
@@ -985,32 +997,9 @@ class MainWindow(QMainWindow):
                 except:
                     self.ui.extpurgeLineEdit.setText(str(self.purge_amount))
 
-        # ----------------------------
-        # UV Exposure Feature Toggle
-        # ----------------------------
-        try:
-            uv_exposure_str = parser.get("features", "uv_exposure", fallback="False").strip()
-            self.uv_exposure = uv_exposure_str.lower() in ["true", "1", "yes"]
-            if not self.uv_exposure:
-                self.ui.widget_2.show()
-                self.ui.frame_18.show()
-                
-            uv_time_str = parser.get("features", "uv_exposure_time", fallback="0 min,0 sec").strip()
-            mins = 0
-            secs = 0
-            parts = uv_time_str.split(',')
-            for p in parts:
-                p = p.strip()
-                if 'min' in p:
-                    mins = int(re.sub(r'\D', '', p) or 0)
-                elif 'sec' in p:
-                    secs = int(re.sub(r'\D', '', p) or 0)
-            self.uv_time_ms = (mins * 60 + secs) * 1000
-            self.logger.info(f"UV Exposure Time loaded: {self.uv_time_ms} ms")
-        except Exception as e:
-            self.logger.error(f"Failed to read uv_exposure config: {e}")
-            self.uv_time_ms = 0
-
+        # UV widgets are unconditionally shown
+        self.ui.widget_2.show()
+        self.ui.frame_18.show()
     def initSetting(self):
 
         conf_name = "focus"
@@ -1336,10 +1325,6 @@ class MainWindow(QMainWindow):
         else:
             gcode = gstr
 
-        if gcode.startswith("M106 P0 S255"):
-            uv_time_sec = getattr(self, 'uv_time_ms', 0) // 1000
-            if uv_time_sec > 0:
-                self.showAutoCloseMessage("UV Curing Started", f"UV light is ON. Please wait {uv_time_sec} seconds for curing.", timeout_ms=5000)
 
         self.sendGcode(gcode)
         
@@ -1456,6 +1441,111 @@ class MainWindow(QMainWindow):
                 self.popupLoop.quit()
             self.notifyMenu.collapseMenu()    
         
+    def onExpDurationChanged(self, text):
+        is_timer = (text == "Timer")
+        if hasattr(self.ui, 'pgmminSpinBox'):
+            self.ui.pgmminSpinBox.setEnabled(is_timer)
+        if hasattr(self.ui, 'pgmsecSpinBox'):
+            self.ui.pgmsecSpinBox.setEnabled(is_timer)
+            
+        if text == "Manual":
+            self.uv_manual_seconds = 0
+            if hasattr(self.ui, 'uvminLCDNumber') and hasattr(self.ui, 'uvsecLCDNumber'):
+                self.ui.uvminLCDNumber.display(0)
+                self.ui.uvsecLCDNumber.display(0)
+        else:
+            self._uv_manual_timer.stop()
+            if hasattr(self.ui, 'uvonPushButton') and hasattr(self.ui, 'uvoffPushButton'):
+                self.ui.uvonPushButton.setEnabled(True)
+                self.ui.uvoffPushButton.setEnabled(True)
+
+    def handleUvOn(self):
+        self.sendGcode("M106 P0 S255\n")
+        if hasattr(self.ui, 'uvonPushButton'):
+            self.ui.uvonPushButton.setEnabled(False)
+        if hasattr(self.ui, 'uvoffPushButton'):
+            self.ui.uvoffPushButton.setEnabled(True)
+            
+        if hasattr(self.ui, 'expdurationComboBox'):
+            duration_type = self.ui.expdurationComboBox.currentText()
+            if duration_type == "Manual":
+                self.uv_manual_seconds = 0
+                if hasattr(self.ui, 'uvminLCDNumber') and hasattr(self.ui, 'uvsecLCDNumber'):
+                    self.ui.uvminLCDNumber.display(0)
+                    self.ui.uvsecLCDNumber.display(0)
+                self._uv_manual_timer.start(1000)
+            elif duration_type == "Timer":
+                mins = self.ui.pgmminSpinBox.value() if hasattr(self.ui, 'pgmminSpinBox') else 0
+                secs = self.ui.pgmsecSpinBox.value() if hasattr(self.ui, 'pgmsecSpinBox') else 0
+                self.uv_timer_remaining = mins * 60 + secs
+                
+                if self.uv_timer_remaining > 0:
+                    if hasattr(self.ui, 'uvminLCDNumber') and hasattr(self.ui, 'uvsecLCDNumber'):
+                        self.ui.uvminLCDNumber.display(mins)
+                        self.ui.uvsecLCDNumber.display(secs)
+                    
+                    if not hasattr(self, '_uv_countdown_timer'):
+                        self._uv_countdown_timer = QTimer(self)
+                        self._uv_countdown_timer.timeout.connect(self.updateUvCountdownTimer)
+                    self._uv_countdown_timer.start(1000)
+                else:
+                    self.handleUvOff()
+
+    def handleUvOff(self):
+        self.sendGcode("M106 P0 S0\n")
+        if hasattr(self.ui, 'uvonPushButton'):
+            self.ui.uvonPushButton.setEnabled(True)
+        if hasattr(self.ui, 'uvoffPushButton'):
+            self.ui.uvoffPushButton.setEnabled(False)
+            
+        if hasattr(self, '_uv_manual_timer'):
+            self._uv_manual_timer.stop()
+        if hasattr(self, '_uv_countdown_timer'):
+            self._uv_countdown_timer.stop()
+            
+        if getattr(self, 'home_after_uv', False):
+            self.sendGcode("G28\n")
+            self.logger.info("UV curing finished, sending G28 to home.")
+            self.home_after_uv = False
+
+    def updateUvCountdownTimer(self):
+        self.uv_timer_remaining -= 1
+        if self.uv_timer_remaining <= 0:
+            if hasattr(self, '_uv_countdown_timer'):
+                self._uv_countdown_timer.stop()
+            self.handleUvOff()
+            return
+
+        mins = self.uv_timer_remaining // 60
+        secs = self.uv_timer_remaining % 60
+        if hasattr(self.ui, 'uvminLCDNumber') and hasattr(self.ui, 'uvsecLCDNumber'):
+            self.ui.uvminLCDNumber.display(mins)
+            self.ui.uvsecLCDNumber.display(secs)
+
+    def updateUvManualTimer(self):
+        self.uv_manual_seconds += 1
+        mins = self.uv_manual_seconds // 60
+        secs = self.uv_manual_seconds % 60
+        if hasattr(self.ui, 'uvminLCDNumber') and hasattr(self.ui, 'uvsecLCDNumber'):
+            self.ui.uvminLCDNumber.display(mins)
+            self.ui.uvsecLCDNumber.display(secs)
+
+    def showUvSetTime(self):
+        if not (hasattr(self.ui, 'pgmuvCheckBox') and self.ui.pgmuvCheckBox.isChecked()):
+            self.showAutoCloseMessage("UV Setup", "UV is turned OFF.", timeout_ms=3000)
+            return
+
+        if hasattr(self.ui, 'expdurationComboBox'):
+            duration_type = self.ui.expdurationComboBox.currentText()
+            if duration_type == "Timer":
+                mins = self.ui.pgmminSpinBox.value() if hasattr(self.ui, 'pgmminSpinBox') else 0
+                secs = self.ui.pgmsecSpinBox.value() if hasattr(self.ui, 'pgmsecSpinBox') else 0
+                self.showAutoCloseMessage("UV Setup", f"UV is set for {mins} minutes and {secs} seconds.", timeout_ms=3000)
+            elif duration_type == "Manual":
+                self.showAutoCloseMessage("UV Setup", "UV is set to Manual mode.", timeout_ms=3000)
+            else:
+                self.showAutoCloseMessage("UV Setup", "UV mode is not set.", timeout_ms=3000)
+
     def checkButtonGroup(self):
         """Required by Custom_Widgets library for QPushButtonGroup in style.json."""
         pass
@@ -2275,8 +2365,7 @@ class MainWindow(QMainWindow):
             draw_z,
             feedrate,
             user_set_drawz,
-            self.layer_height,
-            getattr(self, 'uv_time_ms', 0)
+            self.layer_height
         )
 
         # ======================================================
@@ -2472,9 +2561,33 @@ class MainWindow(QMainWindow):
         self.wm.operate(self.printWidget.pause, "enable", False)
         self.wm.operate(self.printWidget.abort, "enable", False)
         
-        # Go to home position automatically when print finishes
-        self.sendGcode("G28\n")
-        self.logger.info("Print finished, sending G28 to home.")
+        # Trigger UV logic
+        uv_triggered = False
+        if hasattr(self.ui, 'pgmuvCheckBox') and self.ui.pgmuvCheckBox.isChecked():
+            if hasattr(self.ui, 'expdurationComboBox'):
+                duration_type = self.ui.expdurationComboBox.currentText()
+                if duration_type in ["Timer", "Manual"]:
+                    # Ensure timer has a value > 0 before triggering if Timer mode
+                    is_valid_timer = True
+                    if duration_type == "Timer":
+                        mins = self.ui.pgmminSpinBox.value() if hasattr(self.ui, 'pgmminSpinBox') else 0
+                        secs = self.ui.pgmsecSpinBox.value() if hasattr(self.ui, 'pgmsecSpinBox') else 0
+                        if (mins * 60 + secs) <= 0:
+                            is_valid_timer = False
+                            
+                    if is_valid_timer:
+                        uv_triggered = True
+                        self.home_after_uv = True
+                        self.showAutoCloseMessage("UV Curing", "UV is on. Curing in progress...", timeout_ms=3000)
+                        if hasattr(self.ui, 'uvPpage'):
+                            self.showMainPage(self.ui.uvPpage)
+                        
+                        self.handleUvOn()
+
+        if not uv_triggered:
+            # Go to home position automatically when print finishes
+            self.sendGcode("G28\n")
+            self.logger.info("Print finished, sending G28 to home.")
 
     def indexProgram(self):
         if self.pgm_run_flag and not self.pgm_pause_flag:

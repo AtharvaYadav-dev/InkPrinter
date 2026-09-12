@@ -5069,3 +5069,238 @@ Please re-adjust the offsets.
 2026-09-11 18:04 - INFO - ==================================================
 2026-09-11 18:04 - INFO - New session close at 2026-09-11 18:04
 2026-09-11 18:04 - INFO - ==================================================
+2026-09-12 10:12 - INFO - ==================================================
+2026-09-12 10:12 - INFO - New session START at 2026-09-12 10:12
+2026-09-12 10:12 - INFO - ==================================================
+2026-09-12 10:12 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-09-12 10:12 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-09-12 10:12 - INFO - Loaded draw_z from config: Z=41.5, draw_z_UP=20.75
+2026-09-12 10:12 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-09-12 10:12 - INFO - UV Exposure Time loaded: 10000 ms
+2026-09-12 10:12 - INFO - INI file initialized
+2026-09-12 10:12 - INFO - UI load successful
+2026-09-12 10:12 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-12 10:12 - INFO - Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-12 10:14 - INFO - ==================================================
+2026-09-12 10:14 - INFO - New session START at 2026-09-12 10:14
+2026-09-12 10:14 - INFO - ==================================================
+2026-09-12 10:14 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-09-12 10:14 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-09-12 10:14 - INFO - Loaded draw_z from config: Z=41.5, draw_z_UP=20.75
+2026-09-12 10:14 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-09-12 10:14 - INFO - UV Exposure Time loaded: 10000 ms
+2026-09-12 10:14 - INFO - INI file initialized
+2026-09-12 10:14 - INFO - UI load successful
+2026-09-12 10:14 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-12 10:14 - INFO - Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-12 10:16 - INFO - ==================================================
+2026-09-12 10:16 - INFO - New session START at 2026-09-12 10:16
+2026-09-12 10:16 - INFO - ==================================================
+2026-09-12 10:16 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-09-12 10:16 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-09-12 10:16 - INFO - Loaded draw_z from config: Z=41.5, draw_z_UP=20.75
+2026-09-12 10:16 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-09-12 10:16 - INFO - UV Exposure Time loaded: 10000 ms
+2026-09-12 10:16 - INFO - INI file initialized
+2026-09-12 10:16 - INFO - UI load successful
+2026-09-12 10:16 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-12 10:16 - INFO - Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-12 10:23 - INFO - ==================================================
+2026-09-12 10:23 - INFO - New session START at 2026-09-12 10:23
+2026-09-12 10:23 - INFO - ==================================================
+2026-09-12 10:23 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-09-12 10:23 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-09-12 10:23 - INFO - Loaded draw_z from config: Z=41.5, draw_z_UP=20.75
+2026-09-12 10:23 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-09-12 10:23 - INFO - UV Exposure Time loaded: 10000 ms
+2026-09-12 10:23 - INFO - INI file initialized
+2026-09-12 10:23 - INFO - UI load successful
+2026-09-12 10:23 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-12 10:23 - INFO - Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-12 10:27 - INFO - ==================================================
+2026-09-12 10:27 - INFO - New session START at 2026-09-12 10:27
+2026-09-12 10:27 - INFO - ==================================================
+2026-09-12 10:27 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-09-12 10:27 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-09-12 10:27 - INFO - Loaded draw_z from config: Z=41.5, draw_z_UP=20.75
+2026-09-12 10:27 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-09-12 10:27 - INFO - UV Exposure Time loaded: 10000 ms
+2026-09-12 10:27 - INFO - INI file initialized
+2026-09-12 10:27 - INFO - UI load successful
+2026-09-12 10:27 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-12 10:27 - INFO - Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-12 10:27 - INFO - Serial communication stopped
+2026-09-12 10:27 - INFO - COM connection close successfully
+2026-09-12 10:27 - INFO - Main window close successfully
+2026-09-12 10:27 - INFO - ==================================================
+2026-09-12 10:27 - INFO - New session close at 2026-09-12 10:27
+2026-09-12 10:27 - INFO - ==================================================
+2026-09-12 10:28 - INFO - ==================================================
+2026-09-12 10:28 - INFO - New session START at 2026-09-12 10:28
+2026-09-12 10:28 - INFO - ==================================================
+2026-09-12 10:28 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-09-12 10:28 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-09-12 10:28 - INFO - Loaded draw_z from config: Z=41.5, draw_z_UP=20.75
+2026-09-12 10:28 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-09-12 10:28 - INFO - UV Exposure Time loaded: 10000 ms
+2026-09-12 10:28 - INFO - INI file initialized
+2026-09-12 10:28 - INFO - UI load successful
+2026-09-12 10:28 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-12 10:28 - INFO - Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-12 10:29 - INFO - ==================================================
+2026-09-12 10:29 - INFO - New session START at 2026-09-12 10:29
+2026-09-12 10:29 - INFO - ==================================================
+2026-09-12 10:29 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-09-12 10:29 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-09-12 10:29 - INFO - Loaded draw_z from config: Z=41.5, draw_z_UP=20.75
+2026-09-12 10:29 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-09-12 10:29 - INFO - UV Exposure Time loaded: 10000 ms
+2026-09-12 10:29 - INFO - INI file initialized
+2026-09-12 10:29 - INFO - UI load successful
+2026-09-12 10:29 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-12 10:29 - INFO - Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-12 10:29 - INFO - Serial communication stopped
+2026-09-12 10:29 - INFO - COM connection close successfully
+2026-09-12 10:29 - INFO - Main window close successfully
+2026-09-12 10:29 - INFO - ==================================================
+2026-09-12 10:29 - INFO - New session close at 2026-09-12 10:29
+2026-09-12 10:29 - INFO - ==================================================
+2026-09-12 10:36 - INFO - ==================================================
+2026-09-12 10:36 - INFO - New session START at 2026-09-12 10:36
+2026-09-12 10:36 - INFO - ==================================================
+2026-09-12 10:36 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-09-12 10:36 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-09-12 10:36 - INFO - Loaded draw_z from config: Z=41.5, draw_z_UP=20.75
+2026-09-12 10:36 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-09-12 10:36 - INFO - INI file initialized
+2026-09-12 10:36 - INFO - UI load successful
+2026-09-12 10:36 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-12 10:36 - INFO - Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-12 10:38 - INFO - ==================================================
+2026-09-12 10:38 - INFO - New session START at 2026-09-12 10:38
+2026-09-12 10:38 - INFO - ==================================================
+2026-09-12 10:38 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-09-12 10:38 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-09-12 10:38 - INFO - Loaded draw_z from config: Z=41.5, draw_z_UP=20.75
+2026-09-12 10:38 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-09-12 10:38 - INFO - INI file initialized
+2026-09-12 10:38 - INFO - UI load successful
+2026-09-12 10:38 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-12 10:38 - INFO - Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-12 10:39 - INFO - ==================================================
+2026-09-12 10:39 - INFO - New session START at 2026-09-12 10:39
+2026-09-12 10:39 - INFO - ==================================================
+2026-09-12 10:39 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-09-12 10:39 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-09-12 10:39 - INFO - Loaded draw_z from config: Z=41.5, draw_z_UP=20.75
+2026-09-12 10:39 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-09-12 10:39 - INFO - INI file initialized
+2026-09-12 10:39 - INFO - UI load successful
+2026-09-12 10:39 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-12 10:39 - INFO - Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-12 10:43 - INFO - ==================================================
+2026-09-12 10:43 - INFO - New session START at 2026-09-12 10:43
+2026-09-12 10:43 - INFO - ==================================================
+2026-09-12 10:43 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-09-12 10:43 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-09-12 10:43 - INFO - Loaded draw_z from config: Z=41.5, draw_z_UP=20.75
+2026-09-12 10:43 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-09-12 10:43 - INFO - INI file initialized
+2026-09-12 10:43 - INFO - UI load successful
+2026-09-12 10:43 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-12 10:43 - INFO - Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-12 10:43 - INFO - UV turned OFF manually.
+2026-09-12 10:43 - INFO - Serial communication stopped
+2026-09-12 10:43 - INFO - COM connection close successfully
+2026-09-12 10:43 - INFO - Main window close successfully
+2026-09-12 10:43 - INFO - ==================================================
+2026-09-12 10:43 - INFO - New session close at 2026-09-12 10:43
+2026-09-12 10:43 - INFO - ==================================================
+2026-09-12 10:46 - INFO - ==================================================
+2026-09-12 10:46 - INFO - New session START at 2026-09-12 10:46
+2026-09-12 10:46 - INFO - ==================================================
+2026-09-12 10:46 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-09-12 10:46 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-09-12 10:46 - INFO - Loaded draw_z from config: Z=41.5, draw_z_UP=20.75
+2026-09-12 10:46 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-09-12 10:46 - INFO - INI file initialized
+2026-09-12 10:46 - INFO - UI load successful
+2026-09-12 10:46 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-12 10:46 - INFO - Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-12 10:46 - INFO - UV turned ON manually.
+2026-09-12 10:46 - INFO - UV turned OFF manually.
+2026-09-12 10:46 - INFO - UV turned ON manually.
+2026-09-12 10:46 - INFO - UV turned OFF manually.
+2026-09-12 10:46 - INFO - UV turned ON manually.
+2026-09-12 10:47 - INFO - UV turned OFF manually.
+2026-09-12 10:50 - INFO - ==================================================
+2026-09-12 10:50 - INFO - New session START at 2026-09-12 10:50
+2026-09-12 10:50 - INFO - ==================================================
+2026-09-12 10:50 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-09-12 10:50 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-09-12 10:50 - INFO - Loaded draw_z from config: Z=41.5, draw_z_UP=20.75
+2026-09-12 10:50 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-09-12 10:50 - INFO - INI file initialized
+2026-09-12 10:50 - INFO - UI load successful
+2026-09-12 10:50 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-12 10:50 - INFO - Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-12 10:50 - INFO - Serial communication stopped
+2026-09-12 10:50 - INFO - COM connection close successfully
+2026-09-12 10:50 - INFO - Main window close successfully
+2026-09-12 10:50 - INFO - ==================================================
+2026-09-12 10:50 - INFO - New session close at 2026-09-12 10:50
+2026-09-12 10:50 - INFO - ==================================================
+2026-09-12 10:54 - INFO - ==================================================
+2026-09-12 10:54 - INFO - New session START at 2026-09-12 10:54
+2026-09-12 10:54 - INFO - ==================================================
+2026-09-12 10:54 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-09-12 10:54 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-09-12 10:54 - INFO - Loaded draw_z from config: Z=41.5, draw_z_UP=20.75
+2026-09-12 10:54 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-09-12 10:54 - INFO - INI file initialized
+2026-09-12 10:54 - INFO - UI load successful
+2026-09-12 10:54 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-12 10:54 - INFO - Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-12 10:54 - INFO - UV turned ON manually.
+2026-09-12 10:54 - INFO - UV turned OFF manually.
+2026-09-12 10:58 - INFO - ==================================================
+2026-09-12 10:58 - INFO - New session START at 2026-09-12 10:58
+2026-09-12 10:58 - INFO - ==================================================
+2026-09-12 10:58 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-09-12 10:58 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-09-12 10:58 - INFO - Loaded draw_z from config: Z=41.5, draw_z_UP=20.75
+2026-09-12 10:58 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-09-12 10:58 - INFO - INI file initialized
+2026-09-12 10:58 - INFO - UI load successful
+2026-09-12 10:58 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-12 10:58 - INFO - Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-12 10:58 - INFO - UV turned ON manually.
+2026-09-12 10:59 - INFO - UV turned OFF manually.
+2026-09-12 11:01 - INFO - ==================================================
+2026-09-12 11:01 - INFO - New session START at 2026-09-12 11:01
+2026-09-12 11:01 - INFO - ==================================================
+2026-09-12 11:01 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-09-12 11:01 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-09-12 11:01 - INFO - Loaded draw_z from config: Z=41.5, draw_z_UP=20.75
+2026-09-12 11:01 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-09-12 11:01 - INFO - INI file initialized
+2026-09-12 11:01 - INFO - UI load successful
+2026-09-12 11:01 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-12 11:01 - INFO - Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-12 11:08 - INFO - ==================================================
+2026-09-12 11:08 - INFO - New session START at 2026-09-12 11:08
+2026-09-12 11:08 - INFO - ==================================================
+2026-09-12 11:08 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-09-12 11:08 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-09-12 11:08 - INFO - Loaded draw_z from config: Z=41.5, draw_z_UP=20.75
+2026-09-12 11:08 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-09-12 11:08 - INFO - INI file initialized
+2026-09-12 11:08 - INFO - UI load successful
+2026-09-12 11:08 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-12 11:08 - INFO - Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-12 11:08 - INFO - Serial communication stopped
+2026-09-12 11:08 - INFO - COM connection close successfully
+2026-09-12 11:08 - INFO - Main window close successfully
+2026-09-12 11:08 - INFO - ==================================================
+2026-09-12 11:08 - INFO - New session close at 2026-09-12 11:08
+2026-09-12 11:08 - INFO - ==================================================

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'interfacekTapZZ.ui'
+## Form generated from reading UI file 'interfacerTGtjE.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.8.1
 ##
@@ -15,11 +15,12 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QFont, QFontDatabase, QGradient, QIcon,
     QImage, QKeySequence, QLinearGradient, QPainter,
     QPalette, QPixmap, QRadialGradient, QTransform)
-from PySide6.QtWidgets import (QApplication, QCheckBox, QComboBox, QFrame,
-    QHBoxLayout, QLCDNumber, QLabel, QLineEdit,
-    QMainWindow, QProgressBar, QPushButton, QRadioButton,
-    QSizePolicy, QSlider, QSpacerItem, QStackedWidget,
-    QTextEdit, QVBoxLayout, QWidget)
+from PySide6.QtWidgets import (QAbstractSpinBox, QApplication, QCheckBox, QComboBox,
+    QFrame, QHBoxLayout, QLCDNumber, QLabel,
+    QLineEdit, QMainWindow, QProgressBar, QPushButton,
+    QRadioButton, QSizePolicy, QSlider, QSpacerItem,
+    QSpinBox, QStackedWidget, QTextEdit, QVBoxLayout,
+    QWidget)
 
 from Custom_Widgets.QCustomSlideMenu import QCustomSlideMenu
 from Custom_Widgets.Widgets import QCustomStackedWidget
@@ -3762,7 +3763,10 @@ class Ui_MainWindow(object):
 
         self.parabkprPushButton = QPushButton(self.frame_28)
         self.parabkprPushButton.setObjectName(u"parabkprPushButton")
-        self.parabkprPushButton.setFont(font2)
+        font12 = QFont()
+        font12.setPointSize(17)
+        font12.setBold(True)
+        self.parabkprPushButton.setFont(font12)
         self.parabkprPushButton.setStyleSheet(u"QPushButton {\n"
 "	color: rgb(255, 255, 255);	\n"
 "	background-color: rgb(16, 42, 131);\n"
@@ -3806,7 +3810,7 @@ class Ui_MainWindow(object):
         self.frame_2.setFrameShadow(QFrame.Shadow.Raised)
         self.verticalLayout_56 = QVBoxLayout(self.frame_2)
         self.verticalLayout_56.setObjectName(u"verticalLayout_56")
-        self.verticalLayout_56.setContentsMargins(0, 0, 0, 0)
+        self.verticalLayout_56.setContentsMargins(0, 0, 0, -1)
         self.widget_2 = QWidget(self.frame_2)
         self.widget_2.setObjectName(u"widget_2")
         self.widget_2.setMaximumSize(QSize(16777215, 16777215))
@@ -3827,33 +3831,6 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_44.addWidget(self.pgmuvCheckBox, 0, Qt.AlignmentFlag.AlignHCenter)
 
-        self.label_23 = QLabel(self.widget_2)
-        self.label_23.setObjectName(u"label_23")
-        self.label_23.setMaximumSize(QSize(16777215, 16777215))
-        self.label_23.setFont(font9)
-        self.label_23.setStyleSheet(u"QLabel {\n"
-"    color: rgb(16, 42, 131);\n"
-"}")
-
-        self.horizontalLayout_44.addWidget(self.label_23)
-
-        self.exposureComboBox = QComboBox(self.widget_2)
-        self.exposureComboBox.setObjectName(u"exposureComboBox")
-        self.exposureComboBox.setMaximumSize(QSize(16777215, 30))
-        self.exposureComboBox.setStyleSheet(u"QComboBox {\n"
-"	background-color: rgb(144, 170, 197);\n"
-"    border: 2px solid rgb(16, 42, 131);\n"
-"	color: rgb(16, 42, 131);\n"
-"}\n"
-"\n"
-"QComboBox QAbstractItemView {\n"
-"	background-color: rgb(144, 170, 197);\n"
-"	selection-background-color: #A0D0F0;\n"
-"	color: rgb(16, 42, 131);\n"
-"}")
-
-        self.horizontalLayout_44.addWidget(self.exposureComboBox)
-
         self.label_24 = QLabel(self.widget_2)
         self.label_24.setObjectName(u"label_24")
         self.label_24.setMaximumSize(QSize(16777215, 16777215))
@@ -3866,7 +3843,8 @@ class Ui_MainWindow(object):
 
         self.expdurationComboBox = QComboBox(self.widget_2)
         self.expdurationComboBox.setObjectName(u"expdurationComboBox")
-        self.expdurationComboBox.setMaximumSize(QSize(16777215, 30))
+        self.expdurationComboBox.setMaximumSize(QSize(16777215, 40))
+        self.expdurationComboBox.setFont(font)
         self.expdurationComboBox.setStyleSheet(u"QComboBox {\n"
 "	background-color: rgb(144, 170, 197);\n"
 "    border: 2px solid rgb(16, 42, 131);\n"
@@ -3884,10 +3862,122 @@ class Ui_MainWindow(object):
         self.horizontalLayout_44.setStretch(1, 1)
         self.horizontalLayout_44.setStretch(2, 2)
         self.horizontalLayout_44.setStretch(3, 3)
-        self.horizontalLayout_44.setStretch(4, 2)
-        self.horizontalLayout_44.setStretch(5, 3)
 
         self.verticalLayout_56.addWidget(self.widget_2)
+
+        self.widget_12 = QWidget(self.frame_2)
+        self.widget_12.setObjectName(u"widget_12")
+        self.horizontalLayout_61 = QHBoxLayout(self.widget_12)
+        self.horizontalLayout_61.setObjectName(u"horizontalLayout_61")
+        self.horizontalLayout_61.setContentsMargins(9, 0, 9, -1)
+        self.label_22 = QLabel(self.widget_12)
+        self.label_22.setObjectName(u"label_22")
+        self.label_22.setFont(font9)
+        self.label_22.setStyleSheet(u"color: rgb(16, 42, 131);")
+        self.label_22.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.horizontalLayout_61.addWidget(self.label_22)
+
+        self.pgmminSpinBox = QSpinBox(self.widget_12)
+        self.pgmminSpinBox.setObjectName(u"pgmminSpinBox")
+        self.pgmminSpinBox.setEnabled(False)
+        sizePolicy6.setHeightForWidth(self.pgmminSpinBox.sizePolicy().hasHeightForWidth())
+        self.pgmminSpinBox.setSizePolicy(sizePolicy6)
+        self.pgmminSpinBox.setMinimumSize(QSize(0, 0))
+        self.pgmminSpinBox.setMaximumSize(QSize(16777215, 40))
+        self.pgmminSpinBox.setFont(font9)
+        self.pgmminSpinBox.setStyleSheet(u"QSpinBox {\n"
+"	background-color: rgb(144, 170, 197);\n"
+"    border: 2px solid rgb(16, 42, 131);\n"
+"	color: rgb(16, 42, 131);\n"
+"    padding-right: 15px;\n"
+"}\n"
+"\n"
+"QSpinBox:disabled {\n"
+"    background-color: rgb(172, 172, 172);\n"
+"	color: rgb(255, 255, 255);\n"
+"}\n"
+"\n"
+"\n"
+"QSpinBox::up-button, QSpinBox::down-button {\n"
+"                                                                width: 25px;\n"
+"}")
+        self.pgmminSpinBox.setWrapping(False)
+        self.pgmminSpinBox.setButtonSymbols(QAbstractSpinBox.ButtonSymbols.PlusMinus)
+        self.pgmminSpinBox.setMaximum(60)
+
+        self.horizontalLayout_61.addWidget(self.pgmminSpinBox)
+
+        self.label_28 = QLabel(self.widget_12)
+        self.label_28.setObjectName(u"label_28")
+        self.label_28.setFont(font9)
+        self.label_28.setStyleSheet(u"color: rgb(16, 42, 131);")
+        self.label_28.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.horizontalLayout_61.addWidget(self.label_28)
+
+        self.pgmsecSpinBox = QSpinBox(self.widget_12)
+        self.pgmsecSpinBox.setObjectName(u"pgmsecSpinBox")
+        self.pgmsecSpinBox.setEnabled(False)
+        sizePolicy6.setHeightForWidth(self.pgmsecSpinBox.sizePolicy().hasHeightForWidth())
+        self.pgmsecSpinBox.setSizePolicy(sizePolicy6)
+        self.pgmsecSpinBox.setMinimumSize(QSize(0, 0))
+        self.pgmsecSpinBox.setMaximumSize(QSize(16777215, 40))
+        self.pgmsecSpinBox.setFont(font9)
+        self.pgmsecSpinBox.setStyleSheet(u"QSpinBox {\n"
+"	background-color: rgb(144, 170, 197);\n"
+"    border: 2px solid rgb(16, 42, 131);\n"
+"	color: rgb(16, 42, 131);\n"
+"    padding-right: 15px;\n"
+"}\n"
+"\n"
+"QSpinBox:disabled {\n"
+"    background-color: rgb(172, 172, 172);\n"
+"	color: rgb(255, 255, 255);\n"
+"}\n"
+"\n"
+"\n"
+"QSpinBox::up-button, QSpinBox::down-button {\n"
+"                                                                width: 25px;\n"
+"}")
+        self.pgmsecSpinBox.setButtonSymbols(QAbstractSpinBox.ButtonSymbols.PlusMinus)
+        self.pgmsecSpinBox.setAccelerated(False)
+        self.pgmsecSpinBox.setProperty(u"showGroupSeparator", False)
+        self.pgmsecSpinBox.setMaximum(60)
+
+        self.horizontalLayout_61.addWidget(self.pgmsecSpinBox)
+
+        self.pgmuvPushButton = QPushButton(self.widget_12)
+        self.pgmuvPushButton.setObjectName(u"pgmuvPushButton")
+        self.pgmuvPushButton.setEnabled(True)
+        sizePolicy6.setHeightForWidth(self.pgmuvPushButton.sizePolicy().hasHeightForWidth())
+        self.pgmuvPushButton.setSizePolicy(sizePolicy6)
+        self.pgmuvPushButton.setMaximumSize(QSize(16777215, 40))
+        self.pgmuvPushButton.setFont(font2)
+        self.pgmuvPushButton.setStyleSheet(u"QPushButton {\n"
+"	color: rgb(255, 255, 255);	\n"
+"	background-color: rgb(16, 42, 131);\n"
+"	border-color: transparent;\n"
+"	border-style: outset;\n"
+"	border-radius: 15px;\n"
+"	border-width: 2px;\n"
+"	padding: 6px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"	color: rgb(16, 42, 131);\n"
+"	background-color: rgb(167, 198, 229);\n"
+"	border-color: rgb(16, 42, 131);\n"
+"}\n"
+"\n"
+"QPushButton:disabled {\n"
+"	background-color: rgb(172, 172, 172);\n"
+"}")
+
+        self.horizontalLayout_61.addWidget(self.pgmuvPushButton)
+
+
+        self.verticalLayout_56.addWidget(self.widget_12)
 
         self.frame_18 = QFrame(self.frame_2)
         self.frame_18.setObjectName(u"frame_18")
@@ -3909,6 +3999,7 @@ class Ui_MainWindow(object):
         self.uvminLCDNumber = QLCDNumber(self.frame_18)
         self.uvminLCDNumber.setObjectName(u"uvminLCDNumber")
         self.uvminLCDNumber.setMaximumSize(QSize(16777215, 80))
+        self.uvminLCDNumber.setFont(font)
 
         self.horizontalLayout_69.addWidget(self.uvminLCDNumber)
 
@@ -3925,6 +4016,7 @@ class Ui_MainWindow(object):
         self.uvsecLCDNumber = QLCDNumber(self.frame_18)
         self.uvsecLCDNumber.setObjectName(u"uvsecLCDNumber")
         self.uvsecLCDNumber.setMaximumSize(QSize(16777215, 80))
+        self.uvsecLCDNumber.setFont(font)
 
         self.horizontalLayout_69.addWidget(self.uvsecLCDNumber)
 
@@ -3963,10 +4055,11 @@ class Ui_MainWindow(object):
 
         self.uvonPushButton = QPushButton(self.frame_21)
         self.uvonPushButton.setObjectName(u"uvonPushButton")
+        self.uvonPushButton.setEnabled(False)
         sizePolicy5.setHeightForWidth(self.uvonPushButton.sizePolicy().hasHeightForWidth())
         self.uvonPushButton.setSizePolicy(sizePolicy5)
         self.uvonPushButton.setMinimumSize(QSize(0, 0))
-        self.uvonPushButton.setMaximumSize(QSize(16777215, 40))
+        self.uvonPushButton.setMaximumSize(QSize(180, 40))
         self.uvonPushButton.setFont(font2)
         self.uvonPushButton.setStyleSheet(u"QPushButton {\n"
 "	color: rgb(255, 255, 255);	\n"
@@ -3992,11 +4085,11 @@ class Ui_MainWindow(object):
 
         self.uvoffPushButton = QPushButton(self.frame_21)
         self.uvoffPushButton.setObjectName(u"uvoffPushButton")
-        self.uvoffPushButton.setEnabled(True)
+        self.uvoffPushButton.setEnabled(False)
         sizePolicy5.setHeightForWidth(self.uvoffPushButton.sizePolicy().hasHeightForWidth())
         self.uvoffPushButton.setSizePolicy(sizePolicy5)
         self.uvoffPushButton.setMinimumSize(QSize(0, 0))
-        self.uvoffPushButton.setMaximumSize(QSize(16777215, 40))
+        self.uvoffPushButton.setMaximumSize(QSize(180, 40))
         self.uvoffPushButton.setFont(font2)
         self.uvoffPushButton.setStyleSheet(u"QPushButton {\n"
 "	color: rgb(255, 255, 255);	\n"
@@ -4028,6 +4121,7 @@ class Ui_MainWindow(object):
 
         self.frame_29 = QFrame(self.frame_2)
         self.frame_29.setObjectName(u"frame_29")
+        self.frame_29.setMaximumSize(QSize(16777215, 16777215))
         self.frame_29.setFrameShape(QFrame.Shape.StyledPanel)
         self.frame_29.setFrameShadow(QFrame.Shadow.Raised)
         self.horizontalLayout_67 = QHBoxLayout(self.frame_29)
@@ -4039,6 +4133,7 @@ class Ui_MainWindow(object):
 
         self.parabkuvPushButton = QPushButton(self.frame_29)
         self.parabkuvPushButton.setObjectName(u"parabkuvPushButton")
+        self.parabkuvPushButton.setMaximumSize(QSize(16777215, 16777215))
         self.parabkuvPushButton.setFont(font2)
         self.parabkuvPushButton.setStyleSheet(u"QPushButton {\n"
 "	color: rgb(255, 255, 255);	\n"
@@ -4069,6 +4164,10 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_56.addWidget(self.frame_29)
 
+        self.verticalLayout_56.setStretch(0, 1)
+        self.verticalLayout_56.setStretch(1, 1)
+        self.verticalLayout_56.setStretch(2, 1)
+        self.verticalLayout_56.setStretch(3, 1)
 
         self.horizontalLayout_43.addWidget(self.frame_2)
 
@@ -4542,10 +4641,10 @@ class Ui_MainWindow(object):
         self.verticalLayout_13.setContentsMargins(5, 5, 0, 0)
         self.notifyLabel = QLabel(self.notifySubContainer)
         self.notifyLabel.setObjectName(u"notifyLabel")
-        font12 = QFont()
-        font12.setPointSize(10)
-        font12.setBold(True)
-        self.notifyLabel.setFont(font12)
+        font13 = QFont()
+        font13.setPointSize(10)
+        font13.setBold(True)
+        self.notifyLabel.setFont(font13)
 
         self.verticalLayout_13.addWidget(self.notifyLabel, 0, Qt.AlignmentFlag.AlignTop)
 
@@ -4633,8 +4732,8 @@ class Ui_MainWindow(object):
 
         self.centerMenuPages.setCurrentIndex(3)
         self.infoSubPages.setCurrentIndex(1)
-        self.mainPages.setCurrentIndex(6)
-        self.stackedWidget.setCurrentIndex(1)
+        self.mainPages.setCurrentIndex(5)
+        self.stackedWidget.setCurrentIndex(2)
 
 
         QMetaObject.connectSlotsByName(MainWindow)
@@ -4825,9 +4924,11 @@ class Ui_MainWindow(object):
         self.parabkprPushButton.setText("")
         self.label_6.setText(QCoreApplication.translate("MainWindow", u"UV :", None))
         self.pgmuvCheckBox.setText("")
-        self.label_23.setText(QCoreApplication.translate("MainWindow", u" Exposure :", None))
         self.label_24.setText(QCoreApplication.translate("MainWindow", u"Exposure \n"
 "Duration:", None))
+        self.label_22.setText(QCoreApplication.translate("MainWindow", u"MIN", None))
+        self.label_28.setText(QCoreApplication.translate("MainWindow", u"SEC", None))
+        self.pgmuvPushButton.setText(QCoreApplication.translate("MainWindow", u"SET", None))
         self.label_44.setText(QCoreApplication.translate("MainWindow", u"Timer : ", None))
         self.label_45.setText(QCoreApplication.translate("MainWindow", u"Min", None))
         self.label_46.setText(QCoreApplication.translate("MainWindow", u"Sec", None))
