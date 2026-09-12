@@ -1505,7 +1505,7 @@ class MainWindow(QMainWindow):
             
         if getattr(self, 'home_after_uv', False):
             self.sendGcode("G91\n")
-            self.sendGcode("G0 Z-5.000 F300\n")
+            self.sendGcode("G0 Z-10.000 F300\n")
             self.sendGcode("G90\n")
             self.sendGcode("G28\n")
             self.logger.info("UV curing finished, sending G28 to home.")
@@ -2548,7 +2548,7 @@ class MainWindow(QMainWindow):
             
             # Safe abort sequence
             self.sendGcode("G91\n")            # Relative mode
-            self.sendGcode("G0 Z-5.000 F300\n") # Safe Z hop up 5mm
+            self.sendGcode("G0 Z-10.000 F300\n") # Safe Z hop up 5mm
             self.sendGcode("G90\n")            # Absolute mode
             self.sendGcode("G28\n")            # Go to home position
             
@@ -2614,7 +2614,7 @@ class MainWindow(QMainWindow):
         if not uv_triggered:
             # Go to home position automatically when print finishes
             self.sendGcode("G91\n")
-            self.sendGcode("G0 Z-5.000 F300\n")
+            self.sendGcode("G0 Z-10.000 F300\n")
             self.sendGcode("G90\n")
             self.sendGcode("G28\n")
             self.logger.info("Print finished, sending G28 to home.")
