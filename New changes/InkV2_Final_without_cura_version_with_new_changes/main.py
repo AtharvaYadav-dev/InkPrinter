@@ -1504,6 +1504,9 @@ class MainWindow(QMainWindow):
             self._uv_countdown_timer.stop()
             
         if getattr(self, 'home_after_uv', False):
+            self.sendGcode("G91\n")
+            self.sendGcode("G0 Z5.000 F1800\n")
+            self.sendGcode("G90\n")
             self.sendGcode("G28\n")
             self.logger.info("UV curing finished, sending G28 to home.")
             self.home_after_uv = False
@@ -2543,10 +2546,9 @@ class MainWindow(QMainWindow):
             self.programInit()
             
             # Safe abort sequence
-            # self.sendGcode("M118 A1 P2 UO\n")  # UV off just in case
-            # self.sendGcode("G91\n")            # Relative mode
-            # self.sendGcode("G0 Z5.000 F1800\n") # Safe Z hop up 5mm
-            # self.sendGcode("G90\n")            # Absolute mode
+            self.sendGcode("G91\n")            # Relative mode
+            self.sendGcode("G0 Z5.000 F1800\n") # Safe Z hop up 5mm
+            self.sendGcode("G90\n")            # Absolute mode
             self.sendGcode("G28\n")            # Go to home position
             
             self.logger.info("Print Status : ABORT")
@@ -2610,8 +2612,12 @@ class MainWindow(QMainWindow):
 
         if not uv_triggered:
             # Go to home position automatically when print finishes
+            self.sendGcode("G91\n")
+            self.sendGcode("G0 Z5.000 F1800\n")
+            self.sendGcode("G90\n")
             self.sendGcode("G28\n")
             self.logger.info("Print finished, sending G28 to home.")
+
 
     def indexProgram(self):
         if self.pgm_run_flag and not self.pgm_pause_flag:
