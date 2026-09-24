@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'interfacerTGtjE.ui'
+## Form generated from reading UI file 'interfaceFdTxwI.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.8.1
 ##
@@ -4635,6 +4635,12 @@ class Ui_MainWindow(object):
         sizePolicy6.setHeightForWidth(self.notifySubContainer.sizePolicy().hasHeightForWidth())
         self.notifySubContainer.setSizePolicy(sizePolicy6)
         self.notifySubContainer.setMaximumSize(QSize(16777215, 150))
+        self.notifySubContainer.setStyleSheet(u"QWidget#notifySubContainer {\n"
+"    background-color: rgb(167, 198, 229);\n"
+"    color: rgb(16, 42, 83);\n"
+"    border-radius: 15px;\n"
+"    border: 2px solid rgb(16, 42, 131);\n"
+"}")
         self.verticalLayout_13 = QVBoxLayout(self.notifySubContainer)
         self.verticalLayout_13.setSpacing(0)
         self.verticalLayout_13.setObjectName(u"verticalLayout_13")
@@ -4642,9 +4648,19 @@ class Ui_MainWindow(object):
         self.notifyLabel = QLabel(self.notifySubContainer)
         self.notifyLabel.setObjectName(u"notifyLabel")
         font13 = QFont()
-        font13.setPointSize(10)
         font13.setBold(True)
         self.notifyLabel.setFont(font13)
+        self.notifyLabel.setStyleSheet(u"QLabel#notifyLabel {\n"
+"    background-color: rgb(16, 42, 131);\n"
+"    color: white;\n"
+"    font-weight: bold;\n"
+"    font-size: 14px;\n"
+"    padding-left: 15px;\n"
+"    border-top-left-radius: 13px;\n"
+"    border-top-right-radius: 13px;\n"
+"    border-bottom-left-radius: 0px;\n"
+"    border-bottom-right-radius: 0px;\n"
+"}")
 
         self.verticalLayout_13.addWidget(self.notifyLabel, 0, Qt.AlignmentFlag.AlignTop)
 
@@ -4656,11 +4672,30 @@ class Ui_MainWindow(object):
         self.horizontalLayout_3.setObjectName(u"horizontalLayout_3")
         self.notifyTextEdit = QTextEdit(self.frame)
         self.notifyTextEdit.setObjectName(u"notifyTextEdit")
+        self.notifyTextEdit.setStyleSheet(u"QTextEdit#notifyTextEdit {\n"
+"    background-color: transparent;\n"
+"    color: rgb(16, 42, 83);\n"
+"    border: none;\n"
+"    font-size: 13px;\n"
+"    padding: 10px 15px;\n"
+"}\n"
+"")
 
         self.horizontalLayout_3.addWidget(self.notifyTextEdit)
 
         self.closeNotifyPushButton = QPushButton(self.frame)
         self.closeNotifyPushButton.setObjectName(u"closeNotifyPushButton")
+        self.closeNotifyPushButton.setStyleSheet(u"QPushButton#closeNotifyPushButton {\n"
+"    background-color: transparent;\n"
+"    border: none;\n"
+"    padding: 5px;\n"
+"    margin-right: 5px;\n"
+"}\n"
+"QPushButton#closeNotifyPushButton:hover {\n"
+"    background-color: rgba(16, 42, 131, 50);\n"
+"    border-radius: 15px;\n"
+"}\n"
+"")
         self.closeNotifyPushButton.setText(u"")
         icon23 = QIcon()
         icon23.addFile(u":/icons/icons/x-octagon.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
@@ -4963,8 +4998,8 @@ class Ui_MainWindow(object):
 "hr { height: 1px; border-width: 0; }\n"
 "li.unchecked::marker { content: \"\\2610\"; }\n"
 "li.checked::marker { content: \"\\2612\"; }\n"
-"</style></head><body style=\" font-family:'Segoe UI'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Notification Message</p></body></html>", None))
+"</style></head><body style=\" font-family:'Segoe UI'; font-size:13px; font-weight:400; font-style:normal;\">\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:9pt;\">Notification Message</span></p></body></html>", None))
         self.footerLabel.setText(QCoreApplication.translate("MainWindow", u"Copyright Sp\u00e9cialis\u00e9 Products Pvt. Ltd.", None))
     # retranslateUi
 

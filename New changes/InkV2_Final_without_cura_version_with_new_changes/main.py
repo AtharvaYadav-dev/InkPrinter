@@ -126,9 +126,6 @@ class MainWindow(QMainWindow):
 
         # notify menu widgets
         self.notifyMenu = self.findChild(QCustomSlideMenu, "notifyContainer")
-        self.notifyMenuBtn1 = self.findChild(QPushButton, "closeNotifyPushButton")
-        if self.notifyMenu:
-            self.notifyMenu.setMaximumHeight(180)
 
         NotifierUI.setup(self)
 
@@ -699,9 +696,7 @@ class MainWindow(QMainWindow):
         # close centerMenuContainer
         self.centerMenuBtn4.clicked.connect(lambda: self.centerMenuAction(self.centerMenuBtn4))
         
-        # close notifyContainer
-        self.notifyMenuBtn1.clicked.connect(lambda: self.notifyMenuAction(self.notifyMenuBtn1))
-        
+
 
         # profile
         self.profileBtn.clicked.connect(lambda: self.profileAction(self.profileBtn))
@@ -1432,15 +1427,7 @@ class MainWindow(QMainWindow):
                 self.centerMenuActiveBtn.setStyleSheet("background-color: rgb(167, 198, 229);")
             self.centerMenu.expandMenu()
                 
-    def notifyMenuAction(self, widget):
-        closeBtn = self.notifyMenuBtn1
-        
-        if widget == closeBtn:
-            if self.popupLoop.isRunning():
-                self.popupResult = QMessageBox.Cancel
-                self.popupLoop.quit()
-            self.notifyMenu.collapseMenu()    
-        
+
     def onExpDurationChanged(self, text):
         is_timer = (text == "Timer")
         if hasattr(self.ui, 'pgmminSpinBox'):
@@ -1687,7 +1674,7 @@ class MainWindow(QMainWindow):
                 self.sendGcode(f"G0 Z{self.draw_z_UP:.3f} F{self.jogfeed}")
                 self.sendGcode("M114")
 
-                msg_text = f"Draw Z value set to {self.draw_z_value:.2f} mm.\ndraw_z_UP set to {self.draw_z_UP:.2f} mm."
+                msg_text = f"Z offset set to {self.draw_z_value:.2f} mm."
                 self.showCustomPopup("Draw Z Set", msg_text)
 
 

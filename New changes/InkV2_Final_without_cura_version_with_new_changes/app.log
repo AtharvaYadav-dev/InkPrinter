@@ -5369,3 +5369,272 @@ Please re-adjust the offsets.
 2026-09-12 17:05 - INFO - UI load successful
 2026-09-12 17:06 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
 2026-09-12 17:06 - INFO - Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-24 15:06 - INFO - ==================================================
+2026-09-24 15:06 - INFO - New session START at 2026-09-24 15:06
+2026-09-24 15:06 - INFO - ==================================================
+2026-09-24 15:06 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-09-24 15:06 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-09-24 15:06 - INFO - Loaded draw_z from config: Z=41.5, draw_z_UP=20.75
+2026-09-24 15:06 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-09-24 15:06 - INFO - INI file initialized
+2026-09-24 15:06 - INFO - UI load successful
+2026-09-24 15:06 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-24 15:06 - INFO - Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-24 15:06 - ERROR - Uncaught exception
+Traceback (most recent call last):
+  File "e:\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\notifier_ui.py", line 31, in <lambda>
+    closeNotifyBtn.clicked.connect(lambda: main_window.onPopupBtnClicked(QMessageBox.Cancel))
+                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "e:\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\main.py", line 2885, in onPopupBtnClicked
+    NotifierUI.onPopupBtnClicked(self, result)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "e:\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\notifier_ui.py", line 87, in onPopupBtnClicked
+    main_window.notify_menu_widgets.notify.collapseMenu()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'MainWindow' object has no attribute 'notify_menu_widgets'
+2026-09-24 15:06 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-09-24 15:06 - ERROR - Uncaught exception
+Traceback (most recent call last):
+  File "e:\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\main.py", line 761, in <lambda>
+    self.pgmBtn7.clicked.connect(lambda: self.programAction(self.pgmBtn7))
+                                         ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "e:\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\main.py", line 1853, in programAction
+    self._handle_fillhome()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "e:\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\main.py", line 2211, in _handle_fillhome
+    self.showCustomPopup("Connection Error", msg)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\main.py", line 2898, in showCustomPopup
+    return NotifierUI.showCustomPopup(self, title, message, buttons)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\notifier_ui.py", line 116, in showCustomPopup
+    if hasattr(main_window.notify_menu_widgets.notify, 'floatReposition'):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'MainWindow' object has no attribute 'notify_menu_widgets'
+2026-09-24 15:06 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-09-24 15:06 - ERROR - Uncaught exception
+Traceback (most recent call last):
+  File "e:\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\main.py", line 761, in <lambda>
+    self.pgmBtn7.clicked.connect(lambda: self.programAction(self.pgmBtn7))
+                                         ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "e:\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\main.py", line 1853, in programAction
+    self._handle_fillhome()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "e:\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\main.py", line 2211, in _handle_fillhome
+    self.showCustomPopup("Connection Error", msg)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\main.py", line 2898, in showCustomPopup
+    return NotifierUI.showCustomPopup(self, title, message, buttons)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\notifier_ui.py", line 116, in showCustomPopup
+    if hasattr(main_window.notify_menu_widgets.notify, 'floatReposition'):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'MainWindow' object has no attribute 'notify_menu_widgets'
+2026-09-24 15:06 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-09-24 15:06 - ERROR - Uncaught exception
+Traceback (most recent call last):
+  File "e:\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\main.py", line 760, in <lambda>
+    self.pgmBtn6.clicked.connect(lambda: self.programAction(self.pgmBtn6))
+                                         ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "e:\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\main.py", line 1859, in programAction
+    self._handle_purge()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "e:\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\main.py", line 2162, in _handle_purge
+    self.showCustomPopup("Connection Error", msg)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\main.py", line 2898, in showCustomPopup
+    return NotifierUI.showCustomPopup(self, title, message, buttons)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\notifier_ui.py", line 116, in showCustomPopup
+    if hasattr(main_window.notify_menu_widgets.notify, 'floatReposition'):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'MainWindow' object has no attribute 'notify_menu_widgets'
+2026-09-24 15:06 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-09-24 15:06 - ERROR - Uncaught exception
+Traceback (most recent call last):
+  File "e:\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\main.py", line 759, in <lambda>
+    self.pgmBtn5.clicked.connect(lambda: self.programAction(self.pgmBtn5))
+                                         ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "e:\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\main.py", line 1856, in programAction
+    self._handle_fill()
+    ~~~~~~~~~~~~~~~~~^^
+  File "e:\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\main.py", line 2113, in _handle_fill
+    self.showCustomPopup("Connection Error", msg)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\main.py", line 2898, in showCustomPopup
+    return NotifierUI.showCustomPopup(self, title, message, buttons)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\notifier_ui.py", line 116, in showCustomPopup
+    if hasattr(main_window.notify_menu_widgets.notify, 'floatReposition'):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'MainWindow' object has no attribute 'notify_menu_widgets'
+2026-09-24 15:06 - ERROR - Uncaught exception
+Traceback (most recent call last):
+  File "C:\Program Files\Python313\Lib\site-packages\Custom_Widgets\JSonStyles\__init__.py", line 832, in <lambda>
+    getattr(self.ui, str(navigation["close"])).clicked.connect(lambda: self.close())
+                                                                       ~~~~~~~~~~^^
+  File "e:\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\main.py", line 1368, in closeEvent
+    reply = self.showCustomPopup('Confirmation', "Are you sure you want to quit?", buttons=QMessageBox.Yes | QMessageBox.No)
+  File "e:\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\main.py", line 2898, in showCustomPopup
+    return NotifierUI.showCustomPopup(self, title, message, buttons)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\notifier_ui.py", line 116, in showCustomPopup
+    if hasattr(main_window.notify_menu_widgets.notify, 'floatReposition'):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: Error calling Python override of QMainWindow::closeEvent(): 'MainWindow' object has no attribute 'notify_menu_widgets'
+2026-09-24 15:07 - INFO - ==================================================
+2026-09-24 15:07 - INFO - New session START at 2026-09-24 15:07
+2026-09-24 15:07 - INFO - ==================================================
+2026-09-24 15:07 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-09-24 15:07 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-09-24 15:07 - INFO - Loaded draw_z from config: Z=41.5, draw_z_UP=20.75
+2026-09-24 15:07 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-09-24 15:07 - INFO - INI file initialized
+2026-09-24 15:07 - INFO - UI load successful
+2026-09-24 15:07 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-24 15:07 - INFO - Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-24 15:07 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-09-24 15:07 - INFO - Serial communication stopped
+2026-09-24 15:07 - INFO - COM connection close successfully
+2026-09-24 15:07 - INFO - Main window close successfully
+2026-09-24 15:07 - INFO - ==================================================
+2026-09-24 15:07 - INFO - New session close at 2026-09-24 15:07
+2026-09-24 15:07 - INFO - ==================================================
+2026-09-24 15:09 - INFO - ==================================================
+2026-09-24 15:09 - INFO - New session START at 2026-09-24 15:09
+2026-09-24 15:09 - INFO - ==================================================
+2026-09-24 15:09 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-09-24 15:09 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-09-24 15:09 - INFO - Loaded draw_z from config: Z=0.0, draw_z_UP=0.0
+2026-09-24 15:09 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-09-24 15:09 - INFO - INI file initialized
+2026-09-24 15:09 - INFO - UI load successful
+2026-09-24 15:09 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-24 15:09 - INFO - Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-24 15:09 - ERROR - Uncaught exception
+Traceback (most recent call last):
+  File "e:\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\main.py", line 745, in <lambda>
+    self.focusBtn4.clicked.connect(lambda: self.laserAction(self.focusBtn4))
+                                           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "e:\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\main.py", line 1691, in laserAction
+    self.showCustomPopup("Draw Z Set", msg_text)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\main.py", line 2898, in showCustomPopup
+    return NotifierUI.showCustomPopup(self, title, message, buttons)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\notifier_ui.py", line 116, in showCustomPopup
+    if hasattr(main_window.notify_menu_widgets.notify, 'floatReposition'):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'MainWindow' object has no attribute 'notify_menu_widgets'
+2026-09-24 15:09 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-09-24 15:09 - ERROR - Uncaught exception
+Traceback (most recent call last):
+  File "e:\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\main.py", line 761, in <lambda>
+    self.pgmBtn7.clicked.connect(lambda: self.programAction(self.pgmBtn7))
+                                         ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "e:\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\main.py", line 1853, in programAction
+    self._handle_fillhome()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "e:\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\main.py", line 2211, in _handle_fillhome
+    self.showCustomPopup("Connection Error", msg)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\main.py", line 2898, in showCustomPopup
+    return NotifierUI.showCustomPopup(self, title, message, buttons)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\notifier_ui.py", line 116, in showCustomPopup
+    if hasattr(main_window.notify_menu_widgets.notify, 'floatReposition'):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'MainWindow' object has no attribute 'notify_menu_widgets'
+2026-09-24 15:09 - ERROR - Uncaught exception
+Traceback (most recent call last):
+  File "C:\Program Files\Python313\Lib\site-packages\Custom_Widgets\JSonStyles\__init__.py", line 832, in <lambda>
+    getattr(self.ui, str(navigation["close"])).clicked.connect(lambda: self.close())
+                                                                       ~~~~~~~~~~^^
+  File "e:\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\main.py", line 1368, in closeEvent
+    reply = self.showCustomPopup('Confirmation', "Are you sure you want to quit?", buttons=QMessageBox.Yes | QMessageBox.No)
+  File "e:\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\main.py", line 2898, in showCustomPopup
+    return NotifierUI.showCustomPopup(self, title, message, buttons)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\notifier_ui.py", line 116, in showCustomPopup
+    if hasattr(main_window.notify_menu_widgets.notify, 'floatReposition'):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: Error calling Python override of QMainWindow::closeEvent(): 'MainWindow' object has no attribute 'notify_menu_widgets'
+2026-09-24 15:42 - INFO - ==================================================
+2026-09-24 15:42 - INFO - New session START at 2026-09-24 15:42
+2026-09-24 15:42 - INFO - ==================================================
+2026-09-24 15:42 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-09-24 15:42 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-09-24 15:42 - INFO - Loaded draw_z from config: Z=0.0, draw_z_UP=0.0
+2026-09-24 15:42 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-09-24 15:42 - INFO - INI file initialized
+2026-09-24 15:42 - INFO - UI load successful
+2026-09-24 15:42 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-24 15:42 - INFO - Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-24 15:43 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-09-24 15:43 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-09-24 15:46 - INFO - ==================================================
+2026-09-24 15:46 - INFO - New session START at 2026-09-24 15:46
+2026-09-24 15:46 - INFO - ==================================================
+2026-09-24 15:46 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-09-24 15:46 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-09-24 15:46 - INFO - Loaded draw_z from config: Z=0.0, draw_z_UP=0.0
+2026-09-24 15:46 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-09-24 15:46 - INFO - INI file initialized
+2026-09-24 15:46 - INFO - UI load successful
+2026-09-24 15:46 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-24 15:46 - INFO - Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-24 15:47 - INFO - ==================================================
+2026-09-24 15:47 - INFO - New session START at 2026-09-24 15:47
+2026-09-24 15:47 - INFO - ==================================================
+2026-09-24 15:47 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-09-24 15:47 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-09-24 15:47 - INFO - Loaded draw_z from config: Z=0.0, draw_z_UP=0.0
+2026-09-24 15:47 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-09-24 15:47 - INFO - INI file initialized
+2026-09-24 15:47 - INFO - UI load successful
+2026-09-24 15:47 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-24 15:47 - INFO - Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-24 15:48 - INFO - ==================================================
+2026-09-24 15:48 - INFO - New session START at 2026-09-24 15:48
+2026-09-24 15:48 - INFO - ==================================================
+2026-09-24 15:48 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-09-24 15:48 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-09-24 15:48 - INFO - Loaded draw_z from config: Z=0.0, draw_z_UP=0.0
+2026-09-24 15:48 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-09-24 15:48 - INFO - INI file initialized
+2026-09-24 15:48 - INFO - UI load successful
+2026-09-24 15:48 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-24 15:48 - INFO - Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-24 15:48 - INFO - Serial communication stopped
+2026-09-24 15:48 - INFO - COM connection close successfully
+2026-09-24 15:48 - INFO - Main window close successfully
+2026-09-24 15:48 - INFO - ==================================================
+2026-09-24 15:48 - INFO - New session close at 2026-09-24 15:48
+2026-09-24 15:48 - INFO - ==================================================
+2026-09-24 15:48 - INFO - ==================================================
+2026-09-24 15:48 - INFO - New session START at 2026-09-24 15:48
+2026-09-24 15:48 - INFO - ==================================================
+2026-09-24 15:48 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-09-24 15:48 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-09-24 15:48 - INFO - Loaded draw_z from config: Z=0.0, draw_z_UP=0.0
+2026-09-24 15:48 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-09-24 15:48 - INFO - INI file initialized
+2026-09-24 15:48 - INFO - UI load successful
+2026-09-24 15:48 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-24 15:48 - INFO - Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-24 15:49 - CRITICAL - Laser 1 : has offset, Xoffset = 0.0, Yoffset = 0.0
+2026-09-24 16:27 - INFO - ==================================================
+2026-09-24 16:27 - INFO - New session START at 2026-09-24 16:27
+2026-09-24 16:27 - INFO - ==================================================
+2026-09-24 16:27 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-09-24 16:27 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-09-24 16:27 - INFO - Loaded draw_z from config: Z=0.0, draw_z_UP=0.0
+2026-09-24 16:27 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-09-24 16:27 - INFO - INI file initialized
+2026-09-24 16:27 - INFO - UI load successful
+2026-09-24 16:27 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-24 16:27 - INFO - Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-24 16:27 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-24 16:27 - CRITICAL - Serial communication started
+2026-09-24 16:27 - INFO - Serial communication stopped
+2026-09-24 16:27 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
