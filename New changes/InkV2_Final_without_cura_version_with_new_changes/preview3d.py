@@ -23,7 +23,7 @@ class GCode3DPreview(QOpenGLWidget):
         # -------------------------
         # G-code data
         # -------------------------
-        self.segment_dict = {}
+        self.segment_dict = {}    # G-code line data save
         self.layers = {}          # layer_z -> list of segment keys
         self.layer_z_list = []    # sorted z values
         self.selected_layer_index = None
