@@ -5651,3 +5651,66 @@ AttributeError: Error calling Python override of QMainWindow::closeEvent(): 'Mai
 2026-09-28 11:32 - INFO - Do you want to auto connect Main Printer COM to COM1 @ 115200?
 2026-09-28 11:32 - INFO - Auto Connect dialog button : Cancel
 2026-09-28 11:32 - INFO - Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-28 12:32 - INFO - ==================================================
+2026-09-28 12:32 - INFO - New session START at 2026-09-28 12:32
+2026-09-28 12:32 - INFO - ==================================================
+2026-09-28 12:32 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-09-28 12:32 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-09-28 12:32 - INFO - Loaded draw_z from config: Z=0.0, draw_z_UP=0.0
+2026-09-28 12:32 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-09-28 12:32 - INFO - INI file initialized
+2026-09-28 12:32 - INFO - UI load successful
+2026-09-28 12:32 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-28 12:32 - INFO - Do you want to auto connect Main Printer COM to COM1 @ 115200?
+2026-09-28 12:32 - INFO - Auto Connect dialog button : Cancel
+2026-09-28 12:32 - INFO - Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-28 12:32 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8', 'COM9'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-28 12:33 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8', 'COM9'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-28 12:33 - CRITICAL - Serial communication started
+2026-09-28 12:33 - INFO - Serial communication stopped
+2026-09-28 12:33 - INFO - Serial communication stopped
+2026-09-28 12:33 - INFO - COM connection close successfully
+2026-09-28 12:33 - INFO - Main window close successfully
+2026-09-28 12:33 - INFO - ==================================================
+2026-09-28 12:33 - INFO - New session close at 2026-09-28 12:33
+2026-09-28 12:33 - INFO - ==================================================
+2026-09-30 10:26 - INFO - ==================================================
+2026-09-30 10:26 - INFO - New session START at 2026-09-30 10:26
+2026-09-30 10:26 - INFO - ==================================================
+2026-09-30 10:26 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-09-30 10:26 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-09-30 10:26 - INFO - Loaded draw_z from config: Z=0.0, draw_z_UP=0.0
+2026-09-30 10:26 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-09-30 10:26 - INFO - INI file initialized
+2026-09-30 10:26 - INFO - UI load successful
+2026-09-30 10:26 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-30 10:26 - INFO - Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-30 10:27 - INFO - File selected: E:/InkPrinter/New changes/InkV2_Final_without_cura_version_with_new_changes/Test_files/ide2.svg
+2026-09-30 10:27 - INFO - Converting SVG -> G-code directly: E:\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\Test_files\ide2.svg
+2026-09-30 10:27 - INFO - G-code created: E:\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\Test_files\ide2.gcode
+2026-09-30 10:27 - INFO - G-code ready from SVG: E:\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\Test_files\ide2.gcode
+2026-09-30 10:27 - INFO - Raw G-code parsed (173 lines).
+2026-09-30 10:27 - INFO - Feedrate: 500.0 mm/min
+2026-09-30 10:27 - INFO - Normalization shift: X=-1.904, Y=-1.855
+2026-09-30 10:27 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=0.000
+2026-09-30 10:27 - INFO - Final applied shift: X=-1.904, Y=-1.855
+2026-09-30 10:29 - INFO - ==================================================
+2026-09-30 10:29 - INFO - New session START at 2026-09-30 10:29
+2026-09-30 10:29 - INFO - ==================================================
+2026-09-30 10:29 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-09-30 10:29 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-09-30 10:29 - INFO - Loaded draw_z from config: Z=0.0, draw_z_UP=0.0
+2026-09-30 10:29 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-09-30 10:29 - INFO - INI file initialized
+2026-09-30 10:29 - INFO - UI load successful
+2026-09-30 10:29 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-30 10:29 - INFO - Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-09-30 10:29 - INFO - File selected: E:/InkPrinter/New changes/InkV2_Final_without_cura_version_with_new_changes/Test_files/ide2.svg
+2026-09-30 10:29 - INFO - Converting SVG -> G-code directly: E:\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\Test_files\ide2.svg
+2026-09-30 10:29 - INFO - G-code created: E:\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\Test_files\ide2.gcode
+2026-09-30 10:29 - INFO - G-code ready from SVG: E:\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\Test_files\ide2.gcode
+2026-09-30 10:29 - INFO - Raw G-code parsed (173 lines).
+2026-09-30 10:29 - INFO - Feedrate: 500.0 mm/min
+2026-09-30 10:29 - INFO - Normalization shift: X=-1.904, Y=-1.855
+2026-09-30 10:29 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=0.000
+2026-09-30 10:29 - INFO - Final applied shift: X=-1.904, Y=-1.855
