@@ -1,5 +1,5 @@
 import re
-from queue import Queue
+from queue import Queue, Empty
 
 class GcodeHandler():
     def __init__(self):
@@ -12,6 +12,7 @@ class GcodeHandler():
         self.ok_flag = False
         self.home_flag = False
         self.temp_report_flag = False
+        self.temp_dict = {}
         self.sd_write_flag = False
         self.init_print_flag = False
         self.gcode_ext_tuple = (".gco", ".g", ".gcode")
@@ -49,9 +50,9 @@ class GcodeHandler():
         if callback_obj:
             self.callback = callback_obj
 
-    def fireCallback(self, code):
+    def fireCallback(self, code, **kwargs):
         if self.callback:
-            self.callback.fire(code)
+            self.callback.fire(code, **kwargs)
 
     def encode(self, cmd):
         self.queue.put(cmd)
@@ -79,18 +80,15 @@ class GcodeHandler():
 
     def readQueue(self):
         try:
-            self.gcode = self.queue.get()
+            self.gcode = self.queue.get_nowait()
             print(f"Queue : {self.gcode}")
-
-        except Queue.Empty:
-            pass
-
-        else:
-            pass
+        except (Empty, Exception):
+            self.gcode = None
 
     def decode(self, response):
         rx_data = response.strip()
         self.append_response_flag = True
+        self.temp_report_flag = False
 
         if "ok" in rx_data:
             self.append_response_flag = False
@@ -104,9 +102,8 @@ class GcodeHandler():
             if self.sd_abort_flag:
                 self.sd_abort_response_flag = True
 
-        if 'T:' in response and 'B:' in response and '@:' in response:
-            self.append_response_flag = False
-            self.temp_report_flag = True
+        if 'T:' in response or 'B:' in response:
+            self.decodeTemp(response)
 
         if 'Done printing file' in response:
             self.append_response_flag = False
@@ -133,6 +130,9 @@ class GcodeHandler():
     def process(self, gcode, response_list):
         print(f"Gcode : {gcode}")
         print(f"ACK : {response_list}")
+
+        if not gcode:
+            return
 
         try:
             if "G28" in gcode:
@@ -196,3 +196,27 @@ class GcodeHandler():
         
         elif "open failed" in response_list[1]:
             self.sd_file_open_flag = False
+
+    def decodeTemp(self, response):
+        matches = re.findall(r'(?:^|\s)(T\d*|B)\s*:\s*(-?\d+(?:\.\d+)?)(?:\s*/\s*(-?\d+(?:\.\d+)?))?', response)
+        if matches:
+            self.append_response_flag = False
+            self.temp_report_flag = True
+            temps = {}
+            for key, cur_str, target_str in matches:
+                try:
+                    cur_val = float(cur_str)
+                    target_val = float(target_str) if target_str else 0.0
+                    temps[key] = (cur_val, target_val)
+                except ValueError:
+                    continue
+            if "T0" in temps and "T" not in temps:
+                temps["T"] = temps["T0"]
+            if temps:
+                self.temp_dict = temps
+                self.fireCallback("FullTempUpdate", temps=temps)
+                return True
+        return False
+
+    def getTemp(self):
+        return self.temp_dict

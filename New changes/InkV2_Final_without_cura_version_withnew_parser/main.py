@@ -635,7 +635,7 @@ class MainWindow(QMainWindow):
             
         # self.showStackPage(self.mainStack, self.mainPage_dict, 0)
         self.showMainPage(0)
-        self.showStackPage(self.infoStack, self.infoPage_dict, 0)            
+        self.showStackPage(self.infoStack, self.infoPage_dict, 0)
 
         # Hide frame_15 and frame_16 if the flag is set
         if getattr(self, 'hide_syringe_frames_flag', False):
@@ -1148,37 +1148,81 @@ class MainWindow(QMainWindow):
             if "B" in temps:
                 cur_b = temps["B"][0]
                 if hasattr(self, "parabedWidget") and self.parabedWidget.cur:
-                    self.wm.operate(self.parabedWidget.cur, "set", str(cur_b))
+                    formatted_cur = f"{float(cur_b):.2f}" if isinstance(cur_b, (int, float)) else str(cur_b)
+                    self.wm.operate(self.parabedWidget.cur, "set", formatted_cur)
+                
+                # If target temp is reported and UI set_line is blank, sync target temp and slider
+                if len(temps["B"]) > 1:
+                    target_b = temps["B"][1]
+                    if hasattr(self, "parabedWidget") and hasattr(self.parabedWidget, "set_line") and self.parabedWidget.set_line:
+                        if not self.parabedWidget.set_line.hasFocus() and not self.parabedWidget.set_line.text().strip() and target_b > 0:
+                            formatted_target = str(int(target_b)) if float(target_b).is_integer() else f"{target_b:.2f}"
+                            self.wm.operate(self.parabedWidget.set_line, "set", formatted_target)
+                            if hasattr(self.parabedWidget, "slider") and self.parabedWidget.slider and not self.parabedWidget.slider.isSliderDown():
+                                self.parabedWidget.slider.setValue(int(target_b))
                     
             # Update extrusion temperature in UI
             if "T" in temps:
                 cur_t = temps["T"][0]
                 if hasattr(self, "paraextrusionWidget") and self.paraextrusionWidget.cur:
-                    self.wm.operate(self.paraextrusionWidget.cur, "set", str(cur_t))
+                    formatted_cur_t = f"{float(cur_t):.2f}" if isinstance(cur_t, (int, float)) else str(cur_t)
+                    self.wm.operate(self.paraextrusionWidget.cur, "set", formatted_cur_t)
 
     def updateData(self, msg):
         self.dataReceived.emit(msg)
 
 
 
+    @Slot(str)
     def _onDataReceived(self, msg):
         if not msg:
             return
+
         data = msg.strip("\n")
-            
-        if data:
-            self.gcode.decode(data)
+        if not data:
+            return
 
-            if data == "ok":
-                data = f"{data}\n"
+        # --- FIX FOR ATTACHED "ok" DURING BUTTON PRESS OR FAST RESPONSE ---
+        # Firmware may send action messages concatenated with "ok", e.g., "//Yoffok N117 P15 B4"
+        if not data.startswith("ok"):
+            idx = data.find("ok ")
+            if idx == -1 and data.endswith("ok"):
+                idx = data.rfind("ok")
+            
+            if idx > 0:
+                self._onDataReceived(data[:idx])
+                self._onDataReceived(data[idx:])
+                return
 
-            if self.gcode.temp_report_flag and self.temp_report_hide_flag:
-                self.gcode.temp_report_flag = False
-            
-            else:
-                self.util.debugPrint(f"Received : {data}")
-            
-            self.receiveACK(self.terminalWidget.output, data)
+        # Decode using GcodeHandler (extracts temperatures and fires FullTempUpdate)
+        self.gcode.decode(data)
+
+        # Normalize 'ok'
+        if data == "ok":
+            data = f"{data}\n"
+
+        # --- Detect Critical Firmware Errors ---
+        if "Error:MINTEMP" in data or "Error:MAXTEMP" in data:
+            self.showCustomPopup("SAFETY HALT", f"Critical Firmware Error Detected:\n\n{data}\n\nThe system has been stopped for safety.", buttons=QMessageBox.Ok)
+            self.logger.error(f"FIRMWARE ERROR: {data}")
+
+        if "Heating failed" in data or "Heating Failed" in data or "kill() called!" in data:
+            self.showCustomPopup("HEATING FAILED", f"Heating Error Detected:\n\n{data}\n\nThe system has been stopped for safety.", buttons=QMessageBox.Ok)
+            self.logger.error(f"HEATING ERROR: {data}")
+            print(f"HEATING ERROR: {data}")
+
+        # --- FILTER TEMPERATURE LINES HERE ---
+        # Temperature data has already updated the UI widgets via GcodeHandler;
+        # do not flood the terminal window with repetitive temperature reports.
+        if ("T:" in data and "/" in data) or ("B:" in data and "/" in data) or getattr(self.gcode, "temp_report_flag", False):
+            return  # DO NOT SEND TO TERMINAL
+
+        if "echo:busy" in data:
+            pass
+
+        # Final terminal output
+        self.util.debugPrint(f"Received : {data}")
+        self.receiveACK(self.terminalWidget.output, data)
 
     def updateException(self, args):
         self.util.debugPrint(f"error args : {args}")
@@ -1373,6 +1417,7 @@ class MainWindow(QMainWindow):
         reply = self.showCustomPopup('Confirmation', "Are you sure you want to quit?", buttons=QMessageBox.Yes | QMessageBox.No)
         
         if reply == QMessageBox.Yes:
+            self.setSystemSleepPrevented(False)
             self.util.debugPrint("Application is closing")
 
             self.comAction(self.com, action="Disconnect")
@@ -1600,6 +1645,9 @@ class MainWindow(QMainWindow):
                 self.wm.operate(com.connect, "set", connect_btn_text)
                 self.wm.operate(com.refresh, "enable", refresh_btn_status)
                 self.util.debugPrint(f"connect btn : {connect_btn_text} | refresh btn : {refresh_btn_status}")
+
+                if action in ["Connect", "Auto"] and getattr(com, "object", "") == "sercom":
+                    QTimer.singleShot(1000, lambda: self.sendGcode("M155 S1"))
         
     def jogAction(self, widget):        
         wobj = widget.objectName()
@@ -2491,6 +2539,26 @@ class MainWindow(QMainWindow):
                 if hasattr(self, 'paraBtn1') and self.paraBtn1:
                     self.parameterAction(self.paraBtn1)
     
+    def setSystemSleepPrevented(self, prevent: bool):
+        """Prevent or allow Windows system sleep while printing is active."""
+        if sys.platform != "win32":
+            return
+        try:
+            import ctypes
+            ES_CONTINUOUS = 0x80000000
+            ES_SYSTEM_REQUIRED = 0x00000001
+            ES_DISPLAY_REQUIRED = 0x00000002
+            if prevent:
+                # Keep system CPU active and display awake while printing
+                ctypes.windll.kernel32.SetThreadExecutionState(ES_CONTINUOUS | ES_SYSTEM_REQUIRED | ES_DISPLAY_REQUIRED)
+                self.logger.info("Windows sleep prevention: ENABLED (Printing active)")
+            else:
+                # Restore default OS power management behavior
+                ctypes.windll.kernel32.SetThreadExecutionState(ES_CONTINUOUS)
+                self.logger.info("Windows sleep prevention: DISABLED (Print idle/finished)")
+        except Exception as e:
+            self.util.debugPrint(f"Sleep prevention error: {e}")
+
     def pauseWidget(self, widget, arg):
         icon_dict = {"pause" : QIcon(":./icons/icons/play-circle.svg"),
                      "resume" : QIcon(":./icons/icons/pause.svg")
@@ -2502,6 +2570,7 @@ class MainWindow(QMainWindow):
     def runProgram(self, arg):
         if arg == "run":
             if hasattr(self, "filtered_gcode") and self.filtered_gcode:
+                self.setSystemSleepPrevented(True)
                 self.ui.uvonPushButton.setEnabled(False)
                 self.ui.uvoffPushButton.setEnabled(False)
                 self.pgm_run_flag = True
@@ -2517,11 +2586,13 @@ class MainWindow(QMainWindow):
             self.logger.info("Print Status : PAUSE")
 
         elif arg == "resume":
+            self.setSystemSleepPrevented(True)
             self.pgm_pause_flag = False
             self.resumeProgram()
             self.logger.info("Print Status : RESUME")
 
         elif arg == "abort":
+            self.setSystemSleepPrevented(False)
             self.ui.uvonPushButton.setEnabled(True)
             self.ui.uvoffPushButton.setEnabled(True)
             self.pgm_run_flag = False
@@ -2573,6 +2644,7 @@ class MainWindow(QMainWindow):
             self.startProgram()
 
     def finishProgram(self):
+        self.setSystemSleepPrevented(False)
         self.ui.uvonPushButton.setEnabled(True)
         self.ui.uvoffPushButton.setEnabled(True)
         self.pgm_index = 0
@@ -2792,6 +2864,8 @@ class MainWindow(QMainWindow):
             page = self.findChild(QWidget, "bedPage")
             if page:
                 para_stack.setCurrentWidget(page)
+                if hasattr(self, "sercom") and getattr(self.sercom, "is_connected", False):
+                    self.sendGcode("M155 S1")
         elif self.util.checkSubString(wobj, "pressure"):
             page = self.findChild(QWidget, "extrusionPpage")
             if page:

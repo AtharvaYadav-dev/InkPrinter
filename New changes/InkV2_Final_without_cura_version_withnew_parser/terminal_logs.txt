@@ -1,0 +1,370 @@
+
+==================================================
+Session Started: 2026-10-24 15:08:55
+==================================================
+C:\Program Files\Python313\Lib\site-packages\Custom_Widgets\JSonStyles\__init__.py:842: RuntimeWarning: Failed to disconnect (None) from signal "clicked()".
+  button.clicked.disconnect()
+index : 0
+arg : 0
+index : 0
+arg : 0
+[SPPL Agent] Registration failed: 503 Server Error: Service Unavailable for url: https://sppl-server.onrender.com/api/devices/register
+UI is loaded
+xindex : 0
+yindex : 0
+feed : 500
+laser handler : {}
+Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8', 'COM15'], Baud : ['9600', '57600', '115200', '250000']
+action : Auto
+status : None
+Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8', 'COM15'], Baud : ['9600', '57600', '115200', '250000']
+action : Auto
+status : None
+index : 3
+index : 5
+
+==================================================
+Session Started: 2026-10-24 15:34:24
+==================================================
+C:\Program Files\Python313\Lib\site-packages\Custom_Widgets\JSonStyles\__init__.py:842: RuntimeWarning: Failed to disconnect (None) from signal "clicked()".
+  button.clicked.disconnect()
+index : 0
+arg : 0
+index : 0
+arg : 0
+UI is loaded
+xindex : 0
+yindex : 0
+feed : 500
+laser handler : {}
+Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8', 'COM15'], Baud : ['9600', '57600', '115200', '250000']
+action : Auto
+status : None
+Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8', 'COM15'], Baud : ['9600', '57600', '115200', '250000']
+action : Auto
+status : None
+[SPPL Agent] Registration failed: 503 Server Error: Service Unavailable for url: https://sppl-server.onrender.com/api/devices/register
+action : Connect
+port : COM15
+baud : 115200
+Serial communication started
+status : True
+connect btn : Disconnect | refresh btn : False
+response : T:28.88 /30.00 B:94.34 /0.00 T0:28.88 /30.00 T1:-15.00 /0.00 T2:-15.00 /0.00 T3:-15.00 /0.00 T4:-15.00 /0.00 T5:-15.00 /0.00 @:127 B@:0 @0:127 @1:0 @2:0 @3:0 @4:0 @5:0
+Received : T:28.88 /30.00 B:94.34 /0.00 T0:28.88 /30.00 T1:-15.00 /0.00 T2:-15.00 /0.00 T3:-15.00 /0.00 T4:-15.00 /0.00 T5:-15.00 /0.00 @:127 B@:0 @0:127 @1:0 @2:0 @3:0 @4:0 @5:0
+response : T:29.06 /30.00 B:94.52 /0.00 T0:29.06 /30.00 T1:-15.00 /0.00 T2:-15.00 /0.00 T3:-15.00 /0.00 T4:-15.00 /0.00 T5:-15.00 /0.00 @:127 B@:0 @0:127 @1:0 @2:0 @3:0 @4:0 @5:0Received : T:29.06 /30.00 B:94.52 /0.00 T0:29.06 /30.00 T1:-15.00 /0.00 T2:-15.00 /0.00 T3:-15.00 /0.00 T4:-15.00 /0.00 T5:-15.00 /0.00 @:127 B@:0 @0:127 @1:0 @2:0 @3:0 @4:0 @5:0
+
+response : T:28.90 /30.00 B:94.44 /0.00 T0:28.90 /30.00 T1:-15.00 /0.00 T2:-15.00 /0.00 T3:-15.00 /0.00 T4:-15.00 /0.00 T5:-15.00 /0.00 @:127 B@:0 @0:127 @1:0 @2:0 @3:0 @4:0 @5:0
+Received : T:28.90 /30.00 B:94.44 /0.00 T0:28.90 /30.00 T1:-15.00 /0.00 T2:-15.00 /0.00 T3:-15.00 /0.00 T4:-15.00 /0.00 T5:-15.00 /0.00 @:127 B@:0 @0:127 @1:0 @2:0 @3:0 @4:0 @5:0
+response : T:28.90 /30.00 B:94.25 /0.00 T0:28.90 /30.00 T1:-15.00 /0.00 T2:-15.00 /0.00 T3:-15.00 /0.00 T4:-15.00 /0.00 T5:-15.00 /0.00 @:127 B@:0 @0:127 @1:0 @2:0 @3:0 @4:0 @5:0
+Received : T:28.90 /30.00 B:94.25 /0.00 T0:28.90 /30.00 T1:-15.00 /0.00 T2:-15.00 /0.00 T3:-15.00 /0.00 T4:-15.00 /0.00 T5:-15.00 /0.00 @:127 B@:0 @0:127 @1:0 @2:0 @3:0 @4:0 @5:0
+response : T:29.01 /30.00 B:94.37 /0.00 T0:29.01 /30.00 T1:-15.00 /0.00 T2:-15.00 /0.00 T3:-15.00 /0.00 T4:-15.00 /0.00 T5:-15.00 /0.00 @:127 B@:0 @0:127 @1:0 @2:0 @3:0 @4:0 @5:0
+Received : T:29.01 /30.00 B:94.37 /0.00 T0:29.01 /30.00 T1:-15.00 /0.00 T2:-15.00 /0.00 T3:-15.00 /0.00 T4:-15.00 /0.00 T5:-15.00 /0.00 @:127 B@:0 @0:127 @1:0 @2:0 @3:0 @4:0 @5:0
+index : 3
+response : T:29.28 /30.00 B:94.36 /0.00 T0:29.28 /30.00 T1:-15.00 /0.00 T2:-15.00 /0.00 T3:-15.00 /0.00 T4:-15.00 /0.00 T5:-15.00 /0.00 @:127 B@:0 @0:127 @1:0 @2:0 @3:0 @4:0 @5:0
+Received : T:29.28 /30.00 B:94.36 /0.00 T0:29.28 /30.00 T1:-15.00 /0.00 T2:-15.00 /0.00 T3:-15.00 /0.00 T4:-15.00 /0.00 T5:-15.00 /0.00 @:127 B@:0 @0:127 @1:0 @2:0 @3:0 @4:0 @5:0
+index : 5
+Gcode - M105
+response : M105
+Received : M105
+response : ok T:29.16 /30.00 B:94.51 /0.00 T0:29.16 /30.00 T1:-15.00 /0.00 T2:-15.00 /0.00 T3:-15.00 /0.00 T4:-15.00 /0.00 T5:-15.00 /0.00 @:127 B@:0 @0:127 @1:0 @2:0 @3:0 @4:0 @5:0
+Queue : M105
+Gcode : M105
+ACK : ['M105']
+code = M105
+Received : ok T:29.16 /30.00 B:94.51 /0.00 T0:29.16 /30.00 T1:-15.00 /0.00 T2:-15.00 /0.00 T3:-15.00 /0.00 T4:-15.00 /0.00 T5:-15.00 /0.00 @:127 B@:0 @0:127 @1:0 @2:0 @3:0 @4:0 @5:0
+response : T:29.13 /30.00 B:94.40 /0.00 T0:29.13 /30.00 T1:-15.00 /0.00 T2:-15.00 /0.00 T3:-15.00 /0.00 T4:-15.00 /0.00 T5:-15.00 /0.00 @:127 B@:0 @0:127 @1:0 @2:0 @3:0 @4:0 @5:0
+Received : T:29.13 /30.00 B:94.40 /0.00 T0:29.13 /30.00 T1:-15.00 /0.00 T2:-15.00 /0.00 T3:-15.00 /0.00 T4:-15.00 /0.00 T5:-15.00 /0.00 @:127 B@:0 @0:127 @1:0 @2:0 @3:0 @4:0 @5:0
+Gcode - M105
+response : M105
+Received : M105
+response : ok T:29.22 /30.00 B:94.40 /0.00 T0:29.22 /30.00 T1:-15.00 /0.00 T2:-15.00 /0.00 T3:-15.00 /0.00 T4:-15.00 /0.00 T5:-15.00 /0.00 @:127 B@:0 @0:127 @1:0 @2:0 @3:0 @4:0 @5:0
+Queue : M105
+Gcode : M105
+ACK : ['M105']
+code = M105
+Received : ok T:29.22 /30.00 B:94.40 /0.00 T0:29.22 /30.00 T1:-15.00 /0.00 T2:-15.00 /0.00 T3:-15.00 /0.00 T4:-15.00 /0.00 T5:-15.00 /0.00 @:127 B@:0 @0:127 @1:0 @2:0 @3:0 @4:0 @5:0
+response : T:29.17 /30.00 B:94.39 /0.00 T0:29.17 /30.00 T1:-15.00 /0.00 T2:-15.00 /0.00 T3:-15.00 /0.00 T4:-15.00 /0.00 T5:-15.00 /0.00 @:127 B@:0 @0:127 @1:0 @2:0 @3:0 @4:0 @5:0
+Received : T:29.17 /30.00 B:94.39 /0.00 T0:29.17 /30.00 T1:-15.00 /0.00 T2:-15.00 /0.00 T3:-15.00 /0.00 T4:-15.00 /0.00 T5:-15.00 /0.00 @:127 B@:0 @0:127 @1:0 @2:0 @3:0 @4:0 @5:0
+response : T:29.63 /30.00 B:94.45 /0.00 T0:29.63 /30.00 T1:-15.00 /0.00 T2:-15.00 /0.00 T3:-15.00 /0.00 T4:-15.00 /0.00 T5:-15.00 /0.00 @:124 B@:0 @0:124 @1:0 @2:0 @3:0 @4:0 @5:0
+Received : T:29.63 /30.00 B:94.45 /0.00 T0:29.63 /30.00 T1:-15.00 /0.00 T2:-15.00 /0.00 T3:-15.00 /0.00 T4:-15.00 /0.00 T5:-15.00 /0.00 @:124 B@:0 @0:124 @1:0 @2:0 @3:0 @4:0 @5:0
+Gcode - M105
+response : M105
+Received : M105
+response : ok T:29.33 /30.00 B:94.53 /0.00 T0:29.33 /30.00 T1:-15.00 /0.00 T2:-15.00 /0.00 T3:-15.00 /0.00 T4:-15.00 /0.00 T5:-15.00 /0.00 @:127 B@:0 @0:127 @1:0 @2:0 @3:0 @4:0 @5:0
+Queue : M105
+Gcode : M105
+ACK : ['M105']
+code = M105
+Received : ok T:29.33 /30.00 B:94.53 /0.00 T0:29.33 /30.00 T1:-15.00 /0.00 T2:-15.00 /0.00 T3:-15.00 /0.00 T4:-15.00 /0.00 T5:-15.00 /0.00 @:127 B@:0 @0:127 @1:0 @2:0 @3:0 @4:0 @5:0
+response : T:29.30 /30.00 B:94.56 /0.00 T0:29.30 /30.00 T1:-15.00 /0.00 T2:-15.00 /0.00 T3:-15.00 /0.00 T4:-15.00 /0.00 T5:-15.00 /0.00 @:127 B@:0 @0:127 @1:0 @2:0 @3:0 @4:0 @5:0
+Received : T:29.30 /30.00 B:94.56 /0.00 T0:29.30 /30.00 T1:-15.00 /0.00 T2:-15.00 /0.00 T3:-15.00 /0.00 T4:-15.00 /0.00 T5:-15.00 /0.00 @:127 B@:0 @0:127 @1:0 @2:0 @3:0 @4:0 @5:0
+response : T:29.28 /30.00 B:94.64 /0.00 T0:29.28 /30.00 T1:-15.00 /0.00 T2:-15.00 /0.00 T3:-15.00 /0.00 T4:-15.00 /0.00 T5:-15.00 /0.00 @:127 B@:0 @0:127 @1:0 @2:0 @3:0 @4:0 @5:0
+Received : T:29.28 /30.00 B:94.64 /0.00 T0:29.28 /30.00 T1:-15.00 /0.00 T2:-15.00 /0.00 T3:-15.00 /0.00 T4:-15.00 /0.00 T5:-15.00 /0.00 @:127 B@:0 @0:127 @1:0 @2:0 @3:0 @4:0 @5:0
+response : T:29.34 /30.00 B:94.59 /0.00 T0:29.34 /30.00 T1:-15.00 /0.00 T2:-15.00 /0.00 T3:-15.00 /0.00 T4:-15.00 /0.00 T5:-15.00 /0.00 @:127 B@:0 @0:127 @1:0 @2:0 @3:0 @4:0 @5:0
+Received : T:29.34 /30.00 B:94.59 /0.00 T0:29.34 /30.00 T1:-15.00 /0.00 T2:-15.00 /0.00 T3:-15.00 /0.00 T4:-15.00 /0.00 T5:-15.00 /0.00 @:127 B@:0 @0:127 @1:0 @2:0 @3:0 @4:0 @5:0
+Gcode - M105response : M105
+
+Received : M105
+response : ok T:29.79 /30.00 B:94.43 /0.00 T0:29.79 /30.00 T1:-15.00 /0.00 T2:-15.00 /0.00 T3:-15.00 /0.00 T4:-15.00 /0.00 T5:-15.00 /0.00 @:122 B@:0 @0:122 @1:0 @2:0 @3:0 @4:0 @5:0
+Queue : M105
+Gcode : M105
+ACK : ['M105']
+code = M105
+Received : ok T:29.79 /30.00 B:94.43 /0.00 T0:29.79 /30.00 T1:-15.00 /0.00 T2:-15.00 /0.00 T3:-15.00 /0.00 T4:-15.00 /0.00 T5:-15.00 /0.00 @:122 B@:0 @0:122 @1:0 @2:0 @3:0 @4:0 @5:0
+response : T:29.65 /30.00 B:94.56 /0.00 T0:29.65 /30.00 T1:-15.00 /0.00 T2:-15.00 /0.00 T3:-15.00 /0.00 T4:-15.00 /0.00 T5:-15.00 /0.00 @:125 B@:0 @0:125 @1:0 @2:0 @3:0 @4:0 @5:0
+Received : T:29.65 /30.00 B:94.56 /0.00 T0:29.65 /30.00 T1:-15.00 /0.00 T2:-15.00 /0.00 T3:-15.00 /0.00 T4:-15.00 /0.00 T5:-15.00 /0.00 @:125 B@:0 @0:125 @1:0 @2:0 @3:0 @4:0 @5:0
+response : T:29.52 /30.00 B:94.58 /0.00 T0:29.52 /30.00 T1:-15.00 /0.00 T2:-15.00 /0.00 T3:-15.00 /0.00 T4:-15.00 /0.00 T5:-15.00 /0.00 @:127 B@:0 @0:127 @1:0 @2:0 @3:0 @4:0 @5:0
+Received : T:29.52 /30.00 B:94.58 /0.00 T0:29.52 /30.00 T1:-15.00 /0.00 T2:-15.00 /0.00 T3:-15.00 /0.00 T4:-15.00 /0.00 T5:-15.00 /0.00 @:127 B@:0 @0:127 @1:0 @2:0 @3:0 @4:0 @5:0
+Gcode - M105
+response : M105
+Received : M105
+response : ok T:29.64 /30.00 B:94.54 /0.00 T0:29.64 /30.00 T1:-15.00 /0.00 T2:-15.00 /0.00 T3:-15.00 /0.00 T4:-15.00 /0.00 T5:-15.00 /0.00 @:126 B@:0 @0:126 @1:0 @2:0 @3:0 @4:0 @5:0
+Queue : M105
+Gcode : M105
+ACK : ['M105']
+code = M105
+Received : ok T:29.64 /30.00 B:94.54 /0.00 T0:29.64 /30.00 T1:-15.00 /0.00 T2:-15.00 /0.00 T3:-15.00 /0.00 T4:-15.00 /0.00 T5:-15.00 /0.00 @:126 B@:0 @0:126 @1:0 @2:0 @3:0 @4:0 @5:0
+response : T:29.41 /30.00 B:94.44 /0.00 T0:29.41 /30.00 T1:-15.00 /0.00 T2:-15.00 /0.00 T3:-15.00 /0.00 T4:-15.00 /0.00 T5:-15.00 /0.00 @:127 B@:0 @0:127 @1:0 @2:0 @3:0 @4:0 @5:0
+Received : T:29.41 /30.00 B:94.44 /0.00 T0:29.41 /30.00 T1:-15.00 /0.00 T2:-15.00 /0.00 T3:-15.00 /0.00 T4:-15.00 /0.00 T5:-15.00 /0.00 @:127 B@:0 @0:127 @1:0 @2:0 @3:0 @4:0 @5:0
+response : T:29.25 /30.00 B:94.58 /0.00 T0:29.25 /30.00 T1:-15.00 /0.00 T2:-15.00 /0.00 T3:-15.00 /0.00 T4:-15.00 /0.00 T5:-15.00 /0.00 @:127 B@:0 @0:127 @1:0 @2:0 @3:0 @4:0 @5:0
+Received : T:29.25 /30.00 B:94.58 /0.00 T0:29.25 /30.00 T1:-15.00 /0.00 T2:-15.00 /0.00 T3:-15.00 /0.00 T4:-15.00 /0.00 T5:-15.00 /0.00 @:127 B@:0 @0:127 @1:0 @2:0 @3:0 @4:0 @5:0
+response : T:29.49 /30.00 B:94.54 /0.00 T0:29.49 /30.00 T1:-15.00 /0.00 T2:-15.00 /0.00 T3:-15.00 /0.00 T4:-15.00 /0.00 T5:-15.00 /0.00 @:127 B@:0 @0:127 @1:0 @2:0 @3:0 @4:0 @5:0Received : T:29.49 /30.00 B:94.54 /0.00 T0:29.49 /30.00 T1:-15.00 /0.00 T2:-15.00 /0.00 T3:-15.00 /0.00 T4:-15.00 /0.00 T5:-15.00 /0.00 @:127 B@:0 @0:127 @1:0 @2:0 @3:0 @4:0 @5:0
+
+Gcode - M105
+response : M105
+Received : M105
+response : ok T:29.20 /30.00 B:94.60 /0.00 T0:29.20 /30.00 T1:-15.00 /0.00 T2:-15.00 /0.00 T3:-15.00 /0.00 T4:-15.00 /0.00 T5:-15.00 /0.00 @:127 B@:0 @0:127 @1:0 @2:0 @3:0 @4:0 @5:0
+Queue : M105
+Gcode : M105
+ACK : ['M105']
+code = M105
+Received : ok T:29.20 /30.00 B:94.60 /0.00 T0:29.20 /30.00 T1:-15.00 /0.00 T2:-15.00 /0.00 T3:-15.00 /0.00 T4:-15.00 /0.00 T5:-15.00 /0.00 @:127 B@:0 @0:127 @1:0 @2:0 @3:0 @4:0 @5:0
+response : T:29.57 /30.00 B:94.63 /0.00 T0:29.57 /30.00 T1:-15.00 /0.00 T2:-15.00 /0.00 T3:-15.00 /0.00 T4:-15.00 /0.00 T5:-15.00 /0.00 @:127 B@:0 @0:127 @1:0 @2:0 @3:0 @4:0 @5:0
+Received : T:29.57 /30.00 B:94.63 /0.00 T0:29.57 /30.00 T1:-15.00 /0.00 T2:-15.00 /0.00 T3:-15.00 /0.00 T4:-15.00 /0.00 T5:-15.00 /0.00 @:127 B@:0 @0:127 @1:0 @2:0 @3:0 @4:0 @5:0
+response : T:29.42 /30.00 B:94.53 /0.00 T0:29.42 /30.00 T1:-15.00 /0.00 T2:-15.00 /0.00 T3:-15.00 /0.00 T4:-15.00 /0.00 T5:-15.00 /0.00 @:127 B@:0 @0:127 @1:0 @2:0 @3:0 @4:0 @5:0
+Received : T:29.42 /30.00 B:94.53 /0.00 T0:29.42 /30.00 T1:-15.00 /0.00 T2:-15.00 /0.00 T3:-15.00 /0.00 T4:-15.00 /0.00 T5:-15.00 /0.00 @:127 B@:0 @0:127 @1:0 @2:0 @3:0 @4:0 @5:0
+Gcode - M105response : M105
+
+Received : M105
+response : ok T:29.23 /30.00 B:94.66 /0.00 T0:29.23 /30.00 T1:-15.00 /0.00 T2:-15.00 /0.00 T3:-15.00 /0.00 T4:-15.00 /0.00 T5:-15.00 /0.00 @:127 B@:0 @0:127 @1:0 @2:0 @3:0 @4:0 @5:0
+Queue : M105
+Gcode : M105
+ACK : ['M105']
+code = M105
+Received : ok T:29.23 /30.00 B:94.66 /0.00 T0:29.23 /30.00 T1:-15.00 /0.00 T2:-15.00 /0.00 T3:-15.00 /0.00 T4:-15.00 /0.00 T5:-15.00 /0.00 @:127 B@:0 @0:127 @1:0 @2:0 @3:0 @4:0 @5:0
+response : T:29.40 /30.00 B:94.36 /0.00 T0:29.40 /30.00 T1:-15.00 /0.00 T2:-15.00 /0.00 T3:-15.00 /0.00 T4:-15.00 /0.00 T5:-15.00 /0.00 @:127 B@:0 @0:127 @1:0 @2:0 @3:0 @4:0 @5:0
+Received : T:29.40 /30.00 B:94.36 /0.00 T0:29.40 /30.00 T1:-15.00 /0.00 T2:-15.00 /0.00 T3:-15.00 /0.00 T4:-15.00 /0.00 T5:-15.00 /0.00 @:127 B@:0 @0:127 @1:0 @2:0 @3:0 @4:0 @5:0
+response : T:29.38 /30.00 B:94.55 /0.00 T0:29.38 /30.00 T1:-15.00 /0.00 T2:-15.00 /0.00 T3:-15.00 /0.00 T4:-15.00 /0.00 T5:-15.00 /0.00 @:127 B@:0 @0:127 @1:0 @2:0 @3:0 @4:0 @5:0
+Received : T:29.38 /30.00 B:94.55 /0.00 T0:29.38 /30.00 T1:-15.00 /0.00 T2:-15.00 /0.00 T3:-15.00 /0.00 T4:-15.00 /0.00 T5:-15.00 /0.00 @:127 B@:0 @0:127 @1:0 @2:0 @3:0 @4:0 @5:0
+
+==================================================
+Session Started: 2026-10-24 15:38:48
+==================================================
+C:\Program Files\Python313\Lib\site-packages\Custom_Widgets\JSonStyles\__init__.py:842: RuntimeWarning: Failed to disconnect (None) from signal "clicked()".
+  button.clicked.disconnect()
+index : 0
+arg : 0
+index : 0
+arg : 0
+[SPPL Agent] Registration failed: 503 Server Error: Service Unavailable for url: https://sppl-server.onrender.com/api/devices/register
+UI is loaded
+xindex : 0
+yindex : 0
+feed : 500
+laser handler : {}
+Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8', 'COM15'], Baud : ['9600', '57600', '115200', '250000']
+action : Auto
+OK clicked
+Serial communication autostarted
+status : True
+connect btn : Disconnect | refresh btn : False
+Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8', 'COM15'], Baud : ['9600', '57600', '115200', '250000']
+action : Auto
+status : None
+index : 3
+index : 5
+Gcode - M105
+response : M105
+Received : M105
+Queue : M105
+Gcode : M105
+ACK : ['M105']
+code = M105
+Gcode - M105
+response : M105
+Received : M105
+Queue : M105
+Gcode : M105
+ACK : ['M105']
+code = M105
+Gcode - M105
+response : M105
+Received : M105
+Queue : M105
+Gcode : M105
+ACK : ['M105']
+code = M105
+Gcode - M105
+response : M105
+Received : M105
+Queue : M105
+Gcode : M105
+ACK : ['M105']
+code = M105
+Gcode - M105
+response : M105
+Received : M105
+Queue : M105
+Gcode : M105
+ACK : ['M105']
+code = M105
+Gcode - M105
+response : M105
+Received : M105
+Queue : M105
+Gcode : M105
+ACK : ['M105']
+code = M105
+Gcode - M105
+response : M105
+Received : M105
+Queue : M105
+Gcode : M105
+ACK : ['M105']
+code = M105
+Gcode - M105
+response : M105
+Received : M105
+Queue : M105
+Gcode : M105
+ACK : ['M105']
+code = M105
+Application is closing
+action : Disconnect
+Serial communication stopped
+status : True
+connect btn : Connect | refresh btn : True
+
+==================================================
+Session Started: 2026-10-24 15:42:07
+==================================================
+C:\Program Files\Python313\Lib\site-packages\Custom_Widgets\JSonStyles\__init__.py:842: RuntimeWarning: Failed to disconnect (None) from signal "clicked()".
+  button.clicked.disconnect()
+index : 0
+arg : 0
+index : 0
+arg : 0
+UI is loaded
+xindex : 0
+yindex : 0
+feed : 500
+laser handler : {}
+Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8', 'COM15'], Baud : ['9600', '57600', '115200', '250000']
+action : Auto
+[SPPL Agent] Registration failed: 503 Server Error: Service Unavailable for url: https://sppl-server.onrender.com/api/devices/register
+OK clicked
+Serial communication autostarted
+status : True
+connect btn : Disconnect | refresh btn : False
+Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8', 'COM15'], Baud : ['9600', '57600', '115200', '250000']
+action : Auto
+status : None
+Gcode - M155 S1
+response : M155 S1
+response : ok P15 B3
+Received : M155 S1
+Queue : M155 S1
+Gcode : M155 S1
+ACK : ['M155 S1']
+code = M155
+Received : ok P15 B3
+index : 3
+index : 5
+Gcode - M155 S1
+response : M155 S1
+Received : M155 S1
+response : ok P15 B3
+Queue : M155 S1
+Gcode : M155 S1
+ACK : ['M155 S1']
+code = M155
+Received : ok P15 B3
+Application is closing
+action : Disconnect
+Serial communication stopped
+status : True
+connect btn : Connect | refresh btn : True
+
+==================================================
+Session Started: 2026-10-24 15:47:16
+==================================================
+C:\Program Files\Python313\Lib\site-packages\Custom_Widgets\JSonStyles\__init__.py:842: RuntimeWarning: Failed to disconnect (None) from signal "clicked()".
+  button.clicked.disconnect()
+index : 0
+arg : 0
+index : 0
+arg : 0
+UI is loaded
+xindex : 0
+yindex : 0
+feed : 500
+laser handler : {}
+Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8', 'COM15'], Baud : ['9600', '57600', '115200', '250000']
+action : Auto
+[SPPL Agent] Registration failed: 503 Server Error: Service Unavailable for url: https://sppl-server.onrender.com/api/devices/register
+Cancel clicked
+status : False
+Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8', 'COM15'], Baud : ['9600', '57600', '115200', '250000']
+action : Auto
+status : None
+index : 3
+index : 5
+wobj : bedsetPushButton
+Gcode - M140 S12
+
+==================================================
+Session Started: 2026-10-24 15:48:50
+==================================================
+C:\Program Files\Python313\Lib\site-packages\Custom_Widgets\JSonStyles\__init__.py:842: RuntimeWarning: Failed to disconnect (None) from signal "clicked()".
+  button.clicked.disconnect()
+index : 0
+arg : 0
+index : 0
+arg : 0
+[SPPL Agent] Registration failed: 503 Server Error: Service Unavailable for url: https://sppl-server.onrender.com/api/devices/register
+UI is loaded
+xindex : 0
+yindex : 0
+feed : 500
+laser handler : {}
+Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8', 'COM15'], Baud : ['9600', '57600', '115200', '250000']
+action : Auto
+OK clicked
+Serial communication autostarted
+status : True
+connect btn : Disconnect | refresh btn : False
+Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8', 'COM15'], Baud : ['9600', '57600', '115200', '250000']
+action : Auto
+status : None
+Gcode - M155 S1
+response : M155 S1
+Received : M155 S1
+response : ok P15 B3
+Queue : M155 S1
+Gcode : M155 S1
+ACK : ['M155 S1']
+code = M155
+Received : ok P15 B3
+index : 2
+index : 3
+index : 5
+Gcode - M155 S1
+response : M155 S1
+Received : M155 S1
+response : ok P15 B3
+Queue : M155 S1
+Gcode : M155 S1
+ACK : ['M155 S1']
+code = M155
+Received : ok P15 B3

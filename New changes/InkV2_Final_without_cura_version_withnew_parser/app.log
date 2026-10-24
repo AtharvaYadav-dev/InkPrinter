@@ -1,0 +1,91 @@
+2026-10-24 15:08 - INFO - ==================================================
+2026-10-24 15:08 - INFO - New session START at 2026-10-24 15:08
+2026-10-24 15:08 - INFO - ==================================================
+2026-10-24 15:08 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-10-24 15:08 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-10-24 15:08 - INFO - Loaded draw_z from config: Z=0.0, draw_z_UP=0.0
+2026-10-24 15:08 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-10-24 15:08 - INFO - INI file initialized
+2026-10-24 15:08 - INFO - UI load successful
+2026-10-24 15:08 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8', 'COM15'], Baud : ['9600', '57600', '115200', '250000']
+2026-10-24 15:08 - INFO - Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8', 'COM15'], Baud : ['9600', '57600', '115200', '250000']
+2026-10-24 15:34 - INFO - ==================================================
+2026-10-24 15:34 - INFO - New session START at 2026-10-24 15:34
+2026-10-24 15:34 - INFO - ==================================================
+2026-10-24 15:34 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-10-24 15:34 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-10-24 15:34 - INFO - Loaded draw_z from config: Z=0.0, draw_z_UP=0.0
+2026-10-24 15:34 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-10-24 15:34 - INFO - INI file initialized
+2026-10-24 15:34 - INFO - UI load successful
+2026-10-24 15:34 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8', 'COM15'], Baud : ['9600', '57600', '115200', '250000']
+2026-10-24 15:34 - INFO - Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8', 'COM15'], Baud : ['9600', '57600', '115200', '250000']
+2026-10-24 15:34 - CRITICAL - Serial communication started
+2026-10-24 15:38 - INFO - ==================================================
+2026-10-24 15:38 - INFO - New session START at 2026-10-24 15:38
+2026-10-24 15:38 - INFO - ==================================================
+2026-10-24 15:38 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-10-24 15:38 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-10-24 15:38 - INFO - Loaded draw_z from config: Z=0.0, draw_z_UP=0.0
+2026-10-24 15:38 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-10-24 15:38 - INFO - INI file initialized
+2026-10-24 15:38 - INFO - UI load successful
+2026-10-24 15:38 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8', 'COM15'], Baud : ['9600', '57600', '115200', '250000']
+2026-10-24 15:38 - INFO - Do you want to auto connect Main Printer COM to COM15 @ 115200?
+2026-10-24 15:38 - INFO - Auto Connect dialog button : Ok
+2026-10-24 15:38 - INFO - Serial communication autostarted
+2026-10-24 15:38 - INFO - Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8', 'COM15'], Baud : ['9600', '57600', '115200', '250000']
+2026-10-24 15:39 - INFO - Serial communication stopped
+2026-10-24 15:39 - INFO - COM connection close successfully
+2026-10-24 15:39 - INFO - Main window close successfully
+2026-10-24 15:39 - INFO - ==================================================
+2026-10-24 15:39 - INFO - New session close at 2026-10-24 15:39
+2026-10-24 15:39 - INFO - ==================================================
+2026-10-24 15:42 - INFO - ==================================================
+2026-10-24 15:42 - INFO - New session START at 2026-10-24 15:42
+2026-10-24 15:42 - INFO - ==================================================
+2026-10-24 15:42 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-10-24 15:42 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-10-24 15:42 - INFO - Loaded draw_z from config: Z=0.0, draw_z_UP=0.0
+2026-10-24 15:42 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-10-24 15:42 - INFO - INI file initialized
+2026-10-24 15:42 - INFO - UI load successful
+2026-10-24 15:42 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8', 'COM15'], Baud : ['9600', '57600', '115200', '250000']
+2026-10-24 15:42 - INFO - Do you want to auto connect Main Printer COM to COM15 @ 115200?
+2026-10-24 15:42 - INFO - Auto Connect dialog button : Ok
+2026-10-24 15:42 - INFO - Serial communication autostarted
+2026-10-24 15:42 - INFO - Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8', 'COM15'], Baud : ['9600', '57600', '115200', '250000']
+2026-10-24 15:42 - INFO - Serial communication stopped
+2026-10-24 15:42 - INFO - COM connection close successfully
+2026-10-24 15:42 - INFO - Main window close successfully
+2026-10-24 15:42 - INFO - ==================================================
+2026-10-24 15:42 - INFO - New session close at 2026-10-24 15:42
+2026-10-24 15:42 - INFO - ==================================================
+2026-10-24 15:47 - INFO - ==================================================
+2026-10-24 15:47 - INFO - New session START at 2026-10-24 15:47
+2026-10-24 15:47 - INFO - ==================================================
+2026-10-24 15:47 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-10-24 15:47 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-10-24 15:47 - INFO - Loaded draw_z from config: Z=0.0, draw_z_UP=0.0
+2026-10-24 15:47 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-10-24 15:47 - INFO - INI file initialized
+2026-10-24 15:47 - INFO - UI load successful
+2026-10-24 15:47 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8', 'COM15'], Baud : ['9600', '57600', '115200', '250000']
+2026-10-24 15:47 - INFO - Do you want to auto connect Main Printer COM to COM15 @ 115200?
+2026-10-24 15:47 - INFO - Auto Connect dialog button : Cancel
+2026-10-24 15:47 - INFO - Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8', 'COM15'], Baud : ['9600', '57600', '115200', '250000']
+2026-10-24 15:47 - INFO - Bed temperature set to 12
+2026-10-24 15:48 - INFO - ==================================================
+2026-10-24 15:48 - INFO - New session START at 2026-10-24 15:48
+2026-10-24 15:48 - INFO - ==================================================
+2026-10-24 15:48 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-10-24 15:48 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-10-24 15:48 - INFO - Loaded draw_z from config: Z=0.0, draw_z_UP=0.0
+2026-10-24 15:48 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-10-24 15:48 - INFO - INI file initialized
+2026-10-24 15:48 - INFO - UI load successful
+2026-10-24 15:48 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8', 'COM15'], Baud : ['9600', '57600', '115200', '250000']
+2026-10-24 15:48 - INFO - Do you want to auto connect Main Printer COM to COM15 @ 115200?
+2026-10-24 15:48 - INFO - Auto Connect dialog button : Ok
+2026-10-24 15:48 - INFO - Serial communication autostarted
+2026-10-24 15:48 - INFO - Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8', 'COM15'], Baud : ['9600', '57600', '115200', '250000']

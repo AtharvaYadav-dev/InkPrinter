@@ -98,7 +98,8 @@ class SerialCom:
                     line = self.serial_connection.readline().decode(errors="ignore").strip()
                     if line and self.response_callback:
                         self.response_callback(line)
-                        print(f"response : {line}")
+                        if not (("T:" in line and "/" in line) or ("B:" in line and "/" in line)):
+                            print(f"response : {line}")
                 except Exception as e:
                     if self._stop_event.is_set():
                         break  # normal exit on disconnect
