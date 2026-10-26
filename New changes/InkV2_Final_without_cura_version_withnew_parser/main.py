@@ -22,7 +22,7 @@ from PySide6.QtCore import QTimer, QRegularExpression, Signal, Slot, Qt, QThread
 from PySide6.QtGui import QIcon, QCloseEvent, QIntValidator, QDoubleValidator, QRegularExpressionValidator
 from PySide6.QtWidgets import (
     QFileDialog, QMessageBox, QComboBox, QPushButton, 
-    QLineEdit, QLabel, QTextEdit, QWidget,
+    QLineEdit, QLabel, QTextEdit, QWidget, QFrame,
     QHBoxLayout, QProgressDialog
 )
 
@@ -201,6 +201,9 @@ class MainWindow(QMainWindow):
         
         # Flag to hide printparaPushButton
         self.hide_printpara_button_flag = False
+        
+        # Flag to hide frame_12 and frame_3
+        self.hide_frame12_frame3_flag = True
         
         self.axishandler = AxisHandler()
         self.preview = GCode3DPreview()
@@ -655,6 +658,16 @@ class MainWindow(QMainWindow):
             if hasattr(self.ui, 'printparaPushButton'):
                 self.ui.printparaPushButton.hide()
 
+        # Hide frame_12 and frame_3 if the flag is set
+        if getattr(self, 'hide_frame12_frame3_flag', False):
+            frame_12 = getattr(self.ui, 'frame_121', None) or (self.ui.viscositylevComboBox.parent() if hasattr(self.ui, 'viscositylevComboBox') else None) or (self.progFrame.findChild(QFrame, "frame_12") if hasattr(self, 'progFrame') and self.progFrame else None) or self.findChild(QFrame, "frame_121")
+            if frame_12:
+                frame_12.hide()
+
+            frame_3 = getattr(self.ui, 'frame_3', None) or (self.ui.needleguageComboBox.parent() if hasattr(self.ui, 'needleguageComboBox') else None) or (self.progFrame.findChild(QFrame, "frame_3") if hasattr(self, 'progFrame') and self.progFrame else None) or self.findChild(QFrame, "frame_3")
+            if frame_3:
+                frame_3.hide()
+
     def updateCalculations(self):
         if not hasattr(self.ui, 'viscositylevComboBox') or not hasattr(self.ui, 'needleguageComboBox'):
             return
@@ -785,9 +798,16 @@ class MainWindow(QMainWindow):
         # Bind actvaluesetPushButton to calculate syringe error
         act_btn = self.findChild(QPushButton, "actvaluesetPushButton")
         if act_btn:
-            act_btn.clicked.connect(self.syringflushAction)
+            act_btn.clicked.connect(lambda: self.syringflushAction(act_btn))
         elif hasattr(self.ui, 'actvaluesetPushButton'):
-            self.ui.actvaluesetPushButton.clicked.connect(self.syringflushAction)
+            self.ui.actvaluesetPushButton.clicked.connect(lambda: self.syringflushAction(self.ui.actvaluesetPushButton))
+            
+        # Bind pgmcleanPushButton to syringflushAction
+        clean_btn = self.findChild(QPushButton, "pgmcleanPushButton")
+        if clean_btn:
+            clean_btn.clicked.connect(lambda: self.syringflushAction(clean_btn))
+        elif hasattr(self.ui, 'pgmcleanPushButton'):
+            self.ui.pgmcleanPushButton.clicked.connect(lambda: self.syringflushAction(self.ui.pgmcleanPushButton))
             
         # Bind testCheckBox back
         test_cb = self.findChild(QCheckBox, "testCheckBox")
@@ -2755,8 +2775,21 @@ class MainWindow(QMainWindow):
         self.logger.info(f"testCheckBoxAction triggered - CheckBox state: {is_checked}")
         # Independent logic for testCheckBox can go here (e.g. prime line toggling)
 
-    def syringflushAction(self):
-        """Action for actvaluesetPushButton click to calculate syringe error"""
+    def syringflushAction(self, widget=None, *args, **kwargs):
+        """Action for actvaluesetPushButton / pgmcleanPushButton"""
+        if widget is None and len(args) > 0 and hasattr(args[0], 'objectName'):
+            widget = args[0]
+        if widget is None:
+            widget = self.sender()
+            
+        wname = widget.objectName() if widget and hasattr(widget, 'objectName') else ""
+        
+        # If triggered by CLEAN button, perform nozzle clean routine
+        if "clean" in wname.lower():
+            self._handle_clean_routine()
+            return
+
+        # Otherwise calculate syringe volume error (actvaluesetPushButton)
         self.logger.info("syringflushAction triggered - calculating error")
         
         try:
@@ -2782,6 +2815,110 @@ class MainWindow(QMainWindow):
                 self.ui.percenterrorLineEdit.setText("Error")
         except Exception as e:
             self.logger.error(f"Error in syringflushAction: {e}")
+
+    def _handle_clean_routine(self):
+        """Nozzle clean routine:
+        1. Send Purge command.
+        2. Once Purge completes, show popup prompt for dilute solution.
+        3. When user presses Yes, send F Home command.
+        4. Once F Home completes, send final Purge command.
+        """
+        if not hasattr(self, 'blackpill_sercom') or not self.blackpill_sercom.is_connected:
+            msg = "Blackpill is not connected. Please connect via the Black COM page."
+            self.logger.error(msg)
+            self.util.debugPrint(msg)
+            self.showCustomPopup("Connection Error", msg)
+            return
+
+        if getattr(self, '_clean_in_progress', False):
+            self.logger.warning("Clean routine is already in progress.")
+            return
+
+        self._clean_in_progress = True
+
+        clean_btn = getattr(self.ui, 'pgmcleanPushButton', None) or self.findChild(QPushButton, "pgmcleanPushButton")
+        if clean_btn:
+            clean_btn.setText("Purging...")
+            clean_btn.setEnabled(False)
+
+        dist = self._get_travel_distance()
+        cmd = f"P {dist}" if dist != "0.0" else "P"
+        self._send_to_blackpill(cmd)
+        self.logger.info(f"Clean Routine Step 1: Purge command ({cmd}) sent to Blackpill.")
+
+        delay_ms = int(float(dist) * 500) + 1500 if dist != "0.0" else 2000
+        QTimer.singleShot(delay_ms, self._clean_step2_prompt_solution)
+
+    def _clean_step2_prompt_solution(self):
+        clean_btn = getattr(self.ui, 'pgmcleanPushButton', None) or self.findChild(QPushButton, "pgmcleanPushButton")
+        if clean_btn:
+            clean_btn.setText("Waiting...")
+
+        self.logger.info("Clean Routine: Initial purge completed. Displaying dilute solution popup.")
+
+        reply = self.showCustomPopup(
+            "Purge Done",
+            "Purge is done. Put the dilute solution for clean the nozzle.\n\nAfter putting solution, press on Yes.",
+            buttons=QMessageBox.Yes | QMessageBox.No
+        )
+
+        if reply == QMessageBox.Yes:
+            self._clean_step3_send_fillhome()
+        else:
+            self.logger.info("Clean Routine: Cancelled by user at dilute solution prompt.")
+            self._reset_clean_ui()
+
+    def _clean_step3_send_fillhome(self):
+        if not hasattr(self, 'blackpill_sercom') or not self.blackpill_sercom.is_connected:
+            msg = "Blackpill is not connected. Clean routine aborted."
+            self.logger.error(msg)
+            self._reset_clean_ui()
+
+            
+            self.showCustomPopup("Connection Error", msg)
+            return
+
+        clean_btn = getattr(self.ui, 'pgmcleanPushButton', None) or self.findChild(QPushButton, "pgmcleanPushButton")
+        if clean_btn:
+            clean_btn.setText("F Homing...")
+
+        self._send_to_blackpill("H")
+        self.logger.info("Clean Routine Step 2: F Home command (H) sent to Blackpill.")
+
+        delay_ms = 10000  # 10 seconds for F Home
+        QTimer.singleShot(delay_ms, self._clean_step4_final_purge)
+
+    def _clean_step4_final_purge(self):
+        if not hasattr(self, 'blackpill_sercom') or not self.blackpill_sercom.is_connected:
+            msg = "Blackpill is not connected. Clean routine aborted."
+            self.logger.error(msg)
+            self._reset_clean_ui()
+            self.showCustomPopup("Connection Error", msg)
+            return
+
+        clean_btn = getattr(self.ui, 'pgmcleanPushButton', None) or self.findChild(QPushButton, "pgmcleanPushButton")
+        if clean_btn:
+            clean_btn.setText("Purging...")
+
+        dist = self._get_travel_distance()
+        cmd = f"P {dist}" if dist != "0.0" else "P"
+        self._send_to_blackpill(cmd)
+        self.logger.info(f"Clean Routine Step 3: Final Purge command ({cmd}) sent to Blackpill.")
+
+        delay_ms = int(float(dist) * 500) + 1500 if dist != "0.0" else 2000
+        QTimer.singleShot(delay_ms, self._clean_step5_complete)
+
+    def _clean_step5_complete(self):
+        self._reset_clean_ui()
+        self.logger.info("Clean Routine: Cleaning cycle completed successfully.")
+        self.showCustomPopup("Cleaning Done", "Cleaning cycle is done.", buttons=QMessageBox.Ok)
+
+    def _reset_clean_ui(self):
+        self._clean_in_progress = False
+        clean_btn = getattr(self.ui, 'pgmcleanPushButton', None) or self.findChild(QPushButton, "pgmcleanPushButton")
+        if clean_btn:
+            clean_btn.setText("CLEAN")
+            clean_btn.setEnabled(True)
 
     def paraextrusionAction(self, widget):
         wobj = widget.objectName()

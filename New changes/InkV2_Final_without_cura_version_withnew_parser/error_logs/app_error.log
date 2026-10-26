@@ -1459,3 +1459,38 @@ Traceback (most recent call last):
     if self.iconsWorker is not None:
        ^^^^^^^^^^^^^^^^
 AttributeError: 'MainWindow' object has no attribute 'iconsWorker'
+
+==================================================
+New Session at 2026-10-26 14:22:45
+==================================================
+
+==================================================
+New Session at 2026-10-26 14:46:49
+==================================================
+
+==================================================
+New Session at 2026-10-26 14:52:47
+==================================================
+2026-10-26 14:52:57 - ERROR - util.py:204 - Blackpill is not connected. Please connect via the Black COM page.
+
+==================================================
+New Session at 2026-10-26 15:01:03
+==================================================
+2026-10-26 15:01:17 - ERROR - util.py:204 - Blackpill is not connected. Please connect via the Black COM page.
+
+==================================================
+New Session at 2026-10-26 15:32:26
+==================================================
+2026-10-26 15:32:37 - ERROR - util.py:204 - Blackpill is not connected. Please connect via the Black COM page.
+2026-10-26 15:32:48 - ERROR - util.py:204 - Blackpill is not connected. Please connect via the Black COM page.
+2026-10-26 15:33:11 - ERROR - util.py:204 - Blackpill is not connected. Please connect via the Black COM page.
+2026-10-26 15:33:14 - ERROR - util.py:204 - Blackpill is not connected. Please connect via the Black COM page.
+2026-10-26 15:33:18 - ERROR - util.py:204 - Blackpill is not connected. Please connect via the Black COM page.
+
+==================================================
+New Session at 2026-10-26 15:35:24
+==================================================
+
+==================================================
+New Session at 2026-10-26 15:37:23
+==================================================

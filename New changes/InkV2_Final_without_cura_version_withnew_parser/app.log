@@ -469,3 +469,139 @@ Traceback (most recent call last):
     if self.iconsWorker is not None:
        ^^^^^^^^^^^^^^^^
 AttributeError: 'MainWindow' object has no attribute 'iconsWorker'
+2026-10-26 14:22 - INFO - ==================================================
+2026-10-26 14:22 - INFO - New session START at 2026-10-26 14:22
+2026-10-26 14:22 - INFO - ==================================================
+2026-10-26 14:22 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-10-26 14:22 - INFO - Loaded offsets from config: X=5.0, Y=5.0
+2026-10-26 14:22 - INFO - Loaded draw_z from config: Z=48.7, draw_z_UP=24.35
+2026-10-26 14:22 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-10-26 14:22 - INFO - INI file initialized
+2026-10-26 14:22 - INFO - UI load successful
+2026-10-26 14:22 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-10-26 14:23 - INFO - Do you want to auto connect Main Printer COM to COM4 @ 115200?
+2026-10-26 14:23 - INFO - Auto Connect dialog button : Cancel
+2026-10-26 14:23 - INFO - Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-10-26 14:46 - INFO - ==================================================
+2026-10-26 14:46 - INFO - New session START at 2026-10-26 14:46
+2026-10-26 14:46 - INFO - ==================================================
+2026-10-26 14:46 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-10-26 14:46 - INFO - Loaded offsets from config: X=5.0, Y=5.0
+2026-10-26 14:46 - INFO - Loaded draw_z from config: Z=48.7, draw_z_UP=24.35
+2026-10-26 14:46 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-10-26 14:46 - INFO - INI file initialized
+2026-10-26 14:46 - INFO - UI load successful
+2026-10-26 14:46 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-10-26 14:46 - INFO - Do you want to auto connect Main Printer COM to COM4 @ 115200?
+2026-10-26 14:46 - INFO - Auto Connect dialog button : Cancel
+2026-10-26 14:46 - INFO - Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-10-26 14:52 - INFO - Windows sleep prevention: DISABLED (Print idle/finished)
+2026-10-26 14:52 - INFO - Serial communication stopped
+2026-10-26 14:52 - INFO - COM connection close successfully
+2026-10-26 14:52 - INFO - Main window close successfully
+2026-10-26 14:52 - INFO - ==================================================
+2026-10-26 14:52 - INFO - New session close at 2026-10-26 14:52
+2026-10-26 14:52 - INFO - ==================================================
+2026-10-26 14:52 - INFO - ==================================================
+2026-10-26 14:52 - INFO - New session START at 2026-10-26 14:52
+2026-10-26 14:52 - INFO - ==================================================
+2026-10-26 14:52 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-10-26 14:52 - INFO - Loaded offsets from config: X=5.0, Y=5.0
+2026-10-26 14:52 - INFO - Loaded draw_z from config: Z=48.7, draw_z_UP=24.35
+2026-10-26 14:52 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-10-26 14:52 - INFO - INI file initialized
+2026-10-26 14:52 - INFO - UI load successful
+2026-10-26 14:52 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-10-26 14:52 - INFO - Do you want to auto connect Main Printer COM to COM4 @ 115200?
+2026-10-26 14:52 - INFO - Auto Connect dialog button : Cancel
+2026-10-26 14:52 - INFO - Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-10-26 14:52 - INFO - syringflushAction triggered - calculating error
+2026-10-26 14:52 - INFO - syringflushAction triggered - calculating error
+2026-10-26 14:52 - INFO - syringflushAction triggered - calculating error
+2026-10-26 14:52 - INFO - syringflushAction triggered - calculating error
+2026-10-26 14:52 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-10-26 14:53 - INFO - Updated purge settings via UI: length_mm=100.0, purge_value=0.5
+2026-10-26 14:53 - INFO - syringflushAction triggered - calculating error
+2026-10-26 14:53 - INFO - syringflushAction triggered - calculating error
+2026-10-26 14:53 - INFO - syringflushAction triggered - calculating error
+2026-10-26 14:53 - INFO - syringflushAction triggered - calculating error
+2026-10-26 14:53 - INFO - syringflushAction triggered - calculating error
+2026-10-26 14:53 - INFO - Windows sleep prevention: DISABLED (Print idle/finished)
+2026-10-26 14:53 - INFO - Serial communication stopped
+2026-10-26 14:53 - INFO - COM connection close successfully
+2026-10-26 14:53 - INFO - Main window close successfully
+2026-10-26 14:53 - INFO - ==================================================
+2026-10-26 14:53 - INFO - New session close at 2026-10-26 14:53
+2026-10-26 14:53 - INFO - ==================================================
+2026-10-26 15:01 - INFO - ==================================================
+2026-10-26 15:01 - INFO - New session START at 2026-10-26 15:01
+2026-10-26 15:01 - INFO - ==================================================
+2026-10-26 15:01 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-10-26 15:01 - INFO - Loaded offsets from config: X=5.0, Y=5.0
+2026-10-26 15:01 - INFO - Loaded draw_z from config: Z=48.7, draw_z_UP=24.35
+2026-10-26 15:01 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-10-26 15:01 - INFO - INI file initialized
+2026-10-26 15:01 - INFO - UI load successful
+2026-10-26 15:01 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-10-26 15:01 - INFO - Do you want to auto connect Main Printer COM to COM4 @ 115200?
+2026-10-26 15:01 - INFO - Auto Connect dialog button : Cancel
+2026-10-26 15:01 - INFO - Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-10-26 15:01 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-10-26 15:32 - INFO - ==================================================
+2026-10-26 15:32 - INFO - New session START at 2026-10-26 15:32
+2026-10-26 15:32 - INFO - ==================================================
+2026-10-26 15:32 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-10-26 15:32 - INFO - Loaded offsets from config: X=5.0, Y=5.0
+2026-10-26 15:32 - INFO - Loaded draw_z from config: Z=48.7, draw_z_UP=24.35
+2026-10-26 15:32 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-10-26 15:32 - INFO - INI file initialized
+2026-10-26 15:32 - INFO - UI load successful
+2026-10-26 15:32 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-10-26 15:32 - INFO - Do you want to auto connect Main Printer COM to COM4 @ 115200?
+2026-10-26 15:32 - INFO - Auto Connect dialog button : Cancel
+2026-10-26 15:32 - INFO - Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-10-26 15:32 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-10-26 15:32 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-10-26 15:33 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-10-26 15:33 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-10-26 15:33 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-10-26 15:33 - INFO - Windows sleep prevention: DISABLED (Print idle/finished)
+2026-10-26 15:33 - INFO - Serial communication stopped
+2026-10-26 15:33 - INFO - COM connection close successfully
+2026-10-26 15:33 - INFO - Main window close successfully
+2026-10-26 15:33 - INFO - ==================================================
+2026-10-26 15:33 - INFO - New session close at 2026-10-26 15:33
+2026-10-26 15:33 - INFO - ==================================================
+2026-10-26 15:35 - INFO - ==================================================
+2026-10-26 15:35 - INFO - New session START at 2026-10-26 15:35
+2026-10-26 15:35 - INFO - ==================================================
+2026-10-26 15:35 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-10-26 15:35 - INFO - Loaded offsets from config: X=5.0, Y=5.0
+2026-10-26 15:35 - INFO - Loaded draw_z from config: Z=48.7, draw_z_UP=24.35
+2026-10-26 15:35 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-10-26 15:35 - INFO - INI file initialized
+2026-10-26 15:35 - INFO - UI load successful
+2026-10-26 15:35 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-10-26 15:35 - INFO - Do you want to auto connect Main Printer COM to COM4 @ 115200?
+2026-10-26 15:35 - INFO - Auto Connect dialog button : Cancel
+2026-10-26 15:35 - INFO - Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-10-26 15:37 - INFO - Windows sleep prevention: DISABLED (Print idle/finished)
+2026-10-26 15:37 - INFO - Serial communication stopped
+2026-10-26 15:37 - INFO - COM connection close successfully
+2026-10-26 15:37 - INFO - Main window close successfully
+2026-10-26 15:37 - INFO - ==================================================
+2026-10-26 15:37 - INFO - New session close at 2026-10-26 15:37
+2026-10-26 15:37 - INFO - ==================================================
+2026-10-26 15:37 - INFO - ==================================================
+2026-10-26 15:37 - INFO - New session START at 2026-10-26 15:37
+2026-10-26 15:37 - INFO - ==================================================
+2026-10-26 15:37 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-10-26 15:37 - INFO - Loaded offsets from config: X=5.0, Y=5.0
+2026-10-26 15:37 - INFO - Loaded draw_z from config: Z=48.7, draw_z_UP=24.35
+2026-10-26 15:37 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-10-26 15:37 - INFO - INI file initialized
+2026-10-26 15:37 - INFO - UI load successful
+2026-10-26 15:37 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-10-26 15:37 - INFO - Do you want to auto connect Main Printer COM to COM4 @ 115200?
+2026-10-26 15:37 - INFO - Auto Connect dialog button : Cancel
+2026-10-26 15:37 - INFO - Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']

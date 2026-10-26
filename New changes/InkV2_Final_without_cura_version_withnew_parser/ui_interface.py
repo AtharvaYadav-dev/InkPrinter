@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'interfaceFdTxwI.ui'
+## Form generated from reading UI file 'interfaceJILZcu.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.8.1
 ##
@@ -2689,7 +2689,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout_32.addWidget(self.pgmfilePushButton)
 
         self.horizontalLayout_32.setStretch(0, 1)
-        self.horizontalLayout_32.setStretch(1, 2)
+        self.horizontalLayout_32.setStretch(1, 3)
         self.horizontalLayout_32.setStretch(2, 1)
 
         self.verticalLayout_28.addWidget(self.widget_10)
@@ -4350,6 +4350,34 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_50.addWidget(self.pgmpurgePushButton)
 
+        self.pgmcleanPushButton = QPushButton(self.widget_13)
+        self.pgmcleanPushButton.setObjectName(u"pgmcleanPushButton")
+        sizePolicy6.setHeightForWidth(self.pgmcleanPushButton.sizePolicy().hasHeightForWidth())
+        self.pgmcleanPushButton.setSizePolicy(sizePolicy6)
+        self.pgmcleanPushButton.setMaximumSize(QSize(350, 50))
+        self.pgmcleanPushButton.setFont(font2)
+        self.pgmcleanPushButton.setStyleSheet(u"QPushButton {\n"
+"	color: rgb(255, 255, 255);	\n"
+"	background-color: rgb(16, 42, 131);\n"
+"	border-color: transparent;\n"
+"	border-style: outset;\n"
+"	border-radius: 15px;\n"
+"	border-width: 2px;\n"
+"	padding: 6px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"	color: rgb(16, 42, 131);\n"
+"	background-color: rgb(167, 198, 229);\n"
+"	border-color: rgb(16, 42, 131);\n"
+"}\n"
+"\n"
+"QPushButton:disabled {\n"
+"	background-color: rgb(172, 172, 172);\n"
+"}")
+
+        self.horizontalLayout_50.addWidget(self.pgmcleanPushButton)
+
 
         self.verticalLayout_65.addWidget(self.widget_13)
 
@@ -4767,7 +4795,7 @@ class Ui_MainWindow(object):
 
         self.centerMenuPages.setCurrentIndex(3)
         self.infoSubPages.setCurrentIndex(1)
-        self.mainPages.setCurrentIndex(5)
+        self.mainPages.setCurrentIndex(2)
         self.stackedWidget.setCurrentIndex(2)
 
 
@@ -4980,6 +5008,7 @@ class Ui_MainWindow(object):
         self.pgmfillPushButton.setText(QCoreApplication.translate("MainWindow", u"FILL", None))
         self.pgmfillhomePushButton.setText(QCoreApplication.translate("MainWindow", u"F HOME", None))
         self.pgmpurgePushButton.setText(QCoreApplication.translate("MainWindow", u"PURGE", None))
+        self.pgmcleanPushButton.setText(QCoreApplication.translate("MainWindow", u"CLEAN", None))
         self.label_39.setText(QCoreApplication.translate("MainWindow", u"Length : ", None))
         self.label_42.setText(QCoreApplication.translate("MainWindow", u"Purge : ", None))
         self.extsavePushButton.setText(QCoreApplication.translate("MainWindow", u"SAVE", None))

@@ -1,0 +1,572 @@
+2026-10-24 15:08 - INFO - ==================================================
+2026-10-24 15:08 - INFO - New session START at 2026-10-24 15:08
+2026-10-24 15:08 - INFO - ==================================================
+2026-10-24 15:08 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-10-24 15:08 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-10-24 15:08 - INFO - Loaded draw_z from config: Z=0.0, draw_z_UP=0.0
+2026-10-24 15:08 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-10-24 15:08 - INFO - INI file initialized
+2026-10-24 15:08 - INFO - UI load successful
+2026-10-24 15:08 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8', 'COM15'], Baud : ['9600', '57600', '115200', '250000']
+2026-10-24 15:08 - INFO - Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8', 'COM15'], Baud : ['9600', '57600', '115200', '250000']
+2026-10-24 15:34 - INFO - ==================================================
+2026-10-24 15:34 - INFO - New session START at 2026-10-24 15:34
+2026-10-24 15:34 - INFO - ==================================================
+2026-10-24 15:34 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-10-24 15:34 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-10-24 15:34 - INFO - Loaded draw_z from config: Z=0.0, draw_z_UP=0.0
+2026-10-24 15:34 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-10-24 15:34 - INFO - INI file initialized
+2026-10-24 15:34 - INFO - UI load successful
+2026-10-24 15:34 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8', 'COM15'], Baud : ['9600', '57600', '115200', '250000']
+2026-10-24 15:34 - INFO - Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8', 'COM15'], Baud : ['9600', '57600', '115200', '250000']
+2026-10-24 15:34 - CRITICAL - Serial communication started
+2026-10-24 15:38 - INFO - ==================================================
+2026-10-24 15:38 - INFO - New session START at 2026-10-24 15:38
+2026-10-24 15:38 - INFO - ==================================================
+2026-10-24 15:38 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-10-24 15:38 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-10-24 15:38 - INFO - Loaded draw_z from config: Z=0.0, draw_z_UP=0.0
+2026-10-24 15:38 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-10-24 15:38 - INFO - INI file initialized
+2026-10-24 15:38 - INFO - UI load successful
+2026-10-24 15:38 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8', 'COM15'], Baud : ['9600', '57600', '115200', '250000']
+2026-10-24 15:38 - INFO - Do you want to auto connect Main Printer COM to COM15 @ 115200?
+2026-10-24 15:38 - INFO - Auto Connect dialog button : Ok
+2026-10-24 15:38 - INFO - Serial communication autostarted
+2026-10-24 15:38 - INFO - Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8', 'COM15'], Baud : ['9600', '57600', '115200', '250000']
+2026-10-24 15:39 - INFO - Serial communication stopped
+2026-10-24 15:39 - INFO - COM connection close successfully
+2026-10-24 15:39 - INFO - Main window close successfully
+2026-10-24 15:39 - INFO - ==================================================
+2026-10-24 15:39 - INFO - New session close at 2026-10-24 15:39
+2026-10-24 15:39 - INFO - ==================================================
+2026-10-24 15:42 - INFO - ==================================================
+2026-10-24 15:42 - INFO - New session START at 2026-10-24 15:42
+2026-10-24 15:42 - INFO - ==================================================
+2026-10-24 15:42 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-10-24 15:42 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-10-24 15:42 - INFO - Loaded draw_z from config: Z=0.0, draw_z_UP=0.0
+2026-10-24 15:42 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-10-24 15:42 - INFO - INI file initialized
+2026-10-24 15:42 - INFO - UI load successful
+2026-10-24 15:42 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8', 'COM15'], Baud : ['9600', '57600', '115200', '250000']
+2026-10-24 15:42 - INFO - Do you want to auto connect Main Printer COM to COM15 @ 115200?
+2026-10-24 15:42 - INFO - Auto Connect dialog button : Ok
+2026-10-24 15:42 - INFO - Serial communication autostarted
+2026-10-24 15:42 - INFO - Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8', 'COM15'], Baud : ['9600', '57600', '115200', '250000']
+2026-10-24 15:42 - INFO - Serial communication stopped
+2026-10-24 15:42 - INFO - COM connection close successfully
+2026-10-24 15:42 - INFO - Main window close successfully
+2026-10-24 15:42 - INFO - ==================================================
+2026-10-24 15:42 - INFO - New session close at 2026-10-24 15:42
+2026-10-24 15:42 - INFO - ==================================================
+2026-10-24 15:47 - INFO - ==================================================
+2026-10-24 15:47 - INFO - New session START at 2026-10-24 15:47
+2026-10-24 15:47 - INFO - ==================================================
+2026-10-24 15:47 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-10-24 15:47 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-10-24 15:47 - INFO - Loaded draw_z from config: Z=0.0, draw_z_UP=0.0
+2026-10-24 15:47 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-10-24 15:47 - INFO - INI file initialized
+2026-10-24 15:47 - INFO - UI load successful
+2026-10-24 15:47 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8', 'COM15'], Baud : ['9600', '57600', '115200', '250000']
+2026-10-24 15:47 - INFO - Do you want to auto connect Main Printer COM to COM15 @ 115200?
+2026-10-24 15:47 - INFO - Auto Connect dialog button : Cancel
+2026-10-24 15:47 - INFO - Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8', 'COM15'], Baud : ['9600', '57600', '115200', '250000']
+2026-10-24 15:47 - INFO - Bed temperature set to 12
+2026-10-24 15:48 - INFO - ==================================================
+2026-10-24 15:48 - INFO - New session START at 2026-10-24 15:48
+2026-10-24 15:48 - INFO - ==================================================
+2026-10-24 15:48 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-10-24 15:48 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-10-24 15:48 - INFO - Loaded draw_z from config: Z=0.0, draw_z_UP=0.0
+2026-10-24 15:48 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-10-24 15:48 - INFO - INI file initialized
+2026-10-24 15:48 - INFO - UI load successful
+2026-10-24 15:48 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8', 'COM15'], Baud : ['9600', '57600', '115200', '250000']
+2026-10-24 15:48 - INFO - Do you want to auto connect Main Printer COM to COM15 @ 115200?
+2026-10-24 15:48 - INFO - Auto Connect dialog button : Ok
+2026-10-24 15:48 - INFO - Serial communication autostarted
+2026-10-24 15:48 - INFO - Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8', 'COM15'], Baud : ['9600', '57600', '115200', '250000']
+2026-10-24 16:05 - INFO - ==================================================
+2026-10-24 16:05 - INFO - New session START at 2026-10-24 16:05
+2026-10-24 16:05 - INFO - ==================================================
+2026-10-24 16:05 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-10-24 16:05 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-10-24 16:05 - INFO - Loaded draw_z from config: Z=0.0, draw_z_UP=0.0
+2026-10-24 16:05 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-10-24 16:05 - INFO - INI file initialized
+2026-10-24 16:05 - INFO - UI load successful
+2026-10-24 16:07 - INFO - ==================================================
+2026-10-24 16:07 - INFO - New session START at 2026-10-24 16:07
+2026-10-24 16:07 - INFO - ==================================================
+2026-10-24 16:07 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-10-24 16:07 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-10-24 16:07 - INFO - Loaded draw_z from config: Z=0.0, draw_z_UP=0.0
+2026-10-24 16:07 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-10-24 16:07 - INFO - INI file initialized
+2026-10-24 16:07 - INFO - UI load successful
+2026-10-24 16:07 - INFO - Com : com, Port : ['COM1', 'COM4'], Baud : ['9600', '57600', '115200', '250000']
+2026-10-24 16:07 - INFO - Com : black_com, Port : ['COM1', 'COM4'], Baud : ['9600', '57600', '115200', '250000']
+2026-10-24 16:08 - INFO - ==================================================
+2026-10-24 16:08 - INFO - New session START at 2026-10-24 16:08
+2026-10-24 16:08 - INFO - ==================================================
+2026-10-24 16:08 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-10-24 16:08 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-10-24 16:08 - INFO - Loaded draw_z from config: Z=0.0, draw_z_UP=0.0
+2026-10-24 16:08 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-10-24 16:08 - INFO - INI file initialized
+2026-10-24 16:08 - INFO - UI load successful
+2026-10-24 16:09 - INFO - ==================================================
+2026-10-24 16:09 - INFO - New session START at 2026-10-24 16:09
+2026-10-24 16:09 - INFO - ==================================================
+2026-10-24 16:09 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-10-24 16:09 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-10-24 16:09 - INFO - Loaded draw_z from config: Z=0.0, draw_z_UP=0.0
+2026-10-24 16:09 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-10-24 16:09 - INFO - INI file initialized
+2026-10-24 16:09 - INFO - UI load successful
+2026-10-24 16:09 - INFO - Com : com, Port : ['COM1', 'COM4'], Baud : ['9600', '57600', '115200', '250000']
+2026-10-24 16:09 - INFO - Com : black_com, Port : ['COM1', 'COM4'], Baud : ['9600', '57600', '115200', '250000']
+2026-10-24 16:09 - INFO - Com : com, Port : ['COM1', 'COM4'], Baud : ['9600', '57600', '115200', '250000']
+2026-10-24 16:09 - CRITICAL - Serial communication started
+2026-10-24 16:10 - INFO - Windows sleep prevention: DISABLED (Print idle/finished)
+2026-10-24 16:10 - INFO - Serial communication stopped
+2026-10-24 16:10 - INFO - COM connection close successfully
+2026-10-24 16:10 - INFO - Main window close successfully
+2026-10-24 16:10 - INFO - ==================================================
+2026-10-24 16:10 - INFO - New session close at 2026-10-24 16:10
+2026-10-24 16:10 - INFO - ==================================================
+2026-10-24 16:10 - ERROR - Uncaught exception
+Traceback (most recent call last):
+  File "D:\Manali_L\ManaliL\InkPrinter\New changes\InkV2_Final_without_cura_version_withnew_parser\.venv\Lib\site-packages\Custom_Widgets\__init__.py", line 236, in stopWorkers
+    if self.iconsWorker is not None:
+       ^^^^^^^^^^^^^^^^
+AttributeError: 'MainWindow' object has no attribute 'iconsWorker'
+2026-10-26 11:01 - INFO - ==================================================
+2026-10-26 11:01 - INFO - New session START at 2026-10-26 11:01
+2026-10-26 11:01 - INFO - ==================================================
+2026-10-26 11:01 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-10-26 11:01 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-10-26 11:01 - INFO - Loaded draw_z from config: Z=0.0, draw_z_UP=0.0
+2026-10-26 11:01 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-10-26 11:01 - INFO - INI file initialized
+2026-10-26 11:01 - INFO - UI load successful
+2026-10-26 11:01 - INFO - Com : com, Port : ['COM1'], Baud : ['9600', '57600', '115200', '250000']
+2026-10-26 11:01 - INFO - Com : black_com, Port : ['COM1'], Baud : ['9600', '57600', '115200', '250000']
+2026-10-26 11:02 - INFO - Com : com, Port : ['COM13', 'COM1', 'COM4'], Baud : ['9600', '57600', '115200', '250000']
+2026-10-26 11:02 - CRITICAL - Serial communication started
+2026-10-26 11:03 - INFO - Com : black_com, Port : ['COM13', 'COM1', 'COM4'], Baud : ['9600', '57600', '115200', '250000']
+2026-10-26 11:03 - CRITICAL - Serial communication started
+2026-10-26 11:04 - INFO - Sent P 0.500000 to Blackpill
+2026-10-26 11:05 - INFO - File selected: D:/Manali_L/ManaliL/InkPrinter/New changes/InkV2_Final_without_cura_version_withnew_parser/Test_files/ide2.svg
+2026-10-26 11:05 - INFO - Converting SVG -> G-code directly: D:\Manali_L\ManaliL\InkPrinter\New changes\InkV2_Final_without_cura_version_withnew_parser\Test_files\ide2.svg
+2026-10-26 11:05 - INFO - G-code created: D:\Manali_L\ManaliL\InkPrinter\New changes\InkV2_Final_without_cura_version_withnew_parser\Test_files\ide2.gcode
+2026-10-26 11:05 - INFO - G-code ready from SVG: D:\Manali_L\ManaliL\InkPrinter\New changes\InkV2_Final_without_cura_version_withnew_parser\Test_files\ide2.gcode
+2026-10-26 11:05 - INFO - Raw G-code parsed (173 lines).
+2026-10-26 11:05 - INFO - Feedrate: 1500.0 mm/min
+2026-10-26 11:05 - INFO - Normalization shift: X=-1.904, Y=-1.855
+2026-10-26 11:05 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=0.000
+2026-10-26 11:05 - INFO - Final applied shift: X=-1.904, Y=-1.855
+2026-10-26 11:06 - INFO - Bed temperature set to 27
+2026-10-26 11:08 - INFO - Bed temperature set to 13
+2026-10-26 11:08 - CRITICAL - Laser 1 : has offset, Xoffset = 5.0, Yoffset = 5.0
+2026-10-26 11:09 - INFO - Windows sleep prevention: ENABLED (Printing active)
+2026-10-26 11:09 - INFO - Print Status : RUN
+2026-10-26 11:09 - INFO - Sent P 0.500000 to Blackpill
+2026-10-26 11:10 - INFO - Windows sleep prevention: DISABLED (Print idle/finished)
+2026-10-26 11:10 - INFO - Print Status : ABORT
+2026-10-26 11:10 - INFO - Windows sleep prevention: DISABLED (Print idle/finished)
+2026-10-26 11:10 - INFO - Serial communication stopped
+2026-10-26 11:10 - INFO - COM connection close successfully
+2026-10-26 11:10 - INFO - Main window close successfully
+2026-10-26 11:10 - INFO - ==================================================
+2026-10-26 11:10 - INFO - New session close at 2026-10-26 11:10
+2026-10-26 11:10 - INFO - ==================================================
+2026-10-26 11:10 - ERROR - Uncaught exception
+Traceback (most recent call last):
+  File "D:\Manali_L\ManaliL\InkPrinter\New changes\InkV2_Final_without_cura_version_withnew_parser\.venv\Lib\site-packages\Custom_Widgets\__init__.py", line 236, in stopWorkers
+    if self.iconsWorker is not None:
+       ^^^^^^^^^^^^^^^^
+AttributeError: 'MainWindow' object has no attribute 'iconsWorker'
+2026-10-26 11:10 - INFO - ==================================================
+2026-10-26 11:10 - INFO - New session START at 2026-10-26 11:10
+2026-10-26 11:10 - INFO - ==================================================
+2026-10-26 11:10 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-10-26 11:10 - INFO - Loaded offsets from config: X=5.0, Y=5.0
+2026-10-26 11:10 - INFO - Loaded draw_z from config: Z=50.0, draw_z_UP=25.0
+2026-10-26 11:10 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-10-26 11:10 - INFO - INI file initialized
+2026-10-26 11:10 - INFO - UI load successful
+2026-10-26 11:10 - INFO - Com : com, Port : ['COM13', 'COM1', 'COM4'], Baud : ['9600', '57600', '115200', '250000']
+2026-10-26 11:10 - INFO - Do you want to auto connect Main Printer COM to COM4 @ 115200?
+2026-10-26 11:10 - INFO - Auto Connect dialog button : Ok
+2026-10-26 11:10 - INFO - Serial communication autostarted
+2026-10-26 11:10 - INFO - Com : black_com, Port : ['COM13', 'COM1', 'COM4'], Baud : ['9600', '57600', '115200', '250000']
+2026-10-26 11:10 - INFO - Do you want to auto connect Blackpill COM to COM13 @ 115200?
+2026-10-26 11:10 - INFO - Auto Connect dialog button : Ok
+2026-10-26 11:10 - INFO - Serial communication autostarted
+2026-10-26 11:11 - CRITICAL - Laser 1 : has offset, Xoffset = 5.0, Yoffset = 5.0
+2026-10-26 11:11 - INFO - File selected: D:/Manali_L/ManaliL/InkPrinter/New changes/InkV2_Final_without_cura_version_withnew_parser/Test_files/ide2.svg
+2026-10-26 11:11 - INFO - Converting SVG -> G-code directly: D:\Manali_L\ManaliL\InkPrinter\New changes\InkV2_Final_without_cura_version_withnew_parser\Test_files\ide2.svg
+2026-10-26 11:11 - INFO - G-code created: D:\Manali_L\ManaliL\InkPrinter\New changes\InkV2_Final_without_cura_version_withnew_parser\Test_files\ide2.gcode
+2026-10-26 11:11 - INFO - G-code ready from SVG: D:\Manali_L\ManaliL\InkPrinter\New changes\InkV2_Final_without_cura_version_withnew_parser\Test_files\ide2.gcode
+2026-10-26 11:11 - INFO - Raw G-code parsed (173 lines).
+2026-10-26 11:11 - INFO - Feedrate: 1500.0 mm/min
+2026-10-26 11:11 - INFO - Normalization shift: X=-1.904, Y=-1.855
+2026-10-26 11:11 - INFO - Using OFFSETS: X=5.000, Y=5.000, drawZ=50.000
+2026-10-26 11:11 - INFO - Final applied shift: X=3.096, Y=3.145
+2026-10-26 11:11 - INFO - Windows sleep prevention: ENABLED (Printing active)
+2026-10-26 11:11 - INFO - Print Status : RUN
+2026-10-26 11:12 - INFO - Sent P 0.500000 to Blackpill
+2026-10-26 11:12 - INFO - Sent P 0.500000 to Blackpill
+2026-10-26 11:12 - INFO - Sent P 0.500000 to Blackpill
+2026-10-26 11:12 - INFO - Sent F 0.01 to Blackpill
+2026-10-26 11:13 - INFO - Sent F 0.01 to Blackpill
+2026-10-26 11:13 - INFO - Sent F 0.01 to Blackpill
+2026-10-26 11:13 - INFO - Sent P 0.500000 to Blackpill
+2026-10-26 11:13 - INFO - Sent F 0.01 to Blackpill
+2026-10-26 11:13 - INFO - Sent F 0.01 to Blackpill
+2026-10-26 11:13 - INFO - Sent F 0.01 to Blackpill
+2026-10-26 11:13 - INFO - Sent F 0.01 to Blackpill
+2026-10-26 11:13 - INFO - Sent F 0.01 to Blackpill
+2026-10-26 11:14 - INFO - Sent F 0.01 to Blackpill
+2026-10-26 11:14 - INFO - Sent F 0.01 to Blackpill
+2026-10-26 11:14 - INFO - Sent F 0.01 to Blackpill
+2026-10-26 11:14 - INFO - Sent F 0.01 to Blackpill
+2026-10-26 11:14 - INFO - Sent F 0.01 to Blackpill
+2026-10-26 11:14 - INFO - Sent F 0.01 to Blackpill
+2026-10-26 11:14 - INFO - Sent F 0.01 to Blackpill
+2026-10-26 11:14 - INFO - Sent P 0.500000 to Blackpill
+2026-10-26 11:14 - INFO - Sent F 0.01 to Blackpill
+2026-10-26 11:15 - INFO - Sent F 0.01 to Blackpill
+2026-10-26 11:15 - INFO - Sent F 0.01 to Blackpill
+2026-10-26 11:15 - INFO - Sent P 0.500000 to Blackpill
+2026-10-26 11:15 - INFO - Sent F 0.01 to Blackpill
+2026-10-26 11:15 - INFO - Sent F 0.01 to Blackpill
+2026-10-26 11:15 - INFO - Sent F 0.01 to Blackpill
+2026-10-26 11:15 - INFO - Sent P 0.500000 to Blackpill
+2026-10-26 11:16 - INFO - Sent P 0.500000 to Blackpill
+2026-10-26 11:16 - INFO - Sent P 0.500000 to Blackpill
+2026-10-26 11:16 - INFO - Sent F 0.01 to Blackpill
+2026-10-26 11:16 - INFO - Sent F 0.01 to Blackpill
+2026-10-26 11:16 - INFO - Sent P 0.500000 to Blackpill
+2026-10-26 11:16 - INFO - Sent F 0.01 to Blackpill
+2026-10-26 11:16 - INFO - Sent F 0.01 to Blackpill
+2026-10-26 11:17 - INFO - Sent P 0.500000 to Blackpill
+2026-10-26 11:17 - INFO - Sent F 0.01 to Blackpill
+2026-10-26 11:17 - INFO - Sent F 0.01 to Blackpill
+2026-10-26 11:17 - INFO - Sent F 0.01 to Blackpill
+2026-10-26 11:17 - INFO - Sent F 0.01 to Blackpill
+2026-10-26 11:17 - INFO - Sent F 0.01 to Blackpill
+2026-10-26 11:17 - INFO - Sent F 0.01 to Blackpill
+2026-10-26 11:17 - INFO - Sent F 0.01 to Blackpill
+2026-10-26 11:17 - INFO - Sent F 0.01 to Blackpill
+2026-10-26 11:18 - INFO - Sent F 0.01 to Blackpill
+2026-10-26 11:18 - INFO - Sent F 0.01 to Blackpill
+2026-10-26 11:18 - INFO - Sent F 0.01 to Blackpill
+2026-10-26 11:18 - INFO - Sent F 0.01 to Blackpill
+2026-10-26 11:18 - INFO - Sent P 0.500000 to Blackpill
+2026-10-26 11:18 - INFO - Sent F 0.01 to Blackpill
+2026-10-26 11:18 - INFO - Sent F 0.01 to Blackpill
+2026-10-26 11:18 - INFO - Sent F 0.01 to Blackpill
+2026-10-26 11:18 - INFO - Windows sleep prevention: DISABLED (Print idle/finished)
+2026-10-26 11:18 - INFO - Print finished, sending G28 to home.
+2026-10-26 12:19 - INFO - Serial communication stopped
+2026-10-26 12:20 - INFO - Sent P 10.0 to Blackpill
+2026-10-26 12:20 - INFO - Purge command (P 10.0) sent to Blackpill.
+2026-10-26 12:20 - INFO - Sent S to Blackpill
+2026-10-26 12:20 - INFO - Stop Purge command sent to Blackpill.
+2026-10-26 12:20 - INFO - Serial communication stopped
+2026-10-26 12:20 - CRITICAL - Serial communication started
+2026-10-26 12:21 - ERROR - Error : Invalid Input > Kindly select a COM port.
+2026-10-26 12:21 - ERROR - Error : Invalid Input > Kindly select a COM port.
+2026-10-26 12:21 - INFO - Com : com, Port : ['COM13', 'COM1'], Baud : ['9600', '57600', '115200', '250000']
+2026-10-26 12:21 - INFO - Com : com, Port : ['COM13', 'COM1', 'COM4'], Baud : ['9600', '57600', '115200', '250000']
+2026-10-26 12:21 - CRITICAL - Serial communication started
+2026-10-26 12:21 - INFO - Sent P 10.0 to Blackpill
+2026-10-26 12:21 - INFO - Purge command (P 10.0) sent to Blackpill.
+2026-10-26 12:21 - INFO - Auto-reset Purge button state.
+2026-10-26 12:21 - INFO - Sent P 10.0 to Blackpill
+2026-10-26 12:21 - INFO - Purge command (P 10.0) sent to Blackpill.
+2026-10-26 12:21 - INFO - Auto-reset Purge button state.
+2026-10-26 12:21 - INFO - Sent P 10.0 to Blackpill
+2026-10-26 12:21 - INFO - Purge command (P 10.0) sent to Blackpill.
+2026-10-26 12:21 - INFO - Auto-reset Purge button state.
+2026-10-26 12:21 - INFO - Sent P 10.0 to Blackpill
+2026-10-26 12:21 - INFO - Purge command (P 10.0) sent to Blackpill.
+2026-10-26 12:21 - INFO - Auto-reset Purge button state.
+2026-10-26 12:21 - INFO - Sent P 10.0 to Blackpill
+2026-10-26 12:21 - INFO - Purge command (P 10.0) sent to Blackpill.
+2026-10-26 12:21 - INFO - Sent S to Blackpill
+2026-10-26 12:21 - INFO - Stop Purge command sent to Blackpill.
+2026-10-26 12:22 - INFO - Serial communication stopped
+2026-10-26 12:24 - CRITICAL - Serial communication started
+2026-10-26 12:24 - INFO - Sent H to Blackpill
+2026-10-26 12:24 - INFO - HOME command sent to Blackpill.
+2026-10-26 12:25 - INFO - Auto-reset F home button state.
+2026-10-26 12:25 - INFO - Sent H to Blackpill
+2026-10-26 12:25 - INFO - HOME command sent to Blackpill.
+2026-10-26 12:25 - INFO - Sent S to Blackpill
+2026-10-26 12:25 - INFO - Stop HOME command sent to Blackpill.
+2026-10-26 12:31 - INFO - Updated purge settings via UI: length_mm=150.0, purge_value=0.04
+2026-10-26 12:32 - INFO - Windows sleep prevention: DISABLED (Print idle/finished)
+2026-10-26 12:32 - INFO - Serial communication stopped
+2026-10-26 12:32 - INFO - COM connection close successfully
+2026-10-26 12:32 - INFO - Main window close successfully
+2026-10-26 12:32 - INFO - ==================================================
+2026-10-26 12:32 - INFO - New session close at 2026-10-26 12:32
+2026-10-26 12:32 - INFO - ==================================================
+2026-10-26 12:32 - ERROR - Uncaught exception
+Traceback (most recent call last):
+  File "D:\Manali_L\ManaliL\InkPrinter\New changes\InkV2_Final_without_cura_version_withnew_parser\.venv\Lib\site-packages\Custom_Widgets\__init__.py", line 236, in stopWorkers
+    if self.iconsWorker is not None:
+       ^^^^^^^^^^^^^^^^
+AttributeError: 'MainWindow' object has no attribute 'iconsWorker'
+2026-10-26 12:32 - INFO - ==================================================
+2026-10-26 12:32 - INFO - New session START at 2026-10-26 12:32
+2026-10-26 12:32 - INFO - ==================================================
+2026-10-26 12:32 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-10-26 12:32 - INFO - Loaded offsets from config: X=5.0, Y=5.0
+2026-10-26 12:32 - INFO - Loaded draw_z from config: Z=50.0, draw_z_UP=25.0
+2026-10-26 12:32 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-10-26 12:32 - INFO - INI file initialized
+2026-10-26 12:32 - INFO - UI load successful
+2026-10-26 12:32 - INFO - Com : com, Port : ['COM13', 'COM1', 'COM4'], Baud : ['9600', '57600', '115200', '250000']
+2026-10-26 12:32 - INFO - Do you want to auto connect Main Printer COM to COM4 @ 115200?
+2026-10-26 12:32 - INFO - Auto Connect dialog button : Ok
+2026-10-26 12:32 - INFO - Serial communication autostarted
+2026-10-26 12:32 - INFO - Com : black_com, Port : ['COM13', 'COM1', 'COM4'], Baud : ['9600', '57600', '115200', '250000']
+2026-10-26 12:32 - INFO - Do you want to auto connect Blackpill COM to COM13 @ 115200?
+2026-10-26 12:32 - INFO - Auto Connect dialog button : Ok
+2026-10-26 12:32 - INFO - Serial communication autostarted
+2026-10-26 12:33 - INFO - Updated purge settings via UI: length_mm=150.0, purge_value=0.04
+2026-10-26 12:33 - INFO - File selected: D:/Manali_L/ManaliL/InkPrinter/New changes/InkV2_Final_without_cura_version_withnew_parser/Test_files/ide2.svg
+2026-10-26 12:33 - INFO - Converting SVG -> G-code directly: D:\Manali_L\ManaliL\InkPrinter\New changes\InkV2_Final_without_cura_version_withnew_parser\Test_files\ide2.svg
+2026-10-26 12:33 - INFO - G-code created: D:\Manali_L\ManaliL\InkPrinter\New changes\InkV2_Final_without_cura_version_withnew_parser\Test_files\ide2.gcode
+2026-10-26 12:33 - INFO - G-code ready from SVG: D:\Manali_L\ManaliL\InkPrinter\New changes\InkV2_Final_without_cura_version_withnew_parser\Test_files\ide2.gcode
+2026-10-26 12:33 - INFO - Raw G-code parsed (173 lines).
+2026-10-26 12:33 - INFO - Feedrate: 1500.0 mm/min
+2026-10-26 12:33 - INFO - Normalization shift: X=-1.904, Y=-1.855
+2026-10-26 12:33 - INFO - Using OFFSETS: X=5.000, Y=5.000, drawZ=50.000
+2026-10-26 12:33 - INFO - Final applied shift: X=3.096, Y=3.145
+2026-10-26 12:40 - INFO - Sent P 10.0 to Blackpill
+2026-10-26 12:40 - INFO - Purge command (P 10.0) sent to Blackpill.
+2026-10-26 12:40 - INFO - Auto-reset Purge button state.
+2026-10-26 12:40 - INFO - Sent P 10.0 to Blackpill
+2026-10-26 12:40 - INFO - Purge command (P 10.0) sent to Blackpill.
+2026-10-26 12:40 - INFO - Auto-reset Purge button state.
+2026-10-26 12:41 - INFO - Sent P 10.0 to Blackpill
+2026-10-26 12:41 - INFO - Purge command (P 10.0) sent to Blackpill.
+2026-10-26 12:41 - INFO - Auto-reset Purge button state.
+2026-10-26 12:41 - INFO - Sent H to Blackpill
+2026-10-26 12:41 - INFO - HOME command sent to Blackpill.
+2026-10-26 12:41 - INFO - Sent S to Blackpill
+2026-10-26 12:41 - INFO - Stop HOME command sent to Blackpill.
+2026-10-26 12:41 - INFO - Sent P 10.0 to Blackpill
+2026-10-26 12:41 - INFO - Purge command (P 10.0) sent to Blackpill.
+2026-10-26 12:41 - INFO - Auto-reset Purge button state.
+2026-10-26 12:44 - INFO - Sent H to Blackpill
+2026-10-26 12:44 - INFO - HOME command sent to Blackpill.
+2026-10-26 12:44 - INFO - Auto-reset F home button state.
+2026-10-26 12:44 - INFO - Sent H to Blackpill
+2026-10-26 12:44 - INFO - HOME command sent to Blackpill.
+2026-10-26 12:44 - INFO - Sent S to Blackpill
+2026-10-26 12:44 - INFO - Stop HOME command sent to Blackpill.
+2026-10-26 12:46 - INFO - Sent P 0.1 to Blackpill
+2026-10-26 12:46 - INFO - Purge command (P 0.1) sent to Blackpill.
+2026-10-26 12:46 - INFO - Auto-reset Purge button state.
+2026-10-26 12:46 - INFO - Sent P 0.1 to Blackpill
+2026-10-26 12:46 - INFO - Purge command (P 0.1) sent to Blackpill.
+2026-10-26 12:46 - INFO - Auto-reset Purge button state.
+2026-10-26 12:46 - INFO - Sent P 0.1 to Blackpill
+2026-10-26 12:46 - INFO - Purge command (P 0.1) sent to Blackpill.
+2026-10-26 12:46 - INFO - Auto-reset Purge button state.
+2026-10-26 12:46 - INFO - Sent P 0.1 to Blackpill
+2026-10-26 12:46 - INFO - Purge command (P 0.1) sent to Blackpill.
+2026-10-26 12:46 - INFO - Auto-reset Purge button state.
+2026-10-26 12:46 - INFO - Sent P 0.1 to Blackpill
+2026-10-26 12:46 - INFO - Purge command (P 0.1) sent to Blackpill.
+2026-10-26 12:46 - INFO - Auto-reset Purge button state.
+2026-10-26 12:46 - INFO - Sent P 0.1 to Blackpill
+2026-10-26 12:46 - INFO - Purge command (P 0.1) sent to Blackpill.
+2026-10-26 12:46 - INFO - Auto-reset Purge button state.
+2026-10-26 12:46 - INFO - Sent P 0.1 to Blackpill
+2026-10-26 12:46 - INFO - Purge command (P 0.1) sent to Blackpill.
+2026-10-26 12:46 - INFO - Auto-reset Purge button state.
+2026-10-26 12:46 - INFO - Sent P 0.1 to Blackpill
+2026-10-26 12:46 - INFO - Purge command (P 0.1) sent to Blackpill.
+2026-10-26 12:46 - INFO - Sent S to Blackpill
+2026-10-26 12:46 - INFO - Stop Purge command sent to Blackpill.
+2026-10-26 12:46 - INFO - Sent P 0.1 to Blackpill
+2026-10-26 12:46 - INFO - Purge command (P 0.1) sent to Blackpill.
+2026-10-26 12:46 - INFO - Auto-reset Purge button state.
+2026-10-26 12:46 - INFO - Sent P 0.1 to Blackpill
+2026-10-26 12:46 - INFO - Purge command (P 0.1) sent to Blackpill.
+2026-10-26 12:46 - INFO - Sent S to Blackpill
+2026-10-26 12:46 - INFO - Stop Purge command sent to Blackpill.
+2026-10-26 12:46 - INFO - Sent P 0.1 to Blackpill
+2026-10-26 12:46 - INFO - Purge command (P 0.1) sent to Blackpill.
+2026-10-26 12:46 - INFO - Auto-reset Purge button state.
+2026-10-26 12:46 - INFO - Sent P 0.1 to Blackpill
+2026-10-26 12:46 - INFO - Purge command (P 0.1) sent to Blackpill.
+2026-10-26 12:46 - INFO - Auto-reset Purge button state.
+2026-10-26 12:46 - INFO - Sent P 0.1 to Blackpill
+2026-10-26 12:46 - INFO - Purge command (P 0.1) sent to Blackpill.
+2026-10-26 12:46 - INFO - Auto-reset Purge button state.
+2026-10-26 12:47 - INFO - Sent P 0.1 to Blackpill
+2026-10-26 12:47 - INFO - Purge command (P 0.1) sent to Blackpill.
+2026-10-26 12:47 - INFO - Auto-reset Purge button state.
+2026-10-26 12:47 - INFO - Sent P 0.1 to Blackpill
+2026-10-26 12:47 - INFO - Purge command (P 0.1) sent to Blackpill.
+2026-10-26 12:47 - INFO - Sent S to Blackpill
+2026-10-26 12:47 - INFO - Stop Purge command sent to Blackpill.
+2026-10-26 12:47 - INFO - Sent P 0.1 to Blackpill
+2026-10-26 12:47 - INFO - Purge command (P 0.1) sent to Blackpill.
+2026-10-26 12:47 - INFO - Sent S to Blackpill
+2026-10-26 12:47 - INFO - Stop Purge command sent to Blackpill.
+2026-10-26 12:47 - INFO - Sent P 0.1 to Blackpill
+2026-10-26 12:47 - INFO - Purge command (P 0.1) sent to Blackpill.
+2026-10-26 12:47 - INFO - Auto-reset Purge button state.
+2026-10-26 12:49 - CRITICAL - Laser 1 : has offset, Xoffset = 5.0, Yoffset = 5.0
+2026-10-26 12:49 - INFO - Updated purge settings via UI: length_mm=150.0, purge_value=0.04
+2026-10-26 12:49 - INFO - Windows sleep prevention: ENABLED (Printing active)
+2026-10-26 12:49 - INFO - Print Status : RUN
+2026-10-26 12:49 - INFO - Bed temperature set to 25
+2026-10-26 12:50 - INFO - Print Status : PAUSE
+2026-10-26 12:50 - INFO - Windows sleep prevention: DISABLED (Print idle/finished)
+2026-10-26 12:50 - INFO - Print Status : ABORT
+2026-10-26 12:51 - INFO - Close event ignored.
+2026-10-26 12:53 - CRITICAL - Laser 1 : has offset, Xoffset = 5.0, Yoffset = 5.0
+2026-10-26 12:54 - INFO - Updated purge settings via UI: length_mm=150.0, purge_value=0.04
+2026-10-26 12:54 - INFO - File selected: D:/Manali_L/ManaliL/InkPrinter/New changes/InkV2_Final_without_cura_version_withnew_parser/Test_files/ide2.svg
+2026-10-26 12:54 - INFO - Converting SVG -> G-code directly: D:\Manali_L\ManaliL\InkPrinter\New changes\InkV2_Final_without_cura_version_withnew_parser\Test_files\ide2.svg
+2026-10-26 12:54 - INFO - G-code created: D:\Manali_L\ManaliL\InkPrinter\New changes\InkV2_Final_without_cura_version_withnew_parser\Test_files\ide2.gcode
+2026-10-26 12:54 - INFO - G-code ready from SVG: D:\Manali_L\ManaliL\InkPrinter\New changes\InkV2_Final_without_cura_version_withnew_parser\Test_files\ide2.gcode
+2026-10-26 12:54 - INFO - Raw G-code parsed (173 lines).
+2026-10-26 12:54 - INFO - Feedrate: 1500.0 mm/min
+2026-10-26 12:54 - INFO - Normalization shift: X=-1.904, Y=-1.855
+2026-10-26 12:54 - INFO - Using OFFSETS: X=5.000, Y=5.000, drawZ=48.700
+2026-10-26 12:54 - INFO - Final applied shift: X=3.096, Y=3.145
+2026-10-26 12:54 - INFO - Windows sleep prevention: ENABLED (Printing active)
+2026-10-26 12:54 - INFO - Print Status : RUN
+2026-10-26 12:55 - INFO - Windows sleep prevention: DISABLED (Print idle/finished)
+2026-10-26 12:55 - INFO - Print Status : ABORT
+2026-10-26 12:56 - INFO - Serial communication stopped
+2026-10-26 12:56 - INFO - Serial communication stopped
+2026-10-26 14:17 - INFO - Close event ignored.
+2026-10-26 14:17 - INFO - Windows sleep prevention: DISABLED (Print idle/finished)
+2026-10-26 14:17 - INFO - Serial communication stopped
+2026-10-26 14:17 - INFO - COM connection close successfully
+2026-10-26 14:17 - INFO - Main window close successfully
+2026-10-26 14:17 - INFO - ==================================================
+2026-10-26 14:17 - INFO - New session close at 2026-10-26 14:17
+2026-10-26 14:17 - INFO - ==================================================
+2026-10-26 14:17 - ERROR - Uncaught exception
+Traceback (most recent call last):
+  File "D:\Manali_L\ManaliL\InkPrinter\New changes\InkV2_Final_without_cura_version_withnew_parser\.venv\Lib\site-packages\Custom_Widgets\__init__.py", line 236, in stopWorkers
+    if self.iconsWorker is not None:
+       ^^^^^^^^^^^^^^^^
+AttributeError: 'MainWindow' object has no attribute 'iconsWorker'
+2026-10-26 14:22 - INFO - ==================================================
+2026-10-26 14:22 - INFO - New session START at 2026-10-26 14:22
+2026-10-26 14:22 - INFO - ==================================================
+2026-10-26 14:22 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-10-26 14:22 - INFO - Loaded offsets from config: X=5.0, Y=5.0
+2026-10-26 14:22 - INFO - Loaded draw_z from config: Z=48.7, draw_z_UP=24.35
+2026-10-26 14:22 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-10-26 14:22 - INFO - INI file initialized
+2026-10-26 14:22 - INFO - UI load successful
+2026-10-26 14:22 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-10-26 14:23 - INFO - Do you want to auto connect Main Printer COM to COM4 @ 115200?
+2026-10-26 14:23 - INFO - Auto Connect dialog button : Cancel
+2026-10-26 14:23 - INFO - Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-10-26 14:46 - INFO - ==================================================
+2026-10-26 14:46 - INFO - New session START at 2026-10-26 14:46
+2026-10-26 14:46 - INFO - ==================================================
+2026-10-26 14:46 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-10-26 14:46 - INFO - Loaded offsets from config: X=5.0, Y=5.0
+2026-10-26 14:46 - INFO - Loaded draw_z from config: Z=48.7, draw_z_UP=24.35
+2026-10-26 14:46 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-10-26 14:46 - INFO - INI file initialized
+2026-10-26 14:46 - INFO - UI load successful
+2026-10-26 14:46 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-10-26 14:46 - INFO - Do you want to auto connect Main Printer COM to COM4 @ 115200?
+2026-10-26 14:46 - INFO - Auto Connect dialog button : Cancel
+2026-10-26 14:46 - INFO - Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-10-26 14:52 - INFO - Windows sleep prevention: DISABLED (Print idle/finished)
+2026-10-26 14:52 - INFO - Serial communication stopped
+2026-10-26 14:52 - INFO - COM connection close successfully
+2026-10-26 14:52 - INFO - Main window close successfully
+2026-10-26 14:52 - INFO - ==================================================
+2026-10-26 14:52 - INFO - New session close at 2026-10-26 14:52
+2026-10-26 14:52 - INFO - ==================================================
+2026-10-26 14:52 - INFO - ==================================================
+2026-10-26 14:52 - INFO - New session START at 2026-10-26 14:52
+2026-10-26 14:52 - INFO - ==================================================
+2026-10-26 14:52 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-10-26 14:52 - INFO - Loaded offsets from config: X=5.0, Y=5.0
+2026-10-26 14:52 - INFO - Loaded draw_z from config: Z=48.7, draw_z_UP=24.35
+2026-10-26 14:52 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-10-26 14:52 - INFO - INI file initialized
+2026-10-26 14:52 - INFO - UI load successful
+2026-10-26 14:52 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-10-26 14:52 - INFO - Do you want to auto connect Main Printer COM to COM4 @ 115200?
+2026-10-26 14:52 - INFO - Auto Connect dialog button : Cancel
+2026-10-26 14:52 - INFO - Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-10-26 14:52 - INFO - syringflushAction triggered - calculating error
+2026-10-26 14:52 - INFO - syringflushAction triggered - calculating error
+2026-10-26 14:52 - INFO - syringflushAction triggered - calculating error
+2026-10-26 14:52 - INFO - syringflushAction triggered - calculating error
+2026-10-26 14:52 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-10-26 14:53 - INFO - Updated purge settings via UI: length_mm=100.0, purge_value=0.5
+2026-10-26 14:53 - INFO - syringflushAction triggered - calculating error
+2026-10-26 14:53 - INFO - syringflushAction triggered - calculating error
+2026-10-26 14:53 - INFO - syringflushAction triggered - calculating error
+2026-10-26 14:53 - INFO - syringflushAction triggered - calculating error
+2026-10-26 14:53 - INFO - syringflushAction triggered - calculating error
+2026-10-26 14:53 - INFO - Windows sleep prevention: DISABLED (Print idle/finished)
+2026-10-26 14:53 - INFO - Serial communication stopped
+2026-10-26 14:53 - INFO - COM connection close successfully
+2026-10-26 14:53 - INFO - Main window close successfully
+2026-10-26 14:53 - INFO - ==================================================
+2026-10-26 14:53 - INFO - New session close at 2026-10-26 14:53
+2026-10-26 14:53 - INFO - ==================================================
+2026-10-26 15:01 - INFO - ==================================================
+2026-10-26 15:01 - INFO - New session START at 2026-10-26 15:01
+2026-10-26 15:01 - INFO - ==================================================
+2026-10-26 15:01 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-10-26 15:01 - INFO - Loaded offsets from config: X=5.0, Y=5.0
+2026-10-26 15:01 - INFO - Loaded draw_z from config: Z=48.7, draw_z_UP=24.35
+2026-10-26 15:01 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-10-26 15:01 - INFO - INI file initialized
+2026-10-26 15:01 - INFO - UI load successful
+2026-10-26 15:01 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-10-26 15:01 - INFO - Do you want to auto connect Main Printer COM to COM4 @ 115200?
+2026-10-26 15:01 - INFO - Auto Connect dialog button : Cancel
+2026-10-26 15:01 - INFO - Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-10-26 15:01 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-10-26 15:09 - INFO - ==================================================
+2026-10-26 15:09 - INFO - New session START at 2026-10-26 15:09
+2026-10-26 15:09 - INFO - ==================================================
+2026-10-26 15:09 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-10-26 15:09 - INFO - Loaded offsets from config: X=5.0, Y=5.0
+2026-10-26 15:09 - INFO - Loaded draw_z from config: Z=48.7, draw_z_UP=24.35
+2026-10-26 15:09 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-10-26 15:09 - INFO - INI file initialized
+2026-10-26 15:09 - INFO - UI load successful
+2026-10-26 15:09 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-10-26 15:09 - INFO - Do you want to auto connect Main Printer COM to COM4 @ 115200?
+2026-10-26 15:09 - INFO - Auto Connect dialog button : Cancel
+2026-10-26 15:09 - INFO - Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-10-26 15:09 - INFO - syringflushAction triggered - calculating error
+2026-10-26 15:09 - ERROR - Blackpill is not connected. Please connect via the Black COM page.
+2026-10-26 15:09 - INFO - syringflushAction triggered - calculating error
+2026-10-26 15:09 - INFO - Windows sleep prevention: DISABLED (Print idle/finished)
+2026-10-26 15:09 - INFO - Serial communication stopped
+2026-10-26 15:09 - INFO - COM connection close successfully
+2026-10-26 15:09 - INFO - Main window close successfully
+2026-10-26 15:09 - INFO - ==================================================
+2026-10-26 15:09 - INFO - New session close at 2026-10-26 15:09
+2026-10-26 15:09 - INFO - ==================================================
