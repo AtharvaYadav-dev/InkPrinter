@@ -5736,3 +5736,41 @@ AttributeError: Error calling Python override of QMainWindow::closeEvent(): 'Mai
 2026-10-24 10:42 - INFO - ==================================================
 2026-10-24 10:42 - INFO - New session close at 2026-10-24 10:42
 2026-10-24 10:42 - INFO - ==================================================
+2026-10-24 15:54 - INFO - ==================================================
+2026-10-24 15:54 - INFO - New session START at 2026-10-24 15:54
+2026-10-24 15:54 - INFO - ==================================================
+2026-10-24 15:54 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-10-24 15:54 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-10-24 15:54 - INFO - Loaded draw_z from config: Z=0.0, draw_z_UP=0.0
+2026-10-24 15:54 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-10-24 15:54 - INFO - INI file initialized
+2026-10-24 15:54 - INFO - UI load successful
+2026-10-24 15:54 - INFO - Com : com, Port : ['COM1'], Baud : ['9600', '57600', '115200', '250000']
+2026-10-24 15:54 - INFO - Com : black_com, Port : ['COM1'], Baud : ['9600', '57600', '115200', '250000']
+2026-10-24 15:54 - INFO - Serial communication stopped
+2026-10-24 15:54 - INFO - COM connection close successfully
+2026-10-24 15:54 - INFO - Main window close successfully
+2026-10-24 15:54 - INFO - ==================================================
+2026-10-24 15:54 - INFO - New session close at 2026-10-24 15:54
+2026-10-24 15:54 - INFO - ==================================================
+2026-10-24 15:55 - INFO - ==================================================
+2026-10-24 15:55 - INFO - New session START at 2026-10-24 15:55
+2026-10-24 15:55 - INFO - ==================================================
+2026-10-24 15:55 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-10-24 15:55 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-10-24 15:55 - INFO - Loaded draw_z from config: Z=0.0, draw_z_UP=0.0
+2026-10-24 15:55 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-10-24 15:55 - INFO - INI file initialized
+2026-10-24 15:55 - INFO - UI load successful
+2026-10-24 15:55 - INFO - Com : com, Port : ['COM1'], Baud : ['9600', '57600', '115200', '250000']
+2026-10-24 15:55 - INFO - Com : black_com, Port : ['COM1'], Baud : ['9600', '57600', '115200', '250000']
+2026-10-24 15:55 - INFO - Com : com, Port : ['COM1'], Baud : ['9600', '57600', '115200', '250000']
+2026-10-24 15:56 - INFO - Com : com, Port : ['COM1', 'COM4'], Baud : ['9600', '57600', '115200', '250000']
+2026-10-24 15:56 - INFO - Com : com, Port : ['COM1', 'COM4'], Baud : ['9600', '57600', '115200', '250000']
+2026-10-24 15:56 - CRITICAL - Serial communication started
+2026-10-24 15:56 - INFO - Serial communication stopped
+2026-10-24 15:56 - INFO - COM connection close successfully
+2026-10-24 15:56 - INFO - Main window close successfully
+2026-10-24 15:56 - INFO - ==================================================
+2026-10-24 15:56 - INFO - New session close at 2026-10-24 15:56
+2026-10-24 15:56 - INFO - ==================================================

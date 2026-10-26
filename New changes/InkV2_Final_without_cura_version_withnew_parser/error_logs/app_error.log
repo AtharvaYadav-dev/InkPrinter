@@ -1395,3 +1395,67 @@ New Session at 2026-10-24 15:47:16
 ==================================================
 New Session at 2026-10-24 15:48:51
 ==================================================
+
+==================================================
+New Session at 2026-10-24 16:05:55
+==================================================
+
+==================================================
+New Session at 2026-10-24 16:07:46
+==================================================
+
+==================================================
+New Session at 2026-10-24 16:08:50
+==================================================
+
+==================================================
+New Session at 2026-10-24 16:09:47
+==================================================
+2026-10-24 16:09:58 - CRITICAL - util.py:207 - Serial communication started
+2026-10-24 16:10:09 - ERROR - util.py:184 - Uncaught exception
+Traceback (most recent call last):
+  File "D:\Manali_L\ManaliL\InkPrinter\New changes\InkV2_Final_without_cura_version_withnew_parser\.venv\Lib\site-packages\Custom_Widgets\__init__.py", line 236, in stopWorkers
+    if self.iconsWorker is not None:
+       ^^^^^^^^^^^^^^^^
+AttributeError: 'MainWindow' object has no attribute 'iconsWorker'
+
+==================================================
+New Session at 2026-10-26 11:01:21
+==================================================
+2026-10-26 11:02:38 - CRITICAL - util.py:207 - Serial communication started
+2026-10-26 11:03:06 - CRITICAL - util.py:207 - Serial communication started
+2026-10-26 11:08:38 - CRITICAL - util.py:207 - Laser 1 : has offset, Xoffset = 5.0, Yoffset = 5.0
+2026-10-26 11:10:29 - ERROR - util.py:184 - Uncaught exception
+Traceback (most recent call last):
+  File "D:\Manali_L\ManaliL\InkPrinter\New changes\InkV2_Final_without_cura_version_withnew_parser\.venv\Lib\site-packages\Custom_Widgets\__init__.py", line 236, in stopWorkers
+    if self.iconsWorker is not None:
+       ^^^^^^^^^^^^^^^^
+AttributeError: 'MainWindow' object has no attribute 'iconsWorker'
+
+==================================================
+New Session at 2026-10-26 11:10:39
+==================================================
+2026-10-26 11:11:20 - CRITICAL - util.py:207 - Laser 1 : has offset, Xoffset = 5.0, Yoffset = 5.0
+2026-10-26 12:20:55 - CRITICAL - util.py:207 - Serial communication started
+2026-10-26 12:21:01 - ERROR - util.py:204 - Error : Invalid Input > Kindly select a COM port.
+2026-10-26 12:21:05 - ERROR - util.py:204 - Error : Invalid Input > Kindly select a COM port.
+2026-10-26 12:21:22 - CRITICAL - util.py:207 - Serial communication started
+2026-10-26 12:24:22 - CRITICAL - util.py:207 - Serial communication started
+2026-10-26 12:32:06 - ERROR - util.py:184 - Uncaught exception
+Traceback (most recent call last):
+  File "D:\Manali_L\ManaliL\InkPrinter\New changes\InkV2_Final_without_cura_version_withnew_parser\.venv\Lib\site-packages\Custom_Widgets\__init__.py", line 236, in stopWorkers
+    if self.iconsWorker is not None:
+       ^^^^^^^^^^^^^^^^
+AttributeError: 'MainWindow' object has no attribute 'iconsWorker'
+
+==================================================
+New Session at 2026-10-26 12:32:29
+==================================================
+2026-10-26 12:49:02 - CRITICAL - util.py:207 - Laser 1 : has offset, Xoffset = 5.0, Yoffset = 5.0
+2026-10-26 12:53:59 - CRITICAL - util.py:207 - Laser 1 : has offset, Xoffset = 5.0, Yoffset = 5.0
+2026-10-26 14:17:38 - ERROR - util.py:184 - Uncaught exception
+Traceback (most recent call last):
+  File "D:\Manali_L\ManaliL\InkPrinter\New changes\InkV2_Final_without_cura_version_withnew_parser\.venv\Lib\site-packages\Custom_Widgets\__init__.py", line 236, in stopWorkers
+    if self.iconsWorker is not None:
+       ^^^^^^^^^^^^^^^^
+AttributeError: 'MainWindow' object has no attribute 'iconsWorker'

@@ -1259,7 +1259,7 @@ class MainWindow(QMainWindow):
 
         # Intercept custom Blackpill commands from parser
         if gstr.startswith("BLACKPILL_FILL"):
-            val = gstr.split()[1] if len(gstr.split()) > 1 else "0.01"
+            val = gstr.split()[1] if len(gstr.split()) > 1 else "0.03"
             msg = f"Z-LIFT RETRACT/FILL: F {val}"
             self.util.debugPrint(msg)
             if hasattr(self, 'terminalWidget') and hasattr(self.terminalWidget, 'output'):

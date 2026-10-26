@@ -14590,3 +14590,73 @@ action : Disconnect
 Serial communication stopped
 status : True
 connect btn : Connect | refresh btn : True
+
+==================================================
+Session Started: 2026-10-24 15:54:01
+==================================================
+D:\Manali_L\ManaliL\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\.venv\Lib\site-packages\Custom_Widgets\JSonStyles\__init__.py:842: RuntimeWarning: libpyside: Failed to disconnect (None) from signal "clicked()".
+  button.clicked.disconnect()
+index : 0
+arg : 0
+index : 0
+arg : 0
+UI is loaded
+xindex : 0
+yindex : 0
+feed : 500
+laser handler : {}
+Com : com, Port : ['COM1'], Baud : ['9600', '57600', '115200', '250000']
+action : Auto
+[SPPL Agent] Registration failed: 503 Server Error: Service Unavailable for url: https://sppl-server.onrender.com/api/devices/register
+status : None
+Com : black_com, Port : ['COM1'], Baud : ['9600', '57600', '115200', '250000']
+action : Auto
+status : None
+Application is closing
+action : Disconnect
+Serial communication stopped
+status : True
+connect btn : Connect | refresh btn : True
+
+==================================================
+Session Started: 2026-10-24 15:55:24
+==================================================
+D:\Manali_L\ManaliL\InkPrinter\New changes\InkV2_Final_without_cura_version_with_new_changes\.venv\Lib\site-packages\Custom_Widgets\JSonStyles\__init__.py:842: RuntimeWarning: libpyside: Failed to disconnect (None) from signal "clicked()".
+  button.clicked.disconnect()
+index : 0
+arg : 0
+index : 0
+arg : 0
+[SPPL Agent] Registration failed: 503 Server Error: Service Unavailable for url: https://sppl-server.onrender.com/api/devices/register
+UI is loaded
+xindex : 0
+yindex : 0
+feed : 500
+laser handler : {}
+Com : com, Port : ['COM1'], Baud : ['9600', '57600', '115200', '250000']
+action : Auto
+status : None
+Com : black_com, Port : ['COM1'], Baud : ['9600', '57600', '115200', '250000']
+action : Auto
+status : None
+action : Refresh
+Com : com, Port : ['COM1'], Baud : ['9600', '57600', '115200', '250000']
+action : Refresh
+Com : com, Port : ['COM1', 'COM4'], Baud : ['9600', '57600', '115200', '250000']
+action : Refresh
+Com : com, Port : ['COM1', 'COM4'], Baud : ['9600', '57600', '115200', '250000']
+action : Connect
+port : COM4
+baud : 115200
+Serial communication started
+status : True
+connect btn : Disconnect | refresh btn : False
+index : 3
+index : 5
+index : 1
+index : 0
+Application is closing
+action : Disconnect
+Serial communication stopped
+status : True
+connect btn : Connect | refresh btn : True

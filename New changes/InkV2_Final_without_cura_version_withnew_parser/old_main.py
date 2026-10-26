@@ -5,6 +5,10 @@ import re
 import webbrowser
 import json
 
+# Configure Qt backend for iconify and qtpy/Custom_Widgets
+os.environ["ICONIFY_QTLIB"] = "PySide6"
+os.environ["QT_API"] = "pyside6"
+
 # --- Fix for Custom_Widgets Log PermissionError ---
 # Custom_Widgets tries to write logs to os.getcwd()/logs during import, which throws PermissionError in Program Files
 _app_data_dir = os.path.join(os.environ.get('APPDATA', os.path.expanduser('~')), 'Ink_Printer')
@@ -19,12 +23,36 @@ from Custom_Widgets.Widgets import *
 os.getcwd = _original_getcwd
 
 from PySide6.QtCore import QTimer, QRegularExpression, Signal, Slot, Qt, QThread, QEvent, QEventLoop, QObject
-from PySide6.QtGui import QIcon, QCloseEvent, QIntValidator, QDoubleValidator, QRegularExpressionValidator
+from PySide6.QtGui import QIcon, QPixmap, QCloseEvent, QIntValidator, QDoubleValidator, QRegularExpressionValidator
 from PySide6.QtWidgets import (
     QFileDialog, QMessageBox, QComboBox, QPushButton, 
     QLineEdit, QLabel, QTextEdit, QWidget,
     QHBoxLayout, QProgressDialog
 )
+
+# --- Fix for Custom_Widgets compatibility with PySide6 ---
+if not hasattr(QPushButton, "setNewIcon"):
+    def _set_new_icon(self, icon):
+        if isinstance(icon, QIcon):
+            self.setIcon(icon)
+        elif icon:
+            self.setIcon(QIcon(str(icon)))
+        else:
+            self.setIcon(QIcon())
+        self.iconUrl = str(icon) if icon else ""
+    QPushButton.setNewIcon = _set_new_icon
+
+if not hasattr(QLabel, "setNewPixmap"):
+    def _set_new_pixmap(self, pixmap):
+        if isinstance(pixmap, QPixmap):
+            self.setPixmap(pixmap)
+        elif pixmap:
+            self.setPixmap(QPixmap(str(pixmap)))
+        else:
+            self.setPixmap(QPixmap())
+        self.piximapUrl = str(pixmap) if pixmap else ""
+        self.pixmapUrl = self.piximapUrl
+    QLabel.setNewPixmap = _set_new_pixmap
 
 from com import SerialCom
 from util import CallbackHandler, FileHandler, ConfigHandler, AppLogger, Utils
