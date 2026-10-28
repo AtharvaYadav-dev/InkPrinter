@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg1"
+   width="202.66667"
+   height="198.66667"
+   viewBox="0 0 202.66667 198.66667"
+   sodipodi:docname="circle-test - Top Copper - PCB.pdf"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false">
+    <inkscape:page
+       x="0"
+       y="0"
+       width="202.66667"
+       height="198.66667"
+       id="page2"
+       margin="0"
+       bleed="0" />
+  </sodipodi:namedview>
+  <g
+     id="g1"
+     inkscape:groupmode="layer"
+     inkscape:label="1">
+    <path
+       id="path1"
+       d="m 21.0249,74.8831 c 0,29.1919 23.6644,52.8559 52.8559,52.8559 29.1912,0 52.8562,-23.664 52.8562,-52.8559 0,-29.1914 -23.665,-52.8559 -52.8562,-52.8559 -29.1915,0 -52.8559,23.6645 -52.8559,52.8559"
+       style="fill:none;stroke:#000000;stroke-width:2.26772;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       transform="matrix(1.3333333,0,0,-1.3333333,0,198.66667)" />
+    <path
+       id="path2"
+       d="m 37.239,74.2878 c 0,20.2366 16.4053,36.6422 36.6418,36.6422 20.2365,0 36.6422,-16.4056 36.6422,-36.6422 0,-20.2365 -16.4057,-36.6417 -36.6422,-36.6417 -20.2365,0 -36.6418,16.4052 -36.6418,36.6417"
+       style="fill:none;stroke:#000000;stroke-width:2.26772;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       transform="matrix(1.3333333,0,0,-1.3333333,0,198.66667)" />
+  </g>
+</svg>
