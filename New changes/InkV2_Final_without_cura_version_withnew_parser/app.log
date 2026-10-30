@@ -605,3 +605,421 @@ AttributeError: 'MainWindow' object has no attribute 'iconsWorker'
 2026-10-26 15:37 - INFO - Do you want to auto connect Main Printer COM to COM4 @ 115200?
 2026-10-26 15:37 - INFO - Auto Connect dialog button : Cancel
 2026-10-26 15:37 - INFO - Com : black_com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-10-27 10:29 - INFO - ==================================================
+2026-10-27 10:29 - INFO - New session START at 2026-10-27 10:29
+2026-10-27 10:29 - INFO - ==================================================
+2026-10-27 10:29 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-10-27 10:29 - INFO - Loaded offsets from config: X=5.0, Y=5.0
+2026-10-27 10:29 - INFO - Loaded draw_z from config: Z=48.7, draw_z_UP=24.35
+2026-10-27 10:29 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-10-27 10:29 - INFO - INI file initialized
+2026-10-27 10:29 - INFO - UI load successful
+2026-10-27 10:29 - INFO - Com : com, Port : ['COM1'], Baud : ['9600', '57600', '115200', '250000']
+2026-10-27 10:29 - INFO - Com : black_com, Port : ['COM1'], Baud : ['9600', '57600', '115200', '250000']
+2026-10-27 12:08 - INFO - Close event ignored.
+2026-10-27 12:08 - INFO - Com : com, Port : ['COM13', 'COM1'], Baud : ['9600', '57600', '115200', '250000']
+2026-10-27 12:08 - INFO - Com : com, Port : ['COM13', 'COM1'], Baud : ['9600', '57600', '115200', '250000']
+2026-10-27 12:08 - INFO - Com : com, Port : ['COM13', 'COM1'], Baud : ['9600', '57600', '115200', '250000']
+2026-10-27 12:08 - INFO - Com : com, Port : ['COM13', 'COM1'], Baud : ['9600', '57600', '115200', '250000']
+2026-10-27 12:09 - INFO - Com : com, Port : ['COM13', 'COM1'], Baud : ['9600', '57600', '115200', '250000']
+2026-10-27 12:09 - INFO - Com : black_com, Port : ['COM13', 'COM1'], Baud : ['9600', '57600', '115200', '250000']
+2026-10-27 12:37 - INFO - File selected: D:/Users/SPPL03/Downloads/circle-test - Top Copper - PCB.svg
+2026-10-27 12:37 - INFO - Converting SVG -> G-code directly: D:\Users\SPPL03\Downloads\circle-test - Top Copper - PCB.svg
+2026-10-27 12:37 - INFO - G-code created: D:\Users\SPPL03\Downloads\circle-test - Top Copper - PCB.gcode
+2026-10-27 12:37 - INFO - G-code ready from SVG: D:\Users\SPPL03\Downloads\circle-test - Top Copper - PCB.gcode
+2026-10-27 12:37 - INFO - Raw G-code parsed (2128 lines).
+2026-10-27 12:37 - INFO - Feedrate: 500.0 mm/min
+2026-10-27 12:37 - INFO - Normalization shift: X=-10.662, Y=-12.098
+2026-10-27 12:37 - INFO - Using OFFSETS: X=5.000, Y=5.000, drawZ=48.700
+2026-10-27 12:37 - INFO - Final applied shift: X=-5.662, Y=-7.098
+2026-10-27 12:37 - ERROR - Out of Bed Range: Drawing exceeds bed area!
+
+X: 5.00 → 60.16 (Bed: 0.0 → 50.0)
+Y: 5.00 → 60.16 (Bed: 0.0 → 50.0)
+
+Please re-adjust the offsets.
+2026-10-27 13:01 - INFO - File selected: D:/Users/SPPL03/Downloads/square_two_concentric_circles.svg
+2026-10-27 13:01 - INFO - Converting SVG -> G-code directly: D:\Users\SPPL03\Downloads\square_two_concentric_circles.svg
+2026-10-27 13:01 - INFO - G-code created: D:\Users\SPPL03\Downloads\square_two_concentric_circles.gcode
+2026-10-27 13:01 - INFO - G-code ready from SVG: D:\Users\SPPL03\Downloads\square_two_concentric_circles.gcode
+2026-10-27 13:01 - INFO - Raw G-code parsed (813 lines).
+2026-10-27 13:01 - INFO - Feedrate: 500.0 mm/min
+2026-10-27 13:01 - INFO - Normalization shift: X=-0.000, Y=-0.000
+2026-10-27 13:01 - INFO - Using OFFSETS: X=5.000, Y=5.000, drawZ=48.700
+2026-10-27 13:01 - INFO - Final applied shift: X=5.000, Y=5.000
+2026-10-27 13:01 - ERROR - Out of Bed Range: Drawing exceeds bed area!
+
+X: 5.00 → 93.90 (Bed: 0.0 → 50.0)
+Y: 5.00 → 89.67 (Bed: 0.0 → 50.0)
+
+Please re-adjust the offsets.
+2026-10-27 13:02 - INFO - File selected: D:/Users/SPPL03/Downloads/square_two_concentric_circles_bed_fit.svg
+2026-10-27 13:02 - INFO - Converting SVG -> G-code directly: D:\Users\SPPL03\Downloads\square_two_concentric_circles_bed_fit.svg
+2026-10-27 13:02 - INFO - G-code created: D:\Users\SPPL03\Downloads\square_two_concentric_circles_bed_fit.gcode
+2026-10-27 13:02 - INFO - G-code ready from SVG: D:\Users\SPPL03\Downloads\square_two_concentric_circles_bed_fit.gcode
+2026-10-27 13:02 - INFO - Raw G-code parsed (275 lines).
+2026-10-27 13:02 - INFO - Feedrate: 500.0 mm/min
+2026-10-27 13:02 - INFO - Normalization shift: X=-0.066, Y=-0.066
+2026-10-27 13:02 - INFO - Using OFFSETS: X=5.000, Y=5.000, drawZ=48.700
+2026-10-27 13:02 - INFO - Final applied shift: X=4.934, Y=4.934
+2026-10-27 13:04 - INFO - Com : com, Port : ['COM13', 'COM1'], Baud : ['9600', '57600', '115200', '250000']
+2026-10-27 13:09 - INFO - Windows sleep prevention: DISABLED (Print idle/finished)
+2026-10-27 13:09 - INFO - Serial communication stopped
+2026-10-27 13:09 - INFO - COM connection close successfully
+2026-10-27 13:09 - INFO - Main window close successfully
+2026-10-27 13:09 - INFO - ==================================================
+2026-10-27 13:09 - INFO - New session close at 2026-10-27 13:09
+2026-10-27 13:09 - INFO - ==================================================
+2026-10-27 13:21 - INFO - ==================================================
+2026-10-27 13:21 - INFO - New session START at 2026-10-27 13:21
+2026-10-27 13:21 - INFO - ==================================================
+2026-10-27 13:21 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-10-27 13:21 - INFO - Loaded offsets from config: X=5.0, Y=5.0
+2026-10-27 13:21 - INFO - Loaded draw_z from config: Z=48.7, draw_z_UP=24.35
+2026-10-27 13:21 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-10-27 13:21 - INFO - INI file initialized
+2026-10-27 13:21 - INFO - UI load successful
+2026-10-27 13:21 - INFO - Com : com, Port : ['COM13', 'COM1'], Baud : ['9600', '57600', '115200', '250000']
+2026-10-27 13:21 - INFO - Com : black_com, Port : ['COM13', 'COM1'], Baud : ['9600', '57600', '115200', '250000']
+2026-10-27 13:21 - INFO - Do you want to auto connect Blackpill COM to COM13 @ 115200?
+2026-10-27 13:21 - INFO - Auto Connect dialog button : Ok
+2026-10-27 13:21 - INFO - Serial communication autostarted
+2026-10-27 13:21 - INFO - Com : com, Port : ['COM13', 'COM1'], Baud : ['9600', '57600', '115200', '250000']
+2026-10-27 13:21 - INFO - Com : com, Port : ['COM13', 'COM1'], Baud : ['9600', '57600', '115200', '250000']
+2026-10-27 13:22 - INFO - Com : com, Port : ['COM13', 'COM1'], Baud : ['9600', '57600', '115200', '250000']
+2026-10-27 13:22 - INFO - Serial communication stopped
+2026-10-27 13:31 - INFO - Windows sleep prevention: DISABLED (Print idle/finished)
+2026-10-27 13:31 - INFO - Serial communication stopped
+2026-10-27 13:31 - INFO - COM connection close successfully
+2026-10-27 13:31 - INFO - Main window close successfully
+2026-10-27 13:31 - INFO - ==================================================
+2026-10-27 13:31 - INFO - New session close at 2026-10-27 13:31
+2026-10-27 13:31 - INFO - ==================================================
+2026-10-28 11:22 - INFO - ==================================================
+2026-10-28 11:22 - INFO - New session START at 2026-10-28 11:22
+2026-10-28 11:22 - INFO - ==================================================
+2026-10-28 11:22 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-10-28 11:22 - INFO - Loaded offsets from config: X=5.0, Y=5.0
+2026-10-28 11:22 - INFO - Loaded draw_z from config: Z=48.7, draw_z_UP=24.35
+2026-10-28 11:22 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-10-28 11:22 - INFO - INI file initialized
+2026-10-28 11:22 - INFO - UI load successful
+2026-10-28 11:22 - INFO - Com : com, Port : ['COM1'], Baud : ['9600', '57600', '115200', '250000']
+2026-10-28 11:22 - INFO - Com : black_com, Port : ['COM1'], Baud : ['9600', '57600', '115200', '250000']
+2026-10-28 11:25 - INFO - Com : com, Port : ['COM13', 'COM1', 'COM4'], Baud : ['9600', '57600', '115200', '250000']
+2026-10-28 11:25 - CRITICAL - Serial communication started
+2026-10-28 11:25 - INFO - Com : black_com, Port : ['COM13', 'COM1', 'COM4'], Baud : ['9600', '57600', '115200', '250000']
+2026-10-28 11:25 - CRITICAL - Serial communication started
+2026-10-28 11:26 - INFO - Sent P 0.500000 to Blackpill
+2026-10-28 11:27 - INFO - Sent P 10.0 to Blackpill
+2026-10-28 11:27 - INFO - Purge command (P 10.0) sent to Blackpill.
+2026-10-28 11:27 - INFO - Auto-reset Purge button state.
+2026-10-28 11:27 - INFO - Sent P 10.0 to Blackpill
+2026-10-28 11:27 - INFO - Purge command (P 10.0) sent to Blackpill.
+2026-10-28 11:27 - INFO - Auto-reset Purge button state.
+2026-10-28 11:27 - INFO - Sent P 10.0 to Blackpill
+2026-10-28 11:27 - INFO - Purge command (P 10.0) sent to Blackpill.
+2026-10-28 11:27 - INFO - Auto-reset Purge button state.
+2026-10-28 11:27 - INFO - Sent P 10.0 to Blackpill
+2026-10-28 11:27 - INFO - Purge command (P 10.0) sent to Blackpill.
+2026-10-28 11:27 - INFO - Auto-reset Purge button state.
+2026-10-28 11:28 - INFO - Sent P 10.0 to Blackpill
+2026-10-28 11:28 - INFO - Purge command (P 10.0) sent to Blackpill.
+2026-10-28 11:28 - INFO - Sent S to Blackpill
+2026-10-28 11:28 - INFO - Stop Purge command sent to Blackpill.
+2026-10-28 11:28 - INFO - Serial communication stopped
+2026-10-28 11:40 - INFO - Do you want to auto connect Main Printer COM to COM4 @ 115200?
+2026-10-28 11:40 - INFO - Auto Connect dialog button : Ok
+2026-10-28 11:40 - INFO - Serial communication autostarted
+2026-10-28 11:41 - INFO - Sent H to Blackpill
+2026-10-28 11:41 - INFO - HOME command sent to Blackpill.
+2026-10-28 11:41 - INFO - Sent S to Blackpill
+2026-10-28 11:41 - INFO - Stop HOME command sent to Blackpill.
+2026-10-28 11:41 - INFO - Sent P 10.0 to Blackpill
+2026-10-28 11:41 - INFO - Purge command (P 10.0) sent to Blackpill.
+2026-10-28 11:41 - INFO - Auto-reset Purge button state.
+2026-10-28 11:41 - INFO - Sent P 10.0 to Blackpill
+2026-10-28 11:41 - INFO - Purge command (P 10.0) sent to Blackpill.
+2026-10-28 11:41 - INFO - Auto-reset Purge button state.
+2026-10-28 11:42 - INFO - Sent H to Blackpill
+2026-10-28 11:42 - INFO - HOME command sent to Blackpill.
+2026-10-28 11:42 - INFO - Auto-reset F home button state.
+2026-10-28 11:42 - INFO - Sent H to Blackpill
+2026-10-28 11:42 - INFO - HOME command sent to Blackpill.
+2026-10-28 11:42 - INFO - Sent S to Blackpill
+2026-10-28 11:42 - INFO - Stop HOME command sent to Blackpill.
+2026-10-28 11:44 - INFO - Updated purge settings via UI: length_mm=150.0, purge_value=0.04
+2026-10-28 11:44 - INFO - File selected: D:/Users/SPPL03/Downloads/square_two_concentric_circles_bed_fit.svg
+2026-10-28 11:44 - INFO - Converting SVG -> G-code directly: D:\Users\SPPL03\Downloads\square_two_concentric_circles_bed_fit.svg
+2026-10-28 11:44 - INFO - G-code created: D:\Users\SPPL03\Downloads\square_two_concentric_circles_bed_fit.gcode
+2026-10-28 11:44 - INFO - G-code ready from SVG: D:\Users\SPPL03\Downloads\square_two_concentric_circles_bed_fit.gcode
+2026-10-28 11:44 - INFO - Raw G-code parsed (275 lines).
+2026-10-28 11:44 - INFO - Feedrate: 1500.0 mm/min
+2026-10-28 11:44 - INFO - Normalization shift: X=-0.066, Y=-0.066
+2026-10-28 11:44 - INFO - Using OFFSETS: X=5.000, Y=5.000, drawZ=48.700
+2026-10-28 11:44 - INFO - Final applied shift: X=4.934, Y=4.934
+2026-10-28 11:46 - CRITICAL - Laser 1 : has offset, Xoffset = 5.0, Yoffset = 5.0
+2026-10-28 11:46 - INFO - Windows sleep prevention: ENABLED (Printing active)
+2026-10-28 11:46 - INFO - Print Status : RUN
+2026-10-28 11:46 - INFO - Print Status : PAUSE
+2026-10-28 11:46 - INFO - Windows sleep prevention: ENABLED (Printing active)
+2026-10-28 11:46 - INFO - Print Status : RESUME
+2026-10-28 11:47 - INFO - Sent P 0.040000 to Blackpill
+2026-10-28 11:47 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 11:49 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 11:51 - INFO - Sent P 0.040000 to Blackpill
+2026-10-28 11:52 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 11:52 - INFO - Windows sleep prevention: DISABLED (Print idle/finished)
+2026-10-28 11:52 - INFO - Print finished, sending G28 to home.
+2026-10-28 12:02 - INFO - File selected: D:/Users/SPPL03/Downloads/square_two_concentric_circles_bed_fit.gcode
+2026-10-28 12:02 - INFO - Raw G-code parsed (275 lines).
+2026-10-28 12:02 - INFO - Feedrate: 1500.0 mm/min
+2026-10-28 12:02 - INFO - Normalization shift: X=-0.066, Y=-0.066
+2026-10-28 12:02 - INFO - Using OFFSETS: X=5.000, Y=5.000, drawZ=48.300
+2026-10-28 12:02 - INFO - Final applied shift: X=4.934, Y=4.934
+2026-10-28 12:03 - INFO - File selected: D:/Users/SPPL03/Downloads/circle-test - Top Copper - PCB-20261028120200.svg
+2026-10-28 12:03 - INFO - Converting SVG -> G-code directly: D:\Users\SPPL03\Downloads\circle-test - Top Copper - PCB-20261028120200.svg
+2026-10-28 12:03 - INFO - G-code created: D:\Users\SPPL03\Downloads\circle-test - Top Copper - PCB-20261028120200.gcode
+2026-10-28 12:03 - INFO - G-code ready from SVG: D:\Users\SPPL03\Downloads\circle-test - Top Copper - PCB-20261028120200.gcode
+2026-10-28 12:03 - INFO - Raw G-code parsed (1081 lines).
+2026-10-28 12:03 - INFO - Feedrate: 1500.0 mm/min
+2026-10-28 12:03 - INFO - Feedrate: 1500.0 mm/min
+2026-10-28 12:03 - INFO - Normalization shift: X=-7.017, Y=-7.371
+2026-10-28 12:03 - INFO - Using OFFSETS: X=5.000, Y=5.000, drawZ=48.300
+2026-10-28 12:03 - INFO - Final applied shift: X=-2.017, Y=-2.371
+2026-10-28 12:03 - INFO - Windows sleep prevention: ENABLED (Printing active)
+2026-10-28 12:03 - INFO - Print Status : RUN
+2026-10-28 12:03 - INFO - Print Status : PAUSE
+2026-10-28 12:04 - INFO - Windows sleep prevention: DISABLED (Print idle/finished)
+2026-10-28 12:04 - INFO - Print Status : ABORT
+2026-10-28 12:05 - INFO - File selected: D:/Users/SPPL03/Downloads/circle-test - Top Copper - PCB-20261028120200.gcode
+2026-10-28 12:05 - INFO - Raw G-code parsed (1081 lines).
+2026-10-28 12:06 - INFO - Feedrate: 1500.0 mm/min
+2026-10-28 12:06 - INFO - Normalization shift: X=-7.017, Y=-7.371
+2026-10-28 12:06 - INFO - Using OFFSETS: X=5.000, Y=5.000, drawZ=48.300
+2026-10-28 12:06 - INFO - Final applied shift: X=-2.017, Y=-2.371
+2026-10-28 12:07 - INFO - Windows sleep prevention: ENABLED (Printing active)
+2026-10-28 12:07 - INFO - Print Status : RUN
+2026-10-28 12:08 - INFO - Windows sleep prevention: DISABLED (Print idle/finished)
+2026-10-28 12:08 - INFO - Print Status : ABORT
+2026-10-28 12:09 - INFO - File selected: D:/Users/SPPL03/Downloads/circle-test - Top Copper - PCB-20261028120200.gcode
+2026-10-28 12:09 - INFO - Raw G-code parsed (1081 lines).
+2026-10-28 12:09 - INFO - Feedrate: 1500.0 mm/min
+2026-10-28 12:09 - INFO - Normalization shift: X=-7.017, Y=-7.371
+2026-10-28 12:09 - INFO - Using OFFSETS: X=5.000, Y=5.000, drawZ=48.300
+2026-10-28 12:09 - INFO - Final applied shift: X=-2.017, Y=-2.371
+2026-10-28 12:09 - INFO - Windows sleep prevention: ENABLED (Printing active)
+2026-10-28 12:09 - INFO - Print Status : RUN
+2026-10-28 12:09 - INFO - Print Status : PAUSE
+2026-10-28 12:10 - INFO - Sent P 0.1 to Blackpill
+2026-10-28 12:10 - INFO - Purge command (P 0.1) sent to Blackpill.
+2026-10-28 12:10 - INFO - Auto-reset Purge button state.
+2026-10-28 12:10 - INFO - Sent P 0.1 to Blackpill
+2026-10-28 12:10 - INFO - Purge command (P 0.1) sent to Blackpill.
+2026-10-28 12:10 - INFO - Auto-reset Purge button state.
+2026-10-28 12:10 - INFO - Sent P 1.0 to Blackpill
+2026-10-28 12:10 - INFO - Purge command (P 1.0) sent to Blackpill.
+2026-10-28 12:10 - INFO - Auto-reset Purge button state.
+2026-10-28 12:12 - INFO - Windows sleep prevention: ENABLED (Printing active)
+2026-10-28 12:12 - INFO - Print Status : RESUME
+2026-10-28 12:15 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:17 - INFO - Sent P 0.040000 to Blackpill
+2026-10-28 12:18 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:18 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:18 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:18 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:18 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:19 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:19 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:19 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:19 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:19 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:19 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:19 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:19 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:19 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:20 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:20 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:20 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:20 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:20 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:20 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:20 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:20 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:21 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:21 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:21 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:21 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:21 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:21 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:21 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:21 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:22 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:22 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:22 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:22 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:22 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:22 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:22 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:22 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:23 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:23 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:23 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:23 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:23 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:23 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:23 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:23 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:24 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:24 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:24 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:24 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:24 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:24 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:24 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:24 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:25 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:25 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:25 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:25 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:25 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:25 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:25 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:25 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:26 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:26 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:26 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:26 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:26 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:26 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:26 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:26 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:27 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:27 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:27 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:27 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:27 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:27 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:27 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:29 - INFO - Sent P 0.040000 to Blackpill
+2026-10-28 12:30 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:32 - INFO - Sent P 0.040000 to Blackpill
+2026-10-28 12:32 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:33 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:33 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:33 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:33 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:33 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:33 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:33 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:33 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:34 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:34 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:34 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:34 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:34 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:34 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:34 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:34 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:35 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:35 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:35 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:35 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:35 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:35 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:35 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:35 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:36 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:36 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:36 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:36 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:36 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:36 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:36 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:36 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:37 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:37 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:37 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:37 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:37 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:37 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:37 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:37 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:38 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:38 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:38 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:38 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:38 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:38 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:38 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:38 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:39 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:39 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:39 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:39 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:39 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:39 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:39 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:39 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:40 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:40 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:40 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:40 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:40 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:40 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:40 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:40 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:41 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:41 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:41 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:41 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:41 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:41 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:41 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:41 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:42 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:42 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:42 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:42 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:42 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:42 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:42 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:42 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:43 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:43 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:43 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:43 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:43 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:43 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:43 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:43 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:44 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:44 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:44 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:44 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:44 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:44 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:44 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:44 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:45 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:45 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:45 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:45 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:45 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:45 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:45 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:45 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:46 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:46 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:46 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:46 - INFO - Sent F 0.01 to Blackpill
+2026-10-28 12:46 - INFO - Windows sleep prevention: DISABLED (Print idle/finished)
+2026-10-28 12:46 - INFO - Print finished, sending G28 to home.
+2026-10-28 12:48 - INFO - Serial communication stopped
+2026-10-28 14:22 - INFO - Windows sleep prevention: DISABLED (Print idle/finished)
+2026-10-28 14:22 - INFO - Serial communication stopped
+2026-10-28 14:22 - INFO - COM connection close successfully
+2026-10-28 14:22 - INFO - Main window close successfully
+2026-10-28 14:22 - INFO - ==================================================
+2026-10-28 14:22 - INFO - New session close at 2026-10-28 14:22
+2026-10-28 14:22 - INFO - ==================================================

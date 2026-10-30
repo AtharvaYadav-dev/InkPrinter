@@ -12,6 +12,7 @@ os.makedirs(_app_data_dir, exist_ok=True)
 _original_getcwd = os.getcwd
 os.getcwd = lambda: _app_data_dir
 
+
 from ui_interface import *
 from Custom_Widgets.Widgets import *
 

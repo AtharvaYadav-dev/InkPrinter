@@ -1282,7 +1282,7 @@ class MainWindow(QMainWindow):
 
         # Intercept custom Blackpill commands from parser
         if gstr.startswith("BLACKPILL_FILL"):
-            val = gstr.split()[1] if len(gstr.split()) > 1 else "0.03"
+            val = gstr.split()[1] if len(gstr.split()) > 1 else "0.01"
             msg = f"Z-LIFT RETRACT/FILL: F {val}"
             self.util.debugPrint(msg)
             if hasattr(self, 'terminalWidget') and hasattr(self.terminalWidget, 'output'):
@@ -2650,7 +2650,7 @@ class MainWindow(QMainWindow):
         gcode = self.filtered_gcode[self.pgm_index]
         self.pgm_index += 1
         self.pgmGcode(gcode)
-        self.pgmGcode("G4 S1")
+        self.pgmGcode("G4 P100")
         self.pgmGcode("M114")
 
     def initProgram(self):
@@ -2721,7 +2721,7 @@ class MainWindow(QMainWindow):
 
                 self.pgm_index += 1
                 self.pgmGcode(gcode)
-                self.pgmGcode("G4 S1")
+                self.pgmGcode("G4 P100")
                 self.pgmGcode("M114")
                 self.getProgress(self.pgm_index, len(self.filtered_gcode))
                 self.markSegment(gcode)

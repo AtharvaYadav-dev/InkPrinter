@@ -2,6 +2,7 @@ G21 ; Set units to millimeters
 G90 ; Absolute positioning
 M82 ; Absolute extrusion mode
 G92 E0 ; Reset extruder
+;TYPE:WALL
 G0 X7.617 Y26.417 F3000
 G1 X7.639 Y27.324 E0.02993 F1500
 G1 X7.707 Y28.246 E0.06045 F1500

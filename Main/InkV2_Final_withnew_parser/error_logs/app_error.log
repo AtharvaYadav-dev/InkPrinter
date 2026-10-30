@@ -1518,3 +1518,129 @@ New Session at 2026-10-28 11:09:57
 ==================================================
 New Session at 2026-10-28 11:41:52
 ==================================================
+
+==================================================
+New Session at 2026-10-28 14:26:30
+==================================================
+2026-10-28 14:26:43 - CRITICAL - util.py:207 - Serial communication started
+2026-10-28 14:26:53 - CRITICAL - util.py:207 - Serial communication started
+
+==================================================
+New Session at 2026-10-28 15:48:34
+==================================================
+
+==================================================
+New Session at 2026-10-28 15:53:33
+==================================================
+
+==================================================
+New Session at 2026-10-28 16:15:00
+==================================================
+
+==================================================
+New Session at 2026-10-28 16:29:26
+==================================================
+
+==================================================
+New Session at 2026-10-29 10:28:48
+==================================================
+2026-10-29 10:30:15 - CRITICAL - util.py:207 - Serial communication started
+2026-10-29 10:30:33 - CRITICAL - util.py:207 - Serial communication started
+2026-10-29 12:02:42 - CRITICAL - util.py:207 - Laser 1 : has offset, Xoffset = 5.0, Yoffset = 5.0
+2026-10-29 13:11:19 - ERROR - util.py:204 - Out of Bed Range: Drawing exceeds bed area!
+
+X: 5.00 → 225.00 (Bed: 0.0 → 50.0)
+Y: 5.00 → 165.00 (Bed: 0.0 → 50.0)
+
+Please re-adjust the offsets.
+2026-10-29 15:10:12 - ERROR - util.py:204 - Out of Bed Range: Drawing exceeds bed area!
+
+X: 5.00 → 225.00 (Bed: 0.0 → 50.0)
+Y: 5.00 → 165.00 (Bed: 0.0 → 50.0)
+
+Please re-adjust the offsets.
+2026-10-29 15:10:24 - ERROR - util.py:204 - Out of Bed Range: Drawing exceeds bed area!
+
+X: 5.00 → 225.00 (Bed: 0.0 → 50.0)
+Y: 5.00 → 165.00 (Bed: 0.0 → 50.0)
+
+Please re-adjust the offsets.
+
+==================================================
+New Session at 2026-10-29 15:12:11
+==================================================
+2026-10-29 15:12:40 - ERROR - util.py:204 - Out of Bed Range: Drawing exceeds bed area!
+
+X: 5.00 → 225.00 (Bed: 0.0 → 50.0)
+Y: 5.00 → 165.00 (Bed: 0.0 → 50.0)
+
+Please re-adjust the offsets.
+2026-10-29 15:19:32 - ERROR - util.py:204 - Out of Bed Range: Drawing exceeds bed area!
+
+X: 5.00 → 225.00 (Bed: 0.0 → 50.0)
+Y: 5.00 → 165.00 (Bed: 0.0 → 50.0)
+
+Please re-adjust the offsets.
+2026-10-29 15:40:27 - ERROR - util.py:204 - Out of Bed Range: Drawing exceeds bed area!
+
+X: 5.00 → 18.89 (Bed: 0.0 → 50.0)
+Y: 5.00 → 53.00 (Bed: 0.0 → 50.0)
+
+Please re-adjust the offsets.
+2026-10-29 15:40:40 - ERROR - util.py:204 - Out of Bed Range: Drawing exceeds bed area!
+
+X: 5.00 → 18.89 (Bed: 0.0 → 50.0)
+Y: 5.00 → 53.00 (Bed: 0.0 → 50.0)
+
+Please re-adjust the offsets.
+
+==================================================
+New Session at 2026-10-29 16:13:37
+==================================================
+2026-10-29 16:15:03 - CRITICAL - util.py:207 - Laser 1 : has offset, Xoffset = 5.0, Yoffset = 5.0
+2026-10-29 16:50:51 - CRITICAL - util.py:207 - Laser 1 : has offset, Xoffset = 5.0, Yoffset = 5.0
+
+==================================================
+New Session at 2026-10-29 17:01:31
+==================================================
+
+==================================================
+New Session at 2026-10-30 10:52:17
+==================================================
+2026-10-30 10:52:46 - ERROR - util.py:204 - Out of Bed Range: Drawing exceeds bed area!
+
+X: 5.00 → 225.00 (Bed: 0.0 → 50.0)
+Y: 5.00 → 165.00 (Bed: 0.0 → 50.0)
+
+Please re-adjust the offsets.
+2026-10-30 10:54:13 - ERROR - util.py:204 - Out of Bed Range: Drawing exceeds bed area!
+
+X: 5.00 → 35.34 (Bed: 0.0 → 50.0)
+Y: 5.00 → 50.93 (Bed: 0.0 → 50.0)
+
+Please re-adjust the offsets.
+2026-10-30 10:54:26 - ERROR - util.py:204 - Out of Bed Range: Drawing exceeds bed area!
+
+X: 5.00 → 35.34 (Bed: 0.0 → 50.0)
+Y: 5.00 → 50.93 (Bed: 0.0 → 50.0)
+
+Please re-adjust the offsets.
+2026-10-30 11:05:00 - ERROR - util.py:204 - Out of Bed Range: Drawing exceeds bed area!
+
+X: 5.00 → 42.01 (Bed: 0.0 → 50.0)
+Y: 5.00 → 50.88 (Bed: 0.0 → 50.0)
+
+Please re-adjust the offsets.
+2026-10-30 11:06:07 - ERROR - util.py:204 - Out of Bed Range: Drawing exceeds bed area!
+
+X: 5.00 → 42.01 (Bed: 0.0 → 50.0)
+Y: 5.00 → 50.88 (Bed: 0.0 → 50.0)
+
+Please re-adjust the offsets.
+
+==================================================
+New Session at 2026-10-30 11:18:50
+==================================================
+2026-10-30 11:19:34 - CRITICAL - util.py:207 - Serial communication started
+2026-10-30 11:19:42 - CRITICAL - util.py:207 - Serial communication started
+2026-10-30 11:56:07 - CRITICAL - util.py:207 - Laser 1 : has offset, Xoffset = 5.0, Yoffset = 5.0
