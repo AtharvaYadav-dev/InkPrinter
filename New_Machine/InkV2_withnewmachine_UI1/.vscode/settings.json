@@ -1,0 +1,7 @@
+{
+  "diffEditor.renderSideBySide": false,
+  "editor.codeLens": true,
+  "diffEditor.experimental.showMoves": true,
+  "diffEditor.hideUnchangedRegions.enabled": false
+}
+

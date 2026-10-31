@@ -281,9 +281,9 @@ def polygons_to_gcode(
         for hole in geom.interiors:
             sections_to_print.append(('WALL', LineString(list(hole.coords))))
             
-        # 2. Wall 2: Inner perimeter (inset by 1 nozzle diameter).
-        # This gives thin traces (like 1.0mm IDE fingers) a smooth, continuous 2-pass fill along their length.
-        w2 = geom.buffer(-nozzle)
+        # 2. Wall 2: Inner perimeter (inset by 1 nozzle diameter, mitre join).
+        # Smooth continuous fill along length of narrow traces.
+        w2 = geom.buffer(-nozzle, join_style='mitre').simplify(0.01, preserve_topology=True)
         if w2.is_valid and not w2.is_empty:
             w2_geoms = [w2] if w2.geom_type == 'Polygon' else list(w2.geoms)
             for g in w2_geoms:
@@ -292,18 +292,37 @@ def polygons_to_gcode(
                 for hole in g.interiors:
                     sections_to_print.append(('WALL', LineString(list(hole.coords))))
 
-        # 3. Core Infill (if enabled): Inset by 2 nozzle diameters.
-        # Thin features (< 2 * nozzle * 2) are completely filled by Wall 1 + Wall 2.
-        # Only wide areas (contact pads, thick busbars) get hatched, island by island.
+        # 3. Wall 3: Inset by 2 nozzle diameters (mitre join).
+        # Fills medium channels (like 2.4mm rails or busbars) longitudinally with continuous straight passes
+        # instead of choppy crosswise zig-zag chatter.
+        w3 = geom.buffer(-2.0 * nozzle, join_style='mitre').simplify(0.01, preserve_topology=True)
+        if w3.is_valid and not w3.is_empty:
+            w3_geoms = [w3] if w3.geom_type == 'Polygon' else list(w3.geoms)
+            for g in w3_geoms:
+                if g.exterior:
+                    sections_to_print.append(('WALL', LineString(list(g.exterior.coords))))
+                for hole in g.interiors:
+                    sections_to_print.append(('WALL', LineString(list(hole.coords))))
+
+        # 4. Core Infill (if enabled): Inset by 3 nozzle diameters.
+        # Thin fingers, rails, and narrow loops are 100% solidly filled by concentric walls.
+        # Zig-zag hatching only activates in genuinely wide areas (like contact pads).
         if do_hatching:
-            core = geom.buffer(-2.0 * nozzle)
+            core = geom.buffer(-3.0 * nozzle, join_style='mitre').simplify(0.01, preserve_topology=True)
             if core.is_valid and not core.is_empty:
                 islands = [core] if core.geom_type == 'Polygon' else list(core.geoms)
                 for island in islands:
                     if island.area > 0.01:
-                        hatch_lines = generate_zigzag_infill(island, spacing=hatching_linewidth, angle_deg=45.0)
-                        for h in hatch_lines:
-                            sections_to_print.append(('FILL', h))
+                        # If island is a narrow channel (width < 2*nozzle), fill with centerline wall pass
+                        test_inner = island.buffer(-0.25, join_style='mitre')
+                        if test_inner.is_empty or test_inner.area < 1.0:
+                            if island.exterior:
+                                sections_to_print.append(('WALL', LineString(list(island.exterior.coords))))
+                        else:
+                            # Solid wide pad: clean continuous zigzag infill
+                            hatch_lines = generate_zigzag_infill(island, spacing=hatching_linewidth, angle_deg=45.0)
+                            for h in hatch_lines:
+                                sections_to_print.append(('FILL', h))
                             
     if not sections_to_print:
         print("No valid lines to print.")
