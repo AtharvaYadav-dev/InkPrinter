@@ -1672,3 +1672,27 @@ AttributeError: 'NoneType' object has no attribute 'objectName'
 ==================================================
 New Session at 2026-10-31 16:20:28
 ==================================================
+
+==================================================
+New Session at 2026-10-31 16:28:44
+==================================================
+2026-10-31 16:28:44 - ERROR - util.py:184 - Uncaught exception
+Traceback (most recent call last):
+  File "e:\InkPrinter\New_Machine\InkV2_withnewmachine_UI1\main.py", line 3292, in <module>
+    window = MainWindow()
+  File "e:\InkPrinter\New_Machine\InkV2_withnewmachine_UI1\main.py", line 619, in __init__
+    self.blackpill_sercom.configCallbacks(exceptionCallback = self.updateException)
+    ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'MainWindow' object has no attribute 'blackpill_sercom'
+
+==================================================
+New Session at 2026-10-31 17:10:42
+==================================================
+
+==================================================
+New Session at 2026-10-31 17:18:50
+==================================================
+
+==================================================
+New Session at 2026-10-31 17:52:48
+==================================================

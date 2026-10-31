@@ -212,7 +212,8 @@ class GcodeParser:
                          draw_z: float,
                          feedrate: float,
                          draw_z_user: bool,
-                         layer_height: float | None = None) -> list[str]:
+                         layer_height: float | None = None,
+                         retract_val: float | None = None) -> list[str]:
 
         final = []
         abs_mode = True
@@ -224,7 +225,7 @@ class GcodeParser:
             printZ = layer_height if layer_height is not None else 0.0
 
         hopDelta = -2.0        # Z-hop amount (+2 / -2)
-        retract_fill_value = 0.01  # <--- CHANGE YOUR FILL VALUE HERE
+        retract_fill_value = retract_val if retract_val is not None else 0.01
         
         # travelF = (feedrate * 2) if feedrate else 1800.0
         travelF = 1800.0
@@ -313,6 +314,7 @@ class GcodeParser:
                 if not at_hop:
                     # Prevent redundant G0 Z line if current line is already G0 Z
                     if not (up.startswith("G0") and "Z" in up and "X" not in up and "Y" not in up):
+                        final.append(f"BLACKPILL_FILL {retract_fill_value}")
 
                         final.append(f"G0 Z{printZ + hopDelta:.3f} F{travelF}")
                         at_hop = True
@@ -370,6 +372,7 @@ class GcodeParser:
 
                 # Only retract and hop if travel distance is significant (>= 1.5mm)
                 if not at_hop and travel_dist >= 1.5:
+                    final.append(f"BLACKPILL_FILL {retract_fill_value}")
 
                     final.append(f"G0 Z{printZ + hopDelta:.3f} F{travelF}")
                     at_hop = True

@@ -976,22 +976,36 @@ class MainWindow(QMainWindow):
         # ---- Validate layer_height ----
         try:
             lh_value = float(raw_lh)
-            if lh_value > 0:
-                self.layer_height = lh_value
-            else:
-                self.layer_height = 0.4
+            self.layer_height = lh_value if lh_value > 0 else 0.4
         except:
             self.layer_height = 0.4
+        try:
+            if lh_value > 0:
+                self.layer_height,
+
+            else:
+                self.layer_height,
+
+        except:
+            self.layer_height,
+
 
         # ---- Validate layer_height_0 ----
         try:
             lh0_value = float(raw_lh0)
-            if lh0_value > 0:
-                self.layer_height_0 = lh0_value
-            else:
-                self.layer_height_0 = self.layer_height   # fallback
+            self.layer_height_0 = lh0_value if lh0_value > 0 else self.layer_height
         except:
-            self.layer_height_0 = self.layer_height       # fallback
+            self.layer_height_0 = self.layer_height
+        try:
+            if lh0_value > 0:
+                self.layer_height,
+
+            else:
+                self.layer_height,
+
+        except:
+            self.layer_height,
+
             
         raw_nz = parser.get("slicing", "nozzle_size", fallback="").strip()
         try:
@@ -1118,8 +1132,9 @@ class MainWindow(QMainWindow):
                     if condition(serial_obj.validatePort(port), serial_obj.validateBaudrate(baud)):
                         error_title, error_text = error_dict.get(code)
                         msg = f"Error : {error_title} > {error_text}"
-                        self.util.debugPrint(msg)
                         self.logger.error(msg)
+                        pass
+                        pass
                         self.showCustomPopup(error_title, error_text)
                         return False
                     
@@ -1133,6 +1148,7 @@ class MainWindow(QMainWindow):
                 serial_obj.connect()
                 msg = "Serial communication started"
                 self.util.debugPrint(msg)
+                pass
                 self.logger.critical(msg)
         
                 return True
@@ -1161,6 +1177,7 @@ class MainWindow(QMainWindow):
                         serial_obj.connect()
                         msg = "Serial communication autostarted"
                         self.util.debugPrint(msg)
+                        pass
                         self.logger.info("Auto Connect dialog button : Ok")
                         self.logger.info(msg)
 
@@ -1179,6 +1196,7 @@ class MainWindow(QMainWindow):
                 serial_obj.disconnect()
                 msg = "Serial communication stopped"
                 self.util.debugPrint(msg)
+                pass
                 self.logger.info(msg)
                 return True
             
@@ -1298,10 +1316,29 @@ class MainWindow(QMainWindow):
             self.total_print_distance = 0.0
 
         # Intercept custom Blackpill commands from parser
-        if False and gstr.startswith("BLACKPILL_FILL"):
-            pass
-            pass
+        if gstr.startswith("BLACKPILL_FILL"):
+            val = gstr.split()[1] if len(gstr.split()) > 1 else "0.01"
+            if hasattr(self, 'conf') and hasattr(self, 'config_file_path'):
+                try:
+                    if hasattr(self.conf, 'ini_parser'):
+                        self.conf.ini_parser.read(self.config_file_path)
+                    ini_val = self.conf.getValues("retract", "retract_val")
+                    if ini_val is not None and str(ini_val).strip() != "":
+                        val = str(ini_val).strip()
+                except Exception:
+                    pass
+            msg = f"Z-LIFT RETRACT/FILL: F {val}"
             self.util.debugPrint(msg)
+            if hasattr(self, 'terminalWidget') and hasattr(self.terminalWidget, 'output'):
+                self.receiveACK(self.terminalWidget.output, f">>> {msg}")
+            if hasattr(self, 'sercom') and self.sercom.is_connected:
+                self.sercom.send(f"F {val}\n")
+                self.logger.info(f"Sent F {val} to Main COM")
+            return
+        if False:
+            pass
+            pass
+            pass
         if False:
             pass
             pass
@@ -1372,11 +1409,18 @@ class MainWindow(QMainWindow):
                         purge_val = getattr(self, 'purge_amount', 0.5)
                         cmd = f"P {purge_val:.6f}"
                         msg = f"PURGE EXECUTED: {cmd} | triggered at total distance {self.total_print_distance:.2f}mm"
+                        if hasattr(self, 'terminalWidget') and hasattr(self.terminalWidget, 'output'):
+                            self.receiveACK(self.terminalWidget.output, f">>> {msg}")
+                        if hasattr(self, 'sercom') and self.sercom.is_connected:
+                            self.sercom.send(f"{cmd}\n")
+                            self.logger.info(f"Sent {cmd} to Main COM")
+                        self.accumulated_print_distance -= purge_interval
                         self.util.debugPrint(msg)
+                        pass
                     if False:
                         pass
                         pass
-                        self.accumulated_print_distance -= purge_interval  # subtract interval to keep remainder
+                        pass
 
             
             self.current_x = new_x
@@ -2180,6 +2224,17 @@ class MainWindow(QMainWindow):
     # 3) Step,Fill,Purge
     # -------------------------------
     def _send_to_blackpill(self, cmd):
+        if hasattr(self, 'sercom') and self.sercom.is_connected:
+            self.sercom.send(f"{cmd}\n")
+            self.logger.info(f"Sent {cmd} to Main COM")
+            self.util.debugPrint(f"Gcode - {cmd}")
+            if hasattr(self, 'terminalWidget') and hasattr(self.terminalWidget, 'output'):
+                self.receiveACK(self.terminalWidget.output, f"Gcode - {cmd}")
+        return
+        pass
+
+    def _unused_send_blackpill(self, cmd):
+        msg = ""
         return
         pass
         pass
@@ -2188,10 +2243,10 @@ class MainWindow(QMainWindow):
         if False:
                 self.receiveACK(self.terminalWidget.output, f"Gcode - {cmd}")
         else:
-            msg = "Blackpill is not connected. Please connect via the Black COM page."
-            self.logger.error(msg)
-            self.util.debugPrint(msg)
-            self.showCustomPopup("Connection Error", msg)
+            pass
+            pass
+            pass
+            pass
 
     def _get_travel_distance(self):
         btn01 = getattr(self, 'travel01_RadioButton', None) or (getattr(self, 'ui', None) and getattr(self.ui, 'travel01_RadioButton', None))
@@ -2204,12 +2259,27 @@ class MainWindow(QMainWindow):
         if btn10 and btn10.isChecked(): return "10.0"
         return "10.0"
 
+    def _get_fill_purge_feed(self):
+        feed = 60.0
+        if hasattr(self, 'conf') and hasattr(self, 'config_file_path'):
+            try:
+                if hasattr(self.conf, 'ini_parser'):
+                    self.conf.ini_parser.read(self.config_file_path)
+                val = (self.conf.getValues("fill_purge", "feed") or 
+                       self.conf.getValues("retract", "feed") or
+                       self.conf.getValues("syringe", "feed"))
+                if val is not None and str(val).strip() != "":
+                    feed = float(val)
+            except Exception:
+                feed = 60.0
+        return max(1.0, feed)
+
     def _handle_fill(self):
         if False:
-            msg = "Blackpill is not connected. Please connect via the Black COM page."
-            self.logger.error(msg)
-            self.util.debugPrint(msg)
-            self.showCustomPopup("Connection Error", msg)
+            pass
+            pass
+            pass
+            pass
             return
 
         if not hasattr(self, 'fill_state'):
@@ -2228,7 +2298,8 @@ class MainWindow(QMainWindow):
                 dist_val = float(dist)
             except (ValueError, TypeError):
                 dist_val = 10.0
-            cmd = f"G1 F60 A{dist_val:g}"
+            feed_val = self._get_fill_purge_feed()
+            cmd = f"G1 F{feed_val:g} A{dist_val:g}"
             self.sendGcode(f"{cmd}\n")
             self.sendGcode("G90\n")
 
@@ -2244,7 +2315,7 @@ class MainWindow(QMainWindow):
             if dist != "0.0":
                 # Estimate duration: ~120 mm/min (2 mm/s) -> 500ms per mm + 1s buffer
                 delay_ms = 10000
-                delay_ms = max(500, int(dist_val * 1000))
+                delay_ms = max(500, int((dist_val / max(0.01, feed_val / 60.0)) * 1000))
                 self._fill_timer.start(delay_ms)
             else:
                 self._fill_timer.stop()
@@ -2264,10 +2335,10 @@ class MainWindow(QMainWindow):
 
     def _handle_purge(self):
         if False:
-            msg = "Blackpill is not connected. Please connect via the Black COM page."
-            self.logger.error(msg)
-            self.util.debugPrint(msg)
-            self.showCustomPopup("Connection Error", msg)
+            pass
+            pass
+            pass
+            pass
             return
 
         if not hasattr(self, 'fill_state'):
@@ -2286,7 +2357,8 @@ class MainWindow(QMainWindow):
                 dist_val = float(dist)
             except (ValueError, TypeError):
                 dist_val = 10.0
-            cmd = f"G1 F60 A{-dist_val:g}"
+            feed_val = self._get_fill_purge_feed()
+            cmd = f"G1 F{feed_val:g} A{-dist_val:g}"
             self.sendGcode(f"{cmd}\n")
             self.sendGcode("G90\n")
 
@@ -2302,7 +2374,7 @@ class MainWindow(QMainWindow):
             if dist != "0.0":
                 # Estimate duration: ~120 mm/min (2 mm/s) -> 500ms per mm + 1s buffer
                 delay_ms = 10000
-                delay_ms = max(500, int(dist_val * 1000))
+                delay_ms = max(500, int((dist_val / max(0.01, feed_val / 60.0)) * 1000))
                 self._purge_timer.start(delay_ms)
             else:
                 self._purge_timer.stop()
@@ -2322,10 +2394,10 @@ class MainWindow(QMainWindow):
 
     def _handle_fillhome(self):
         if False:
-            msg = "Blackpill is not connected. Please connect via the Black COM page."
-            self.logger.error(msg)
-            self.util.debugPrint(msg)
-            self.showCustomPopup("Connection Error", msg)
+            pass
+            pass
+            pass
+            pass
             return
 
         if not hasattr(self, 'fillhome_state'):
@@ -2500,13 +2572,23 @@ class MainWindow(QMainWindow):
         # ======================================================
         # 6) Apply full transform
         # ======================================================
+        # Read retract value from config.ini if available
+        retract_ini = None
+        try:
+            val_str = self.conf.getValues("retract", "retract_val")
+            if val_str is not None and str(val_str).strip() != "":
+                retract_ini = float(val_str)
+        except Exception:
+            pass
+
         adjusted = parser.apply_full_transform(
             cleaned,
             shiftX, shiftY,
             draw_z,
             feedrate,
             user_set_drawz,
-            self.layer_height
+            self.layer_height,
+            retract_val=retract_ini
         )
 
         # ======================================================
@@ -2537,10 +2619,10 @@ class MainWindow(QMainWindow):
         
         if self.util.checkSubString(wobj, "run"):
             if False:
-                msg = "Blackpill is not connected. Please connect via the Black COM page."
-                self.logger.error(msg)
-                self.util.debugPrint(msg)
-                self.showCustomPopup("Connection Error", msg)
+                pass
+                pass
+                pass
+                pass
                 return
 
             # Reset purge counters for every new print
@@ -2876,10 +2958,10 @@ class MainWindow(QMainWindow):
         4. Once F Home completes, send final Purge command.
         """
         if False:
-            msg = "Blackpill is not connected. Please connect via the Black COM page."
-            self.logger.error(msg)
-            self.util.debugPrint(msg)
-            self.showCustomPopup("Connection Error", msg)
+            pass
+            pass
+            pass
+            pass
             return
 
         if getattr(self, '_clean_in_progress', False):
@@ -2899,7 +2981,8 @@ class MainWindow(QMainWindow):
             dist_val = float(dist)
         except (ValueError, TypeError):
             dist_val = 10.0
-        cmd = f"G1 F60 A{-dist_val:g}"
+        feed_val = self._get_fill_purge_feed()
+        cmd = f"G1 F{feed_val:g} A{-dist_val:g}"
         self.sendGcode(f"{cmd}\n")
         self.sendGcode("G90\n")
 
@@ -2907,7 +2990,7 @@ class MainWindow(QMainWindow):
         self.logger.info(f"Clean Routine Step 1: Purge command ({cmd}) sent to Main COM.")
 
         delay_ms = 10000
-        delay_ms = max(1000, int(dist_val * 1000))
+        delay_ms = max(1000, int((dist_val / max(0.01, feed_val / 60.0)) * 1000))
         QTimer.singleShot(delay_ms, self._clean_step2_prompt_solution)
 
     def _clean_step2_prompt_solution(self):
@@ -2931,12 +3014,12 @@ class MainWindow(QMainWindow):
 
     def _clean_step3_send_fillhome(self):
         if False:
-            msg = "Blackpill is not connected. Clean routine aborted."
-            self.logger.error(msg)
+            pass
+            pass
             self._reset_clean_ui()
 
             
-            self.showCustomPopup("Connection Error", msg)
+            pass
             return
 
         clean_btn = getattr(self.ui, 'pgmcleanPushButton', None) or self.findChild(QPushButton, "pgmcleanPushButton")
@@ -2951,10 +3034,10 @@ class MainWindow(QMainWindow):
 
     def _clean_step4_final_purge(self):
         if False:
-            msg = "Blackpill is not connected. Clean routine aborted."
-            self.logger.error(msg)
+            pass
+            pass
             self._reset_clean_ui()
-            self.showCustomPopup("Connection Error", msg)
+            pass
             return
 
         clean_btn = getattr(self.ui, 'pgmcleanPushButton', None) or self.findChild(QPushButton, "pgmcleanPushButton")
@@ -2967,7 +3050,8 @@ class MainWindow(QMainWindow):
             dist_val = float(dist)
         except (ValueError, TypeError):
             dist_val = 10.0
-        cmd = f"G1 F60 A{-dist_val:g}"
+        feed_val = self._get_fill_purge_feed()
+        cmd = f"G1 F{feed_val:g} A{-dist_val:g}"
         self.sendGcode(f"{cmd}\n")
         self.sendGcode("G90\n")
 
@@ -2975,7 +3059,7 @@ class MainWindow(QMainWindow):
         self.logger.info(f"Clean Routine Step 3: Final Purge command ({cmd}) sent to Main COM.")
 
         delay_ms = 10000
-        delay_ms = max(1000, int(dist_val * 1000))
+        delay_ms = max(1000, int((dist_val / max(0.01, feed_val / 60.0)) * 1000))
         QTimer.singleShot(delay_ms, self._clean_step5_complete)
 
     def _clean_step5_complete(self):
@@ -3012,6 +3096,7 @@ class MainWindow(QMainWindow):
                 self.logger.info(msg)
                 print(msg)
                 self.util.debugPrint(msg)
+                pass
             except ValueError:
                 err_msg = "Invalid purge values entered in UI"
                 self.logger.error(err_msg)
