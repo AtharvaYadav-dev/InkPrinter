@@ -1332,8 +1332,10 @@ class MainWindow(QMainWindow):
             if hasattr(self, 'terminalWidget') and hasattr(self.terminalWidget, 'output'):
                 self.receiveACK(self.terminalWidget.output, f">>> {msg}")
             if hasattr(self, 'sercom') and self.sercom.is_connected and dist_val > 0.0:
-                self.sercom.send(f"G91\nG1 F{feed_val:g} A{target_a:g}\nG90\n")
-                self.logger.info(f"Sent {action_name} (A{target_a:g} @ F{feed_val:g}) to Main COM")
+                self.sendGcode("G91")
+                self.sendGcode(f"G1 F{feed_val:g} A{target_a:g}")
+                self.sendGcode("G90")
+                self.logger.info(f"Sent {action_name} (G1 F{feed_val:g} A{target_a:g}) to Main COM")
             return
         # Ignore full-line comments or empty lines
         if not gstr or gstr.startswith(";") or gstr.startswith("("):
@@ -1398,12 +1400,15 @@ class MainWindow(QMainWindow):
                     purge_interval = getattr(self, 'purge_distance_interval', 100.0)
                     if self.accumulated_print_distance >= purge_interval:
                         purge_val = getattr(self, 'purge_amount', 0.5)
-                        cmd = f"P {purge_val:.6f}"
+                        feed_val = self._get_fill_purge_feed()
+                        cmd = f"G1 F{feed_val:g} A{-purge_val:g}"
                         msg = f"PURGE EXECUTED: {cmd} | triggered at total distance {self.total_print_distance:.2f}mm"
                         if hasattr(self, 'terminalWidget') and hasattr(self.terminalWidget, 'output'):
                             self.receiveACK(self.terminalWidget.output, f">>> {msg}")
-                        if hasattr(self, 'sercom') and self.sercom.is_connected:
-                            self.sercom.send(f"{cmd}\n")
+                        if hasattr(self, 'sercom') and self.sercom.is_connected and purge_val > 0.0:
+                            self.sendGcode("G91")
+                            self.sendGcode(cmd)
+                            self.sendGcode("G90")
                             self.logger.info(f"Sent {cmd} to Main COM")
                         self.accumulated_print_distance -= purge_interval
                         self.util.debugPrint(msg)
@@ -2417,9 +2422,10 @@ class MainWindow(QMainWindow):
         # ======================================================
         # 6) Apply full transform
         # ======================================================
-        # Read retract and z_hop values from config.ini if available
+        # Read retract, z_hop, and fill_purge feed values from config.ini
         retract_ini = None
         z_hop_ini = 4.0
+        feed_ini = 60.0
         try:
             val_str = self.conf.getValues("retract", "retract_val")
             if val_str is not None and str(val_str).strip() != "":
@@ -2427,6 +2433,9 @@ class MainWindow(QMainWindow):
             zh_str = self.conf.getValues("retract", "z_hop")
             if zh_str is not None and str(zh_str).strip() != "":
                 z_hop_ini = float(zh_str)
+            f_str = self.conf.getValues("fill_purge", "feed")
+            if f_str is not None and str(f_str).strip() != "":
+                feed_ini = float(f_str)
         except Exception:
             pass
 
@@ -2438,7 +2447,8 @@ class MainWindow(QMainWindow):
             user_set_drawz,
             self.layer_height,
             retract_val=retract_ini,
-            z_hop=z_hop_ini
+            z_hop=z_hop_ini,
+            retract_feed=feed_ini
         )
 
         # ======================================================
