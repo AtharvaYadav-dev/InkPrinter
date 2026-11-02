@@ -203,6 +203,9 @@ class MainWindow(QMainWindow):
         # Flag to hide frame_12 and frame_3
         self.hide_frame12_frame3_flag = True
         
+        # Flag to hide pressurePushButton (Extrusion button in parameter menu)
+        self.hide_pressure_button_flag = True
+        
         self.axishandler = AxisHandler()
         self.preview = GCode3DPreview()
         self.preview.sigGlError.connect(lambda msg: print("⚠️", msg))
@@ -669,6 +672,12 @@ class MainWindow(QMainWindow):
             if hasattr(self.ui, 'printparaPushButton'):
                 self.ui.printparaPushButton.hide()
 
+        # Hide pressurePushButton if the flag is set
+        if getattr(self, 'hide_pressure_button_flag', False):
+            pressure_btn = getattr(self, 'paraBtn2', None) or getattr(self.ui, 'pressurePushButton', None) or self.findChild(QPushButton, "pressurePushButton")
+            if pressure_btn:
+                pressure_btn.hide()
+
         # Hide frame_12 and frame_3 if the flag is set
         if getattr(self, 'hide_frame12_frame3_flag', False):
             frame_12 = getattr(self.ui, 'frame_121', None) or (self.ui.viscositylevComboBox.parent() if hasattr(self.ui, 'viscositylevComboBox') else None) or (self.progFrame.findChild(QFrame, "frame_12") if hasattr(self, 'progFrame') and self.progFrame else None) or self.findChild(QFrame, "frame_121")
@@ -908,6 +917,8 @@ class MainWindow(QMainWindow):
         self.logger.info("Movement finished (M400).")
         self.release_flag = False    # allow new commands again
         self.pgmGcode("M114")
+        if getattr(self, '_clean_in_progress', False):
+            self._handle_clean_ok()
 
 
         
@@ -979,16 +990,6 @@ class MainWindow(QMainWindow):
             self.layer_height = lh_value if lh_value > 0 else 0.4
         except:
             self.layer_height = 0.4
-        try:
-            if lh_value > 0:
-                self.layer_height,
-
-            else:
-                self.layer_height,
-
-        except:
-            self.layer_height,
-
 
         # ---- Validate layer_height_0 ----
         try:
@@ -996,15 +997,6 @@ class MainWindow(QMainWindow):
             self.layer_height_0 = lh0_value if lh0_value > 0 else self.layer_height
         except:
             self.layer_height_0 = self.layer_height
-        try:
-            if lh0_value > 0:
-                self.layer_height,
-
-            else:
-                self.layer_height,
-
-        except:
-            self.layer_height,
 
             
         raw_nz = parser.get("slicing", "nozzle_size", fallback="").strip()
@@ -1092,9 +1084,6 @@ class MainWindow(QMainWindow):
         self.util.debugPrint(msg)
         self.logger.info(msg)
 
-        if refresh:
-            pass
-            
         self.wm.operate(port_widget, "clear")
         self.wm.operate(baud_widget, "clear")
         
@@ -1133,8 +1122,6 @@ class MainWindow(QMainWindow):
                         error_title, error_text = error_dict.get(code)
                         msg = f"Error : {error_title} > {error_text}"
                         self.logger.error(msg)
-                        pass
-                        pass
                         self.showCustomPopup(error_title, error_text)
                         return False
                     
@@ -1148,7 +1135,6 @@ class MainWindow(QMainWindow):
                 serial_obj.connect()
                 msg = "Serial communication started"
                 self.util.debugPrint(msg)
-                pass
                 self.logger.critical(msg)
         
                 return True
@@ -1177,7 +1163,6 @@ class MainWindow(QMainWindow):
                         serial_obj.connect()
                         msg = "Serial communication autostarted"
                         self.util.debugPrint(msg)
-                        pass
                         self.logger.info("Auto Connect dialog button : Ok")
                         self.logger.info(msg)
 
@@ -1196,7 +1181,6 @@ class MainWindow(QMainWindow):
                 serial_obj.disconnect()
                 msg = "Serial communication stopped"
                 self.util.debugPrint(msg)
-                pass
                 self.logger.info(msg)
                 return True
             
@@ -1258,6 +1242,13 @@ class MainWindow(QMainWindow):
         # Normalize 'ok'
         if data == "ok":
             data = f"{data}\n"
+
+        if getattr(self, '_clean_in_progress', False) and ("ok" in data or data.startswith("ok")):
+            if hasattr(self, '_clean_expected_oks') and self._clean_expected_oks > 0:
+                self._clean_expected_oks -= 1
+                self.logger.debug(f"Clean Routine: 'ok' received from machine. Remaining expected: {self._clean_expected_oks}")
+                if self._clean_expected_oks <= 0:
+                    self._handle_clean_ok()
 
         # --- Detect Critical Firmware Errors ---
         if "Error:MINTEMP" in data or "Error:MAXTEMP" in data:
@@ -1335,15 +1326,6 @@ class MainWindow(QMainWindow):
                 self.sercom.send(f"F {val}\n")
                 self.logger.info(f"Sent F {val} to Main COM")
             return
-        if False:
-            pass
-            pass
-            pass
-        if False:
-            pass
-            pass
-            return
-
         # Ignore full-line comments or empty lines
         if not gstr or gstr.startswith(";") or gstr.startswith("("):
             self.util.debugPrint(f"Skipping comment/non-executable: {gstr}")
@@ -1416,13 +1398,7 @@ class MainWindow(QMainWindow):
                             self.logger.info(f"Sent {cmd} to Main COM")
                         self.accumulated_print_distance -= purge_interval
                         self.util.debugPrint(msg)
-                        pass
-                    if False:
-                        pass
-                        pass
-                        pass
 
-            
             self.current_x = new_x
             self.current_y = new_y
             
@@ -2231,22 +2207,6 @@ class MainWindow(QMainWindow):
             if hasattr(self, 'terminalWidget') and hasattr(self.terminalWidget, 'output'):
                 self.receiveACK(self.terminalWidget.output, f"Gcode - {cmd}")
         return
-        pass
-
-    def _unused_send_blackpill(self, cmd):
-        msg = ""
-        return
-        pass
-        pass
-            # print(f"Gcode - {cmd}")
-        pass
-        if False:
-                self.receiveACK(self.terminalWidget.output, f"Gcode - {cmd}")
-        else:
-            pass
-            pass
-            pass
-            pass
 
     def _get_travel_distance(self):
         btn01 = getattr(self, 'travel01_RadioButton', None) or (getattr(self, 'ui', None) and getattr(self.ui, 'travel01_RadioButton', None))
@@ -2275,158 +2235,34 @@ class MainWindow(QMainWindow):
         return max(1.0, feed)
 
     def _handle_fill(self):
-        if False:
-            pass
-            pass
-            pass
-            pass
-            return
-
-        if not hasattr(self, 'fill_state'):
-            self.fill_state = False
-            self.purge_state = False
-
-        if not hasattr(self, '_fill_timer'):
-            self._fill_timer = QTimer(self)
-            self._fill_timer.setSingleShot(True)
-            self._fill_timer.timeout.connect(self._reset_fill_ui)
-
-        if not self.fill_state:
-            dist = self._get_travel_distance()
-            self.sendGcode("G91\n")
-            try:
-                dist_val = float(dist)
-            except (ValueError, TypeError):
-                dist_val = 10.0
-            feed_val = self._get_fill_purge_feed()
-            cmd = f"G1 F{feed_val:g} A{dist_val:g}"
-            self.sendGcode(f"{cmd}\n")
-            self.sendGcode("G90\n")
-
-            pass
-            
-            self.fill_state = True
-            self.purge_state = False
-            self.programWidget.fill.setText("Stop Fill")
-            self.programWidget.purge.setText("Purge")
-                
-            self.logger.info(f"Fill command ({cmd}) sent to Main COM.")
-            
-            if dist != "0.0":
-                # Estimate duration: ~120 mm/min (2 mm/s) -> 500ms per mm + 1s buffer
-                delay_ms = 10000
-                delay_ms = max(500, int((dist_val / max(0.01, feed_val / 60.0)) * 1000))
-                self._fill_timer.start(delay_ms)
-            else:
-                self._fill_timer.stop()
-        else:
-            self.sendGcode("M410\n")
-            self.fill_state = False
-            self.programWidget.fill.setText("Fill")
-            if hasattr(self, '_fill_timer'):
-                self._fill_timer.stop()
-            self.logger.info("Stop Fill command (M410) sent to Main COM.")
-
-    def _reset_fill_ui(self):
-        if getattr(self, 'fill_state', False):
-            self.fill_state = False
-            self.programWidget.fill.setText("Fill")
-            self.logger.info("Auto-reset Fill button state.")
+        dist = self._get_travel_distance()
+        self.sendGcode("G91\n")
+        try:
+            dist_val = float(dist)
+        except (ValueError, TypeError):
+            dist_val = 10.0
+        feed_val = self._get_fill_purge_feed()
+        cmd = f"G1 F{feed_val:g} A{dist_val:g}"
+        self.sendGcode(f"{cmd}\n")
+        self.sendGcode("G90\n")
+        self.logger.info(f"Fill command ({cmd}) sent to Main COM.")
 
     def _handle_purge(self):
-        if False:
-            pass
-            pass
-            pass
-            pass
-            return
-
-        if not hasattr(self, 'fill_state'):
-            self.fill_state = False
-            self.purge_state = False
-
-        if not hasattr(self, '_purge_timer'):
-            self._purge_timer = QTimer(self)
-            self._purge_timer.setSingleShot(True)
-            self._purge_timer.timeout.connect(self._reset_purge_ui)
-
-        if not self.purge_state:
-            dist = self._get_travel_distance()
-            self.sendGcode("G91\n")
-            try:
-                dist_val = float(dist)
-            except (ValueError, TypeError):
-                dist_val = 10.0
-            feed_val = self._get_fill_purge_feed()
-            cmd = f"G1 F{feed_val:g} A{-dist_val:g}"
-            self.sendGcode(f"{cmd}\n")
-            self.sendGcode("G90\n")
-
-            pass
-            
-            self.purge_state = True
-            self.fill_state = False
-            self.programWidget.purge.setText("Stop Purge")
-            self.programWidget.fill.setText("Fill")
-                
-            self.logger.info(f"Purge command ({cmd}) sent to Main COM.")
-            
-            if dist != "0.0":
-                # Estimate duration: ~120 mm/min (2 mm/s) -> 500ms per mm + 1s buffer
-                delay_ms = 10000
-                delay_ms = max(500, int((dist_val / max(0.01, feed_val / 60.0)) * 1000))
-                self._purge_timer.start(delay_ms)
-            else:
-                self._purge_timer.stop()
-        else:
-            self.sendGcode("M410\n")
-            self.purge_state = False
-            self.programWidget.purge.setText("Purge")
-            if hasattr(self, '_purge_timer'):
-                self._purge_timer.stop()
-            self.logger.info("Stop Purge command (M410) sent to Main COM.")
-
-    def _reset_purge_ui(self):
-        if getattr(self, 'purge_state', False):
-            self.purge_state = False
-            self.programWidget.purge.setText("Purge")
-            self.logger.info("Auto-reset Purge button state.")
+        dist = self._get_travel_distance()
+        self.sendGcode("G91\n")
+        try:
+            dist_val = float(dist)
+        except (ValueError, TypeError):
+            dist_val = 10.0
+        feed_val = self._get_fill_purge_feed()
+        cmd = f"G1 F{feed_val:g} A{-dist_val:g}"
+        self.sendGcode(f"{cmd}\n")
+        self.sendGcode("G90\n")
+        self.logger.info(f"Purge command ({cmd}) sent to Main COM.")
 
     def _handle_fillhome(self):
-        if False:
-            pass
-            pass
-            pass
-            pass
-            return
-
-        if not hasattr(self, 'fillhome_state'):
-            self.fillhome_state = False
-
-        if not hasattr(self, '_fillhome_timer'):
-            self._fillhome_timer = QTimer(self)
-            self._fillhome_timer.setSingleShot(True)
-            self._fillhome_timer.timeout.connect(self._reset_fillhome_ui)
-
-        if not self.fillhome_state:
-            self.sendGcode("G28 A\n")
-            self.fillhome_state = True
-            self.programWidget.fillhome.setText("Stop F home")
-            self.logger.info("F Home command (G28 A) sent to Main COM.")
-            self._fillhome_timer.start(10000)  # 10 seconds timeout for Homing
-        else:
-            self.sendGcode("M410\n")
-            self.fillhome_state = False
-            self.programWidget.fillhome.setText("F home")
-            self.logger.info("Stop F Home command (M410) sent to Main COM.")
-            if hasattr(self, '_fillhome_timer'):
-                self._fillhome_timer.stop()
-
-    def _reset_fillhome_ui(self):
-        if getattr(self, 'fillhome_state', False):
-            self.fillhome_state = False
-            self.programWidget.fillhome.setText("F home")
-            self.logger.info("Auto-reset F home button state.")
+        self.sendGcode("G28 A\n")
+        self.logger.info("F Home command (G28 A) sent to Main COM.")
                         
     # -------------------------------
     # 4) Save: apply Z height, draw_z, offsets, feed; bounds; preview
@@ -2618,13 +2454,6 @@ class MainWindow(QMainWindow):
         wobj = widget.objectName()
         
         if self.util.checkSubString(wobj, "run"):
-            if False:
-                pass
-                pass
-                pass
-                pass
-                return
-
             # Reset purge counters for every new print
             self.accumulated_print_distance = 0.0
             self.total_print_distance = 0.0
@@ -2950,25 +2779,47 @@ class MainWindow(QMainWindow):
         except Exception as e:
             self.logger.error(f"Error in syringflushAction: {e}")
 
+    def _handle_clean_ok(self):
+        stage = getattr(self, '_clean_stage', None)
+        if not stage or not getattr(self, '_clean_in_progress', False):
+            return
+        self.logger.info(f"Clean Routine: Stage '{stage}' confirmed complete by machine 'ok'.")
+        self._clean_stage = None
+        self._clean_expected_oks = 0
+        if hasattr(self, '_clean_watchdog_timer'):
+            self._clean_watchdog_timer.stop()
+
+        if stage == "PURGE_1":
+            self._clean_step2_prompt_solution()
+        elif stage == "F_HOME":
+            self._clean_step4_final_purge()
+        elif stage == "PURGE_2":
+            self._clean_step5_complete()
+
+    def _clean_timeout_handler(self):
+        self.logger.error("Clean Routine timeout: Machine did not respond with 'ok'.")
+        self._reset_clean_ui()
+        self.showCustomPopup("Timeout", "Clean routine timed out waiting for machine acknowledgment ('ok').")
+
     def _handle_clean_routine(self):
         """Nozzle clean routine:
-        1. Send Purge command.
-        2. Once Purge completes, show popup prompt for dilute solution.
-        3. When user presses Yes, send F Home command.
-        4. Once F Home completes, send final Purge command.
+        1. Send Purge command (G91, G1 F... A-..., G90, M400).
+        2. Wait until machine returns 'ok', then show popup prompt for dilute solution.
+        3. When user presses Yes, send F Home command (G28 A, M400).
+        4. Wait until machine returns 'ok', then send final Purge command (G91, G1 F... A-..., G90, M400).
+        5. Wait until machine returns 'ok', then finish routine.
         """
-        if False:
-            pass
-            pass
-            pass
-            pass
-            return
-
         if getattr(self, '_clean_in_progress', False):
             self.logger.warning("Clean routine is already in progress.")
             return
 
+        if not (hasattr(self, 'sercom') and getattr(self.sercom, 'is_connected', False)):
+            self.showCustomPopup("Connection Error", "Machine is not connected. Please connect COM port first.")
+            return
+
         self._clean_in_progress = True
+        self._clean_stage = "PURGE_1"
+        self._clean_expected_oks = 4
 
         clean_btn = getattr(self.ui, 'pgmcleanPushButton', None) or self.findChild(QPushButton, "pgmcleanPushButton")
         if clean_btn:
@@ -2985,20 +2836,21 @@ class MainWindow(QMainWindow):
         cmd = f"G1 F{feed_val:g} A{-dist_val:g}"
         self.sendGcode(f"{cmd}\n")
         self.sendGcode("G90\n")
+        self.sendGcode("M400\n")
+        self.logger.info(f"Clean Routine Step 1: Purge command ({cmd}) & M400 sent. Waiting for machine 'ok'...")
 
-        pass
-        self.logger.info(f"Clean Routine Step 1: Purge command ({cmd}) sent to Main COM.")
-
-        delay_ms = 10000
-        delay_ms = max(1000, int((dist_val / max(0.01, feed_val / 60.0)) * 1000))
-        QTimer.singleShot(delay_ms, self._clean_step2_prompt_solution)
+        if not hasattr(self, '_clean_watchdog_timer'):
+            self._clean_watchdog_timer = QTimer(self)
+            self._clean_watchdog_timer.setSingleShot(True)
+            self._clean_watchdog_timer.timeout.connect(self._clean_timeout_handler)
+        self._clean_watchdog_timer.start(300000)
 
     def _clean_step2_prompt_solution(self):
         clean_btn = getattr(self.ui, 'pgmcleanPushButton', None) or self.findChild(QPushButton, "pgmcleanPushButton")
         if clean_btn:
             clean_btn.setText("Waiting...")
 
-        self.logger.info("Clean Routine: Initial purge completed. Displaying dilute solution popup.")
+        self.logger.info("Clean Routine: Initial purge completed by machine. Displaying dilute solution popup.")
 
         reply = self.showCustomPopup(
             "Purge Done",
@@ -3013,36 +2865,27 @@ class MainWindow(QMainWindow):
             self._reset_clean_ui()
 
     def _clean_step3_send_fillhome(self):
-        if False:
-            pass
-            pass
-            self._reset_clean_ui()
-
-            
-            pass
-            return
-
         clean_btn = getattr(self.ui, 'pgmcleanPushButton', None) or self.findChild(QPushButton, "pgmcleanPushButton")
         if clean_btn:
             clean_btn.setText("F Homing...")
 
-        self.sendGcode("G28 A\n")
-        self.logger.info("Clean Routine Step 2: F Home command (G28 A) sent to Main COM.")
+        self._clean_stage = "F_HOME"
+        self._clean_expected_oks = 2
 
-        delay_ms = 10000  # 10 seconds for F Home
-        QTimer.singleShot(delay_ms, self._clean_step4_final_purge)
+        self.sendGcode("G28 A\n")
+        self.sendGcode("M400\n")
+        self.logger.info("Clean Routine Step 2: F Home command (G28 A) & M400 sent. Waiting for machine 'ok'...")
+
+        if hasattr(self, '_clean_watchdog_timer'):
+            self._clean_watchdog_timer.start(300000)
 
     def _clean_step4_final_purge(self):
-        if False:
-            pass
-            pass
-            self._reset_clean_ui()
-            pass
-            return
-
         clean_btn = getattr(self.ui, 'pgmcleanPushButton', None) or self.findChild(QPushButton, "pgmcleanPushButton")
         if clean_btn:
             clean_btn.setText("Purging...")
+
+        self._clean_stage = "PURGE_2"
+        self._clean_expected_oks = 4
 
         dist = self._get_travel_distance()
         self.sendGcode("G91\n")
@@ -3054,13 +2897,11 @@ class MainWindow(QMainWindow):
         cmd = f"G1 F{feed_val:g} A{-dist_val:g}"
         self.sendGcode(f"{cmd}\n")
         self.sendGcode("G90\n")
+        self.sendGcode("M400\n")
+        self.logger.info(f"Clean Routine Step 3: Final Purge command ({cmd}) & M400 sent. Waiting for machine 'ok'...")
 
-        pass
-        self.logger.info(f"Clean Routine Step 3: Final Purge command ({cmd}) sent to Main COM.")
-
-        delay_ms = 10000
-        delay_ms = max(1000, int((dist_val / max(0.01, feed_val / 60.0)) * 1000))
-        QTimer.singleShot(delay_ms, self._clean_step5_complete)
+        if hasattr(self, '_clean_watchdog_timer'):
+            self._clean_watchdog_timer.start(300000)
 
     def _clean_step5_complete(self):
         self._reset_clean_ui()
@@ -3069,6 +2910,10 @@ class MainWindow(QMainWindow):
 
     def _reset_clean_ui(self):
         self._clean_in_progress = False
+        self._clean_stage = None
+        self._clean_expected_oks = 0
+        if hasattr(self, '_clean_watchdog_timer'):
+            self._clean_watchdog_timer.stop()
         clean_btn = getattr(self.ui, 'pgmcleanPushButton', None) or self.findChild(QPushButton, "pgmcleanPushButton")
         if clean_btn:
             clean_btn.setText("CLEAN")
@@ -3096,7 +2941,6 @@ class MainWindow(QMainWindow):
                 self.logger.info(msg)
                 print(msg)
                 self.util.debugPrint(msg)
-                pass
             except ValueError:
                 err_msg = "Invalid purge values entered in UI"
                 self.logger.error(err_msg)
@@ -3176,12 +3020,8 @@ class MainWindow(QMainWindow):
             
             if gcode:
                 self.wm.operate(self.terminalWidget.input, "clear")
-                upper_gcode = gcode.upper().strip()
-                if False:
-                    self._send_to_blackpill(gcode)
-                else:
-                    self.sendGcode(gcode)
-                    self.sendGcode("M114")
+                self.sendGcode(gcode)
+                self.sendGcode("M114")
                 
     def receiveACK(self, widget, arg):
         if widget:

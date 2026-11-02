@@ -884392,3 +884392,183 @@ Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud
 action : Auto
 Cancel clicked
 status : False
+
+==================================================
+Session Started: 2026-11-02 10:39:48
+==================================================
+index : 0
+arg : 0
+index : 0
+arg : 0
+UI is loaded
+xindex : 0
+yindex : 0
+feed : 500
+laser handler : {}
+Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+action : Auto
+Cancel clicked
+status : False
+index : 6
+index : 2
+index : 3
+index : 5
+wobj : parabkuvPushButton
+index : 3
+[SPPL Agent] Registration failed: HTTPSConnectionPool(host='sppl-server.onrender.com', port=443): Read timed out. (read timeout=45)
+index : 5
+wobj : parabkbedPushButton
+index : 3
+Application is closing
+action : Disconnect
+Serial communication stopped
+status : True
+connect btn : Connect | refresh btn : True
+
+==================================================
+Session Started: 2026-11-02 10:56:16
+==================================================
+index : 0
+arg : 0
+index : 0
+arg : 0
+UI is loaded
+xindex : 0
+yindex : 0
+feed : 500
+laser handler : {}
+Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+action : Auto
+[SPPL Agent] Device INK-724634DD registered successfully.
+Cancel clicked
+status : False
+action : Refresh
+Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+index : 1
+index : 6
+index : 2
+index : 3
+index : 2
+index : 6
+Gcode - G91
+Gcode - G1 F60 A-10
+Gcode - G90
+Gcode - G28 A
+Gcode - G91
+Gcode - G1 F60 A-10
+Gcode - G90
+
+==================================================
+Session Started: 2026-11-02 11:09:07
+==================================================
+index : 0
+arg : 0
+index : 0
+arg : 0
+UI is loaded
+xindex : 0
+yindex : 0
+feed : 500
+laser handler : {}
+Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+action : Auto
+[SPPL Agent] Device INK-724634DD registered successfully.
+Cancel clicked
+status : False
+index : 1
+index : 6
+pgm : pgmpurgePushButton
+Gcode - G91
+Gcode - G1 F60 A-10
+Gcode - G90
+pgm : pgmpurgePushButton
+Gcode - M410
+pgm : pgmfillPushButton
+Gcode - G91
+Gcode - G1 F60 A10
+Gcode - G90
+pgm : pgmfillPushButton
+Gcode - M410
+
+==================================================
+Session Started: 2026-11-02 11:12:37
+==================================================
+index : 0
+arg : 0
+index : 0
+arg : 0
+UI is loaded
+xindex : 0
+yindex : 0
+feed : 500
+laser handler : {}
+Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+action : Auto
+[SPPL Agent] Device INK-724634DD registered successfully.
+Cancel clicked
+status : False
+index : 1
+index : 6
+pgm : pgmfillPushButton
+Gcode - G91
+Gcode - G1 F60 A10
+Gcode - G90
+pgm : pgmfillPushButton
+Gcode - M410
+pgm : pgmfillhomePushButton
+Gcode - G28 A
+pgm : pgmfillhomePushButton
+Gcode - M410
+pgm : pgmpurgePushButton
+Gcode - G91
+Gcode - G1 F60 A-10
+Gcode - G90
+pgm : pgmpurgePushButton
+Gcode - M410
+wobj : extsavePushButton
+Updated purge settings via UI: length_mm=100.0, purge_value=0.5
+Updated purge settings via UI: length_mm=100.0, purge_value=0.5
+wobj : extsavePushButton
+Updated purge settings via UI: length_mm=100.0, purge_value=0.5
+Updated purge settings via UI: length_mm=100.0, purge_value=0.5
+index : 2
+index : 3
+index : 5
+wobj : parabkuvPushButton
+index : 3
+index : 5
+Application is closing
+action : Disconnect
+Serial communication stopped
+status : True
+connect btn : Connect | refresh btn : True
+
+==================================================
+Session Started: 2026-11-02 11:36:27
+==================================================
+index : 0
+arg : 0
+index : 0
+arg : 0
+UI is loaded
+xindex : 0
+yindex : 0
+feed : 500
+laser handler : {}
+Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+action : Auto
+[SPPL Agent] Device INK-724634DD registered successfully.
+Cancel clicked
+status : False
+index : 1
+index : 6
+pgm : pgmfillPushButton
+Gcode - G91
+Gcode - G1 F60 A10
+Gcode - G90
+pgm : pgmfillPushButton
+Gcode - G91
+Gcode - G1 F60 A10
+Gcode - G90
+pgm : pgmfillhomePushButton
+Gcode - G28 A
