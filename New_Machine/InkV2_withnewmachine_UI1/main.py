@@ -1306,8 +1306,9 @@ class MainWindow(QMainWindow):
             self.accumulated_print_distance = 0.0
             self.total_print_distance = 0.0
 
-        # Intercept custom Blackpill commands from parser
-        if gstr.startswith("BLACKPILL_FILL"):
+        # Intercept custom Blackpill commands from parser (Z-hop retract & unretract)
+        if gstr.startswith("BLACKPILL_FILL") or gstr.startswith("BLACKPILL_UNRETRACT"):
+            is_fill = gstr.startswith("BLACKPILL_FILL")
             val = gstr.split()[1] if len(gstr.split()) > 1 else "0.01"
             if hasattr(self, 'conf') and hasattr(self, 'config_file_path'):
                 try:
@@ -1318,13 +1319,21 @@ class MainWindow(QMainWindow):
                         val = str(ini_val).strip()
                 except Exception:
                     pass
-            msg = f"Z-LIFT RETRACT/FILL: F {val}"
+            try:
+                dist_val = float(val)
+            except ValueError:
+                dist_val = 0.01
+
+            feed_val = self._get_fill_purge_feed()
+            target_a = dist_val if is_fill else -dist_val
+            action_name = "RETRACT" if is_fill else "UNRETRACT"
+            msg = f"Z-HOP {action_name}: G1 F{feed_val:g} A{target_a:g}"
             self.util.debugPrint(msg)
             if hasattr(self, 'terminalWidget') and hasattr(self.terminalWidget, 'output'):
                 self.receiveACK(self.terminalWidget.output, f">>> {msg}")
-            if hasattr(self, 'sercom') and self.sercom.is_connected:
-                self.sercom.send(f"F {val}\n")
-                self.logger.info(f"Sent F {val} to Main COM")
+            if hasattr(self, 'sercom') and self.sercom.is_connected and dist_val > 0.0:
+                self.sercom.send(f"G91\nG1 F{feed_val:g} A{target_a:g}\nG90\n")
+                self.logger.info(f"Sent {action_name} (A{target_a:g} @ F{feed_val:g}) to Main COM")
             return
         # Ignore full-line comments or empty lines
         if not gstr or gstr.startswith(";") or gstr.startswith("("):
@@ -2408,12 +2417,16 @@ class MainWindow(QMainWindow):
         # ======================================================
         # 6) Apply full transform
         # ======================================================
-        # Read retract value from config.ini if available
+        # Read retract and z_hop values from config.ini if available
         retract_ini = None
+        z_hop_ini = 4.0
         try:
             val_str = self.conf.getValues("retract", "retract_val")
             if val_str is not None and str(val_str).strip() != "":
                 retract_ini = float(val_str)
+            zh_str = self.conf.getValues("retract", "z_hop")
+            if zh_str is not None and str(zh_str).strip() != "":
+                z_hop_ini = float(zh_str)
         except Exception:
             pass
 
@@ -2424,7 +2437,8 @@ class MainWindow(QMainWindow):
             feedrate,
             user_set_drawz,
             self.layer_height,
-            retract_val=retract_ini
+            retract_val=retract_ini,
+            z_hop=z_hop_ini
         )
 
         # ======================================================
@@ -3022,6 +3036,7 @@ class MainWindow(QMainWindow):
                 self.wm.operate(self.terminalWidget.input, "clear")
                 self.sendGcode(gcode)
                 self.sendGcode("M114")
+
                 
     def receiveACK(self, widget, arg):
         if widget:
