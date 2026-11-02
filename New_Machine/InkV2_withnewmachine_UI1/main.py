@@ -2840,12 +2840,12 @@ class MainWindow(QMainWindow):
         if hasattr(self, '_clean_watchdog_timer'):
             self._clean_watchdog_timer.stop()
 
-        if stage == "F_HOME_1":
-            self._clean_step2_prompt_solution()
-        elif stage == "FILL_72":
-            self._clean_step4_final_fhome()
-        elif stage == "F_HOME_2":
-            self._clean_step5_complete()
+        if stage == "PURGE_1":
+            self._clean_step2_fill()
+        elif stage == "FILLING":
+            self._clean_step3_purge2()
+        elif stage == "PURGE_2":
+            self._clean_step4_complete()
 
     def _clean_timeout_handler(self):
         self.logger.error("Clean Routine timeout: Machine did not respond with 'ok'.")
@@ -2854,11 +2854,11 @@ class MainWindow(QMainWindow):
 
     def _handle_clean_routine(self):
         """Nozzle clean routine:
-        1. Send initial F Home command (G28 A, M400).
-        2. Wait until machine returns 'ok', then show popup prompt for dilute solution.
-        3. When user presses Yes, send Fill command (G91, G1 F60 A72, G90, M400).
-        4. Wait until machine returns 'ok', then send final F Home command (G28 A, M400).
-        5. Wait until machine returns 'ok', then finish routine.
+        1. Step 1 (Purging): Button shows 'Purging...'. Send F Home (G28 A, M400).
+        2. Step 2 (Filling): Button shows 'Filling...'. Send Fill (G91, G1 F60 A15
+        , G90, M400).
+        3. Step 3 (Purging): Button shows 'Purging...'. Send F Home (G28 A, M400).
+        4. After last process: Reset button to 'CLEAN', show popup message 'Cleaning is done'.
         """
         if getattr(self, '_clean_in_progress', False):
             self.logger.warning("Clean routine is already in progress.")
@@ -2869,17 +2869,17 @@ class MainWindow(QMainWindow):
             return
 
         self._clean_in_progress = True
-        self._clean_stage = "F_HOME_1"
+        self._clean_stage = "PURGE_1"
         self._clean_expected_oks = 2
 
         clean_btn = getattr(self.ui, 'pgmcleanPushButton', None) or self.findChild(QPushButton, "pgmcleanPushButton")
         if clean_btn:
-            clean_btn.setText("F Homing...")
+            clean_btn.setText("Purging...")
             clean_btn.setEnabled(False)
 
         self.sendGcode("G28 A\n")
         self.sendGcode("M400\n")
-        self.logger.info("Clean Routine Step 1: Initial F Home command (G28 A) & M400 sent. Waiting for machine 'ok'...")
+        self.logger.info("Clean Routine Step 1 (Purging): Initial F Home (G28 A) & M400 sent. Waiting for machine 'ok'...")
 
         if not hasattr(self, '_clean_watchdog_timer'):
             self._clean_watchdog_timer = QTimer(self)
@@ -2887,63 +2887,44 @@ class MainWindow(QMainWindow):
             self._clean_watchdog_timer.timeout.connect(self._clean_timeout_handler)
         self._clean_watchdog_timer.start(300000)
 
-    def _clean_step2_prompt_solution(self):
-        clean_btn = getattr(self.ui, 'pgmcleanPushButton', None) or self.findChild(QPushButton, "pgmcleanPushButton")
-        if clean_btn:
-            clean_btn.setText("Waiting...")
-
-        self.logger.info("Clean Routine: Initial F Home completed by machine. Displaying dilute solution popup.")
-
-        reply = self.showCustomPopup(
-            "Purge Done",
-            "Purge is done. Put the dilute solution for clean the nozzle.\n\nAfter putting solution, press on Yes.",
-            buttons=QMessageBox.Yes | QMessageBox.No
-        )
-
-        if reply == QMessageBox.Yes:
-            self._clean_step3_fill_solution()
-        else:
-            self.logger.info("Clean Routine: Cancelled by user at dilute solution prompt.")
-            self._reset_clean_ui()
-
-    def _clean_step3_fill_solution(self):
+    def _clean_step2_fill(self):
         clean_btn = getattr(self.ui, 'pgmcleanPushButton', None) or self.findChild(QPushButton, "pgmcleanPushButton")
         if clean_btn:
             clean_btn.setText("Filling...")
 
-        self._clean_stage = "FILL_72"
+        self._clean_stage = "FILLING"
         self._clean_expected_oks = 4
 
         feed_val = self._get_fill_purge_feed()
-        cmd = f"G1 F{feed_val:g} A72"
+        cmd = f"G1 F{feed_val:g} A15"
         self.sendGcode("G91\n")
         self.sendGcode(f"{cmd}\n")
         self.sendGcode("G90\n")
         self.sendGcode("M400\n")
-        self.logger.info(f"Clean Routine Step 2: Fill command ({cmd}) & M400 sent. Waiting for machine 'ok'...")
+        self.logger.info(f"Clean Routine Step 2 (Filling): Fill command ({cmd}) & M400 sent. Waiting for machine 'ok'...")
 
         if hasattr(self, '_clean_watchdog_timer'):
             self._clean_watchdog_timer.start(300000)
 
-    def _clean_step4_final_fhome(self):
+    def _clean_step3_purge2(self):
         clean_btn = getattr(self.ui, 'pgmcleanPushButton', None) or self.findChild(QPushButton, "pgmcleanPushButton")
         if clean_btn:
-            clean_btn.setText("F Homing...")
+            clean_btn.setText("Purging...")
 
-        self._clean_stage = "F_HOME_2"
+        self._clean_stage = "PURGE_2"
         self._clean_expected_oks = 2
 
         self.sendGcode("G28 A\n")
         self.sendGcode("M400\n")
-        self.logger.info("Clean Routine Step 3: Final F Home command (G28 A) & M400 sent. Waiting for machine 'ok'...")
+        self.logger.info("Clean Routine Step 3 (Purging): Final F Home (G28 A) & M400 sent. Waiting for machine 'ok'...")
 
         if hasattr(self, '_clean_watchdog_timer'):
             self._clean_watchdog_timer.start(300000)
 
-    def _clean_step5_complete(self):
+    def _clean_step4_complete(self):
         self._reset_clean_ui()
         self.logger.info("Clean Routine: Cleaning cycle completed successfully.")
-        self.showCustomPopup("Cleaning Done", "Cleaning cycle is done.", buttons=QMessageBox.Ok)
+        self.showCustomPopup("Cleaning Done", "Cleaning is done.", buttons=QMessageBox.Ok)
 
     def _reset_clean_ui(self):
         self._clean_in_progress = False
