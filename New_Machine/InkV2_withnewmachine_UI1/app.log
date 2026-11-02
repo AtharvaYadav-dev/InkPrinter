@@ -4014,3 +4014,27 @@ AttributeError: 'MainWindow' object has no attribute 'blackpill_sercom'
 2026-11-02 15:10 - INFO - Normalization shift: X=-19.211, Y=-5.000
 2026-11-02 15:10 - INFO - Using OFFSETS: X=5.000, Y=5.000, drawZ=47.700
 2026-11-02 15:10 - INFO - Final applied shift: X=-14.211, Y=0.000
+2026-11-02 15:56 - INFO - ==================================================
+2026-11-02 15:56 - INFO - New session START at 2026-11-02 15:56
+2026-11-02 15:56 - INFO - ==================================================
+2026-11-02 15:56 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-11-02 15:56 - INFO - Loaded offsets from config: X=5.0, Y=5.0
+2026-11-02 15:56 - INFO - Loaded draw_z from config: Z=47.7, draw_z_UP=23.85
+2026-11-02 15:56 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-11-02 15:56 - INFO - INI file initialized
+2026-11-02 15:56 - INFO - UI load successful
+2026-11-02 15:56 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-11-02 15:56 - INFO - Do you want to auto connect Main Printer COM to COM4 @ 115200?
+2026-11-02 15:56 - INFO - Auto Connect dialog button : Cancel
+2026-11-02 16:01 - INFO - ==================================================
+2026-11-02 16:01 - INFO - New session START at 2026-11-02 16:01
+2026-11-02 16:01 - INFO - ==================================================
+2026-11-02 16:01 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-11-02 16:01 - INFO - Loaded offsets from config: X=5.0, Y=5.0
+2026-11-02 16:01 - INFO - Loaded draw_z from config: Z=47.7, draw_z_UP=23.85
+2026-11-02 16:01 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-11-02 16:01 - INFO - INI file initialized
+2026-11-02 16:01 - INFO - UI load successful
+2026-11-02 16:01 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-11-02 16:01 - INFO - Do you want to auto connect Main Printer COM to COM4 @ 115200?
+2026-11-02 16:01 - INFO - Auto Connect dialog button : Cancel

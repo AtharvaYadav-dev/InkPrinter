@@ -1399,7 +1399,7 @@ class MainWindow(QMainWindow):
                     self.total_print_distance = getattr(self, 'total_print_distance', 0.0) + distance
                     purge_interval = getattr(self, 'purge_distance_interval', 100.0)
                     if self.accumulated_print_distance >= purge_interval:
-                        purge_val = getattr(self, 'purge_amount', 0.5)
+                        purge_val = abs(float(getattr(self, 'purge_amount', 0.5)))
                         feed_val = self._get_fill_purge_feed()
                         cmd = f"G1 F{feed_val:g} A{-purge_val:g}"
                         msg = f"PURGE EXECUTED: {cmd} | triggered at total distance {self.total_print_distance:.2f}mm"
@@ -1409,7 +1409,7 @@ class MainWindow(QMainWindow):
                             self.sendGcode("G91")
                             self.sendGcode(cmd)
                             self.sendGcode("G90")
-                            self.logger.info(f"Sent {cmd} to Main COM")
+                            self.logger.info(msg)
                         self.accumulated_print_distance -= purge_interval
                         self.util.debugPrint(msg)
 
@@ -1620,6 +1620,12 @@ class MainWindow(QMainWindow):
             self._uv_manual_timer.stop()
         if hasattr(self, '_uv_countdown_timer'):
             self._uv_countdown_timer.stop()
+
+        if hasattr(self.ui, 'uvminLCDNumber') and hasattr(self.ui, 'uvsecLCDNumber'):
+            duration_type = self.ui.expdurationComboBox.currentText() if hasattr(self.ui, 'expdurationComboBox') else "Timer"
+            if duration_type == "Timer":
+                self.ui.uvminLCDNumber.display(0)
+                self.ui.uvsecLCDNumber.display(0)
             
         if getattr(self, 'home_after_uv', False):
             self.sendGcode("G91\n")
@@ -1631,17 +1637,17 @@ class MainWindow(QMainWindow):
 
     def updateUvCountdownTimer(self):
         self.uv_timer_remaining -= 1
+        mins = max(0, self.uv_timer_remaining // 60)
+        secs = max(0, self.uv_timer_remaining % 60)
+        if hasattr(self.ui, 'uvminLCDNumber') and hasattr(self.ui, 'uvsecLCDNumber'):
+            self.ui.uvminLCDNumber.display(mins)
+            self.ui.uvsecLCDNumber.display(secs)
+
         if self.uv_timer_remaining <= 0:
             if hasattr(self, '_uv_countdown_timer'):
                 self._uv_countdown_timer.stop()
             self.handleUvOff()
             return
-
-        mins = self.uv_timer_remaining // 60
-        secs = self.uv_timer_remaining % 60
-        if hasattr(self.ui, 'uvminLCDNumber') and hasattr(self.ui, 'uvsecLCDNumber'):
-            self.ui.uvminLCDNumber.display(mins)
-            self.ui.uvsecLCDNumber.display(secs)
 
     def updateUvManualTimer(self):
         self.uv_manual_seconds += 1
@@ -2577,6 +2583,28 @@ class MainWindow(QMainWindow):
     def runProgram(self, arg):
         if arg == "run":
             if hasattr(self, "filtered_gcode") and self.filtered_gcode:
+                # Sync latest extrusion interval and purge amount from UI text fields
+                if hasattr(self, 'ui'):
+                    if hasattr(self.ui, 'extlenghtLineEdit') and self.ui.extlenghtLineEdit.text().strip():
+                        try:
+                            val = float(self.ui.extlenghtLineEdit.text().strip())
+                            if val > 0:
+                                self.purge_distance_interval = val
+                        except Exception:
+                            pass
+                    if hasattr(self.ui, 'extpurgeLineEdit') and self.ui.extpurgeLineEdit.text().strip():
+                        try:
+                            val = float(self.ui.extpurgeLineEdit.text().strip())
+                            if val > 0:
+                                self.purge_amount = val
+                        except Exception:
+                            pass
+
+                # Reset distance counters for fresh print run
+                self.accumulated_print_distance = 0.0
+                self.total_print_distance = 0.0
+                self.logger.info(f"Print Status : RUN (purge_interval={self.purge_distance_interval}mm, purge_amount={self.purge_amount}mm)")
+
                 self.setSystemSleepPrevented(True)
                 self.ui.uvonPushButton.setEnabled(False)
                 self.ui.uvoffPushButton.setEnabled(False)
@@ -2586,7 +2614,6 @@ class MainWindow(QMainWindow):
                 self.seg_index = 0
                 self.preview.resetPreview()
                 self.initProgram()
-                self.logger.info("Print Status : RUN")
 
         elif arg == "pause":
             self.pgm_pause_flag = True
@@ -2813,11 +2840,11 @@ class MainWindow(QMainWindow):
         if hasattr(self, '_clean_watchdog_timer'):
             self._clean_watchdog_timer.stop()
 
-        if stage == "PURGE_1":
+        if stage == "F_HOME_1":
             self._clean_step2_prompt_solution()
-        elif stage == "F_HOME":
-            self._clean_step4_final_purge()
-        elif stage == "PURGE_2":
+        elif stage == "FILL_72":
+            self._clean_step4_final_fhome()
+        elif stage == "F_HOME_2":
             self._clean_step5_complete()
 
     def _clean_timeout_handler(self):
@@ -2827,10 +2854,10 @@ class MainWindow(QMainWindow):
 
     def _handle_clean_routine(self):
         """Nozzle clean routine:
-        1. Send Purge command (G91, G1 F... A-..., G90, M400).
+        1. Send initial F Home command (G28 A, M400).
         2. Wait until machine returns 'ok', then show popup prompt for dilute solution.
-        3. When user presses Yes, send F Home command (G28 A, M400).
-        4. Wait until machine returns 'ok', then send final Purge command (G91, G1 F... A-..., G90, M400).
+        3. When user presses Yes, send Fill command (G91, G1 F60 A72, G90, M400).
+        4. Wait until machine returns 'ok', then send final F Home command (G28 A, M400).
         5. Wait until machine returns 'ok', then finish routine.
         """
         if getattr(self, '_clean_in_progress', False):
@@ -2842,26 +2869,17 @@ class MainWindow(QMainWindow):
             return
 
         self._clean_in_progress = True
-        self._clean_stage = "PURGE_1"
-        self._clean_expected_oks = 4
+        self._clean_stage = "F_HOME_1"
+        self._clean_expected_oks = 2
 
         clean_btn = getattr(self.ui, 'pgmcleanPushButton', None) or self.findChild(QPushButton, "pgmcleanPushButton")
         if clean_btn:
-            clean_btn.setText("Purging...")
+            clean_btn.setText("F Homing...")
             clean_btn.setEnabled(False)
 
-        dist = self._get_travel_distance()
-        self.sendGcode("G91\n")
-        try:
-            dist_val = float(dist)
-        except (ValueError, TypeError):
-            dist_val = 10.0
-        feed_val = self._get_fill_purge_feed()
-        cmd = f"G1 F{feed_val:g} A{-dist_val:g}"
-        self.sendGcode(f"{cmd}\n")
-        self.sendGcode("G90\n")
+        self.sendGcode("G28 A\n")
         self.sendGcode("M400\n")
-        self.logger.info(f"Clean Routine Step 1: Purge command ({cmd}) & M400 sent. Waiting for machine 'ok'...")
+        self.logger.info("Clean Routine Step 1: Initial F Home command (G28 A) & M400 sent. Waiting for machine 'ok'...")
 
         if not hasattr(self, '_clean_watchdog_timer'):
             self._clean_watchdog_timer = QTimer(self)
@@ -2874,7 +2892,7 @@ class MainWindow(QMainWindow):
         if clean_btn:
             clean_btn.setText("Waiting...")
 
-        self.logger.info("Clean Routine: Initial purge completed by machine. Displaying dilute solution popup.")
+        self.logger.info("Clean Routine: Initial F Home completed by machine. Displaying dilute solution popup.")
 
         reply = self.showCustomPopup(
             "Purge Done",
@@ -2883,46 +2901,41 @@ class MainWindow(QMainWindow):
         )
 
         if reply == QMessageBox.Yes:
-            self._clean_step3_send_fillhome()
+            self._clean_step3_fill_solution()
         else:
             self.logger.info("Clean Routine: Cancelled by user at dilute solution prompt.")
             self._reset_clean_ui()
 
-    def _clean_step3_send_fillhome(self):
+    def _clean_step3_fill_solution(self):
         clean_btn = getattr(self.ui, 'pgmcleanPushButton', None) or self.findChild(QPushButton, "pgmcleanPushButton")
         if clean_btn:
-            clean_btn.setText("F Homing...")
+            clean_btn.setText("Filling...")
 
-        self._clean_stage = "F_HOME"
-        self._clean_expected_oks = 2
+        self._clean_stage = "FILL_72"
+        self._clean_expected_oks = 4
 
-        self.sendGcode("G28 A\n")
+        feed_val = self._get_fill_purge_feed()
+        cmd = f"G1 F{feed_val:g} A72"
+        self.sendGcode("G91\n")
+        self.sendGcode(f"{cmd}\n")
+        self.sendGcode("G90\n")
         self.sendGcode("M400\n")
-        self.logger.info("Clean Routine Step 2: F Home command (G28 A) & M400 sent. Waiting for machine 'ok'...")
+        self.logger.info(f"Clean Routine Step 2: Fill command ({cmd}) & M400 sent. Waiting for machine 'ok'...")
 
         if hasattr(self, '_clean_watchdog_timer'):
             self._clean_watchdog_timer.start(300000)
 
-    def _clean_step4_final_purge(self):
+    def _clean_step4_final_fhome(self):
         clean_btn = getattr(self.ui, 'pgmcleanPushButton', None) or self.findChild(QPushButton, "pgmcleanPushButton")
         if clean_btn:
-            clean_btn.setText("Purging...")
+            clean_btn.setText("F Homing...")
 
-        self._clean_stage = "PURGE_2"
-        self._clean_expected_oks = 4
+        self._clean_stage = "F_HOME_2"
+        self._clean_expected_oks = 2
 
-        dist = self._get_travel_distance()
-        self.sendGcode("G91\n")
-        try:
-            dist_val = float(dist)
-        except (ValueError, TypeError):
-            dist_val = 10.0
-        feed_val = self._get_fill_purge_feed()
-        cmd = f"G1 F{feed_val:g} A{-dist_val:g}"
-        self.sendGcode(f"{cmd}\n")
-        self.sendGcode("G90\n")
+        self.sendGcode("G28 A\n")
         self.sendGcode("M400\n")
-        self.logger.info(f"Clean Routine Step 3: Final Purge command ({cmd}) & M400 sent. Waiting for machine 'ok'...")
+        self.logger.info("Clean Routine Step 3: Final F Home command (G28 A) & M400 sent. Waiting for machine 'ok'...")
 
         if hasattr(self, '_clean_watchdog_timer'):
             self._clean_watchdog_timer.start(300000)
