@@ -916,9 +916,8 @@ class MainWindow(QMainWindow):
     def moveFinish(self, *args, **kwargs):
         self.logger.info("Movement finished (M400).")
         self.release_flag = False    # allow new commands again
-        self.pgmGcode("M114")
-        if getattr(self, '_clean_in_progress', False):
-            self._handle_clean_ok()
+        if not getattr(self, '_clean_in_progress', False):
+            self.pgmGcode("M114")
 
 
         

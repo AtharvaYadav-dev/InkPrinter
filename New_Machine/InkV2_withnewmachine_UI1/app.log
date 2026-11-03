@@ -4079,3 +4079,25 @@ AttributeError: 'MainWindow' object has no attribute 'blackpill_sercom'
 2026-11-03 10:36 - INFO - Normalization shift: X=-1.904, Y=-1.855
 2026-11-03 10:36 - INFO - Using OFFSETS: X=5.000, Y=5.000, drawZ=47.700
 2026-11-03 10:36 - INFO - Final applied shift: X=3.096, Y=3.145
+2026-11-03 12:39 - INFO - ==================================================
+2026-11-03 12:39 - INFO - New session START at 2026-11-03 12:39
+2026-11-03 12:39 - INFO - ==================================================
+2026-11-03 12:39 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-11-03 12:39 - INFO - Loaded offsets from config: X=5.0, Y=5.0
+2026-11-03 12:39 - INFO - Loaded draw_z from config: Z=47.7, draw_z_UP=23.85
+2026-11-03 12:39 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-11-03 12:39 - INFO - INI file initialized
+2026-11-03 12:39 - INFO - UI load successful
+2026-11-03 12:39 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-11-03 12:39 - INFO - Do you want to auto connect Main Printer COM to COM4 @ 115200?
+2026-11-03 12:39 - INFO - Auto Connect dialog button : Cancel
+2026-11-03 12:39 - INFO - Purge command (G1 F60 A-10) sent to Main COM.
+2026-11-03 12:39 - INFO - F Home command (G28 A) sent to Main COM.
+2026-11-03 12:39 - INFO - Fill command (G1 F60 A10) sent to Main COM.
+2026-11-03 12:40 - INFO - Windows sleep prevention: DISABLED (Print idle/finished)
+2026-11-03 12:40 - INFO - Serial communication stopped
+2026-11-03 12:40 - INFO - COM connection close successfully
+2026-11-03 12:40 - INFO - Main window close successfully
+2026-11-03 12:40 - INFO - ==================================================
+2026-11-03 12:40 - INFO - New session close at 2026-11-03 12:40
+2026-11-03 12:40 - INFO - ==================================================
