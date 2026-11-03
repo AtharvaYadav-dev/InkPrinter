@@ -212,7 +212,10 @@ class GcodeParser:
                          draw_z: float,
                          feedrate: float,
                          draw_z_user: bool,
-                         layer_height: float | None = None) -> list[str]:
+                         layer_height: float | None = None,
+                         retract_val: float | None = None,
+                         z_hop: float | None = None,
+                         retract_feed: float | None = None) -> list[str]:
 
         final = []
         abs_mode = True
@@ -223,8 +226,16 @@ class GcodeParser:
         else:
             printZ = layer_height if layer_height is not None else 0.0
 
-        hopDelta = -2.0        # Z-hop amount (+2 / -2)
-        retract_fill_value = 0.01  # <--- CHANGE YOUR FILL VALUE HERE
+        hop_amount = z_hop if (z_hop is not None and z_hop > 0) else 4.0
+        # If printZ > 10.0 (inverted machine where home is at top 0 and bed is ~45mm),
+        # hopping up away from the bed requires subtracting Z:
+        if printZ > 10.0:
+            hopDelta = -abs(hop_amount)
+        else:
+            hopDelta = abs(hop_amount)
+
+        retract_fill_value = retract_val if retract_val is not None else 0.01
+        retract_f = retract_feed if retract_feed is not None else 60.0
         
         # travelF = (feedrate * 2) if feedrate else 1800.0
         travelF = 1800.0
@@ -257,6 +268,24 @@ class GcodeParser:
 
         def has_motion_or_e(line):
             return bool(re.search(r'[XYZE][-+]?\d*\.?\d+', line, re.IGNORECASE))
+
+        is_retracted = False
+
+        def add_retract():
+            nonlocal is_retracted
+            if retract_fill_value > 0 and not is_retracted:
+                final.append("G91")
+                final.append(f"G1 F{retract_f:g} A{retract_fill_value:g}")
+                final.append("G90")
+                is_retracted = True
+
+        def add_unretract():
+            nonlocal is_retracted
+            if retract_fill_value > 0 and is_retracted:
+                final.append("G91")
+                final.append(f"G1 F{retract_f:g} A{-retract_fill_value:g}")
+                final.append("G90")
+                is_retracted = False
 
         for i, ln in enumerate(glines_clean):
             raw = ln.rstrip()
@@ -309,11 +338,20 @@ class GcodeParser:
             newline = self._strip_negative_E(newline)  # remove E-..
 
             # BEFORE ANCHOR → ALWAYS stay at HOP
-            if anchor_idx is None or i < anchor_idx:
+            if anchor_idx is not None and i < anchor_idx:
+                coords = self.extract_coords(newline)
+                target_x = coords.get("X", curr_x)
+                target_y = coords.get("Y", curr_y)
+                has_xy_move = (target_x is not None and target_y is not None and 
+                               (curr_x is None or curr_y is None or math.hypot(target_x - curr_x, target_y - curr_y) > 0.001))
+
+                # Retract syringe on XY travel move before anchor
+                if has_xy_move and not is_retracted:
+                    add_retract()
+
                 if not at_hop:
                     # Prevent redundant G0 Z line if current line is already G0 Z
                     if not (up.startswith("G0") and "Z" in up and "X" not in up and "Y" not in up):
-
                         final.append(f"G0 Z{printZ + hopDelta:.3f} F{travelF}")
                         at_hop = True
                     else:
@@ -323,15 +361,15 @@ class GcodeParser:
                 newline = set_feed(newline, travelF)
                 if has_motion_or_e(newline):
                     final.append(newline)
-                coords = self.extract_coords(newline)
-                if "X" in coords: curr_x = coords["X"]
-                if "Y" in coords: curr_y = coords["Y"]
+                if target_x is not None: curr_x = target_x
+                if target_y is not None: curr_y = target_y
                 continue
 
             # AT ANCHOR → DROP BEFORE PRINT
             if i == anchor_idx:
                 if at_hop:
                     final.append(f"G0 Z{printZ:.3f} F{travelF}")
+                    add_unretract()
                     at_hop = False
 
                 newline = remove_Z(newline)       # NO Z in print moves
@@ -350,6 +388,7 @@ class GcodeParser:
             if motion == "G1":
                 if at_hop:
                     final.append(f"G0 Z{printZ:.3f} F{travelF}")
+                    add_unretract()
                     at_hop = False
 
                 newline = remove_Z(newline)
@@ -366,11 +405,12 @@ class GcodeParser:
                 coords = self.extract_coords(newline)
                 target_x = coords.get("X", curr_x)
                 target_y = coords.get("Y", curr_y)
-                travel_dist = math.hypot(target_x - curr_x, target_y - curr_y) if (curr_x is not None and curr_y is not None and target_x is not None and target_y is not None) else 999.0
+                has_xy_move = (target_x is not None and target_y is not None and 
+                               (curr_x is None or curr_y is None or math.hypot(target_x - curr_x, target_y - curr_y) > 0.001))
 
-                # Only retract and hop if travel distance is significant (>= 1.5mm)
-                if not at_hop and travel_dist >= 1.5:
-
+                # Retract and hop for ALL travel moves with XY motion
+                if not at_hop and has_xy_move:
+                    add_retract()
                     final.append(f"G0 Z{printZ + hopDelta:.3f} F{travelF}")
                     at_hop = True
 
@@ -399,10 +439,11 @@ class GcodeParser:
                 final.pop(i)
             i -= 1
             
-        # Ensure M84 is at the end (but add a hop first)
+        # Ensure M84 is at the end (retract ink and hop first)
         while final and "M84" in final[-1].upper():
             final.pop()
             
+        add_retract()
         final.append(f"G0 Z{printZ + hopDelta:.3f} F{travelF}")
         final.append("M84")
 

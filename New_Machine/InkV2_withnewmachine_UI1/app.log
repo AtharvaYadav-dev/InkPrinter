@@ -3711,3 +3711,393 @@ AttributeError: 'NoneType' object has no attribute 'objectName'
 2026-10-31 16:20 - INFO - Stop Purge command (M410) sent to Main COM.
 2026-10-31 16:21 - INFO - Purge command (G1 F60 A-5) sent to Main COM.
 2026-10-31 16:21 - INFO - Stop Purge command (M410) sent to Main COM.
+2026-10-31 16:28 - INFO - ==================================================
+2026-10-31 16:28 - INFO - New session START at 2026-10-31 16:28
+2026-10-31 16:28 - INFO - ==================================================
+2026-10-31 16:28 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-10-31 16:28 - INFO - Loaded offsets from config: X=5.0, Y=5.0
+2026-10-31 16:28 - INFO - Loaded draw_z from config: Z=47.7, draw_z_UP=23.85
+2026-10-31 16:28 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-10-31 16:28 - INFO - INI file initialized
+2026-10-31 16:28 - ERROR - Uncaught exception
+Traceback (most recent call last):
+  File "e:\InkPrinter\New_Machine\InkV2_withnewmachine_UI1\main.py", line 3292, in <module>
+    window = MainWindow()
+  File "e:\InkPrinter\New_Machine\InkV2_withnewmachine_UI1\main.py", line 619, in __init__
+    self.blackpill_sercom.configCallbacks(exceptionCallback = self.updateException)
+    ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'MainWindow' object has no attribute 'blackpill_sercom'
+2026-10-31 17:10 - INFO - ==================================================
+2026-10-31 17:10 - INFO - New session START at 2026-10-31 17:10
+2026-10-31 17:10 - INFO - ==================================================
+2026-10-31 17:10 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-10-31 17:10 - INFO - Loaded offsets from config: X=5.0, Y=5.0
+2026-10-31 17:10 - INFO - Loaded draw_z from config: Z=47.7, draw_z_UP=23.85
+2026-10-31 17:10 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-10-31 17:10 - INFO - INI file initialized
+2026-10-31 17:10 - INFO - UI load successful
+2026-10-31 17:10 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-10-31 17:10 - INFO - Do you want to auto connect Main Printer COM to COM4 @ 115200?
+2026-10-31 17:10 - INFO - Auto Connect dialog button : Cancel
+2026-10-31 17:10 - INFO - Updated purge settings via UI: length_mm=100.0, purge_value=0.5
+2026-10-31 17:18 - INFO - ==================================================
+2026-10-31 17:18 - INFO - New session START at 2026-10-31 17:18
+2026-10-31 17:18 - INFO - ==================================================
+2026-10-31 17:18 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-10-31 17:18 - INFO - Loaded offsets from config: X=5.0, Y=5.0
+2026-10-31 17:18 - INFO - Loaded draw_z from config: Z=47.7, draw_z_UP=23.85
+2026-10-31 17:18 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-10-31 17:18 - INFO - INI file initialized
+2026-10-31 17:18 - INFO - UI load successful
+2026-10-31 17:18 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-10-31 17:18 - INFO - Do you want to auto connect Main Printer COM to COM4 @ 115200?
+2026-10-31 17:18 - INFO - Auto Connect dialog button : Cancel
+2026-10-31 17:20 - INFO - File selected: E:/InkPrinter/New_Machine/InkV2_withnewmachine_UI1/Test_files/FLOWER.svg
+2026-10-31 17:20 - INFO - Converting SVG -> G-code directly: E:\InkPrinter\New_Machine\InkV2_withnewmachine_UI1\Test_files\FLOWER.svg
+2026-10-31 17:20 - INFO - G-code created: E:\InkPrinter\New_Machine\InkV2_withnewmachine_UI1\Test_files\FLOWER.gcode
+2026-10-31 17:20 - INFO - G-code ready from SVG: E:\InkPrinter\New_Machine\InkV2_withnewmachine_UI1\Test_files\FLOWER.gcode
+2026-10-31 17:20 - INFO - Raw G-code parsed (785 lines).
+2026-10-31 17:20 - INFO - Feedrate: 500.0 mm/min
+2026-10-31 17:20 - INFO - Normalization shift: X=-10.554, Y=-3.217
+2026-10-31 17:20 - INFO - Using OFFSETS: X=5.000, Y=5.000, drawZ=47.700
+2026-10-31 17:20 - INFO - Final applied shift: X=-5.554, Y=1.783
+2026-10-31 17:20 - INFO - Windows sleep prevention: DISABLED (Print idle/finished)
+2026-10-31 17:20 - INFO - Serial communication stopped
+2026-10-31 17:20 - INFO - COM connection close successfully
+2026-10-31 17:20 - INFO - Main window close successfully
+2026-10-31 17:20 - INFO - ==================================================
+2026-10-31 17:20 - INFO - New session close at 2026-10-31 17:20
+2026-10-31 17:20 - INFO - ==================================================
+2026-10-31 17:52 - INFO - ==================================================
+2026-10-31 17:52 - INFO - New session START at 2026-10-31 17:52
+2026-10-31 17:52 - INFO - ==================================================
+2026-10-31 17:52 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-10-31 17:52 - INFO - Loaded offsets from config: X=5.0, Y=5.0
+2026-10-31 17:52 - INFO - Loaded draw_z from config: Z=47.7, draw_z_UP=23.85
+2026-10-31 17:52 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-10-31 17:52 - INFO - INI file initialized
+2026-10-31 17:52 - INFO - UI load successful
+2026-10-31 17:52 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-10-31 17:52 - INFO - Do you want to auto connect Main Printer COM to COM4 @ 115200?
+2026-10-31 17:52 - INFO - Auto Connect dialog button : Cancel
+2026-10-31 17:52 - INFO - Windows sleep prevention: DISABLED (Print idle/finished)
+2026-10-31 17:52 - INFO - Serial communication stopped
+2026-10-31 17:52 - INFO - COM connection close successfully
+2026-10-31 17:52 - INFO - Main window close successfully
+2026-10-31 17:52 - INFO - ==================================================
+2026-10-31 17:52 - INFO - New session close at 2026-10-31 17:52
+2026-10-31 17:52 - INFO - ==================================================
+2026-10-31 18:00 - INFO - ==================================================
+2026-10-31 18:00 - INFO - New session START at 2026-10-31 18:00
+2026-10-31 18:00 - INFO - ==================================================
+2026-10-31 18:00 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-10-31 18:00 - INFO - Loaded offsets from config: X=5.0, Y=5.0
+2026-10-31 18:00 - INFO - Loaded draw_z from config: Z=47.7, draw_z_UP=23.85
+2026-10-31 18:00 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-10-31 18:00 - INFO - INI file initialized
+2026-10-31 18:00 - INFO - UI load successful
+2026-10-31 18:00 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-10-31 18:00 - INFO - Do you want to auto connect Main Printer COM to COM4 @ 115200?
+2026-10-31 18:00 - INFO - Auto Connect dialog button : Cancel
+2026-11-02 10:39 - INFO - ==================================================
+2026-11-02 10:39 - INFO - New session START at 2026-11-02 10:39
+2026-11-02 10:39 - INFO - ==================================================
+2026-11-02 10:39 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-11-02 10:39 - INFO - Loaded offsets from config: X=5.0, Y=5.0
+2026-11-02 10:39 - INFO - Loaded draw_z from config: Z=47.7, draw_z_UP=23.85
+2026-11-02 10:39 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-11-02 10:39 - INFO - INI file initialized
+2026-11-02 10:39 - INFO - UI load successful
+2026-11-02 10:39 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-11-02 10:39 - INFO - Do you want to auto connect Main Printer COM to COM4 @ 115200?
+2026-11-02 10:39 - INFO - Auto Connect dialog button : Cancel
+2026-11-02 10:41 - INFO - Windows sleep prevention: DISABLED (Print idle/finished)
+2026-11-02 10:41 - INFO - Serial communication stopped
+2026-11-02 10:41 - INFO - COM connection close successfully
+2026-11-02 10:41 - INFO - Main window close successfully
+2026-11-02 10:41 - INFO - ==================================================
+2026-11-02 10:41 - INFO - New session close at 2026-11-02 10:41
+2026-11-02 10:41 - INFO - ==================================================
+2026-11-02 10:56 - INFO - ==================================================
+2026-11-02 10:56 - INFO - New session START at 2026-11-02 10:56
+2026-11-02 10:56 - INFO - ==================================================
+2026-11-02 10:56 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-11-02 10:56 - INFO - Loaded offsets from config: X=5.0, Y=5.0
+2026-11-02 10:56 - INFO - Loaded draw_z from config: Z=47.7, draw_z_UP=23.85
+2026-11-02 10:56 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-11-02 10:56 - INFO - INI file initialized
+2026-11-02 10:56 - INFO - UI load successful
+2026-11-02 10:56 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-11-02 10:56 - INFO - Do you want to auto connect Main Printer COM to COM4 @ 115200?
+2026-11-02 10:56 - INFO - Auto Connect dialog button : Cancel
+2026-11-02 10:56 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-11-02 10:56 - INFO - Clean Routine Step 1: Purge command (G1 F60 A-10) sent to Main COM.
+2026-11-02 10:56 - INFO - Clean Routine: Initial purge completed. Displaying dilute solution popup.
+2026-11-02 10:56 - INFO - Clean Routine Step 2: F Home command (G28 A) sent to Main COM.
+2026-11-02 10:56 - INFO - Clean Routine Step 3: Final Purge command (G1 F60 A-10) sent to Main COM.
+2026-11-02 11:09 - INFO - ==================================================
+2026-11-02 11:09 - INFO - New session START at 2026-11-02 11:09
+2026-11-02 11:09 - INFO - ==================================================
+2026-11-02 11:09 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-11-02 11:09 - INFO - Loaded offsets from config: X=5.0, Y=5.0
+2026-11-02 11:09 - INFO - Loaded draw_z from config: Z=47.7, draw_z_UP=23.85
+2026-11-02 11:09 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-11-02 11:09 - INFO - INI file initialized
+2026-11-02 11:09 - INFO - UI load successful
+2026-11-02 11:09 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-11-02 11:09 - INFO - Do you want to auto connect Main Printer COM to COM4 @ 115200?
+2026-11-02 11:09 - INFO - Auto Connect dialog button : Cancel
+2026-11-02 11:09 - INFO - Purge command (G1 F60 A-10) sent to Main COM.
+2026-11-02 11:09 - INFO - Stop Purge command (M410) sent to Main COM.
+2026-11-02 11:09 - INFO - Fill command (G1 F60 A10) sent to Main COM.
+2026-11-02 11:09 - INFO - Stop Fill command (M410) sent to Main COM.
+2026-11-02 11:12 - INFO - ==================================================
+2026-11-02 11:12 - INFO - New session START at 2026-11-02 11:12
+2026-11-02 11:12 - INFO - ==================================================
+2026-11-02 11:12 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-11-02 11:12 - INFO - Loaded offsets from config: X=5.0, Y=5.0
+2026-11-02 11:12 - INFO - Loaded draw_z from config: Z=47.7, draw_z_UP=23.85
+2026-11-02 11:12 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-11-02 11:12 - INFO - INI file initialized
+2026-11-02 11:12 - INFO - UI load successful
+2026-11-02 11:12 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-11-02 11:12 - INFO - Do you want to auto connect Main Printer COM to COM4 @ 115200?
+2026-11-02 11:12 - INFO - Auto Connect dialog button : Cancel
+2026-11-02 11:12 - INFO - Fill command (G1 F60 A10) sent to Main COM.
+2026-11-02 11:12 - INFO - Stop Fill command (M410) sent to Main COM.
+2026-11-02 11:12 - INFO - F Home command (G28 A) sent to Main COM.
+2026-11-02 11:12 - INFO - Stop F Home command (M410) sent to Main COM.
+2026-11-02 11:12 - INFO - Purge command (G1 F60 A-10) sent to Main COM.
+2026-11-02 11:12 - INFO - Stop Purge command (M410) sent to Main COM.
+2026-11-02 11:12 - INFO - Updated purge settings via UI: length_mm=100.0, purge_value=0.5
+2026-11-02 11:12 - INFO - Updated purge settings via UI: length_mm=100.0, purge_value=0.5
+2026-11-02 11:13 - INFO - Windows sleep prevention: DISABLED (Print idle/finished)
+2026-11-02 11:13 - INFO - Serial communication stopped
+2026-11-02 11:13 - INFO - COM connection close successfully
+2026-11-02 11:13 - INFO - Main window close successfully
+2026-11-02 11:13 - INFO - ==================================================
+2026-11-02 11:13 - INFO - New session close at 2026-11-02 11:13
+2026-11-02 11:13 - INFO - ==================================================
+2026-11-02 11:36 - INFO - ==================================================
+2026-11-02 11:36 - INFO - New session START at 2026-11-02 11:36
+2026-11-02 11:36 - INFO - ==================================================
+2026-11-02 11:36 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-11-02 11:36 - INFO - Loaded offsets from config: X=5.0, Y=5.0
+2026-11-02 11:36 - INFO - Loaded draw_z from config: Z=47.7, draw_z_UP=23.85
+2026-11-02 11:36 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-11-02 11:36 - INFO - INI file initialized
+2026-11-02 11:36 - INFO - UI load successful
+2026-11-02 11:36 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-11-02 11:36 - INFO - Do you want to auto connect Main Printer COM to COM4 @ 115200?
+2026-11-02 11:36 - INFO - Auto Connect dialog button : Cancel
+2026-11-02 11:36 - INFO - Fill command (G1 F60 A10) sent to Main COM.
+2026-11-02 11:36 - INFO - Fill command (G1 F60 A10) sent to Main COM.
+2026-11-02 11:36 - INFO - F Home command (G28 A) sent to Main COM.
+2026-11-02 13:26 - INFO - ==================================================
+2026-11-02 13:26 - INFO - New session START at 2026-11-02 13:26
+2026-11-02 13:26 - INFO - ==================================================
+2026-11-02 13:26 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-11-02 13:26 - INFO - Loaded offsets from config: X=5.0, Y=5.0
+2026-11-02 13:26 - INFO - Loaded draw_z from config: Z=47.7, draw_z_UP=23.85
+2026-11-02 13:26 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-11-02 13:26 - INFO - INI file initialized
+2026-11-02 13:26 - INFO - UI load successful
+2026-11-02 13:26 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-11-02 13:26 - INFO - Do you want to auto connect Main Printer COM to COM4 @ 115200?
+2026-11-02 13:26 - INFO - Auto Connect dialog button : Cancel
+2026-11-02 13:26 - INFO - File selected: E:/InkPrinter/New_Machine/InkV2_withnewmachine_UI1/Test_files/ide2.svg
+2026-11-02 13:26 - INFO - Converting SVG -> G-code directly: E:\InkPrinter\New_Machine\InkV2_withnewmachine_UI1\Test_files\ide2.svg
+2026-11-02 13:26 - INFO - G-code created: E:\InkPrinter\New_Machine\InkV2_withnewmachine_UI1\Test_files\ide2.gcode
+2026-11-02 13:26 - INFO - G-code ready from SVG: E:\InkPrinter\New_Machine\InkV2_withnewmachine_UI1\Test_files\ide2.gcode
+2026-11-02 13:26 - INFO - Raw G-code parsed (179 lines).
+2026-11-02 13:26 - INFO - Feedrate: 500.0 mm/min
+2026-11-02 13:26 - INFO - Normalization shift: X=-1.904, Y=-1.855
+2026-11-02 13:26 - INFO - Using OFFSETS: X=5.000, Y=5.000, drawZ=47.700
+2026-11-02 13:26 - INFO - Final applied shift: X=3.096, Y=3.145
+2026-11-02 14:54 - INFO - ==================================================
+2026-11-02 14:54 - INFO - New session START at 2026-11-02 14:54
+2026-11-02 14:54 - INFO - ==================================================
+2026-11-02 14:54 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-11-02 14:54 - INFO - Loaded offsets from config: X=5.0, Y=5.0
+2026-11-02 14:54 - INFO - Loaded draw_z from config: Z=47.7, draw_z_UP=23.85
+2026-11-02 14:54 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-11-02 14:54 - INFO - INI file initialized
+2026-11-02 14:54 - INFO - UI load successful
+2026-11-02 14:54 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-11-02 14:54 - INFO - Do you want to auto connect Main Printer COM to COM4 @ 115200?
+2026-11-02 14:54 - INFO - Auto Connect dialog button : Cancel
+2026-11-02 14:54 - INFO - File selected: E:/InkPrinter/New_Machine/InkV2_withnewmachine_UI1/Test_files/ide2.svg
+2026-11-02 14:54 - INFO - Converting SVG -> G-code directly: E:\InkPrinter\New_Machine\InkV2_withnewmachine_UI1\Test_files\ide2.svg
+2026-11-02 14:54 - INFO - G-code created: E:\InkPrinter\New_Machine\InkV2_withnewmachine_UI1\Test_files\ide2.gcode
+2026-11-02 14:54 - INFO - G-code ready from SVG: E:\InkPrinter\New_Machine\InkV2_withnewmachine_UI1\Test_files\ide2.gcode
+2026-11-02 14:54 - INFO - Raw G-code parsed (179 lines).
+2026-11-02 14:54 - INFO - Feedrate: 500.0 mm/min
+2026-11-02 14:54 - INFO - Normalization shift: X=-1.904, Y=-1.855
+2026-11-02 14:54 - INFO - Using OFFSETS: X=5.000, Y=5.000, drawZ=47.700
+2026-11-02 14:54 - INFO - Final applied shift: X=3.096, Y=3.145
+2026-11-02 15:05 - INFO - ==================================================
+2026-11-02 15:05 - INFO - New session START at 2026-11-02 15:05
+2026-11-02 15:05 - INFO - ==================================================
+2026-11-02 15:05 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-11-02 15:05 - INFO - Loaded offsets from config: X=5.0, Y=5.0
+2026-11-02 15:05 - INFO - Loaded draw_z from config: Z=47.7, draw_z_UP=23.85
+2026-11-02 15:05 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-11-02 15:05 - INFO - INI file initialized
+2026-11-02 15:05 - INFO - UI load successful
+2026-11-02 15:05 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-11-02 15:06 - INFO - Do you want to auto connect Main Printer COM to COM4 @ 115200?
+2026-11-02 15:06 - INFO - Auto Connect dialog button : Cancel
+2026-11-02 15:06 - INFO - File selected: E:/InkPrinter/New_Machine/InkV2_withnewmachine_UI1/Test_files/ide2.svg
+2026-11-02 15:06 - INFO - Converting SVG -> G-code directly: E:\InkPrinter\New_Machine\InkV2_withnewmachine_UI1\Test_files\ide2.svg
+2026-11-02 15:06 - INFO - G-code created: E:\InkPrinter\New_Machine\InkV2_withnewmachine_UI1\Test_files\ide2.gcode
+2026-11-02 15:06 - INFO - G-code ready from SVG: E:\InkPrinter\New_Machine\InkV2_withnewmachine_UI1\Test_files\ide2.gcode
+2026-11-02 15:06 - INFO - Raw G-code parsed (179 lines).
+2026-11-02 15:06 - INFO - Feedrate: 500.0 mm/min
+2026-11-02 15:06 - INFO - Normalization shift: X=-1.904, Y=-1.855
+2026-11-02 15:06 - INFO - Using OFFSETS: X=5.000, Y=5.000, drawZ=47.700
+2026-11-02 15:06 - INFO - Final applied shift: X=3.096, Y=3.145
+2026-11-02 15:06 - INFO - ==================================================
+2026-11-02 15:06 - INFO - New session START at 2026-11-02 15:06
+2026-11-02 15:06 - INFO - ==================================================
+2026-11-02 15:06 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-11-02 15:06 - INFO - Loaded offsets from config: X=5.0, Y=5.0
+2026-11-02 15:06 - INFO - Loaded draw_z from config: Z=47.7, draw_z_UP=23.85
+2026-11-02 15:06 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-11-02 15:06 - INFO - INI file initialized
+2026-11-02 15:06 - INFO - UI load successful
+2026-11-02 15:06 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-11-02 15:06 - INFO - Do you want to auto connect Main Printer COM to COM4 @ 115200?
+2026-11-02 15:06 - INFO - Auto Connect dialog button : Cancel
+2026-11-02 15:06 - INFO - File selected: E:/InkPrinter/New_Machine/InkV2_withnewmachine_UI1/Test_files/ide2.svg
+2026-11-02 15:06 - INFO - Converting SVG -> G-code directly: E:\InkPrinter\New_Machine\InkV2_withnewmachine_UI1\Test_files\ide2.svg
+2026-11-02 15:06 - INFO - G-code created: E:\InkPrinter\New_Machine\InkV2_withnewmachine_UI1\Test_files\ide2.gcode
+2026-11-02 15:06 - INFO - G-code ready from SVG: E:\InkPrinter\New_Machine\InkV2_withnewmachine_UI1\Test_files\ide2.gcode
+2026-11-02 15:06 - INFO - Raw G-code parsed (179 lines).
+2026-11-02 15:06 - INFO - Feedrate: 500.0 mm/min
+2026-11-02 15:06 - INFO - Normalization shift: X=-1.904, Y=-1.855
+2026-11-02 15:06 - INFO - Using OFFSETS: X=5.000, Y=5.000, drawZ=47.700
+2026-11-02 15:06 - INFO - Final applied shift: X=3.096, Y=3.145
+2026-11-02 15:08 - INFO - Windows sleep prevention: DISABLED (Print idle/finished)
+2026-11-02 15:08 - INFO - Serial communication stopped
+2026-11-02 15:08 - INFO - COM connection close successfully
+2026-11-02 15:08 - INFO - Main window close successfully
+2026-11-02 15:08 - INFO - ==================================================
+2026-11-02 15:08 - INFO - New session close at 2026-11-02 15:08
+2026-11-02 15:08 - INFO - ==================================================
+2026-11-02 15:09 - INFO - ==================================================
+2026-11-02 15:09 - INFO - New session START at 2026-11-02 15:09
+2026-11-02 15:09 - INFO - ==================================================
+2026-11-02 15:09 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-11-02 15:09 - INFO - Loaded offsets from config: X=5.0, Y=5.0
+2026-11-02 15:09 - INFO - Loaded draw_z from config: Z=47.7, draw_z_UP=23.85
+2026-11-02 15:09 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-11-02 15:09 - INFO - INI file initialized
+2026-11-02 15:09 - INFO - UI load successful
+2026-11-02 15:09 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-11-02 15:09 - INFO - Do you want to auto connect Main Printer COM to COM4 @ 115200?
+2026-11-02 15:09 - INFO - Auto Connect dialog button : Cancel
+2026-11-02 15:09 - INFO - File selected: E:/InkPrinter/New_Machine/InkV2_withnewmachine_UI1/Test_files/ide2.svg
+2026-11-02 15:09 - INFO - Converting SVG -> G-code directly: E:\InkPrinter\New_Machine\InkV2_withnewmachine_UI1\Test_files\ide2.svg
+2026-11-02 15:09 - INFO - G-code created: E:\InkPrinter\New_Machine\InkV2_withnewmachine_UI1\Test_files\ide2.gcode
+2026-11-02 15:09 - INFO - G-code ready from SVG: E:\InkPrinter\New_Machine\InkV2_withnewmachine_UI1\Test_files\ide2.gcode
+2026-11-02 15:09 - INFO - Raw G-code parsed (179 lines).
+2026-11-02 15:09 - INFO - Feedrate: 500.0 mm/min
+2026-11-02 15:09 - INFO - Normalization shift: X=-1.904, Y=-1.855
+2026-11-02 15:09 - INFO - Using OFFSETS: X=5.000, Y=5.000, drawZ=47.700
+2026-11-02 15:09 - INFO - Final applied shift: X=3.096, Y=3.145
+2026-11-02 15:10 - INFO - File selected: E:/InkPrinter/New_Machine/InkV2_withnewmachine_UI1/Test_files/twin_rail_loop.svg
+2026-11-02 15:10 - INFO - Converting SVG -> G-code directly: E:\InkPrinter\New_Machine\InkV2_withnewmachine_UI1\Test_files\twin_rail_loop.svg
+2026-11-02 15:10 - INFO - G-code created: E:\InkPrinter\New_Machine\InkV2_withnewmachine_UI1\Test_files\twin_rail_loop.gcode
+2026-11-02 15:10 - INFO - G-code ready from SVG: E:\InkPrinter\New_Machine\InkV2_withnewmachine_UI1\Test_files\twin_rail_loop.gcode
+2026-11-02 15:10 - INFO - Raw G-code parsed (316 lines).
+2026-11-02 15:10 - INFO - Feedrate: 500.0 mm/min
+2026-11-02 15:10 - INFO - Normalization shift: X=-19.211, Y=-5.000
+2026-11-02 15:10 - INFO - Using OFFSETS: X=5.000, Y=5.000, drawZ=47.700
+2026-11-02 15:10 - INFO - Final applied shift: X=-14.211, Y=0.000
+2026-11-02 15:56 - INFO - ==================================================
+2026-11-02 15:56 - INFO - New session START at 2026-11-02 15:56
+2026-11-02 15:56 - INFO - ==================================================
+2026-11-02 15:56 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-11-02 15:56 - INFO - Loaded offsets from config: X=5.0, Y=5.0
+2026-11-02 15:56 - INFO - Loaded draw_z from config: Z=47.7, draw_z_UP=23.85
+2026-11-02 15:56 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-11-02 15:56 - INFO - INI file initialized
+2026-11-02 15:56 - INFO - UI load successful
+2026-11-02 15:56 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-11-02 15:56 - INFO - Do you want to auto connect Main Printer COM to COM4 @ 115200?
+2026-11-02 15:56 - INFO - Auto Connect dialog button : Cancel
+2026-11-02 16:01 - INFO - ==================================================
+2026-11-02 16:01 - INFO - New session START at 2026-11-02 16:01
+2026-11-02 16:01 - INFO - ==================================================
+2026-11-02 16:01 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-11-02 16:01 - INFO - Loaded offsets from config: X=5.0, Y=5.0
+2026-11-02 16:01 - INFO - Loaded draw_z from config: Z=47.7, draw_z_UP=23.85
+2026-11-02 16:01 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-11-02 16:01 - INFO - INI file initialized
+2026-11-02 16:01 - INFO - UI load successful
+2026-11-02 16:01 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-11-02 16:01 - INFO - Do you want to auto connect Main Printer COM to COM4 @ 115200?
+2026-11-02 16:01 - INFO - Auto Connect dialog button : Cancel
+2026-11-03 10:26 - INFO - ==================================================
+2026-11-03 10:26 - INFO - New session START at 2026-11-03 10:26
+2026-11-03 10:26 - INFO - ==================================================
+2026-11-03 10:26 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-11-03 10:26 - INFO - Loaded offsets from config: X=5.0, Y=5.0
+2026-11-03 10:26 - INFO - Loaded draw_z from config: Z=47.7, draw_z_UP=23.85
+2026-11-03 10:26 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-11-03 10:26 - INFO - INI file initialized
+2026-11-03 10:26 - INFO - UI load successful
+2026-11-03 10:26 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-11-03 10:27 - INFO - Do you want to auto connect Main Printer COM to COM4 @ 115200?
+2026-11-03 10:27 - INFO - Auto Connect dialog button : Cancel
+2026-11-03 10:32 - INFO - F Home command (G28 A) sent to Main COM.
+2026-11-03 10:33 - INFO - Windows sleep prevention: DISABLED (Print idle/finished)
+2026-11-03 10:33 - INFO - Serial communication stopped
+2026-11-03 10:33 - INFO - COM connection close successfully
+2026-11-03 10:33 - INFO - Main window close successfully
+2026-11-03 10:33 - INFO - ==================================================
+2026-11-03 10:33 - INFO - New session close at 2026-11-03 10:33
+2026-11-03 10:33 - INFO - ==================================================
+2026-11-03 10:36 - INFO - ==================================================
+2026-11-03 10:36 - INFO - New session START at 2026-11-03 10:36
+2026-11-03 10:36 - INFO - ==================================================
+2026-11-03 10:36 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-11-03 10:36 - INFO - Loaded offsets from config: X=5.0, Y=5.0
+2026-11-03 10:36 - INFO - Loaded draw_z from config: Z=47.7, draw_z_UP=23.85
+2026-11-03 10:36 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-11-03 10:36 - INFO - INI file initialized
+2026-11-03 10:36 - INFO - UI load successful
+2026-11-03 10:36 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-11-03 10:36 - INFO - Do you want to auto connect Main Printer COM to COM4 @ 115200?
+2026-11-03 10:36 - INFO - Auto Connect dialog button : Cancel
+2026-11-03 10:36 - INFO - File selected: E:/InkPrinter/New_Machine/InkV2_withnewmachine_UI1/Test_files/ide2.svg
+2026-11-03 10:36 - INFO - Converting SVG -> G-code directly: E:\InkPrinter\New_Machine\InkV2_withnewmachine_UI1\Test_files\ide2.svg
+2026-11-03 10:36 - INFO - G-code created: E:\InkPrinter\New_Machine\InkV2_withnewmachine_UI1\Test_files\ide2.gcode
+2026-11-03 10:36 - INFO - G-code ready from SVG: E:\InkPrinter\New_Machine\InkV2_withnewmachine_UI1\Test_files\ide2.gcode
+2026-11-03 10:36 - INFO - Raw G-code parsed (179 lines).
+2026-11-03 10:36 - INFO - Feedrate: 500.0 mm/min
+2026-11-03 10:36 - INFO - Normalization shift: X=-1.904, Y=-1.855
+2026-11-03 10:36 - INFO - Using OFFSETS: X=5.000, Y=5.000, drawZ=47.700
+2026-11-03 10:36 - INFO - Final applied shift: X=3.096, Y=3.145
+2026-11-03 12:39 - INFO - ==================================================
+2026-11-03 12:39 - INFO - New session START at 2026-11-03 12:39
+2026-11-03 12:39 - INFO - ==================================================
+2026-11-03 12:39 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-11-03 12:39 - INFO - Loaded offsets from config: X=5.0, Y=5.0
+2026-11-03 12:39 - INFO - Loaded draw_z from config: Z=47.7, draw_z_UP=23.85
+2026-11-03 12:39 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-11-03 12:39 - INFO - INI file initialized
+2026-11-03 12:39 - INFO - UI load successful
+2026-11-03 12:39 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-11-03 12:39 - INFO - Do you want to auto connect Main Printer COM to COM4 @ 115200?
+2026-11-03 12:39 - INFO - Auto Connect dialog button : Cancel
+2026-11-03 12:39 - INFO - Purge command (G1 F60 A-10) sent to Main COM.
+2026-11-03 12:39 - INFO - F Home command (G28 A) sent to Main COM.
+2026-11-03 12:39 - INFO - Fill command (G1 F60 A10) sent to Main COM.
+2026-11-03 12:40 - INFO - Windows sleep prevention: DISABLED (Print idle/finished)
+2026-11-03 12:40 - INFO - Serial communication stopped
+2026-11-03 12:40 - INFO - COM connection close successfully
+2026-11-03 12:40 - INFO - Main window close successfully
+2026-11-03 12:40 - INFO - ==================================================
+2026-11-03 12:40 - INFO - New session close at 2026-11-03 12:40
+2026-11-03 12:40 - INFO - ==================================================

@@ -203,6 +203,9 @@ class MainWindow(QMainWindow):
         # Flag to hide frame_12 and frame_3
         self.hide_frame12_frame3_flag = True
         
+        # Flag to hide pressurePushButton (Extrusion button in parameter menu)
+        self.hide_pressure_button_flag = True
+        
         self.axishandler = AxisHandler()
         self.preview = GCode3DPreview()
         self.preview.sigGlError.connect(lambda msg: print("⚠️", msg))
@@ -669,6 +672,12 @@ class MainWindow(QMainWindow):
             if hasattr(self.ui, 'printparaPushButton'):
                 self.ui.printparaPushButton.hide()
 
+        # Hide pressurePushButton if the flag is set
+        if getattr(self, 'hide_pressure_button_flag', False):
+            pressure_btn = getattr(self, 'paraBtn2', None) or getattr(self.ui, 'pressurePushButton', None) or self.findChild(QPushButton, "pressurePushButton")
+            if pressure_btn:
+                pressure_btn.hide()
+
         # Hide frame_12 and frame_3 if the flag is set
         if getattr(self, 'hide_frame12_frame3_flag', False):
             frame_12 = getattr(self.ui, 'frame_121', None) or (self.ui.viscositylevComboBox.parent() if hasattr(self.ui, 'viscositylevComboBox') else None) or (self.progFrame.findChild(QFrame, "frame_12") if hasattr(self, 'progFrame') and self.progFrame else None) or self.findChild(QFrame, "frame_121")
@@ -907,7 +916,8 @@ class MainWindow(QMainWindow):
     def moveFinish(self, *args, **kwargs):
         self.logger.info("Movement finished (M400).")
         self.release_flag = False    # allow new commands again
-        self.pgmGcode("M114")
+        if not getattr(self, '_clean_in_progress', False):
+            self.pgmGcode("M114")
 
 
         
@@ -976,22 +986,17 @@ class MainWindow(QMainWindow):
         # ---- Validate layer_height ----
         try:
             lh_value = float(raw_lh)
-            if lh_value > 0:
-                self.layer_height = lh_value
-            else:
-                self.layer_height = 0.4
+            self.layer_height = lh_value if lh_value > 0 else 0.4
         except:
             self.layer_height = 0.4
 
         # ---- Validate layer_height_0 ----
         try:
             lh0_value = float(raw_lh0)
-            if lh0_value > 0:
-                self.layer_height_0 = lh0_value
-            else:
-                self.layer_height_0 = self.layer_height   # fallback
+            self.layer_height_0 = lh0_value if lh0_value > 0 else self.layer_height
         except:
-            self.layer_height_0 = self.layer_height       # fallback
+            self.layer_height_0 = self.layer_height
+
             
         raw_nz = parser.get("slicing", "nozzle_size", fallback="").strip()
         try:
@@ -1078,9 +1083,6 @@ class MainWindow(QMainWindow):
         self.util.debugPrint(msg)
         self.logger.info(msg)
 
-        if refresh:
-            pass
-            
         self.wm.operate(port_widget, "clear")
         self.wm.operate(baud_widget, "clear")
         
@@ -1118,7 +1120,6 @@ class MainWindow(QMainWindow):
                     if condition(serial_obj.validatePort(port), serial_obj.validateBaudrate(baud)):
                         error_title, error_text = error_dict.get(code)
                         msg = f"Error : {error_title} > {error_text}"
-                        self.util.debugPrint(msg)
                         self.logger.error(msg)
                         self.showCustomPopup(error_title, error_text)
                         return False
@@ -1241,6 +1242,13 @@ class MainWindow(QMainWindow):
         if data == "ok":
             data = f"{data}\n"
 
+        if getattr(self, '_clean_in_progress', False) and ("ok" in data or data.startswith("ok")):
+            if hasattr(self, '_clean_expected_oks') and self._clean_expected_oks > 0:
+                self._clean_expected_oks -= 1
+                self.logger.debug(f"Clean Routine: 'ok' received from machine. Remaining expected: {self._clean_expected_oks}")
+                if self._clean_expected_oks <= 0:
+                    self._handle_clean_ok()
+
         # --- Detect Critical Firmware Errors ---
         if "Error:MINTEMP" in data or "Error:MAXTEMP" in data:
             self.showCustomPopup("SAFETY HALT", f"Critical Firmware Error Detected:\n\n{data}\n\nThe system has been stopped for safety.", buttons=QMessageBox.Ok)
@@ -1297,16 +1305,37 @@ class MainWindow(QMainWindow):
             self.accumulated_print_distance = 0.0
             self.total_print_distance = 0.0
 
-        # Intercept custom Blackpill commands from parser
-        if False and gstr.startswith("BLACKPILL_FILL"):
-            pass
-            pass
-            self.util.debugPrint(msg)
-        if False:
-            pass
-            pass
-            return
+        # Intercept custom Blackpill commands from parser (Z-hop retract & unretract)
+        if gstr.startswith("BLACKPILL_FILL") or gstr.startswith("BLACKPILL_UNRETRACT"):
+            is_fill = gstr.startswith("BLACKPILL_FILL")
+            val = gstr.split()[1] if len(gstr.split()) > 1 else "0.01"
+            if hasattr(self, 'conf') and hasattr(self, 'config_file_path'):
+                try:
+                    if hasattr(self.conf, 'ini_parser'):
+                        self.conf.ini_parser.read(self.config_file_path)
+                    ini_val = self.conf.getValues("retract", "retract_val")
+                    if ini_val is not None and str(ini_val).strip() != "":
+                        val = str(ini_val).strip()
+                except Exception:
+                    pass
+            try:
+                dist_val = float(val)
+            except ValueError:
+                dist_val = 0.01
 
+            feed_val = self._get_fill_purge_feed()
+            target_a = dist_val if is_fill else -dist_val
+            action_name = "RETRACT" if is_fill else "UNRETRACT"
+            msg = f"Z-HOP {action_name}: G1 F{feed_val:g} A{target_a:g}"
+            self.util.debugPrint(msg)
+            if hasattr(self, 'terminalWidget') and hasattr(self.terminalWidget, 'output'):
+                self.receiveACK(self.terminalWidget.output, f">>> {msg}")
+            if hasattr(self, 'sercom') and self.sercom.is_connected and dist_val > 0.0:
+                self.sendGcode("G91")
+                self.sendGcode(f"G1 F{feed_val:g} A{target_a:g}")
+                self.sendGcode("G90")
+                self.logger.info(f"Sent {action_name} (G1 F{feed_val:g} A{target_a:g}) to Main COM")
+            return
         # Ignore full-line comments or empty lines
         if not gstr or gstr.startswith(";") or gstr.startswith("("):
             self.util.debugPrint(f"Skipping comment/non-executable: {gstr}")
@@ -1369,16 +1398,20 @@ class MainWindow(QMainWindow):
                     self.total_print_distance = getattr(self, 'total_print_distance', 0.0) + distance
                     purge_interval = getattr(self, 'purge_distance_interval', 100.0)
                     if self.accumulated_print_distance >= purge_interval:
-                        purge_val = getattr(self, 'purge_amount', 0.5)
-                        cmd = f"P {purge_val:.6f}"
+                        purge_val = abs(float(getattr(self, 'purge_amount', 0.5)))
+                        feed_val = self._get_fill_purge_feed()
+                        cmd = f"G1 F{feed_val:g} A{-purge_val:g}"
                         msg = f"PURGE EXECUTED: {cmd} | triggered at total distance {self.total_print_distance:.2f}mm"
+                        if hasattr(self, 'terminalWidget') and hasattr(self.terminalWidget, 'output'):
+                            self.receiveACK(self.terminalWidget.output, f">>> {msg}")
+                        if hasattr(self, 'sercom') and self.sercom.is_connected and purge_val > 0.0:
+                            self.sendGcode("G91")
+                            self.sendGcode(cmd)
+                            self.sendGcode("G90")
+                            self.logger.info(msg)
+                        self.accumulated_print_distance -= purge_interval
                         self.util.debugPrint(msg)
-                    if False:
-                        pass
-                        pass
-                        self.accumulated_print_distance -= purge_interval  # subtract interval to keep remainder
 
-            
             self.current_x = new_x
             self.current_y = new_y
             
@@ -1586,6 +1619,12 @@ class MainWindow(QMainWindow):
             self._uv_manual_timer.stop()
         if hasattr(self, '_uv_countdown_timer'):
             self._uv_countdown_timer.stop()
+
+        if hasattr(self.ui, 'uvminLCDNumber') and hasattr(self.ui, 'uvsecLCDNumber'):
+            duration_type = self.ui.expdurationComboBox.currentText() if hasattr(self.ui, 'expdurationComboBox') else "Timer"
+            if duration_type == "Timer":
+                self.ui.uvminLCDNumber.display(0)
+                self.ui.uvsecLCDNumber.display(0)
             
         if getattr(self, 'home_after_uv', False):
             self.sendGcode("G91\n")
@@ -1597,17 +1636,17 @@ class MainWindow(QMainWindow):
 
     def updateUvCountdownTimer(self):
         self.uv_timer_remaining -= 1
+        mins = max(0, self.uv_timer_remaining // 60)
+        secs = max(0, self.uv_timer_remaining % 60)
+        if hasattr(self.ui, 'uvminLCDNumber') and hasattr(self.ui, 'uvsecLCDNumber'):
+            self.ui.uvminLCDNumber.display(mins)
+            self.ui.uvsecLCDNumber.display(secs)
+
         if self.uv_timer_remaining <= 0:
             if hasattr(self, '_uv_countdown_timer'):
                 self._uv_countdown_timer.stop()
             self.handleUvOff()
             return
-
-        mins = self.uv_timer_remaining // 60
-        secs = self.uv_timer_remaining % 60
-        if hasattr(self.ui, 'uvminLCDNumber') and hasattr(self.ui, 'uvsecLCDNumber'):
-            self.ui.uvminLCDNumber.display(mins)
-            self.ui.uvsecLCDNumber.display(secs)
 
     def updateUvManualTimer(self):
         self.uv_manual_seconds += 1
@@ -2180,18 +2219,13 @@ class MainWindow(QMainWindow):
     # 3) Step,Fill,Purge
     # -------------------------------
     def _send_to_blackpill(self, cmd):
-        return
-        pass
-        pass
-            # print(f"Gcode - {cmd}")
-        pass
-        if False:
+        if hasattr(self, 'sercom') and self.sercom.is_connected:
+            self.sercom.send(f"{cmd}\n")
+            self.logger.info(f"Sent {cmd} to Main COM")
+            self.util.debugPrint(f"Gcode - {cmd}")
+            if hasattr(self, 'terminalWidget') and hasattr(self.terminalWidget, 'output'):
                 self.receiveACK(self.terminalWidget.output, f"Gcode - {cmd}")
-        else:
-            msg = "Blackpill is not connected. Please connect via the Black COM page."
-            self.logger.error(msg)
-            self.util.debugPrint(msg)
-            self.showCustomPopup("Connection Error", msg)
+        return
 
     def _get_travel_distance(self):
         btn01 = getattr(self, 'travel01_RadioButton', None) or (getattr(self, 'ui', None) and getattr(self.ui, 'travel01_RadioButton', None))
@@ -2204,157 +2238,50 @@ class MainWindow(QMainWindow):
         if btn10 and btn10.isChecked(): return "10.0"
         return "10.0"
 
-    def _handle_fill(self):
-        if False:
-            msg = "Blackpill is not connected. Please connect via the Black COM page."
-            self.logger.error(msg)
-            self.util.debugPrint(msg)
-            self.showCustomPopup("Connection Error", msg)
-            return
-
-        if not hasattr(self, 'fill_state'):
-            self.fill_state = False
-            self.purge_state = False
-
-        if not hasattr(self, '_fill_timer'):
-            self._fill_timer = QTimer(self)
-            self._fill_timer.setSingleShot(True)
-            self._fill_timer.timeout.connect(self._reset_fill_ui)
-
-        if not self.fill_state:
-            dist = self._get_travel_distance()
-            self.sendGcode("G91\n")
+    def _get_fill_purge_feed(self):
+        feed = 60.0
+        if hasattr(self, 'conf') and hasattr(self, 'config_file_path'):
             try:
-                dist_val = float(dist)
-            except (ValueError, TypeError):
-                dist_val = 10.0
-            cmd = f"G1 F60 A{dist_val:g}"
-            self.sendGcode(f"{cmd}\n")
-            self.sendGcode("G90\n")
+                if hasattr(self.conf, 'ini_parser'):
+                    self.conf.ini_parser.read(self.config_file_path)
+                val = (self.conf.getValues("fill_purge", "feed") or 
+                       self.conf.getValues("retract", "feed") or
+                       self.conf.getValues("syringe", "feed"))
+                if val is not None and str(val).strip() != "":
+                    feed = float(val)
+            except Exception:
+                feed = 60.0
+        return max(1.0, feed)
 
-            pass
-            
-            self.fill_state = True
-            self.purge_state = False
-            self.programWidget.fill.setText("Stop Fill")
-            self.programWidget.purge.setText("Purge")
-                
-            self.logger.info(f"Fill command ({cmd}) sent to Main COM.")
-            
-            if dist != "0.0":
-                # Estimate duration: ~120 mm/min (2 mm/s) -> 500ms per mm + 1s buffer
-                delay_ms = 10000
-                delay_ms = max(500, int(dist_val * 1000))
-                self._fill_timer.start(delay_ms)
-            else:
-                self._fill_timer.stop()
-        else:
-            self.sendGcode("M410\n")
-            self.fill_state = False
-            self.programWidget.fill.setText("Fill")
-            if hasattr(self, '_fill_timer'):
-                self._fill_timer.stop()
-            self.logger.info("Stop Fill command (M410) sent to Main COM.")
-
-    def _reset_fill_ui(self):
-        if getattr(self, 'fill_state', False):
-            self.fill_state = False
-            self.programWidget.fill.setText("Fill")
-            self.logger.info("Auto-reset Fill button state.")
+    def _handle_fill(self):
+        dist = self._get_travel_distance()
+        self.sendGcode("G91\n")
+        try:
+            dist_val = float(dist)
+        except (ValueError, TypeError):
+            dist_val = 10.0
+        feed_val = self._get_fill_purge_feed()
+        cmd = f"G1 F{feed_val:g} A{dist_val:g}"
+        self.sendGcode(f"{cmd}\n")
+        self.sendGcode("G90\n")
+        self.logger.info(f"Fill command ({cmd}) sent to Main COM.")
 
     def _handle_purge(self):
-        if False:
-            msg = "Blackpill is not connected. Please connect via the Black COM page."
-            self.logger.error(msg)
-            self.util.debugPrint(msg)
-            self.showCustomPopup("Connection Error", msg)
-            return
-
-        if not hasattr(self, 'fill_state'):
-            self.fill_state = False
-            self.purge_state = False
-
-        if not hasattr(self, '_purge_timer'):
-            self._purge_timer = QTimer(self)
-            self._purge_timer.setSingleShot(True)
-            self._purge_timer.timeout.connect(self._reset_purge_ui)
-
-        if not self.purge_state:
-            dist = self._get_travel_distance()
-            self.sendGcode("G91\n")
-            try:
-                dist_val = float(dist)
-            except (ValueError, TypeError):
-                dist_val = 10.0
-            cmd = f"G1 F60 A{-dist_val:g}"
-            self.sendGcode(f"{cmd}\n")
-            self.sendGcode("G90\n")
-
-            pass
-            
-            self.purge_state = True
-            self.fill_state = False
-            self.programWidget.purge.setText("Stop Purge")
-            self.programWidget.fill.setText("Fill")
-                
-            self.logger.info(f"Purge command ({cmd}) sent to Main COM.")
-            
-            if dist != "0.0":
-                # Estimate duration: ~120 mm/min (2 mm/s) -> 500ms per mm + 1s buffer
-                delay_ms = 10000
-                delay_ms = max(500, int(dist_val * 1000))
-                self._purge_timer.start(delay_ms)
-            else:
-                self._purge_timer.stop()
-        else:
-            self.sendGcode("M410\n")
-            self.purge_state = False
-            self.programWidget.purge.setText("Purge")
-            if hasattr(self, '_purge_timer'):
-                self._purge_timer.stop()
-            self.logger.info("Stop Purge command (M410) sent to Main COM.")
-
-    def _reset_purge_ui(self):
-        if getattr(self, 'purge_state', False):
-            self.purge_state = False
-            self.programWidget.purge.setText("Purge")
-            self.logger.info("Auto-reset Purge button state.")
+        dist = self._get_travel_distance()
+        self.sendGcode("G91\n")
+        try:
+            dist_val = float(dist)
+        except (ValueError, TypeError):
+            dist_val = 10.0
+        feed_val = self._get_fill_purge_feed()
+        cmd = f"G1 F{feed_val:g} A{-dist_val:g}"
+        self.sendGcode(f"{cmd}\n")
+        self.sendGcode("G90\n")
+        self.logger.info(f"Purge command ({cmd}) sent to Main COM.")
 
     def _handle_fillhome(self):
-        if False:
-            msg = "Blackpill is not connected. Please connect via the Black COM page."
-            self.logger.error(msg)
-            self.util.debugPrint(msg)
-            self.showCustomPopup("Connection Error", msg)
-            return
-
-        if not hasattr(self, 'fillhome_state'):
-            self.fillhome_state = False
-
-        if not hasattr(self, '_fillhome_timer'):
-            self._fillhome_timer = QTimer(self)
-            self._fillhome_timer.setSingleShot(True)
-            self._fillhome_timer.timeout.connect(self._reset_fillhome_ui)
-
-        if not self.fillhome_state:
-            self.sendGcode("G28 A\n")
-            self.fillhome_state = True
-            self.programWidget.fillhome.setText("Stop F home")
-            self.logger.info("F Home command (G28 A) sent to Main COM.")
-            self._fillhome_timer.start(10000)  # 10 seconds timeout for Homing
-        else:
-            self.sendGcode("M410\n")
-            self.fillhome_state = False
-            self.programWidget.fillhome.setText("F home")
-            self.logger.info("Stop F Home command (M410) sent to Main COM.")
-            if hasattr(self, '_fillhome_timer'):
-                self._fillhome_timer.stop()
-
-    def _reset_fillhome_ui(self):
-        if getattr(self, 'fillhome_state', False):
-            self.fillhome_state = False
-            self.programWidget.fillhome.setText("F home")
-            self.logger.info("Auto-reset F home button state.")
+        self.sendGcode("G28 A\n")
+        self.logger.info("F Home command (G28 A) sent to Main COM.")
                         
     # -------------------------------
     # 4) Save: apply Z height, draw_z, offsets, feed; bounds; preview
@@ -2500,13 +2427,33 @@ class MainWindow(QMainWindow):
         # ======================================================
         # 6) Apply full transform
         # ======================================================
+        # Read retract, z_hop, and fill_purge feed values from config.ini
+        retract_ini = None
+        z_hop_ini = 4.0
+        feed_ini = 60.0
+        try:
+            val_str = self.conf.getValues("retract", "retract_val")
+            if val_str is not None and str(val_str).strip() != "":
+                retract_ini = float(val_str)
+            zh_str = self.conf.getValues("retract", "z_hop")
+            if zh_str is not None and str(zh_str).strip() != "":
+                z_hop_ini = float(zh_str)
+            f_str = self.conf.getValues("fill_purge", "feed")
+            if f_str is not None and str(f_str).strip() != "":
+                feed_ini = float(f_str)
+        except Exception:
+            pass
+
         adjusted = parser.apply_full_transform(
             cleaned,
             shiftX, shiftY,
             draw_z,
             feedrate,
             user_set_drawz,
-            self.layer_height
+            self.layer_height,
+            retract_val=retract_ini,
+            z_hop=z_hop_ini,
+            retract_feed=feed_ini
         )
 
         # ======================================================
@@ -2536,13 +2483,6 @@ class MainWindow(QMainWindow):
         wobj = widget.objectName()
         
         if self.util.checkSubString(wobj, "run"):
-            if False:
-                msg = "Blackpill is not connected. Please connect via the Black COM page."
-                self.logger.error(msg)
-                self.util.debugPrint(msg)
-                self.showCustomPopup("Connection Error", msg)
-                return
-
             # Reset purge counters for every new print
             self.accumulated_print_distance = 0.0
             self.total_print_distance = 0.0
@@ -2642,6 +2582,28 @@ class MainWindow(QMainWindow):
     def runProgram(self, arg):
         if arg == "run":
             if hasattr(self, "filtered_gcode") and self.filtered_gcode:
+                # Sync latest extrusion interval and purge amount from UI text fields
+                if hasattr(self, 'ui'):
+                    if hasattr(self.ui, 'extlenghtLineEdit') and self.ui.extlenghtLineEdit.text().strip():
+                        try:
+                            val = float(self.ui.extlenghtLineEdit.text().strip())
+                            if val > 0:
+                                self.purge_distance_interval = val
+                        except Exception:
+                            pass
+                    if hasattr(self.ui, 'extpurgeLineEdit') and self.ui.extpurgeLineEdit.text().strip():
+                        try:
+                            val = float(self.ui.extpurgeLineEdit.text().strip())
+                            if val > 0:
+                                self.purge_amount = val
+                        except Exception:
+                            pass
+
+                # Reset distance counters for fresh print run
+                self.accumulated_print_distance = 0.0
+                self.total_print_distance = 0.0
+                self.logger.info(f"Print Status : RUN (purge_interval={self.purge_distance_interval}mm, purge_amount={self.purge_amount}mm)")
+
                 self.setSystemSleepPrevented(True)
                 self.ui.uvonPushButton.setEnabled(False)
                 self.ui.uvoffPushButton.setEnabled(False)
@@ -2651,7 +2613,6 @@ class MainWindow(QMainWindow):
                 self.seg_index = 0
                 self.preview.resetPreview()
                 self.initProgram()
-                self.logger.info("Print Status : RUN")
 
         elif arg == "pause":
             self.pgm_pause_flag = True
@@ -2868,123 +2829,108 @@ class MainWindow(QMainWindow):
         except Exception as e:
             self.logger.error(f"Error in syringflushAction: {e}")
 
+    def _handle_clean_ok(self):
+        stage = getattr(self, '_clean_stage', None)
+        if not stage or not getattr(self, '_clean_in_progress', False):
+            return
+        self.logger.info(f"Clean Routine: Stage '{stage}' confirmed complete by machine 'ok'.")
+        self._clean_stage = None
+        self._clean_expected_oks = 0
+        if hasattr(self, '_clean_watchdog_timer'):
+            self._clean_watchdog_timer.stop()
+
+        if stage == "PURGE_1":
+            self._clean_step2_fill()
+        elif stage == "FILLING":
+            self._clean_step3_purge2()
+        elif stage == "PURGE_2":
+            self._clean_step4_complete()
+
+    def _clean_timeout_handler(self):
+        self.logger.error("Clean Routine timeout: Machine did not respond with 'ok'.")
+        self._reset_clean_ui()
+        self.showCustomPopup("Timeout", "Clean routine timed out waiting for machine acknowledgment ('ok').")
+
     def _handle_clean_routine(self):
         """Nozzle clean routine:
-        1. Send Purge command.
-        2. Once Purge completes, show popup prompt for dilute solution.
-        3. When user presses Yes, send F Home command.
-        4. Once F Home completes, send final Purge command.
+        1. Step 1 (Purging): Button shows 'Purging...'. Send F Home (G28 A, M400).
+        2. Step 2 (Filling): Button shows 'Filling...'. Send Fill (G91, G1 F60 A15
+        , G90, M400).
+        3. Step 3 (Purging): Button shows 'Purging...'. Send F Home (G28 A, M400).
+        4. After last process: Reset button to 'CLEAN', show popup message 'Cleaning is done'.
         """
-        if False:
-            msg = "Blackpill is not connected. Please connect via the Black COM page."
-            self.logger.error(msg)
-            self.util.debugPrint(msg)
-            self.showCustomPopup("Connection Error", msg)
-            return
-
         if getattr(self, '_clean_in_progress', False):
             self.logger.warning("Clean routine is already in progress.")
             return
 
+        if not (hasattr(self, 'sercom') and getattr(self.sercom, 'is_connected', False)):
+            self.showCustomPopup("Connection Error", "Machine is not connected. Please connect COM port first.")
+            return
+
         self._clean_in_progress = True
+        self._clean_stage = "PURGE_1"
+        self._clean_expected_oks = 2
 
         clean_btn = getattr(self.ui, 'pgmcleanPushButton', None) or self.findChild(QPushButton, "pgmcleanPushButton")
         if clean_btn:
             clean_btn.setText("Purging...")
             clean_btn.setEnabled(False)
 
-        dist = self._get_travel_distance()
+        self.sendGcode("G28 A\n")
+        self.sendGcode("M400\n")
+        self.logger.info("Clean Routine Step 1 (Purging): Initial F Home (G28 A) & M400 sent. Waiting for machine 'ok'...")
+
+        if not hasattr(self, '_clean_watchdog_timer'):
+            self._clean_watchdog_timer = QTimer(self)
+            self._clean_watchdog_timer.setSingleShot(True)
+            self._clean_watchdog_timer.timeout.connect(self._clean_timeout_handler)
+        self._clean_watchdog_timer.start(300000)
+
+    def _clean_step2_fill(self):
+        clean_btn = getattr(self.ui, 'pgmcleanPushButton', None) or self.findChild(QPushButton, "pgmcleanPushButton")
+        if clean_btn:
+            clean_btn.setText("Filling...")
+
+        self._clean_stage = "FILLING"
+        self._clean_expected_oks = 4
+
+        feed_val = self._get_fill_purge_feed()
+        cmd = f"G1 F{feed_val:g} A15"
         self.sendGcode("G91\n")
-        try:
-            dist_val = float(dist)
-        except (ValueError, TypeError):
-            dist_val = 10.0
-        cmd = f"G1 F60 A{-dist_val:g}"
         self.sendGcode(f"{cmd}\n")
         self.sendGcode("G90\n")
+        self.sendGcode("M400\n")
+        self.logger.info(f"Clean Routine Step 2 (Filling): Fill command ({cmd}) & M400 sent. Waiting for machine 'ok'...")
 
-        pass
-        self.logger.info(f"Clean Routine Step 1: Purge command ({cmd}) sent to Main COM.")
+        if hasattr(self, '_clean_watchdog_timer'):
+            self._clean_watchdog_timer.start(300000)
 
-        delay_ms = 10000
-        delay_ms = max(1000, int(dist_val * 1000))
-        QTimer.singleShot(delay_ms, self._clean_step2_prompt_solution)
-
-    def _clean_step2_prompt_solution(self):
-        clean_btn = getattr(self.ui, 'pgmcleanPushButton', None) or self.findChild(QPushButton, "pgmcleanPushButton")
-        if clean_btn:
-            clean_btn.setText("Waiting...")
-
-        self.logger.info("Clean Routine: Initial purge completed. Displaying dilute solution popup.")
-
-        reply = self.showCustomPopup(
-            "Purge Done",
-            "Purge is done. Put the dilute solution for clean the nozzle.\n\nAfter putting solution, press on Yes.",
-            buttons=QMessageBox.Yes | QMessageBox.No
-        )
-
-        if reply == QMessageBox.Yes:
-            self._clean_step3_send_fillhome()
-        else:
-            self.logger.info("Clean Routine: Cancelled by user at dilute solution prompt.")
-            self._reset_clean_ui()
-
-    def _clean_step3_send_fillhome(self):
-        if False:
-            msg = "Blackpill is not connected. Clean routine aborted."
-            self.logger.error(msg)
-            self._reset_clean_ui()
-
-            
-            self.showCustomPopup("Connection Error", msg)
-            return
-
-        clean_btn = getattr(self.ui, 'pgmcleanPushButton', None) or self.findChild(QPushButton, "pgmcleanPushButton")
-        if clean_btn:
-            clean_btn.setText("F Homing...")
-
-        self.sendGcode("G28 A\n")
-        self.logger.info("Clean Routine Step 2: F Home command (G28 A) sent to Main COM.")
-
-        delay_ms = 10000  # 10 seconds for F Home
-        QTimer.singleShot(delay_ms, self._clean_step4_final_purge)
-
-    def _clean_step4_final_purge(self):
-        if False:
-            msg = "Blackpill is not connected. Clean routine aborted."
-            self.logger.error(msg)
-            self._reset_clean_ui()
-            self.showCustomPopup("Connection Error", msg)
-            return
-
+    def _clean_step3_purge2(self):
         clean_btn = getattr(self.ui, 'pgmcleanPushButton', None) or self.findChild(QPushButton, "pgmcleanPushButton")
         if clean_btn:
             clean_btn.setText("Purging...")
 
-        dist = self._get_travel_distance()
-        self.sendGcode("G91\n")
-        try:
-            dist_val = float(dist)
-        except (ValueError, TypeError):
-            dist_val = 10.0
-        cmd = f"G1 F60 A{-dist_val:g}"
-        self.sendGcode(f"{cmd}\n")
-        self.sendGcode("G90\n")
+        self._clean_stage = "PURGE_2"
+        self._clean_expected_oks = 2
 
-        pass
-        self.logger.info(f"Clean Routine Step 3: Final Purge command ({cmd}) sent to Main COM.")
+        self.sendGcode("G28 A\n")
+        self.sendGcode("M400\n")
+        self.logger.info("Clean Routine Step 3 (Purging): Final F Home (G28 A) & M400 sent. Waiting for machine 'ok'...")
 
-        delay_ms = 10000
-        delay_ms = max(1000, int(dist_val * 1000))
-        QTimer.singleShot(delay_ms, self._clean_step5_complete)
+        if hasattr(self, '_clean_watchdog_timer'):
+            self._clean_watchdog_timer.start(300000)
 
-    def _clean_step5_complete(self):
+    def _clean_step4_complete(self):
         self._reset_clean_ui()
         self.logger.info("Clean Routine: Cleaning cycle completed successfully.")
-        self.showCustomPopup("Cleaning Done", "Cleaning cycle is done.", buttons=QMessageBox.Ok)
+        self.showCustomPopup("Cleaning Done", "Cleaning is done.", buttons=QMessageBox.Ok)
 
     def _reset_clean_ui(self):
         self._clean_in_progress = False
+        self._clean_stage = None
+        self._clean_expected_oks = 0
+        if hasattr(self, '_clean_watchdog_timer'):
+            self._clean_watchdog_timer.stop()
         clean_btn = getattr(self.ui, 'pgmcleanPushButton', None) or self.findChild(QPushButton, "pgmcleanPushButton")
         if clean_btn:
             clean_btn.setText("CLEAN")
@@ -3091,12 +3037,9 @@ class MainWindow(QMainWindow):
             
             if gcode:
                 self.wm.operate(self.terminalWidget.input, "clear")
-                upper_gcode = gcode.upper().strip()
-                if False:
-                    self._send_to_blackpill(gcode)
-                else:
-                    self.sendGcode(gcode)
-                    self.sendGcode("M114")
+                self.sendGcode(gcode)
+                self.sendGcode("M114")
+
                 
     def receiveACK(self, widget, arg):
         if widget:
