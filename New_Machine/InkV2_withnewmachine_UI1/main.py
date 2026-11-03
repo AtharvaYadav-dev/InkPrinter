@@ -2840,11 +2840,11 @@ class MainWindow(QMainWindow):
             self._clean_watchdog_timer.stop()
 
         if stage == "PURGE_1":
-            self._clean_step2_fill()
+            self._clean_step2_prompt_solution()
         elif stage == "FILLING":
-            self._clean_step3_purge2()
+            self._clean_step4_purge2()
         elif stage == "PURGE_2":
-            self._clean_step4_complete()
+            self._clean_step5_complete()
 
     def _clean_timeout_handler(self):
         self.logger.error("Clean Routine timeout: Machine did not respond with 'ok'.")
@@ -2854,10 +2854,10 @@ class MainWindow(QMainWindow):
     def _handle_clean_routine(self):
         """Nozzle clean routine:
         1. Step 1 (Purging): Button shows 'Purging...'. Send F Home (G28 A, M400).
-        2. Step 2 (Filling): Button shows 'Filling...'. Send Fill (G91, G1 F60 A15
-        , G90, M400).
-        3. Step 3 (Purging): Button shows 'Purging...'. Send F Home (G28 A, M400).
-        4. After last process: Reset button to 'CLEAN', show popup message 'Cleaning is done'.
+        2. When complete: Show popup prompt to put dilute solution.
+        3. Step 2 (Filling): Button shows 'Filling...'. Send Fill (G91, G1 F60 A15, G90, M400).
+        4. Step 3 (Purging): Button shows 'Purging...'. Send F Home (G28 A, M400).
+        5. After last process: Reset button to 'CLEAN', show popup message 'Cleaning is done'.
         """
         if getattr(self, '_clean_in_progress', False):
             self.logger.warning("Clean routine is already in progress.")
@@ -2886,7 +2886,26 @@ class MainWindow(QMainWindow):
             self._clean_watchdog_timer.timeout.connect(self._clean_timeout_handler)
         self._clean_watchdog_timer.start(300000)
 
-    def _clean_step2_fill(self):
+    def _clean_step2_prompt_solution(self):
+        clean_btn = getattr(self.ui, 'pgmcleanPushButton', None) or self.findChild(QPushButton, "pgmcleanPushButton")
+        if clean_btn:
+            clean_btn.setText("Waiting...")
+
+        self.logger.info("Clean Routine: Initial purge completed by machine. Displaying dilute solution popup.")
+
+        reply = self.showCustomPopup(
+            "Purge Done",
+            "Purging is complete. Please put the dilute solution for filling.\n\nAfter putting, please press on Yes.",
+            buttons=QMessageBox.Yes | QMessageBox.No
+        )
+
+        if reply == QMessageBox.Yes:
+            self._clean_step3_fill()
+        else:
+            self.logger.info("Clean Routine: Cancelled by user at dilute solution prompt.")
+            self._reset_clean_ui()
+
+    def _clean_step3_fill(self):
         clean_btn = getattr(self.ui, 'pgmcleanPushButton', None) or self.findChild(QPushButton, "pgmcleanPushButton")
         if clean_btn:
             clean_btn.setText("Filling...")
@@ -2905,7 +2924,7 @@ class MainWindow(QMainWindow):
         if hasattr(self, '_clean_watchdog_timer'):
             self._clean_watchdog_timer.start(300000)
 
-    def _clean_step3_purge2(self):
+    def _clean_step4_purge2(self):
         clean_btn = getattr(self.ui, 'pgmcleanPushButton', None) or self.findChild(QPushButton, "pgmcleanPushButton")
         if clean_btn:
             clean_btn.setText("Purging...")
@@ -2920,7 +2939,7 @@ class MainWindow(QMainWindow):
         if hasattr(self, '_clean_watchdog_timer'):
             self._clean_watchdog_timer.start(300000)
 
-    def _clean_step4_complete(self):
+    def _clean_step5_complete(self):
         self._reset_clean_ui()
         self.logger.info("Clean Routine: Cleaning cycle completed successfully.")
         self.showCustomPopup("Cleaning Done", "Cleaning is done.", buttons=QMessageBox.Ok)
