@@ -1932,11 +1932,8 @@ class MainWindow(QMainWindow):
                 else:
                     gcode += " X Y Z"
                     
-            if cmd2:
-
-
-
-                    
+            if cmd2:                                            
+                         
                 if self.util.checkSubString(cmd1, "relative", "absolute"): 
                     glist.append(gcode)
                     

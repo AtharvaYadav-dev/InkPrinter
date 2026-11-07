@@ -24,7 +24,12 @@ class CallbackHandler(object):
 
 class FileHandler():
     def __init__(self):
-        self.cwd = Path.cwd()
+        if getattr(sys, 'frozen', False):
+            # When running as compiled PyInstaller executable (.exe),
+            # always use the executable directory rather than current working directory
+            self.cwd = Path(sys.executable).resolve().parent
+        else:
+            self.cwd = Path.cwd()
             
     def getCWD(self):
         return self.cwd
@@ -46,13 +51,13 @@ class FileHandler():
     def makeDir(self, directory):
         if directory:
             dir_path = Path(self.cwd, directory)
-            os.mkdir(dir_path)
+            os.makedirs(dir_path, exist_ok=True)
 
     def checkDir(self, directory):
         if directory:
             dir_path = Path(self.cwd, directory)
             if not os.path.isdir(dir_path):
-                    os.mkdir(dir_path)      
+                os.makedirs(dir_path, exist_ok=True)      
 
 
 class ConfigHandler():
@@ -92,6 +97,11 @@ class AppLogger():
                  max_file_size = None,
                  backup_count = 5):
         
+        if getattr(sys, 'frozen', False):
+            base_dir = Path(sys.executable).resolve().parent
+            if not os.path.isabs(log_file):
+                log_file = str(base_dir / log_file)
+
         self.logger_name = logger_name
         self.log_file = log_file
         self.log_level = log_level
