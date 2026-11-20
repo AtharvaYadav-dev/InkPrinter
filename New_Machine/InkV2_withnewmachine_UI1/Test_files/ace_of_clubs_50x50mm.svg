@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50mm" height="50mm" viewBox="0 0 50 50">
+  <defs>
+    <!-- Seamless, single-boundary Club (no multi-subpath overlaps, no mitre spikes) -->
+    <path id="club" d="M 0,-5.0 C 1.33,-5.0 2.4,-3.93 2.4,-2.6 C 2.4,-1.55 1.72,-0.66 0.75,-0.32 C 1.82,-0.78 3.2,-0.6 4.1,0.3 C 5.2,1.4 5.0,3.2 3.7,4.2 C 2.6,5.0 1.0,4.8 0.55,3.6 C 0.5,4.2 0.8,4.8 1.8,5.2 C 0.6,4.8 -0.6,4.8 -1.8,5.2 C -0.8,4.8 -0.5,4.2 -0.55,3.6 C -1.0,4.8 -2.6,5.0 -3.7,4.2 C -5.0,3.2 -5.2,1.4 -4.1,0.3 C -3.2,-0.6 -1.82,-0.78 -0.75,-0.32 C -1.72,-0.66 -2.4,-1.55 -2.4,-2.6 C -2.4,-3.93 -1.33,-5.0 0,-5.0 Z"/>
+    
+    <!-- Vector path for Letter 'A' (printable by G-code slicer, not text tag) -->
+    <path id="letterA" d="M -0.35,-2.1 L 0.35,-2.1 L 1.45,1.7 L 1.75,1.7 L 1.75,2.1 L 0.75,2.1 L 0.75,1.7 L 1.05,1.7 L 0.78,0.7 L -0.78,0.7 L -1.05,1.7 L -0.75,1.7 L -0.75,2.1 L -1.75,2.1 L -1.75,1.7 L -1.45,1.7 Z M 0,-1.2 L 0.6,0.3 L -0.6,0.3 Z"/>
+  </defs>
+
+  <!-- Card outside frame with rounded corners -->
+  <rect x="9.2" y="0.5" width="31.6" height="49"
+        rx="2.25" ry="2.25"
+        fill="none" stroke="#000000" stroke-width="0.38"/>
+
+  <!-- Top-left corner index (Black Letter A + small Black Club) -->
+  <g fill="#000000" stroke="none">
+    <use href="#letterA" transform="translate(12.2 5.0)"/>
+    <use href="#club" transform="translate(12.2 9.0) scale(0.32)"/>
+  </g>
+
+  <!-- Center large Club -->
+  <use href="#club" fill="#000000" stroke="none" transform="translate(25 24.5) scale(1.15)"/>
+
+  <!-- Bottom-right corner index (rotated 180 degrees around card center) -->
+  <g transform="rotate(180 25 25)" fill="#000000" stroke="none">
+    <use href="#letterA" transform="translate(12.2 5.0)"/>
+    <use href="#club" transform="translate(12.2 9.0) scale(0.32)"/>
+  </g>
+</svg>

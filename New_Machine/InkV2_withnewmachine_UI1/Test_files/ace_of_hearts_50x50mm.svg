@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50mm" height="50mm" viewBox="0 0 50 50">
+  <defs>
+    <!-- Smooth, continuous Heart path with open V-notch (no zero-degree needle slit) -->
+    <path id="heart" d="M 0,4.6 C 1.2,3.3 5.2,1.2 5.2,-1.2 C 5.2,-3.2 3.6,-4.6 2.0,-4.6 C 0.8,-4.6 0.2,-3.6 0,-3.0 C -0.2,-3.6 -0.8,-4.6 -2.0,-4.6 C -3.6,-4.6 -5.2,-3.2 -5.2,-1.2 C -5.2,1.2 -1.2,3.3 0,4.6 Z"/>
+    
+    <!-- Vector path for Letter 'A' (printable by G-code slicer, not text tag) -->
+    <path id="letterA" d="M -0.35,-2.1 L 0.35,-2.1 L 1.45,1.7 L 1.75,1.7 L 1.75,2.1 L 0.75,2.1 L 0.75,1.7 L 1.05,1.7 L 0.78,0.7 L -0.78,0.7 L -1.05,1.7 L -0.75,1.7 L -0.75,2.1 L -1.75,2.1 L -1.75,1.7 L -1.45,1.7 Z M 0,-1.2 L 0.6,0.3 L -0.6,0.3 Z"/>
+  </defs>
+
+  <!-- Card outside frame with rounded corners -->
+  <rect x="9.2" y="0.5" width="31.6" height="49"
+        rx="2.25" ry="2.25"
+        fill="none" stroke="#000000" stroke-width="0.38"/>
+
+  <!-- Top-left corner index (Red Letter A + small Red Heart) -->
+  <g fill="#d40000" stroke="none">
+    <use href="#letterA" transform="translate(12.2 5.0)"/>
+    <use href="#heart" transform="translate(12.2 8.8) scale(0.32)"/>
+  </g>
+
+  <!-- Center large Heart -->
+  <use href="#heart" fill="#d40000" stroke="none" transform="translate(25 24.5) scale(1.0)"/>
+
+  <!-- Bottom-right corner index (rotated 180 degrees around card center) -->
+  <g transform="rotate(180 25 25)" fill="#d40000" stroke="none">
+    <use href="#letterA" transform="translate(12.2 5.0)"/>
+    <use href="#heart" transform="translate(12.2 8.8) scale(0.32)"/>
+  </g>
+</svg>

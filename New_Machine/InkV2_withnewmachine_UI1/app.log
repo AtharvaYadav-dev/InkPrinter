@@ -4173,3 +4173,174 @@ AttributeError: 'MainWindow' object has no attribute 'blackpill_sercom'
 2026-11-05 17:31 - INFO - Normalization shift: X=-7.217, Y=-7.571
 2026-11-05 17:31 - INFO - Using OFFSETS: X=5.000, Y=5.000, drawZ=47.700
 2026-11-05 17:31 - INFO - Final applied shift: X=-2.217, Y=-2.571
+2026-11-16 17:27 - INFO - ==================================================
+2026-11-16 17:27 - INFO - New session START at 2026-11-16 17:27
+2026-11-16 17:27 - INFO - ==================================================
+2026-11-16 17:27 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-11-16 17:27 - INFO - Loaded offsets from config: X=5.0, Y=5.0
+2026-11-16 17:27 - INFO - Loaded draw_z from config: Z=47.7, draw_z_UP=23.85
+2026-11-16 17:27 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-11-16 17:27 - INFO - INI file initialized
+2026-11-16 17:27 - INFO - UI load successful
+2026-11-16 17:27 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-11-16 17:27 - INFO - Do you want to auto connect Main Printer COM to COM4 @ 115200?
+2026-11-16 17:27 - INFO - Auto Connect dialog button : Cancel
+2026-11-16 17:27 - INFO - File selected: C:/Users/exp/Downloads/four_card_suits_filled_50x50mm.svg
+2026-11-16 17:27 - INFO - Converting SVG -> G-code directly: C:\Users\exp\Downloads\four_card_suits_filled_50x50mm.svg
+2026-11-16 17:27 - INFO - G-code created: C:\Users\exp\Downloads\four_card_suits_filled_50x50mm.gcode
+2026-11-16 17:27 - INFO - G-code ready from SVG: C:\Users\exp\Downloads\four_card_suits_filled_50x50mm.gcode
+2026-11-16 17:27 - INFO - Raw G-code parsed (1261 lines).
+2026-11-16 17:27 - INFO - Feedrate: 500.0 mm/min
+2026-11-16 17:27 - INFO - Normalization shift: X=-7.900, Y=-5.360
+2026-11-16 17:27 - INFO - Using OFFSETS: X=5.000, Y=5.000, drawZ=47.700
+2026-11-16 17:27 - INFO - Final applied shift: X=-2.900, Y=-0.360
+2026-11-17 10:44 - INFO - ==================================================
+2026-11-17 10:44 - INFO - New session START at 2026-11-17 10:44
+2026-11-17 10:44 - INFO - ==================================================
+2026-11-17 10:44 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-11-17 10:44 - INFO - Loaded offsets from config: X=5.0, Y=5.0
+2026-11-17 10:44 - INFO - Loaded draw_z from config: Z=47.7, draw_z_UP=23.85
+2026-11-17 10:44 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-11-17 10:44 - INFO - INI file initialized
+2026-11-17 10:44 - INFO - UI load successful
+2026-11-17 10:44 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-11-17 10:44 - INFO - Do you want to auto connect Main Printer COM to COM4 @ 115200?
+2026-11-17 10:44 - INFO - Auto Connect dialog button : Cancel
+2026-11-17 10:44 - INFO - File selected: C:/Users/exp/Downloads/ace_of_spades_50x50mm.svg
+2026-11-17 10:44 - INFO - Converting SVG -> G-code directly: C:\Users\exp\Downloads\ace_of_spades_50x50mm.svg
+2026-11-17 10:44 - INFO - G-code created: C:\Users\exp\Downloads\ace_of_spades_50x50mm.gcode
+2026-11-17 10:44 - INFO - G-code ready from SVG: C:\Users\exp\Downloads\ace_of_spades_50x50mm.gcode
+2026-11-17 10:44 - INFO - Raw G-code parsed (504 lines).
+2026-11-17 10:44 - INFO - Feedrate: 500.0 mm/min
+2026-11-17 10:44 - INFO - Normalization shift: X=-7.377, Y=-0.540
+2026-11-17 10:44 - INFO - Using OFFSETS: X=5.000, Y=5.000, drawZ=47.700
+2026-11-17 10:44 - INFO - Final applied shift: X=-2.377, Y=4.460
+2026-11-17 10:44 - ERROR - Out of Bed Range: Drawing exceeds bed area!
+
+X: 5.00 → 40.21 (Bed: 0.0 → 50.0)
+Y: 5.00 → 53.96 (Bed: 0.0 → 50.0)
+
+Please re-adjust the offsets.
+2026-11-17 10:44 - CRITICAL - Laser 1 : has offset, Xoffset = 0.0, Yoffset = 0.0
+2026-11-17 10:45 - INFO - File selected: C:/Users/exp/Downloads/ace_of_spades_50x50mm.svg
+2026-11-17 10:45 - INFO - Converting SVG -> G-code directly: C:\Users\exp\Downloads\ace_of_spades_50x50mm.svg
+2026-11-17 10:45 - INFO - G-code created: C:\Users\exp\Downloads\ace_of_spades_50x50mm.gcode
+2026-11-17 10:45 - INFO - G-code ready from SVG: C:\Users\exp\Downloads\ace_of_spades_50x50mm.gcode
+2026-11-17 10:45 - INFO - Raw G-code parsed (504 lines).
+2026-11-17 10:45 - INFO - Feedrate: 500.0 mm/min
+2026-11-17 10:45 - INFO - Normalization shift: X=-7.377, Y=-0.540
+2026-11-17 10:45 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=47.700
+2026-11-17 10:45 - INFO - Final applied shift: X=-7.377, Y=-0.540
+2026-11-17 10:48 - INFO - File selected: C:/Users/exp/Downloads/ace_card_outline_50x50mm.svg
+2026-11-17 10:48 - INFO - Converting SVG -> G-code directly: C:\Users\exp\Downloads\ace_card_outline_50x50mm.svg
+2026-11-17 10:48 - INFO - G-code created: C:\Users\exp\Downloads\ace_card_outline_50x50mm.gcode
+2026-11-17 10:48 - INFO - G-code ready from SVG: C:\Users\exp\Downloads\ace_card_outline_50x50mm.gcode
+2026-11-17 10:48 - INFO - Raw G-code parsed (922 lines).
+2026-11-17 10:48 - INFO - Feedrate: 500.0 mm/min
+2026-11-17 10:48 - INFO - Feedrate: 500.0 mm/min
+2026-11-17 10:48 - INFO - Normalization shift: X=-9.050, Y=-0.500
+2026-11-17 10:48 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=47.700
+2026-11-17 10:48 - INFO - Final applied shift: X=-9.050, Y=-0.500
+2026-11-17 10:52 - INFO - File selected: C:/Users/exp/Downloads/ace_spades_corrected_50x50mm.svg
+2026-11-17 10:52 - INFO - Converting SVG -> G-code directly: C:\Users\exp\Downloads\ace_spades_corrected_50x50mm.svg
+2026-11-17 10:52 - INFO - G-code created: C:\Users\exp\Downloads\ace_spades_corrected_50x50mm.gcode
+2026-11-17 10:52 - INFO - G-code ready from SVG: C:\Users\exp\Downloads\ace_spades_corrected_50x50mm.gcode
+2026-11-17 10:52 - INFO - Raw G-code parsed (758 lines).
+2026-11-17 10:52 - INFO - Feedrate: 500.0 mm/min
+2026-11-17 10:52 - INFO - Normalization shift: X=-9.150, Y=-0.550
+2026-11-17 10:52 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=47.700
+2026-11-17 10:52 - INFO - Final applied shift: X=-9.150, Y=-0.550
+2026-11-17 10:57 - INFO - File selected: C:/Users/exp/Downloads/ace_spades_exact_trace_50x50mm.svg
+2026-11-17 10:57 - INFO - Converting SVG -> G-code directly: C:\Users\exp\Downloads\ace_spades_exact_trace_50x50mm.svg
+2026-11-17 10:57 - INFO - G-code created: C:\Users\exp\Downloads\ace_spades_exact_trace_50x50mm.gcode
+2026-11-17 10:57 - INFO - G-code ready from SVG: C:\Users\exp\Downloads\ace_spades_exact_trace_50x50mm.gcode
+2026-11-17 10:57 - INFO - Raw G-code parsed (537 lines).
+2026-11-17 10:57 - INFO - Feedrate: 500.0 mm/min
+2026-11-17 10:57 - INFO - Normalization shift: X=-7.388, Y=-0.540
+2026-11-17 10:57 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=47.700
+2026-11-17 10:57 - INFO - Final applied shift: X=-7.388, Y=-0.540
+2026-11-17 11:00 - INFO - ==================================================
+2026-11-17 11:00 - INFO - New session START at 2026-11-17 11:00
+2026-11-17 11:00 - INFO - ==================================================
+2026-11-17 11:00 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-11-17 11:00 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-11-17 11:00 - INFO - Loaded draw_z from config: Z=47.7, draw_z_UP=23.85
+2026-11-17 11:00 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-11-17 11:00 - INFO - INI file initialized
+2026-11-17 11:00 - INFO - UI load successful
+2026-11-17 11:01 - INFO - ==================================================
+2026-11-17 11:01 - INFO - New session START at 2026-11-17 11:01
+2026-11-17 11:01 - INFO - ==================================================
+2026-11-17 11:01 - INFO - Loaded bed bounds: X=(0.0, 50.0), Y=(0.0, 50.0)
+2026-11-17 11:01 - INFO - Loaded offsets from config: X=0.0, Y=0.0
+2026-11-17 11:01 - INFO - Loaded draw_z from config: Z=47.7, draw_z_UP=23.85
+2026-11-17 11:01 - INFO - Loaded slicing layer_height=0.4, layer_height_0=0.4, nozzle_size=0.4
+2026-11-17 11:01 - INFO - INI file initialized
+2026-11-17 11:01 - INFO - UI load successful
+2026-11-17 11:01 - INFO - Com : com, Port : ['COM1', 'COM5', 'COM3', 'COM7', 'COM6', 'COM4', 'COM8'], Baud : ['9600', '57600', '115200', '250000']
+2026-11-17 11:01 - INFO - Do you want to auto connect Main Printer COM to COM4 @ 115200?
+2026-11-17 11:01 - INFO - Auto Connect dialog button : Cancel
+2026-11-17 11:01 - INFO - File selected: C:/Users/exp/Downloads/ace_card_outline_50x50mm.svg
+2026-11-17 11:01 - INFO - Converting SVG -> G-code directly: C:\Users\exp\Downloads\ace_card_outline_50x50mm.svg
+2026-11-17 11:01 - INFO - G-code created: C:\Users\exp\Downloads\ace_card_outline_50x50mm.gcode
+2026-11-17 11:01 - INFO - G-code ready from SVG: C:\Users\exp\Downloads\ace_card_outline_50x50mm.gcode
+2026-11-17 11:01 - INFO - Raw G-code parsed (922 lines).
+2026-11-17 11:01 - INFO - Feedrate: 500.0 mm/min
+2026-11-17 11:01 - INFO - Normalization shift: X=-9.050, Y=-0.500
+2026-11-17 11:01 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=47.700
+2026-11-17 11:01 - INFO - Final applied shift: X=-9.050, Y=-0.500
+2026-11-17 11:01 - INFO - File selected: C:/Users/exp/Downloads/ace_spades_corrected_50x50mm.svg
+2026-11-17 11:01 - INFO - Converting SVG -> G-code directly: C:\Users\exp\Downloads\ace_spades_corrected_50x50mm.svg
+2026-11-17 11:01 - INFO - G-code created: C:\Users\exp\Downloads\ace_spades_corrected_50x50mm.gcode
+2026-11-17 11:01 - INFO - G-code ready from SVG: C:\Users\exp\Downloads\ace_spades_corrected_50x50mm.gcode
+2026-11-17 11:01 - INFO - Raw G-code parsed (758 lines).
+2026-11-17 11:01 - INFO - Feedrate: 500.0 mm/min
+2026-11-17 11:01 - INFO - Normalization shift: X=-9.150, Y=-0.550
+2026-11-17 11:01 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=47.700
+2026-11-17 11:01 - INFO - Final applied shift: X=-9.150, Y=-0.550
+2026-11-17 11:01 - INFO - File selected: C:/Users/exp/Downloads/ace_spades_exact_trace_50x50mm.svg
+2026-11-17 11:01 - INFO - Converting SVG -> G-code directly: C:\Users\exp\Downloads\ace_spades_exact_trace_50x50mm.svg
+2026-11-17 11:01 - INFO - G-code created: C:\Users\exp\Downloads\ace_spades_exact_trace_50x50mm.gcode
+2026-11-17 11:01 - INFO - G-code ready from SVG: C:\Users\exp\Downloads\ace_spades_exact_trace_50x50mm.gcode
+2026-11-17 11:01 - INFO - Raw G-code parsed (537 lines).
+2026-11-17 11:01 - INFO - Feedrate: 500.0 mm/min
+2026-11-17 11:01 - INFO - Normalization shift: X=-7.388, Y=-0.540
+2026-11-17 11:01 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=47.700
+2026-11-17 11:01 - INFO - Final applied shift: X=-7.388, Y=-0.540
+2026-11-17 11:01 - INFO - File selected: C:/Users/exp/Downloads/ace_card_outline_50x50mm.svg
+2026-11-17 11:01 - INFO - Converting SVG -> G-code directly: C:\Users\exp\Downloads\ace_card_outline_50x50mm.svg
+2026-11-17 11:01 - INFO - G-code created: C:\Users\exp\Downloads\ace_card_outline_50x50mm.gcode
+2026-11-17 11:01 - INFO - G-code ready from SVG: C:\Users\exp\Downloads\ace_card_outline_50x50mm.gcode
+2026-11-17 11:01 - INFO - Raw G-code parsed (922 lines).
+2026-11-17 11:01 - INFO - Feedrate: 500.0 mm/min
+2026-11-17 11:01 - INFO - Normalization shift: X=-9.050, Y=-0.500
+2026-11-17 11:01 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=47.700
+2026-11-17 11:01 - INFO - Final applied shift: X=-9.050, Y=-0.500
+2026-11-17 11:02 - INFO - File selected: C:/Users/exp/Downloads/ace_of_spades_50x50mm.svg
+2026-11-17 11:02 - INFO - Converting SVG -> G-code directly: C:\Users\exp\Downloads\ace_of_spades_50x50mm.svg
+2026-11-17 11:02 - INFO - G-code created: C:\Users\exp\Downloads\ace_of_spades_50x50mm.gcode
+2026-11-17 11:02 - INFO - G-code ready from SVG: C:\Users\exp\Downloads\ace_of_spades_50x50mm.gcode
+2026-11-17 11:02 - INFO - Raw G-code parsed (504 lines).
+2026-11-17 11:02 - INFO - Feedrate: 500.0 mm/min
+2026-11-17 11:02 - INFO - Normalization shift: X=-7.377, Y=-0.540
+2026-11-17 11:02 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=47.700
+2026-11-17 11:02 - INFO - Final applied shift: X=-7.377, Y=-0.540
+2026-11-17 11:02 - INFO - Close event ignored.
+2026-11-17 11:02 - INFO - File selected: C:/Users/exp/Downloads/ace_card_outline_50x50mm.svg
+2026-11-17 11:02 - INFO - Converting SVG -> G-code directly: C:\Users\exp\Downloads\ace_card_outline_50x50mm.svg
+2026-11-17 11:02 - INFO - G-code created: C:\Users\exp\Downloads\ace_card_outline_50x50mm.gcode
+2026-11-17 11:02 - INFO - G-code ready from SVG: C:\Users\exp\Downloads\ace_card_outline_50x50mm.gcode
+2026-11-17 11:02 - INFO - Raw G-code parsed (922 lines).
+2026-11-17 11:02 - INFO - Feedrate: 500.0 mm/min
+2026-11-17 11:02 - INFO - Normalization shift: X=-9.050, Y=-0.500
+2026-11-17 11:02 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=47.700
+2026-11-17 11:02 - INFO - Final applied shift: X=-9.050, Y=-0.500
+2026-11-17 11:18 - INFO - File selected: E:/InkPrinter/New_Machine/InkV2_withnewmachine_UI1/Test_files/ace_of_spades_fixed_50x50mm.svg
+2026-11-17 11:18 - INFO - Converting SVG -> G-code directly: E:\InkPrinter\New_Machine\InkV2_withnewmachine_UI1\Test_files\ace_of_spades_fixed_50x50mm.svg
+2026-11-17 11:18 - INFO - G-code created: E:\InkPrinter\New_Machine\InkV2_withnewmachine_UI1\Test_files\ace_of_spades_fixed_50x50mm.gcode
+2026-11-17 11:18 - INFO - G-code ready from SVG: E:\InkPrinter\New_Machine\InkV2_withnewmachine_UI1\Test_files\ace_of_spades_fixed_50x50mm.gcode
+2026-11-17 11:18 - INFO - Raw G-code parsed (905 lines).
+2026-11-17 11:18 - INFO - Feedrate: 500.0 mm/min
+2026-11-17 11:18 - INFO - Normalization shift: X=-9.200, Y=-0.500
+2026-11-17 11:18 - INFO - Using OFFSETS: X=0.000, Y=0.000, drawZ=47.700
+2026-11-17 11:18 - INFO - Final applied shift: X=-9.200, Y=-0.500

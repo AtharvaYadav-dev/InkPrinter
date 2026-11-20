@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50mm" height="50mm" viewBox="0 0 50 50">
+  <defs>
+    <!-- Single seamless, smooth closed path for Spade (no overlapping subpaths, no sharp mitre spikes) -->
+    <path id="spade" d="M 0,-5.2 C 1.2,-3.5 3.8,-1.8 4.6,0.3 C 5.4,2.3 4.0,4.3 2.2,4.3 C 1.2,4.3 0.6,3.5 0.45,2.8 C 0.45,3.8 0.8,4.8 1.8,5.4 L -1.8,5.4 C -0.8,4.8 -0.45,3.8 -0.45,2.8 C -0.6,3.5 -1.2,4.3 -2.2,4.3 C -4.0,4.3 -5.4,2.3 -4.6,0.3 C -3.8,-1.8 -1.2,-3.5 0,-5.2 Z"/>
+    
+    <!-- Vector path for Letter 'A' (printable by G-code slicer, not text tag) -->
+    <path id="letterA" d="M -0.35,-2.1 L 0.35,-2.1 L 1.45,1.7 L 1.75,1.7 L 1.75,2.1 L 0.75,2.1 L 0.75,1.7 L 1.05,1.7 L 0.78,0.7 L -0.78,0.7 L -1.05,1.7 L -0.75,1.7 L -0.75,2.1 L -1.75,2.1 L -1.75,1.7 L -1.45,1.7 Z M 0,-1.2 L 0.6,0.3 L -0.6,0.3 Z"/>
+  </defs>
+
+  <!-- Card outside frame with rounded corners -->
+  <rect x="9.2" y="0.5" width="31.6" height="49"
+        rx="2.25" ry="2.25"
+        fill="none" stroke="#000000" stroke-width="0.38"/>
+
+  <!-- Top-left corner index (Letter A + small Spade) -->
+  <g fill="#000000" stroke="none">
+    <use href="#letterA" transform="translate(12.2 4.5)"/>
+    <use href="#spade" transform="translate(12.2 8.2) scale(0.42)"/>
+  </g>
+
+  <!-- Center large Spade -->
+  <use href="#spade" fill="#000000" stroke="none" transform="translate(25 24.2) scale(2.4)"/>
+
+  <!-- Bottom-right corner index (rotated 180 degrees around card center) -->
+  <g transform="rotate(180 25 25)" fill="#000000" stroke="none">
+    <use href="#letterA" transform="translate(12.2 4.5)"/>
+    <use href="#spade" transform="translate(12.2 8.2) scale(0.42)"/>
+  </g>
+</svg>

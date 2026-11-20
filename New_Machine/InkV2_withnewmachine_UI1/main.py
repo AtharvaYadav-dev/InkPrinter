@@ -1996,6 +1996,7 @@ class MainWindow(QMainWindow):
     # -------------------------------
     # 1) File Load (+ optional SVG→G-code)
     # -------------------------------
+    
     def _handle_file_load(self):
         file_path, _ = QFileDialog.getOpenFileName(
             self,
